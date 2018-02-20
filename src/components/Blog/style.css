@@ -1,0 +1,167 @@
+.blog {
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.blog::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  top: 0;
+  height: 100%;
+  left: -50px;
+  background-color: #d4d3d3;
+}
+
+.blog-header {
+  margin-bottom: 15px;
+}
+
+.header-tag {
+  font-size: 14px;
+}
+
+.header-tag a {
+  margin-right: 7px;
+  padding: 3px 5px;
+  color: white;
+  background: #237bd9;
+  border-radius: 3px;
+}
+
+.blog-header-title {
+  margin-bottom: 3px;
+  padding-top: 8px;
+  font-size: 30px;
+}
+
+.blog-header-title a {
+  color: #101012;
+}
+
+.header-tag a:hover {
+  background: #1565c0;
+}
+
+.blog-header-title::before {
+  content: '';
+  position: absolute;
+  left: -54px;
+  top: 40px;
+  height: 11px;
+  width: 11px;
+  background-color: #fff;
+  border: 1px solid #adabac;
+  border-radius: 50%;
+}
+
+.blog-content {
+  margin-bottom: 30px;
+  color: #616161;
+}
+
+.read-more {
+  position: relative;
+  padding: 10px 20px;
+  color: #237bd9;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.read-more:hover {
+  color: #111;
+}
+
+.read-more .line {
+  position: absolute;
+  background: #fff;
+}
+
+.read-more .line::before {
+  content: '';
+  position: absolute;
+  background: #ddd;
+  transition: all 0.4s;
+}
+
+.read-more .left,
+.read-more .top {
+  left: 0;
+  top: 0;
+}
+
+.read-more .bottom,
+.read-more .right {
+  right: 0;
+  bottom: 0;
+}
+
+.read-more .left,
+.read-more .right {
+  height: 100%;
+  width: 1px;
+}
+
+.read-more .top,
+.read-more .bottom {
+  height: 1px;
+  width: 100%;
+}
+
+.read-more .left::before {
+  bottom: 0;
+}
+
+.read-more .right::before {
+  top: 0;
+}
+
+.read-more .top::before {
+  left: 0;
+}
+
+.read-more .bottom::before {
+  right: 0;
+}
+
+.read-more .left::before,
+.read-more .right::before {
+  height: 0;
+  left: 0;
+  width: 1px;
+}
+
+.read-more .top::before,
+.read-more .bottom::before {
+  height: 1px;
+  top: 0;
+  width: 0;
+}
+
+.read-more:hover .left::before,
+.read-more:hover .right::before {
+  height: 100%;
+}
+
+.read-more:hover .top::before,
+.read-more:hover .bottom::before {
+  width: 100%;
+}
+
+.blog-published {
+  position: absolute;
+  width: 160px;
+  top: 32px;
+  left: -250px;
+  text-align: right;
+  letter-spacing: 2px;
+  color: #adabac;
+}
+
+@media only screen and (max-width: 1024px) {
+  .blog-published {
+    position: static;
+    text-align: left;
+  }
+}

@@ -1,0 +1,22 @@
+.archive {
+  position: relative;
+  display: flex;
+}
+
+.archive-published {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  color: #adabac;
+}
+
+.archive-title-text {
+  margin-right: 20px;
+  color: #237bd9;
+}
+
+@media only screen and (max-width: 1024px) {
+  .archive-published {
+    position: static;
+  }
+}

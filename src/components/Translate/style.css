@@ -1,0 +1,31 @@
+.translate-toggle-choice {
+  display: none;
+}
+
+.language-btn {
+  float: left;
+  margin: 0;
+  width: 95px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #d4d3d3;
+  background: transparent;
+  cursor: pointer;
+}
+
+.language-btn:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .translate-choice {
+    display: none;
+  }
+
+  .translate-toggle-choice {
+    display: block;
+  }
+}

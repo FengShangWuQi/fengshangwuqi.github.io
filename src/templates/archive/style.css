@@ -1,0 +1,30 @@
+.archives-list {
+  position: relative;
+  margin: 0;
+  list-style-type: none;
+}
+
+.archives-item {
+  margin-bottom: 60px;
+}
+
+.archives-item:last-child {
+  margin-bottom: 120px;
+}
+
+.archive-item {
+  margin-bottom: 10px;
+}
+
+.archive-year {
+  position: relative;
+  top: 0;
+  left: -72px;
+  color: #34495e;
+}
+
+@media only screen and (max-width: 1024px) {
+  .archive-year {
+    left: 0;
+  }
+}
