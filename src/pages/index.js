@@ -5,7 +5,7 @@ import Link from 'gatsby-link';
 import get from 'lodash/get';
 import { translate } from 'react-i18next';
 
-import PostHeader from '../components/PostHeader';
+import BlogHeader from '../components/BlogHeader';
 import Posts from '../components/Posts';
 
 import './style.css';
@@ -18,7 +18,7 @@ class IndexPage extends Component {
     return (
       <div className="posts">
         <Helmet title={t('title')} />
-        <PostHeader totalCount={totalCount} />
+        <BlogHeader totalCount={totalCount} />
         <Posts posts={posts} totalCount={totalCount} />
       </div>
     );

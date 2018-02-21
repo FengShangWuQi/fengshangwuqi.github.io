@@ -1,84 +1,27 @@
-.author-content {
-  display: flex;
-  align-items: center;
+.post-header {
+  text-align: center;
 }
 
-.author-avatar-img {
-  width: 76px;
-  height: 76px;
-  border: 2px solid #adabac;
-  border-radius: 50%;
+.post-header-title {
+  margin-top: 20px;
 }
 
-.posts-total-count {
-  font-family: 'Roboto', 'Ubuntu', 'Fira Sans', 'Droid Sans', sans-serif;
-  font-size: 16px;
-  margin-bottom: 15px;
+.post-is-original {
+  display: inline-block;
+  margin-left: -33px;
+  margin-right: 10px;
+  padding: 0 6px;
+  font-size: 13px;
+  line-height: 22px;
+  border-radius: 11px;
 }
 
-.author-link {
-  margin: 0;
-  list-style-type: none;
-}
-
-.author-link li {
-  float: left;
-  width: 40px;
-}
-
-.author-link-img {
-  width: 25px;
-  height: 25px;
+.author-info-title a {
+  color: #fff;
   cursor: pointer;
+  transition: color 0.3s;
 }
 
-.qrcode {
-  position: absolute;
-  top: -390px;
-  left: 210px;
-  width: 220px;
-  height: 220px;
-  transition: top ease 0.25s;
-}
-
-.qrcode-img {
-  width: 220px;
-  height: 220px;
-}
-
-#wechat:hover .qrcode {
-  display: block;
-  top: -91px;
-}
-
-.qrcode::before {
-  position: absolute;
-  content: '';
-  border: 2px dotted #444;
-  border-bottom: none;
-  border-left: none;
-  width: 120px;
-  height: 120px;
-  top: -50px;
-  left: 50px;
-  transform: rotate(-45deg);
-  border-radius: 0 5px 0 0;
-}
-
-.qrcode::after {
-  position: absolute;
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  top: -75px;
-  left: 50%;
-  margin-left: -4px;
-  background: #4c4c4c;
-}
-
-@media only screen and (max-width: 1905px) {
-  #wechat:hover .qrcode {
-    display: none;
-  }
+.author-info-title a:hover {
+  color: #d4d3d3;
 }

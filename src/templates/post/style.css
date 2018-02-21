@@ -1,41 +1,10 @@
-.post-container {
-  margin: 0 auto;
-  max-width: 720px;
-  min-width: 360px;
-  padding: 0 30px;
-}
-
-.post-header {
-  text-align: center;
-}
-
-.post-header-title {
-  margin-top: 20px;
-}
-
-.post-is-original {
-  display: inline-block;
-  margin-left: -33px;
-  margin-right: 10px;
-  padding: 0 6px;
-  font-size: 13px;
-  line-height: 22px;
-  border-radius: 11px;
-}
-
-.author-info-title a {
-  color: #fff;
-  cursor: pointer;
-  transition: color 0.3s;
+iframe {
+  margin-bottom: 0;
 }
 
 .page-md a,
 .page-md a:visited {
   color: #237bd9;
-}
-
-.author-info-title a:hover {
-  color: #d4d3d3;
 }
 
 .gatsby-highlight pre[class*='language-'] {
@@ -89,8 +58,79 @@
   border-radius: 5px;
 }
 
+.appreciate {
+  margin: 10px 0 50px;
+  text-align: center;
+}
+
+.appreciate-text {
+  margin: 12px 0;
+  font-size: 14px;
+  color: #666768;
+}
+
+.pay-btn {
+  display: inline-block;
+  margin: 8px 0 34px;
+  padding: 0;
+  width: 80px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 36px;
+  color: #fff;
+  background: #e57373;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background: #ef5350;
+}
+
+#pay-modal {
+  padding: 0;
+  width: 280px;
+  border: 0;
+  border-radius: 5px;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: transform 0.2s ease, opacity 0.2s;
+}
+
+#pay-modal.modal-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#pay-modal h3 {
+  margin: 0;
+  padding: 18px 12px;
+  font-size: 16px;
+}
+
+.pay-qrcode {
+  text-align: center;
+}
+
+.wechat-pay {
+  padding: 0 12px 8px;
+}
+
+.wechat-pay-img {
+  width: 18px;
+  height: 18px;
+}
+
 @media only screen and (max-width: 768px) {
   .post-is-original {
     display: none;
+  }
+
+  #disqus_thread {
+    margin-bottom: -20px;
   }
 }

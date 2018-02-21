@@ -531,5 +531,5 @@ Plug 'hotoo/pangu.vim'
 
 [hotoo/pangu.vim](https://github.com/hotoo/pangu.vim)
 
-# 总结
+## 总结
 最后，呈上 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库可供参考，顾名思义，除了 vim 的配置，还有 tmux 和 zsh 的分享。

@@ -63,7 +63,7 @@ modal.close();
 
 上图为 [caniuse.com](http://caniuse.com/#search=dialog) 关于 dialog 特性主流浏览器的兼容情况。
 
-幸运的是，我们可以使用 [dialog-polyfill](https://caniuse.com/#search=dialog) 来缓解这种尴尬，它既提供了 JavaScript 的行为，也包含了默认的样式，我们可以使用 npm 来安装它，也可以使用 script 标签来引用它。目前，它已支持各主流浏览器，包括 IE 9 及其以上版本。
+幸运的是，我们可以使用 [dialog-polyfill](https://github.com/GoogleChrome/dialog-polyfill) 来缓解这种尴尬，它既提供了 JavaScript 的行为，也包含了默认的样式，我们可以使用 npm 来安装它，也可以使用 script 标签来引用它。目前，它已支持各主流浏览器，包括 IE 9 及其以上版本。
 
 只是，在使用它时，每个 dialog 需要使用下面语句进行初始化：
 

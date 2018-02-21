@@ -12,7 +12,7 @@
     "new-blog": "gatsby-new-blog start",
     "build": "yarn run clean && gatsby build --prefix-paths",
     "deploy":
-      "yarn run clean && gatsby build --prefix-paths && gh-pages -d public -r git@github.com:FengShangWuQi/fswq-blog.git -b master",
+      "yarn run clean && gatsby build --prefix-paths && gh-pages -d public -r git@github.com:FengShangWuQi/fswq-blog.git -b master -m deploy",
     "serve": "gatsby serve",
     "format":
       "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
@@ -24,6 +24,7 @@
     "gatsby-link": "^1.6.34",
     "gatsby-new-blog": "^1.0.3",
     "gatsby-plugin-feed": "^1.3.18",
+    "gatsby-plugin-google-analytics": "^1.0.19",
     "gatsby-plugin-offline": "^1.0.13",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-sharp": "^1.6.28",

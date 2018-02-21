@@ -45,13 +45,17 @@ class Nav extends Component {
     const navs = [
       { title: 'archives', link: '/archives' },
       { title: 'latest', link: '/' },
-      { title: 'about', link: '/' },
     ];
 
     return (
       <nav className="header-nav">
         <ul className="header-nav-ul">
           {navs.map(nav => this.renderNav(nav))}
+          <li key="rss" className="header-nav-item">
+            <a href="/fswq-blog/rss.xml" rel="noopener noreferrer" title="RSS">
+              RSS
+            </a>
+          </li>
           <Translate toggle={false} />
         </ul>
         <ul
@@ -70,6 +74,11 @@ class Nav extends Component {
           <li className="header-sideNav-item sideNav-title">导航</li>
           <Translate toggle />
           {navs.map(nav => this.renderSideNav(nav))}
+          <li key="rss" className="header-sideNav-item">
+            <a href="/fswq-blog/rss.xml" rel="noopener noreferrer" title="RSS">
+              RSS
+            </a>
+          </li>
         </ul>
         <img
           style={{ top: sideNav ? -100 : 32 }}

@@ -5,7 +5,7 @@ module.exports = {
     description: 'from Front-End to Full stack',
     siteUrl: 'https://fengshangwuqi.github.io/fswq-blog',
   },
-  pathPrefix: '/',
+  pathPrefix: '/fswq-blog',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -40,6 +40,12 @@ module.exports = {
           'gatsby-remark-emoji',
           'gatsby-remark-katex',
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-114534441-1',
       },
     },
     {
