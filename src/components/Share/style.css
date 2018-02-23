@@ -25,6 +25,7 @@
   color: #d4d3d3;
   border: 1px solid #d4d3d3;
   border-radius: 50%;
+  cursor: pointer;
   transition: border-color 0.2s ease;
 }
 

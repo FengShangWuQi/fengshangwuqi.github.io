@@ -107,5 +107,6 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-twitter',
     'gatsby-transformer-yaml',
+    'gatsby-plugin-no-sourcemaps',
   ],
 };

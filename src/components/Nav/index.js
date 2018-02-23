@@ -71,7 +71,7 @@ class Nav extends Component {
               onClick={this.handleSideNav}
             />
           </li>
-          <li className="header-sideNav-item sideNav-title">导航</li>
+          <li className="header-sideNav-item sideNav-title">{t('menu')}</li>
           <Translate toggle />
           {navs.map(nav => this.renderSideNav(nav))}
           <li key="rss" className="header-sideNav-item">

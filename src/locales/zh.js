@@ -1,6 +1,7 @@
 exports.translation = {
   title: '枫上雾棋的日志',
   total: '篇文章',
+  menu: '导航',
   latest: '最新',
   archives: '档案',
   about: '关于我',

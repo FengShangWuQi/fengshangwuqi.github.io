@@ -78,7 +78,7 @@ class App extends React.Component {
 新的 **context API** 主要由以下三部分组成：
 
 - **React.createContext**：用于传递初始值（可选择 [使用 bitmask 的一个奇妙的选择性退出函数](https://twitter.com/acdlite/status/957446433656864768)），返回一个包含 provider 和 consumer 的对象；
-- **provide**：使用 higher，并可以接收任何值；
+- **provide**：放置在组件树中的较高层，并可以接收任何值；
 - **consume**：在 provider 之后任何地方使用，并传递一个返回 JSX 的函数（这有点像 render prop 组件，但 consume 不是组件）；
 
 我对这个 API 充满了期待，React 团队也将会移除 **context 是实验性 API** 的警告，因为它现在是框架 [一级棒的特性](https://twitter.com/acdlite/status/957445801302618112)，这也意味着大家将不再那么担心使用 context 来解决应用中 prop-drilling 的问题了，对 Redux 不再那么依赖，对 React 也将更加喜欢。
