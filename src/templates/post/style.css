@@ -1,5 +1,5 @@
 iframe {
-  margin-bottom: 0;
+  margin-bottom: -32px;
 }
 
 .page-md a,
@@ -59,7 +59,7 @@ iframe {
 }
 
 .appreciate {
-  margin: 10px 0 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 

@@ -1,3 +1,7 @@
+.post-content {
+  position: relative;
+}
+
 .page-container {
   margin: 0 auto 80px;
   max-width: 720px;

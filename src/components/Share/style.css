@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 25px 0 30px;
+  padding-bottom: 30px;
 }
 
 .share-text {
