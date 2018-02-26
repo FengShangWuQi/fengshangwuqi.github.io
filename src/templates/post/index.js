@@ -69,7 +69,7 @@ class PostTemplate extends Component {
           original={original}
           date={date}
         />
-        <VisibilitySensor style={{ marginTop: -90 }} onChange={this.onChange} />
+        <VisibilitySensor onChange={this.onChange} />
         <div className="post-content">
           <div style={{ marginTop: -50 }} className="page-container">
             <div
@@ -94,7 +94,7 @@ class PostTemplate extends Component {
               fix
                 ? {
                     position: 'fixed',
-                    top: 45,
+                    top: 30,
                   }
                 : {
                     position: 'absolute',
@@ -103,21 +103,19 @@ class PostTemplate extends Component {
             }
             className="post-content-table"
           >
-            <a
-              href="http://t.cn/REGhMEy"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="招聘"
-            >
-              <div className="post-ad">
-                <img
-                  className="ad-img"
-                  src={require('../../images/ad.jpeg')}
-                  alt="广告"
-                />
-                <div className="ad-text">还不快到碗里来 | 招聘</div>
-              </div>
-            </a>
+            {/* <a */
+            /*   target="_blank" */
+            /*   rel="noopener noreferrer" */
+            /* > */
+            /*   <div className="post-ad"> */
+            /*     <img */
+            /*       className="ad-img" */
+            /*       src={require('../../images/ad.jpeg')} */
+            /*       alt="广告" */
+            /*     /> */
+            /*     <div className="ad-text"></div> */
+            /*   </div> */
+            /* </a> */}
             <div className="MarkNav-title">目录</div>
             <MarkNav
               className="article-menu"

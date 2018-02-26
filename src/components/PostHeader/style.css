@@ -27,7 +27,9 @@
 }
 
 .markdown-navigation {
+  max-height: 600px;
   border-left: 1px solid #eee;
+  overflow: hidden;
 }
 
 .MarkNav-title {
@@ -39,6 +41,7 @@
 
 .markdown-navigation .title-anchor {
   display: flex;
+  margin: 7px 0;
 }
 
 .markdown-navigation .title-anchor.active {
