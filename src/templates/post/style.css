@@ -58,6 +58,10 @@ iframe {
   border-radius: 5px;
 }
 
+.page-md ul li:last-child {
+  margin-bottom: 0;
+}
+
 .appreciate {
   margin-bottom: 50px;
   text-align: center;
