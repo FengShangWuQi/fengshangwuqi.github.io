@@ -3,9 +3,9 @@ module.exports = {
     title: '枫上雾棋的日志',
     author: '枫上雾棋',
     description: 'from Front-End to Full stack',
-    siteUrl: 'https://fengshangwuqi.github.io/fswq-blog',
+    siteUrl: 'https://fengshangwuqi.github.io',
   },
-  pathPrefix: '/fswq-blog',
+  pathPrefix: '/',
   plugins: [
     'gatsby-plugin-react-helmet',
     {

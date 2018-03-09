@@ -3,21 +3,19 @@
   "description": "枫上雾棋的日志",
   "version": "1.0.0",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
-  "homepage": "https://fengshangwuqi.github.io/fswq-blog",
-  "keywords": [
-    "枫上雾棋的日志",
-    "枫上雾棋",
-    "fengshangwuqi"
-  ],
+  "homepage": "https://fengshangwuqi.github.io",
+  "keywords": ["枫上雾棋的日志", "枫上雾棋", "fengshangwuqi"],
   "scripts": {
     "clean": "rimraf public .cache *.log .DS_Store",
     "start": "gatsby develop",
     "lint": "eslint --ext .js --ignore-pattern public .",
     "new-blog": "gatsby-new-blog start",
     "build": "yarn run clean && gatsby build --prefix-paths",
-    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public -r git@github.com:FengShangWuQi/fswq-blog.git -b master -m deploy",
+    "deploy":
+      "yarn run clean && gatsby build --prefix-paths && gh-pages -d public -r git@github.com:FengShangWuQi/fswq-blog.git -b master -m deploy",
     "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "format":
+      "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "test": "yarn lint"
   },
   "dependencies": {
