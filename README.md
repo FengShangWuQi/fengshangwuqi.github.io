@@ -1,5 +1,5 @@
 
-> # [枫上雾棋的日志](https://fengshangwuqi.github.io/fswq-blog)
+> # [枫上雾棋的日志](https://fengshangwuqi.github.io)
 
 [![twitter](https://img.shields.io/badge/twitter-@fengshangwuqi-blue.svg)][follow]
 

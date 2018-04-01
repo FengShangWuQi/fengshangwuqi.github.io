@@ -8,11 +8,15 @@ iframe {
 }
 
 .gatsby-highlight pre[class*='language-'] {
-  margin: 0 0 30px;
+  margin: 0 0 20px;
+}
+
+.gatsby-highlight pre[class*='language-'] code {
+  line-height: 1.1;
 }
 
 .page-md h2 {
-  margin: 50px 0 18px;
+  margin: 40px 0 18px;
   padding-bottom: 7px;
   border-bottom: 1px solid #d3d3d3;
 }
@@ -23,12 +27,13 @@ iframe {
 }
 
 .page-md p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 10px;
   font-family: Georgia, serif;
   font-size: 15px;
   line-height: 1.8;
   text-align: justify;
+  letter-spacing: 1px;
 }
 
 .page-md .original-info {
@@ -36,6 +41,10 @@ iframe {
   font-size: 15px;
   list-style-type: none;
   color: #adabac;
+}
+
+.page-md ul li {
+  margin-bottom: 0.45rem;
 }
 
 .page-md .original-info li {

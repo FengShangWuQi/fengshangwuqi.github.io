@@ -5,11 +5,6 @@ tag: Linux,Ubuntu
 date: 2017-05-09T16:01:20+08:00
 ---
 
-## 准备
-
-- 下载 [Ubuntu Kylin](http://www.ubuntu.org.cn/download/ubuntu-kylin)；
-- 使用 [UltraISO](https://cn.ultraiso.net/) 制作 U 盘启动盘；
-
 ## 入门
 
 ### 目录

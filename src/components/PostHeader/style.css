@@ -3,7 +3,8 @@
 }
 
 .post-header-title {
-  margin-top: 20px;
+  margin: 20px;
+  line-height: 48px;
 }
 
 .post-is-original {
@@ -16,14 +17,18 @@
   border-radius: 11px;
 }
 
+.author-content {
+  color: #d4d3d3;
+}
+
 .author-info-title a {
-  color: #fff;
+  color: #d4d3d3;
   cursor: pointer;
   transition: color 0.3s;
 }
 
 .author-info-title a:hover {
-  color: #d4d3d3;
+  color: #fff;
 }
 
 .markdown-navigation {

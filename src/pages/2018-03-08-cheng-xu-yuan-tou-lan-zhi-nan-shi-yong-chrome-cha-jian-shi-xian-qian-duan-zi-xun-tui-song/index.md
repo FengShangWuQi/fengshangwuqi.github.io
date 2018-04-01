@@ -1,17 +1,17 @@
 ---
-title: 程序员偷懒指南 -- 使用 chrome 插件实现前端资讯推送
+title: 程序员偷懒指南 -- 使用 chrome 扩展实现前端资讯推送
 original: true
 tag: FrontEnd,Chrome,JavaScript
 date: 2018-03-08T12:12:25+08:00
 ---
 
-> 最近接触了一下 chrome 扩展，也就是我们常说的插件，发现这确实是一个好东西，使用简单的 HTML，CSS 和 JavaScript 就可为浏览器新增我们想要的功能，并且，使用 chrome 扩展开发，不用担心跨域等消息传递问题，还有讨厌的兼容性问题，结合操作用户页面 dom，开发的开心度可谓是可观的。下面，我们就一起通过一个实例来看看 chrome 扩展开发。
+> 最近接触了一下 chrome 扩展，发现这确实是一个好东西，使用简单的 HTML，CSS 和 JavaScript 就可为浏览器新增我们想要的功能，并且，使用 chrome 扩展开发，不用担心跨域等消息传递问题，还有讨厌的兼容性问题，结合操作用户页面 dom，开发的开心度可谓是可观的。下面，我们就一起通过一个实例来看看 chrome 扩展开发。
 
 这个实例不是很复杂，是我之前一直想做的，就是 **通过 chrome 扩展来同步每日阅读的不错的前端资讯**。相信大家也有清晰地感受到，前端社区在诸多社区中可谓最为活跃的，所以，坚持筛选学习的内容是比较考验耐心，也是尤为重要的，相对微信公众号，twitter 和 newsletter 等方式，个人感觉 chrome 扩展也不失为一种友好的方式。
 
 ## 构思
 
-首先，我们得准备一个仓库来储存我们每日收集的资讯，最好大家也能贡献，这个好像不用想，没有比 GitHub 更为合适了的吧，并且 GitHub 提供的 REST API 应该可以帮助我们解决一些额外的问题，查了查果然：
+首先，我们得准备一个仓库来储存我们每日收集的资讯，最好大家也能贡献，这个好像不用想，没有比 GitHub 更为合适了的吧，并且 GitHub 提供的 **REST API** 应该可以帮助我们解决一些额外的问题，查了查果然：
 
 ```
 POST /markdown
@@ -20,16 +20,14 @@ POST /markdown
 可以将 text 渲染成 Markdown 文档，测试一下：
 
 ```js
-await fetch(
-	'https://api.github.com/markdown',
-	{
-		method: 'POST',
-		body: JSON.stringify({
-	  	text: '> # hello fengshangwuqi',
-    })
-  }
-)
-.then(res => res.text());
+const res = await fetch('https://api.github.com/markdown', {
+  method: 'POST',
+  body: JSON.stringify({
+    text,
+  }),
+});
+
+const md = await res.text();
 ```
 
 返回：
@@ -101,7 +99,7 @@ chrome.runtime.sendMessage(
 
 ```js
 async function handleMessage(message, sender, sendResponse) {
-switch (message.action) {
+  switch (message.action) {
     case 'getNew':
       sendResponse(await getNew());
       break;
@@ -165,59 +163,58 @@ history
 然后如下获取最新资讯的 path：
 
 ```js
-const year = await GITHUB.getContent('history');
-const month = await GITHUB.getContent(
+const year = await GitHubAPI.getContent('history');
+const month = await GitHubAPI.getContent(
   `history/${year[year.length - 1]}`
 );
-const day = await GITHUB.getContent(
+const day = await GitHubAPI.getContent(
   `history/${year[year.length - 1]}/${month[month.length - 1]}`
 );
+
 const path = `${year.pop()}/${month.pop()}/${day.pop()}`;
 ```
 
 path 得到了，接下来，就可轻松通过上面的 API 获取对应的 content，至此，通过 REST API 处理数据算是搞定了。下面是示例代码：
 
 ```js
-class API {
-  constructor(url, owner, repo) {
-    this.url = url;
+const GitHubAPI = new class {
+  constructor(prefix, owner, repo) {
+    this.prefix = prefix;
     this.owner = owner;
     this.repo = repo;
   }
 
-  /* github
-	 * Render an arbitrary Markdown document
-	 * */
+  /* render an arbitrary markdown document */
   async getMarkdown(text) {
-    const res = await fetch(`${this.url}/markdown`, {
+    const res = await fetch(`${this.prefix}/markdown`, {
       method: 'POST',
       body: JSON.stringify({
         text,
       }),
-    }).then(res => res.text());
+    });
+    const md = await res.text();
 
-    return res;
+    return md;
   }
 
-  /* github
-	 * Get contents
-	 * */
-  async getContent(path) {
+  /* get contents */
+  async getContents(path) {
     const res = await fetch(
-      `${this.url}/repos/${this.owner}/${this.repo}/contents/${path}`,
+      `${this.prefix}/repos/${this.owner}/${this.repo}/contents/${path}`,
       {
         method: 'GET',
       }
-    )
-      .then(res => res.json())
-      .then(json => json.map(path => path.name));
+    );
+    const contents = await res.json();
 
-    return res;
+    return contents;
   }
-}
+}(githubAPIPrefix, owner, repo);
+
+export default GitHubAPI;
 ```
 
-上面使用 class 对 API 做了一个封装，并非完全出于对代码的整洁，还有一个重要的原因是避免重名，虽然扩展支持根据域名加载不同 js 文件，但如果有隐藏域名的需求也说不准了。
+上面使用 **class** 对 API 做了一个封装，并非完全出于对代码的整洁，还有一个重要的原因是避免重名，虽然扩展支持根据域名加载不同 js 文件，但如果有隐藏域名的需求也说不准了。
 
 ## 打通 background 和 popup
 
@@ -225,7 +222,7 @@ class API {
 
 思路相对也很清晰，首先，popup 发送消息获取 paths，即所有可以查看的资讯的路径，这个路径，相当于每条资讯的 title，上面我们已经知道如何获取最新资讯的 path 了，我们只需做一个简单的操作和判断，我们将最新资讯的 path 存储在 localStorage 中，如果 localStorage 中最新资讯的 path 不全等于实际最新资讯的 path，那么我们就执行请求获取实际最新资讯的 path。
 
-看似不使用 localStorage 感觉也没什么，实际上，是不得不使用 localStorage。GitHub REST API 有一个 [Rate Limit](https://developer.github.com/v3/#rate-limiting)，它限制了每小时你发送请求的次数，显然，不使用 localStorage 储存，结果将是比较尴尬的，你将在多次打开 popup 后，得到一个尴尬的提示：
+看似不使用 **localStorage** 感觉也没什么，实际上，是不得不使用 localStorage。GitHub REST API 有一个 [Rate Limit](https://developer.github.com/v3/#rate-limiting)，它限制了每小时你发送请求的次数，显然，不使用 localStorage 储存，结果将是比较尴尬的，你将在多次打开 popup 后，得到一个尴尬的提示：
 
 ```json
 {
@@ -234,26 +231,32 @@ class API {
 }
 ```
 
-紧接着是发送一个新的消息获取当前想要查看的资讯，消息回应的有资讯的 content，还有资讯的 path，资讯的 content 不用说，肯定是动态地创建 dom 添加到 popup 中，而 path 主要用于切换，之前我们得到了所有可查看资讯的路径，接下来，我们就可以结合 paths 和 path 决定是否可以向前或向后切换，切换核心代码如下：
+紧接着是发送一个新的消息获取当前想要查看的资讯，消息回应的有资讯的 content，还有资讯的 path，资讯的 content 不用说，肯定是动态地创建 dom 添加到 popup 中，而 path 主要用于切换，之前我们得到了所有可查看资讯的 paths，接下来，我们就可以结合 paths 和 path 决定是否可以向前或向后切换，其核心代码如下：
 
 ```js
-NewsCard.getCurrNew = function (path) {
-  chrome.runtime.sendMessage({
-      action: 'getCurrNew',
-      path,
+export const getCurrContent = (paths, path) => {
+  chrome.runtime.sendMessage(
+    {
+      action: 'getCurrContent',
+      payload: {
+        path,
+      },
     },
-    res => {
-      const card = document.getElementById('new-card');
+    ({ url, text }) => {
+      const header = new Header(url, path, paths);
 
-      card.innerHTML = `<div id="path">${res.path}</div>
-<div id="left-arrow" class="card-arrow"><<<</div>
-<div id="right-arrow" class="card-arrow">>>></div>
-${res.text}`;
+      const pagination = {
+        current: paths.indexOf(path) + 1,
+        total: paths.length,
+      };
+      const item = new Item(text, pagination, path);
 
-      NewsCard.addListeners();
+      header.render();
+      header.addListener();
+      item.render();
     }
   );
-}
+};
 ```
 
 ## 调试
@@ -270,11 +273,11 @@ popup 跟普通页面一样，右键检查，background 需要进入扩展程序
 
 该实例目前还存在很多 **TODO** 的内容：
 
-- 更换 icon；
-- 优化 UI；
-- 添加 loading；
-- 添加新内容，例如来源，作者信息，图片等；
-- 添加新功能，例如查看全部等；
-- ...
+- [ ] 添加 loading；
+- [ ] 支持 Firefox；
+- [ ] 添加新内容，比如来源，作者信息，图片等；
+- [ ] 添加新功能，比如查看全部等；
+- [ ] 添加错误提示，比如没有网络，无法正常获取数据等；
+- [ ] 添加个性化配置，比如配置前端感兴趣的内容等；
 
 目前该 [扩展](https://chrome.google.com/webstore/detail/front-end-news/dcijaoifeaaafbdglmalaajeedcamogg) 初始版本已发布，点击前面的链接可查看更多，如果大伙中有人感兴趣，[chrome-Daily-Front-End-news](https://github.com/FengShangWuQi/chrome-Daily-Front-End-news) 仓库期待收到你的 PR，[Daily-Front-End-News](https://github.com/FengShangWuQi/Daily-Front-End-News) 同上。
