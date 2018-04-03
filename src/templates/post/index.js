@@ -103,19 +103,26 @@ class PostTemplate extends Component {
             }
             className="post-content-table"
           >
-            {/* <a */
-            /*   target="_blank" */
-            /*   rel="noopener noreferrer" */
-            /* > */
-            /*   <div className="post-ad"> */
-            /*     <img */
-            /*       className="ad-img" */
-            /*       src={require('../../images/ad.jpeg')} */
-            /*       alt="广告" */
-            /*     /> */
-            /*     <div className="ad-text"></div> */
-            /*   </div> */
-            /* </a> */}
+            <a target="_blank" rel="noopener noreferrer">
+              <div className="post-ad">
+                <img
+                  className="ad-img"
+                  src={require('../../images/extension.png')}
+                  alt="广告"
+                />
+                <div className="ad-text">
+                  <a
+                    href="https://chrome.google.com/webstore/detail/daily-front-end-news/dcijaoifeaaafbdglmalaajeedcamogg?utm_source=chrome-app-launcher-info-dialog"
+                    className="ad-text-title"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    下载前端每日最新资讯扩展
+                  </a>
+                  <div className="ad-text-intro">随时关注前端最新动态</div>
+                </div>
+              </div>
+            </a>
             <div className="MarkNav-title">目录</div>
             <MarkNav
               className="article-menu"

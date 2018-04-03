@@ -71,6 +71,70 @@ iframe {
   margin-bottom: 0;
 }
 
+.post-content-table {
+  left: calc((100% - 660px) / 2 + 720px);
+  width: 255px;
+  overflow: hidden;
+  transition: top 0.2s ease;
+}
+
+.post-ad {
+  display: flex;
+  margin-bottom: 25px;
+  padding: 15px;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid #cfd8dc;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.ad-img {
+  margin-right: 0.5rem;
+  width: 50px;
+  height: 50px;
+}
+
+.ad-text-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.ad-text-intro {
+  font-size: 8px;
+  color: #909090;
+}
+
+.markdown-navigation {
+  max-height: 600px;
+  border-left: 1px solid #eee;
+  overflow: hidden;
+}
+
+.MarkNav-title {
+  padding: 5px 1.2em 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border-left: 1px solid #eee;
+}
+
+.markdown-navigation .title-anchor {
+  display: flex;
+  margin: 7px 0;
+}
+
+.markdown-navigation .title-anchor.active {
+  border-left: 2px solid #007fff;
+}
+
+.title-anchor:first-child {
+  margin-top: 0;
+}
+
+.title-anchor:last-child {
+  margin-bottom: 0;
+}
+
 .appreciate {
   margin-bottom: 50px;
   text-align: center;
@@ -136,6 +200,12 @@ dialog::backdrop {
 .wechat-pay-img {
   width: 18px;
   height: 18px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .post-content-table {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
