@@ -65,7 +65,7 @@ class PostTemplate extends Component {
         <PostHeader
           tag={tag}
           title={title}
-          path={fields.path}
+          path={fields.slug}
           original={original}
           date={date}
         />
@@ -77,7 +77,7 @@ class PostTemplate extends Component {
               dangerouslySetInnerHTML={{ __html: html }}
             />
 
-            <Share text={title} url={`${siteUrl}${fields.path}`} />
+            <Share text={title} url={`${siteUrl}${fields.slug}`} />
             <div className="appreciate">
               <div className="appreciate-text">「 别拦我，我要小额赞助 」</div>
               <div className="pay-btn" onClick={this.openModal}>
@@ -162,16 +162,16 @@ PostTemplate.propTypes = {
 export default translate('translation')(PostTemplate);
 
 export const pageQuery = graphql`
-  query PathQuery($path: String!) {
+  query SlugQuery($slug: String!) {
     site {
       siteMetadata {
         siteUrl
       }
     }
-    markdownRemark(fields: { path: { eq: $path } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       fields {
-        path
+        slug
       }
       internal {
         content

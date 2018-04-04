@@ -22,7 +22,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           node {
             excerpt
             fields {
-              path
+              slug
             }
             frontmatter {
               title
@@ -52,7 +52,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     const value = createFilePath({ node, getNode });
 
     createNodeField({
-      name: 'path',
+      name: 'slug',
       node,
       value,
     });

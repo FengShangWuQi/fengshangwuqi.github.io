@@ -29,8 +29,8 @@ class Posts extends Component {
           .slice(PAGE_SIZE * (current - 1), current * PAGE_SIZE)
           .map(({ node }) => (
             <Blog
-              key={node.fields.path}
-              path={node.fields.path}
+              key={node.fields.slug}
+              path={node.fields.slug}
               title={node.frontmatter.title}
               date={node.frontmatter.date}
               tag={node.frontmatter.tag}

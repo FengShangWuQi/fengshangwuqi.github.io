@@ -5,10 +5,10 @@ exports.createPostPages = (createPage, edges) => {
 
   edges.forEach(({ node }) => {
     createPage({
-      path: node.fields.path,
+      path: node.fields.slug,
       component: postTemplate,
       context: {
-        path: node.fields.path,
+        slug: node.fields.slug,
       },
     });
   });

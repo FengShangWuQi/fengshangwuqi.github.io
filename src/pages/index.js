@@ -48,7 +48,7 @@ export const pageQuery = graphql`
         node {
           excerpt(pruneLength: 220)
           fields {
-            path
+            slug
           }
           frontmatter {
             title

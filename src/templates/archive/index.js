@@ -32,8 +32,8 @@ const ArchivesTemplate = ({ pathContext, t }) => {
           const year = date.substr(4);
           const archive = archives[date].map(node => (
             <Archive
-              key={node.fields.path}
-              path={node.fields.path}
+              key={node.fields.slug}
+              path={node.fields.slug}
               title={node.frontmatter.title}
               date={node.frontmatter.date.substr(5)}
             />
