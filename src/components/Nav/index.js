@@ -52,7 +52,7 @@ class Nav extends Component {
         <ul className="header-nav-ul">
           {navs.map(nav => this.renderNav(nav))}
           <li key="rss" className="header-nav-item">
-            <a href="/fswq-blog/rss.xml" rel="noopener noreferrer" title="RSS">
+            <a href="/rss.xml" rel="noopener noreferrer" title="RSS">
               RSS
             </a>
           </li>
