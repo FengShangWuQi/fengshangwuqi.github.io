@@ -3,7 +3,7 @@ exports.translation = {
   total: '篇文章',
   menu: '导航',
   latest: '最新',
-  archives: '档案',
+  archives: '归档',
   about: '关于我',
   readMore: '阅读全文',
   prev: '上一页',
