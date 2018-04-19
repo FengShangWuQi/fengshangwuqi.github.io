@@ -263,21 +263,12 @@ export const getCurrContent = (paths, path) => {
 
 popup 跟普通页面一样，右键检查，background 需要进入扩展程序页面，点击检查视图背景页。
 
-![inspect](./images/inspect.png)
+![debug](./images/debug.png)
 
 ## 总结
 
 就这样，我们的 chrome 初始版本就没有什么阻塞项了，目前截图如下：
 
-![news](./images/new.png)
-
-该实例目前还存在很多 **TODO** 的内容：
-
-- [ ] 添加 loading；
-- [ ] 支持 Firefox；
-- [ ] 添加新内容，比如来源，作者信息，图片等；
-- [ ] 添加新功能，比如查看全部等；
-- [ ] 添加错误提示，比如没有网络，无法正常获取数据等；
-- [ ] 添加个性化配置，比如配置前端感兴趣的内容等；
+![news](./images/news.png)
 
 目前该 [扩展](https://chrome.google.com/webstore/detail/front-end-news/dcijaoifeaaafbdglmalaajeedcamogg) 初始版本已发布，点击前面的链接可查看更多，如果大伙中有人感兴趣，[chrome-Daily-Front-End-news](https://github.com/FengShangWuQi/chrome-Daily-Front-End-news) 仓库期待收到你的 PR，[Daily-Front-End-News](https://github.com/FengShangWuQi/Daily-Front-End-News) 同上。

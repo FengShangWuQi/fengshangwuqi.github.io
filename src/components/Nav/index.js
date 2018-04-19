@@ -59,7 +59,7 @@ class Nav extends Component {
           <Translate toggle={false} />
         </ul>
         <ul
-          style={sideNav ? { dispaly: 'block', left: 0, right: 0 } : {}}
+          style={sideNav ? { display: 'block', left: 0, right: 0 } : {}}
           className="header-sideNav-ul"
           onClick={e => this.handleSideClick(e)}
         >
