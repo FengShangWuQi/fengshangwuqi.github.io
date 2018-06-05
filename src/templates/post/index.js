@@ -34,6 +34,16 @@ class PostTemplate extends Component {
   }
 
   onChange = isVisible => {
+    let scrollTop = window.pageYOffset
+                || document.documentElement.scrollTop
+                || document.body.scrollTop
+                || 0
+    if(scrollTop > -480  && scrollTop < 480){
+      this.setState({
+        fix: false,
+      })
+      return 
+    }
     this.setState({
       fix: !isVisible,
     });
