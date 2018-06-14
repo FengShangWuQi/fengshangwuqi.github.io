@@ -4,7 +4,11 @@
   "version": "1.0.0",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "homepage": "https://fengshangwuqi.github.io",
-  "keywords": ["枫上雾棋的日志", "枫上雾棋", "fengshangwuqi"],
+  "keywords": [
+    "枫上雾棋的日志",
+    "枫上雾棋",
+    "fengshangwuqi"
+  ],
   "lint-staged": {
     "*.{js,json,css}": [
       "prettier --single-quote --trailing-comma es5 --write",
@@ -17,11 +21,9 @@
     "lint": "eslint --ext .js --ignore-pattern public .",
     "new-blog": "gatsby-new-blog start",
     "build": "yarn run clean && gatsby build --prefix-paths",
-    "deploy":
-      "yarn run clean && gatsby build --prefix-paths && gh-pages -d public -r git@github.com:FengShangWuQi/fswq-blog.git -b master -m deploy",
+    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public -r git@github.com:FengShangWuQi/fswq-blog.git -b master -m deploy",
     "serve": "gatsby serve",
-    "format":
-      "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "test": "yarn lint",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
@@ -57,8 +59,7 @@
     "normalize.css": "^7.0.0",
     "qrcode": "^1.2.0",
     "react-helmet": "^5.2.0",
-    "react-i18next": "^7.3.6",
-    "react-visibility-sensor": "^3.11.0"
+    "react-i18next": "^7.3.6"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

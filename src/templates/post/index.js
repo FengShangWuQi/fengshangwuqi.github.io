@@ -4,7 +4,6 @@ import { translate } from 'react-i18next';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import MarkNav from 'markdown-navbar';
-import VisibilitySensor from 'react-visibility-sensor';
 import get from 'lodash/get';
 
 import Header from '../../components/Header';
@@ -31,12 +30,29 @@ class PostTemplate extends Component {
     })();
 
     this.modal = document.getElementById('pay-modal');
+    document.addEventListener('scroll', this.winScroll);
   }
 
-  onChange = isVisible => {
-    this.setState({
-      fix: !isVisible,
-    });
+  componentWillUnmount() {
+    document.removeEventListener('scroll', this.winScroll);
+  }
+
+  winScroll = () => {
+    const scrollTop =
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop ||
+      0;
+
+    if (scrollTop >= 0 && scrollTop < 480) {
+      this.setState({
+        fix: false,
+      });
+    } else {
+      this.setState({
+        fix: true,
+      });
+    }
   };
 
   openModal = () => {
@@ -69,7 +85,6 @@ class PostTemplate extends Component {
           original={original}
           date={date}
         />
-        <VisibilitySensor onChange={this.onChange} />
         <div className="post-content">
           <div style={{ marginTop: -50 }} className="page-container">
             <div
