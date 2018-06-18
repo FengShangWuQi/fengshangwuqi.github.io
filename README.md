@@ -11,6 +11,11 @@
 - [gatsby-new-blog](https://www.npmjs.com/package/gatsby-new-blog)：一个轻松为 gatsby site 创建 blog 的命令行工具； 
 - [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh)：如果喜欢键盘更甚鼠标，那么 vim， tmux 和 zsh 可以作为你的标配；
 - [chrome-Daily-Front-End-news](https://github.com/FengShangWuQi/chrome-Daily-Front-End-news)：一个 chrome 扩展，推送最新前端资讯；
+- [FSWQ-WIKI](https://github.com/FengShangWuQi/FSWQ-WIKI)：枫上雾棋的 Wiki；
+
+## 贡献
+
+- [FreeCodeCamp-Chengdu/IT-Technology-weekly](https://github.com/FreeCodeCamp-Chengdu/IT-Technology-weekly)：FCC 成都社区 - 技术周刊；
 
 ## 联系方式
 
