@@ -531,5 +531,43 @@ Plug 'hotoo/pangu.vim'
 
 [hotoo/pangu.vim](https://github.com/hotoo/pangu.vim)
 
+### TypeScript
+
+```vim
+Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
+```
+
+[leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)
+
+[HerringtonDarkholme/yats.vim](https://github.com/HerringtonDarkholme/yats.vim)
+
+### vimwiki
+
+```vim
+Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+
+map ws :Vimwiki2HTML<CR>
+map wb :VimwikiAll2HTML<CR>
+map <Leader>tt <Plug>VimwikiToggleListItem
+
+let g:vimwiki_list = [{
+	\ 'path': '~/FSWQ-WIKI',
+	\ 'path_html': '~/FSWQ-WIKI/site/',
+	\ 'template_path': '~/FSWQ-WIKI/public/',
+	\ 'template_default': 'index',
+	\ 'template_ext': '.tpl',
+	\ 'nested_syntaxes': {
+		\ 'python': 'python',
+		\ 'ruby': 'ruby',
+		\ 'bash': 'sh',
+		\ 'c++': 'cpp',
+		\ 'javascript': 'javascript',
+		\ }
+	\ }]
+```
+
+[vimwiki/vimwiki](https://github.com/vimwiki/vimwiki)
+
 ## 总结
 最后，呈上 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库可供参考，顾名思义，除了 vim 的配置，还有 tmux 和 zsh 的分享。
