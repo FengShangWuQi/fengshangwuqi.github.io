@@ -255,7 +255,7 @@ $ echo $PS1
 $ export PS1='[\u@\h\w]\$'
 
 # 永久修改
-$ vim /.bashrc
+$ vim ~/.bashrc
 ```
 
 ### Tmux
