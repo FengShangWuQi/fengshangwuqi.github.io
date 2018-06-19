@@ -8,6 +8,5 @@ exports.translation = {
   readMore: 'READ MORE',
   prev: 'PREV',
   next: 'NEXT',
-  NotFound: "OOPS! It looks like you're lost...",
   share: 'share:',
 };

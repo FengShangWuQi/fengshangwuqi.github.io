@@ -139,11 +139,7 @@ class PostTemplate extends Component {
               </div>
             </a>
             <div className="MarkNav-title">目录</div>
-            <MarkNav
-              className="article-menu"
-              source={content}
-              headingTopOffset={0}
-            />
+            <MarkNav className="article-menu" source={content} />
           </div>
 
           <dialog id="pay-modal" onClick={e => this.closeModal(e)}>
