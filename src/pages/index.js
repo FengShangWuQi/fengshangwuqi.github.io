@@ -8,8 +8,6 @@ import { translate } from 'react-i18next';
 import BlogHeader from '../components/BlogHeader';
 import Posts from '../components/Posts';
 
-import './style.css';
-
 class IndexPage extends Component {
   render() {
     const { data, t } = this.props;
