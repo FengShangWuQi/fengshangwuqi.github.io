@@ -7,7 +7,7 @@ import i18n from '../i18n';
 import Footer from '../components/Footer';
 
 import 'normalize.css';
-import 'prismjs/themes/prism.css';
+import 'prismjs/themes/prism-tomorrow.css';
 import 'katex/dist/katex.min.css';
 import './index.css';
 
