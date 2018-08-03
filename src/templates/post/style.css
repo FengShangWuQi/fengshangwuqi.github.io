@@ -105,36 +105,6 @@ iframe {
   color: #909090;
 }
 
-.markdown-navigation {
-  max-height: 600px;
-  border-left: 1px solid #eee;
-  overflow: hidden;
-}
-
-.MarkNav-title {
-  padding: 5px 1.2em 8px;
-  font-size: 16px;
-  font-weight: 600;
-  border-left: 1px solid #eee;
-}
-
-.markdown-navigation .title-anchor {
-  display: flex;
-  margin: 7px 0;
-}
-
-.markdown-navigation .title-anchor.active {
-  border-left: 2px solid #007fff;
-}
-
-.title-anchor:first-child {
-  margin-top: 0;
-}
-
-.title-anchor:last-child {
-  margin-bottom: 0;
-}
-
 .appreciate {
   margin-bottom: 50px;
   text-align: center;

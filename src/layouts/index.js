@@ -8,7 +8,6 @@ import Footer from '../components/Footer';
 
 import 'normalize.css';
 import 'prismjs/themes/prism.css';
-import 'markdown-navbar/dist/navbar.css';
 import 'katex/dist/katex.min.css';
 import './index.css';
 
