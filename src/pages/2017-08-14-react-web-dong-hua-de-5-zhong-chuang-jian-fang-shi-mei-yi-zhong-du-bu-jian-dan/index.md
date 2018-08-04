@@ -30,7 +30,7 @@ date: 2017-08-14T14:46:24+08:00
 
 ## CSS animation
 
-给元素添加 **class** 是最简单，最常见的书写方式，如果你的 app 正在使用 CSS，那么这将是你最愉快的选择。
+给元素添加 **class** 是最简单，最常见的书写方式，如果你的 app 正在使用 **CSS**，那么这将是你最愉快的选择。
 
 赞同者：
 
@@ -39,12 +39,12 @@ date: 2017-08-14T14:46:24+08:00
 
 反对者：
 
-- 这种方式并 **不跨平台**，在 React Native 中就不适用；
+- 这种方式并 **不跨平台**，在 **React Native** 中就不适用；
 - 对于较复杂的动画，这种方式难以控制；
 
-接下来，我们通过一个简单的 demo 来体验一下这种创建方式：当 input focus 的时候，我们增加它的宽度。
+接下来，我们通过一个简单的 demo 来体验一下这种创建方式：当 **input focus** 的时候，我们增加它的宽度。
 
-首先，我们创建两个 input 要用到的 class：
+首先，我们创建两个 **input** 要用到的 **class**：
 
 ```css
 .input {
@@ -63,13 +63,13 @@ date: 2017-08-14T14:46:24+08:00
 }
 ```
 
-一个是它原始的样式，一个是它 focus 后的样式。
+一个是它原始的样式，一个是它 **focus** 后的样式。
 
-下面，我们就开始书写我们的 React 组件。
+下面，我们就开始书写我们的 **React** 组件。
 
 ![animation](./images/css-animation.gif)
 
-```javascript
+```js
 class App extends Component {
   state = {
     focused: false,
@@ -101,28 +101,28 @@ class App extends Component {
 }
 ```
 
-- 我们有一个 focused 的 state，初始值为 false，我们通过更新该值来创建我们的动画；
-- 在 componentDidMount 时，我们添加两个监听器，一个 focus，一个 blur，指定的回调函数都是 focus；
-- focus 方法会获取之前 focused 的值，并负责切换该值；
-- 在 render 中，我们通过 state 来改变 input 的 classNames，从而实现我们的动画；
+- 我们有一个 **focused** 的 `state`，初始值为 **false**，我们通过更新该值来创建我们的动画；
+- 在 `componentDidMount` 时，我们添加两个监听器，一个 **focus**，一个 **blur**，指定的回调函数都是 **focus**；
+- `focus` 方法会获取之前 **focused** 的值，并负责切换该值；
+- 在 `render` 中，我们通过 **state** 来改变 **input** 的 **classNames**，从而实现我们的动画；
 
 ## JS Style
 
-JavaScipt styles 跟 CSS 中的 class 类似。
+**JavaScipt styles** 跟 **CSS** 中的 **class** 类似。
 
 赞同者:
 
-- 跟 CSS 动画一样，且它的表现更为清晰，且可以不必依赖 CSS；
+- 跟 **CSS** 动画一样，且它的表现更为清晰，且可以不必依赖 **CSS**；
 
 反对者：
 
-- 跟 CSS 动画一样，**不跨平台**，且动画一旦复杂，也难以控制；
+- 跟 **CSS** 动画一样，**不跨平台**，且动画一旦复杂，也难以控制；
 
-在下面的 demo 中，我们将创建一个 input，当用户输入时，我们将一个 button 从 disable 转变为 enable。
+在下面的 demo 中，我们将创建一个 **input**，当用户输入时，我们将一个 **button** 从 **disable** 转变为 **enable**。
 
 ![style](./images/js-style.gif)
 
-```javascript
+```js
 class App extends Component {
   state = {
     disabled: true,
@@ -192,19 +192,19 @@ const styles = {
 }
 ```
 
-- 我们有一个 disabled 的 state，初始值为 true；
-- onChange 方法会获取用户的输入，当输入非空时，就切换 disabled 的值；
-- 根据 disabled 的值，确定是否将 buttonEnabled 添加到 button 中；
+- 我们有一个 **disabled** 的 `state`，初始值为 **true**；
+- `onChange` 方法会获取用户的输入，当输入非空时，就切换 **disabled** 的值；
+- 根据 **disabled** 的值，确定是否将 `buttonEnabled` 添加到 **button** 中；
 
 ## React Motion
 
-React Motion 是 [Cheng Lou](https://medium.com/@chenglou) 书写的一个非常不错的开源项目。它的思想是可以对 **Motion** 组件进行简单的样式设置，然后你就可以在回调函数中通过这些值，享受动画带来的乐趣。
+**React Motion** 是 [Cheng Lou](https://medium.com/@chenglou) 书写的一个非常不错的开源项目。它的思想是可以对 **Motion** 组件进行简单的样式设置，然后你就可以在回调函数中通过这些值，享受动画带来的乐趣。
 
-对于绝大多数的动画组件，我们往往不希望对动画属性（宽高、颜色等）的变化时间做硬编码处理，**react-motion** 提供的 **spring** 函数就是用来解决这一需求的，它可以逼真地模仿真实的物理效果，也就是我们常见的各类 **缓动效果**。
+对于绝大多数的动画组件，我们往往不希望对动画属性（宽高、颜色等）的变化时间做硬编码处理，**react-motion** 提供的 `spring` 函数就是用来解决这一需求的，它可以逼真地模仿真实的物理效果，也就是我们常见的各类 **缓动效果**。
 
 下面是一个简单的 demo：
 
-```javascript
+```js
 <Motion style={{ x: spring(this.state.x) }}>
   {
     ({ x }) =>
@@ -222,23 +222,24 @@ React Motion 是 [Cheng Lou](https://medium.com/@chenglou) 书写的一个非常
 - [Draggable List](http://t.cn/R9epe9u)
 
 赞同者：
-- React Motion 可以在 React Web 中使用，也可以在 React Native 中使用，因为它 **跨平台**；
-- 其中的 **spring** 概念最开始对我来说很陌生，然而上手之后，发现它真的很神奇，并且，它有很详细的 API；
+- **React Motion** 可以在 **React Web** 中使用，也可以在 **React Native** 中使用，因为它 **跨平台**；
+- 其中的 **spring** 概念最开始对我来说很陌生，然而上手之后，发现它真的很神奇，并且，它有很详细的 **API**；
 
 反对者：
-- 在某些情况下，他不如纯 CSS / JS 动画；
-- 虽然它有不错的 API，容易上手，但也需要学习成本；
+- 在某些情况下，他不如纯 **CSS / JS** 动画；
+- 虽然它有不错的 **API**，容易上手，但也需要学习成本；
 
-首先使用 yarn 或 npm 安装：
+首先使用 **yarn** 或 **npm** 安装：
+
 ```bash
 $ yarn add react-motion
 ```
 
-在下面的 demo 中，我们将创建一个 dropdown 菜单，当点击按钮时，下拉菜单友好展开。
+在下面的 demo 中，我们将创建一个 **dropdown** 菜单，当点击按钮时，下拉菜单友好展开。
 
 ![motion](./images/react-motion.gif)
 
-```javascript
+```js
 import { Motion, spring } from 'react-motion';
 
 class App extends Component {
@@ -300,35 +301,36 @@ const styles = {
 }
 ```
 
-- 我们从 react-motion 中 import **Motion** 和 **spring**；
-- 我们有一个 height 的 state，初始值为 38，代表 menu 的高度；
-- animate 方法设置 menu 的 height，切换 height 的值；
-- 在 render 中，我们使用 Motion 组件包装整个 p 标签列表，将 state.height 的当前值设为组件的 height，然后在组件的回调函数中使用该值作为整个下拉的高度；
-- 当按钮被点击时，我们通过 this.animate 切换下拉的高度；
+- 我们从 **react-motion** 中 **import** `Motion` 和 `spring`；
+- 我们有一个 **height** 的 `state`，初始值为 **38**，代表 **menu** 的高度；
+- `animate` 方法设置 **menu** 的 **height**，切换 **height** 的值；
+- 在 `render` 中，我们使用 **Motion** 组件包装整个 **p** 标签列表，将 **state.height** 的当前值设为组件的 **height**，然后在组件的回调函数中使用该值作为整个下拉的高度；
+- 当按钮被点击时，我们通过 `this.animate` 切换下拉的高度；
 
 ## Animated
 
-Animated 是基于 React Native 使用的同一个动画库建立起来的。
+**Animated** 是基于 **React Native** 使用的同一个动画库建立起来的。
 
 它背后的思想是创建 **声明式动画**，通过传递配置对象来控制动画。
 
 赞同者：
-- **跨平台**，它在 React Native 中已经非常稳定，如果你在 React Native 中使用过，那么你将不用再重复学习；
-- 其中的 **interpolate** 是一个神奇的插值函数，我们将在下面看到；
+- **跨平台**，它在 **React Native** 中已经非常稳定，如果你在 **React Native** 中使用过，那么你将不用再重复学习；
+- 其中的 `interpolate` 是一个神奇的插值函数，我们将在下面看到；
 
 反对者：
-- 目前不是 100% 的稳定，在老的浏览器中的，存在前缀和性能的问题；
+- 目前不是 **100%** 的稳定，在老的浏览器中的，存在前缀和性能的问题；
 
-首先使用 yarn 或 npm 安装：
-```
+首先使用 **yarn** 或 **npm** 安装：
+
+```bash
 $ yarn add animated
 ```
 
-在下面的 demo 中，我们将模拟在提交表单成功后显示的动画 message。
+在下面的 demo 中，我们将模拟在提交表单成功后显示的动画 **message**。
 
 ![animated](./images/Animated.gif)
 
-```javascript
+```js
 import Animated from 'animated/lib/targets/react-dom';
 import Easing from 'animated/lib/Easing';
 
@@ -395,29 +397,29 @@ const styles = {
 }
 ```
 
-- 从 animated 中 import **Animated** 和 **Easing**；
-- 用 **new Animated.Value(0)** 创建一个值为 0 的类属性 - animatedValue；
-- 创建 animate 方法，处理所有的动画，首先通过 **this.animatedValue.setValue(0)** 初始化动画值，实现的效果就是每次重新执行该动画，然后调用 **Animated.timing**，**animatedValue** 作为第一个参数传递，配置对象作为第二个参数，一个设置最终动画值，一个设置持续时间，一个设置 **缓动效果**。
-- 在 render 中，我们用 **interpolate** 方法创建 marginLeft 对象，包含 **inputRange** 和 **outputRange** 数组，我们使用此对象作为 UI 中 message 的 style 属性；
-- 我们使用 **Animated.div** 替代默认的 div；
-- 我们将 animatedValue 和 marginLeft 作为 Animated.div 的 style 属性；
+- 从 **animated** 中 **import** `Animated` 和 `Easing`；
+- 用 `new Animated.Value(0)` 创建一个值为 **0** 的类属性 - **animatedValue**；
+- 创建 `animate` 方法，处理所有的动画，首先通过 `this.animatedValue.setValue(0)` 初始化动画值，实现的效果就是每次重新执行该动画，然后调用 `Animated.timing`，**animatedValue** 作为第一个参数传递，配置对象作为第二个参数，一个设置最终动画值，一个设置持续时间，一个设置 **缓动效果**。
+- 在 `render` 中，我们用 `interpolate` 方法创建 **marginLeft** 对象，包含 **inputRange** 和 **outputRange** 数组，我们使用此对象作为 **UI** 中 **message** 的 **style** 属性；
+- 我们使用 `Animated.div` 替代默认的 **div**；
+- 我们将 **animatedValue** 和 **marginLeft** 作为 `Animated.div` 的 **style** 属性；
 
 ## Velocity React
 
-Velocity React 是基于已经存在的 **Velocity** 建立起来的。
+**Velocity React** 是基于已经存在的 **Velocity** 建立起来的。
 
 赞同者：
 
-- 上手容易，API 简单明了，相对其他库更易于掌握；
+- 上手容易，**API** 简单明了，相对其他库更易于掌握；
 
 反对者：
 
-- 有些不得不克服的问题，比如 componentDidMount 后动画并没有真正地起作用等；
-- 不跨平台；
+- 有些不得不克服的问题，比如 **componentDidMount** 后动画并没有真正地起作用等；
+- **不跨平台**；
 
 下面是一个简单的 demo：
 
-```javascript
+```js
 <VelocityComponent
   animation={{ opacity: this.state.showSubComponent ? 1 : 0 }}      
   duration={500}
@@ -426,7 +428,7 @@ Velocity React 是基于已经存在的 **Velocity** 建立起来的。
 </VelocityComponent>
 ```
 
-首先还是先用 yarn 或 npm 安装：
+首先还是先用 **yarn** 或 **npm** 安装：
 
 ```bash
 $ yarn add velocity-react
@@ -436,7 +438,7 @@ $ yarn add velocity-react
 
 ![Velocity](./images/Velocity-React.gif)
 
-```javascript
+```js
 import { VelocityComponent } from 'velocity-react';
 
 const VelocityLetter = ({ letter }) => (
@@ -503,12 +505,12 @@ const styles = {
   }
 }
 ```
-- 从 velocity-react 中 import **VelocityComponent**；
-- 我们要创建一个可重复使用的组件来满足每个 letter 的动画；
-- 在这个组件中，我们将 animation 的 opacity 设为 1，marginTop 设为 0，这些值代表着传入子组件的重写值，即当组件被创建时，组件的 opacity 会由初始的 0 变为 1，marginTop 会由初始的 100 变为 0，我们还设置了 500 ms 的持续时间，最后值得一提的是 **runOnMount** 属性，它的意思是在组件挂载或创建完后执行该动画；
-- 其中的 onChange 方法会获取用户的每次输入，并创建一个由 **VelocityLetter** 组成的新数组；
-- 在 render 中，我们就使用该数组在 UI 中渲染 letters；
+- 从 **velocity-react** 中 **import** `VelocityComponent`；
+- 我们要创建一个可重复使用的组件来满足每个 **letter** 的动画；
+- 在这个组件中，我们将 **animation** 的 `opacity` 设为 **1**，`marginTop` 设为 **0**，这些值代表着传入子组件的重写值，即当组件被创建时，组件的 `opacity` 会由初始的 **0** 变为 **1**，`marginTop` 会由初始的 **100** 变为 **0**，我们还设置了 **500** ms 的持续时间，最后值得一提的是 `runOnMount` 属性，它的意思是在组件挂载或创建完后执行该动画；
+- 其中的 `onChange` 方法会获取用户的每次输入，并创建一个由 **VelocityLetter** 组成的新数组；
+- 在 `render` 中，我们就使用该数组在 **UI** 中渲染 **letters**；
 
 ## 总结
 
-总的来说，基本的动画，我会选择 JS style，复杂的动画，我更偏向 React Motion，而对于 React Native，我还是坚持使用 Animated，一旦 Animated 成熟，在 Web 中可能也会投入使用，目前，我很享受 React Motion。
+总的来说，基本的动画，我会选择 **JS style**，复杂的动画，我更偏向 **React Motion**，而对于 **React Native**，我还是坚持使用 **Animated**，一旦 **Animated** 成熟，在 **Web** 中可能也会投入使用，目前，我很享受 **React Motion**。
