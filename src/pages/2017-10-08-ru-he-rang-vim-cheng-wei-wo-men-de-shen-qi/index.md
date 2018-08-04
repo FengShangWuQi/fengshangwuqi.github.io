@@ -5,7 +5,7 @@ tag: Vim,Tmux,Zsh,code editor
 date: 2017-10-08T17:41:39+08:00
 ---
 
-> **Vim** 是一个上古神器，刚刚接触的同学可能很难驾驭，本篇文章主要带领大家快速入门，并持续分享当前流行的一些 **vim-plugin**，有兴趣的同学还可以参考 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库继续研究一下 **Tmux** 和 **Zsh**。
+> **Vim** 是一个上古神器，刚刚接触的同学可能很难驾驭，本篇文章主要带领大家快速入门，并持续分享当前流行的一些 **vim-plugin**，有兴趣的同学还可以参考 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库继续研究 **Tmux** 和 **Zsh**。
 
 ## 安装
 ```bash
@@ -113,7 +113,7 @@ $ vimtutor  // vim 教程
 
 ## 基本配置
 
-**.vimrc** 是 Vim 的配置文件，需要我们自己创建
+**.vimrc** 是 **Vim** 的配置文件，需要我们自己创建
 
 ```bash
 cd
@@ -177,6 +177,7 @@ set showmode
 ### 代码折叠
 
 ```vim
+# 启动 vim 时关闭折叠代码
 set nofoldenable
 ```
 
@@ -260,7 +261,6 @@ let g:NERDTreeIndicatorMapCustom = {
 ```vim
 Plug 'Valloric/YouCompleteMe'
 Plug 'Raimondi/delimitMate'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 ```
 
 [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
@@ -300,16 +300,12 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 ### 文件，代码搜索，打开最近打开的文件
 
 ```vim
-Plug 'rking/ag.vim'
+Plug 'mileszs/ack.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'vim-scripts/mru.vim'
 
-let g:ag_highlight=1
-let g:ag_working_path_mode="r"
+let g:ackprg = "ag --vimgrep"
 
-# :Ag! content
-
-set wildignore+=*.zip,*.exe
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_custom_ignore = {
@@ -319,20 +315,13 @@ let g:ctrlp_custom_ignore = {
 
 # <c-r>: 切换匹配模式
 # <c-t> or <c-v>, <c-x>：在新的 tab 中打开
-
-let MRU_Exclude_Files = '^/tmp/.*\|^/var/tmp/.*'
-let MRU_Window_Height = 15
-
-# :MRU
 ```
+
+[mileszs/ack.vim](https://github.com/mileszs/ack.vim)
 
 [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim)
 
 [ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
-
-[rking/ag.vim](https://github.com/rking/ag.vim)
-
-[vim-scripts/mru.vim](https://github.com/vim-scripts/mru.vim)
 
 ### 加强版状态栏
 
@@ -400,7 +389,6 @@ Plug 'tpope/vim-fugitive'
 ```vim
 Plug 'suan/vim-instant-markdown'
 Plug 'junegunn/goyo.vim'
-Plug 'amix/vim-zenroom2'
 
 let g:instant_markdown_slow = 1
 let g:instant_markdown_autostart = 0
@@ -412,8 +400,6 @@ let g:instant_markdown_autostart = 0
 [suan/vim-instant-markdown](https://github.com/suan/vim-instant-markdown)
 
 [junegunn/goyo.vim](https://github.com/junegunn/goyo.vim)
-
-[amix/vim-zenroom2](https://github.com/amix/vim-zenroom2)
 
 ### Emmet
 
@@ -429,14 +415,6 @@ let g:user_emmet_settings = {
 ```
 
 [mattn/emmet-vim](https://github.com/mattn/emmet-vim)
-
-### html 5
-
-```vim
-Plug 'othree/html5.vim'
-```
-
-[othree/html5.vim](https://github.com/othree/html5.vim)
 
 ### css 3
 
@@ -552,9 +530,9 @@ map wb :VimwikiAll2HTML<CR>
 map <Leader>tt <Plug>VimwikiToggleListItem
 
 let g:vimwiki_list = [{
-	\ 'path': '~/FSWQ-WIKI',
-	\ 'path_html': '~/FSWQ-WIKI/site/',
-	\ 'template_path': '~/FSWQ-WIKI/public/',
+	\ 'path': '~/Documents/FSWQ-WIKI',
+	\ 'path_html': '~/Documents/FSWQ-WIKI/site/',
+	\ 'template_path': '~/Documents/FSWQ-WIKI/public/',
 	\ 'template_default': 'index',
 	\ 'template_ext': '.tpl',
 	\ 'nested_syntaxes': {
@@ -570,4 +548,4 @@ let g:vimwiki_list = [{
 [vimwiki/vimwiki](https://github.com/vimwiki/vimwiki)
 
 ## 总结
-最后，呈上 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库可供参考，顾名思义，除了 vim 的配置，还有 tmux 和 zsh 的分享。
+最后，呈上 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库可供参考，顾名思义，除了 **vim**，还有 **tmux** 和 **zsh** 的相关内容。
