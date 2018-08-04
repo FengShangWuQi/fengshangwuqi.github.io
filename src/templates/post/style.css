@@ -2,6 +2,10 @@ iframe {
   margin-bottom: -32px;
 }
 
+:not(pre) > code[class*="language-"] {
+  margin-right: 0.2rem;
+}
+
 .page-md a,
 .page-md a:visited {
   color: #237bd9;

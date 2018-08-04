@@ -114,7 +114,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 ```
 
-其中，**sendResponse()** 即背景页的回应，并且，某一次事件只有第一次调用 **sendResponse()** 有效，所有其他回应将被忽略，**return true** 是用于处理我们的异步请求，如果删除，异步请求仍能正常发送，但返回给 **popup** 的数据将不再是请求得到的数据。
+其中，`sendResponse()` 即背景页的回应，并且，某一次事件只有第一次调用 `sendResponse()` 有效，所有其他回应将被忽略，`return true` 是用于处理我们的异步请求，如果删除，异步请求仍能正常发送，但返回给 **popup** 的数据将不再是请求得到的数据。
 
 ## 使用 REST API 处理数据
 

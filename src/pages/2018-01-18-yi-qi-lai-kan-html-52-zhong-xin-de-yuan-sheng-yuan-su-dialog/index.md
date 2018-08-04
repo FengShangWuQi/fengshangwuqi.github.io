@@ -29,7 +29,7 @@ date: 2018-01-18T17:51:32+08:00
 </dialog>
 ```
 
-其中，**open** 属性表示此时 dialog 是可见的，如果没有 open，dialog 将会隐藏，你可以使用 JavaScipt 将它显现出来，此时，dialog 渲染如下：
+其中，**open** 属性表示此时 **dialog** 是可见的，如果没有 **open**，**dialog** 将会隐藏，你可以使用 **JavaScipt** 将它显现出来，此时，**dialog** 渲染如下：
 
 ![dialog](./images/dialog.png)
 
@@ -37,9 +37,9 @@ date: 2018-01-18T17:51:32+08:00
 
 ## 基本操作
 
-JavaScipt 有几个方法和属性可以很方便地处理 dialog 元素，使用最多的可能还是 **showModal()** 和 **close()**：
+**JavaScipt** 有几个方法和属性可以很方便地处理 **dialog** 元素，使用最多的可能还是 `showModal()` 和 `close()`：
 
- ```javascript
+ ```js
 const modal = document.querySelector('dialog');
 
 // makes modal appear (adds `open` attribute)
@@ -49,32 +49,33 @@ modal.showModal();
 modal.close();
  ```
 
-当你使用 showModal() 来打开 dialog 时，将会在 dialog 周围加一层阴影，阻止用户与非 diglog 元素的交互，默认情况下，阴影是完全透明的，你可以使用 CSS 来修改它。
+当你使用 `showModal()` 来打开 **dialog** 时，将会在 **dialog** 周围加一层阴影，阻止用户与非 **diglog** 元素的交互，默认情况下，阴影是完全透明的，你可以使用 **CSS** 来修改它。
 
-按 **Esc** 可以关闭 dialog，你也可以提供一个按钮来触发 **close()**。
+按 **Esc** 可以关闭 **dialog**，你也可以提供一个按钮来触发 `close()`。
 
-还有一个方法是 **show()**，它也可以让 dialog 显现，但与 showModal() 不同的是它没有阴影，用户可以与非 dialog 元素进行交互。
+还有一个方法是 `show()`，它也可以让 **dialog** 显现，但与 `showModal()` 不同的是它没有阴影，用户可以与非 **dialog** 元素进行交互。
 
 ## 浏览器支持和 Polyfill
 
-目前，只有 **chrome** 支持 dialog，**Firefox** 需要在 **about:config** 里允许 **dom.dialog_element.enabled** 才能正常使用，我猜想，Firefox 在不久的将来就会支持。
+目前，只有 **chrome** 支持 **dialog**，**Firefox** 需要在 **about:config** 里允许 **dom.dialog_element.enabled** 才能正常使用，我猜想，**Firefox** 在不久的将来就会支持。
 
 ![can i use](./images/can-i-use.png)
 
 上图为 [caniuse.com](http://caniuse.com/#search=dialog) 关于 dialog 特性主流浏览器的兼容情况。
 
-幸运的是，我们可以使用 [dialog-polyfill](https://github.com/GoogleChrome/dialog-polyfill) 来缓解这种尴尬，它既提供了 JavaScript 的行为，也包含了默认的样式，我们可以使用 npm 来安装它，也可以使用 script 标签来引用它。目前，它已支持各主流浏览器，包括 IE 9 及其以上版本。
+幸运的是，我们可以使用 [dialog-polyfill](https://github.com/GoogleChrome/dialog-polyfill) 来缓解这种尴尬，它既提供了 **JavaScript** 的行为，也包含了默认的样式，我们可以使用 **npm** 来安装它，也可以使用 **script** 标签来引用它。目前，它已支持各主流浏览器，包括 **IE 9** 及其以上版本。
 
-只是，在使用它时，每个 dialog 需要使用下面语句进行初始化：
+只是，在使用它时，每个 **dialog** 需要使用下面语句进行初始化：
 
-```javascript
+```js
 dialogPolyfill.registerDialog(dialog);
 ```
 
 并且，它并不会取代浏览器原生的行为。
 
 ## 样式
-打开和关闭模态框是最基本的，但这是肯定不够的，dialog 最开始时样式是不怎么好看的，因此，我们需要自定义它的样式，此外，我们可以通过设置伪元素 **::backdrop** 来优化 dialog 显现时背影的样式。
+
+打开和关闭模态框是最基本的，但这是肯定不够的，**dialog** 最开始时样式是不怎么好看的，因此，我们需要自定义它的样式，此外，我们可以通过设置伪元素 `::backdrop` 来优化 **dialog** 显现时背影的样式。
 
 ```css
 dialog {
@@ -91,7 +92,7 @@ dialog::backdrop {
 }
 ```
 
-为了兼容老的浏览器，使用 polyfill 时，::backdrop 是不起作用的，但 polyfill 会在 dialog 后面添加一个 **.backdrop** 元素，我们可以像下面这样定位它：
+为了兼容老的浏览器，使用 **polyfill** 时，`::backdrop` 是不起作用的，但 **polyfill** 会在 **dialog** 后面添加一个 `.backdrop` 元素，我们可以像下面这样定位它：
 
 ```css
 dialog + .backdrop {
@@ -99,7 +100,7 @@ dialog + .backdrop {
 }
 ```
 
-接下来，是时候向 dialog 里添加更多的内容，一般包括 header， body 和 footer。
+接下来，是时候向 **dialog** 里添加更多的内容，一般包括 **header**， **body** 和 **footer**。
 
 ```html
 <dialog id="sweet-modal">
@@ -113,22 +114,23 @@ dialog + .backdrop {
 </dialog>
 ```
 
-最后，在添加一些 CSS，你就能得到你想要的。
+最后，在添加一些 **CSS**，你就能得到你想要的。
 
 ## 进阶操作
-通常，我们期望能从 dialog 中获取一些用户的信息。关闭 dialog 时，我们可以给 close() 传递一个 string，然后通过 dialog 元素的 **returnValue** 属性来获取。
 
-```javascript
+通常，我们期望能从 **dialog** 中获取一些用户的信息。关闭 **dialog** 时，我们可以给 `close()` 传递一个 **string**，然后通过 **dialog** 元素的 `returnValue` 属性来获取。
+
+```js
 modal.close('Accepted');
 
 console.log(modal.returnValue); // logs `Accepted`
 ```
 
-当然，还存在额外的事件我们可以监听，其中，最常用的可能是 close（关闭 dialog 时触发），还有 cancel （用户按 Esc 关闭 dialog 时触发） 。
+当然，还存在额外的事件我们可以监听，其中，最常用的可能是 `close`（关闭 **dialog** 时触发），还有 `cancel` （用户按 **Esc** 关闭 **dialog** 时触发）。
 
-此外，我们可能还期望点击 dialog 旁边的阴影来关闭，当然，这也是有解决办法的，点击阴影会触发 dialog 的点击事件，如果 dialog 的子元素占满了整个 dialog，那么我们可以通过监听 dialog 的点击，当 target 为 modal 时来关闭。
+此外，我们可能还期望点击 **dialog** 旁边的阴影来关闭，当然，这也是有解决办法的，点击阴影会触发 **dialog** 的点击事件，如果 **dialog** 的子元素占满了整个 **dialog**，那么我们可以通过监听 **dialog** 的点击，当 **target** 为 **modal** 时来关闭。
 
-```javascript
+```js
 modal.addEventListener('click', (event) => {
 	if (event.target === modal) {
 		modal.close('cancelled');
@@ -139,5 +141,6 @@ modal.addEventListener('click', (event) => {
 当然，这不是完美的，但它确实有效，如果你有更好的方式，欢迎在评论中交流。
 
 ## 总结
+
 说了这么多，不如自己实际演练一番，作者也做了一个 [demo](https://codepen.io/FengShangWuQi/pen/qpMgZB)，欢迎参考。
 
