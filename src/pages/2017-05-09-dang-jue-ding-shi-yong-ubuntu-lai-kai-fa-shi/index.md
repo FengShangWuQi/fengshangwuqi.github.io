@@ -97,13 +97,13 @@ $ kill 对应的 pid    // 停止使用这个端口的程序
 
 对所有用户生效：
 
-- /etc/profile：为系统的每个用户设置环境信息
-- /etc/bashrc：每次新打开一个终端 shell，该文件被读取
+- **/etc/profile**：为系统的每个用户设置环境信息
+- **/etc/bashrc**：每次新打开一个终端 shell，该文件被读取
 
 对单个用户生效：
 
-- /.bash_profile：当用户登录时该文件仅执行一次
-- /.bashrc：当登录以及每次打开新的 shell 时，该文件被读取
+- **/.bash_profile**：当用户登录时该文件仅执行一次
+- **/.bashrc**：当登录以及每次打开新的 shell 时，该文件被读取
 
 使用 **source /etc/environment** 可以使变量设置在当前窗口立即生效，需 **注销/重启** 之后，才能对每个新终端窗口都生效。
 
@@ -153,7 +153,7 @@ $ unzip XX.zip
 
 ### 编辑图片
 
-**gimp** 类似 PS，功能十分强大，若只是裁剪图片，可以使用自带的截屏软件 **gnome-screenshot**。
+**gimp** 类似 **PS**，功能十分强大，若只是裁剪图片，可以使用自带的截屏软件 **gnome-screenshot**。
 
 ```bash
 $  sudo apt-get install gimp
@@ -177,7 +177,7 @@ Ubuntu Tweak：
 
 ### 使用 curl
 
-一个利用 URL 语法在命令行下工作的 **文件传输工具**。
+一个利用 **URL** 语法在命令行下工作的 **文件传输工具**。
 
 ```bash
 # 执行下载
@@ -213,7 +213,7 @@ $ sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com PGP签名
 
 ### 录制 GIF
 
-byzanz 能制作文件小，清晰的 GIF 动态效果图，不足就是，目前只能通过输入命令方式来录制
+**byzanz** 能制作文件小，清晰的 **GIF** 动态效果图，不足就是，目前只能通过输入命令方式来录制。
 
 ```bash
 # 安装
@@ -227,7 +227,7 @@ $ byzanz-record -x 0 -y 24 -w 1920 -h 1056 -c -d 10 --delay=3 -v app.gif
 ```
 
 ### 硬链接与软链接
-为解决文件的共享使用，Linux 系统引入了两种链接：**硬链接**(hard link) 与 **软链接**（又称 **符号链接**，即 soft link 或 symbolic link）
+为解决文件的共享使用，**Linux** 系统引入了两种链接：**硬链接**(hard link) 与 **软链接**（又称 **符号链接**，即 **soft link** 或 **symbolic link**）。
 
 ```bash
 $ ln 源文件 目标文件   // 硬链接
@@ -236,7 +236,7 @@ $ ln -s 源文件或目录 目标文件或目录  // 软链接
 
 ### 修改终端提示符
 
-**PS1** 是 Linux 终端用户的一个环境变量，用来定义命令行提示符的参数。
+**PS1** 是 **Linux** 终端用户的一个环境变量，用来定义命令行提示符的参数。
 
 ![PS1](./images/PS1.png)
 
@@ -259,7 +259,8 @@ $ vim ~/.bashrc
 ```
 
 ### Tmux
-**Tmux** 是 Linux 的终端利器，不仅可以拆分窗口，还可以在在 **SSH** 环境下，避免网络不稳定，导致工作现场的丢失，一个窗口，帮你搞定所有。
+
+**Tmux** 是 **Linux** 的终端利器，不仅可以拆分窗口，还可以在在 **SSH** 环境下，避免网络不稳定，导致工作现场的丢失，一个窗口，帮你搞定所有。
 
 ![tmux](./images/tmux.png)
 
