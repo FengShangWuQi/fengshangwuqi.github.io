@@ -16,9 +16,9 @@ $ git config --global user.name "用户名"
 $ git config --global user.email "邮箱"
 ```
 
-其中，**--global** 是全局设置，如果想对特定项目使用不同配置，可取消该参数。
+其中，`--global` 是全局设置，如果想对特定项目使用不同配置，可取消该参数。
 
-**git config** 还可以设置其他选项，因为平时不怎么用，所以详细可以参考  git config --help。
+**git config** 还可以设置其他选项，因为平时不怎么用，所以详细可以参考 **git config --help**。
 
 查看配置：
 
@@ -37,7 +37,7 @@ $ ssh-keygen -t rsa -C "邮箱"
 
 然后会在用户主目录下，发现 **.ssh** 目录，其中包含 **id_rsa** 和 **id_rsa.pub** 两个文件。
 
-**id_rsa.pub** 是 SSH Key 公钥，将其添加到 github 的 SSH keys 中，就可以将本地仓库推送到远程仓库了。
+**id_rsa.pub** 是 **SSH Key** 公钥，将其添加到 **GitHub** 的 **SSH keys** 中，就可以将本地仓库推送到远程仓库了。
 
 ### 创建本地仓库，进行基本源代码管理
 
@@ -90,7 +90,7 @@ $ git tag -a 版本号 -m "版本说明"
 
 ### 忽略 SSL 证书错误
 
-通过 **HTTPS** 访问 Git 远程仓库时，如果服务器的 **SSL 证书** 未经过第三方机构签署，那么 Git 就会阻止这一操作。
+通过 **HTTPS** 访问 **git** 远程仓库时，如果服务器的 **SSL 证书** 未经过第三方机构签署，那么 **Git** 就会阻止这一操作。
 
 ```bash
 $ env GIT_SSL_NO_VERIFY=true git clone 仓库地址
@@ -123,7 +123,7 @@ $ git stash drop 储藏名
 
 ### 撤消操作
 
-对于 **工作区** 和 **暂存区** 的修改，我们不能保证上次操作是完美的，git 就是这么强大，提供了很多反悔的操作。
+对于 **工作区** 和 **暂存区** 的修改，我们不能保证上次操作是完美的，**git** 就是这么强大，提供了很多反悔的操作。
 
 ```bash
 # 丢弃暂存区的文件，放回工作区
@@ -140,6 +140,7 @@ $ git commit --amend [-m "本次提交说明"]
 ```
 
 ### 版本回退
+
 ```bash
 # 回退到之前的某次提交
 $ git reset --hard commit_id
@@ -156,7 +157,7 @@ $ git revert commit_id
 
 ### 分支
 
-Git 有很多优点，其中方便的分之就是很显著的一条，创建仓库的时候，**master** 是默认的分支，一般，我们会创建其他的分支在上面进行开发，完后再将它们合并到主分支上来。
+**git** 有很多优点，其中方便的分之就是很显著的一条，创建仓库的时候，**master** 是默认的分支，一般，我们会创建其他的分支在上面进行开发，完后再将它们合并到主分支上来。
 
 ```bash
 # 查看所有分支
@@ -187,7 +188,7 @@ $ git branch -m dev develop
 
 ### 标签
 
-软件要发布一个新的版本的时候，我们通常给它打个 tag。
+软件要发布一个新的版本的时候，我们通常给它打个 **tag**。
 
 ```bash
 # 打标签
@@ -206,6 +207,7 @@ $ git push origin :refs/tags/标签名
 ```
 
 ### 提交
+
 ```bash
 # 花式查看提交
 $ git log --pretty=oneline  // 只显示一行
@@ -229,7 +231,7 @@ git commit -m "a no chnage commit" --allow-empty
 - 标记新的工作或一个新功能的开始；
 - 记录对项目的跟代码无关的改动；
 - 跟使用你仓库的其他人交流；
-- 作为仓库的第一次提交，因为第一次提交后不能被 rebase；
+- 作为仓库的第一次提交，因为第一次提交后不能被 **rebase**；
 
 ### git pull 与 git pull --rebase 的区别
 
@@ -242,18 +244,18 @@ $ git pull --rebase = git fetch + git rebase
 
 **提交历史不同**：
 
-- merge 会生成一个新的 commit 节点，提交历史忠实地记录了实际发生过什么；
-- rebase 不会产生额外的 commit 节点，提交历史反映了项目过程中发生了什么；
+- **merge**：生成一个新的 **commit** 节点，提交历史忠实地记录了实际发生过什么；
+- **rebase**：不会产生额外的 **commit** 节点，把分叉的提交历史“整理”成一条直线，看上去更直观，提交历史反映了项目过程中发生了什么；
 
 **冲突处理策略不同**：
 
-- merge 遇见冲突后会直接停止，等待手动解决冲突并重新提交后，才能再次 merge；
-- rebase 遇见冲突后会暂停当前操作，开发者可以选择手动解决冲突，然后 git rebase **--continue** 继续，或 **--skip** 跳过，或 **--abort** 停止；
+- **merge**：遇见冲突后会直接停止，等待手动解决冲突并重新提交后，才能再次 **merge**；
+- **rebase**：遇见冲突后会暂停当前操作，开发者可以选择手动解决冲突，然后 **git rebase** `--continue` 继续，或 `--skip` 跳过，或 `--abort` 停止；
 
-推荐 git merge 结合 **--no-ff** 一起使用
+推荐 **git merge** 结合 **--no-ff** 一起使用
 
-- git merge 默认是 **fast forward**（快速合并），适用于分支 B 从分支 A 从 checkout 出来后，分支 A 没有 commit
-- 如果分支 B 被 checkout 出来后，分支 A 也有修改，那么就没法快速前进合并，会额外建立一个 merge commit，对分支 A 和分支 B 做一个合并操作，即 --no-ff，它的好处是保持了分支的结构
+- **git merge** 默认是 **fast forward**（快速合并），适用于分支 **B** 从分支 **A** 从 **checkout** 出来后，分支 **A** 没有 **commit**；
+- 如果分支 **B** 被 **checkout** 出来后，分支 **A** 也有修改，那么就没法快速前进合并，会额外建立一个 **merge commit**，对分支 **A** 和分支 **B** 做一个合并操作，即 **--no-ff**，它的好处是保持了分支的结构；
 
 ## 其他
 
@@ -303,9 +305,9 @@ default.yml
 
 ### Commit message 指南
 
-好的 Commit message 可以提供更多的历史信息，方便快速浏览和查找，还可以直接生成 **Change log**，一般至少包含 **type** 和 **subject**，type 是 commit 的类别，subject 是 commit 的简短描述。
+好的 **Commit message** 可以提供更多的历史信息，方便快速浏览和查找，还可以直接生成 **Change log**，一般至少包含 **type** 和 **subject**，**type** 是 **commit** 的类别，**subject** 是 **commit** 的简短描述。
 
-**type**：
+**type**
 
 - **feat**：添加新功能
 - **fix**：修补缺陷
@@ -321,23 +323,23 @@ default.yml
 
 [使用 Commit 信息关闭 Issue](https://help.github.com/articles/closing-issues-using-keywords/)
 
-如果某个提交修复了一个 Issue，当提交到某个分支时，提交信息里可以使用 **fix/fixes/fixed**, **close/closes/closed** 或者 **resolve/resolves/resolved** 等关键词，后面再跟上 **Issue** 号，这样就会关闭这个 Issue。
+如果某个提交修复了一个 **Issue**，当提交到某个分支时，提交信息里可以使用 **fix/fixes/fixed**, **close/closes/closed** 或者 **resolve/resolves/resolved** 等关键词，后面再跟上 **Issue** 号，这样就会关闭这个 **Issue**。
 
 ```bash
 $ git commit -m "fix: ..., fix #1, #2"
 ```
 
-这将会关闭 Issue #1 和 #2，并且在 Issue 讨论列表里关联引用这次提交。
+这将会关闭 **Issue #1** 和 **#2**，并且在 **Issue** 讨论列表里关联引用这次提交。
 
-如果想链接其他仓库的 Issue，则使用 **{user}/{repo}#ISSUE_NUMBER**。
+如果想链接其他仓库的 **Issue**，则使用 {user}/{repo}#ISSUE_NUMBER。
 
 ### 快速添加许可证文件
 
-在创建一个仓库时，Github 会为你提供一个预置的软件许可证列表。
+在创建一个仓库时，**Github** 会为你提供一个预置的软件许可证列表。
 
 ![add.png](./images/add.png)
 
-如果此时没有选择，后来可以通过 web 界面 **create new file**，输入 **LICENSE**，点击右侧的 **choose a license template** 来添加。
+如果此时没有选择，后来可以通过 **web** 界面 **create new file**，输入 **LICENSE**，点击右侧的 **choose a license template** 来添加。
 
 ![license.png](./images/license.png)
 
@@ -376,11 +378,11 @@ Location: https://github.com/...
 
 **Gist** 可以非常方便地得到便于嵌入到其他网站的 [HTML 代码](https://gist.github.com/FengShangWuQi/f8a3add492f55fca8bb07987438f6615.pibb)。
 
-而且，**Gists** 可以像任何标准仓库一样被克隆，你可以像 Github 仓库一样去修改和更新 Gists，只不过，Gists 不支持目录，所有文件都添加在仓库的根目录下。
+而且，**Gists** 可以像任何标准仓库一样被克隆，你可以像 **Github** 仓库一样去修改和更新 **Gists**，只不过，**Gists** 不支持目录，所有文件都添加在仓库的根目录下。
 
 ### 使用快捷键
 
-github 仓库页面提供了一些 **快捷键** 方便大家快速导航，按 **?** 可以查看当前页面支持的快捷键列表。
+**GitHub** 仓库页面提供了一些 **快捷键** 方便大家快速导航，按 **?** 可以查看当前页面支持的快捷键列表。
 
 ![keyboard](./images/keyboard.png)
 
