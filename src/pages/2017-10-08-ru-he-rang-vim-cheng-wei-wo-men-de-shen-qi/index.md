@@ -435,7 +435,7 @@ augroup END
 
 [ap/vim-css-color](https://github.com/ap/vim-css-color)
 
-### JavaScipt
+### JavaScript
 
 ```vim
 Plug 'pangloss/vim-javascript'

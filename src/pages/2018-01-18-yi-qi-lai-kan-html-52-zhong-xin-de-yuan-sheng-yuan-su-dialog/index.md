@@ -29,7 +29,7 @@ date: 2018-01-18T17:51:32+08:00
 </dialog>
 ```
 
-其中，**open** 属性表示此时 **dialog** 是可见的，如果没有 **open**，**dialog** 将会隐藏，你可以使用 **JavaScipt** 将它显现出来，此时，**dialog** 渲染如下：
+其中，**open** 属性表示此时 **dialog** 是可见的，如果没有 **open**，**dialog** 将会隐藏，你可以使用 **JavaScript** 将它显现出来，此时，**dialog** 渲染如下：
 
 ![dialog](./images/dialog.png)
 
@@ -37,7 +37,7 @@ date: 2018-01-18T17:51:32+08:00
 
 ## 基本操作
 
-**JavaScipt** 有几个方法和属性可以很方便地处理 **dialog** 元素，使用最多的可能还是 `showModal()` 和 `close()`：
+**JavaScript** 有几个方法和属性可以很方便地处理 **dialog** 元素，使用最多的可能还是 `showModal()` 和 `close()`：
 
  ```js
 const modal = document.querySelector('dialog');

@@ -108,7 +108,7 @@ class App extends Component {
 
 ## JS Style
 
-**JavaScipt styles** 跟 **CSS** 中的 **class** 类似。
+**JavaScript styles** 跟 **CSS** 中的 **class** 类似。
 
 赞同者:
 
