@@ -38,7 +38,7 @@ class Header extends Component {
 			<div className="header">
 				<div style={this.props.style} className="header-bg" />
 				<a
-					href="https://github.com/FengShangWuQi/fswq-blog"
+					href="https://github.com/FengShangWuQi/fengshangwuqi.github.io"
 					target="_blank"
 					rel="noopener noreferrer">
 					<img

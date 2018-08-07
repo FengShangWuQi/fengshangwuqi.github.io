@@ -7,4 +7,6 @@ public
 .DS_Store
 .agignore
 
+*.log
+
 yarn.lock
