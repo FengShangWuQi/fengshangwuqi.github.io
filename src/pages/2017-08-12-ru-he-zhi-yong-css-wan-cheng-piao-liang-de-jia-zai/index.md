@@ -93,26 +93,26 @@ date: 2017-08-12T19:34:02+08:00
 
 ```less
 .logo {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border: 4px solid black;
-  box-sizing: border-box;
-  background-color: white;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: 4px solid black;
+	box-sizing: border-box;
+	background-color: white;
 
-  & > div {
-    position: absolute;
-  }
+	& > div {
+		position: absolute;
+	}
 
-  .red {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 27%;
-    border-right: 4px solid black;
-    background-color: #EA5664;
-  }
-  /* Similar code for div.orange and div.white */
+	.red {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 27%;
+		border-right: 4px solid black;
+		background-color: #ea5664;
+	}
+	/* Similar code for div.orange and div.white */
 }
 ```
 
@@ -134,35 +134,35 @@ logo 的效果图如下：
 
 ```less
 .logo {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  box-sizing: border-box;
-  background-color: white;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	background-color: white;
 
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border: 4px solid transparent;
-  }
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		border: 4px solid transparent;
+	}
 
-  &::before {
-    top: 0;
-    left: 0;
-    border-top-color: black;
-    border-right-color: black;
-  }
+	&::before {
+		top: 0;
+		left: 0;
+		border-top-color: black;
+		border-right-color: black;
+	}
 
-  &::after {
-    bottom: 0;
-    right: 0;
-    border-bottom-color: red; // Red for demo purposes only
-    border-left-color: red;
-  }
+	&::after {
+		bottom: 0;
+		right: 0;
+		border-bottom-color: red; // Red for demo purposes only
+		border-left-color: red;
+	}
 }
 ```
 
@@ -181,36 +181,36 @@ logo 的效果图如下：
 
 ```less
 div.logo {
-  &::before,
-  &::after {
-    /* ... */
-    animation-timing-function: linear;
-  }
-  &::before {
-    /* ... */
-    animation: border-before 1.5s infinite;
-    animation-direction: alternate;
-  }
+	&::before,
+	&::after {
+		/* ... */
+		animation-timing-function: linear;
+	}
+	&::before {
+		/* ... */
+		animation: border-before 1.5s infinite;
+		animation-direction: alternate;
+	}
 }
 @keyframes border-before {
-  0% {
-    width: 0;
-    height: 0;
-    border-right-color: transparent;
-  }
-  24.99% {
-    border-right-color: transparent;
-  }
-  25% {
-    height: 0;
-    width: 100%;
-    border-right-color: black;
-  }
-  50%,
-  100% {
-    width: 100%;
-    height: 100%;
-  }
+	0% {
+		width: 0;
+		height: 0;
+		border-right-color: transparent;
+	}
+	24.99% {
+		border-right-color: transparent;
+	}
+	25% {
+		height: 0;
+		width: 100%;
+		border-right-color: black;
+	}
+	50%,
+	100% {
+		width: 100%;
+		height: 100%;
+	}
 }
 ```
 
@@ -232,19 +232,19 @@ div.logo {
 
 ```css
 @keyframes red {
-  0%,
-  50% {
-    width: 0;
-    opacity: 0;
-  }
-  50.01% {
-    opacity: 1;
-  }
-  65%,
-  100% {
-	width: 27%;
-    opacity: 1;
-  }
+	0%,
+	50% {
+		width: 0;
+		opacity: 0;
+	}
+	50.01% {
+		opacity: 1;
+	}
+	65%,
+	100% {
+		width: 27%;
+		opacity: 1;
+	}
 }
 ```
 

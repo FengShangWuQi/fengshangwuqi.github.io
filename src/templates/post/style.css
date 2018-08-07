@@ -1,204 +1,101 @@
 iframe {
-  margin-bottom: -32px;
+	margin-bottom: -32px;
 }
 
 :not(pre) > code::before,
 :not(pre) > code::after {
-  letter-spacing: 0;
-  content: '';
+	letter-spacing: 0;
+	content: '';
 }
 
-:not(pre) > code[class*="language-"] {
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  margin-right: 0.2rem;
-}
-
-.page-md a,
-.page-md a:visited {
-  color: #237bd9;
+:not(pre) > code[class*='language-'] {
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	margin-right: 0.2rem;
 }
 
 .gatsby-highlight pre[class*='language-'] {
-  margin: 0 0 20px;
+	margin: 0 0 20px;
 }
 
 .gatsby-highlight pre[class*='language-'] code {
-  line-height: 1.1;
+	line-height: 1.1;
 }
 
-.page-md h2 {
-  margin: 40px 0 18px;
-  padding-bottom: 7px;
-  border-bottom: 1px solid #d3d3d3;
+.post-content {
+	position: relative;
 }
 
-.page-md h3 {
-  margin-top: 40px;
-  margin-bottom: 25px;
-  font-size: 20px;
+.post-md {
+	margin-bottom: 150px;
 }
 
-.page-md h2 + h3 {
-  margin-top: 0;
+.post-md a,
+.post-md a:visited {
+	color: #237bd9;
 }
 
-.page-md p {
-  margin-bottom: 20px;
-  font-size: 15px;
-  line-height: 1.8;
-  text-align: justify;
-  letter-spacing: 1px;
+.post-md h2 {
+	margin: 40px 0 18px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #d3d3d3;
 }
 
-.page-md .original-info {
-  margin: 0 0 30px;
-  font-size: 15px;
-  list-style-type: none;
-  color: #adabac;
+.post-md h3 {
+	margin-top: 40px;
+	margin-bottom: 25px;
+	font-size: 20px;
 }
 
-.page-md ul li {
-  margin-bottom: 0.45rem;
+.post-md h2 + h3 {
+	margin-top: 0;
 }
 
-.page-md .original-info li {
-  margin-bottom: 2px;
+.post-md p {
+	margin-bottom: 20px;
+	font-size: 15px;
+	line-height: 1.8;
+	text-align: justify;
+	letter-spacing: 1px;
 }
 
-.page-md blockquote {
-  margin: 0;
-  padding: 0 12px;
-  border-left: 4px solid #ddd;
-  border-radius: 3px;
-  color: #8590a6;
+.post-md .original-info {
+	margin: 0 0 30px;
+	font-size: 15px;
+	list-style-type: none;
+	color: #adabac;
 }
 
-.page-md ul {
-  margin: 0 0 25px;
-  padding: 20px 30px;
-  font-size: 16px;
-  background: #f5f2f0;
-  border-radius: 5px;
+.post-md ul {
+	margin: 0 0 25px;
+	padding: 20px 30px;
+	font-size: 16px;
+	background: #f5f2f0;
+	border-radius: 5px;
 }
 
-.page-md ul li:last-child {
-  margin-bottom: 0;
+.post-md ul li {
+	margin-bottom: 0.45rem;
 }
 
-.post-content-table {
-  left: calc((100% - 660px) / 2 + 720px);
-  width: 255px;
-  overflow: hidden;
-  transition: top 0.2s ease;
+.post-md ul li:last-child {
+	margin-bottom: 0;
 }
 
-.post-ad {
-  display: flex;
-  margin-bottom: 25px;
-  padding: 15px;
-  align-items: center;
-  border-radius: 2px;
-  border: 1px solid #cfd8dc;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+.post-md .original-info li {
+	margin-bottom: 2px;
 }
 
-.ad-img {
-  margin-right: 0.5rem;
-  width: 50px;
-  height: 50px;
-}
-
-.ad-text-title {
-  font-size: 12px;
-  font-weight: 600;
-  color: #333;
-}
-
-.ad-text-intro {
-  font-size: 8px;
-  color: #909090;
-}
-
-.appreciate {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.appreciate-text {
-  margin: 12px 0;
-  font-size: 14px;
-  color: #666768;
-}
-
-.pay-btn {
-  display: inline-block;
-  margin: 8px 0 34px;
-  padding: 0;
-  width: 80px;
-  height: 36px;
-  font-size: 14px;
-  line-height: 36px;
-  color: #fff;
-  background: #e57373;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.pay-btn:hover {
-  background: #ef5350;
-}
-
-#pay-modal {
-  padding: 0;
-  width: 280px;
-  border: 0;
-  border-radius: 5px;
-  opacity: 0;
-  transform: scale(0.7);
-  transition: transform 0.2s ease, opacity 0.2s;
-}
-
-#pay-modal.modal-active {
-  opacity: 1;
-  transform: scale(1);
-}
-
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-#pay-modal h3 {
-  margin: 0;
-  padding: 18px 12px;
-  font-size: 16px;
-}
-
-.pay-qrcode {
-  text-align: center;
-}
-
-.wechat-pay {
-  padding: 0 12px 8px;
-}
-
-.wechat-pay-img {
-  width: 18px;
-  height: 18px;
-}
-
-@media only screen and (max-width: 1330px) {
-  .post-content-table {
-    display: none;
-  }
+.post-md blockquote {
+	margin: 0;
+	padding: 0 12px;
+	border-left: 4px solid #ddd;
+	border-radius: 3px;
+	color: #8590a6;
 }
 
 @media only screen and (max-width: 768px) {
-  .post-is-original {
-    display: none;
-  }
-
-  #disqus_thread {
-    margin-bottom: -20px;
-  }
+	#disqus_thread {
+		margin-bottom: -20px;
+	}
 }

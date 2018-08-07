@@ -58,7 +58,7 @@ $ sudo apt-get update   // 更新源
 $ sudo apt-get upgrade  // 更新已安装的包
 ```
 
-###  清理
+### 清理
 
 ```bash
 $ sudo apt-get autoclean  // 清理已经卸载的包
@@ -74,7 +74,7 @@ $ sudo apt-get autoremove // 清理因依赖而安装但现在不再需要的包
 $ sudo update-grub
 ```
 
-###  更改 hosts
+### 更改 hosts
 
 ```bash
 $ sudo gedit /etc/hosts
@@ -86,7 +86,7 @@ $ sudo gedit /etc/hosts
 下载 -> 系统设置 -> 语言支持 -> 键盘输入法系统 => fcitx
 ```
 
-###  解决端口冲突
+### 解决端口冲突
 
 ```bash
 $ lsof -i:8000      // 查看 8000 端口
@@ -227,6 +227,7 @@ $ byzanz-record -x 0 -y 24 -w 1920 -h 1056 -c -d 10 --delay=3 -v app.gif
 ```
 
 ### 硬链接与软链接
+
 为解决文件的共享使用，**Linux** 系统引入了两种链接：**硬链接**(hard link) 与 **软链接**（又称 **符号链接**，即 **soft link** 或 **symbolic link**）。
 
 ```bash

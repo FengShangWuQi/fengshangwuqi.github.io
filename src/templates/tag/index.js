@@ -4,42 +4,41 @@ import { translate } from 'react-i18next';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+import Layout from '../../components/Layout';
 import Header from '../../components/Header';
-import Posts from '../../components/Posts';
-
-import './style.css';
+import { PostList } from '../../components/Post';
 
 class TagTemplate extends Component {
-  render() {
-    const { pathContext, t } = this.props;
-    const { post, tag } = pathContext;
-    const left = (
-      <div className="header-left-content">
-        <div className="posts-total-count">{`${post.length} ${t(
-          'total'
-        )}`}</div>
-        <h1>{tag}</h1>
-      </div>
-    );
-    const bottom = (
-      <div className="header-back">
-        <Link to="/">>> {t('title')}</Link>
-      </div>
-    );
+	render() {
+		const { pageContext, t } = this.props;
+		const { post, tag } = pageContext;
+		const left = (
+			<div className="header-left-content">
+				<div className="posts-total-count">{`${post.length} ${t(
+					'total'
+				)}`}</div>
+				<h1>{tag}</h1>
+			</div>
+		);
+		const bottom = (
+			<div className="header-back">
+				<Link to="/">>> {t('title')}</Link>
+			</div>
+		);
 
-    return (
-      <div className="tag">
-        <Helmet title={`${tag} - ${t('title')}`} />
-        <Header left={left} bottom={bottom} />
-        <Posts posts={post} totalCount={post.length} />
-      </div>
-    );
-  }
+		return (
+			<Layout>
+				<Helmet title={`${tag} - ${t('title')}`} />
+				<Header left={left} bottom={bottom} />
+				<PostList posts={post} totalCount={post.length} />
+			</Layout>
+		);
+	}
 }
 
 TagTemplate.propTypes = {
-  pathContext: PropTypes.object,
-  t: PropTypes.func.isRequired,
+	pageContext: PropTypes.object,
+	t: PropTypes.func.isRequired,
 };
 
 export default translate('translation')(TagTemplate);

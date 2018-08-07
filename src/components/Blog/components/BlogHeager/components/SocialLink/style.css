@@ -1,0 +1,59 @@
+.author-link-img {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+.qrcode {
+	position: absolute;
+	top: -390px;
+	left: 210px;
+	width: 220px;
+	height: 220px;
+	transition: top ease 0.25s;
+}
+
+.qrcode-img {
+	position: absolute;
+	top: 0;
+	left: 30;
+	width: 120px;
+	height: 120px;
+}
+
+#WeChat:hover .qrcode {
+	display: block;
+	top: -91px;
+}
+
+.qrcode::before {
+	position: absolute;
+	content: '';
+	border: 2px dotted #444;
+	border-bottom: none;
+	border-left: none;
+	width: 120px;
+	height: 120px;
+	top: -50px;
+	left: 50px;
+	transform: rotate(-45deg);
+	border-radius: 0 5px 0 0;
+}
+
+.qrcode::after {
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	top: -75px;
+	left: 50%;
+	margin-left: -4px;
+	background: #4c4c4c;
+}
+
+@media only screen and (max-width: 1905px) {
+	#wechat:hover .qrcode {
+		display: none;
+	}
+}

@@ -37,38 +37,38 @@ date: 2017-08-17T17:15:06+08:00
 **V3**：
 
 ```js
-import React from "react";
-import { render } from "react-dom";
-import { Router, Route, IndexRoute, Link, browserHistory } from "react-router";
+import React from 'react';
+import { render } from 'react-dom';
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
-const PrimaryLayout = props =>
-  <div className="primary-layout">
-    <header>Our React Router 3 App</header>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/user">User</Link>
-      </li>
-    </ul>
-    <main>
-      {props.children}
-    </main>
-  </div>;
+const PrimaryLayout = props => (
+	<div className="primary-layout">
+		<header>Our React Router 3 App</header>
+		<ul>
+			<li>
+				<Link to="/">Home</Link>
+			</li>
+			<li>
+				<Link to="/user">User</Link>
+			</li>
+		</ul>
+		<main>{props.children}</main>
+	</div>
+);
 
 const HomePage = () => <h1>Home Page</h1>;
 const UsersPage = () => <h1>User Page</h1>;
 
-const App = () =>
-  <Router history={browserHistory}>
-    <Route path="/" component={PrimaryLayout}>
-      <IndexRoute component={HomePage} />
-      <Route path="/user" component={UsersPage} />
-    </Route>
-  </Router>;
+const App = () => (
+	<Router history={browserHistory}>
+		<Route path="/" component={PrimaryLayout}>
+			<IndexRoute component={HomePage} />
+			<Route path="/user" component={UsersPage} />
+		</Route>
+	</Router>
+);
 
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById('root'));
 ```
 
 > 在这里给大家推荐一个在线 **react** 编译器 [codesandbox](https://codesandbox.io/)，正所谓，实践是检验真理的唯一标准，这也是一种良好的学习习惯。
@@ -82,36 +82,38 @@ render(<App />, document.getElementById("root"));
 **V4**：
 
 ```js
-import React from "react";
-import { render } from "react-dom";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 
-const PrimaryLayout = () =>
-  <div className="primary-layout">
-    <header>Our React Router 4 App</header>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/User">User</Link>
-      </li>
-    </ul>
-    <main>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/user" component={UsersPage} />
-    </main>
-  </div>;
+const PrimaryLayout = () => (
+	<div className="primary-layout">
+		<header>Our React Router 4 App</header>
+		<ul>
+			<li>
+				<Link to="/">Home</Link>
+			</li>
+			<li>
+				<Link to="/User">User</Link>
+			</li>
+		</ul>
+		<main>
+			<Route path="/" exact component={HomePage} />
+			<Route path="/user" component={UsersPage} />
+		</main>
+	</div>
+);
 
 const HomePage = () => <h1>Home Page</h1>;
 const UsersPage = () => <h1>User Page</h1>;
 
-const App = () =>
-  <BrowserRouter>
-    <PrimaryLayout />
-  </BrowserRouter>;
+const App = () => (
+	<BrowserRouter>
+		<PrimaryLayout />
+	</BrowserRouter>
+);
 
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById('root'));
 ```
 
 > ⚠️ 注意，我们引入的是 **BrowserRouter**，而且是从 **react-router-dom** 引入，不是 **react-router**。
@@ -131,17 +133,18 @@ render(<App />, document.getElementById("root"));
 为了演示 **inclusive routing** 的作用，我们新增一个 UserMenu 组件如下。
 
 ```js
-const PrimaryLayout = () =>
-  <div className="primary-layout">
-    <header>
-      Our React Router 4 App
-      <Route path="/user" component={UsersMenu} />
-    </header>
-    <main>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/user" component={UsersPage} />
-    </main>
-  </div>;
+const PrimaryLayout = () => (
+	<div className="primary-layout">
+		<header>
+			Our React Router 4 App
+			<Route path="/user" component={UsersMenu} />
+		</header>
+		<main>
+			<Route path="/" exact component={HomePage} />
+			<Route path="/user" component={UsersPage} />
+		</main>
+	</div>
+);
 ```
 
 现在，当访问 /user 时，两个组价都会被渲染，在 **V3** 中存在一些模式也可以实现，但其过程却比较复杂，在 **V4** 中，是不是瞬间感觉轻松了很多。
@@ -151,18 +154,19 @@ const PrimaryLayout = () =>
 如果你只想匹配一个 **route**，那么你也可以使用 `Switch` 来 **exclusive routing**。
 
 ```js
-const PrimaryLayout = () =>
-  <div className="primary-layout">
-    <PrimaryHeader />
-    <main>
-      <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/user/add" component={UserAddPage} />
-        <Route path="/user" component={UsersPage} />
-        <Redirect to="/" />
-      </Switch>
-    </main>
-  </div>;
+const PrimaryLayout = () => (
+	<div className="primary-layout">
+		<PrimaryHeader />
+		<main>
+			<Switch>
+				<Route path="/" exact component={HomePage} />
+				<Route path="/user/add" component={UserAddPage} />
+				<Route path="/user" component={UsersPage} />
+				<Redirect to="/" />
+			</Switch>
+		</main>
+	</div>
+);
 ```
 
 在 `Switch` 中只有一个 **Route** 会被渲染，另外，我们还是要给 HomePage 所在 **Route** 添加 `exact`，否则，在访问 /user 或 /user/add 的时候还是会匹配到 /。同理，不知有没同学注意到，我们将 /user/add 放在 /user 前面是保证正确匹配很有策略性的一步，因为，/user/add 会同时匹配 /user 和 /user/add，如果不这么做，大家可以尝试交换它们两个的位置，看下会发生什么。
@@ -185,21 +189,21 @@ const PrimaryLayout = () =>
 
 ```js
 const PrimaryLayout = props => {
-  return (
-    <div className="primary-layout">
-      <PrimaryHeader />
-      <main>
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/user" exact component={BrowseUsersPage} />
-          <Route path="/user/:userId" component={UserProfilePage} />
-          <Route path="/products" exact component={BrowseProductsPage} />
-          <Route path="/products/:productId" component={ProductProfilePage} />
-          <Redirect to="/" />
-        </Switch>
-      </main>
-    </div>
-  );
+	return (
+		<div className="primary-layout">
+			<PrimaryHeader />
+			<main>
+				<Switch>
+					<Route path="/" exact component={HomePage} />
+					<Route path="/user" exact component={BrowseUsersPage} />
+					<Route path="/user/:userId" component={UserProfilePage} />
+					<Route path="/products" exact component={BrowseProductsPage} />
+					<Route path="/products/:productId" component={ProductProfilePage} />
+					<Redirect to="/" />
+				</Switch>
+			</main>
+		</div>
+	);
 };
 ```
 
@@ -207,26 +211,26 @@ const PrimaryLayout = props => {
 
 ```js
 const BrowseUsersPage = () => (
-  <div className="user-sub-layout">
-    <aside>
-      <UserNav />
-    </aside>
-    <div className="primary-content">
-      <BrowseUserTable />
-    </div>
-  </div>
-)
+	<div className="user-sub-layout">
+		<aside>
+			<UserNav />
+		</aside>
+		<div className="primary-content">
+			<BrowseUserTable />
+		</div>
+	</div>
+);
 
 const UserProfilePage = props => (
-  <div className="user-sub-layout">
-    <aside>
-      <UserNav />
-    </aside>
-    <div className="primary-content">
-      <UserProfile userId={props.match.params.userId} />
-    </div>
-  </div>
-)
+	<div className="user-sub-layout">
+		<aside>
+			<UserNav />
+		</aside>
+		<div className="primary-content">
+			<UserProfile userId={props.match.params.userId} />
+		</div>
+	</div>
+);
 ```
 
 > userId 通过 `props.match.params` 获取，`props.match` 赋予给了 **Route** 中的任何组件。除此之外，如果组件不通过 **Route** 来渲染，要访问 `props.match`，可以使用 `withRouter()` 高阶组件来实现。
@@ -237,19 +241,19 @@ const UserProfilePage = props => (
 
 ```js
 const PrimaryLayout = props => {
-  return (
-    <div className="primary-layout">
-      <PrimaryHeader />
-      <main>
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/user" component={UserSubLayout} />
-          <Route path="/products" component={ProductSubLayout} />
-          <Redirect to="/" />
-        </Switch>
-      </main>
-    </div>
-  );
+	return (
+		<div className="primary-layout">
+			<PrimaryHeader />
+			<main>
+				<Switch>
+					<Route path="/" exact component={HomePage} />
+					<Route path="/user" component={UserSubLayout} />
+					<Route path="/products" component={ProductSubLayout} />
+					<Redirect to="/" />
+				</Switch>
+			</main>
+		</div>
+	);
 };
 ```
 
@@ -260,18 +264,19 @@ const PrimaryLayout = props => {
 使用这种策略，子布局也开始承担起了渲染 **routes** 的职责：
 
 ```js
-const UserSubLayout = () =>
-  <div className="user-sub-layout">
-    <aside>
-      <UserNav />
-    </aside>
-    <div className="primary-content">
-      <Switch>
-        <Route path="/user" exact component={BrowseUsersPage} />
-        <Route path="/user/:userId" component={UserProfilePage} />
-      </Switch>
-    </div>
-  </div>;
+const UserSubLayout = () => (
+	<div className="user-sub-layout">
+		<aside>
+			<UserNav />
+		</aside>
+		<div className="primary-content">
+			<Switch>
+				<Route path="/user" exact component={BrowseUsersPage} />
+				<Route path="/user/:userId" component={UserProfilePage} />
+			</Switch>
+		</div>
+	</div>
+);
 ```
 
 是不是很好解决了第一种方式中的重复渲染等问题呢？
@@ -279,21 +284,22 @@ const UserSubLayout = () =>
 另外，**routes** 需要识别它的完整路径才能匹配，为了减少我们的重复输入，我们可以使用 `props.match.path` 来代替。
 
 ```js
-const UserSubLayout = props =>
-  <div className="user-sub-layout">
-    <aside>
-      <UserNav />
-    </aside>
-    <div className="primary-content">
-      <Switch>
-        <Route path={props.match.path} exact component={BrowseUsersPage} />
-        <Route
-          path={`${props.match.path}/:userId`}
-          component={UserProfilePage}
-        />
-      </Switch>
-    </div>
-  </div>;
+const UserSubLayout = props => (
+	<div className="user-sub-layout">
+		<aside>
+			<UserNav />
+		</aside>
+		<div className="primary-content">
+			<Switch>
+				<Route path={props.match.path} exact component={BrowseUsersPage} />
+				<Route
+					path={`${props.match.path}/:userId`}
+					component={UserProfilePage}
+				/>
+			</Switch>
+		</div>
+	</div>
+);
 ```
 
 ## Match
@@ -308,22 +314,22 @@ const UserSubLayout = props =>
 
 ```js
 const UserSubLayout = ({ match }) => {
-  console.log(match.url)   // output: "/user"
-  console.log(match.path)  // output: "/user"
-  return (
-    <div className="user-sub-layout">
-      <aside>
-        <UserNav />
-      </aside>
-      <div className="primary-content">
-        <Switch>
-          <Route path={match.path} exact component={BrowseUsersPage} />
-          <Route path={`${match.path}/:userId`} component={UserProfilePage} />
-        </Switch>
-      </div>
-    </div>
-  )
-}
+	console.log(match.url); // output: "/user"
+	console.log(match.path); // output: "/user"
+	return (
+		<div className="user-sub-layout">
+			<aside>
+				<UserNav />
+			</aside>
+			<div className="primary-content">
+				<Switch>
+					<Route path={match.path} exact component={BrowseUsersPage} />
+					<Route path={`${match.path}/:userId`} component={UserProfilePage} />
+				</Switch>
+			</div>
+		</div>
+	);
+};
 ```
 
 > `match` 在组件的参数中被 **解构**，我们可以使用 `match.path` 代替 `props.match.path`。
@@ -337,22 +343,17 @@ const UserSubLayout = ({ match }) => {
 为了说明问题，我们创建两个子组件，一个 **route** 路径来自 `match.url`，一个 **route** 路径来自 `match.path`。
 
 ```js
-const UserComments = ({ match }) =>
-  <div>
-    UserId: {match.params.userId}
-  </div>;
+const UserComments = ({ match }) => <div>UserId: {match.params.userId}</div>;
 
-const UserSettings = ({ match }) =>
-  <div>
-    UserId: {match.params.userId}
-  </div>;
+const UserSettings = ({ match }) => <div>UserId: {match.params.userId}</div>;
 
-const UserProfilePage = ({ match }) =>
-  <div>
-    User Profile:
-    <Route path={`${match.url}/comments`} component={UserComments} />
-    <Route path={`${match.path}/settings`} component={UserSettings} />
-  </div>;
+const UserProfilePage = ({ match }) => (
+	<div>
+		User Profile:
+		<Route path={`${match.url}/comments`} component={UserComments} />
+		<Route path={`${match.path}/settings`} component={UserSettings} />
+	</div>
+);
 ```
 
 然后，我们按下面方式来访问：
@@ -372,20 +373,21 @@ const UserProfilePage = ({ match }) =>
 假设我们的 **App** 是一个仪表盘，我们希望访问 /user/add 和 /user/5/edit 添加和编辑 user。使用上面的实例，user/:userId 已经指向 UserProfilePage，我们这是需要在 UserProfilePage 中再添加一层 **routes** 么？显然不是这样的。
 
 ```js
-const UserSubLayou = ({ match }) =>
-  <div className="user-sub-layout">
-    <aside>
-      <UserNav />
-    </aside>
-    <div className="primary-content">
-      <Switch>
-        <Route exact path={match.path} component={BrowseUsersPage} />
-        <Route path={`${match.path}/add`} component={AddUserPage} />
-        <Route path={`${match.path}/:userId/edit`} component={EditUserPage} />
-        <Route path={`${match.path}/:userId`} component={UserProfilePage} />
-      </Switch>
-    </div>
-  </div>;
+const UserSubLayou = ({ match }) => (
+	<div className="user-sub-layout">
+		<aside>
+			<UserNav />
+		</aside>
+		<div className="primary-content">
+			<Switch>
+				<Route exact path={match.path} component={BrowseUsersPage} />
+				<Route path={`${match.path}/add`} component={AddUserPage} />
+				<Route path={`${match.path}/:userId/edit`} component={EditUserPage} />
+				<Route path={`${match.path}/:userId`} component={UserProfilePage} />
+			</Switch>
+		</div>
+	</div>
+);
 ```
 
 现在，看清楚这个策略了么。
@@ -398,18 +400,18 @@ const UserSubLayou = ({ match }) =>
 
 ```js
 class App extends React.Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <BrowserRouter>
-          <Switch>
-            <Route path="/auth" component={UnauthorizedLayout} />
-            <AuthorizedRoute path="/app" component={PrimaryLayout} />
-          </Switch>
-        </BrowserRouter>
-      </Provider>
-    )
-  }
+	render() {
+		return (
+			<Provider store={store}>
+				<BrowserRouter>
+					<Switch>
+						<Route path="/auth" component={UnauthorizedLayout} />
+						<AuthorizedRoute path="/app" component={PrimaryLayout} />
+					</Switch>
+				</BrowserRouter>
+			</Provider>
+		);
+	}
 }
 ```
 
@@ -419,29 +421,31 @@ class App extends React.Component {
 
 ```js
 class AuthorizedRoute extends React.Component {
-  componentWillMount() {
-    getLoggedUser();
-  }
+	componentWillMount() {
+		getLoggedUser();
+	}
 
-  render() {
-    const { component: Component, pending, logged, ...rest } = this.props;
-    return (
-      <Route
-        {...rest}
-        render={props => {
-          if (pending) return <div>Loading...</div>;
-          return logged
-            ? <Component {...this.props} />
-            : <Redirect to="/auth/login" />;
-        }}
-      />
-    );
-  }
+	render() {
+		const { component: Component, pending, logged, ...rest } = this.props;
+		return (
+			<Route
+				{...rest}
+				render={props => {
+					if (pending) return <div>Loading...</div>;
+					return logged ? (
+						<Component {...this.props} />
+					) : (
+						<Redirect to="/auth/login" />
+					);
+				}}
+			/>
+		);
+	}
 }
 
 const stateToProps = ({ loggedUserState }) => ({
-  pending: loggedUserState.pending,
-  logged: loggedUserState.logged
+	pending: loggedUserState.pending,
+	logged: loggedUserState.logged,
 });
 
 export default connect(stateToProps)(AuthorizedRoute);

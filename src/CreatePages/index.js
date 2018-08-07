@@ -1,7 +1,9 @@
-const { createTagPages } = require('./components/Tag');
-const { createPostPages } = require('./components/Post');
-const { createArchivePages } = require('./components/Archive');
+const { createPostPages } = require('./Post');
+const { createArchivePages } = require('./Archive');
+const { createTagPages } = require('./Tag');
 
-exports.createTagPages = createTagPages;
-exports.createPostPages = createPostPages;
-exports.createArchivePages = createArchivePages;
+module.exports = {
+	createPostPages,
+	createArchivePages,
+	createTagPages,
+};

@@ -1,12 +1,10 @@
-# Project dependencies
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
+node_modules/
+
+public
+.gatsby-context.js
+
 .cache/
-
-# Build directory
-public/
-
 .DS_Store
+.agignore
 
-yarn-error.log
 yarn.lock

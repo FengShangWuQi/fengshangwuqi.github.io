@@ -8,11 +8,13 @@ date: 2017-10-08T17:41:39+08:00
 > **Vim** 是一个上古神器，刚刚接触的同学可能很难驾驭，本篇文章主要带领大家快速入门，并持续分享当前流行的一些 **vim-plugin**，有兴趣的同学还可以参考 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库继续研究 **Tmux** 和 **Zsh**。
 
 ## 安装
+
 ```bash
 $ sudo apt-get install vim  // ubuntu
 ```
 
 ## 新手指南
+
 ```bash
 $ vimtutor  // vim 教程
 ```
@@ -548,4 +550,5 @@ let g:vimwiki_list = [{
 [vimwiki/vimwiki](https://github.com/vimwiki/vimwiki)
 
 ## 总结
+
 最后，呈上 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库可供参考，顾名思义，除了 **vim**，还有 **tmux** 和 **zsh** 的相关内容。

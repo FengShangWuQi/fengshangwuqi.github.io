@@ -33,12 +33,12 @@ date: 2017-08-08T19:29:49+08:00
 
 ```css
 div {
- width: 15em;
- height: 15em;
+	width: 15em;
+	height: 15em;
 
-  --background: #ccc;
-  background-color: var(--background);
-  transition: background-color 1s;
+	--background: #ccc;
+	background-color: var(--background);
+	transition: background-color 1s;
 }
 ```
 
@@ -46,7 +46,7 @@ div {
 
 ```css
 div:hover {
-  --background: #cce;
+	--background: #cce;
 }
 ```
 
@@ -73,21 +73,21 @@ var value = style.getPropertyValue(property);
 
 ```css
 :root {
- --color: red
+	--color: red;
 }
 ```
 
 接着，我们使用 `getComputedStyle()` 和 `getPropertyValue()` 方法来读取 color 的值。
 
 ```js
-var styles = getComputedStyle(document.documentElement);  // 获取 root 的样式
-var colorValue = styles.getPropertyValue('--color');      // 获取 --color 的值
+var styles = getComputedStyle(document.documentElement); // 获取 root 的样式
+var colorValue = styles.getPropertyValue('--color'); // 获取 --color 的值
 ```
 
 现在 colorValue 的值就为 `--color` 的值，不信你可以在控制台中打印。
 
 ```js
-console.log(colorValue);  // red
+console.log(colorValue); // red
 ```
 
 ### 如何设置自定义属性的值
@@ -131,30 +131,30 @@ var oldValue = style.removeProperty(property);
 
 ```css
 :root {
- --background: #ccc;
+	--background: #ccc;
 }
 
 div {
- width: 20em;
- height: 20em;
- margin: 1em auto;
- background: var(--background);
+	width: 20em;
+	height: 20em;
+	margin: 1em auto;
+	background: var(--background);
 }
 
 input {
- display: block;
- width: 10em;
- margin: 1em auto;
+	display: block;
+	width: 10em;
+	margin: 1em auto;
 }
 ```
 
 最后，我们使用 `document.querySelector()` 获取 **input** 元素，给该元素添加一个事件监听器，监听用户输入的变化，然后用 `setProperty` 将输入的值赋给自定义属性 `--background`。
 
 ```js
-var colorInput = document.querySelector("#div-bkgd");
+var colorInput = document.querySelector('#div-bkgd');
 
-colorInput.addEventListener("change", function() {
- document.documentElement.style.setProperty("--background", this.value);
+colorInput.addEventListener('change', function() {
+	document.documentElement.style.setProperty('--background', this.value);
 });
 ```
 
