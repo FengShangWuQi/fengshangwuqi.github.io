@@ -4,7 +4,7 @@ module.exports = {
 		es6: true,
 	},
 	plugins: ['react'],
-	parser: "babel-eslint",
+	parser: 'babel-eslint',
 	globals: {
 		graphql: false,
 	},

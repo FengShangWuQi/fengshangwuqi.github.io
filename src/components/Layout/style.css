@@ -1,7 +1,7 @@
 html {
-	line-height: normal;
 	box-sizing: border-box;
 	font: 112.5%/1.45em georgia, serif;
+	line-height: normal !important;
 }
 
 body {
@@ -67,10 +67,7 @@ img {
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: 0;
-	padding-bottom: 0;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
@@ -80,10 +77,7 @@ h3,
 h4,
 h5,
 h6 {
-	margin-left: 0;
-	margin-right: 0;
-	margin-top: 0;
-	padding-bottom: 0;
+	margin: 0;
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
@@ -120,14 +114,8 @@ h6 {
 
 ul,
 ol {
-	margin-left: 1.45rem;
-	margin-right: 0;
-	margin-top: 0;
-	padding-bottom: 0;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 0;
-	margin-bottom: 1.45rem;
+	margin: 1.45rem 0 0 1.45rem;
+	padding: 0;
 	list-style-position: outside;
 	list-style-image: none;
 }

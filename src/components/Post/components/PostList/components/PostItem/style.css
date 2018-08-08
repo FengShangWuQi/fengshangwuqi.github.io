@@ -29,6 +29,10 @@
 	border-radius: 3px;
 }
 
+.post-item-header-title a {
+	color: #101012;
+}
+
 .header-tag a:hover {
 	background: #1565c0;
 }
@@ -37,10 +41,6 @@
 	margin-bottom: 3px;
 	padding-top: 8px;
 	font-size: 30px;
-}
-
-.post-item-header-title a {
-	color: #101012;
 }
 
 .post-item-header-title::before {

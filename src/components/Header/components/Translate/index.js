@@ -23,7 +23,10 @@ class Translate extends Component {
 				key={code}
 				style={
 					code === this.state.language
-						? { background: 'rgba(255, 255, 255, 0.5)', color: '#101012' }
+						? {
+								background: 'rgba(255, 255, 255, 0.5)',
+								color: '#101012',
+						  }
 						: {}
 				}
 				className="translate-language-btn"

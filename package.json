@@ -17,7 +17,7 @@
 	},
 	"scripts": {
 		"clean": "rimraf public .cache *.log .DS_Store",
-		"lint": "eslint --ext .js --ignore-pattern public .",
+		"lint": "eslint --ext .js --ignore-pattern public . && stylelint src/**/*.css --fix",
 		"format": "prettier --trailing-comma es5 --single-quote --write '**/*.{js,json,css,md}'",
 		"start": "gatsby develop",
 		"new-blog": "gatsby-new-blog start",

@@ -77,12 +77,12 @@ iframe {
 	margin-bottom: 0.45rem;
 }
 
-.post-md ul li:last-child {
-	margin-bottom: 0;
-}
-
 .post-md .original-info li {
 	margin-bottom: 2px;
+}
+
+.post-md ul li:last-child {
+	margin-bottom: 0;
 }
 
 .post-md blockquote {
