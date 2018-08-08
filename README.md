@@ -1,8 +1,12 @@
 > # [枫上雾棋的日志](https://fengshangwuqi.github.io)
 
-[![twitter](https://img.shields.io/badge/twitter-@fengshangwuqi-blue.svg)][follow]
+[![twitter][twitter-svg]][twitter-url]
+[![Build Status][travis-svg]][travis-url]
 
-[follow]: https://twitter.com/intent/follow?screen_name=fengshangwuqi&tw_p=followbutton
+[twitter-svg]: https://img.shields.io/badge/twitter-@fengshangwuqi-blue.svg
+[twitter-url]: https://twitter.com/intent/follow?screen_name=fengshangwuqi&tw_p=followbutton
+[travis-svg]: https://travis-ci.org/FengShangWuQi/fengshangwuqi.github.io.svg
+[travis-url]: https://travis-ci.org/FengShangWuQi/fengshangwuqi.github.io
 
 ## 作品集
 
