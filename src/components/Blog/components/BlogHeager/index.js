@@ -35,7 +35,7 @@ class BlogHeader extends Component {
 			<div className="author-content">
 				<div style={{ width: 100 }} className="author-avatar">
 					<img
-						style={{ marginBottom: 26 }}
+						style={{ marginBottom: 25 }}
 						className="author-avatar-img"
 						src={require('../../../../images/avatar.jpg')}
 						alt="枫上雾棋"
@@ -45,7 +45,7 @@ class BlogHeader extends Component {
 					<div className="posts-total-count">{`${totalCount} ${t(
 						'total'
 					)}`}</div>
-					<h1>{t('title')}</h1>
+					<h1 style={{ fontSize: '2.25rem' }}>{t('title')}</h1>
 					<ul className="author-link">
 						{socials.map(social => (
 							<SocialLink key={social.title} social={social} />

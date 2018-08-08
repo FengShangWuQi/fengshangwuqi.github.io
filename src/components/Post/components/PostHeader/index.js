@@ -30,7 +30,9 @@ const PostHeader = ({ title, original, path, tag: postTag, date, t }) => {
 				</span>
 				{postTags}
 			</div>
-			<h1 className="post-header-title">{title}</h1>
+			<h1 style={{ fontSize: '2.25rem' }} className="post-header-title">
+				{title}
+			</h1>
 		</div>
 	);
 	const bottom = (

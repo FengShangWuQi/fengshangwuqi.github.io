@@ -24,7 +24,7 @@
 		"precommit": "yarn lint && lint-staged",
 		"build": "yarn clean && gatsby build --prefix-paths",
 		"deploy": "yarn build && gh-pages -d public -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -b master -m deploy",
-		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
 		"commitmsg": "commitlint -x @commitlint/config-conventional -e $GIT_PARAMS"
 	},
 	"dependencies": {

@@ -12,7 +12,7 @@ class TagTemplate extends Component {
 	render() {
 		const { pageContext, t } = this.props;
 		const { post, tag } = pageContext;
-		const left = (
+		const leftCenter = (
 			<div className="header-left-content">
 				<div className="posts-total-count">{`${post.length} ${t(
 					'total'
@@ -29,7 +29,7 @@ class TagTemplate extends Component {
 		return (
 			<Layout>
 				<Helmet title={`${tag} - ${t('title')}`} />
-				<Header left={left} bottom={bottom} />
+				<Header leftCenter={leftCenter} bottom={bottom} />
 				<PostList posts={post} totalCount={post.length} />
 			</Layout>
 		);

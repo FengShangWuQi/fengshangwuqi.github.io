@@ -1,6 +1,7 @@
 .archive {
 	position: relative;
 	display: flex;
+	margin-bottom: 0.25rem;
 }
 
 .archive-published {
