@@ -36,14 +36,9 @@ class PostTemplate extends Component {
 					tag={tag}
 					date={date}
 				/>
-				<div className="post-content">
-					<div style={{ marginTop: -50 }} className="page-container">
-						<div
-							className="post-md"
-							dangerouslySetInnerHTML={{ __html: html }}
-						/>
-						<div id="disqus_thread" />
-					</div>
+				<div style={{ top: -25 }} className="page-container">
+					<div className="post-md" dangerouslySetInnerHTML={{ __html: html }} />
+					<div id="disqus_thread" />
 				</div>
 			</Layout>
 		);

@@ -2,6 +2,10 @@ iframe {
 	margin-bottom: -32px;
 }
 
+pre {
+	font-size: 0.85em;
+}
+
 :not(pre) > code::before,
 :not(pre) > code::after {
 	letter-spacing: 0;
@@ -15,15 +19,11 @@ iframe {
 }
 
 .gatsby-highlight pre[class*='language-'] {
-	margin: 0 0 20px;
+	margin: 20px 0;
 }
 
 .gatsby-highlight pre[class*='language-'] code {
 	line-height: 1.1;
-}
-
-.post-content {
-	position: relative;
 }
 
 .post-md {
@@ -36,13 +36,13 @@ iframe {
 }
 
 .post-md h2 {
-	margin: 40px 0 18px;
+	margin: 60px 0 18px;
 	padding-bottom: 7px;
 	border-bottom: 1px solid #d3d3d3;
 }
 
 .post-md h3 {
-	margin-top: 40px;
+	margin-top: 50px;
 	margin-bottom: 25px;
 	font-size: 20px;
 }
@@ -55,7 +55,7 @@ iframe {
 	margin-bottom: 20px;
 	font-size: 15px;
 	text-align: justify;
-	letter-spacing: 1px;
+	letter-spacing: 0.12em;
 }
 
 .post-md .original-info {
@@ -63,6 +63,7 @@ iframe {
 	font-size: 15px;
 	list-style-type: none;
 	color: #adabac;
+	letter-spacing: 0.01em;
 }
 
 .post-md ul {
@@ -75,6 +76,7 @@ iframe {
 
 .post-md ul li {
 	margin-bottom: 0.45rem;
+	letter-spacing: 0.1em;
 }
 
 .post-md .original-info li {

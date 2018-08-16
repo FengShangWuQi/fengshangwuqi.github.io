@@ -1,5 +1,6 @@
 .page-container {
-	margin: 0 auto 80px;
+	position: relative;
+	margin: 90px auto;
 	max-width: 720px;
 	min-width: 360px;
 	padding: 0 30px;

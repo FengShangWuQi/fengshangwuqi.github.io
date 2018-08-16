@@ -30,13 +30,13 @@ const PostHeader = ({ title, original, path, tag: postTag, date, t }) => {
 				</span>
 				{postTags}
 			</div>
-			<h1 style={{ fontSize: '2.25rem' }} className="post-header-title">
+			<h1 style={{ fontSize: '2.1em' }} className="post-header-title">
 				{title}
 			</h1>
 		</div>
 	);
 	const bottom = (
-		<div style={{}} className="post-header-content">
+		<div className="post-header-content">
 			<div className="post-header-info">
 				<div className="post-header-info-title">
 					<Link to="/">{t('title')}</Link>
