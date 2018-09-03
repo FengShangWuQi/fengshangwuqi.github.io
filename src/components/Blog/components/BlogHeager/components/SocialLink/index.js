@@ -27,6 +27,7 @@ const SocialLink = ({ social }) => {
 					</div>
 				</li>
 			);
+			break;
 		case 'Email':
 			item = (
 				<li>
@@ -38,6 +39,7 @@ const SocialLink = ({ social }) => {
 					/>
 				</li>
 			);
+			break;
 		default:
 			item = (
 				<li>

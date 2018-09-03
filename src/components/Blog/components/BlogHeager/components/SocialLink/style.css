@@ -17,8 +17,8 @@
   position: absolute;
   top: 0;
   left: 30;
-  width: 120px;
-  height: 120px;
+  width: 220px;
+  height: 220px;
 }
 
 #WeChat:hover .qrcode {
@@ -53,7 +53,7 @@
 }
 
 @media only screen and (max-width: 1905px) {
-  #wechat:hover .qrcode {
+  #WeChat:hover .qrcode {
     display: none;
   }
 }
