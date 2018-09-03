@@ -10,7 +10,7 @@
 		"fengshangwuqi"
 	],
 	"lint-staged": {
-		"**/*.{js,json,css,md}": [
+		"**/*.{js,json,md}": [
 			"prettier --write",
 			"git add"
 		]

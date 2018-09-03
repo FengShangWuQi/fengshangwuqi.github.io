@@ -1,46 +1,46 @@
 .page-container {
-	position: relative;
-	margin: 90px auto;
-	max-width: 720px;
-	min-width: 360px;
-	padding: 0 30px;
+  position: relative;
+  margin: 90px auto;
+  max-width: 720px;
+  min-width: 360px;
+  padding: 0 30px;
 }
 
 .posts-pagination {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .posts-pagination-btn {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10px 18px;
-	color: #bfbfbf;
-	border: 3px solid #bdbdbd;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: all 0.2s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+  color: #bfbfbf;
+  border: 3px solid #bdbdbd;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .posts-pagination-btn:hover {
-	color: #616161;
-	border: 3px solid #616161;
+  color: #616161;
+  border: 3px solid #616161;
 }
 
 .post-is-original {
-	display: inline-block;
-	margin-left: -33px;
-	margin-right: 10px;
-	padding: 0 6px;
-	font-size: 13px;
-	line-height: 22px;
-	border-radius: 11px;
+  display: inline-block;
+  margin-left: -33px;
+  margin-right: 10px;
+  padding: 0 6px;
+  font-size: 13px;
+  line-height: 22px;
+  border-radius: 11px;
 }
 
 @media only screen and (max-width: 768px) {
-	.post-is-original {
-		display: none;
-	}
+  .post-is-original {
+    display: none;
+  }
 }

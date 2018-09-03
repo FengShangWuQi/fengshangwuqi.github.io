@@ -5,6 +5,7 @@ import { translate } from 'react-i18next';
 import { Link, graphql } from 'gatsby';
 import { get } from 'lodash';
 
+import { loadScript } from '../../utils';
 import Layout from '../../components/Layout';
 import { PostHeader } from '../../components/Post';
 
@@ -12,13 +13,10 @@ import './style.css';
 
 class PostTemplate extends Component {
 	componentDidMount() {
-		(function() {
-			var d = document,
-				s = d.createElement('script');
-			s.src = 'https://feng-shang-wu-qi-de-ri-zhi.disqus.com/embed.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
+		[
+			'https://feng-shang-wu-qi-de-ri-zhi.disqus.com/embed.js',
+			'https://platform.twitter.com/widgets.js',
+		].map(url => loadScript(url));
 	}
 
 	render() {

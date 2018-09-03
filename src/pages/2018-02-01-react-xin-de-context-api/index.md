@@ -83,17 +83,21 @@ class App extends React.Component {
 
 我对这个 **API** 充满了期待，**React** 团队也将会移除 **context 是实验性 API** 的警告，因为它现在是框架 [一级棒的特性](https://twitter.com/acdlite/status/957445801302618112)，这也意味着大家将不再那么担心使用 **context** 来解决应用中 **prop-drilling** 的问题了，对 **Redux** 不再那么依赖，对 **React** 也将更加喜欢。
 
-[我最近在 twitter 看到的](https://twitter.com/kentcdodds/status/911276059051438082)，大概意思是：
+这是我最近的推文：
 
-> 大家不是很愿意保持使用提倡的 **render** 方法，加重了 **prop drilling** 问题，所以，最终想通过 **redux** 来缓解。
+<div class="twitter-content">
+	<blockquote class="twitter-tweet" data-lang="zh-cn"><p lang="en" dir="ltr">People&#39;s fixation with keeping render methods small aggravates the &quot;prop drilling problem&quot; which makes folks want redux to help alleviate it</p>&mdash; Kent C. Dodds (@kentcdodds) <a href="https://twitter.com/kentcdodds/status/911276059051438082?ref_src=twsrc%5Etfw">2017年9月22日</a></blockquote>
+</div>
 
-所以，我认为如果我们不过早或武断地去破坏 **render** 方法，我们可能就不会那么痛苦，即便最终我们实在没有办法避免，我们也可以通过核心的 **React API** 来解决。
+我认为如果我们不过早或武断地去破坏 **render** 方法，我们可能就不会那么痛苦，即便最终我们实在没有办法避免，我们也可以通过核心的 **React API** 来解决。
 
 ## Context 实践
 
 我看到了一个关于 **context API**（或普通的 **render prop pattern**）的问题很多次，就是如何组合 **providers** 和 **consumers**，当在一个 **render** 方法中把一堆 **render prop** 组件放在一起时，就会像这样 [嵌套](https://twitter.com/acdlite/status/955955121979969537)。
 
-![practice](./images/practice.png)
+<div class="twitter-content">
+	<blockquote class="twitter-tweet" data-conversation="none" data-lang="zh-cn"><p lang="en" dir="ltr">I mean come on (screen shot of actual code I’m playing with right now) <a href="https://t.co/Ucc8gaxPMp">pic.twitter.com/Ucc8gaxPMp</a></p>&mdash; Andrew Clark (@acdlite) <a href="https://twitter.com/acdlite/status/955955121979969537?ref_src=twsrc%5Etfw">2018年1月24日</a></blockquote>
+</div>
 
 那么，我们可以做点什么来避免呢？其实，个人觉得没有那么糟糕，如果你觉得这样并不好，那么可以使用常规的 **utility** 函数/组件来解决，下面是一个示例：
 
@@ -154,4 +158,6 @@ class App extends React.Component {
 
 最后再表达一下我对此的兴奋。
 
-![twiiter](./images/twitter.png)
+<div class="twitter-content">
+	<blockquote class="twitter-tweet" data-conversation="none" data-lang="zh-cn"><p lang="en" dir="ltr">That&#39;s one thing that excites me about the API improvement (in addition to other changes coming). So many new patterns will emerge out of this stuff. Ways of doing things we haven&#39;t considered before!!</p>&mdash; Kent C. Dodds (@kentcdodds) <a href="https://twitter.com/kentcdodds/status/956675313966239745?ref_src=twsrc%5Etfw">2018年1月25日</a></blockquote>
+</div>

@@ -1,31 +1,31 @@
 .post-header {
-	text-align: center;
+  text-align: center;
 }
 
 .post-header-title {
-	margin: 20px;
-	line-height: 48px;
+  margin: 20px;
+  line-height: 48px;
 }
 
 .post-header-content {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	color: #d4d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #d4d3d3;
 }
 
 .post-header-info {
-	margin-right: 15px;
-	letter-spacing: 1px;
-	text-align: right;
+  margin-right: 15px;
+  letter-spacing: 1px;
+  text-align: right;
 }
 
 .post-header-info-title a {
-	color: #d4d3d3;
-	cursor: pointer;
-	transition: color 0.3s;
+  color: #d4d3d3;
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .post-header-info-title a:hover {
-	color: #fff;
+  color: #fff;
 }

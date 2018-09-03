@@ -1,102 +1,107 @@
 iframe {
-	margin-bottom: -32px;
+  margin-bottom: -32px;
 }
 
 pre {
-	font-size: 0.85em;
+  font-size: 0.85em;
+}
+
+.twitter-content {
+  margin: 0 0 30px;
+  display: flex;
+  justify-content: center;
 }
 
 :not(pre) > code::before,
 :not(pre) > code::after {
-	letter-spacing: 0;
-	content: '';
+  letter-spacing: 0;
+  content: '';
 }
 
 :not(pre) > code[class*='language-'] {
-	padding-left: 0.2rem;
-	padding-right: 0.2rem;
-	margin-right: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  margin-right: 0.2rem;
 }
 
 .gatsby-highlight pre[class*='language-'] {
-	margin: 20px 0;
+  margin: 0 0 30px;
 }
 
 .gatsby-highlight pre[class*='language-'] code {
-	line-height: 1.1;
+  line-height: 1.1;
 }
 
 .post-md {
-	margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 
 .post-md a,
 .post-md a:visited {
-	color: #237bd9;
+  color: #237bd9;
 }
 
 .post-md h2 {
-	margin: 60px 0 18px;
-	padding-bottom: 7px;
-	border-bottom: 1px solid #d3d3d3;
+  margin: 60px 0 18px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .post-md h3 {
-	margin-top: 50px;
-	margin-bottom: 25px;
-	font-size: 20px;
+  margin: 65px 0 25px;
+  font-size: 20px;
 }
 
 .post-md h2 + h3 {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .post-md p {
-	margin-bottom: 20px;
-	font-size: 15px;
-	text-align: justify;
-	letter-spacing: 0.12em;
+  margin-bottom: 30px;
+  font-size: 15px;
+  text-align: justify;
+  letter-spacing: 0.12em;
 }
 
 .post-md .original-info {
-	margin: 0 0 30px;
-	font-size: 15px;
-	list-style-type: none;
-	color: #adabac;
-	letter-spacing: 0.01em;
+  margin: 0 0 30px;
+  font-size: 15px;
+  list-style-type: none;
+  color: #adabac;
+  letter-spacing: 0.01em;
 }
 
 .post-md ul {
-	margin: 0 0 25px;
-	padding: 20px 30px;
-	font-size: 16px;
-	background: #f5f2f0;
-	border-radius: 5px;
+  margin: 0 0 30px;
+  padding: 20px 30px;
+  font-size: 15px;
+  background: #f5f2f0;
+  border-radius: 5px;
 }
 
 .post-md ul li {
-	margin-bottom: 0.45rem;
-	letter-spacing: 0.1em;
+  margin-bottom: 0.45rem;
+  letter-spacing: 0.1em;
 }
 
 .post-md .original-info li {
-	margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 .post-md ul li:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .post-md blockquote {
-	margin: 0;
-	padding: 0 12px;
-	border-left: 4px solid #ddd;
-	border-radius: 3px;
-	color: #8590a6;
+  margin: 0;
+  padding: 0 12px;
+  border-left: 4px solid #ddd;
+  border-radius: 3px;
+  color: #8590a6;
 }
 
 @media only screen and (max-width: 768px) {
-	#disqus_thread {
-		margin-bottom: -20px;
-	}
+  #disqus_thread {
+    margin-bottom: -20px;
+  }
 }
