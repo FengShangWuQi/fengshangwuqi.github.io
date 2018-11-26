@@ -10,7 +10,7 @@
 		"fengshangwuqi"
 	],
 	"scripts": {
-		"clean": "rimraf public .cache *.log .DS_Store",
+		"clean": "rimraf public .cache node_modules",
 		"lint": "eslint --ext .js --ignore-pattern public . && stylelint src/**/*.css --fix",
 		"format": "prettier --write '**/*.{js,json,css,md}'",
 		"start": "gatsby develop",
