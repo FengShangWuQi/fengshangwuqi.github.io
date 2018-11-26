@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { translate } from 'react-i18next';
 
 import Header from '../../../Header';
 import SocialLink from './components/SocialLink';
@@ -42,10 +41,8 @@ class BlogHeader extends Component {
 					/>
 				</div>
 				<div className="author-info">
-					<div className="posts-total-count">{`${totalCount} ${t(
-						'total'
-					)}`}</div>
-					<h1 style={{ fontSize: '2.25rem' }}>{t('title')}</h1>
+					<div className="posts-total-count">{`${totalCount} 篇文章`}</div>
+					<h1 style={{ fontSize: '2.25rem' }}>枫上雾棋的日志</h1>
 					<ul className="author-link">
 						{socials.map(social => (
 							<SocialLink key={social.title} social={social} />
@@ -61,7 +58,6 @@ class BlogHeader extends Component {
 
 BlogHeader.propTypes = {
 	totalCount: PropTypes.number.isRequired,
-	t: PropTypes.func.isRequired,
 };
 
-export default translate('translation')(BlogHeader);
+export default BlogHeader;

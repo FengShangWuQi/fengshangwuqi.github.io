@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { translate } from 'react-i18next';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
@@ -11,12 +10,12 @@ import { PostList } from '../components/Post';
 
 class IndexPage extends React.Component {
 	render() {
-		const { data, t } = this.props;
+		const { data } = this.props;
 		const { totalCount, edges: posts } = get(data, 'allMarkdownRemark');
 
 		return (
 			<Layout>
-				<Helmet title={t('title')} />
+				<Helmet title="枫上雾棋的日志" />
 				<BlogHeader totalCount={totalCount} />
 				<PostList posts={posts} totalCount={totalCount} />
 			</Layout>
@@ -26,10 +25,9 @@ class IndexPage extends React.Component {
 
 IndexPage.propTypes = {
 	data: PropTypes.object,
-	t: PropTypes.func.isRequired,
 };
 
-export default translate('translation')(IndexPage);
+export default IndexPage;
 
 export const pageQuery = graphql`
 	{
@@ -45,7 +43,7 @@ export const pageQuery = graphql`
 			totalCount
 			edges {
 				node {
-					excerpt(pruneLength: 220)
+					excerpt
 					fields {
 						slug
 					}

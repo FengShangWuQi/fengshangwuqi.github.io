@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { translate } from 'react-i18next';
 
 import PostItem from './components/PostItem';
 
@@ -17,7 +16,7 @@ class PostList extends Component {
 	};
 
 	render() {
-		const { posts, totalCount, t } = this.props;
+		const { posts, totalCount } = this.props;
 		const { current, PAGE_SIZE } = this.state;
 
 		return (
@@ -43,7 +42,7 @@ class PostList extends Component {
 						}}
 						className="posts-pagination-btn"
 						onClick={() => this.onChange(current - 1)}>
-						{t('prev')}
+						上一页
 					</div>
 					<div
 						style={{
@@ -54,7 +53,7 @@ class PostList extends Component {
 						}}
 						className="posts-pagination-btn"
 						onClick={() => this.onChange(current + 1)}>
-						{t('next')}
+						下一页
 					</div>
 				</div>
 			</div>
@@ -65,7 +64,6 @@ class PostList extends Component {
 PostList.propTypes = {
 	posts: PropTypes.array.isRequired,
 	totalCount: PropTypes.number.isRequired,
-	t: PropTypes.func.isRequired,
 };
 
-export default translate('translation')(PostList);
+export default PostList;

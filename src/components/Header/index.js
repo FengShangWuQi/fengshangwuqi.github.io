@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { translate } from 'react-i18next';
 
 import Nav from './components/Nav';
 
@@ -65,7 +64,6 @@ Header.propTypes = {
 	left: PropTypes.element,
 	center: PropTypes.element,
 	bottom: PropTypes.element,
-	t: PropTypes.func.isRequired,
 };
 
-export default translate('translation')(Header);
+export default Header;

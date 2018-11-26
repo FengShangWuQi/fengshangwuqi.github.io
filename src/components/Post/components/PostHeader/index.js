@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { translate } from 'react-i18next';
 import { Link } from 'gatsby';
 
 import Header from '../../../Header';
 
 import './style.css';
 
-const PostHeader = ({ title, original, path, tag: postTag, date, t }) => {
+const PostHeader = ({ title, original, path, tag: postTag, date }) => {
 	const postTags = postTag.split(',').map(tag => (
 		<Link key={tag} to={`/${tag}`}>
 			{tag}
@@ -39,7 +38,7 @@ const PostHeader = ({ title, original, path, tag: postTag, date, t }) => {
 		<div className="post-header-content">
 			<div className="post-header-info">
 				<div className="post-header-info-title">
-					<Link to="/">{t('title')}</Link>
+					<Link to="/">{title}</Link>
 				</div>
 				<div>{date}</div>
 			</div>
@@ -70,7 +69,6 @@ PostHeader.propTypes = {
 	path: PropTypes.string.isRequired,
 	tag: PropTypes.string.isRequired,
 	date: PropTypes.string.isRequired,
-	t: PropTypes.func.isRequired,
 };
 
-export default translate('translation')(PostHeader);
+export default PostHeader;

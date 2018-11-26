@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { translate } from 'react-i18next';
 import { Link } from 'gatsby';
 
 import './style.css';
 
-const PostItem = ({ path, tag, title, date, intro, original, t }) => {
+const PostItem = ({ path, tag, title, date, intro, original }) => {
 	const tags = tag.split(',').map(t => (
 		<Link key={t} to={`/${t}`}>
 			{t}
@@ -46,7 +45,7 @@ const PostItem = ({ path, tag, title, date, intro, original, t }) => {
 			/>
 			<Link to={path}>
 				<span className="post-item-read-more">
-					{t('readMore')}
+					阅读全文
 					<span>
 						<span className="line left" />
 						<span className="line top" />
@@ -65,7 +64,6 @@ PostItem.propTypes = {
 	title: PropTypes.string.isRequired,
 	date: PropTypes.string.isRequired,
 	intro: PropTypes.string.isRequired,
-	t: PropTypes.func.isRequired,
 };
 
-export default translate('translation')(PostItem);
+export default PostItem;

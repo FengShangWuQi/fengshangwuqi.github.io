@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { translate } from 'react-i18next';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { get } from 'lodash';
 
 import { loadScript } from '../../utils';
@@ -20,13 +19,13 @@ class PostTemplate extends Component {
 	}
 
 	render() {
-		const { data, t } = this.props;
+		const { data } = this.props;
 		const { html, fields, frontmatter } = get(data, 'markdownRemark');
 		const { title, tag, date, original } = frontmatter;
 
 		return (
 			<Layout>
-				<Helmet title={`${title} - ${t('title')}`} />
+				<Helmet title={`${title} - 枫上雾棋的日志`} />
 				<PostHeader
 					title={title}
 					original={original}
@@ -45,10 +44,9 @@ class PostTemplate extends Component {
 
 PostTemplate.propTypes = {
 	data: PropTypes.object,
-	t: PropTypes.func.isRequired,
 };
 
-export default translate('translation')(PostTemplate);
+export default PostTemplate;
 
 export const postQuery = graphql`
 	query($slug: String!) {

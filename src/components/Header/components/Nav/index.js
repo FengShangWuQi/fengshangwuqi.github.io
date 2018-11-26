@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import { translate } from 'react-i18next';
-
-import Translate from '../Translate';
 
 import './style.css';
 
@@ -14,7 +11,7 @@ class Nav extends Component {
 		<li
 			key={title}
 			className={side ? 'header-sideNav-item' : 'header-nav-item'}>
-			<Link to={link}>{this.props.t(title)}</Link>
+			<Link to={link}>{title}</Link>
 		</li>
 	);
 
@@ -50,7 +47,6 @@ class Nav extends Component {
 					<li key="rss" className="header-nav-item">
 						{rssLi}
 					</li>
-					<Translate toggle={false} />
 				</ul>
 				<ul
 					style={sideNav ? { display: 'block', left: 0, right: 0 } : {}}
@@ -64,10 +60,7 @@ class Nav extends Component {
 							onClick={this.toggleSideNav}
 						/>
 					</li>
-					<li className="header-sideNav-item header-sideNav-title">
-						{t('menu')}
-					</li>
-					<Translate toggle />
+					<li className="header-sideNav-item header-sideNav-title">导航</li>
 					{navs.map(nav => this.renderNav(nav, true))}
 					<li key="rss" className="header-sideNav-item">
 						{rssLi}
@@ -85,8 +78,4 @@ class Nav extends Component {
 	}
 }
 
-Nav.propTypes = {
-	t: PropTypes.func.isRequired,
-};
-
-export default translate('translation')(Nav);
+export default Nav;

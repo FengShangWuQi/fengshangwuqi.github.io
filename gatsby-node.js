@@ -65,10 +65,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 		});
 	}
 };
-
-exports.onPostBuild = () => {
-	fs.copySync(
-		path.join(__dirname, '/src/locales'),
-		path.join(__dirname, '/public/locales')
-	);
-};

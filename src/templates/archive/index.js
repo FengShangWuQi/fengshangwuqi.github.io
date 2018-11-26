@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { translate } from 'react-i18next';
 import Helmet from 'react-helmet';
 import { Link } from 'gatsby';
 
@@ -10,24 +9,24 @@ import Archive from '../../components/Archive';
 
 import './style.css';
 
-const ArchivesTemplate = ({ pageContext, t }) => {
+const ArchivesTemplate = ({ pageContext }) => {
 	const { archives, totalCount } = pageContext;
 
 	const leftCenter = (
 		<div className="header-left-content">
-			{<div className="posts-total-count">{`${totalCount} ${t('total')}`}</div>}
-			<h1>{t('archives')}</h1>
+			{<div className="posts-total-count">{`${totalCount} 篇文章`}</div>}
+			<h1>归档</h1>
 		</div>
 	);
 	const bottom = (
 		<div className="header-back">
-			<Link to="/">>> {t('title')}</Link>
+			<Link to="/">>> 枫上雾棋的日志</Link>
 		</div>
 	);
 
 	return (
 		<Layout>
-			<Helmet title={`${t('archives')} - ${t('title')}`} />
+			<Helmet title="归档 - 枫上雾棋的日志" />
 			<Header leftCenter={leftCenter} bottom={bottom} />
 
 			<div className="page-container">
@@ -55,7 +54,6 @@ const ArchivesTemplate = ({ pageContext, t }) => {
 
 ArchivesTemplate.propTypes = {
 	pageContext: PropTypes.object,
-	t: PropTypes.func.isRequired,
 };
 
-export default translate('translation')(ArchivesTemplate);
+export default ArchivesTemplate;

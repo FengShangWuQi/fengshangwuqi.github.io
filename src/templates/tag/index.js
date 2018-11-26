@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { translate } from 'react-i18next';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
@@ -10,25 +9,23 @@ import { PostList } from '../../components/Post';
 
 class TagTemplate extends Component {
 	render() {
-		const { pageContext, t } = this.props;
+		const { pageContext } = this.props;
 		const { post, tag } = pageContext;
 		const leftCenter = (
 			<div className="header-left-content">
-				<div className="posts-total-count">{`${post.length} ${t(
-					'total'
-				)}`}</div>
+				<div className="posts-total-count">{`${post.length} 篇文章`}</div>
 				<h1>{tag}</h1>
 			</div>
 		);
 		const bottom = (
 			<div className="header-back">
-				<Link to="/">>> {t('title')}</Link>
+				<Link to="/">>> 枫上雾棋的日志</Link>
 			</div>
 		);
 
 		return (
 			<Layout>
-				<Helmet title={`${tag} - ${t('title')}`} />
+				<Helmet title={`${tag} - 枫上雾棋的日志`} />
 				<Header leftCenter={leftCenter} bottom={bottom} />
 				<PostList posts={post} totalCount={post.length} />
 			</Layout>
@@ -38,7 +35,6 @@ class TagTemplate extends Component {
 
 TagTemplate.propTypes = {
 	pageContext: PropTypes.object,
-	t: PropTypes.func.isRequired,
 };
 
-export default translate('translation')(TagTemplate);
+export default TagTemplate;
