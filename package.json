@@ -9,12 +9,6 @@
 		"枫上雾棋",
 		"fengshangwuqi"
 	],
-	"lint-staged": {
-		"**/*.{js,json,md}": [
-			"prettier --write",
-			"git add"
-		]
-	},
 	"scripts": {
 		"clean": "rimraf public .cache *.log .DS_Store",
 		"lint": "eslint --ext .js --ignore-pattern public . && stylelint src/**/*.css --fix",
@@ -23,53 +17,59 @@
 		"new-blog": "gatsby-new-blog start",
 		"precommit": "yarn lint && lint-staged",
 		"build": "yarn clean && gatsby build --prefix-paths",
-		"deploy": "yarn build && gh-pages -d public -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -b master -m deploy",
-		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-		"commitmsg": "commitlint -x @commitlint/config-conventional -e $GIT_PARAMS"
+		"deploy": "yarn build && gh-pages -d public -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -b master -m deploy"
+	},
+	"lint-staged": {
+		"**/*.{js,json,md}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "commitlint -x @commitlint/config-conventional -e $GIT_PARAMS"
+		}
 	},
 	"dependencies": {
-		"gatsby": "next",
-		"gatsby-plugin-feed": "next",
-		"gatsby-plugin-google-analytics": "next",
-		"gatsby-plugin-offline": "next",
-		"gatsby-plugin-react-helmet": "next",
-		"gatsby-plugin-sharp": "next",
-		"gatsby-remark-autolink-headers": "next",
-		"gatsby-remark-copy-linked-files": "next",
-		"gatsby-remark-emoji": "^0.0.2",
-		"gatsby-remark-external-links": "^0.0.4",
-		"gatsby-remark-images": "next",
-		"gatsby-remark-prismjs": "next",
-		"gatsby-remark-responsive-iframe": "next",
-		"gatsby-remark-smartypants": "next",
-		"gatsby-source-filesystem": "next",
-		"gatsby-transformer-remark": "next",
-		"gatsby-transformer-sharp": "next",
-		"i18next": "^11.5.0",
-		"i18next-browser-languagedetector": "^2.2.3",
-		"lodash": "^4.17.5",
-		"normalize.css": "^8.0.0",
-		"prismjs": "^1.15.0",
-		"react": "^16.3.2",
-		"react-dom": "^16.3.2",
-		"react-helmet": "^5.2.0",
-		"react-i18next": "^7.10.1"
+		"gatsby": "2.0.55",
+		"gatsby-plugin-feed": "2.0.9",
+		"gatsby-plugin-google-analytics": "2.0.7",
+		"gatsby-plugin-offline": "2.0.17",
+		"gatsby-plugin-react-helmet": "3.0.2",
+		"gatsby-plugin-sharp": "2.0.13",
+		"gatsby-remark-autolink-headers": "2.0.11",
+		"gatsby-remark-copy-linked-files": "2.0.6",
+		"gatsby-remark-emoji": "0.0.2",
+		"gatsby-remark-external-links": "0.0.4",
+		"gatsby-remark-images": "3.0.0",
+		"gatsby-remark-prismjs": "3.0.3",
+		"gatsby-remark-responsive-iframe": "2.0.6",
+		"gatsby-remark-smartypants": "2.0.6",
+		"gatsby-source-filesystem": "2.0.8",
+		"gatsby-transformer-remark": "2.1.12",
+		"gatsby-transformer-sharp": "2.1.8",
+		"lodash": "4.17.11",
+		"normalize.css": "8.0.1",
+		"prismjs": "1.15.0",
+		"react": "16.6.3",
+		"react-dom": "16.6.3",
+		"react-helmet": "5.2.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^7.0.0",
-		"@commitlint/config-conventional": "^7.0.1",
-		"babel-eslint": "^8.2.6",
-		"conventional-changelog-cli": "^2.0.1",
-		"eslint": "^4.19.1",
-		"eslint-plugin-react": "^7.7.0",
-		"gatsby-new-blog": "^1.0.4",
-		"gh-pages": "^1.1.0",
-		"husky": "^0.14.3",
-		"lint-staged": "^7.2.0",
-		"prettier": "^1.12.0",
-		"rimraf": "^2.6.2",
-		"stylelint": "^9.4.0",
-		"stylelint-config-standard": "^18.2.0"
+		"@commitlint/cli": "7.2.1",
+		"@commitlint/config-conventional": "7.1.2",
+		"babel-eslint": "10.0.1",
+		"eslint": "5.9.0",
+		"eslint-plugin-react": "^7.11.1",
+		"gatsby-new-blog": "1.0.4",
+		"gh-pages": "2.0.1",
+		"husky": "^1.2.0",
+		"lint-staged": "^8.1.0",
+		"prettier": "^1.15.2",
+		"rimraf": "2.6.2",
+		"stylelint": "^9.8.0",
+		"stylelint-config-standard": "18.2.0"
 	},
 	"license": "MIT"
 }
