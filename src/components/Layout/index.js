@@ -9,28 +9,28 @@ import 'prismjs/themes/prism-tomorrow.css';
 import './style.css';
 
 class Layout extends React.Component {
-	render() {
-		const { children } = this.props;
+  render() {
+    const { children } = this.props;
 
-		return (
-			<div>
-				<header
-					style={{
-						position: 'absolute',
-						height: 480,
-						width: '100%',
-						background: '#101012',
-					}}
-				/>
-				{children}
-				<Footer />
-			</div>
-		);
-	}
+    return (
+      <div>
+        <header
+          style={{
+            position: 'absolute',
+            height: 480,
+            width: '100%',
+            background: '#101012',
+          }}
+        />
+        {children}
+        <Footer />
+      </div>
+    );
+  }
 }
 
 Layout.propTypes = {
-	children: PropTypes.array,
+  children: PropTypes.array,
 };
 
 export default Layout;

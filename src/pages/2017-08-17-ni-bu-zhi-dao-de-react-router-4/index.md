@@ -42,30 +42,30 @@ import { render } from 'react-dom';
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
 const PrimaryLayout = props => (
-	<div className="primary-layout">
-		<header>Our React Router 3 App</header>
-		<ul>
-			<li>
-				<Link to="/">Home</Link>
-			</li>
-			<li>
-				<Link to="/user">User</Link>
-			</li>
-		</ul>
-		<main>{props.children}</main>
-	</div>
+  <div className="primary-layout">
+    <header>Our React Router 3 App</header>
+    <ul>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/user">User</Link>
+      </li>
+    </ul>
+    <main>{props.children}</main>
+  </div>
 );
 
 const HomePage = () => <h1>Home Page</h1>;
 const UsersPage = () => <h1>User Page</h1>;
 
 const App = () => (
-	<Router history={browserHistory}>
-		<Route path="/" component={PrimaryLayout}>
-			<IndexRoute component={HomePage} />
-			<Route path="/user" component={UsersPage} />
-		</Route>
-	</Router>
+  <Router history={browserHistory}>
+    <Route path="/" component={PrimaryLayout}>
+      <IndexRoute component={HomePage} />
+      <Route path="/user" component={UsersPage} />
+    </Route>
+  </Router>
 );
 
 render(<App />, document.getElementById('root'));
@@ -87,30 +87,30 @@ import { render } from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 const PrimaryLayout = () => (
-	<div className="primary-layout">
-		<header>Our React Router 4 App</header>
-		<ul>
-			<li>
-				<Link to="/">Home</Link>
-			</li>
-			<li>
-				<Link to="/User">User</Link>
-			</li>
-		</ul>
-		<main>
-			<Route path="/" exact component={HomePage} />
-			<Route path="/user" component={UsersPage} />
-		</main>
-	</div>
+  <div className="primary-layout">
+    <header>Our React Router 4 App</header>
+    <ul>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/User">User</Link>
+      </li>
+    </ul>
+    <main>
+      <Route path="/" exact component={HomePage} />
+      <Route path="/user" component={UsersPage} />
+    </main>
+  </div>
 );
 
 const HomePage = () => <h1>Home Page</h1>;
 const UsersPage = () => <h1>User Page</h1>;
 
 const App = () => (
-	<BrowserRouter>
-		<PrimaryLayout />
-	</BrowserRouter>
+  <BrowserRouter>
+    <PrimaryLayout />
+  </BrowserRouter>
 );
 
 render(<App />, document.getElementById('root'));
@@ -134,16 +134,16 @@ render(<App />, document.getElementById('root'));
 
 ```js
 const PrimaryLayout = () => (
-	<div className="primary-layout">
-		<header>
-			Our React Router 4 App
-			<Route path="/user" component={UsersMenu} />
-		</header>
-		<main>
-			<Route path="/" exact component={HomePage} />
-			<Route path="/user" component={UsersPage} />
-		</main>
-	</div>
+  <div className="primary-layout">
+    <header>
+      Our React Router 4 App
+      <Route path="/user" component={UsersMenu} />
+    </header>
+    <main>
+      <Route path="/" exact component={HomePage} />
+      <Route path="/user" component={UsersPage} />
+    </main>
+  </div>
 );
 ```
 
@@ -155,17 +155,17 @@ const PrimaryLayout = () => (
 
 ```js
 const PrimaryLayout = () => (
-	<div className="primary-layout">
-		<PrimaryHeader />
-		<main>
-			<Switch>
-				<Route path="/" exact component={HomePage} />
-				<Route path="/user/add" component={UserAddPage} />
-				<Route path="/user" component={UsersPage} />
-				<Redirect to="/" />
-			</Switch>
-		</main>
-	</div>
+  <div className="primary-layout">
+    <PrimaryHeader />
+    <main>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/user/add" component={UserAddPage} />
+        <Route path="/user" component={UsersPage} />
+        <Redirect to="/" />
+      </Switch>
+    </main>
+  </div>
 );
 ```
 
@@ -189,21 +189,21 @@ const PrimaryLayout = () => (
 
 ```js
 const PrimaryLayout = props => {
-	return (
-		<div className="primary-layout">
-			<PrimaryHeader />
-			<main>
-				<Switch>
-					<Route path="/" exact component={HomePage} />
-					<Route path="/user" exact component={BrowseUsersPage} />
-					<Route path="/user/:userId" component={UserProfilePage} />
-					<Route path="/products" exact component={BrowseProductsPage} />
-					<Route path="/products/:productId" component={ProductProfilePage} />
-					<Redirect to="/" />
-				</Switch>
-			</main>
-		</div>
-	);
+  return (
+    <div className="primary-layout">
+      <PrimaryHeader />
+      <main>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/user" exact component={BrowseUsersPage} />
+          <Route path="/user/:userId" component={UserProfilePage} />
+          <Route path="/products" exact component={BrowseProductsPage} />
+          <Route path="/products/:productId" component={ProductProfilePage} />
+          <Redirect to="/" />
+        </Switch>
+      </main>
+    </div>
+  );
 };
 ```
 
@@ -211,25 +211,25 @@ const PrimaryLayout = props => {
 
 ```js
 const BrowseUsersPage = () => (
-	<div className="user-sub-layout">
-		<aside>
-			<UserNav />
-		</aside>
-		<div className="primary-content">
-			<BrowseUserTable />
-		</div>
-	</div>
+  <div className="user-sub-layout">
+    <aside>
+      <UserNav />
+    </aside>
+    <div className="primary-content">
+      <BrowseUserTable />
+    </div>
+  </div>
 );
 
 const UserProfilePage = props => (
-	<div className="user-sub-layout">
-		<aside>
-			<UserNav />
-		</aside>
-		<div className="primary-content">
-			<UserProfile userId={props.match.params.userId} />
-		</div>
-	</div>
+  <div className="user-sub-layout">
+    <aside>
+      <UserNav />
+    </aside>
+    <div className="primary-content">
+      <UserProfile userId={props.match.params.userId} />
+    </div>
+  </div>
 );
 ```
 
@@ -241,19 +241,19 @@ const UserProfilePage = props => (
 
 ```js
 const PrimaryLayout = props => {
-	return (
-		<div className="primary-layout">
-			<PrimaryHeader />
-			<main>
-				<Switch>
-					<Route path="/" exact component={HomePage} />
-					<Route path="/user" component={UserSubLayout} />
-					<Route path="/products" component={ProductSubLayout} />
-					<Redirect to="/" />
-				</Switch>
-			</main>
-		</div>
-	);
+  return (
+    <div className="primary-layout">
+      <PrimaryHeader />
+      <main>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/user" component={UserSubLayout} />
+          <Route path="/products" component={ProductSubLayout} />
+          <Redirect to="/" />
+        </Switch>
+      </main>
+    </div>
+  );
 };
 ```
 
@@ -265,17 +265,17 @@ const PrimaryLayout = props => {
 
 ```js
 const UserSubLayout = () => (
-	<div className="user-sub-layout">
-		<aside>
-			<UserNav />
-		</aside>
-		<div className="primary-content">
-			<Switch>
-				<Route path="/user" exact component={BrowseUsersPage} />
-				<Route path="/user/:userId" component={UserProfilePage} />
-			</Switch>
-		</div>
-	</div>
+  <div className="user-sub-layout">
+    <aside>
+      <UserNav />
+    </aside>
+    <div className="primary-content">
+      <Switch>
+        <Route path="/user" exact component={BrowseUsersPage} />
+        <Route path="/user/:userId" component={UserProfilePage} />
+      </Switch>
+    </div>
+  </div>
 );
 ```
 
@@ -285,20 +285,20 @@ const UserSubLayout = () => (
 
 ```js
 const UserSubLayout = props => (
-	<div className="user-sub-layout">
-		<aside>
-			<UserNav />
-		</aside>
-		<div className="primary-content">
-			<Switch>
-				<Route path={props.match.path} exact component={BrowseUsersPage} />
-				<Route
-					path={`${props.match.path}/:userId`}
-					component={UserProfilePage}
-				/>
-			</Switch>
-		</div>
-	</div>
+  <div className="user-sub-layout">
+    <aside>
+      <UserNav />
+    </aside>
+    <div className="primary-content">
+      <Switch>
+        <Route path={props.match.path} exact component={BrowseUsersPage} />
+        <Route
+          path={`${props.match.path}/:userId`}
+          component={UserProfilePage}
+        />
+      </Switch>
+    </div>
+  </div>
 );
 ```
 
@@ -314,21 +314,21 @@ const UserSubLayout = props => (
 
 ```js
 const UserSubLayout = ({ match }) => {
-	console.log(match.url); // output: "/user"
-	console.log(match.path); // output: "/user"
-	return (
-		<div className="user-sub-layout">
-			<aside>
-				<UserNav />
-			</aside>
-			<div className="primary-content">
-				<Switch>
-					<Route path={match.path} exact component={BrowseUsersPage} />
-					<Route path={`${match.path}/:userId`} component={UserProfilePage} />
-				</Switch>
-			</div>
-		</div>
-	);
+  console.log(match.url); // output: "/user"
+  console.log(match.path); // output: "/user"
+  return (
+    <div className="user-sub-layout">
+      <aside>
+        <UserNav />
+      </aside>
+      <div className="primary-content">
+        <Switch>
+          <Route path={match.path} exact component={BrowseUsersPage} />
+          <Route path={`${match.path}/:userId`} component={UserProfilePage} />
+        </Switch>
+      </div>
+    </div>
+  );
 };
 ```
 
@@ -348,11 +348,11 @@ const UserComments = ({ match }) => <div>UserId: {match.params.userId}</div>;
 const UserSettings = ({ match }) => <div>UserId: {match.params.userId}</div>;
 
 const UserProfilePage = ({ match }) => (
-	<div>
-		User Profile:
-		<Route path={`${match.url}/comments`} component={UserComments} />
-		<Route path={`${match.path}/settings`} component={UserSettings} />
-	</div>
+  <div>
+    User Profile:
+    <Route path={`${match.url}/comments`} component={UserComments} />
+    <Route path={`${match.path}/settings`} component={UserSettings} />
+  </div>
 );
 ```
 
@@ -374,19 +374,19 @@ const UserProfilePage = ({ match }) => (
 
 ```js
 const UserSubLayou = ({ match }) => (
-	<div className="user-sub-layout">
-		<aside>
-			<UserNav />
-		</aside>
-		<div className="primary-content">
-			<Switch>
-				<Route exact path={match.path} component={BrowseUsersPage} />
-				<Route path={`${match.path}/add`} component={AddUserPage} />
-				<Route path={`${match.path}/:userId/edit`} component={EditUserPage} />
-				<Route path={`${match.path}/:userId`} component={UserProfilePage} />
-			</Switch>
-		</div>
-	</div>
+  <div className="user-sub-layout">
+    <aside>
+      <UserNav />
+    </aside>
+    <div className="primary-content">
+      <Switch>
+        <Route exact path={match.path} component={BrowseUsersPage} />
+        <Route path={`${match.path}/add`} component={AddUserPage} />
+        <Route path={`${match.path}/:userId/edit`} component={EditUserPage} />
+        <Route path={`${match.path}/:userId`} component={UserProfilePage} />
+      </Switch>
+    </div>
+  </div>
 );
 ```
 
@@ -400,18 +400,18 @@ const UserSubLayou = ({ match }) => (
 
 ```js
 class App extends React.Component {
-	render() {
-		return (
-			<Provider store={store}>
-				<BrowserRouter>
-					<Switch>
-						<Route path="/auth" component={UnauthorizedLayout} />
-						<AuthorizedRoute path="/app" component={PrimaryLayout} />
-					</Switch>
-				</BrowserRouter>
-			</Provider>
-		);
-	}
+  render() {
+    return (
+      <Provider store={store}>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/auth" component={UnauthorizedLayout} />
+            <AuthorizedRoute path="/app" component={PrimaryLayout} />
+          </Switch>
+        </BrowserRouter>
+      </Provider>
+    );
+  }
 }
 ```
 
@@ -421,31 +421,31 @@ class App extends React.Component {
 
 ```js
 class AuthorizedRoute extends React.Component {
-	componentWillMount() {
-		getLoggedUser();
-	}
+  componentWillMount() {
+    getLoggedUser();
+  }
 
-	render() {
-		const { component: Component, pending, logged, ...rest } = this.props;
-		return (
-			<Route
-				{...rest}
-				render={props => {
-					if (pending) return <div>Loading...</div>;
-					return logged ? (
-						<Component {...this.props} />
-					) : (
-						<Redirect to="/auth/login" />
-					);
-				}}
-			/>
-		);
-	}
+  render() {
+    const { component: Component, pending, logged, ...rest } = this.props;
+    return (
+      <Route
+        {...rest}
+        render={props => {
+          if (pending) return <div>Loading...</div>;
+          return logged ? (
+            <Component {...this.props} />
+          ) : (
+            <Redirect to="/auth/login" />
+          );
+        }}
+      />
+    );
+  }
 }
 
 const stateToProps = ({ loggedUserState }) => ({
-	pending: loggedUserState.pending,
-	logged: loggedUserState.logged,
+  pending: loggedUserState.pending,
+  logged: loggedUserState.logged,
 });
 
 export default connect(stateToProps)(AuthorizedRoute);

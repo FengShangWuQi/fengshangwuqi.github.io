@@ -1,75 +1,69 @@
 {
-	"name": "fswq-blog",
-	"description": "枫上雾棋的日志",
-	"version": "1.0.0",
-	"author": "fengshangwuqi <fengshanguwqi@gmail.com>",
-	"homepage": "https://fengshangwuqi.github.io",
-	"keywords": [
-		"枫上雾棋的日志",
-		"枫上雾棋",
-		"fengshangwuqi"
-	],
-	"scripts": {
-		"clean": "rimraf public .cache node_modules",
-		"lint": "eslint --ext .js --ignore-pattern public . && stylelint src/**/*.css --fix",
-		"format": "prettier --write '**/*.{js,json,css,md}'",
-		"start": "gatsby develop",
-		"new-blog": "gatsby-new-blog start",
-		"precommit": "yarn lint && lint-staged",
-		"build": "yarn clean && gatsby build --prefix-paths",
-		"deploy": "yarn build && gh-pages -d public -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -b master -m deploy"
-	},
-	"lint-staged": {
-		"**/*.{js,json,md}": [
-			"prettier --write",
-			"git add"
-		]
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged",
-			"commit-msg": "commitlint -x @commitlint/config-conventional -e $GIT_PARAMS"
-		}
-	},
-	"dependencies": {
-		"gatsby": "2.0.55",
-		"gatsby-plugin-feed": "2.0.9",
-		"gatsby-plugin-google-analytics": "2.0.7",
-		"gatsby-plugin-offline": "2.0.17",
-		"gatsby-plugin-react-helmet": "3.0.2",
-		"gatsby-plugin-sharp": "2.0.13",
-		"gatsby-remark-autolink-headers": "2.0.11",
-		"gatsby-remark-copy-linked-files": "2.0.6",
-		"gatsby-remark-emoji": "0.0.2",
-		"gatsby-remark-external-links": "0.0.4",
-		"gatsby-remark-images": "3.0.0",
-		"gatsby-remark-prismjs": "3.0.3",
-		"gatsby-remark-responsive-iframe": "2.0.6",
-		"gatsby-remark-smartypants": "2.0.6",
-		"gatsby-source-filesystem": "2.0.8",
-		"gatsby-transformer-remark": "2.1.12",
-		"gatsby-transformer-sharp": "2.1.8",
-		"lodash": "4.17.11",
-		"normalize.css": "8.0.1",
-		"prismjs": "1.15.0",
-		"react": "16.6.3",
-		"react-dom": "16.6.3",
-		"react-helmet": "5.2.0"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "7.2.1",
-		"@commitlint/config-conventional": "7.1.2",
-		"babel-eslint": "10.0.1",
-		"eslint": "5.9.0",
-		"eslint-plugin-react": "7.11.1",
-		"gatsby-new-blog": "1.0.4",
-		"gh-pages": "2.0.1",
-		"husky": "1.2.0",
-		"lint-staged": "8.1.0",
-		"prettier": "1.15.2",
-		"rimraf": "2.6.2",
-		"stylelint": "9.8.0",
-		"stylelint-config-standard": "18.2.0"
-	},
-	"license": "MIT"
+  "name": "fswq-blog",
+  "description": "枫上雾棋的日志",
+  "version": "1.0.0",
+  "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
+  "homepage": "https://fengshangwuqi.github.io",
+  "keywords": [
+    "枫上雾棋的日志",
+    "枫上雾棋",
+    "fengshangwuqi"
+  ],
+  "scripts": {
+    "clean": "npx rimraf public .cache",
+    "lint": "eslint --ext .js --ignore-pattern public . && stylelint src/**/*.css --fix",
+    "format": "npx prettier --write '**/*.{js,json,css,md}'",
+    "start": "gatsby develop",
+    "build": "npm run clean && gatsby build --prefix-paths",
+    "deploy": "npm run build && npx gh-pages -d public -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -b master -m deploy"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && lint-staged",
+      "commit-msg": "commitlint -x @commitlint/config-conventional -e $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,json,md}": [
+      "npx prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "gatsby": "2.0.55",
+    "gatsby-plugin-feed": "2.0.9",
+    "gatsby-plugin-google-analytics": "2.0.7",
+    "gatsby-plugin-offline": "2.0.17",
+    "gatsby-plugin-react-helmet": "3.0.2",
+    "gatsby-plugin-sharp": "2.0.13",
+    "gatsby-remark-autolink-headers": "2.0.11",
+    "gatsby-remark-copy-linked-files": "2.0.6",
+    "gatsby-remark-emoji": "0.0.2",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-images": "3.0.0",
+    "gatsby-remark-prismjs": "3.0.3",
+    "gatsby-remark-responsive-iframe": "2.0.6",
+    "gatsby-remark-smartypants": "2.0.6",
+    "gatsby-source-filesystem": "2.0.8",
+    "gatsby-transformer-remark": "2.1.12",
+    "gatsby-transformer-sharp": "2.1.8",
+    "lodash": "4.17.11",
+    "normalize.css": "8.0.1",
+    "prismjs": "1.15.0",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-helmet": "5.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "7.2.1",
+    "@commitlint/config-conventional": "7.1.2",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.9.0",
+    "eslint-plugin-react": "7.11.1",
+    "husky": "1.2.0",
+    "lint-staged": "8.1.0",
+    "stylelint": "9.8.0",
+    "stylelint-config-standard": "18.2.0"
+  },
+  "license": "MIT"
 }

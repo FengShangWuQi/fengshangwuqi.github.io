@@ -24,9 +24,7 @@ date: 2018-01-18T17:51:32+08:00
 这是 **diglog** 最基础的示例：
 
 ```html
-<dialog open>
-	Native dialog box!
-</dialog>
+<dialog open> Native dialog box! </dialog>
 ```
 
 其中，**open** 属性表示此时 **dialog** 是可见的，如果没有 **open**，**dialog** 将会隐藏，你可以使用 **JavaScript** 将它显现出来，此时，**dialog** 渲染如下：
@@ -79,16 +77,16 @@ dialogPolyfill.registerDialog(dialog);
 
 ```css
 dialog {
-	padding: 0;
-	width: 478px;
-	text-align: center;
-	vertical-align: middle;
-	border-radius: 5px;
-	border: 0;
+  padding: 0;
+  width: 478px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  border: 0;
 }
 
 dialog::backdrop {
-	background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 ```
 
@@ -96,7 +94,7 @@ dialog::backdrop {
 
 ```css
 dialog + .backdrop {
-	background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 ```
 
@@ -104,13 +102,13 @@ dialog + .backdrop {
 
 ```html
 <dialog id="sweet-modal">
-    <h3 class="modal-header">sweet dialog</h3>
-	<div class="modal-body">
-	    <p>This is a sweet dialog, which is much better.</p>
-	</div>
-	<footer class="modal-footer">
-	    <button id="get-it" type="button">Get</button>
-	</footer>
+  <h3 class="modal-header">sweet dialog</h3>
+  <div class="modal-body">
+    <p>This is a sweet dialog, which is much better.</p>
+  </div>
+  <footer class="modal-footer">
+    <button id="get-it" type="button">Get</button>
+  </footer>
 </dialog>
 ```
 
@@ -132,9 +130,9 @@ console.log(modal.returnValue); // logs `Accepted`
 
 ```js
 modal.addEventListener('click', event => {
-	if (event.target === modal) {
-		modal.close('cancelled');
-	}
+  if (event.target === modal) {
+    modal.close('cancelled');
+  }
 });
 ```
 

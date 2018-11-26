@@ -56,20 +56,20 @@ date: 2018-02-01T17:57:26+08:00
 ```javascript
 const ThemeContext = React.createContext('light');
 class ThemeProvider extends React.Component {
-	state = { theme: 'light' };
-	render() {
-		return ThemeContext.provide(this.state.theme, this.props.children);
-	}
+  state = { theme: 'light' };
+  render() {
+    return ThemeContext.provide(this.state.theme, this.props.children);
+  }
 }
 
 const ThemeConsumer = ({ children }) => ThemeContext.consume(children);
 
 class App extends React.Component {
-	render() {
-		<ThemeProvider>
-			<ThemeConsumer>{val => <div>{val}</div>}</ThemeConsumer>
-		</ThemeProvider>;
-	}
+  render() {
+    <ThemeProvider>
+      <ThemeConsumer>{val => <div>{val}</div>}</ThemeConsumer>
+    </ThemeProvider>;
+  }
 }
 ```
 
@@ -104,45 +104,45 @@ class App extends React.Component {
 ```javascript
 const ThemeContext = React.createContext('light');
 class ThemeProvider extends React.Component {
-	/* code */
+  /* code */
 }
 const ThemeConsumer = ({ children }) => ThemeContext.consume(children);
 const LanguageContext = React.createContext('en');
 class LanguageProvider extends React.Component {
-	/* code */
+  /* code */
 }
 const LanguageConsumer = ({ children }) => LanguageContext.consume(children);
 
 function AppProviders({ children }) {
-	return (
-		<LanguageProvider>
-			<ThemeProvider>{children}</ThemeProvider>
-		</LanguageProvider>
-	);
+  return (
+    <LanguageProvider>
+      <ThemeProvider>{children}</ThemeProvider>
+    </LanguageProvider>
+  );
 }
 
 function ThemeAndLanguageConsumer({ children }) {
-	return (
-		<LanguageConsumer>
-			{language => (
-				<ThemeConsumer>{theme => children({ language, theme })}</ThemeConsumer>
-			)}
-		</LanguageConsumer>
-	);
+  return (
+    <LanguageConsumer>
+      {language => (
+        <ThemeConsumer>{theme => children({ language, theme })}</ThemeConsumer>
+      )}
+    </LanguageConsumer>
+  );
 }
 
 class App extends React.Component {
-	render() {
-		<AppProviders>
-			<ThemeAndLanguageConsumer>
-				{({ theme, language }) => (
-					<div>
-						{theme} and {language}
-					</div>
-				)}
-			</ThemeAndLanguageConsumer>
-		</AppProviders>;
-	}
+  render() {
+    <AppProviders>
+      <ThemeAndLanguageConsumer>
+        {({ theme, language }) => (
+          <div>
+            {theme} and {language}
+          </div>
+        )}
+      </ThemeAndLanguageConsumer>
+    </AppProviders>;
+  }
 }
 ```
 

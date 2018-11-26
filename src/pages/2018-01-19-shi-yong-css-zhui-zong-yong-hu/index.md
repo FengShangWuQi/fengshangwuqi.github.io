@@ -39,7 +39,7 @@ date: 2018-01-19T17:55:21+08:00
 
 ```css
 #link2:active::after {
-	content: url('track.php?action=link2_clicked');
+  content: url('track.php?action=link2_clicked');
 }
 ```
 
@@ -51,9 +51,9 @@ date: 2018-01-19T17:55:21+08:00
 
 ```css
 @supports (-webkit-appearance: none) {
-	#chrome_detect::after {
-		content: url('track.php?action=browser_chrome');
-	}
+  #chrome_detect::after {
+    content: url('track.php?action=browser_chrome');
+  }
 }
 ```
 
@@ -64,12 +64,12 @@ date: 2018-01-19T17:55:21+08:00
 ```css
 /** Font detection **/
 @font-face {
-	font-family: Font1;
-	src: url('track.php?action=font1');
+  font-family: Font1;
+  src: url('track.php?action=font1');
 }
 
 #font_detection1 {
-	font-family: Calibri, Font1;
+  font-family: Calibri, Font1;
 }
 ```
 
@@ -79,24 +79,24 @@ date: 2018-01-19T17:55:21+08:00
 
 ```css
 @keyframes pulsate {
-	0% {
-		background-image: url('track.php?duration=00');
-	}
-	20% {
-		background-image: url('track.php?duration=20');
-	}
-	40% {
-		background-image: url('track.php?duration=40');
-	}
-	60% {
-		background-image: url('track.php?duration=60');
-	}
-	80% {
-		background-image: url('track.php?duration=80');
-	}
-	100% {
-		background-image: url('track.php?duration=100');
-	}
+  0% {
+    background-image: url('track.php?duration=00');
+  }
+  20% {
+    background-image: url('track.php?duration=20');
+  }
+  40% {
+    background-image: url('track.php?duration=40');
+  }
+  60% {
+    background-image: url('track.php?duration=60');
+  }
+  80% {
+    background-image: url('track.php?duration=80');
+  }
+  100% {
+    background-image: url('track.php?duration=100');
+  }
 }
 ```
 
@@ -104,12 +104,12 @@ date: 2018-01-19T17:55:21+08:00
 
 ```css
 #duration:hover::after {
-	-moz-animation: pulsate 5s infinite;
-	-webkit-animation: pulsate 5s infinite;
-	/*animation: pulsate 5s infinite;*/
-	animation-name: pulsate;
-	animation-duration: 10s;
-	content: url('track.php?duration=-1');
+  -moz-animation: pulsate 5s infinite;
+  -webkit-animation: pulsate 5s infinite;
+  /*animation: pulsate 5s infinite;*/
+  animation-name: pulsate;
+  animation-duration: 10s;
+  content: url('track.php?duration=-1');
 }
 ```
 
@@ -121,20 +121,20 @@ date: 2018-01-19T17:55:21+08:00
 
 ```css
 #checkbox:checked {
-	content: url('track.php?action=checkbox');
+  content: url('track.php?action=checkbox');
 }
 ```
 
 为了监测字符串，我们结合了 **HTML pattern** 属性，它可以帮助我们解决一些基本的输入验证，再结合 `:valid` 选择器，浏览器当输入匹配成功时会去请求我们的追踪站点：
 
 ```html
-<input type="text" id="text_input" pattern="^test$" required>
+<input type="text" id="text_input" pattern="^test$" required />
 ```
 
 ```css
 #text_input:valid {
-	background: green;
-	background-image: url('track.php?action=text_input');
+  background: green;
+  background-image: url('track.php?action=text_input');
 }
 ```
 

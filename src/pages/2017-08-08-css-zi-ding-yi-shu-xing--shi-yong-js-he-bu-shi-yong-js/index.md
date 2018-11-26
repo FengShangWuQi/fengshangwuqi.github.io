@@ -33,12 +33,12 @@ date: 2017-08-08T19:29:49+08:00
 
 ```css
 div {
-	width: 15em;
-	height: 15em;
+  width: 15em;
+  height: 15em;
 
-	--background: #ccc;
-	background-color: var(--background);
-	transition: background-color 1s;
+  --background: #ccc;
+  background-color: var(--background);
+  transition: background-color 1s;
 }
 ```
 
@@ -46,7 +46,7 @@ div {
 
 ```css
 div:hover {
-	--background: #cce;
+  --background: #cce;
 }
 ```
 
@@ -73,7 +73,7 @@ var value = style.getPropertyValue(property);
 
 ```css
 :root {
-	--color: red;
+  --color: red;
 }
 ```
 
@@ -124,27 +124,27 @@ var oldValue = style.removeProperty(property);
 
 ```html
 <div></div>
-<input type="color" id="div-bkgd" value="#cccccc">
+<input type="color" id="div-bkgd" value="#cccccc" />
 ```
 
 接下来，我们在全局创建一个 `--background` 自定义属性，初始化为 **#ccc**，给 **div** 一个 **width**，**height** 和 **margin**，用 **var()** 给 **background** 赋值, 然后简单设置 **input** 的样式。
 
 ```css
 :root {
-	--background: #ccc;
+  --background: #ccc;
 }
 
 div {
-	width: 20em;
-	height: 20em;
-	margin: 1em auto;
-	background: var(--background);
+  width: 20em;
+  height: 20em;
+  margin: 1em auto;
+  background: var(--background);
 }
 
 input {
-	display: block;
-	width: 10em;
-	margin: 1em auto;
+  display: block;
+  width: 10em;
+  margin: 1em auto;
 }
 ```
 
@@ -154,7 +154,7 @@ input {
 var colorInput = document.querySelector('#div-bkgd');
 
 colorInput.addEventListener('change', function() {
-	document.documentElement.style.setProperty('--background', this.value);
+  document.documentElement.style.setProperty('--background', this.value);
 });
 ```
 

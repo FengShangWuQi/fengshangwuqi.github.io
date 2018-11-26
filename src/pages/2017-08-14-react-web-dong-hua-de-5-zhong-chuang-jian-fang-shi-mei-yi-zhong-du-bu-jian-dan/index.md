@@ -49,18 +49,18 @@ date: 2017-08-14T14:46:24+08:00
 
 ```css
 .input {
-	width: 150px;
-	padding: 10px;
-	font-size: 20px;
-	border: none;
-	border-radius: 4px;
-	background-color: #dddddd;
-	transition: width 0.35s linear;
-	outline: none;
+  width: 150px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dddddd;
+  transition: width 0.35s linear;
+  outline: none;
 }
 
 .input-focused {
-	width: 240px;
+  width: 240px;
 }
 ```
 
@@ -72,35 +72,35 @@ date: 2017-08-14T14:46:24+08:00
 
 ```js
 class App extends Component {
-	state = {
-		focused: false,
-	};
+  state = {
+    focused: false,
+  };
 
-	componentDidMount() {
-		this._input.addEventListener('focus', this.focus);
-		this._input.addEventListener('blur', this.focus);
-	}
+  componentDidMount() {
+    this._input.addEventListener('focus', this.focus);
+    this._input.addEventListener('blur', this.focus);
+  }
 
-	focus = () => {
-		this.setState(prevState => ({
-			focused: !prevState.focused,
-		}));
-	};
+  focus = () => {
+    this.setState(prevState => ({
+      focused: !prevState.focused,
+    }));
+  };
 
-	render() {
-		return (
-			<div className="App">
-				<div className="container">
-					<input
-						ref={input => (this._input = input)}
-						className={['input', this.state.focused && 'input-focused'].join(
-							' '
-						)}
-					/>
-				</div>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="App">
+        <div className="container">
+          <input
+            ref={input => (this._input = input)}
+            className={['input', this.state.focused && 'input-focused'].join(
+              ' '
+            )}
+          />
+        </div>
+      </div>
+    );
+  }
 }
 ```
 
@@ -127,67 +127,67 @@ class App extends Component {
 
 ```js
 class App extends Component {
-	state = {
-		disabled: true,
-	};
+  state = {
+    disabled: true,
+  };
 
-	onChange = e => {
-		const length = e.target.value.length;
+  onChange = e => {
+    const length = e.target.value.length;
 
-		if (length > 0) {
-			this.setState({ disabled: false });
-		} else {
-			this.setState({ disabled: true });
-		}
-	};
-	render() {
-		const { disabled } = this.state;
-		const label = disabled ? 'Disabled' : 'Submit';
+    if (length > 0) {
+      this.setState({ disabled: false });
+    } else {
+      this.setState({ disabled: true });
+    }
+  };
+  render() {
+    const { disabled } = this.state;
+    const label = disabled ? 'Disabled' : 'Submit';
 
-		return (
-			<div style={styles.App}>
-				<input style={styles.input} onChange={this.onChange} />
-				<button
-					style={Object.assign(
-						{},
-						styles.button,
-						!this.state.disabled && styles.buttonEnabled
-					)}
-					disabled={disabled}>
-					{label}
-				</button>
-			</div>
-		);
-	}
+    return (
+      <div style={styles.App}>
+        <input style={styles.input} onChange={this.onChange} />
+        <button
+          style={Object.assign(
+            {},
+            styles.button,
+            !this.state.disabled && styles.buttonEnabled
+          )}
+          disabled={disabled}>
+          {label}
+        </button>
+      </div>
+    );
+  }
 }
 
 const styles = {
-	App: {
-		display: 'flex',
-		justifyContent: 'left',
-	},
-	input: {
-		marginRight: 10,
-		padding: 10,
-		width: 190,
-		fontSize: 20,
-		border: 'none',
-		backgroundColor: '#ddd',
-		outline: 'none',
-	},
-	button: {
-		width: 90,
-		height: 43,
-		fontSize: 17,
-		border: 'none',
-		borderRadius: 4,
-		transition: '.25s all',
-		cursor: 'pointer',
-	},
-	buttonEnabled: {
-		width: 120,
-		backgroundColor: '#ffc107',
-	},
+  App: {
+    display: 'flex',
+    justifyContent: 'left',
+  },
+  input: {
+    marginRight: 10,
+    padding: 10,
+    width: 190,
+    fontSize: 20,
+    border: 'none',
+    backgroundColor: '#ddd',
+    outline: 'none',
+  },
+  button: {
+    width: 90,
+    height: 43,
+    fontSize: 17,
+    border: 'none',
+    borderRadius: 4,
+    transition: '.25s all',
+    cursor: 'pointer',
+  },
+  buttonEnabled: {
+    width: 120,
+    backgroundColor: '#ffc107',
+  },
 };
 ```
 
@@ -205,7 +205,7 @@ const styles = {
 
 ```js
 <Motion style={{ x: spring(this.state.x) }}>
-	{({ x }) => <div style={{ transform: `translateX(${x}px)` }} />}
+  {({ x }) => <div style={{ transform: `translateX(${x}px)` }} />}
 </Motion>
 ```
 
@@ -241,60 +241,60 @@ $ yarn add react-motion
 import { Motion, spring } from 'react-motion';
 
 class App extends Component {
-	state = {
-		height: 38,
-	};
+  state = {
+    height: 38,
+  };
 
-	animate = () => {
-		this.setState(state => ({ height: state.height === 233 ? 38 : 233 }));
-	};
+  animate = () => {
+    this.setState(state => ({ height: state.height === 233 ? 38 : 233 }));
+  };
 
-	render() {
-		return (
-			<div className="App">
-				<div style={styles.button} onClick={this.animate}>
-					Animate
-				</div>
-				<Motion style={{ height: spring(this.state.height) }}>
-					{({ height }) => (
-						<div style={Object.assign({}, styles.menu, { height })}>
-							<p style={styles.selection}>Selection 1</p>
-							<p style={styles.selection}>Selection 2</p>
-							<p style={styles.selection}>Selection 3</p>
-							<p style={styles.selection}>Selection 4</p>
-							<p style={styles.selection}>Selection 5</p>
-							<p style={styles.selection}>Selection 6</p>
-						</div>
-					)}
-				</Motion>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="App">
+        <div style={styles.button} onClick={this.animate}>
+          Animate
+        </div>
+        <Motion style={{ height: spring(this.state.height) }}>
+          {({ height }) => (
+            <div style={Object.assign({}, styles.menu, { height })}>
+              <p style={styles.selection}>Selection 1</p>
+              <p style={styles.selection}>Selection 2</p>
+              <p style={styles.selection}>Selection 3</p>
+              <p style={styles.selection}>Selection 4</p>
+              <p style={styles.selection}>Selection 5</p>
+              <p style={styles.selection}>Selection 6</p>
+            </div>
+          )}
+        </Motion>
+      </div>
+    );
+  }
 }
 
 const styles = {
-	menu: {
-		marginTop: 20,
-		width: 300,
-		border: '2px solid #ddd',
-		overflow: 'hidden',
-	},
-	button: {
-		display: 'flex',
-		width: 200,
-		height: 45,
-		justifyContent: 'center',
-		alignItems: 'center',
-		border: 'none',
-		borderRadius: 4,
-		backgroundColor: '#ffc107',
-		cursor: 'pointer',
-	},
-	selection: {
-		margin: 0,
-		padding: 10,
-		borderBottom: '1px solid #ededed',
-	},
+  menu: {
+    marginTop: 20,
+    width: 300,
+    border: '2px solid #ddd',
+    overflow: 'hidden',
+  },
+  button: {
+    display: 'flex',
+    width: 200,
+    height: 45,
+    justifyContent: 'center',
+    alignItems: 'center',
+    border: 'none',
+    borderRadius: 4,
+    backgroundColor: '#ffc107',
+    cursor: 'pointer',
+  },
+  selection: {
+    margin: 0,
+    padding: 10,
+    borderBottom: '1px solid #ededed',
+  },
 };
 ```
 
@@ -334,62 +334,62 @@ import Animated from 'animated/lib/targets/react-dom';
 import Easing from 'animated/lib/Easing';
 
 class AnimatedApp extends Component {
-	animatedValue = new Animated.Value(0);
+  animatedValue = new Animated.Value(0);
 
-	animate = () => {
-		this.animatedValue.setValue(0);
+  animate = () => {
+    this.animatedValue.setValue(0);
 
-		Animated.timing(this.animatedValue, {
-			toValue: 1,
-			duration: 1000,
-			easing: Easing.elastic(1),
-		}).start();
-	};
+    Animated.timing(this.animatedValue, {
+      toValue: 1,
+      duration: 1000,
+      easing: Easing.elastic(1),
+    }).start();
+  };
 
-	render() {
-		const marginLeft = this.animatedValue.interpolate({
-			inputRange: [0, 1],
-			outputRange: [-120, 0],
-		});
+  render() {
+    const marginLeft = this.animatedValue.interpolate({
+      inputRange: [0, 1],
+      outputRange: [-120, 0],
+    });
 
-		return (
-			<div className="App">
-				<div style={styles.button} onClick={this.animate}>
-					Animate
-				</div>
-				<Animated.div
-					style={Object.assign({}, styles.box, {
-						opacity: this.animatedValue,
-						marginLeft,
-					})}>
-					<p>Thanks for your submission!</p>
-				</Animated.div>
-			</div>
-		);
-	}
+    return (
+      <div className="App">
+        <div style={styles.button} onClick={this.animate}>
+          Animate
+        </div>
+        <Animated.div
+          style={Object.assign({}, styles.box, {
+            opacity: this.animatedValue,
+            marginLeft,
+          })}>
+          <p>Thanks for your submission!</p>
+        </Animated.div>
+      </div>
+    );
+  }
 }
 
 const styles = {
-	button: {
-		display: 'flex',
-		width: 125,
-		height: 50,
-		justifyContent: 'center',
-		alignItems: 'center',
-		border: 'none',
-		borderRadius: 4,
-		backgroundColor: '#ffc107',
-		cursor: 'pointer',
-	},
-	box: {
-		display: 'inline-block',
-		marginTop: 10,
-		padding: '0.6rem 2rem',
-		fontSize: '0.8rem',
-		border: '1px #eee solid',
-		borderRadius: 4,
-		boxShadow: '0 2px 8px rgba(0,0,0,.2)',
-	},
+  button: {
+    display: 'flex',
+    width: 125,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+    border: 'none',
+    borderRadius: 4,
+    backgroundColor: '#ffc107',
+    cursor: 'pointer',
+  },
+  box: {
+    display: 'inline-block',
+    marginTop: 10,
+    padding: '0.6rem 2rem',
+    fontSize: '0.8rem',
+    border: '1px #eee solid',
+    borderRadius: 4,
+    boxShadow: '0 2px 8px rgba(0,0,0,.2)',
+  },
 };
 ```
 
@@ -417,9 +417,9 @@ const styles = {
 
 ```js
 <VelocityComponent
-	animation={{ opacity: this.state.showSubComponent ? 1 : 0 }}
-	duration={500}>
-	<MySubComponent />
+  animation={{ opacity: this.state.showSubComponent ? 1 : 0 }}
+  duration={500}>
+  <MySubComponent />
 </VelocityComponent>
 ```
 
@@ -437,62 +437,62 @@ $ yarn add velocity-react
 import { VelocityComponent } from 'velocity-react';
 
 const VelocityLetter = ({ letter }) => (
-	<VelocityComponent
-		runOnMount
-		animation={{ opacity: 1, marginTop: 0 }}
-		duration={500}>
-		<p style={styles.letter}>{letter}</p>
-	</VelocityComponent>
+  <VelocityComponent
+    runOnMount
+    animation={{ opacity: 1, marginTop: 0 }}
+    duration={500}>
+    <p style={styles.letter}>{letter}</p>
+  </VelocityComponent>
 );
 
 class VelocityApp extends Component {
-	state = {
-		letters: [],
-	};
+  state = {
+    letters: [],
+  };
 
-	onChange = e => {
-		const letters = e.target.value.split('');
-		const arr = [];
+  onChange = e => {
+    const letters = e.target.value.split('');
+    const arr = [];
 
-		letters.forEach((l, i) => {
-			arr.push(<VelocityLetter letter={l} />);
-		});
-		this.setState({ letters: arr });
-	};
+    letters.forEach((l, i) => {
+      arr.push(<VelocityLetter letter={l} />);
+    });
+    this.setState({ letters: arr });
+  };
 
-	render() {
-		return (
-			<div className="App">
-				<div className="container">
-					<input onChange={this.onChange} style={styles.input} />
-					<div style={styles.letters}>{this.state.letters}</div>
-				</div>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="App">
+        <div className="container">
+          <input onChange={this.onChange} style={styles.input} />
+          <div style={styles.letters}>{this.state.letters}</div>
+        </div>
+      </div>
+    );
+  }
 }
 
 const styles = {
-	input: {
-		marginBottom: 20,
-		padding: 8,
-		width: 200,
-		height: 40,
-		fontSize: 22,
-		backgroundColor: '#ddd',
-		border: 'none',
-		outline: 'none',
-	},
-	letters: {
-		display: 'flex',
-		height: 140,
-	},
-	letter: {
-		marginTop: 100,
-		fontSize: 22,
-		whiteSpace: 'pre',
-		opacity: 0,
-	},
+  input: {
+    marginBottom: 20,
+    padding: 8,
+    width: 200,
+    height: 40,
+    fontSize: 22,
+    backgroundColor: '#ddd',
+    border: 'none',
+    outline: 'none',
+  },
+  letters: {
+    display: 'flex',
+    height: 140,
+  },
+  letter: {
+    marginTop: 100,
+    fontSize: 22,
+    whiteSpace: 'pre',
+    opacity: 0,
+  },
 };
 ```
 

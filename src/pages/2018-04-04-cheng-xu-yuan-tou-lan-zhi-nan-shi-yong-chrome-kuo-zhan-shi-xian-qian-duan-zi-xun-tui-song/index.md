@@ -21,10 +21,10 @@ POST /markdown
 
 ```js
 const res = await fetch('https://api.github.com/markdown', {
-	method: 'POST',
-	body: JSON.stringify({
-		text,
-	}),
+  method: 'POST',
+  body: JSON.stringify({
+    text,
+  }),
 });
 
 const md = await res.text();
@@ -33,9 +33,17 @@ const md = await res.text();
 返回：
 
 ```html
-"<blockquote>
-<h1>
-<a id="user-content-hello-fengshangwuqi" class="anchor" href="#hello-fengshangwuqi" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>hello fengshangwuqi</h1>
+"
+<blockquote>
+  <h1>
+    <a
+      id="user-content-hello-fengshangwuqi"
+      class="anchor"
+      href="#hello-fengshangwuqi"
+      aria-hidden="true"
+      ><span aria-hidden="true" class="octicon octicon-link"></span></a
+    >hello fengshangwuqi
+  </h1>
 </blockquote>
 "
 ```
@@ -52,17 +60,17 @@ const md = await res.text();
 
 ```json
 {
-	"manifest_version": 2,
+  "manifest_version": 2,
 
-	"name": "One-click Kittens",
-	"description": "This extension demonstrates a browser action with kittens.",
-	"version": "1.0",
+  "name": "One-click Kittens",
+  "description": "This extension demonstrates a browser action with kittens.",
+  "version": "1.0",
 
-	"permissions": ["https://secure.flickr.com/"],
-	"browser_action": {
-		"default_icon": "icon.png",
-		"default_popup": "popup.html"
-	}
+  "permissions": ["https://secure.flickr.com/"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
 }
 ```
 
@@ -84,12 +92,12 @@ const md = await res.text();
 
 ```js
 chrome.runtime.sendMessage(
-	{
-		action: 'getNew',
-	},
-	res => {
-		console.log(res);
-	}
+  {
+    action: 'getNew',
+  },
+  res => {
+    console.log(res);
+  }
 );
 ```
 
@@ -97,18 +105,18 @@ chrome.runtime.sendMessage(
 
 ```js
 async function handleMessage(message, sender, sendResponse) {
-	switch (message.action) {
-		case 'getNew':
-			sendResponse(await getNew());
-			break;
-		default:
-			sendResponse(false);
-	}
+  switch (message.action) {
+    case 'getNew':
+      sendResponse(await getNew());
+      break;
+    default:
+      sendResponse(false);
+  }
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-	handleMessage(message, sender, sendResponse);
-	return true;
+  handleMessage(message, sender, sendResponse);
+  return true;
 });
 ```
 
@@ -164,7 +172,7 @@ history
 const year = await GitHubAPI.getContent('history');
 const month = await GitHubAPI.getContent(`history/${year[year.length - 1]}`);
 const day = await GitHubAPI.getContent(
-	`history/${year[year.length - 1]}/${month[month.length - 1]}`
+  `history/${year[year.length - 1]}/${month[month.length - 1]}`
 );
 
 const path = `${year.pop()}/${month.pop()}/${day.pop()}`;
@@ -174,37 +182,37 @@ path 得到了，接下来，就可轻松通过上面的 **API** 获取对应的
 
 ```js
 const GitHubAPI = new class {
-	constructor(prefix, owner, repo) {
-		this.prefix = prefix;
-		this.owner = owner;
-		this.repo = repo;
-	}
+  constructor(prefix, owner, repo) {
+    this.prefix = prefix;
+    this.owner = owner;
+    this.repo = repo;
+  }
 
-	/* render an arbitrary markdown document */
-	async getMarkdown(text) {
-		const res = await fetch(`${this.prefix}/markdown`, {
-			method: 'POST',
-			body: JSON.stringify({
-				text,
-			}),
-		});
-		const md = await res.text();
+  /* render an arbitrary markdown document */
+  async getMarkdown(text) {
+    const res = await fetch(`${this.prefix}/markdown`, {
+      method: 'POST',
+      body: JSON.stringify({
+        text,
+      }),
+    });
+    const md = await res.text();
 
-		return md;
-	}
+    return md;
+  }
 
-	/* get contents */
-	async getContents(path) {
-		const res = await fetch(
-			`${this.prefix}/repos/${this.owner}/${this.repo}/contents/${path}`,
-			{
-				method: 'GET',
-			}
-		);
-		const contents = await res.json();
+  /* get contents */
+  async getContents(path) {
+    const res = await fetch(
+      `${this.prefix}/repos/${this.owner}/${this.repo}/contents/${path}`,
+      {
+        method: 'GET',
+      }
+    );
+    const contents = await res.json();
 
-		return contents;
-	}
+    return contents;
+  }
 }(githubAPIPrefix, owner, repo);
 
 export default GitHubAPI;
@@ -222,8 +230,8 @@ export default GitHubAPI;
 
 ```json
 {
-	"message": "API rate limit exceeded for xxx.xxx.xxx.xxx. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
-	"documentation_url": "https://developer.github.com/v3/#rate-limiting"
+  "message": "API rate limit exceeded for xxx.xxx.xxx.xxx. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
+  "documentation_url": "https://developer.github.com/v3/#rate-limiting"
 }
 ```
 
@@ -231,27 +239,27 @@ export default GitHubAPI;
 
 ```js
 export const getCurrContent = (paths, path) => {
-	chrome.runtime.sendMessage(
-		{
-			action: 'getCurrContent',
-			payload: {
-				path,
-			},
-		},
-		({ url, text }) => {
-			const header = new Header(url, path, paths);
+  chrome.runtime.sendMessage(
+    {
+      action: 'getCurrContent',
+      payload: {
+        path,
+      },
+    },
+    ({ url, text }) => {
+      const header = new Header(url, path, paths);
 
-			const pagination = {
-				current: paths.indexOf(path) + 1,
-				total: paths.length,
-			};
-			const item = new Item(text, pagination, path);
+      const pagination = {
+        current: paths.indexOf(path) + 1,
+        total: paths.length,
+      };
+      const item = new Item(text, pagination, path);
 
-			header.render();
-			header.addListener();
-			item.render();
-		}
-	);
+      header.render();
+      header.addListener();
+      item.render();
+    }
+  );
 };
 ```
 
