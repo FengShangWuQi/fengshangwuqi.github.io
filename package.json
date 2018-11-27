@@ -12,7 +12,7 @@
   "scripts": {
     "clean": "npx rimraf public .cache",
     "lint": "eslint --ext .js --ignore-pattern public . && stylelint src/**/*.css --fix",
-    "format": "npx prettier --write '**/*.{js,json,css,md}'",
+    "format": "npx prettier --write '**/*.{js,ts,tsx,json,md}'",
     "start": "gatsby develop",
     "build": "npm run clean && gatsby build --prefix-paths",
     "deploy": "npm run build && npx gh-pages -d public -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -b master -m deploy"
@@ -24,7 +24,7 @@
     }
   },
   "lint-staged": {
-    "**/*.{js,json,md}": [
+    "**/*.{js,ts,tsx,json,md}": [
       "npx prettier --write",
       "git add"
     ]
