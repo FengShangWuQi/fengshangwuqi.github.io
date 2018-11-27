@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* 基本选项 */
+    "rootDir": ".",
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["dom", "esnext"],
+    "allowJs": false,
+    "jsx": "react",
+    "importHelpers": true,
+    "removeComments": true,
+    "sourceMap": false,
+
+    /* 严格的类型检查选项 */
+    "strict": true,
+
+    /* 额外的检查 */
+    "noUnusedLocals": true,
+    "preserveConstEnums": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* 模块解析选项 */
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["*", "__types__/*"]
+    },
+
+    /* 其他选项 */
+    "experimentalDecorators": true
+  }
+}

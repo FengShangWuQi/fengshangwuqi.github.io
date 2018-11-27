@@ -30,12 +30,17 @@
     ]
   },
   "dependencies": {
+    "@types/lodash": "4.14.118",
+    "@types/react": "16.7.7",
+    "@types/react-dom": "16.0.10",
+    "@types/react-helmet": "5.0.7",
     "gatsby": "2.0.55",
     "gatsby-plugin-feed": "2.0.9",
     "gatsby-plugin-google-analytics": "2.0.7",
     "gatsby-plugin-offline": "2.0.17",
     "gatsby-plugin-react-helmet": "3.0.2",
     "gatsby-plugin-sharp": "2.0.13",
+    "gatsby-plugin-typescript": "2.0.1",
     "gatsby-remark-autolink-headers": "2.0.11",
     "gatsby-remark-copy-linked-files": "2.0.6",
     "gatsby-remark-emoji": "0.0.2",
@@ -52,7 +57,8 @@
     "prismjs": "1.15.0",
     "react": "16.6.3",
     "react-dom": "16.6.3",
-    "react-helmet": "5.2.0"
+    "react-helmet": "5.2.0",
+    "typescript": "3.1.6"
   },
   "devDependencies": {
     "@commitlint/cli": "7.2.1",
