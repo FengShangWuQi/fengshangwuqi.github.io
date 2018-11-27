@@ -10,4 +10,4 @@
 
 扫一扫微信二维码，跟我一起那撒
 
-![wechat](./src/images/qrcode.jpeg)
+![wechat](./static/contact.jpeg)
