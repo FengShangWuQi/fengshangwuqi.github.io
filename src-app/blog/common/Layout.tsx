@@ -6,7 +6,7 @@ import 'normalize.css';
 import 'prismjs/themes/prism-tomorrow.css';
 import '../styles/Layout.css';
 
-export const Layout = ({ children }: {children: React.ReactNode}) => (
+export const Layout = ({ children }: { children: React.ReactNode }) => (
   <div>
     <header
       style={{
