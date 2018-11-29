@@ -5,19 +5,8 @@ tag: FrontEnd,HTML 5,dialog
 date: 2018-01-18T17:51:32+08:00
 ---
 
-<div class="original-info">
-  <div className="original-address">
-    原文地址：
-    <a
-      href="https://keithjgrant.com/posts/2018/meet-the-new-dialog-element"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Meet the New Dialog Element
-    </a>
-  </div>
-  <div className="original-auth">作者：Keith</div>
-</div>
+原文地址：[Meet the New Dialog Element](https://keithjgrant.com/posts/2018/meet-the-new-dialog-element)
+作者：Keith
 
 > 不到一个月前，**HTML 5.2** 正式成为 **W3C** 的推荐标准（**REC**）,其中，推出了一个新的原生模态对话框元素 **dialog**，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，发现它确实是一个值得期待和很有意思的元素，在这里分享给大家。
 

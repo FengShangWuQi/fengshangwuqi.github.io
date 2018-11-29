@@ -5,19 +5,8 @@ tag: FrontEnd,React,context
 date: 2018-02-01T17:57:26+08:00
 ---
 
-<div class="original-info">
-  <div className="original-address">
-    原文地址：
-    <a
-      href="https://blog.kentcdodds.com/reacts-%EF%B8%8F-new-context-api-70c9fe01596b"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      React's ⚛️ new Context API
-    </a>
-  </div>
-  <div className="original-auth">作者：kentcdodds</div>
-</div>
+原文地址：[React's ⚛️ new Context API](https://blog.kentcdodds.com/reacts-%EF%B8%8F-new-context-api-70c9fe01596b)
+作者：kentcdodds
 
 这不再是一个 **实验性的 API**，并且它更符合工程化的理念，目前它已成为 **React 一级棒的 API**。
 

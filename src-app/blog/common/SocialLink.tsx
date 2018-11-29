@@ -1,7 +1,5 @@
 import { React } from 'src-core/react';
 
-import '../styles/SocialLink.css';
-
 export const SocialLink = ({
   social,
 }: {
@@ -15,17 +13,9 @@ export const SocialLink = ({
       item = (
         <li>
           <div id="WeChat" title="WeChat">
-            <img
-              className="author-link-img"
-              src={require('../images/WeChat.png')}
-              alt="WeChat"
-            />
-            <div className="qrcode">
-              <img
-                className="qrcode-img"
-                src={require('../images/QRCode.jpeg')}
-                alt="QR Code"
-              />
+            <img src={require('../images/WeChat.png')} alt="WeChat" />
+            <div>
+              <img src={require('../images/QRCode.jpeg')} alt="QR Code" />
             </div>
           </div>
         </li>
@@ -35,7 +25,6 @@ export const SocialLink = ({
       item = (
         <li>
           <img
-            className="author-link-img"
             src={require('../images/Email.png')}
             alt="Email"
             title="fengshangwuqi@gmail.com"
@@ -47,11 +36,7 @@ export const SocialLink = ({
       item = (
         <li>
           <a href={url} target="_blank" rel="noopener noreferrer" title={title}>
-            <img
-              className="author-link-img"
-              src={require(`../images/${title}.png`)}
-              alt={title}
-            />
+            <img src={require(`../images/${title}.png`)} alt={title} />
           </a>
         </li>
       );

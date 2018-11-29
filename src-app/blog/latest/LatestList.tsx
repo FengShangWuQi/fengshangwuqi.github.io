@@ -2,8 +2,6 @@ import { React, Component } from 'src-core/react';
 
 import { LatestItem } from './LatestItem';
 
-import '../styles/LatestList.css';
-
 export class LatestList extends Component<{ posts: any; totalCount: number }> {
   state = { current: 1, PAGE_SIZE: 5 };
 
@@ -19,7 +17,7 @@ export class LatestList extends Component<{ posts: any; totalCount: number }> {
     const { current, PAGE_SIZE } = this.state;
 
     return (
-      <div className="page-container">
+      <div>
         {posts
           .slice(PAGE_SIZE * (current - 1), current * PAGE_SIZE)
           .map(({ node }: any) => (
@@ -33,13 +31,12 @@ export class LatestList extends Component<{ posts: any; totalCount: number }> {
               intro={node.excerpt}
             />
           ))}
-        <div className="posts-pagination">
+        <div>
           <div
             style={{
               marginRight: 30,
               display: current === 1 ? 'none' : 'block',
             }}
-            className="posts-pagination-btn"
             onClick={() => this.onChange(current - 1)}>
             上一页
           </div>
@@ -50,7 +47,6 @@ export class LatestList extends Component<{ posts: any; totalCount: number }> {
                   ? 'none'
                   : 'block',
             }}
-            className="posts-pagination-btn"
             onClick={() => this.onChange(current + 1)}>
             下一页
           </div>

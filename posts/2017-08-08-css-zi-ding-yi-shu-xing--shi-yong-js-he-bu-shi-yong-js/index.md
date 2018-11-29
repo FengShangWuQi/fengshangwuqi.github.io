@@ -5,19 +5,8 @@ tag: FrontEnd,CSS
 date: 2017-08-08T19:29:49+08:00
 ---
 
-<div class="original-info">
-  <div className="original-address">
-    原文地址：
-    <a
-      href="http://vanseodesign.com/css/custom-properties-and-javascript/?utm_source=CSS-Weekly&utm_campaign=Issue-276&utm_medium=web"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      CSS Custom Properties—Dynamic Changes With And Without Javascript
-    </a>
-  </div>
-  <div className="original-auth">作者：Steven Bradley</div>
-</div>
+原文地址：[CSS Custom Properties—Dynamic Changes With And Without Javascript](http://vanseodesign.com/css/custom-properties-and-javascript/?utm_source=CSS-Weekly&utm_campaign=Issue-276&utm_medium=web)
+作者：Steven Bradley
 
 > 你曾想过在页面加载过后去修改 **Sass** 或 **Less** 的变量值么？我曾经尝试过，但并没有成功，因为当预处理的代码编译成了 **CSS**，它的变量就不再是变量了，然而，**自定义属性** 就没有这样的限制。
 

@@ -5,19 +5,8 @@ tag: FrontEnd,CSS
 date: 2017-08-12T19:34:02+08:00
 ---
 
-<div class="original-info">
-  <div className="original-address">
-    原文地址：
-    <a
-      href="https://codeburst.io/how-to-create-a-beautiful-animated-loader-with-nothing-but-css-d1962fc5a66c"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      How to create a beautiful animated loader with nothing but CSS
-    </a>
-  </div>
-  <div className="original-auth">作者：Julien Benchetrit</div>
-</div>
+原文地址：[How to create a beautiful animated loader with nothing but CSS](https://codeburst.io/how-to-create-a-beautiful-animated-loader-with-nothing-but-css-d1962fc5a66c)
+作者：Julien Benchetrit
 
 ## 为什么要做加载
 

@@ -7,9 +7,6 @@ import { React, Component } from 'src-core/react';
 import { Layout } from '../common/Layout';
 import { Header } from '../common/Header';
 
-import '../styles/blog-post.css';
-import '../styles/BlogHeader.css';
-
 const loadScript = (url: string) => {
   const d = document,
     s = d.createElement('script');
@@ -36,42 +33,26 @@ export default class BlogPost extends Component<{ data: any }> {
         {tag}
       </Link>
     ));
-    const originalStyle = original
-      ? {
-          backgroundColor: 'rgba(242,174,67,0.25)',
-          color: '#F2AE43',
-        }
-      : {
-          backgroundColor: 'rgba(86, 192, 224, 0.25)',
-          color: '#56c0e0',
-        };
+
     const center = (
-      <div className="post-header">
-        <div className="header-tag">
-          <span style={originalStyle} className="post-is-original">
-            {original ? '原' : '译'}
-          </span>
+      <div>
+        <div>
+          <span>{original ? '原' : '译'}</span>
           {postTags}
         </div>
-        <h1 style={{ fontSize: '2.1em' }} className="post-header-title">
-          {title}
-        </h1>
+        <h1 style={{ fontSize: '2.1em' }}>{title}</h1>
       </div>
     );
     const bottom = (
-      <div className="post-header-content">
-        <div className="post-header-info">
-          <div className="post-header-info-title">
+      <div>
+        <div>
+          <div>
             <Link to="/">{title}</Link>
           </div>
           <div>{date}</div>
         </div>
-        <div className="author-avatar">
-          <img
-            className="author-avatar-img"
-            src={require('../images/avatar.jpg')}
-            alt="枫上雾棋"
-          />
+        <div>
+          <img src={require('../images/avatar.jpg')} alt="枫上雾棋" />
         </div>
       </div>
     );
@@ -80,8 +61,8 @@ export default class BlogPost extends Component<{ data: any }> {
       <Layout>
         <Helmet title={`${title} - 枫上雾棋的日志`} />
         <Header center={center} bottom={bottom} />
-        <div style={{ top: -25 }} className="page-container">
-          <div className="post-md" dangerouslySetInnerHTML={{ __html: html }} />
+        <div style={{ top: -25 }}>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
           <div id="disqus_thread" />
         </div>
       </Layout>

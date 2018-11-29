@@ -2,8 +2,6 @@ import { Link } from 'gatsby';
 
 import { React } from 'src-core/react';
 
-import '../styles/LatestItem.css';
-
 export const LatestItem = ({
   path,
   tag,
@@ -26,9 +24,9 @@ export const LatestItem = ({
   ));
 
   return (
-    <article className="post-item">
-      <header className="post-item-header">
-        <div className="header-tag">
+    <article>
+      <header>
+        <div>
           <span
             style={
               original
@@ -40,33 +38,19 @@ export const LatestItem = ({
                     backgroundColor: 'rgba(86, 192, 224, 0.25)',
                     color: '#56c0e0',
                   }
-            }
-            className="post-is-original">
+            }>
             {original ? '原' : '译'}
           </span>
           {tags}
         </div>
-        <h2 className="post-item-header-title">
+        <h2>
           <Link to={path}>{title}</Link>
         </h2>
-        <time className="post-item-published" dateTime={date}>
-          {date}
-        </time>
+        <time dateTime={date}>{date}</time>
       </header>
-      <p
-        className="post-item-content"
-        dangerouslySetInnerHTML={{ __html: intro }}
-      />
+      <p dangerouslySetInnerHTML={{ __html: intro }} />
       <Link to={path}>
-        <span className="post-item-read-more">
-          阅读全文
-          <span>
-            <span className="line left" />
-            <span className="line top" />
-            <span className="line right" />
-            <span className="line bottom" />
-          </span>
-        </span>
+        <span>阅读全文</span>
       </Link>
     </article>
   );

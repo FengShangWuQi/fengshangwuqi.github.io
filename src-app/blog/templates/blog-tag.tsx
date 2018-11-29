@@ -10,13 +10,13 @@ import { LatestList } from '../latest/LatestList';
 export default ({ pageContext }: { pageContext: any }) => {
   const { post, tag } = pageContext;
   const leftCenter = (
-    <div className="header-left-content">
-      <div className="posts-total-count">{`${post.length} 篇文章`}</div>
+    <div>
+      <div>{`${post.length} 篇文章`}</div>
       <h1>{tag}</h1>
     </div>
   );
   const bottom = (
-    <div className="header-back">
+    <div>
       <Link to="/">>> 枫上雾棋的日志</Link>
     </div>
   );

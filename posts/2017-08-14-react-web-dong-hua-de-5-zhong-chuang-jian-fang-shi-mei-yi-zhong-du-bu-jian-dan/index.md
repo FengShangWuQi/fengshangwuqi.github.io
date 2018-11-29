@@ -5,19 +5,8 @@ tag: FrontEnd,React,Animation
 date: 2017-08-14T14:46:24+08:00
 ---
 
-<div class="original-info">
-  <div className="original-address">
-    原文地址：
-    <a
-      href="https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      React Animations in Depth
-    </a>
-  </div>
-  <div className="original-auth">作者：Nader Dabit</div>
-</div>
+原文地址：[React Animations in Depth](https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e)
+作者：Nader Dabit
 
 > 在 [Tweet](http://t.cn/RQVluB2) 得到很多大佬关于 **React Web 动画** 不错的的回应，于是决定在这里分享给大家。
 

@@ -4,21 +4,16 @@ import { css } from 'src-core/style';
 
 import { Nav } from './Nav';
 
-import '../styles/Header.css';
-
 export const Header = ({
   leftCenter,
   center,
   bottom,
-  style,
 }: {
   leftCenter?: React.ReactNode;
   center?: React.ReactNode;
   bottom?: React.ReactNode;
-  style?: React.CSSProperties;
 }) => (
-  <div className="header">
-    <div style={style} className="header-bg" />
+  <div>
     <a
       href="https://github.com/FengShangWuQi/fengshangwuqi.github.io"
       target="_blank"
@@ -36,14 +31,8 @@ export const Header = ({
       />
     </a>
     <Nav />
-    {leftCenter && (
-      <div className="header-left-center">
-        <div className="header-left-center-container">
-          <div className="header-left-center-inner">{leftCenter}</div>
-        </div>
-      </div>
-    )}
-    {center && <div className="header-center">{center}</div>}
-    {bottom && <div className="header-bottom">{bottom}</div>}
+    {leftCenter && <div>{leftCenter}</div>}
+    {center && <div>{center}</div>}
+    {bottom && <div>{bottom}</div>}
   </div>
 );

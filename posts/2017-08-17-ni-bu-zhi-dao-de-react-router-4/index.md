@@ -5,19 +5,8 @@ tag: FrontEnd,React Router 4
 date: 2017-08-17T17:15:06+08:00
 ---
 
-<div class="original-info">
-  <div className="original-address">
-    原文地址：
-    <a
-      href="https://css-tricks.com/react-router-4/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      All About React Router 4
-    </a>
-  </div>
-  <div className="original-auth">作者：James K Nelson</div>
-</div>
+原文地址：[All About React Router 4](https://css-tricks.com/react-router-4/)
+作者：James K Nelson
 
 > 几个月前，**React Router 4** 发布，我能清晰地感觉到来自 **Twitter** 大家对新版本中其大量的修改的不同声音，诚然，我在学习 **React Router 4** 的第一天，也是非常痛苦的，但是，这并不是因为看它的 **API**，而是反复思考使用它的 **模式** 和 **策略**，因为 **V4** 的变化确实有点大，**V3** 的功能它都有，除此之外，还增加了一些特性，我不能直接将使用 **V3** 的心得直接迁移过来，现在，我必须重新审视 **router** 和 **layout components** 之间的关系
 

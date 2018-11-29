@@ -5,21 +5,18 @@ import { React } from 'src-core/react';
 
 import { Layout } from '../common/Layout';
 import { Header } from '../common/Header';
-import { ArchiveItem } from '../archives/ArchiveItem';
-
-import '../styles/blog-archive.css';
 
 export default ({ pageContext }: { pageContext: any }) => {
   const { archives, totalCount } = pageContext;
 
   const leftCenter = (
-    <div className="header-left-content">
-      {<div className="posts-total-count">{`${totalCount} 篇文章`}</div>}
+    <>
+      {<div>{`${totalCount} 篇文章`}</div>}
       <h1>归档</h1>
-    </div>
+    </>
   );
   const bottom = (
-    <div className="header-back">
+    <div>
       <Link to="/">>> 枫上雾棋的日志</Link>
     </div>
   );
@@ -29,7 +26,7 @@ export default ({ pageContext }: { pageContext: any }) => {
       <Helmet title="归档 - 枫上雾棋的日志" />
       <Header leftCenter={leftCenter} bottom={bottom} />
 
-      <div className="page-container">
+      <div>
         {Object.keys(archives).map(date => {
           const year = date.substr(4);
           const archive = archives[date].map((node: any) => (
@@ -41,9 +38,9 @@ export default ({ pageContext }: { pageContext: any }) => {
             />
           ));
           return (
-            <div className="archives-item" key={year}>
-              <h2 className="archive-year">{year}</h2>
-              <ul className="archives-list">{archive}</ul>
+            <div key={year}>
+              <h2>{year}</h2>
+              <ul>{archive}</ul>
             </div>
           );
         })}
@@ -51,3 +48,14 @@ export default ({ pageContext }: { pageContext: any }) => {
     </Layout>
   );
 };
+
+const ArchiveItem = ({ path, title, date }: any) => (
+  <li>
+    <div>
+      <Link to={path}>
+        <div>{title}</div>
+        <time dateTime={date}>{date}</time>
+      </Link>
+    </div>
+  </li>
+);
