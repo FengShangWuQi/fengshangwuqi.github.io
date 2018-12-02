@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     /* 基本选项 */
-    "rootDir": ".",
+    "rootDir": "../../",
     "target": "esnext",
     "module": "commonjs",
     "lib": ["dom", "esnext"],
@@ -23,7 +23,7 @@
 
     /* 模块解析选项 */
     "moduleResolution": "node",
-    "baseUrl": ".",
+    "baseUrl": "../../",
     "paths": {
       "*": ["*", "__types__/*"]
     },
@@ -32,5 +32,6 @@
     "experimentalDecorators": true
   },
 
+  "include": ["../../**/*"],
   "exclude": ["node_modules"]
 }

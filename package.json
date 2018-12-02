@@ -5,15 +5,19 @@
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "homepage": "https://fengshangwuqi.github.io",
   "keywords": [
-    "枫上雾棋的日志",
-    "枫上雾棋",
-    "fengshangwuqi"
+    "react",
+    "typescript",
+    "glamor",
+    "storybook",
+    "gatsby"
   ],
   "scripts": {
-    "clean": "npx rimraf public .cache",
+    "clean": "npx rimraf public dist .cache",
     "test": "echo test",
     "format": "npx prettier --write '**/*.{js,ts,tsx,json,md}'",
     "start": "gatsby develop",
+    "sbook": "start-storybook -p 9001 -c ./src-app/storybook",
+    "build::sbook": "build-storybook -c ./src-app/storybook -o dist/storybook",
     "build": "npm run clean && gatsby build --prefix-paths",
     "deploy": "npm run build && npx gh-pages -d public -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -b master -m deploy"
   },
@@ -32,8 +36,8 @@
   },
   "dependencies": {
     "@types/lodash": "4.14.118",
-    "@types/react": "16.7.7",
-    "@types/react-dom": "16.0.10",
+    "@types/react": "16.7.9",
+    "@types/react-dom": "16.0.11",
     "@types/react-helmet": "5.0.7",
     "gatsby": "2.0.55",
     "gatsby-plugin-feed": "2.0.9",
@@ -59,13 +63,22 @@
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "react-helmet": "5.2.0",
-    "typescript": "3.1.6"
+    "typescript": "3.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "7.2.1",
     "@commitlint/config-conventional": "7.1.2",
+    "@storybook/addon-actions": "4.0.9",
+    "@storybook/addon-console": "1.1.0",
+    "@storybook/addon-knobs": "4.0.10",
+    "@storybook/addon-links": "4.0.10",
+    "@storybook/addon-options": "4.0.8",
+    "@storybook/react": "4.0.9",
+    "@types/storybook__react": "4.0.0",
+    "awesome-typescript-loader": "5.2.1",
     "husky": "1.2.0",
-    "lint-staged": "8.1.0"
+    "lint-staged": "8.1.0",
+    "react-docgen-typescript-webpack-plugin": "1.1.0"
   },
   "license": "MIT"
 }
