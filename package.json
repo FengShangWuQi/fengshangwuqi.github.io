@@ -17,9 +17,11 @@
     "format": "npx prettier --write '**/*.{js,ts,tsx,json,md}'",
     "start": "gatsby develop",
     "sbook": "start-storybook -p 9001 -c ./src-app/storybook",
+    "mv::gatsby": "mkdir -p dist/blog && mv public/* dist/blog/",
+    "build::gatsby": "gatsby build --prefix-paths && npm run mv::gatsby",
     "build::sbook": "build-storybook -c ./src-app/storybook -o dist/storybook",
-    "build": "npm run clean && gatsby build --prefix-paths",
-    "deploy": "npm run build && npx gh-pages -d public -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -b master -m deploy"
+    "build": "npm run clean && npm run build::gatsby && npm run build::sbook",
+    "deploy": "npx gh-pages -d dist -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -m deploy"
   },
   "husky": {
     "hooks": {

@@ -5,7 +5,7 @@ module.exports = {
     description: 'from Front-End to Full stack',
     siteUrl: 'https://fengshangwuqi.github.io',
   },
-  pathPrefix: '/',
+  pathPrefix: 'blog',
   plugins: [
     // TypeScript
     `gatsby-plugin-typescript`,
