@@ -1,11 +1,11 @@
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
+import Helmet from "react-helmet";
+import Link from "gatsby-link";
 
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
-import { Layout } from '../common/Layout';
-import { Header } from '../common/Header';
-import { LatestList } from '../latest/LatestList';
+import { Layout } from "../common/Layout";
+import { Header } from "../common/Header";
+import { LatestList } from "../latest/LatestList";
 
 export default ({ pageContext }: { pageContext: any }) => {
   const { post, tag } = pageContext;

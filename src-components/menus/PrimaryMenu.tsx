@@ -1,6 +1,6 @@
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
-import { css } from 'src-core/style';
+import { css } from "src-core/style";
 
 export const PrimaryMenu = () => (
   <div>

@@ -20,8 +20,8 @@ POST /markdown
 可以将 text 渲染成 Markdown 文档，测试一下：
 
 ```js
-const res = await fetch('https://api.github.com/markdown', {
-  method: 'POST',
+const res = await fetch("https://api.github.com/markdown", {
+  method: "POST",
   body: JSON.stringify({
     text,
   }),
@@ -93,7 +93,7 @@ const md = await res.text();
 ```js
 chrome.runtime.sendMessage(
   {
-    action: 'getNew',
+    action: "getNew",
   },
   res => {
     console.log(res);
@@ -106,7 +106,7 @@ chrome.runtime.sendMessage(
 ```js
 async function handleMessage(message, sender, sendResponse) {
   switch (message.action) {
-    case 'getNew':
+    case "getNew":
       sendResponse(await getNew());
       break;
     default:
@@ -169,7 +169,7 @@ history
 然后如下获取最新资讯的 path：
 
 ```js
-const year = await GitHubAPI.getContent('history');
+const year = await GitHubAPI.getContent("history");
 const month = await GitHubAPI.getContent(`history/${year[year.length - 1]}`);
 const day = await GitHubAPI.getContent(
   `history/${year[year.length - 1]}/${month[month.length - 1]}`
@@ -191,7 +191,7 @@ const GitHubAPI = new class {
   /* render an arbitrary markdown document */
   async getMarkdown(text) {
     const res = await fetch(`${this.prefix}/markdown`, {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify({
         text,
       }),
@@ -206,7 +206,7 @@ const GitHubAPI = new class {
     const res = await fetch(
       `${this.prefix}/repos/${this.owner}/${this.repo}/contents/${path}`,
       {
-        method: 'GET',
+        method: "GET",
       }
     );
     const contents = await res.json();
@@ -241,7 +241,7 @@ export default GitHubAPI;
 export const getCurrContent = (paths, path) => {
   chrome.runtime.sendMessage(
     {
-      action: 'getCurrContent',
+      action: "getCurrContent",
       payload: {
         path,
       },

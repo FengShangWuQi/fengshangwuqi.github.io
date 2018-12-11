@@ -1,15 +1,15 @@
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
-import { get } from 'lodash';
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import { get } from "lodash";
 
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
-import { Layout } from 'src-app/blog/common/Layout';
-import { BlogHeader } from 'src-app/blog/common/BlogHeader';
-import { LatestList } from 'src-app/blog/latest/LatestList';
+import { Layout } from "src-app/blog/common/Layout";
+import { BlogHeader } from "src-app/blog/common/BlogHeader";
+import { LatestList } from "src-app/blog/latest/LatestList";
 
 export default ({ data }: { data: any }) => {
-  const { totalCount, edges: posts } = get(data, 'allMarkdownRemark');
+  const { totalCount, edges: posts } = get(data, "allMarkdownRemark");
 
   return (
     <Layout>

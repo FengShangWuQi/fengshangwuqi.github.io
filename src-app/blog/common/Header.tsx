@@ -1,8 +1,8 @@
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
-import { css } from 'src-core/style';
+import { css } from "src-core/style";
 
-import { Nav } from './Nav';
+import { Nav } from "./Nav";
 
 export const Header = ({
   leftCenter,
@@ -20,7 +20,7 @@ export const Header = ({
       rel="noopener noreferrer">
       <img
         {...css({
-          position: 'absolute',
+          position: "absolute",
           top: 0,
           left: 0,
           border: 0,

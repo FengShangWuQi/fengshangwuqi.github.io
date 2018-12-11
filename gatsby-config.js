@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: '枫上雾棋的日志',
-    author: '枫上雾棋',
-    description: 'from Front-End to Full stack',
-    siteUrl: 'https://fengshangwuqi.github.io',
+    title: "枫上雾棋的日志",
+    author: "枫上雾棋",
+    description: "from Front-End to Full stack",
+    siteUrl: "https://fengshangwuqi.github.io",
   },
-  pathPrefix: 'blog',
+  pathPrefix: "blog",
   plugins: [
     // TypeScript
     `gatsby-plugin-typescript`,
@@ -18,7 +18,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/posts`,
-        name: 'posts',
+        name: "posts",
       },
     },
     {
@@ -33,10 +33,10 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-external-links',
+            resolve: "gatsby-remark-external-links",
             options: {
-              target: '_blank',
-              rel: 'noopener noreferrer',
+              target: "_blank",
+              rel: "noopener noreferrer",
             },
           },
           {
@@ -46,17 +46,17 @@ module.exports = {
             },
           },
           `gatsby-remark-emoji`,
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
-          'gatsby-remark-autolink-headers',
+          "gatsby-remark-prismjs",
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
+          "gatsby-remark-autolink-headers",
         ],
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-114534441-1',
+        trackingId: "UA-114534441-1",
       },
     },
     {
@@ -85,7 +85,7 @@ module.exports = {
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [
                     {
-                      'content:encoded': edge.node.html,
+                      "content:encoded": edge.node.html,
                     },
                   ],
                 });
@@ -112,7 +112,7 @@ module.exports = {
 					  }
 					}
 				  `,
-            output: '/rss.xml',
+            output: "/rss.xml",
           },
         ],
       },

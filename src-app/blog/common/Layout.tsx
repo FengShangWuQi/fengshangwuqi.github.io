@@ -1,8 +1,8 @@
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
-import { Footer } from './Footer';
+import { Footer } from "./Footer";
 
-import 'prismjs/themes/prism-tomorrow.css';
+import "prismjs/themes/prism-tomorrow.css";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => (
   <div>

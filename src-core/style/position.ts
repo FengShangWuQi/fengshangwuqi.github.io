@@ -6,7 +6,7 @@ export interface IPosition {
 }
 
 export interface IAbsolute extends IPosition {
-  position: 'absolute';
+  position: "absolute";
 }
 
 export enum PositionDirection {
@@ -17,7 +17,7 @@ export enum PositionDirection {
 }
 
 export const relative = ({ top, right, bottom, left }: IPosition) => ({
-  position: 'relative',
+  position: "relative",
   top,
   right,
   bottom,
@@ -29,7 +29,7 @@ export const absolute = (
   offset?: IPosition
 ): IAbsolute => {
   const defaults: IAbsolute = {
-    position: 'absolute',
+    position: "absolute",
   };
 
   switch (direction) {

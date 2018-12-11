@@ -66,8 +66,8 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this._input.addEventListener('focus', this.focus);
-    this._input.addEventListener('blur', this.focus);
+    this._input.addEventListener("focus", this.focus);
+    this._input.addEventListener("blur", this.focus);
   }
 
   focus = () => {
@@ -82,8 +82,8 @@ class App extends Component {
         <div className="container">
           <input
             ref={input => (this._input = input)}
-            className={['input', this.state.focused && 'input-focused'].join(
-              ' '
+            className={["input", this.state.focused && "input-focused"].join(
+              " "
             )}
           />
         </div>
@@ -131,7 +131,7 @@ class App extends Component {
   };
   render() {
     const { disabled } = this.state;
-    const label = disabled ? 'Disabled' : 'Submit';
+    const label = disabled ? "Disabled" : "Submit";
 
     return (
       <div style={styles.App}>
@@ -152,30 +152,30 @@ class App extends Component {
 
 const styles = {
   App: {
-    display: 'flex',
-    justifyContent: 'left',
+    display: "flex",
+    justifyContent: "left",
   },
   input: {
     marginRight: 10,
     padding: 10,
     width: 190,
     fontSize: 20,
-    border: 'none',
-    backgroundColor: '#ddd',
-    outline: 'none',
+    border: "none",
+    backgroundColor: "#ddd",
+    outline: "none",
   },
   button: {
     width: 90,
     height: 43,
     fontSize: 17,
-    border: 'none',
+    border: "none",
     borderRadius: 4,
-    transition: '.25s all',
-    cursor: 'pointer',
+    transition: ".25s all",
+    cursor: "pointer",
   },
   buttonEnabled: {
     width: 120,
-    backgroundColor: '#ffc107',
+    backgroundColor: "#ffc107",
   },
 };
 ```
@@ -227,7 +227,7 @@ $ yarn add react-motion
 ![motion](./images/react-motion.gif)
 
 ```js
-import { Motion, spring } from 'react-motion';
+import { Motion, spring } from "react-motion";
 
 class App extends Component {
   state = {
@@ -265,24 +265,24 @@ const styles = {
   menu: {
     marginTop: 20,
     width: 300,
-    border: '2px solid #ddd',
-    overflow: 'hidden',
+    border: "2px solid #ddd",
+    overflow: "hidden",
   },
   button: {
-    display: 'flex',
+    display: "flex",
     width: 200,
     height: 45,
-    justifyContent: 'center',
-    alignItems: 'center',
-    border: 'none',
+    justifyContent: "center",
+    alignItems: "center",
+    border: "none",
     borderRadius: 4,
-    backgroundColor: '#ffc107',
-    cursor: 'pointer',
+    backgroundColor: "#ffc107",
+    cursor: "pointer",
   },
   selection: {
     margin: 0,
     padding: 10,
-    borderBottom: '1px solid #ededed',
+    borderBottom: "1px solid #ededed",
   },
 };
 ```
@@ -319,8 +319,8 @@ $ yarn add animated
 ![animated](./images/Animated.gif)
 
 ```js
-import Animated from 'animated/lib/targets/react-dom';
-import Easing from 'animated/lib/Easing';
+import Animated from "animated/lib/targets/react-dom";
+import Easing from "animated/lib/Easing";
 
 class AnimatedApp extends Component {
   animatedValue = new Animated.Value(0);
@@ -360,24 +360,24 @@ class AnimatedApp extends Component {
 
 const styles = {
   button: {
-    display: 'flex',
+    display: "flex",
     width: 125,
     height: 50,
-    justifyContent: 'center',
-    alignItems: 'center',
-    border: 'none',
+    justifyContent: "center",
+    alignItems: "center",
+    border: "none",
     borderRadius: 4,
-    backgroundColor: '#ffc107',
-    cursor: 'pointer',
+    backgroundColor: "#ffc107",
+    cursor: "pointer",
   },
   box: {
-    display: 'inline-block',
+    display: "inline-block",
     marginTop: 10,
-    padding: '0.6rem 2rem',
-    fontSize: '0.8rem',
-    border: '1px #eee solid',
+    padding: "0.6rem 2rem",
+    fontSize: "0.8rem",
+    border: "1px #eee solid",
     borderRadius: 4,
-    boxShadow: '0 2px 8px rgba(0,0,0,.2)',
+    boxShadow: "0 2px 8px rgba(0,0,0,.2)",
   },
 };
 ```
@@ -423,7 +423,7 @@ $ yarn add velocity-react
 ![Velocity](./images/Velocity-React.gif)
 
 ```js
-import { VelocityComponent } from 'velocity-react';
+import { VelocityComponent } from "velocity-react";
 
 const VelocityLetter = ({ letter }) => (
   <VelocityComponent
@@ -440,7 +440,7 @@ class VelocityApp extends Component {
   };
 
   onChange = e => {
-    const letters = e.target.value.split('');
+    const letters = e.target.value.split("");
     const arr = [];
 
     letters.forEach((l, i) => {
@@ -468,18 +468,18 @@ const styles = {
     width: 200,
     height: 40,
     fontSize: 22,
-    backgroundColor: '#ddd',
-    border: 'none',
-    outline: 'none',
+    backgroundColor: "#ddd",
+    border: "none",
+    outline: "none",
   },
   letters: {
-    display: 'flex',
+    display: "flex",
     height: 140,
   },
   letter: {
     marginTop: 100,
     fontSize: 22,
-    whiteSpace: 'pre',
+    whiteSpace: "pre",
     opacity: 0,
   },
 };

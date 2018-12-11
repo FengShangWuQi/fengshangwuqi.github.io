@@ -1,4 +1,4 @@
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
 export const Footer = () => (
   <footer>

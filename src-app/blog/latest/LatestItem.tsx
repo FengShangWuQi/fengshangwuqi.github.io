@@ -1,6 +1,6 @@
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
 export const LatestItem = ({
   path,
@@ -17,7 +17,7 @@ export const LatestItem = ({
   intro: string;
   original: string;
 }) => {
-  const tags = tag.split(',').map(t => (
+  const tags = tag.split(",").map(t => (
     <Link key={t} to={`/${t}`}>
       {t}
     </Link>
@@ -31,15 +31,15 @@ export const LatestItem = ({
             style={
               original
                 ? {
-                    backgroundColor: 'rgba(242,174,67,0.25)',
-                    color: '#F2AE43',
+                    backgroundColor: "rgba(242,174,67,0.25)",
+                    color: "#F2AE43",
                   }
                 : {
-                    backgroundColor: 'rgba(86, 192, 224, 0.25)',
-                    color: '#56c0e0',
+                    backgroundColor: "rgba(86, 192, 224, 0.25)",
+                    color: "#56c0e0",
                   }
             }>
-            {original ? '原' : '译'}
+            {original ? "原" : "译"}
           </span>
           {tags}
         </div>

@@ -70,7 +70,7 @@ var value = style.getPropertyValue(property);
 
 ```js
 var styles = getComputedStyle(document.documentElement); // 获取 root 的样式
-var colorValue = styles.getPropertyValue('--color'); // 获取 --color 的值
+var colorValue = styles.getPropertyValue("--color"); // 获取 --color 的值
 ```
 
 现在 colorValue 的值就为 `--color` 的值，不信你可以在控制台中打印。
@@ -92,7 +92,7 @@ style.setProperty(propertyName, value, priority);
 设置一个新值比读取一个值更容易，因为你不需要将值保存到变量中。
 
 ```js
-document.documentElement.style.setProperty('--color', 'green');
+document.documentElement.style.setProperty("--color", "green");
 ```
 
 事实上，在设置新值前，该属性可以不存在，你可以在 `setProperty` 中初始化自定义属性。
@@ -140,10 +140,10 @@ input {
 最后，我们使用 `document.querySelector()` 获取 **input** 元素，给该元素添加一个事件监听器，监听用户输入的变化，然后用 `setProperty` 将输入的值赋给自定义属性 `--background`。
 
 ```js
-var colorInput = document.querySelector('#div-bkgd');
+var colorInput = document.querySelector("#div-bkgd");
 
-colorInput.addEventListener('change', function() {
-  document.documentElement.style.setProperty('--background', this.value);
+colorInput.addEventListener("change", function() {
+  document.documentElement.style.setProperty("--background", this.value);
 });
 ```
 

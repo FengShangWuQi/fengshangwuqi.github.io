@@ -1,9 +1,9 @@
-import { storiesOf } from '@storybook/react';
+import { storiesOf } from "@storybook/react";
 
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
-import { PrimaryMenu } from '../PrimaryMenu';
+import { PrimaryMenu } from "../PrimaryMenu";
 
-const stories = storiesOf('Menu', module);
+const stories = storiesOf("Menu", module);
 
-stories.add('Primary', () => <PrimaryMenu />);
+stories.add("Primary", () => <PrimaryMenu />);

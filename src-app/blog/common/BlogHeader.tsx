@@ -1,33 +1,33 @@
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
-import { Header } from './Header';
-import { SocialLink } from './SocialLink';
+import { Header } from "./Header";
+import { SocialLink } from "./SocialLink";
 
 export const BlogHeader = ({ totalCount }: { totalCount: number }) => {
   const socials = [
     {
-      title: 'Twitter',
-      url: 'https://twitter.com/fengshangwuqi',
+      title: "Twitter",
+      url: "https://twitter.com/fengshangwuqi",
     },
     {
-      title: 'GitHub',
-      url: 'https://github.com/FengShangWuQi',
+      title: "GitHub",
+      url: "https://github.com/FengShangWuQi",
     },
     {
-      title: 'WeChat',
+      title: "WeChat",
     },
     {
-      title: 'Email',
+      title: "Email",
     },
     {
-      title: 'Newsletter',
-      url: 'https://tinyletter.com/fengshangwuqi',
+      title: "Newsletter",
+      url: "https://tinyletter.com/fengshangwuqi",
     },
   ];
   const leftCenter = (
     <div>
       <div style={{ width: 100 }}>
-        <img src={require('../images/avatar.jpg')} alt="枫上雾棋" />
+        <img src={require("../images/avatar.jpg")} alt="枫上雾棋" />
       </div>
       <div>
         <div>{`${totalCount} 篇文章`}</div>

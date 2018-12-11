@@ -1,7 +1,7 @@
-const path = require('path');
-const Promise = require('bluebird');
-const { each } = require('lodash');
-const { createFilePath } = require('gatsby-source-filesystem');
+const path = require("path");
+const Promise = require("bluebird");
+const { each } = require("lodash");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -39,7 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         createPage({
           path: `/`,
-          component: path.resolve('posts/index.tsx'),
+          component: path.resolve("posts/index.tsx"),
         });
 
         const { totalCount, edges } = result.data.allMarkdownRemark;
@@ -54,7 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
 
           createPage({
             path: slug,
-            component: path.resolve('src-app/blog/templates/blog-post.tsx'),
+            component: path.resolve("src-app/blog/templates/blog-post.tsx"),
             context: {
               slug,
             },
@@ -72,8 +72,8 @@ exports.createPages = ({ graphql, actions }) => {
         });
 
         createPage({
-          path: 'archives',
-          component: path.resolve('src-app/blog/templates/blog-archive.tsx'),
+          path: "archives",
+          component: path.resolve("src-app/blog/templates/blog-archive.tsx"),
           context: {
             archives,
             totalCount,
@@ -86,7 +86,7 @@ exports.createPages = ({ graphql, actions }) => {
         each(edges, post => {
           const { tag } = post.node.frontmatter;
           if (tag) {
-            tag.split(',').forEach(t => {
+            tag.split(",").forEach(t => {
               if (!posts[t]) {
                 posts[t] = [];
               }
@@ -99,7 +99,7 @@ exports.createPages = ({ graphql, actions }) => {
           const post = posts[tagName];
           createPage({
             path: tagName,
-            component: path.resolve('src-app/blog/templates/blog-tag.tsx'),
+            component: path.resolve("src-app/blog/templates/blog-tag.tsx"),
             context: {
               post,
               tag: tagName,
@@ -132,7 +132,7 @@ exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
     ...config,
     resolve: {
       ...config.resolve,
-      modules: [...config.resolve.modules, '.'],
+      modules: [...config.resolve.modules, "."],
     },
   };
   actions.replaceWebpackConfig(newConfig);

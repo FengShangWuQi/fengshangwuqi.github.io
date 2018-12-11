@@ -1,6 +1,6 @@
-import { React, Component } from 'src-core/react';
+import { React, Component } from "src-core/react";
 
-import { LatestItem } from './LatestItem';
+import { LatestItem } from "./LatestItem";
 
 export class LatestList extends Component<{ posts: any; totalCount: number }> {
   state = { current: 1, PAGE_SIZE: 5 };
@@ -35,7 +35,7 @@ export class LatestList extends Component<{ posts: any; totalCount: number }> {
           <div
             style={{
               marginRight: 30,
-              display: current === 1 ? 'none' : 'block',
+              display: current === 1 ? "none" : "block",
             }}
             onClick={() => this.onChange(current - 1)}>
             上一页
@@ -44,8 +44,8 @@ export class LatestList extends Component<{ posts: any; totalCount: number }> {
             style={{
               display:
                 current === Math.floor(totalCount / PAGE_SIZE) + 1
-                  ? 'none'
-                  : 'block',
+                  ? "none"
+                  : "block",
             }}
             onClick={() => this.onChange(current + 1)}>
             下一页

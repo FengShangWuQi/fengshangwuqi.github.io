@@ -1,6 +1,6 @@
 export const loadStories = () => {
   const req = require.context(
-    '../../src-components',
+    "../../src-components",
     true,
     /\/__storybook__\/(.+)\.tsx$/
   );

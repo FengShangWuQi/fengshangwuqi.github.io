@@ -27,7 +27,7 @@ date: 2018-01-18T17:51:32+08:00
 **JavaScript** 有几个方法和属性可以很方便地处理 **dialog** 元素，使用最多的可能还是 `showModal()` 和 `close()`：
 
 ```js
-const modal = document.querySelector('dialog');
+const modal = document.querySelector("dialog");
 
 // makes modal appear (adds `open` attribute)
 modal.showModal();
@@ -108,7 +108,7 @@ dialog + .backdrop {
 通常，我们期望能从 **dialog** 中获取一些用户的信息。关闭 **dialog** 时，我们可以给 `close()` 传递一个 **string**，然后通过 **dialog** 元素的 `returnValue` 属性来获取。
 
 ```js
-modal.close('Accepted');
+modal.close("Accepted");
 
 console.log(modal.returnValue); // logs `Accepted`
 ```
@@ -118,9 +118,9 @@ console.log(modal.returnValue); // logs `Accepted`
 此外，我们可能还期望点击 **dialog** 旁边的阴影来关闭，当然，这也是有解决办法的，点击阴影会触发 **dialog** 的点击事件，如果 **dialog** 的子元素占满了整个 **dialog**，那么我们可以通过监听 **dialog** 的点击，当 **target** 为 **modal** 时来关闭。
 
 ```js
-modal.addEventListener('click', event => {
+modal.addEventListener("click", event => {
   if (event.target === modal) {
-    modal.close('cancelled');
+    modal.close("cancelled");
   }
 });
 ```

@@ -1,10 +1,10 @@
-import Helmet from 'react-helmet';
-import { Link } from 'gatsby';
+import Helmet from "react-helmet";
+import { Link } from "gatsby";
 
-import { React } from 'src-core/react';
+import { React } from "src-core/react";
 
-import { Layout } from '../common/Layout';
-import { Header } from '../common/Header';
+import { Layout } from "../common/Layout";
+import { Header } from "../common/Header";
 
 export default ({ pageContext }: { pageContext: any }) => {
   const { archives, totalCount } = pageContext;

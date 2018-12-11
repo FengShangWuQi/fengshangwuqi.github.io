@@ -5,7 +5,7 @@ import {
   FlexFlowProperty,
   FlexWrapProperty,
   JustifyContentProperty,
-} from 'csstype';
+} from "csstype";
 
 export interface IFlexOptions {
   flexDirection?: FlexDirectionProperty;
@@ -17,11 +17,11 @@ export interface IFlexOptions {
 }
 
 export const flex = (flexOpts: IFlexOptions) => ({
-  display: 'flex',
+  display: "flex",
   ...flexOpts,
 });
 
 export const inlineFlex = (flexOpts: IFlexOptions) => ({
-  display: 'inline-flex',
+  display: "inline-flex",
   ...flexOpts,
 });

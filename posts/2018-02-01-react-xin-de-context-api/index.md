@@ -43,9 +43,9 @@ date: 2018-02-01T17:57:26+08:00
 那么，到底有什么改变呢？据肉眼估计，新的 **API** 与之前的 **API** 存在百万级别的差异，下面是一个简单的 [示例](https://codesandbox.io/s/n4r0qq898j?from-embed)：
 
 ```javascript
-const ThemeContext = React.createContext('light');
+const ThemeContext = React.createContext("light");
 class ThemeProvider extends React.Component {
-  state = { theme: 'light' };
+  state = { theme: "light" };
   render() {
     return ThemeContext.provide(this.state.theme, this.props.children);
   }
@@ -91,12 +91,12 @@ class App extends React.Component {
 那么，我们可以做点什么来避免呢？其实，个人觉得没有那么糟糕，如果你觉得这样并不好，那么可以使用常规的 **utility** 函数/组件来解决，下面是一个示例：
 
 ```javascript
-const ThemeContext = React.createContext('light');
+const ThemeContext = React.createContext("light");
 class ThemeProvider extends React.Component {
   /* code */
 }
 const ThemeConsumer = ({ children }) => ThemeContext.consume(children);
-const LanguageContext = React.createContext('en');
+const LanguageContext = React.createContext("en");
 class LanguageProvider extends React.Component {
   /* code */
 }

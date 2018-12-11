@@ -1,3 +1,3 @@
-import { css } from 'glamor';
+import { css } from "glamor";
 
 export { css };

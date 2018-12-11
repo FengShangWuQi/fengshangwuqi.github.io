@@ -26,9 +26,9 @@ date: 2017-08-17T17:15:06+08:00
 **V3**：
 
 ```js
-import React from 'react';
-import { render } from 'react-dom';
-import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
+import React from "react";
+import { render } from "react-dom";
+import { Router, Route, IndexRoute, Link, browserHistory } from "react-router";
 
 const PrimaryLayout = props => (
   <div className="primary-layout">
@@ -57,7 +57,7 @@ const App = () => (
   </Router>
 );
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById("root"));
 ```
 
 > 在这里给大家推荐一个在线 **react** 编译器 [codesandbox](https://codesandbox.io/)，正所谓，实践是检验真理的唯一标准，这也是一种良好的学习习惯。
@@ -71,9 +71,9 @@ render(<App />, document.getElementById('root'));
 **V4**：
 
 ```js
-import React from 'react';
-import { render } from 'react-dom';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import React from "react";
+import { render } from "react-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 const PrimaryLayout = () => (
   <div className="primary-layout">
@@ -102,7 +102,7 @@ const App = () => (
   </BrowserRouter>
 );
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById("root"));
 ```
 
 > ⚠️ 注意，我们引入的是 **BrowserRouter**，而且是从 **react-router-dom** 引入，不是 **react-router**。

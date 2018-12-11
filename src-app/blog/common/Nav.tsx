@@ -1,6 +1,6 @@
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
-import { React, Component } from 'src-core/react';
+import { React, Component } from "src-core/react";
 
 export class Nav extends Component<{}, { sideNav: boolean }> {
   state = { sideNav: false };
@@ -25,7 +25,7 @@ export class Nav extends Component<{}, { sideNav: boolean }> {
   };
 
   handleSideNavClick = (e: any) => {
-    if (e.target.nodeName.toLowerCase() === 'a') {
+    if (e.target.nodeName.toLowerCase() === "a") {
       this.toggleSideNav();
     }
   };
@@ -33,8 +33,8 @@ export class Nav extends Component<{}, { sideNav: boolean }> {
   render() {
     const { sideNav } = this.state;
     const navs = [
-      { title: 'archives', link: '/archives' },
-      { title: 'latest', link: '/' },
+      { title: "archives", link: "/archives" },
+      { title: "latest", link: "/" },
     ];
     const rssLi = (
       <a href="/rss.xml" rel="noopener noreferrer" title="RSS">
@@ -49,11 +49,11 @@ export class Nav extends Component<{}, { sideNav: boolean }> {
           <li key="rss">{rssLi}</li>
         </ul>
         <ul
-          style={sideNav ? { display: 'block', left: 0, right: 0 } : {}}
+          style={sideNav ? { display: "block", left: 0, right: 0 } : {}}
           onClick={e => this.handleSideNavClick(e)}>
           <li>
             <img
-              src={require('../images/close.png')}
+              src={require("../images/close.png")}
               alt="close"
               onClick={this.toggleSideNav}
             />
@@ -64,7 +64,7 @@ export class Nav extends Component<{}, { sideNav: boolean }> {
         </ul>
         <img
           style={{ top: sideNav ? -100 : 32 }}
-          src={require('../images/sideBar.png')}
+          src={require("../images/sideBar.png")}
           alt="sideBar"
           onClick={this.toggleSideNav}
         />

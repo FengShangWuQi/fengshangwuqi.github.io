@@ -39,7 +39,7 @@ date: 2017-08-12T19:34:02+08:00
 首先, 我们先书写好基本的 **HTML** 结构：
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <!-- <link rel="preload"> for CSS, JS, and font files  -->
@@ -51,9 +51,7 @@ date: 2017-08-12T19:34:02+08:00
     </style>
   </head>
   <body>
-    <div class="loader">
-      <!-- HTML for the loader -->
-    </div>
+    <div class="loader"><!-- HTML for the loader --></div>
     <header />
     <main />
     <footer />
@@ -131,7 +129,7 @@ logo 的效果图如下：
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
