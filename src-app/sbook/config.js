@@ -6,7 +6,7 @@ import { loadStories } from "./loadStories";
 
 addDecorator(
   withOptions({
-    name: "枫上雾棋的 Storybook",
+    name: "枫上雾棋的 sbook",
     addonPanelInRight: true,
   })
 );

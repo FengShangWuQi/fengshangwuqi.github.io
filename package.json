@@ -16,12 +16,12 @@
     "test": "echo test",
     "format": "npx prettier --write '**/*.{js,ts,tsx,json,md}'",
     "start": "gatsby develop",
-    "sbook": "start-storybook -p 9001 -c ./src-app/storybook",
-    "mv::gatsby": "mkdir -p dist/blog && mv public/* dist/blog/",
-    "build::gatsby": "gatsby build --prefix-paths && npm run mv::gatsby",
-    "build::sbook": "build-storybook -c ./src-app/storybook -o dist/storybook",
-    "build": "npm run clean && npm run build::gatsby && npm run build::sbook",
-    "deploy": "npx gh-pages -d dist -r git@github.com:FengShangWuQi/fengshangwuqi.github.io.git -m deploy"
+    "sbook": "start-storybook -p 9001 -c ./src-app/sbook",
+    "mv::bo": "mkdir -p dist/blog && mv public/* dist/blog/",
+    "build::bo": "gatsby build --prefix-paths && npm run mv::bo",
+    "build::sb": "build-storybook -c ./src-app/storybook -o dist/sbook",
+    "build": "npm run clean && npm run build::gatsby && npm run build::sb",
+    "deploy": "npx gh-pages -d dist -m deploy"
   },
   "husky": {
     "hooks": {
