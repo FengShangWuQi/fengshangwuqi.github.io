@@ -11,10 +11,9 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(`
         {
           allMarkdownRemark(
-            limit: 1000
             sort: { fields: [frontmatter___date], order: DESC }
+            limit: 1000
           ) {
-            totalCount
             edges {
               node {
                 excerpt
@@ -37,15 +36,15 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
 
+        // Create Index Page
         createPage({
           path: `/`,
           component: path.resolve("posts/index.tsx"),
         });
 
-        const { totalCount, edges } = result.data.allMarkdownRemark;
-
-        // 创建 posts
-        each(edges, post => {
+        // Create blog posts pages
+        const posts = result.data.allMarkdownRemark.edges;
+        each(posts, post => {
           const {
             node: {
               fields: { slug },
@@ -60,63 +59,20 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
-
-        // 创建 archives
-        const archives = {};
-        each(edges, ({ node }) => {
-          const year = node.frontmatter.date.slice(0, 4);
-          if (!archives[`year${year}`]) {
-            archives[`year${year}`] = [];
-          }
-          archives[`year${year}`].push(node);
-        });
-
-        createPage({
-          path: "archives",
-          component: path.resolve("src-app/blog/templates/blog-archive.tsx"),
-          context: {
-            archives,
-            totalCount,
-          },
-        });
-
-        // 创建 tags
-        const posts = {};
-
-        each(edges, post => {
-          const { tag } = post.node.frontmatter;
-          if (tag) {
-            tag.split(",").forEach(t => {
-              if (!posts[t]) {
-                posts[t] = [];
-              }
-              posts[t].push(post);
-            });
-          }
-        });
-
-        Object.keys(posts).forEach(tagName => {
-          const post = posts[tagName];
-          createPage({
-            path: tagName,
-            component: path.resolve("src-app/blog/templates/blog-tag.tsx"),
-            context: {
-              post,
-              tag: tagName,
-            },
-          });
-        });
       })
     );
   });
 };
 
+// Add custom url pathname for blog posts
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
+  // Ensures we are processing only markdown files
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode });
 
+    // Creates new query'able field with name of 'slug'
     createNodeField({
       name: `slug`,
       node,
@@ -125,6 +81,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
+// Add custom webpack config
 exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
   const config = getConfig();
 
