@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import { get } from "lodash";
 
 import { Layout } from "src-app/blog/common/Layout";
-import { BlogHeader } from "src-app/blog/common/BlogHeader";
 import { LatestList } from "src-app/blog/latest/LatestList";
 
 export default ({ data }: { data: any }) => {
@@ -13,7 +12,6 @@ export default ({ data }: { data: any }) => {
   return (
     <Layout>
       <Helmet title="枫上雾棋的日志" />
-      <BlogHeader totalCount={totalCount} />
       <LatestList posts={posts} totalCount={totalCount} />
     </Layout>
   );

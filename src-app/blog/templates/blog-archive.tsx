@@ -3,27 +3,13 @@ import Helmet from "react-helmet";
 import { Link } from "gatsby";
 
 import { Layout } from "../common/Layout";
-import { Header } from "../common/Header";
 
 export default ({ pageContext }: { pageContext: any }) => {
-  const { archives, totalCount } = pageContext;
-
-  const leftCenter = (
-    <>
-      {<div>{`${totalCount} 篇文章`}</div>}
-      <h1>归档</h1>
-    </>
-  );
-  const bottom = (
-    <div>
-      <Link to="/">>> 枫上雾棋的日志</Link>
-    </div>
-  );
+  const { archives } = pageContext;
 
   return (
     <Layout>
       <Helmet title="归档 - 枫上雾棋的日志" />
-      <Header leftCenter={leftCenter} bottom={bottom} />
 
       <div>
         {Object.keys(archives).map(date => {
