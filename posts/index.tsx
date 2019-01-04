@@ -1,8 +1,7 @@
+import * as React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import { get } from "lodash";
-
-import { React } from "src-core/react";
 
 import { Layout } from "src-app/blog/common/Layout";
 import { BlogHeader } from "src-app/blog/common/BlogHeader";

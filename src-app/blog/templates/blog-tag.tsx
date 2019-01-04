@@ -1,7 +1,6 @@
+import * as React from "react";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
-
-import { React } from "src-core/react";
 
 import { Layout } from "../common/Layout";
 import { Header } from "../common/Header";

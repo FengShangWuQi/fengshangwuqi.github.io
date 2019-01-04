@@ -1,6 +1,5 @@
+import * as React from "react";
 import { Link } from "gatsby";
-
-import { React } from "src-core/react";
 
 export const LatestItem = ({
   path,

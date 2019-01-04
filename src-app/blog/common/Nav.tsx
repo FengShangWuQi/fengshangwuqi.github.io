@@ -1,8 +1,7 @@
+import * as React from "react";
 import { Link } from "gatsby";
 
-import { React, Component } from "src-core/react";
-
-export class Nav extends Component<{}, { sideNav: boolean }> {
+export class Nav extends React.Component<{}, { sideNav: boolean }> {
   state = { sideNav: false };
 
   renderNav = ({

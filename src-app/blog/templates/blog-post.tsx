@@ -1,8 +1,7 @@
+import * as React from "react";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import { get } from "lodash";
-
-import { React, Component } from "src-core/react";
 
 import { Layout } from "../common/Layout";
 import { Header } from "../common/Header";
@@ -15,7 +14,7 @@ const loadScript = (url: string) => {
   (d.head || d.body).appendChild(s);
 };
 
-export default class BlogPost extends Component<{ data: any }> {
+export default class BlogPost extends React.Component<{ data: any }> {
   componentDidMount() {
     [
       "https://feng-shang-wu-qi-de-ri-zhi.disqus.com/embed.js",

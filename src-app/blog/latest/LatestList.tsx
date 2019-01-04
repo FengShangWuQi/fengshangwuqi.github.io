@@ -1,8 +1,11 @@
-import { React, Component } from "src-core/react";
+import * as React from "react";
 
 import { LatestItem } from "./LatestItem";
 
-export class LatestList extends Component<{ posts: any; totalCount: number }> {
+export class LatestList extends React.Component<{
+  posts: any;
+  totalCount: number;
+}> {
   state = { current: 1, PAGE_SIZE: 5 };
 
   onChange = (current: number) => {

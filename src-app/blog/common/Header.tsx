@@ -1,4 +1,4 @@
-import { React } from "src-core/react";
+import * as React from "react";
 
 import { css } from "src-core/style";
 

@@ -1,4 +1,4 @@
-import { React } from "src-core/react";
+import * as React from "react";
 
 export const SocialLink = ({
   social,
