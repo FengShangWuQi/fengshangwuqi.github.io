@@ -37,11 +37,14 @@
     ]
   },
   "dependencies": {
+    "@emotion/core": "10.0.5",
+    "@emotion/styled": "10.0.5",
     "@types/lodash": "4.14.119",
     "@types/react": "16.7.18",
     "@types/react-dom": "16.0.11",
     "@types/react-helmet": "5.0.8",
-    "gatsby": "^2.0.82",
+    "gatsby": "2.0.82",
+    "gatsby-plugin-emotion": "4.0.1",
     "gatsby-plugin-feed": "2.0.11",
     "gatsby-plugin-google-analytics": "2.0.8",
     "gatsby-plugin-offline": "2.0.20",
@@ -57,7 +60,7 @@
     "gatsby-remark-responsive-iframe": "2.0.8",
     "gatsby-remark-smartypants": "2.0.7",
     "gatsby-source-filesystem": "2.0.12",
-    "gatsby-transformer-remark": "^2.1.19",
+    "gatsby-transformer-remark": "2.1.19",
     "gatsby-transformer-sharp": "2.1.10",
     "glamor": "2.20.40",
     "lodash": "4.17.11",
@@ -83,7 +86,7 @@
     "npm-check": "5.9.0",
     "prettier": "1.15.3",
     "react-docgen-typescript-webpack-plugin": "1.1.0",
-    "rimraf": "^2.6.3"
+    "rimraf": "2.6.3"
   },
   "license": "MIT"
 }

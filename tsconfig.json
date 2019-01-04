@@ -27,6 +27,7 @@
     "paths": {
       "*": ["*", "__types__/*"]
     },
+    "types": ["@emotion/core"],
 
     /* 其他选项 */
     "experimentalDecorators": true

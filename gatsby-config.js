@@ -10,6 +10,9 @@ module.exports = {
     // TypeScript
     `gatsby-plugin-typescript`,
 
+    // emotion
+    `gatsby-plugin-emotion`,
+
     // Create File nodes from the file system
     {
       resolve: `gatsby-source-filesystem`,
