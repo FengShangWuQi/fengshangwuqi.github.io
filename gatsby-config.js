@@ -13,6 +13,14 @@ module.exports = {
     // emotion
     `gatsby-plugin-emotion`,
 
+    // typography
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src-app/blog/utils/typography`,
+      },
+    },
+
     // Create File nodes from the file system
     {
       resolve: `gatsby-source-filesystem`,
