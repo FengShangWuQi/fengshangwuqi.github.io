@@ -38,7 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
 
         // Create Index Page
         createPage({
-          path: `/`,
+          path: "/",
           component: path.resolve("posts/index.tsx"),
         });
 
@@ -59,7 +59,7 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
         });
-      })
+      }),
     );
   });
 };
@@ -69,12 +69,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   // Ensures we are processing only markdown files
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === "MarkdownRemark") {
     const value = createFilePath({ node, getNode });
 
     // Creates new query'able field with name of 'slug'
     createNodeField({
-      name: `slug`,
+      name: "slug",
       node,
       value,
     });

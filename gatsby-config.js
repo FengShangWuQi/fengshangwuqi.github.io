@@ -8,22 +8,22 @@ module.exports = {
   pathPrefix: "blog",
   plugins: [
     // TypeScript
-    `gatsby-plugin-typescript`,
+    "gatsby-plugin-typescript",
 
     // emotion
-    `gatsby-plugin-emotion`,
+    "gatsby-plugin-emotion",
 
     // typography
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: `src-app/blog/utils/typography`,
+        pathToConfigModule: "src-app/blog/utils/typography",
       },
     },
 
     // Create File nodes from the file system
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/posts`,
         name: "posts",
@@ -32,11 +32,11 @@ module.exports = {
 
     // Parses Markdown files
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 600,
             },
@@ -48,8 +48,8 @@ module.exports = {
               rel: "noopener noreferrer",
             },
           },
-          `gatsby-remark-emojis`,
-          `gatsby-remark-responsive-iframe`,
+          "gatsby-remark-emojis",
+          "gatsby-remark-responsive-iframe",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-autolink-headers",
           "gatsby-remark-prismjs",
@@ -59,21 +59,21 @@ module.exports = {
     },
 
     // Creates ImageSharp nodes from image types
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
 
     // A document head manager
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-react-helmet",
 
     // Add Google Analytics
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-114534441-1",
       },
     },
 
     // Work offline and more resistant to bad network connections
-    `gatsby-plugin-offline`,
+    "gatsby-plugin-offline",
   ],
 };

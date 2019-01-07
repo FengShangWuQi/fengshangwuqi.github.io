@@ -1,0 +1,9 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "quotes": [2, "double"],
+    "no-console": 0,
+
+    "import/no-extraneous-dependencies": 0
+  }
+}
