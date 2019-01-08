@@ -12,9 +12,9 @@
     "gatsby"
   ],
   "scripts": {
-    "clean": "npx rimraf public dist .cache",
+    "clean": "rimraf public dist .cache",
     "test": "npm run lint",
-    "format": "npx prettier --write '**/*.{js,ts,tsx,json,md}'",
+    "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "lint": "eslint --fix '**/*.js'",
     "start": "gatsby develop",
     "sbook": "start-storybook -p 9001 -c ./src-app/sbook",
@@ -22,18 +22,18 @@
     "build::bo": "gatsby build --prefix-paths && npm run mv::bo",
     "build::sb": "build-storybook -c ./src-app/storybook -o dist/sbook",
     "build": "npm run clean && npm run build::gatsby && npm run build::sb",
-    "deploy": "npx gh-pages -d dist -m deploy"
+    "deploy": "gh-pages -d dist -m deploy"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm test && lint-staged",
       "pre-push": "npm test",
-      "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
     "**/*.{js,ts,tsx,json,md}": [
-      "npx prettier --write",
+      "prettier --write",
       "git add"
     ]
   },

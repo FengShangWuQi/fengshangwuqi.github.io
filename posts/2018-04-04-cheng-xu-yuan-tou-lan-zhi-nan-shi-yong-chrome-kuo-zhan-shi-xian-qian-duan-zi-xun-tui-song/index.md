@@ -97,7 +97,7 @@ chrome.runtime.sendMessage(
   },
   res => {
     console.log(res);
-  }
+  },
 );
 ```
 
@@ -172,7 +172,7 @@ history
 const year = await GitHubAPI.getContent("history");
 const month = await GitHubAPI.getContent(`history/${year[year.length - 1]}`);
 const day = await GitHubAPI.getContent(
-  `history/${year[year.length - 1]}/${month[month.length - 1]}`
+  `history/${year[year.length - 1]}/${month[month.length - 1]}`,
 );
 
 const path = `${year.pop()}/${month.pop()}/${day.pop()}`;
@@ -207,7 +207,7 @@ const GitHubAPI = new class {
       `${this.prefix}/repos/${this.owner}/${this.repo}/contents/${path}`,
       {
         method: "GET",
-      }
+      },
     );
     const contents = await res.json();
 
@@ -258,7 +258,7 @@ export const getCurrContent = (paths, path) => {
       header.render();
       header.addListener();
       item.render();
-    }
+    },
   );
 };
 ```

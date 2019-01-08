@@ -83,7 +83,7 @@ class App extends Component {
           <input
             ref={input => (this._input = input)}
             className={["input", this.state.focused && "input-focused"].join(
-              " "
+              " ",
             )}
           />
         </div>
@@ -140,7 +140,7 @@ class App extends Component {
           style={Object.assign(
             {},
             styles.button,
-            !this.state.disabled && styles.buttonEnabled
+            !this.state.disabled && styles.buttonEnabled,
           )}
           disabled={disabled}>
           {label}
