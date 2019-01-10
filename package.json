@@ -23,7 +23,7 @@
     "mv::bo": "mkdir -p dist/blog && mv public/* dist/blog/",
     "build::bo": "gatsby build --prefix-paths && npm run mv::bo",
     "build::sb": "build-storybook -c ./src-app/storybook -o dist/sbook",
-    "build": "npm run clean && npm run build::gatsby && npm run build::sb",
+    "build": "npm run clean && npm run build::bo && npm run build::sb",
     "deploy": "gh-pages -d dist -m deploy"
   },
   "husky": {
