@@ -7,9 +7,11 @@
   "keywords": [
     "react",
     "typescript",
-    "glamor",
+    "emotion",
     "storybook",
-    "gatsby"
+    "gatsby",
+    "typography",
+    "netlify"
   ],
   "scripts": {
     "clean": "rimraf public dist .cache",
@@ -64,7 +66,6 @@
     "gatsby-source-filesystem": "2.0.12",
     "gatsby-transformer-remark": "2.1.19",
     "gatsby-transformer-sharp": "2.1.10",
-    "glamor": "2.20.40",
     "lodash": "4.17.11",
     "prismjs": "1.15.0",
     "react": "next",
