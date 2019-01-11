@@ -28,6 +28,7 @@
       "*": ["*", "__types__/*"]
     },
     "types": ["@emotion/core"],
+    "allowSyntheticDefaultImports": true,
 
     /* 其他选项 */
     "experimentalDecorators": true
