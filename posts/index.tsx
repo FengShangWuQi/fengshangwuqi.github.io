@@ -1,23 +1,28 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import { get } from "lodash";
+import { StaticQuery, graphql } from "gatsby";
 
 import { Layout } from "src-app/blog/common/Layout";
-import { LatestList } from "src-app/blog/latest/LatestList";
+import { Archive } from "src-app/blog/archive";
 
-export default ({ data }: { data: any }) => {
-  const { totalCount, edges: posts } = get(data, "allMarkdownRemark");
+export default () => (
+  <StaticQuery
+    query={archiveQuery}
+    render={({
+      site: {
+        siteMetadata: { title },
+      },
+      allMarkdownRemark: { edges: posts, totalCount },
+    }) => (
+      <Layout>
+        <Helmet title={title} />
+        <Archive posts={posts} totalCount={totalCount} />
+      </Layout>
+    )}
+  />
+);
 
-  return (
-    <Layout>
-      <Helmet title="枫上雾棋的日志" />
-      <LatestList posts={posts} totalCount={totalCount} />
-    </Layout>
-  );
-};
-
-export const pageQuery = graphql`
+const archiveQuery = graphql`
   {
     site {
       siteMetadata {
