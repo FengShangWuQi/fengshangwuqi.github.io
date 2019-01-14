@@ -82,15 +82,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 // Add custom webpack config
-exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
-  const config = getConfig();
-
-  const newConfig = {
-    ...config,
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
     resolve: {
-      ...config.resolve,
-      modules: [...config.resolve.modules, "."],
+      modules: [path.resolve(__dirname, "."), "node_modules"],
     },
-  };
-  actions.replaceWebpackConfig(newConfig);
+  });
 };
