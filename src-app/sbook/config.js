@@ -1,15 +1,16 @@
-import { addDecorator, configure } from "@storybook/react";
-import { withOptions } from "@storybook/addon-options";
-import { withConsole } from "@storybook/addon-console";
+import { addParameters, addDecorator, configure } from "@storybook/react";
 
 import loadStories from "./loadStories";
+import dsDecorator from "./ds";
 
-addDecorator(
-  withOptions({
+addDecorator(dsDecorator);
+
+addParameters({
+  options: {
     name: "枫上雾棋的 sbook",
-    addonPanelInRight: true,
-  }),
-);
-addDecorator((storyFn, context) => withConsole()(storyFn)(context));
+    goFullScreen: true,
+    showAddonPanel: false,
+  },
+});
 
 configure(loadStories, module);
