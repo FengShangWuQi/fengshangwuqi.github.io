@@ -23,7 +23,7 @@
     "sbook": "start-storybook -p 9001 -c ./src-app/sbook",
     "mv::bo": "mkdir -p dist/blog && mv public/* dist/blog/",
     "build::bo": "gatsby build --prefix-paths && npm run mv::bo",
-    "build::sb": "build-storybook -c ./src-app/storybook -o dist/sbook",
+    "build::sb": "build-storybook -c ./src-app/sbook -o dist/sbook",
     "build": "npm run clean && npm run build::bo && npm run build::sb",
     "deploy": "gh-pages -d dist -m deploy"
   },
