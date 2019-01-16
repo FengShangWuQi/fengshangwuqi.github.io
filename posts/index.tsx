@@ -5,6 +5,8 @@ import { StaticQuery, graphql } from "gatsby";
 import { Layout } from "src-app/blog/common/Layout";
 import { Archive } from "src-app/blog/archive";
 
+import { Header } from "src-components/headers";
+
 export default () => (
   <StaticQuery
     query={archiveQuery}
@@ -16,6 +18,7 @@ export default () => (
     }) => (
       <Layout>
         <Helmet title={title} />
+        <Header />
         <Archive posts={posts} totalCount={totalCount} />
       </Layout>
     )}
