@@ -15,17 +15,17 @@
     "netlify"
   ],
   "scripts": {
-    "clean": "rimraf public dist .cache",
     "test": "npm run lint",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "lint": "eslint --fix gatsby-config.js gatsby-node.js src-app/sbook",
-    "start": "gatsby develop",
+    "start": "ts-node ./tools/index.ts",
+    "blog": "gatsby develop -o",
     "sbook": "start-storybook -p 9001 -c ./src-app/sbook",
-    "mv::bo": "mkdir -p dist/blog && mv public/* dist/blog/",
-    "build::bo": "gatsby build --prefix-paths && npm run mv::bo",
-    "build::sb": "build-storybook -c ./src-app/sbook -o dist/sbook",
-    "build": "npm run clean && npm run build::bo && npm run build::sb",
-    "deploy": "gh-pages -d dist -m deploy"
+    "clean::blog": "rimraf public dist/blog .cache",
+    "build::blog": "npm run clean::blog && gatsby build --prefix-paths && mkdir -p dist/blog && mv public/* dist/blog",
+    "build::sbook": "rimraf dist/sbook && build-storybook -c ./src-app/sbook -o dist/sbook",
+    "r::blog": "npm run build::blog && gh-pages -d dist -m deploy blog",
+    "r::sbook": "npm run build::sbook && gh-pages -d dist -m deploy sbook"
   },
   "husky": {
     "hooks": {
@@ -86,9 +86,14 @@
     "@emotion/babel-preset-css-prop": "10.0.6",
     "@storybook/addon-options": "5.0.0-alpha.3",
     "@storybook/react": "5.0.0-alpha.3",
+    "@types/cross-spawn": "6.0.0",
+    "@types/inquirer": "0.0.43",
+    "@types/node": "10.12.18",
     "@types/storybook__react": "4.0.0",
     "babel-loader": "8.0.5",
     "babel-preset-react-app": "7.0.0",
+    "cross-spawn": "6.0.5",
+    "dotenv": "6.2.0",
     "eslint": "5.12.0",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-airbnb-base": "13.1.0",
@@ -100,7 +105,8 @@
     "lint-staged": "8.1.0",
     "npm-check": "5.9.0",
     "prettier": "1.15.3",
-    "rimraf": "2.6.3"
+    "rimraf": "2.6.3",
+    "ts-node": "7.0.1"
   },
   "license": "MIT"
 }
