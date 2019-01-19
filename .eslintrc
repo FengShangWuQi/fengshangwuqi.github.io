@@ -8,6 +8,7 @@
 
     "import/no-unresolved": 1,
     "import/no-extraneous-dependencies": 0,
+    "import/no-dynamic-require": 0,
 
     "react/jsx-filename-extension": [
       1,
