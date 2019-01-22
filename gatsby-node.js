@@ -1,6 +1,5 @@
 const path = require("path");
 const Promise = require("bluebird");
-const { each } = require("lodash");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.createPages = ({ graphql, actions }) => {
@@ -39,12 +38,12 @@ exports.createPages = ({ graphql, actions }) => {
         // Create Index Page
         createPage({
           path: "/",
-          component: path.resolve("posts/index.tsx"),
+          component: path.resolve("src-app/blog/templates/blog-page.tsx"),
         });
 
         // Create blog posts pages
         const posts = result.data.allMarkdownRemark.edges;
-        each(posts, post => {
+        posts.forEach(post => {
           const {
             node: {
               fields: { slug },

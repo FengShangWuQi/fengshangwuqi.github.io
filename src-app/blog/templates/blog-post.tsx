@@ -1,15 +1,17 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import { get } from "lodash";
 
 import { Layout } from "../common/Layout";
 
 export default class BlogPost extends React.Component<{ data: any }> {
   render() {
-    const { data } = this.props;
-    const { html, frontmatter } = get(data, "markdownRemark");
-    const { title } = frontmatter;
+    const {
+      markdownRemark: {
+        html,
+        frontmatter: { title },
+      },
+    } = this.props.data;
 
     return (
       <Layout>
