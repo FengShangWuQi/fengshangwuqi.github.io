@@ -1,9 +1,9 @@
 import { addParameters, addDecorator, configure } from "@storybook/react";
 
 import loadStories from "./loadStories";
-import dsDecorator from "./ds";
+import { ds } from "./decorators";
 
-addDecorator(dsDecorator);
+addDecorator(ds);
 
 addParameters({
   options: {
