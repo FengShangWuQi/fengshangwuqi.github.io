@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "clean": "rimraf public dist/blog .cache",
-    "test": "npm run lint",
+    "test": "tsc --noEmit && npm run lint",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "lint": "eslint --fix gatsby-config.js gatsby-node.js src-app/sbook",
     "start": "ts-node ./tools/index.ts",
