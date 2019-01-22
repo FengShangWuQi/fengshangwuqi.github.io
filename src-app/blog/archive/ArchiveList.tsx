@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 export interface IArchiveList {
   posts: INode[];
@@ -47,6 +48,10 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
   );
 };
 
-const ArchiveItem = ({ title }: IArchiveItem) => {
-  return <div>{title}</div>;
+const ArchiveItem = ({ path, title }: IArchiveItem) => {
+  return (
+    <div>
+      <Link to={path}>{title}</Link>
+    </div>
+  );
 };
