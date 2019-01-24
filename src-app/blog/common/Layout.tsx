@@ -4,7 +4,7 @@ import { margin, position } from "polished";
 import { ThemeProvider, DSReset, defaultTheme } from "src-core/ds";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
-  const theme = {
+  const blogTheme = {
     ...defaultTheme,
     body: {
       background: "#F4F5FA",
@@ -12,7 +12,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={blogTheme}>
       <DSReset />
       <div
         css={{
