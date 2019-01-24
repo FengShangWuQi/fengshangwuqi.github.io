@@ -1,11 +1,12 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-
-import { Layout } from "src-app/blog/common/Layout";
-import { Archive } from "src-app/blog/archive";
+import { size } from "polished";
 
 import { Header } from "src-components/headers";
+
+import { Layout } from "../common/Layout";
+import { Archive } from "../archive";
 
 export default () => (
   <StaticQuery
@@ -46,7 +47,13 @@ export default () => (
     }) => (
       <Layout>
         <Helmet title={title} />
-        <Header />
+        <div
+          css={{
+            ...size(400, "100%"),
+          }}>
+          <Header />
+        </div>
+
         <Archive posts={posts} totalCount={totalCount} />
       </Layout>
     )}

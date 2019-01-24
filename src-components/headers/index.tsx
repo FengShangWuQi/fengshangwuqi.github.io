@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <div
       css={{
-        ...size(400, "100%"),
+        ...size("100%", "100%"),
         background: "#101012",
         color: ds.color.white,
       }}
