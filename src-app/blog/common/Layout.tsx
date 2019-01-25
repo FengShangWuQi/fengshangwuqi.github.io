@@ -3,11 +3,13 @@ import { margin, position } from "polished";
 
 import { ThemeProvider, DSReset, defaultTheme } from "src-core/ds";
 
+import { Nav } from "../common/Nav";
+
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   const blogTheme = {
     ...defaultTheme,
-    body: {
-      background: "#F4F5FA",
+    color: {
+      primary: "#3c2584",
     },
   };
 
@@ -20,6 +22,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
           ...position("relative"),
           maxWidth: 1200,
         }}>
+        <Nav />
         {children}
       </div>
     </ThemeProvider>
