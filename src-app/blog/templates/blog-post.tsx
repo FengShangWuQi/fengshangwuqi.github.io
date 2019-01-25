@@ -7,15 +7,18 @@ import { Layout } from "../common/Layout";
 export default class BlogPost extends React.Component<{ data: any }> {
   render() {
     const {
+      site: {
+        siteMetadata: { title: metaTitle },
+      },
       markdownRemark: {
         html,
-        frontmatter: { title },
+        frontmatter: { title: postTitle },
       },
     } = this.props.data;
 
     return (
       <Layout>
-        <Helmet title={`${title} - 枫上雾棋的日志`} />
+        <Helmet title={`${postTitle} - ${metaTitle}`} />
         <div style={{ top: -25 }}>
           <div dangerouslySetInnerHTML={{ __html: html }} />
           <div id="disqus_thread" />
@@ -27,6 +30,11 @@ export default class BlogPost extends React.Component<{ data: any }> {
 
 export const postQuery = graphql`
   query($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       fields {
