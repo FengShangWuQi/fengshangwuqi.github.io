@@ -24,15 +24,12 @@ export default () => (
           totalCount
           edges {
             node {
-              excerpt
               fields {
                 slug
               }
               frontmatter {
                 title
-                tag
                 date(formatString: "YYYY-MM-DD")
-                original
               }
             }
           }
@@ -46,7 +43,7 @@ export default () => (
       allMarkdownRemark: { edges: posts, totalCount },
     }) => (
       <Layout>
-        <Helmet title={title} />
+        <Helmet title={`归档 - ${title}`} />
 
         <div
           css={{
