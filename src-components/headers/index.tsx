@@ -11,7 +11,7 @@ export const Header = () => {
       css={{
         ...size("100%", "100%"),
         background: "#101012",
-        color: ds.color.white,
+        color: ds.color.text,
       }}
     />
   );
