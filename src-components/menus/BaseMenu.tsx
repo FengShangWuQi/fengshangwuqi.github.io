@@ -18,7 +18,7 @@ export const BaseMenu = ({
 );
 
 const baseMenuStyle: CSSObject = {
-  height: 100,
-  lineHeight: "100px",
+  height: 80,
+  lineHeight: "80px",
   listStyle: "none",
 };
