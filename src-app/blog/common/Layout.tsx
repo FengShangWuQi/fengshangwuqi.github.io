@@ -1,5 +1,5 @@
 import React from "react";
-import { margin, position } from "polished";
+import { margin, position, border } from "polished";
 
 import { ThemeProvider, DSReset, defaultTheme } from "src-core/ds";
 
@@ -17,6 +17,11 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider theme={blogTheme}>
       <DSReset />
+      <div
+        css={{
+          ...border("top", 8, "solid", "#3c2584"),
+        }}
+      />
       <div
         css={{
           ...margin(0, "auto"),
