@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import { size } from "polished";
 
 import { Header } from "src-components/headers";
+import { BaseMenu, BaseMenuItem } from "src-components/menus";
 
 import { Layout } from "../common/Layout";
 import { Archive } from "../archive";
@@ -47,6 +48,19 @@ export default () => (
     }) => (
       <Layout>
         <Helmet title={title} />
+
+        <BaseMenu right>
+          {[
+            { value: "ssr", label: "ssr" },
+            { value: "latest", label: "最新" },
+            { value: "archive", label: "归档" },
+          ].map(item => (
+            <BaseMenuItem key={item.value}>
+              {item.label.toUpperCase()}
+            </BaseMenuItem>
+          ))}
+        </BaseMenu>
+
         <div
           css={{
             ...size(400, "100%"),
