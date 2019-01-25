@@ -4,10 +4,9 @@ import { StaticQuery, graphql } from "gatsby";
 import { size } from "polished";
 
 import { Header } from "src-components/headers";
-import { BaseMenu, BaseMenuItem } from "src-components/menus";
 
 import { Layout } from "../common/Layout";
-import { Archive } from "../archive";
+import { Latest } from "../latest";
 
 export default () => (
   <StaticQuery
@@ -22,7 +21,6 @@ export default () => (
           limit: 1000
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
-          totalCount
           edges {
             node {
               excerpt
@@ -44,22 +42,10 @@ export default () => (
       site: {
         siteMetadata: { title },
       },
-      allMarkdownRemark: { edges: posts, totalCount },
+      allMarkdownRemark: { edges: posts },
     }) => (
       <Layout>
         <Helmet title={title} />
-
-        <BaseMenu right>
-          {[
-            { value: "ssr", label: "ssr" },
-            { value: "latest", label: "最新" },
-            { value: "archive", label: "归档" },
-          ].map(item => (
-            <BaseMenuItem key={item.value}>
-              {item.label.toUpperCase()}
-            </BaseMenuItem>
-          ))}
-        </BaseMenu>
 
         <div
           css={{
@@ -68,7 +54,7 @@ export default () => (
           <Header />
         </div>
 
-        <Archive posts={posts} totalCount={totalCount} />
+        <Latest posts={posts} />
       </Layout>
     )}
   />
