@@ -15,6 +15,9 @@ export const DSReset = () => {
         styles={{
           a: {
             color: `${ds.color.primary}`,
+          },
+
+          "a:hover": {
             textDecoration: "none",
           },
 
