@@ -35,10 +35,16 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors);
         }
 
-        // Create Index Page
+        // Create Index(Latest) Page
         createPage({
           path: "/",
           component: path.resolve("src-app/blog/templates/blog-page.tsx"),
+        });
+
+        // Create Archive Page
+        createPage({
+          path: "/archive",
+          component: path.resolve("src-app/blog/templates/blog-archive.tsx"),
         });
 
         // Create blog posts pages
