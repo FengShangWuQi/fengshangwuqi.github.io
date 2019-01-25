@@ -1,6 +1,8 @@
 const color = {
-  white: "#fff",
-  black: "#000",
+  primary: "#d23669",
+
+  text: "#000000",
+  bg: "#FFFFFF",
 };
 
 export const defaultTheme = {
