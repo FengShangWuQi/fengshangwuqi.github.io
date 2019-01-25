@@ -4,6 +4,7 @@ import { margin, position } from "polished";
 import { ThemeProvider, DSReset, defaultTheme } from "src-core/ds";
 
 import { Nav } from "../common/Nav";
+import { Footer } from "../common/Footer";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   const blogTheme = {
@@ -24,6 +25,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
         }}>
         <Nav />
         {children}
+        <Footer />
       </div>
     </ThemeProvider>
   );
