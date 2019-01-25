@@ -32,7 +32,10 @@ interface INode {
 
 export const ArchiveList = ({ posts }: IArchiveList) => {
   return (
-    <div>
+    <div
+      css={{
+        boxShadow: "inset 0 0 30px #eee",
+      }}>
       {posts.map(({ node }: INode) => (
         <ArchiveItem
           key={node.fields.slug}
