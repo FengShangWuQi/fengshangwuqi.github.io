@@ -1,4 +1,5 @@
 import React from "react";
+import { margin, padding, border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 
@@ -10,13 +11,21 @@ export const Latest = ({ posts }: ILatest) => {
   const ds = useDesignSystem();
 
   return (
-    <div>
-      <h1
+    <div
+      css={{
+        ...padding(25, 25, 58),
+        boxShadow: "inset 0 0 30px #eee",
+        overflow: "hidden",
+      }}>
+      <p
         css={{
+          ...margin(12, 0, 26),
+          ...border("bottom", 3, "solid", ds.color.primary),
+          fontSize: ds.size.l,
           color: ds.color.text,
         }}>
-        最新的文章
-      </h1>
+        最近的文章
+      </p>
 
       <LatestList posts={posts} />
     </div>

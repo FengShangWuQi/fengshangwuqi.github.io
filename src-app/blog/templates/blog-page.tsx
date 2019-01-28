@@ -23,7 +23,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt
+              excerpt(pruneLength: 140)
               fields {
                 slug
               }
@@ -32,6 +32,17 @@ export default () => (
                 tag
                 date(formatString: "YYYY-MM-DD")
                 original
+                cover {
+                  childImageSharp {
+                    fluid(maxWidth: 350, maxHeight: 196) {
+                      aspectRatio
+                      src
+                      srcSet
+                      sizes
+                      tracedSVG
+                    }
+                  }
+                }
               }
             }
           }
