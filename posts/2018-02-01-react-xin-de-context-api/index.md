@@ -3,6 +3,7 @@ title: React ⚛️ 新的 Context API
 original: false
 tag: FrontEnd,React,context
 date: 2018-02-01T17:57:26+08:00
+cover: ./header.png
 ---
 
 原文地址：[React's ⚛️ new Context API](https://blog.kentcdodds.com/reacts-%EF%B8%8F-new-context-api-70c9fe01596b)

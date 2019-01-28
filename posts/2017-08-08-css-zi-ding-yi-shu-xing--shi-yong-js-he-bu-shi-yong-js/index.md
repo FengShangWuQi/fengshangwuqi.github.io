@@ -3,6 +3,7 @@ title: CSS 自定义属性 -- 使用 JS 和不使用 JS
 original: false
 tag: FrontEnd,CSS
 date: 2017-08-08T19:29:49+08:00
+cover: ./header.png
 ---
 
 原文地址：[CSS Custom Properties—Dynamic Changes With And Without Javascript](http://vanseodesign.com/css/custom-properties-and-javascript/?utm_source=CSS-Weekly&utm_campaign=Issue-276&utm_medium=web)

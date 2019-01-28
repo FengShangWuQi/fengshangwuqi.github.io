@@ -3,6 +3,7 @@ title: 使用 CSS 追踪用户
 original: false
 tag: FrontEnd,CSS,track
 date: 2018-01-19T17:55:21+08:00
+cover: ./header.png
 ---
 
 原文地址：[Crooked Style Sheets](https://github.com/jbtronics/CrookedStyleSheets)

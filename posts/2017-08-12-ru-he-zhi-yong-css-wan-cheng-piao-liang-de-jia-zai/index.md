@@ -3,6 +3,7 @@ title: 如何只用 CSS 完成漂亮的加载
 original: false
 tag: FrontEnd,CSS
 date: 2017-08-12T19:34:02+08:00
+cover: ./header.png
 ---
 
 原文地址：[How to create a beautiful animated loader with nothing but CSS](https://codeburst.io/how-to-create-a-beautiful-animated-loader-with-nothing-but-css-d1962fc5a66c)
