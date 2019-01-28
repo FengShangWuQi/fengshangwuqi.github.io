@@ -21,7 +21,7 @@ export const Archive = ({ posts, totalCount }: IArchive) => {
       }}>
       <p
         css={{
-          ...margin(12, 0),
+          ...margin(12, 0, 26),
           ...border("bottom", 3, "solid", ds.color.primary),
           fontSize: ds.size.l,
           color: ds.color.text,
