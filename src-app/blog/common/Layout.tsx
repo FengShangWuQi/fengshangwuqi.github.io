@@ -10,6 +10,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   const blogTheme = {
     ...defaultTheme,
     color: {
+      ...defaultTheme.color,
       primary: "#3c2584",
     },
   };
