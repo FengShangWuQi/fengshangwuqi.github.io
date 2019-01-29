@@ -13,10 +13,13 @@ export const DSReset = () => {
 
       <Global
         styles={{
+          body: {
+            fontFamily: ds.fontFamily.system,
+          },
+
           a: {
             color: `${ds.color.primary}`,
           },
-
           "a:hover": {
             textDecoration: "none",
           },
