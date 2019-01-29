@@ -8,6 +8,10 @@ const color = {
 export const defaultTheme = {
   color,
 
+  fontFamily: {
+    system: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif`,
+  },
+
   size: {
     xxs: 10,
     xs: 12,
@@ -17,6 +21,13 @@ export const defaultTheme = {
     l: 24,
     xl: 36,
     xxl: 48,
+  },
+
+  radius: {
+    s: 2,
+    base: 4,
+    m: 8,
+    l: 10,
   },
 };
 
