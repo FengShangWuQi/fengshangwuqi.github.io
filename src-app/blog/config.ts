@@ -1,4 +1,6 @@
-const Path = require("path");
+const { join } = require("path");
+const gatsbyPath = join(__dirname, "../../src-core/gatsby");
+
 const {
   siteMetadata,
   pathPrefix,
@@ -11,7 +13,7 @@ const {
   sharps,
   helmet,
   offline,
-} = require(Path.join(__dirname, "../../src-core/gatsby/config.ts"));
+} = require(`${gatsbyPath}/config.ts`);
 
 const plugins = [
   ts,
