@@ -1,10 +1,17 @@
 import React from "react";
+import { Global } from "@emotion/core";
 import { margin, position, border } from "polished";
 
-import { ThemeProvider, DSReset, defaultTheme } from "src-core/ds";
+import {
+  ThemeProvider,
+  DSReset,
+  defaultTheme,
+  useDesignSystem,
+} from "src-core/ds";
 
 import { Nav } from "../common/Nav";
 import { Footer } from "../common/Footer";
+import { Loadingbar } from "../common/LoadingBar";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   const blogTheme = {
@@ -18,21 +25,51 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider theme={blogTheme}>
       <DSReset />
-      <div
-        css={{
-          ...border("top", 8, "solid", "#3c2584"),
-        }}
-      />
-      <div
-        css={{
-          ...margin(0, "auto"),
-          ...position("relative"),
-          maxWidth: 1200,
-        }}>
+      <BlogGlobal />
+
+      <Loadingbar />
+      <Container>
         <Nav />
         {children}
         <Footer />
-      </div>
+      </Container>
     </ThemeProvider>
+  );
+};
+
+export const Container = ({ children }: { children: React.ReactNode }) => (
+  <div
+    css={{
+      ...margin(0, "auto"),
+      ...position("relative"),
+      maxWidth: 1200,
+    }}>
+    {children}
+  </div>
+);
+
+const BlogGlobal = () => {
+  const ds = useDesignSystem();
+
+  return (
+    <Global
+      styles={{
+        "h1, h2": {
+          ...border("bottom", 3, "solid", ds.color.primary),
+          paddingBottom: 12,
+          fontWeight: "normal",
+          color: ds.color.text,
+        },
+        h1: {
+          ...margin(25, 0),
+        },
+        h2: {
+          ...margin(50, 0, 25),
+        },
+        h3: {
+          marginTop: 30,
+        },
+      }}
+    />
   );
 };

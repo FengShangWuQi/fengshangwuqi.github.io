@@ -1,33 +1,19 @@
 import React from "react";
-import { margin, padding, border } from "polished";
-
-import { useDesignSystem } from "src-core/ds";
+import { padding } from "polished";
 
 import { LatestList, ILatestList } from "./LatestList";
 
 interface ILatest extends ILatestList {}
 
-export const Latest = ({ posts }: ILatest) => {
-  const ds = useDesignSystem();
+export const Latest = ({ posts }: ILatest) => (
+  <div
+    css={{
+      ...padding(0, 25, 58),
+      boxShadow: "inset 0 0 30px #eee",
+      overflow: "hidden",
+    }}>
+    <h2>最近的文章</h2>
 
-  return (
-    <div
-      css={{
-        ...padding(25, 25, 58),
-        boxShadow: "inset 0 0 30px #eee",
-        overflow: "hidden",
-      }}>
-      <p
-        css={{
-          ...margin(12, 0, 26),
-          ...border("bottom", 3, "solid", ds.color.primary),
-          fontSize: ds.size.l,
-          color: ds.color.text,
-        }}>
-        最近的文章
-      </p>
-
-      <LatestList posts={posts} />
-    </div>
-  );
-};
+    <LatestList posts={posts} />
+  </div>
+);
