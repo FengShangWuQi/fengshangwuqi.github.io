@@ -74,7 +74,8 @@ const LatestItem = ({ path, title, fluid, date, excerpt }: ILatestItem) => {
         }}>
         <Link
           css={{ ...ellipsis(), fontWeight: "bold", fontSize: ds.size.m }}
-          to={path}>
+          to={path}
+          title={title}>
           {title}
         </Link>
       </div>
