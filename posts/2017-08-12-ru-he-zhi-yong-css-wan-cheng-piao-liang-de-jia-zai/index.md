@@ -6,8 +6,7 @@ date: 2017-08-12T19:34:02+08:00
 cover: ./header.png
 ---
 
-原文地址：[How to create a beautiful animated loader with nothing but CSS](https://codeburst.io/how-to-create-a-beautiful-animated-loader-with-nothing-but-css-d1962fc5a66c)
-作者：Julien Benchetrit
+原文：[How to create a beautiful animated loader with nothing but CSS](https://codeburst.io/how-to-create-a-beautiful-animated-loader-with-nothing-but-css-d1962fc5a66c) by Julien Benchetrit
 
 ## 为什么要做加载
 

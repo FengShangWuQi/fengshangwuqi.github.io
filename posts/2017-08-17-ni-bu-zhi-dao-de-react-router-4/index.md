@@ -6,8 +6,7 @@ date: 2017-08-17T17:15:06+08:00
 cover: ./header.png
 ---
 
-原文地址：[All About React Router 4](https://css-tricks.com/react-router-4/)
-作者：James K Nelson
+原文：[All About React Router 4](https://css-tricks.com/react-router-4/) by James K Nelson
 
 > 几个月前，**React Router 4** 发布，我能清晰地感觉到来自 **Twitter** 大家对新版本中其大量的修改的不同声音，诚然，我在学习 **React Router 4** 的第一天，也是非常痛苦的，但是，这并不是因为看它的 **API**，而是反复思考使用它的 **模式** 和 **策略**，因为 **V4** 的变化确实有点大，**V3** 的功能它都有，除此之外，还增加了一些特性，我不能直接将使用 **V3** 的心得直接迁移过来，现在，我必须重新审视 **router** 和 **layout components** 之间的关系
 
@@ -26,7 +25,7 @@ cover: ./header.png
 
 **V3**：
 
-```js
+```jsx
 import React from "react";
 import { render } from "react-dom";
 import { Router, Route, IndexRoute, Link, browserHistory } from "react-router";
@@ -71,7 +70,7 @@ render(<App />, document.getElementById("root"));
 
 **V4**：
 
-```js
+```jsx
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter, Route, Link } from "react-router-dom";
@@ -122,7 +121,7 @@ render(<App />, document.getElementById("root"));
 
 为了演示 **inclusive routing** 的作用，我们新增一个 UserMenu 组件如下。
 
-```js
+```jsx
 const PrimaryLayout = () => (
   <div className="primary-layout">
     <header>
@@ -143,7 +142,7 @@ const PrimaryLayout = () => (
 
 如果你只想匹配一个 **route**，那么你也可以使用 `Switch` 来 **exclusive routing**。
 
-```js
+```jsx
 const PrimaryLayout = () => (
   <div className="primary-layout">
     <PrimaryHeader />
@@ -177,7 +176,7 @@ const PrimaryLayout = () => (
 
 第一种，如下修改 PrimaryLayout：
 
-```js
+```jsx
 const PrimaryLayout = props => {
   return (
     <div className="primary-layout">
@@ -199,7 +198,7 @@ const PrimaryLayout = props => {
 
 虽然这种方法可以实现，但仔细观察下面的两个 user 页面，就会发现有点潜在的问题。
 
-```js
+```jsx
 const BrowseUsersPage = () => (
   <div className="user-sub-layout">
     <aside>
@@ -229,7 +228,7 @@ const UserProfilePage = props => (
 
 接下来，我们再看看另一种实现方式：
 
-```js
+```jsx
 const PrimaryLayout = props => {
   return (
     <div className="primary-layout">
@@ -253,7 +252,7 @@ const PrimaryLayout = props => {
 
 使用这种策略，子布局也开始承担起了渲染 **routes** 的职责：
 
-```js
+```jsx
 const UserSubLayout = () => (
   <div className="user-sub-layout">
     <aside>
@@ -273,7 +272,7 @@ const UserSubLayout = () => (
 
 另外，**routes** 需要识别它的完整路径才能匹配，为了减少我们的重复输入，我们可以使用 `props.match.path` 来代替。
 
-```js
+```jsx
 const UserSubLayout = props => (
   <div className="user-sub-layout">
     <aside>
@@ -302,7 +301,7 @@ const UserSubLayout = props => (
 
 最开始，可能觉得这两者并没有什么区别。
 
-```js
+```jsx
 const UserSubLayout = ({ match }) => {
   console.log(match.url); // output: "/user"
   console.log(match.path); // output: "/user"
@@ -332,7 +331,7 @@ const UserSubLayout = ({ match }) => {
 
 为了说明问题，我们创建两个子组件，一个 **route** 路径来自 `match.url`，一个 **route** 路径来自 `match.path`。
 
-```js
+```jsx
 const UserComments = ({ match }) => <div>UserId: {match.params.userId}</div>;
 
 const UserSettings = ({ match }) => <div>UserId: {match.params.userId}</div>;
@@ -362,7 +361,7 @@ const UserProfilePage = ({ match }) => (
 
 假设我们的 **App** 是一个仪表盘，我们希望访问 /user/add 和 /user/5/edit 添加和编辑 user。使用上面的实例，user/:userId 已经指向 UserProfilePage，我们这是需要在 UserProfilePage 中再添加一层 **routes** 么？显然不是这样的。
 
-```js
+```jsx
 const UserSubLayou = ({ match }) => (
   <div className="user-sub-layout">
     <aside>
@@ -388,7 +387,7 @@ const UserSubLayou = ({ match }) => (
 
 在应用程序中限制未登录的用户访问某些路由是非常常见的，还有对于授权和未授权的用户 **UI** 也可能大不一样，为了解决这样的需求，我们可以考虑为应用程序设置一个主入口。
 
-```js
+```jsx
 class App extends React.Component {
   render() {
     return (
@@ -409,7 +408,7 @@ class App extends React.Component {
 
 下面就是我写的 AuthorizedRoute 组件，这也是 **V4** 中一个惊奇的特性，可以为了满足某种需要而书写自己的路由。
 
-```js
+```jsx
 class AuthorizedRoute extends React.Component {
   componentWillMount() {
     getLoggedUser();

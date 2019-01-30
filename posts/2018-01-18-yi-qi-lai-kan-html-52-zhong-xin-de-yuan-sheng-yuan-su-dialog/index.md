@@ -6,8 +6,7 @@ date: 2018-01-18T17:51:32+08:00
 cover: ./header.png
 ---
 
-原文地址：[Meet the New Dialog Element](https://keithjgrant.com/posts/2018/meet-the-new-dialog-element)
-作者：Keith
+原文：[Meet the New Dialog Element](https://keithjgrant.com/posts/2018/meet-the-new-dialog-element) by Keith
 
 > 不到一个月前，**HTML 5.2** 正式成为 **W3C** 的推荐标准（**REC**）,其中，推出了一个新的原生模态对话框元素 **dialog**，乍一看，可能感觉它就是一个新增的元素，然而，作者最近在玩的时候，发现它确实是一个值得期待和很有意思的元素，在这里分享给大家。
 
@@ -130,4 +129,4 @@ modal.addEventListener("click", event => {
 
 ## 总结
 
-说了这么多，不如自己实际演练一番，作者也做了一个 [demo](https://codepen.io/FengShangWuQi/pen/qpMgZB)，欢迎参考。
+说了这么多，不如自己实际演练一番，译者也做了一个 [demo](https://codepen.io/FengShangWuQi/pen/qpMgZB)，欢迎参考。

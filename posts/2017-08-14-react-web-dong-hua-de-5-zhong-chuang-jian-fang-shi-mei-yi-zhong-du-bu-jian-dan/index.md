@@ -6,8 +6,7 @@ date: 2017-08-14T14:46:24+08:00
 cover: ./header.png
 ---
 
-原文地址：[React Animations in Depth](https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e)
-作者：Nader Dabit
+原文：[React Animations in Depth](https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e) by Nader Dabit
 
 > 在 [Tweet](http://t.cn/RQVluB2) 得到很多大佬关于 **React Web 动画** 不错的的回应，于是决定在这里分享给大家。
 
@@ -60,7 +59,7 @@ cover: ./header.png
 
 ![animation](./images/css-animation.gif)
 
-```js
+```jsx
 class App extends Component {
   state = {
     focused: false,
@@ -115,7 +114,7 @@ class App extends Component {
 
 ![style](./images/js-style.gif)
 
-```js
+```jsx
 class App extends Component {
   state = {
     disabled: true,
@@ -193,7 +192,7 @@ const styles = {
 
 下面是一个简单的 demo：
 
-```js
+```jsx
 <Motion style={{ x: spring(this.state.x) }}>
   {({ x }) => <div style={{ transform: `translateX(${x}px)` }} />}
 </Motion>
@@ -227,7 +226,7 @@ $ yarn add react-motion
 
 ![motion](./images/react-motion.gif)
 
-```js
+```jsx
 import { Motion, spring } from "react-motion";
 
 class App extends Component {
@@ -319,7 +318,7 @@ $ yarn add animated
 
 ![animated](./images/Animated.gif)
 
-```js
+```jsx
 import Animated from "animated/lib/targets/react-dom";
 import Easing from "animated/lib/Easing";
 
@@ -405,7 +404,7 @@ const styles = {
 
 下面是一个简单的 demo：
 
-```js
+```jsx
 <VelocityComponent
   animation={{ opacity: this.state.showSubComponent ? 1 : 0 }}
   duration={500}>
@@ -423,7 +422,7 @@ $ yarn add velocity-react
 
 ![Velocity](./images/Velocity-React.gif)
 
-```js
+```jsx
 import { VelocityComponent } from "velocity-react";
 
 const VelocityLetter = ({ letter }) => (

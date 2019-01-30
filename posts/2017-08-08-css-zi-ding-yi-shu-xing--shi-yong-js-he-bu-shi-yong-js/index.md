@@ -6,8 +6,7 @@ date: 2017-08-08T19:29:49+08:00
 cover: ./header.png
 ---
 
-原文地址：[CSS Custom Properties—Dynamic Changes With And Without Javascript](http://vanseodesign.com/css/custom-properties-and-javascript/?utm_source=CSS-Weekly&utm_campaign=Issue-276&utm_medium=web)
-作者：Steven Bradley
+原文：[CSS Custom Properties—Dynamic Changes With And Without Javascript](http://vanseodesign.com/css/custom-properties-and-javascript/?utm_source=CSS-Weekly&utm_campaign=Issue-276&utm_medium=web) by Steven Bradley
 
 > 你曾想过在页面加载过后去修改 **Sass** 或 **Less** 的变量值么？我曾经尝试过，但并没有成功，因为当预处理的代码编译成了 **CSS**，它的变量就不再是变量了，然而，**自定义属性** 就没有这样的限制。
 
@@ -52,7 +51,7 @@ div:hover {
 
 要获取自定义属性的值，你要知道两个 **JavaScript** 函数：[window.getComputedStyle](http://t.cn/RyWZ4kT) 和 [getPropertyValue](http://t.cn/R9l85oZ)，前者可以获取元素所有 **CSS** 属性的值，后者可以获取特定属性的值。
 
-```JavaScript
+```js
 let style = window.getComputedStyle(element, [pseudoElt]);
 var value = style.getPropertyValue(property);
 ```

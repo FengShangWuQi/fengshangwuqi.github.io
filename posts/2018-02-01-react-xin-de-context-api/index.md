@@ -6,8 +6,7 @@ date: 2018-02-01T17:57:26+08:00
 cover: ./header.png
 ---
 
-原文地址：[React's ⚛️ new Context API](https://blog.kentcdodds.com/reacts-%EF%B8%8F-new-context-api-70c9fe01596b)
-作者：kentcdodds
+原文：[React's ⚛️ new Context API](https://blog.kentcdodds.com/reacts-%EF%B8%8F-new-context-api-70c9fe01596b) by kentcdodds
 
 这不再是一个 **实验性的 API**，并且它更符合工程化的理念，目前它已成为 **React 一级棒的 API**。
 
@@ -25,13 +24,13 @@ cover: ./header.png
 
 ## 那么，为什么还要使用 context 呢
 
-你曾经历过尝试在一个层级很深的组件中获取最外层组件的 **state** 的痛苦么，这种痛苦叫 **prop drilling**，可谓让人接近崩溃的。当遇到这种情形时，你肯定不会喜欢用 **props** 来传递数据，因为如果中间有个组件发生改变，这个代价将是几何 :joy:。
+你曾经历过尝试在一个层级很深的组件中获取最外层组件的 **state** 的痛苦么，这种痛苦叫 **prop drilling**，可谓让人接近崩溃的。当遇到这种情形时，你肯定不会喜欢用 **props** 来传递数据，因为如果中间有个组件发生改变，这个代价将是几何。
 
 实际上，你可以通过使用常规的 **JavaScript module** 来规避以上的问题，将数据存在某个 **module** 中，就可以实现在任何地方访问和导入了，但这么做会让更新变得困难（你必须实现一个 **event** 在数据更新时触发，通知用户数据发生改变），并且，服务端渲染对 **module** 也会有 [影响](https://stackoverflow.com/questions/40935571/why-singleton-store-in-flux-can-cause-issue-for-server-side-rendering/40974748#40974748)。
 
 因此，像 [redux](https://redux.js.org/) 这样的负责 **状态管理** 的第三方库进入了大家的视野。它允许你在任何地方从 **store** 获取数据，你需要做的只是使用 **Provider** 包装一下，然后就可以神奇地在 **connected** 的组件中轻松地获取想要的数据了。
 
-然而，如果我告诉你 **Provider** 就是在使用 **context** 这个 **实验性 API** 呢？😱 事实确实是这样的！**provider** 组件将数据存进 **context** 中，**connect** 高阶组件从 **context** 获取数据，所以，**redux** 事实并不允许你的数据在任何地方访问。
+然而，如果我告诉你 **Provider** 就是在使用 **context** 这个 **实验性 API** 呢？事实确实是这样的！**provider** 组件将数据存进 **context** 中，**connect** 高阶组件从 **context** 获取数据，所以，**redux** 事实并不允许你的数据在任何地方访问。
 
 那么，为什么还要使用 **context** 呢？可能是大家已经深深地爱上它了吧！即使你没有直接使用 **context**，你的应用程序也会通过引用像 [react-redux](https://github.com/reactjs/react-redux/blob/76dd7faa90981dd2f9efa76f3e2f26ecf2c12cf7/src/components/connectAdvanced.js#L136-L143)， [MobX-react](https://github.com/mobxjs/mobx-react/blob/dc249910c74c1b2e988a879be07f10aeaea90936/src/Provider.js#L19-L34)， [react-router](https://github.com/ReactTraining/react-router/blob/e6f9017c947b3ae49affa24cc320d0a86f765b55/packages/react-router/modules/Router.js#L23-L34)， [glamorous](https://github.com/paypal/glamorous/blob/7468bfc76f46783cac841e20973ed119c771f3b7/src/theme-provider.js#L33-L37) 这样的第三方库间接用到它。
 
@@ -43,7 +42,7 @@ cover: ./header.png
 
 那么，到底有什么改变呢？据肉眼估计，新的 **API** 与之前的 **API** 存在百万级别的差异，下面是一个简单的 [示例](https://codesandbox.io/s/n4r0qq898j?from-embed)：
 
-```javascript
+```jsx
 const ThemeContext = React.createContext("light");
 class ThemeProvider extends React.Component {
   state = { theme: "light" };
@@ -91,7 +90,7 @@ class App extends React.Component {
 
 那么，我们可以做点什么来避免呢？其实，个人觉得没有那么糟糕，如果你觉得这样并不好，那么可以使用常规的 **utility** 函数/组件来解决，下面是一个示例：
 
-```javascript
+```jsx
 const ThemeContext = React.createContext("light");
 class ThemeProvider extends React.Component {
   /* code */

@@ -6,8 +6,7 @@ date: 2018-01-19T17:55:21+08:00
 cover: ./header.png
 ---
 
-原文地址：[Crooked Style Sheets](https://github.com/jbtronics/CrookedStyleSheets)
-作者：jbtronics
+原文：[Crooked Style Sheets](https://github.com/jbtronics/CrookedStyleSheets) by jbtronics
 
 > 除了使用 **JS** 追踪用户，现在有人提出了还可以使用 **CSS 进行网页追踪和分析**，译者认为，这种方式更为 **优雅**，更为 **简洁**，且 **不好屏蔽**，值得尝试一波，了解更多，可查看 [仓库地址](https://github.com/jbtronics/CrookedStyleSheets) 和 [demo](http://crookedss.bplaced.net/)。
 
