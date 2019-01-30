@@ -12,6 +12,7 @@ const {
   emotion,
   sharps,
   helmet,
+  twitter,
   offline,
 } = require(`${gatsbyPath}/config.ts`);
 
@@ -22,6 +23,7 @@ const plugins = [
   ...sources,
   remarks,
   ...sharps,
+  twitter,
   helmet,
   analytics,
   offline,

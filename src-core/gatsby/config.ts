@@ -31,7 +31,7 @@ exports.sources = (process.env.SOURCES || "pages").split(" ").map(source => ({
 exports.typography = {
   resolve: "gatsby-plugin-typography",
   options: {
-    pathToConfigModule: `src-app/${process.env.APP}/utils/typography`,
+    pathToConfigModule: `src-app/${process.env.APP}/common/typography`,
   },
 };
 
@@ -82,6 +82,9 @@ exports.sharps = ["gatsby-transformer-sharp", "gatsby-plugin-sharp"];
 
 // A document head manager
 exports.helmet = "gatsby-plugin-react-helmet";
+
+// Loads the Twitter JavaScript for embedding tweets
+exports.twitter = "gatsby-plugin-twitter";
 
 // Work offline and more resistant to bad network connections
 exports.offline = "gatsby-plugin-offline";
