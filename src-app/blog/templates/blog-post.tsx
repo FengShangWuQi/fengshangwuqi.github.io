@@ -75,6 +75,10 @@ const BlogPost = ({
 
         <div
           css={{
+            "& a:not(.anchor)": {
+              ...border("bottom", 1, "solid", "#ddd"),
+              background: rgba("#ddd", 0.3),
+            },
             ul: {
               marginTop: 20,
               marginLeft: 25,
