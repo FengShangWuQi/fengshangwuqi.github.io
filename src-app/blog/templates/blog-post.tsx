@@ -1,9 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import { padding, size, margin, rgba, border } from "polished";
+import { padding, margin, rgba, border } from "polished";
 
-import { flex } from "src-core/style";
+import { flex, size } from "src-core/style";
 
 import { Header } from "src-components/headers";
 
@@ -53,7 +53,7 @@ const BlogPost = ({
 
       <div
         css={{
-          ...size(400, "100%"),
+          ...size("100%", 400),
         }}>
         <Header />
       </div>

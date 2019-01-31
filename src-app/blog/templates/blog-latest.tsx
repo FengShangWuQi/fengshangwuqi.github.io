@@ -1,7 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-import { size } from "polished";
+
+import { size } from "src-core/style";
 
 import { Header } from "src-components/headers";
 
@@ -60,7 +61,7 @@ export default () => (
 
         <div
           css={{
-            ...size(400, "100%"),
+            ...size("100%", 400),
           }}>
           <Header />
         </div>

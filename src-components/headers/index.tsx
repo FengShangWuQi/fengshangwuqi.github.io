@@ -1,5 +1,6 @@
 import React from "react";
-import { size } from "polished";
+
+import { size } from "src-core/style";
 
 import { useDesignSystem } from "src-core/ds";
 
@@ -9,7 +10,7 @@ export const Header = () => {
   return (
     <div
       css={{
-        ...size("100%", "100%"),
+        ...size("100%"),
         background: "#101012",
         color: ds.color.text,
       }}
