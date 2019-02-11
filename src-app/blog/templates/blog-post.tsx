@@ -75,7 +75,7 @@ const BlogPost = ({
 
         <div
           css={{
-            "& a:not(.anchor)": {
+            "& a:not(.anchor):not(.gatsby-resp-image-link)": {
               ...border("bottom", 1, "solid", "#ddd"),
               background: rgba("#ddd", 0.3),
             },
