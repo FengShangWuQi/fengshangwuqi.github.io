@@ -2,7 +2,7 @@ import { CSSObject } from "@emotion/core";
 
 import { titleCase } from "utils/string";
 
-const sides = ["top", "right", "bottom", "left"];
+import { sides } from ".";
 
 export const border = (
   side: string,

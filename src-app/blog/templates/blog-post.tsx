@@ -1,9 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import { padding, margin, rgba } from "polished";
+import { rgba } from "polished";
 
-import { flex, size, border } from "src-core/style";
+import { flex, size, border, margin, padding } from "src-core/style";
 
 import { Header } from "src-components/headers";
 

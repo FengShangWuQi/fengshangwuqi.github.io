@@ -1,6 +1,7 @@
 import React from "react";
 import { CSSObject } from "@emotion/core";
-import { padding } from "polished";
+
+import { padding } from "src-core/style";
 
 import { useMenu } from "./Menu";
 import { MenuItem, menuItemStyle, menuItemModeStyle } from "./MenuItem";

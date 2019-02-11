@@ -1,5 +1,6 @@
 import React from "react";
-import { padding } from "polished";
+
+import { padding } from "src-core/style";
 
 import { LatestList, ILatestList } from "./LatestList";
 

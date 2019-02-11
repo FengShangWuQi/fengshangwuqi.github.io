@@ -1,6 +1,5 @@
 import React from "react";
 import { Global } from "@emotion/core";
-import { margin, position } from "polished";
 
 import {
   ThemeProvider,
@@ -8,7 +7,7 @@ import {
   defaultTheme,
   useDesignSystem,
 } from "src-core/ds";
-import { border } from "src-core/style";
+import { border, position, margin } from "src-core/style";
 
 import { Nav } from "../common/Nav";
 import { Footer } from "../common/Footer";
