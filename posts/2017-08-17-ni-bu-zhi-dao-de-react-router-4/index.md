@@ -25,7 +25,7 @@ cover: ./header.png
 
 **V3**：
 
-```jsx
+```jsx{26,27}
 import React from "react";
 import { render } from "react-dom";
 import { Router, Route, IndexRoute, Link, browserHistory } from "react-router";
@@ -70,7 +70,7 @@ render(<App />, document.getElementById("root"));
 
 **V4**：
 
-```jsx
+```jsx{17,18}
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter, Route, Link } from "react-router-dom";
@@ -119,7 +119,7 @@ render(<App />, document.getElementById("root"));
 
 > 为了更好地理解 **V4** 的匹配逻辑，可以查看 [path-to-regexp](http://t.cn/RCZlIbF)，就是它决定 **routes** 是否匹配 **URL**。
 
-为了演示 **inclusive routing** 的作用，我们新增一个 UserMenu 组件如下。
+为了演示 **inclusive routing** 的作用，我们新增一个 UsersMenu 组件如下。
 
 ```jsx
 const PrimaryLayout = () => (
@@ -142,7 +142,7 @@ const PrimaryLayout = () => (
 
 如果你只想匹配一个 **route**，那么你也可以使用 `Switch` 来 **exclusive routing**。
 
-```jsx
+```jsx{5,6,7,8,9,10}
 const PrimaryLayout = () => (
   <div className="primary-layout">
     <PrimaryHeader />
@@ -198,7 +198,7 @@ const PrimaryLayout = props => {
 
 虽然这种方法可以实现，但仔细观察下面的两个 user 页面，就会发现有点潜在的问题。
 
-```jsx
+```jsx{3,4,5,14,15,16}
 const BrowseUsersPage = () => (
   <div className="user-sub-layout">
     <aside>
@@ -272,7 +272,7 @@ const UserSubLayout = () => (
 
 另外，**routes** 需要识别它的完整路径才能匹配，为了减少我们的重复输入，我们可以使用 `props.match.path` 来代替。
 
-```jsx
+```jsx{8}
 const UserSubLayout = props => (
   <div className="user-sub-layout">
     <aside>
@@ -361,7 +361,7 @@ const UserProfilePage = ({ match }) => (
 
 假设我们的 **App** 是一个仪表盘，我们希望访问 /user/add 和 /user/5/edit 添加和编辑 user。使用上面的实例，user/:userId 已经指向 UserProfilePage，我们这是需要在 UserProfilePage 中再添加一层 **routes** 么？显然不是这样的。
 
-```jsx
+```jsx{8,9,10,11}
 const UserSubLayou = ({ match }) => (
   <div className="user-sub-layout">
     <aside>

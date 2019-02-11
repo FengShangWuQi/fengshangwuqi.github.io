@@ -38,7 +38,7 @@ cover: ./header.png
 
 首先, 我们先书写好基本的 **HTML** 结构：
 
-```html
+```html{13}
 <!DOCTYPE html>
 <html>
   <head>

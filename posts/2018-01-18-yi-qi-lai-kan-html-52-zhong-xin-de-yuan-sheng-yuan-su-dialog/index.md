@@ -26,7 +26,7 @@ cover: ./header.png
 
 **JavaScript** 有几个方法和属性可以很方便地处理 **dialog** 元素，使用最多的可能还是 `showModal()` 和 `close()`：
 
-```js
+```js{4,7}
 const modal = document.querySelector("dialog");
 
 // makes modal appear (adds `open` attribute)
@@ -107,7 +107,7 @@ dialog + .backdrop {
 
 通常，我们期望能从 **dialog** 中获取一些用户的信息。关闭 **dialog** 时，我们可以给 `close()` 传递一个 **string**，然后通过 **dialog** 元素的 `returnValue` 属性来获取。
 
-```js
+```js{3}
 modal.close("Accepted");
 
 console.log(modal.returnValue); // logs `Accepted`

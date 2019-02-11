@@ -20,7 +20,7 @@ POST /markdown
 
 可以将 text 渲染成 Markdown 文档，如下：
 
-```js
+```js{1}
 const res = await fetch("https://api.github.com/markdown", {
   method: "POST",
   body: JSON.stringify({
@@ -91,7 +91,7 @@ const md = await res.text();
 
 一次性请求即使用简单的 [runtime.sendMessage](https://crxdoc-zh.appspot.com/apps/runtime#method-sendMessage) 方法，向扩展的另一部分发送消息，并且它提供可选的 callback 处理回应，如下：
 
-```js
+```js{3}
 chrome.runtime.sendMessage(
   {
     action: "getNew",
@@ -104,7 +104,7 @@ chrome.runtime.sendMessage(
 
 在背景页，我们使用 [runtime.onMessage](https://crxdoc-zh.appspot.com/apps/runtime#event-onMessage) 事件监听器来处理消息，如下：
 
-```js
+```js{4}
 async function handleMessage(message, sender, sendResponse) {
   switch (message.action) {
     case "getNew":
@@ -179,7 +179,7 @@ const path = `${year.pop()}/${month.pop()}/${day.pop()}`;
 
 path 拿到了，我们就可以通过上面的 **REST API** 获取相应的 content：
 
-```jsx
+```jsx{10,24}
 const GitHubAPI = new class {
   constructor(prefix, owner, repo) {
     this.prefix = prefix;

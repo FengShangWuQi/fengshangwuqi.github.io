@@ -26,7 +26,7 @@ export const PrismTheme = () => {
           lineHeight: "20px",
         },
         ".gatsby-highlight-code-line": {
-          ...margin("-0.125rem", "calc(-1rem - 15px)"),
+          ...margin("-0.125rem", "calc(-1rem - 23px)"),
           ...padding("0.125rem", "calc(1rem + 15px)"),
           display: "block",
           backgroundColor: "#353b45",
