@@ -1,7 +1,8 @@
 import React from "react";
-import { margin, padding, border } from "polished";
+import { margin, padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
+import { border } from "src-core/style";
 
 import { ArchiveList, IArchiveList } from "./ArchiveList";
 
