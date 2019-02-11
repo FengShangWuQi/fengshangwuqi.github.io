@@ -1,3 +1,4 @@
+import { CSSObject } from "@emotion/core";
 import {
   AlignContentProperty,
   AlignItemsProperty,
@@ -14,7 +15,7 @@ export interface IFlexOptions {
   alignContent?: AlignContentProperty;
 }
 
-export const flex = (flexOpts: IFlexOptions = {}) => ({
+export const flex = (flexOpts: IFlexOptions = {}): CSSObject => ({
   display: "flex",
   ...flexOpts,
 });
