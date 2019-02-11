@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 import Img, { GatsbyImageProps, FluidObject } from "gatsby-image";
-import { ellipsis } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { margin } from "src-core/style";
+import { margin, ellipsis } from "src-core/style";
 
 export interface ILatestList {
   posts: INode[];

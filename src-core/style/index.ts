@@ -35,3 +35,4 @@ export * from "./border";
 export * from "./position";
 export * from "./margin";
 export * from "./padding";
+export * from "./ellipsis";
