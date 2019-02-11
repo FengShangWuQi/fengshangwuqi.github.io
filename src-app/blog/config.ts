@@ -14,7 +14,8 @@ const {
   helmet,
   twitter,
   offline,
-} = require(`${gatsbyPath}/config.ts`);
+  feed,
+} = require(`${gatsbyPath}/config.js`);
 
 const plugins = [
   ts,
@@ -25,6 +26,7 @@ const plugins = [
   ...sharps,
   twitter,
   helmet,
+  feed,
   analytics,
   offline,
 ];
