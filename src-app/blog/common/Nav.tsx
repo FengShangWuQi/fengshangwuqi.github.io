@@ -6,7 +6,7 @@ import { BaseMenu, BaseMenuItem } from "src-components/menus";
 export const Nav = () => (
   <BaseMenu right>
     {[
-      { value: "rss", label: "rss" },
+      { value: "rss.xml", label: "rss" },
       { value: "", label: "最新" },
       { value: "archive", label: "归档" },
     ].map(item => (
