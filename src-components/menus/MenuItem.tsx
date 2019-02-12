@@ -20,5 +20,5 @@ export const menuItemModeStyle = (
 };
 
 export const menuItemStyle: CSSObject = {
-  cursor: "pointer",
+  textAlign: "center",
 };
