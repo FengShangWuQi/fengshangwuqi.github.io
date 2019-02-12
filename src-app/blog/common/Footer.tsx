@@ -35,7 +35,6 @@ export const Footer = () => {
           </>
         ))}
       </div>
-      <div>© 2019</div>
     </footer>
   );
 };

@@ -10,7 +10,6 @@ import {
 import { border, position, margin } from "src-core/style";
 
 import { Nav } from "../common/Nav";
-import { Footer } from "../common/Footer";
 import { Loadingbar } from "../common/LoadingBar";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -31,7 +30,6 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       <Container>
         <Nav />
         {children}
-        <Footer />
       </Container>
     </ThemeProvider>
   );
@@ -40,7 +38,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
 export const Container = ({ children }: { children: React.ReactNode }) => (
   <div
     css={{
-      ...margin(0, "auto"),
+      ...margin(0, "auto", 60),
       ...position("relative"),
       maxWidth: 1200,
     }}>
