@@ -1,14 +1,14 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import { rgba } from "polished";
 
-import { flex, size, border, margin, padding } from "src-core/style";
+import { size, margin, padding } from "src-core/style";
 
 import { Header } from "src-components/headers";
 
 import { Layout } from "../common/Layout";
 import { PrismTheme } from "../post/PrismTheme";
+import { PostContainer } from "../post/PostContainer";
 
 export const postQuery = graphql`
   query($slug: String!) {
@@ -73,44 +73,9 @@ const BlogPost = ({
           <time>{date}</time>
         </div>
 
-        <div
-          css={{
-            "& a:not(.anchor):not(.gatsby-resp-image-link)": {
-              ...border("bottom", 1, "solid", "#ddd"),
-              background: rgba("#ddd", 0.3),
-            },
-            ul: {
-              marginTop: 20,
-              marginLeft: 25,
-
-              "& li": {
-                marginTop: 12,
-              },
-            },
-            p: {
-              marginTop: 30,
-            },
-            blockquote: {
-              ...padding(20, 45, 20, 26),
-              ...border("left", 9, "solid", "#ffe564"),
-              marginTop: 30,
-              background: rgba("#ffe564", 0.3),
-              overflow: "auto",
-
-              "& p": {
-                marginTop: 15,
-
-                "&:first-of-type": {
-                  marginTop: 0,
-                },
-              },
-            },
-            ".twitter-content": {
-              ...flex({ justifyContent: "center" }),
-            },
-          }}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <PostContainer>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </PostContainer>
       </div>
     </Layout>
   );
