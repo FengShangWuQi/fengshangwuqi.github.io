@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 
 import { size, margin, padding } from "src-core/style";
+import { Discussion } from "src-core/disqus";
 
 import { Header } from "src-components/headers";
 
@@ -76,6 +77,15 @@ const BlogPost = ({
         <PostContainer>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </PostContainer>
+      </div>
+
+      <div
+        css={{
+          ...margin(70, "auto", 0),
+          ...padding(0, 25),
+          maxWidth: 700,
+        }}>
+        <Discussion shortname="feng-shang-wu-qi-de-ri-zhi" />
       </div>
     </Layout>
   );
