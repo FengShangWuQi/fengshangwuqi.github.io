@@ -11,7 +11,11 @@ export const Nav = () => (
       { value: "archive", label: "归档" },
     ].map(item => (
       <BaseMenuItem key={item.value}>
-        <Link to={item.value}>{item.label.toUpperCase()}</Link>
+        {item.label === "rss" ? (
+          <a href={`/${item.value}`}>{item.label.toUpperCase()}</a>
+        ) : (
+          <Link to={item.value}>{item.label.toUpperCase()}</Link>
+        )}
       </BaseMenuItem>
     ))}
   </BaseMenu>
