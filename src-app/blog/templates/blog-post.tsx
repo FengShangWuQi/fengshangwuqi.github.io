@@ -1,14 +1,17 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import { CSSObject } from "@emotion/core";
 
-import { size, margin, padding } from "src-core/style";
+import { useDesignSystem } from "src-core/ds";
 import { Discussion } from "src-core/disqus";
+import { size, margin, padding } from "src-core/style";
 
 import { Header } from "src-components/headers";
 
 import { Layout } from "../common/Layout";
 import { PrismTheme } from "../post/PrismTheme";
+import { PostTag } from "../post/PostTag";
 import { PostContainer } from "../post/PostContainer";
 
 export const postQuery = graphql`
@@ -30,7 +33,7 @@ export const postQuery = graphql`
       }
       frontmatter {
         title
-        tag
+        tags
         date(formatString: "YYYY-MM-DD")
         original
       }
@@ -47,7 +50,7 @@ const BlogPost = ({
     markdownRemark: {
       html,
       fields: { slug },
-      frontmatter: { title: postTitle, date },
+      frontmatter: { title: postTitle, date, tags },
     },
   },
 }: any) => {
@@ -63,54 +66,98 @@ const BlogPost = ({
         <Header />
       </div>
 
-      <div
-        css={{
-          ...padding(25, 25, 58),
-          boxShadow: "inset 0 0 30px #eee",
-          overflow: "hidden",
-        }}>
+      <PostWrapper>
         <h1>{postTitle}</h1>
 
-        <div
-          css={{
-            ...margin(5, 16, 0, 0),
-          }}>
-          <time>{date}</time>
-        </div>
+        <PostDate style={{ marginTop: 5 }} date={date} />
+        <PostTags tags={tags} />
 
         <PostContainer>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </PostContainer>
-      </div>
+      </PostWrapper>
 
-      <div
-        css={{
-          marginTop: 40,
-        }}>
-        <a
-          href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/posts${slug}/index.md`}
-          target="_blank"
-          rel="noopener noreferrer">
-          Edit this post
-        </a>
-      </div>
+      <PostEditLink slug={slug} />
 
-      <div
-        css={{
-          ...margin(70, "auto", 0),
-          ...padding(0, 25),
-          maxWidth: 700,
-        }}>
-        <Discussion
-          shortname="feng-shang-wu-qi-de-ri-zhi"
-          config={{
-            identifier: slug,
-            url: `${siteUrl}${pathPrefix}${slug}`,
-          }}
-        />
-      </div>
+      <PostDiscussion url={`${siteUrl}${pathPrefix}${slug}`} slug={slug} />
     </Layout>
   );
 };
+
+const PostWrapper = ({ children }: { children: React.ReactNode }) => (
+  <div
+    css={{
+      ...padding(25, 25, 58),
+      boxShadow: "inset 0 0 30px #eee",
+      overflow: "hidden",
+    }}>
+    {children}
+  </div>
+);
+
+export const PostDate = ({
+  date,
+  style,
+}: {
+  date: string;
+  style?: CSSObject;
+}) => {
+  const ds = useDesignSystem();
+
+  return (
+    <div
+      css={[
+        {
+          color: ds.color.textLight,
+          fontSize: 12,
+        },
+        { ...style },
+      ]}>
+      <time>{date}</time>
+    </div>
+  );
+};
+
+export const PostTags = ({ tags }: { tags: string[] }) => (
+  <div
+    css={{
+      marginTop: 5,
+    }}>
+    {tags.map((tag: string) => (
+      <PostTag key={tag} tag={tag} />
+    ))}
+  </div>
+);
+
+const PostEditLink = ({ slug }: { slug: string }) => (
+  <div
+    css={{
+      marginTop: 40,
+    }}>
+    <a
+      href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/posts${slug}/index.md`}
+      target="_blank"
+      rel="noopener noreferrer">
+      Edit this post
+    </a>
+  </div>
+);
+
+const PostDiscussion = ({ url, slug }: { url: string; slug: string }) => (
+  <div
+    css={{
+      ...margin(70, "auto", 0),
+      ...padding(0, 25),
+      maxWidth: 700,
+    }}>
+    <Discussion
+      shortname="feng-shang-wu-qi-de-ri-zhi"
+      config={{
+        identifier: slug,
+        url,
+      }}
+    />
+  </div>
+);
 
 export default BlogPost;
