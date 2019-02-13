@@ -2,6 +2,8 @@ const color = {
   primary: "#ffa7c4",
 
   text: "#000000",
+  textLight: "#85929A",
+
   bg: "#FFFFFF",
 };
 

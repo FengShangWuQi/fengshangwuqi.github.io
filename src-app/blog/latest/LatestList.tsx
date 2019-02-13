@@ -5,6 +5,8 @@ import Img, { GatsbyImageProps, FluidObject } from "gatsby-image";
 import { useDesignSystem } from "src-core/ds";
 import { margin, ellipsis } from "src-core/style";
 
+import { PostDate, PostTags } from "../templates/blog-post";
+
 export interface ILatestList {
   posts: INode[];
 }
@@ -13,7 +15,7 @@ interface ILatestItem {
   title: string;
   original: boolean;
   path: string;
-  tag: string[];
+  tags: string[];
   excerpt: string;
   date: string;
   fluid: FluidObject;
@@ -29,7 +31,7 @@ interface INode {
     frontmatter: {
       title: string;
       original: boolean;
-      tag: string[];
+      tags: string[];
       date: string;
       cover: {
         childImageSharp: GatsbyImageProps;
@@ -53,7 +55,7 @@ export const LatestList = ({ posts }: ILatestList) => {
           path={node.fields.slug}
           title={node.frontmatter.title}
           original={node.frontmatter.original}
-          tag={node.frontmatter.tag}
+          tags={node.frontmatter.tags}
           date={node.frontmatter.date}
           fluid={node.frontmatter.cover.childImageSharp.fluid!}
         />
@@ -62,7 +64,14 @@ export const LatestList = ({ posts }: ILatestList) => {
   );
 };
 
-const LatestItem = ({ path, title, fluid, date, excerpt }: ILatestItem) => {
+const LatestItem = ({
+  path,
+  title,
+  tags,
+  fluid,
+  date,
+  excerpt,
+}: ILatestItem) => {
   const ds = useDesignSystem();
 
   return (
@@ -70,7 +79,7 @@ const LatestItem = ({ path, title, fluid, date, excerpt }: ILatestItem) => {
       <Img fluid={fluid} />
       <div
         css={{
-          ...margin(24, 0, 8),
+          marginTop: 24,
         }}>
         <Link
           css={{ ...ellipsis(), fontWeight: "bold", fontSize: ds.size.m }}
@@ -79,16 +88,15 @@ const LatestItem = ({ path, title, fluid, date, excerpt }: ILatestItem) => {
           {title}
         </Link>
       </div>
-      <time
-        css={{
-          fontSize: ds.size.xs,
-        }}>
-        {date}
-      </time>
+
+      <PostDate date={date} />
+      <PostTags tags={tags} />
+
       <p
         css={{
           ...margin(16, 0),
           fontSize: ds.size.s,
+          color: ds.color.textLight,
         }}>
         {excerpt}
       </p>
