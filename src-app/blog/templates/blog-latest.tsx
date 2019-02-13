@@ -24,13 +24,13 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 140)
+              excerpt(pruneLength: 95)
               fields {
                 slug
               }
               frontmatter {
                 title
-                tag
+                tags
                 date(formatString: "YYYY-MM-DD")
                 original
                 cover {

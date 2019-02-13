@@ -133,7 +133,7 @@ exports.feed = {
                 frontmatter {
                   title
                   date(formatString: "YYYY-MM-DD")
-                  tag
+                  tags
                 }
               }
             }

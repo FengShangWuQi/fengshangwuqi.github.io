@@ -1,7 +1,10 @@
 ---
 title: React Web 动画的 5 种创建方式，每一种都不简单
 original: false
-tag: FrontEnd,React,Animation
+tags:
+  - React
+  - CSS
+  - Animation
 date: 2017-08-14
 cover: ./header.png
 ---

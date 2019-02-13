@@ -1,7 +1,9 @@
 ---
 title: 如何只用 CSS 完成漂亮的加载
 original: false
-tag: FrontEnd,CSS
+tags:
+  - CSS
+  - Animation
 date: 2017-08-12
 cover: ./header.png
 ---

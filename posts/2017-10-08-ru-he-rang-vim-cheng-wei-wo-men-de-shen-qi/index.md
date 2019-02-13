@@ -1,7 +1,8 @@
 ---
 title: 如何让 vim 成为我们的神器
 original: true
-tag: Vim,Tmux,Zsh,code editor
+tags:
+  - Vim
 date: 2017-10-08
 cover: ./header.png
 ---

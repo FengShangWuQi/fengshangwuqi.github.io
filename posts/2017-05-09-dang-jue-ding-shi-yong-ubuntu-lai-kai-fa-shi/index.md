@@ -1,7 +1,8 @@
 ---
 title: 当决定使用 Ubuntu 来开发时
 original: true
-tag: Linux,Ubuntu
+tags:
+  - Ubuntu
 date: 2017-05-09
 cover: ./header.png
 ---

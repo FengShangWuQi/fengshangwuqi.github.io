@@ -1,7 +1,9 @@
 ---
 title: 你不知道的 React Router 4
 original: false
-tag: FrontEnd,React Router 4
+tags:
+  - React
+  - React Router
 date: 2017-08-17
 cover: ./header.png
 ---

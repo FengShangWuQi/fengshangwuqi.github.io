@@ -1,7 +1,8 @@
 ---
 title: 微信小程序那些事
 original: true
-tag: FrontEnd,WeChat Mini Program
+tags:
+  - WeChat Mini Program
 date: 2017-06-22
 cover: ./header.png
 ---

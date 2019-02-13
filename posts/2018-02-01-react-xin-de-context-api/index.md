@@ -1,7 +1,9 @@
 ---
 title: React ⚛️ 新的 Context API
 original: false
-tag: FrontEnd,React,context
+tags:
+  - React
+  - Context
 date: 2018-02-01
 cover: ./header.png
 ---
