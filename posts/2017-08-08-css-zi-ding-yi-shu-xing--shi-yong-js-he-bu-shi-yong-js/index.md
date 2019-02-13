@@ -2,7 +2,7 @@
 title: CSS 自定义属性 -- 使用 JS 和不使用 JS
 original: false
 tag: FrontEnd,CSS
-date: 2017-08-08T19:29:49+08:00
+date: 2017-08-08
 cover: ./header.png
 ---
 

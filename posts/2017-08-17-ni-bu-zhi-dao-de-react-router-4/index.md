@@ -2,7 +2,7 @@
 title: 你不知道的 React Router 4
 original: false
 tag: FrontEnd,React Router 4
-date: 2017-08-17T17:15:06+08:00
+date: 2017-08-17
 cover: ./header.png
 ---
 

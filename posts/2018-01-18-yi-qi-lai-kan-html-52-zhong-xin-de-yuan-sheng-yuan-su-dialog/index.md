@@ -2,7 +2,7 @@
 title: 一起来看 HTML 5.2 中新的原生元素 <dialog>
 original: false
 tag: FrontEnd,HTML 5,dialog
-date: 2018-01-18T17:51:32+08:00
+date: 2018-01-18
 cover: ./header.png
 ---
 
