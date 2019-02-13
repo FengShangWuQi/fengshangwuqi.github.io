@@ -85,6 +85,18 @@ const BlogPost = ({
 
       <div
         css={{
+          marginTop: 40,
+        }}>
+        <a
+          href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/posts${slug}/index.md`}
+          target="_blank"
+          rel="noopener noreferrer">
+          Edit this post
+        </a>
+      </div>
+
+      <div
+        css={{
           ...margin(70, "auto", 0),
           ...padding(0, 25),
           maxWidth: 700,
