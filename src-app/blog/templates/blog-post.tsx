@@ -16,7 +16,9 @@ export const postQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
+      pathPrefix
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
@@ -39,10 +41,12 @@ export const postQuery = graphql`
 const BlogPost = ({
   data: {
     site: {
-      siteMetadata: { title: metaTitle },
+      siteMetadata: { title: metaTitle, siteUrl },
+      pathPrefix,
     },
     markdownRemark: {
       html,
+      fields: { slug },
       frontmatter: { title: postTitle, date },
     },
   },
@@ -85,7 +89,13 @@ const BlogPost = ({
           ...padding(0, 25),
           maxWidth: 700,
         }}>
-        <Discussion shortname="feng-shang-wu-qi-de-ri-zhi" />
+        <Discussion
+          shortname="feng-shang-wu-qi-de-ri-zhi"
+          config={{
+            identifier: slug,
+            url: `${siteUrl}${pathPrefix}${slug}`,
+          }}
+        />
       </div>
     </Layout>
   );
