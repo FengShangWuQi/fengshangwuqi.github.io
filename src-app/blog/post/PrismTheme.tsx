@@ -57,6 +57,7 @@ export const PrismTheme = () => {
           color: "#fc929e",
         },
         [`.token.string,
+        .token.string a,
           .token.class-name`]: {
           color: "#8dc891",
         },
