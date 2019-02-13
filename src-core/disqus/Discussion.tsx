@@ -15,7 +15,7 @@ export const Discussion = ({
     const doc = window.document;
     const id = "dsq-discuss-scr";
 
-    if (doc.getElementById(id)) {
+    if ((window as any).DISQUS && doc.getElementById(id)) {
       (window as any).DISQUS!.reset({
         reload: true,
         config: function() {
@@ -35,9 +35,11 @@ export const Discussion = ({
     return () => {
       removeScript(id);
 
-      (window as any).DISQUS.reset({});
+      if ((window as any).DISQUS) {
+        (window as any).DISQUS.reset({});
+        delete (window as any).DISQUS;
+      }
 
-      delete (window as any).DISQUS;
       delete (window as any).disqus_shortname;
       delete (window as any).disqus_config;
 
