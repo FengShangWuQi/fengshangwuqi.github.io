@@ -38,10 +38,9 @@ export const Discussion = ({
       if ((window as any).DISQUS) {
         (window as any).DISQUS.reset({});
         delete (window as any).DISQUS;
+        delete (window as any).disqus_shortname;
+        delete (window as any).disqus_config;
       }
-
-      delete (window as any).disqus_shortname;
-      delete (window as any).disqus_config;
 
       const disqusThread = doc.getElementById("disqus_thread");
       if (disqusThread) {
