@@ -13,7 +13,7 @@ export const Latest = ({ posts }: ILatest) => (
       boxShadow: "inset 0 0 30px #eee",
       overflow: "hidden",
     }}>
-    <h2>最近的文章</h2>
+    <h1>最近的文章</h1>
 
     <LatestList posts={posts} />
   </div>

@@ -20,10 +20,15 @@ export const PrismTheme = () => {
           .gatsby-highlight code[class*="language-"]`]: {
           ...margin(0),
           lineHeight: 1.45,
-          fontFamily:
-            "SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace",
-          fontSize: "85%",
+          fontFamily: `SFMono-Regular,
+            Consolas,
+            Liberation Mono,
+            Menlo,
+            Courier,
+            monospace`,
+          fontSize: 0.85,
           color: ds.color.bg,
+          overflow: "scroll",
         },
         ".gatsby-highlight-code-line": {
           ...margin(0, -25),

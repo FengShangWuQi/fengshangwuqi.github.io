@@ -1,45 +1,60 @@
 import React from "react";
 import { rgba } from "polished";
 
-import { flex, border, padding } from "src-core/style";
+import { useDesignSystem } from "src-core/ds";
+import { flex, border, margin, padding } from "src-core/style";
 
-export const PostContainer = ({ children }: { children: React.ReactNode }) => (
-  <div
-    css={{
-      "& a:not(.anchor):not(.gatsby-resp-image-link)": {
-        ...border("bottom", 1, "solid", "#ddd"),
-        background: rgba("#ddd", 0.3),
-      },
-      ul: {
-        marginTop: 20,
-        marginLeft: 25,
+import { rhythm } from "../common/typography";
 
-        "& li": {
-          marginTop: 12,
+export const PostContainer = ({ children }: { children: React.ReactNode }) => {
+  const ds = useDesignSystem();
+
+  return (
+    <div
+      css={{
+        fontSize: ds.size.base,
+        fontFamily: `'-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica',
+          'Arial',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol'`,
+        lineHeight: 1.625,
+        "& a:not(.anchor):not(.gatsby-resp-image-link)": {
+          ...border("bottom", 1, "solid", "#ddd"),
+          background: rgba("#ddd", 0.3),
         },
-      },
-      p: {
-        marginTop: 30,
-      },
-      blockquote: {
-        ...padding(20, 45, 20, 26),
-        ...border("left", 9, "solid", "#ffe564"),
-        marginTop: 30,
-        background: rgba("#ffe564", 0.3),
-        overflow: "auto",
+        ul: {
+          marginTop: rhythm(1),
+          marginLeft: rhythm(1.25),
+        },
+        [`li > ol,
+          li > ul`]: {
+          marginLeft: rhythm(1.25),
+        },
+        p: {
+          ...margin(rhythm(1), 0, 0),
+        },
+        blockquote: {
+          ...margin(25, 0, 0),
+          ...padding(rhythm(3 / 4), `calc(${rhythm(1)} - 1px)`),
+          ...border("left", 9, "solid", "#ffe564"),
+          background: rgba("#ffe564", 0.3),
+          overflow: "auto",
 
-        "& p": {
-          marginTop: 15,
-
-          "&:first-of-type": {
+          "& p:first-of-type": {
             marginTop: 0,
           },
         },
-      },
-      ".twitter-content": {
-        ...flex({ justifyContent: "center" }),
-      },
-    }}>
-    {children}
-  </div>
-);
+        ".twitter-content": {
+          ...flex({ justifyContent: "center" }),
+        },
+      }}>
+      {children}
+    </div>
+  );
+};

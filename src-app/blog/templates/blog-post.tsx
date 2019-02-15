@@ -10,6 +10,7 @@ import { size, margin, padding } from "src-core/style";
 import { Header } from "src-components/headers";
 
 import { Layout } from "../common/Layout";
+import { rhythm } from "../common/typography";
 import { PrismTheme } from "../post/PrismTheme";
 import { PostTag } from "../post/PostTag";
 import { PostContainer } from "../post/PostContainer";
@@ -87,7 +88,7 @@ const BlogPost = ({
 const PostWrapper = ({ children }: { children: React.ReactNode }) => (
   <div
     css={{
-      ...padding(25, 25, 58),
+      ...padding(0, 25, rhythm(5 / 2)),
       boxShadow: "inset 0 0 30px #eee",
       overflow: "hidden",
     }}>
