@@ -11,6 +11,7 @@ import { Header } from "src-components/headers";
 
 import { Layout } from "../common/Layout";
 import { Wrapper } from "../common/Wrapper";
+import { rhythm } from "../common/typography";
 import { PrismTheme } from "../post/PrismTheme";
 import { PostTag } from "../post/PostTag";
 import { PostContainer } from "../post/PostContainer";
@@ -122,7 +123,7 @@ export const PostTags = ({ tags }: { tags: string[] }) => (
 const PostEditLink = ({ slug }: { slug: string }) => (
   <div
     css={{
-      marginTop: 40,
+      marginTop: rhythm(2.5),
     }}>
     <a
       href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/posts${slug}/index.md`}
@@ -136,7 +137,7 @@ const PostEditLink = ({ slug }: { slug: string }) => (
 const PostDiscussion = ({ url, slug }: { url: string; slug: string }) => (
   <div
     css={{
-      ...margin(70, "auto", 0),
+      ...margin(rhythm(3), "auto", 0),
       ...padding(0, 25),
       maxWidth: 700,
     }}>

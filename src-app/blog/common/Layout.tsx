@@ -39,7 +39,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
 export const Container = ({ children }: { children: React.ReactNode }) => (
   <div
     css={{
-      ...margin(0, "auto", 60),
+      ...margin(0, "auto"),
       ...position("relative"),
       maxWidth: 1200,
     }}>
