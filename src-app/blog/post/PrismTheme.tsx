@@ -12,79 +12,77 @@ export const PrismTheme = () => {
       styles={{
         ".gatsby-highlight": {
           ...margin(25),
-          ...padding(0, 15),
-          borderRadius: ds.radius.l,
-          background: "#282c34",
-          color: ds.color.bg,
-          overflow: "auto",
+          ...padding(25),
+          borderRadius: ds.radius.m,
+          background: "#282a36",
         },
-        [`.gatsby-highlight > code[class*="language-"],
-          .gatsby-highlight > pre[class*="language-"],
-          .gatsby-highlight > pre.prism-code`]: {
-          ...margin(25),
-          fontSize: ds.size.s,
-          lineHeight: "20px",
+        [`.gatsby-highlight pre[class*="language-"],
+          .gatsby-highlight code[class*="language-"]`]: {
+          ...margin(0),
+          lineHeight: 1.45,
+          fontFamily:
+            "SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace",
+          fontSize: "85%",
+          color: ds.color.bg,
         },
         ".gatsby-highlight-code-line": {
-          ...margin("-0.125rem", "calc(-1rem - 23px)"),
-          ...padding("0.125rem", "calc(1rem + 15px)"),
+          ...margin(0, -25),
+          ...padding("0.125rem", 25),
           display: "block",
-          backgroundColor: "#353b45",
+          background: "#2e3440",
         },
-        [`.token.attr-name,
-          .token.attr-name`]: {
-          color: "#c5a5c5",
+        ".token.comment": {
+          color: "#6272a4",
         },
-        [`.token.comment,
-          .token.block-comment,
-          .token.prolog,
-          .token.doctype,
-          .token.cdata`]: {
-          color: "#B2B2B2",
+        ".token.url": {
+          color: "#f1fa8c",
         },
-        [`.token.property,
+        [`.token.boolean,
           .token.number,
-          .token.function-name,
           .token.constant,
           .token.symbol,
           .token.deleted`]: {
-          color: "#5a9bcf",
+          color: "#bd93f9",
         },
-        ".token.boolean": {
-          color: "#ff8b50",
+        [`.token.class-name,
+          .token.attr-name,
+          .token.rule,
+          .token.selector`]: {
+          color: "#50fa7b",
         },
-        ".token.tag": {
-          color: "#fc929e",
-        },
-        [`.token.string,
-        .token.string a,
-          .token.class-name`]: {
-          color: "#8dc891",
+        [`.token.function,
+          .token.property,
+          .token.operator`]: {
+          color: "#66d9ef",
         },
         ".token.punctuation": {
-          color: "#88C6BE",
+          color: ds.color.bg,
         },
-        [`.token.selector,
-            .token.char,
-            .token.builtin,
-            .token.inserted`]: {
-          color: "#D8DEE9",
+        [`.token.attr-value,
+          .token.string,
+          .token.string a,
+          .token.char,
+          .token.builtin,
+          .token.inserted,
+          .token.entity`]: {
+          color: "#f1fa8c",
         },
-        ".token.function": {
-          color: "#79b6f2",
-        },
-        [`.token.operator,
-          .token.entity,
-          .token.url,
+        [`.token.regex,
+          .token.keyword,
+          .token.tag,
+          .token.important,
           .token.variable`]: {
-          color: "#d7deea",
+          color: "#ff79c6",
         },
-        [`.token.atrule,
-          .token.class-name`]: {
-          color: "#FAC863",
+        [`.token.important,
+        .token.bold`]: {
+          fontWeight: "bold",
         },
-        ".token.important": {
-          fontWeight: 400,
+        ".token.italic": {
+          fontStyle: "italic",
+        },
+        ".token.entity": {
+          cursor: "help",
         },
         ".namespace": {
           opacity: 0.7,
