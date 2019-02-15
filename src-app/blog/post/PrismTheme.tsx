@@ -15,6 +15,7 @@ export const PrismTheme = () => {
           ...padding(25),
           borderRadius: ds.radius.m,
           background: "#282a36",
+          overflow: "scroll",
         },
         [`.gatsby-highlight pre[class*="language-"],
           .gatsby-highlight code[class*="language-"]`]: {
@@ -28,11 +29,10 @@ export const PrismTheme = () => {
             monospace`,
           fontSize: 0.85,
           color: ds.color.bg,
-          overflow: "scroll",
         },
         ".gatsby-highlight-code-line": {
           ...margin(0, -25),
-          ...padding("0.125rem", 25),
+          ...padding("0.125rem", 0),
           display: "block",
           background: "#2e3440",
         },
