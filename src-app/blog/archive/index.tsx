@@ -1,8 +1,9 @@
 import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
-import { border, margin, padding } from "src-core/style";
 
+import { Wrapper } from "../common/Wrapper";
+import { Title } from "../common/Title";
 import { ArchiveList, IArchiveList } from "./ArchiveList";
 
 interface IArchive extends IArchiveList {
@@ -13,28 +14,17 @@ export const Archive = ({ posts, totalCount }: IArchive) => {
   const ds = useDesignSystem();
 
   return (
-    <div
-      css={{
-        ...padding(28, 68, 58),
-        boxShadow: "inset 0 0 30px #eee",
-        overflow: "hidden",
-      }}>
-      <p
-        css={{
-          ...margin(12, 0, 26),
-          ...border("bottom", 3, "solid", ds.color.primary),
-          fontSize: ds.size.l,
-          color: ds.color.text,
-        }}>
+    <Wrapper>
+      <Title>
         <span>归档</span>
         <span
           css={{
             marginLeft: 8,
             fontSize: ds.size.xxs,
           }}>{`${totalCount} 篇`}</span>
-      </p>
+      </Title>
 
       <ArchiveList posts={posts} />
-    </div>
+    </Wrapper>
   );
 };

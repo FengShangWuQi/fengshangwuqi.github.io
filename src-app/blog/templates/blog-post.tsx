@@ -10,7 +10,7 @@ import { size, margin, padding } from "src-core/style";
 import { Header } from "src-components/headers";
 
 import { Layout } from "../common/Layout";
-import { rhythm } from "../common/typography";
+import { Wrapper } from "../common/Wrapper";
 import { PrismTheme } from "../post/PrismTheme";
 import { PostTag } from "../post/PostTag";
 import { PostContainer } from "../post/PostContainer";
@@ -67,7 +67,7 @@ const BlogPost = ({
         <Header />
       </div>
 
-      <PostWrapper>
+      <Wrapper>
         <h1>{postTitle}</h1>
 
         <PostDate style={{ marginTop: 5 }} date={date} />
@@ -76,7 +76,7 @@ const BlogPost = ({
         <PostContainer>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </PostContainer>
-      </PostWrapper>
+      </Wrapper>
 
       <PostEditLink slug={slug} />
 
@@ -84,17 +84,6 @@ const BlogPost = ({
     </Layout>
   );
 };
-
-const PostWrapper = ({ children }: { children: React.ReactNode }) => (
-  <div
-    css={{
-      ...padding(0, 25, rhythm(5 / 2)),
-      boxShadow: "inset 0 0 30px #eee",
-      overflow: "hidden",
-    }}>
-    {children}
-  </div>
-);
 
 export const PostDate = ({
   date,
