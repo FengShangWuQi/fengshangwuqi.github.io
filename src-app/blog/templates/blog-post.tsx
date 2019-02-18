@@ -123,7 +123,7 @@ export const PostTags = ({ tags }: { tags: string[] }) => (
 const PostEditLink = ({ slug }: { slug: string }) => (
   <div
     css={{
-      marginTop: rhythm(2.5),
+      marginTop: rhythm(5 / 2),
     }}>
     <a
       href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/posts${slug}/index.md`}
