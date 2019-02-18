@@ -4,14 +4,11 @@
     "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
+  "parser": "babel-eslint",
   "settings": {
     "react": {
       "version": "detect"
     }
-  },
-  "parserOptions": {
-    "ecmaVersion": 9,
-    "sourceType": "module"
   },
   "env": {
     "browser": true,
