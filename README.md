@@ -7,7 +7,7 @@
 [gatsby-svg]: https://img.shields.io/badge/gatsbyjs-V2-blue.svg
 [gatsby-url]: https://github.com/gatsbyjs/gatsby
 [storybook-svg]: https://github.com/storybooks/press/blob/master/badges/storybook.svg
-[storybook-url]: https://github.com/storybooks/storybook
+[storybook-url]: https://fengshangwuqi.netlify.com/
 [travis-svg]: https://travis-ci.org/FengShangWuQi/fengshangwuqi.github.io.svg
 [travis-url]: https://travis-ci.org/FengShangWuQi/fengshangwuqi.github.io
 
