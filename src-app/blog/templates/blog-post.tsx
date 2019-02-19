@@ -5,7 +5,7 @@ import { CSSObject } from "@emotion/core";
 
 import { useDesignSystem } from "src-core/ds";
 import { Discussion } from "src-core/disqus";
-import { size, margin, padding } from "src-core/style";
+import { margin, padding } from "src-core/style";
 
 import { Header } from "src-components/headers";
 
@@ -61,12 +61,7 @@ const BlogPost = ({
       <Helmet title={`${postTitle} - ${metaTitle}`} />
       <PrismTheme />
 
-      <div
-        css={{
-          ...size("100%", 400),
-        }}>
-        <Header />
-      </div>
+      <Header />
 
       <Wrapper>
         <h1>{postTitle}</h1>

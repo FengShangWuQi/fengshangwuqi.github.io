@@ -2,8 +2,6 @@ import React from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
-import { size } from "src-core/style";
-
 import { Header } from "src-components/headers";
 
 import { Layout } from "../common/Layout";
@@ -46,12 +44,7 @@ export default () => (
       <Layout>
         <Helmet title={`归档 - ${title}`} />
 
-        <div
-          css={{
-            ...size("100%", 400),
-          }}>
-          <Header />
-        </div>
+        <Header />
 
         <Archive posts={posts} totalCount={totalCount} />
       </Layout>
