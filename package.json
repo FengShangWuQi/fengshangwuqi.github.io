@@ -76,6 +76,7 @@
     "react-dom": "16.8.2",
     "react-helmet": "5.2.0",
     "react-typography": "0.16.18",
+    "rxjs": "6.4.0",
     "typescript": "3.3.3",
     "typography": "0.16.18"
   },
