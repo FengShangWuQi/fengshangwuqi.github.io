@@ -1,6 +1,6 @@
 import React from "react";
 
-import { withoutBubble } from "src-core/react/dom";
+import { withoutBubble } from "src-core/react";
 import { useLocation } from "src-core/router";
 
 export const Link = ({ to, ...otherProps }: { to: string }) => {
