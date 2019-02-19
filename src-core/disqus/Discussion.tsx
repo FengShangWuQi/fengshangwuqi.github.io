@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useLayoutEffect } from "react";
 
 import { insertScript, removeScript } from "utils/dom";
 
@@ -11,7 +11,7 @@ export const Discussion = ({
 }) => {
   const { identifier, url } = config;
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const doc = window.document;
     const id = "dsq-discuss-scr";
 
