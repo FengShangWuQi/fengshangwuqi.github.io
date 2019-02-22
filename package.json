@@ -43,7 +43,7 @@
   "dependencies": {
     "@emotion/core": "10.0.7",
     "@emotion/styled": "10.0.7",
-    "@types/react": "16.8.3",
+    "@types/react": "16.8.4",
     "@types/react-dom": "16.8.2",
     "@types/react-helmet": "5.0.8",
     "@types/typography": "0.16.2",
@@ -72,12 +72,12 @@
     "gatsby-transformer-sharp": "2.1.13",
     "polished": "3.0.0",
     "prismjs": "1.15.0",
-    "react": "16.8.2",
-    "react-dom": "16.8.2",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
     "react-helmet": "5.2.0",
     "react-typography": "0.16.18",
     "rxjs": "6.4.0",
-    "typescript": "3.3.3",
+    "typescript": "3.3.3333",
     "typography": "0.16.18"
   },
   "devDependencies": {
