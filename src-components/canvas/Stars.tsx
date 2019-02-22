@@ -4,7 +4,7 @@ export const Stars = ({ width, height }: { width: number; height: number }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const starsArr: (() => void)[] = [];
-  let requestID: number;
+  let animationID: number;
   const STAR_COLORS = [
     "#4c1a22",
     "#4c1a23",
@@ -43,7 +43,7 @@ export const Stars = ({ width, height }: { width: number; height: number }) => {
     };
 
     const starsAnimate = () => {
-      requestID = requestAnimationFrame(starsAnimate);
+      animationID = requestAnimationFrame(starsAnimate);
 
       ctx!.clearRect(0, 0, width, height);
 
@@ -65,7 +65,7 @@ export const Stars = ({ width, height }: { width: number; height: number }) => {
 
     starsAnimate();
 
-    return () => cancelAnimationFrame(requestID);
+    return () => cancelAnimationFrame(animationID);
   }, [width, height]);
 
   return (
