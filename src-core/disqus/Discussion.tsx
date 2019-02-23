@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react";
 
-import { insertScript, removeScript } from "utils/dom";
+import { loadScript, removeChild } from "utils/dom";
 
 export const Discussion = ({
   shortname,
@@ -29,11 +29,11 @@ export const Discussion = ({
         this.page.identifier = identifier;
         this.page.url = url;
       };
-      insertScript(`https://${shortname}.disqus.com/embed.js`, id);
+      loadScript(`https://${shortname}.disqus.com/embed.js`, id);
     }
 
     return () => {
-      removeScript(id);
+      removeChild(id);
 
       if ((window as any).DISQUS) {
         (window as any).DISQUS.reset({});

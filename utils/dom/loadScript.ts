@@ -1,4 +1,4 @@
-export const insertScript = (src: string, id: string) => {
+export const loadScript = (src: string, id: string) => {
   const doc = window.document;
   const script = doc.createElement("script");
   script.async = true;
