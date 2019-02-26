@@ -21,7 +21,7 @@ export const useWhyDidYouUpdate = (name: string, props: IDictionary<any>) => {
     });
 
     const primaryStyle = "color: gray; font-weight: lighter;";
-    const titleStyle = (style?: string) => `${style}font-weight: bold;`;
+    const titleStyle = (style?: string) => `${style} font-weight: bold;`;
 
     Object.keys(changesObj).map(key => {
       console.group(
