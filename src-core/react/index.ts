@@ -1,6 +1,6 @@
 export * from "./withoutBubble";
 
-export * from "./useElementRect";
+export * from "./useRect";
 export * from "./useScript";
 export * from "./usePrevious";
 export * from "./useHover";

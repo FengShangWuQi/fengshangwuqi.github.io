@@ -23,7 +23,7 @@ export const getRect = (targetElm: Element, relatedElm: Element): IRect => {
   };
 };
 
-export const useElementRect = (elmRef: RefObject<Element | null>) => {
+export const useRect = (elmRef: RefObject<Element | null>) => {
   const defaultRect: IRect = {
     left: 0,
     top: 0,
