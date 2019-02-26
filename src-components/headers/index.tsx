@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import { useElementRect } from "src-core/react";
+import { useRect } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 import { size, position } from "src-core/style";
 
@@ -10,7 +10,7 @@ export const Header = () => {
   const ds = useDesignSystem();
 
   const ref = useRef(null);
-  const rect = useElementRect(ref);
+  const rect = useRect(ref);
 
   return (
     <div
