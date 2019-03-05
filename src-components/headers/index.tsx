@@ -4,12 +4,16 @@ import { useRect } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 import { size, position } from "src-core/style";
 
-import { Cover } from "src-components/canvas";
+import { Stars } from "src-components/canvas";
 
 export const Header = () => {
   return (
     <Wrapper>
-      {({ width, height }) => <Cover width={width} height={height} />}
+      {({ width, height }) => (
+        <>
+          <Stars width={width} height={height} />
+        </>
+      )}
     </Wrapper>
   );
 };

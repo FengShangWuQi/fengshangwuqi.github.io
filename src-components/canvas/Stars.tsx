@@ -1,9 +1,8 @@
 import React, { useRef, useLayoutEffect } from "react";
 
-export const Cover = ({ width, height }: { width: number; height: number }) => {
+export const Stars = ({ width, height }: { width: number; height: number }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  // add stars
   const starsArr: (() => void)[] = [];
   let starsAnimationID: number;
   const STAR_COLORS = [
