@@ -1,17 +1,43 @@
 import React, { useRef } from "react";
+import { useSpring, animated } from "react-spring";
 
 import { useRect } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
-import { size, position } from "src-core/style";
+import { size, position, flex } from "src-core/style";
 
 import { Stars } from "src-components/canvas";
 
 export const Header = () => {
+  const ds = useDesignSystem();
+
   return (
     <Wrapper>
       {({ width, height }) => (
         <>
           <Stars width={width} height={height} />
+          <Container>
+            <div>
+              <Title />
+              <Contact />
+              <div
+                css={{
+                  paddingTop: 16,
+                  lineHeight: "28px",
+                  fontSize: ds.size.s,
+                }}>
+                <SocialLink
+                  src="https://github.com/FengShangWuQi"
+                  color="#e0a458">
+                  GitHub
+                </SocialLink>
+                <SocialLink
+                  src="https://twitter.com/fengshangwuqi"
+                  color="#419d78">
+                  Twitter
+                </SocialLink>
+              </div>
+            </div>
+          </Container>
         </>
       )}
     </Wrapper>
@@ -49,5 +75,105 @@ const Wrapper = ({
       }}>
       {children({ width: rect.width, height: rect.height })}
     </div>
+  );
+};
+
+const Container = ({ children }: { children: React.ReactNode }) => {
+  const ds = useDesignSystem();
+
+  return (
+    <div
+      css={{
+        ...position("absolute", 0, 0, 0, 0),
+        ...flex({
+          alignItems: "center",
+        }),
+        margin: "0 auto",
+        width: "90%",
+        maxWidth: 1000,
+        color: ds.color.bg,
+      }}>
+      {children}
+    </div>
+  );
+};
+
+const Title = () => {
+  const ds = useDesignSystem();
+
+  return (
+    <div
+      css={{
+        lineHeight: "63px",
+        fontFamily: "serif",
+        fontSize: ds.size.xl,
+      }}>
+      枫上雾棋的日志
+    </div>
+  );
+};
+
+const Contact = () => {
+  const ds = useDesignSystem();
+
+  return (
+    <div
+      css={{
+        fontFamily: "sans-serif",
+        fontSize: ds.size.s,
+        fontWeight: 400,
+        lineHeight: "28px",
+        color: "#ddd",
+        WebkitFontSmoothing: "antialiased",
+        MozOsxFontSmoothing: "grayscale",
+      }}>
+      fengshangwuqi@gmail.com
+    </div>
+  );
+};
+
+const SocialLink = ({
+  src,
+  color,
+  children,
+}: {
+  src: string;
+  color: string;
+  children: string;
+}) => {
+  const ref = useRef(null);
+  const rect = useRect(ref);
+
+  const DEFAULT_WIDTH = 15;
+  const [props, setProps] = useSpring(() => ({
+    width: DEFAULT_WIDTH,
+    height: 2,
+    background: color,
+  }));
+
+  return (
+    <a
+      ref={ref}
+      css={{
+        display: "inline-block",
+        marginRight: 25,
+        color,
+      }}
+      href={src}
+      target="_blank"
+      rel="noopener noreferrer">
+      <div
+        onMouseEnter={() => {
+          setProps({ width: rect.width });
+        }}
+        onMouseLeave={() => {
+          setProps({
+            width: DEFAULT_WIDTH,
+          });
+        }}>
+        {children}
+      </div>
+      <animated.div style={props} />
+    </a>
   );
 };
