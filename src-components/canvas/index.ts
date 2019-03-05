@@ -1,1 +1,1 @@
-export * from "./Stars";
+export * from "./Cover";

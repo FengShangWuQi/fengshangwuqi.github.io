@@ -4,9 +4,27 @@ import { useRect } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 import { size, position } from "src-core/style";
 
-import { Stars } from "src-components/canvas";
+import { Cover } from "src-components/canvas";
 
 export const Header = () => {
+  return (
+    <Wrapper>
+      {({ width, height }) => <Cover width={width} height={height} />}
+    </Wrapper>
+  );
+};
+
+const Wrapper = ({
+  children,
+}: {
+  children: ({
+    width,
+    height,
+  }: {
+    width: number;
+    height: number;
+  }) => React.ReactNode;
+}) => {
   const ds = useDesignSystem();
 
   const ref = useRef(null);
@@ -25,7 +43,7 @@ export const Header = () => {
           cursor: "grabbing",
         },
       }}>
-      <Stars width={rect.width} height={rect.height} />
+      {children({ width: rect.width, height: rect.height })}
     </div>
   );
 };

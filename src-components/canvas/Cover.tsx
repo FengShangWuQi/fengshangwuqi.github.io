@@ -1,10 +1,11 @@
 import React, { useRef, useLayoutEffect } from "react";
 
-export const Stars = ({ width, height }: { width: number; height: number }) => {
+export const Cover = ({ width, height }: { width: number; height: number }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
+  // add stars
   const starsArr: (() => void)[] = [];
-  let animationID: number;
+  let starsAnimationID: number;
   const STAR_COLORS = [
     "#4c1a22",
     "#4c1a23",
@@ -43,7 +44,7 @@ export const Stars = ({ width, height }: { width: number; height: number }) => {
     };
 
     const starsAnimate = () => {
-      animationID = requestAnimationFrame(starsAnimate);
+      starsAnimationID = requestAnimationFrame(starsAnimate);
 
       ctx!.clearRect(0, 0, width, height);
 
@@ -65,7 +66,7 @@ export const Stars = ({ width, height }: { width: number; height: number }) => {
 
     starsAnimate();
 
-    return () => cancelAnimationFrame(animationID);
+    return () => cancelAnimationFrame(starsAnimationID);
   }, [width, height]);
 
   return (
