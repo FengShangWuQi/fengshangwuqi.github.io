@@ -5,8 +5,8 @@ module.exports = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       modules: [
-        resolve(__dirname, "../../"),
-        resolve(__dirname, "../../node_modules"),
+        resolve(__dirname, "../../../"),
+        resolve(__dirname, "../../../node_modules"),
       ],
     },
   });
