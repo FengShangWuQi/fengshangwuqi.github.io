@@ -11,6 +11,7 @@ module.exports = async ({ graphql, actions }) => {
   const allMarkdown = await graphql(`
     {
       allMarkdownRemark(limit: 1000) {
+        totalCount
         edges {
           node {
             fields {
@@ -28,20 +29,9 @@ module.exports = async ({ graphql, actions }) => {
     throw Error(allMarkdown.errors);
   }
 
-  // Create Latest(Index) Page
-  createPage({
-    path: "/",
-    component: latestTemplate,
-  });
-
-  // Create Archive Page
-  createPage({
-    path: "/archive",
-    component: archiveTemplate,
-  });
+  const { edges: posts, totalCount } = allMarkdown.data.allMarkdownRemark;
 
   // Create blog posts pages
-  const posts = allMarkdown.data.allMarkdownRemark.edges;
   posts.forEach(post => {
     const {
       node: {
@@ -56,5 +46,26 @@ module.exports = async ({ graphql, actions }) => {
         slug,
       },
     });
+  });
+
+  // Create Latest(Index) Page
+  const size = Number(process.env.PAGE_SIZE);
+  const totalPage = Math.ceil(totalCount / size);
+  Array.from({ length: totalPage }, (_, i) => i + 1).forEach(num => {
+    createPage({
+      path: num === 1 ? "/" : `/${num}`,
+      component: latestTemplate,
+      context: {
+        total: totalCount,
+        size,
+        offset: (num - 1) * size,
+      },
+    });
+  });
+
+  // Create Archive Page
+  createPage({
+    path: "/archive",
+    component: archiveTemplate,
   });
 };
