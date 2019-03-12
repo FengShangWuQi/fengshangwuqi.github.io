@@ -16,7 +16,7 @@ export interface IArchiveList {
 interface IArchiveItem {
   title: string;
   path: string;
-  addOnLeft?: React.ReactNode;
+  date: string;
   addOnRight?: React.ReactNode;
 }
 
@@ -51,7 +51,7 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
 
         "&:before": {
           ...position("absolute"),
-          left: rect.width > ds.grid.m ? 90 : 0,
+          left: 0,
           top: 0,
           content: `""`,
           width: 2,
@@ -60,85 +60,78 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
         },
       }}>
       {posts.map(({ node }: IArchiveNode) => {
-        const postTime = (
-          <time
-            css={{
-              width: 90,
-              minWidth: 90,
-              color: rgba(ds.color.textLight, 0.3),
-            }}>
-            {node.frontmatter.date}
-          </time>
-        );
         const postTags = node.frontmatter.tags.map((tag: string) => (
           <PostTag key={tag} tag={tag} />
         ));
 
         return (
-          <div>
-            <ArchiveItem
-              key={node.fields.slug}
-              title={node.frontmatter.title}
-              path={node.fields.slug}
-              addOnLeft={isLarge && postTime}
-              addOnRight={isLarge && postTags}
-            />
-            {!isLarge && (
-              <div
-                css={{
-                  marginLeft: rhythm(7 / 8),
-                }}>
-                {postTime}
-              </div>
-            )}
-          </div>
+          <ArchiveItem
+            key={node.fields.slug}
+            title={node.frontmatter.title}
+            path={node.fields.slug}
+            date={node.frontmatter.date}
+            addOnRight={isLarge && postTags}
+          />
         );
       })}
     </div>
   );
 };
 
-const ArchiveItem = ({ path, title, addOnLeft, addOnRight }: IArchiveItem) => {
+const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
   const ds = useDesignSystem();
 
   const [hoverRef, isHovered] = useHover();
 
   return (
-    <div
-      css={{
-        ...flex({
-          alignItems: "center",
-        }),
-        ...position("relative"),
-        ...padding(rhythm(3 / 4), 0),
-      }}>
-      {addOnLeft}
-
-      <div
-        style={{
-          marginLeft: -3,
-          width: 8,
-          height: 8,
-          borderRadius: ds.radius.m,
-          border: `1px solid ${ds.color.primary}`,
-          background: isHovered ? ds.color.primary : ds.color.bg,
-        }}
-      />
-
+    <div>
       <div
         css={{
-          ...ellipsis(),
-          marginLeft: rhythm(7 / 8),
+          ...flex({
+            alignItems: "center",
+          }),
+          ...position("relative"),
+          ...padding(rhythm(3 / 4), 0),
         }}>
-        <Link
-          css={{
-            marginRight: rhythm(1 / 3),
-            color: ds.color.textLight,
+        <div
+          style={{
+            marginLeft: -3,
+            width: 8,
+            height: 8,
+            borderRadius: ds.radius.m,
+            border: `1px solid ${ds.color.primary}`,
+            background: isHovered ? ds.color.primary : ds.color.bg,
           }}
-          to={path}>
-          <span ref={hoverRef}>{title}</span>
-        </Link>
-        {addOnRight}
+        />
+
+        <div
+          css={{
+            ...ellipsis(),
+            marginLeft: rhythm(7 / 8),
+          }}>
+          <Link
+            css={{
+              marginRight: rhythm(1 / 3),
+              color: ds.color.textLight,
+            }}
+            to={path}>
+            <span ref={hoverRef}>{title}</span>
+          </Link>
+          {addOnRight}
+        </div>
+      </div>
+      <div
+        css={{
+          marginLeft: rhythm(10 / 9),
+        }}>
+        <time
+          css={{
+            width: 90,
+            minWidth: 90,
+            color: rgba(ds.color.textLight, 0.3),
+          }}>
+          {date}
+        </time>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { CSSObject } from "@emotion/core";
 
 import { useDesignSystem } from "src-core/ds";
 import { Discussion } from "src-core/disqus";
-import { margin, padding } from "src-core/style";
+import { margin, padding, ellipsis } from "src-core/style";
 
 import { Layout } from "../common/Layout";
 import { Wrapper } from "../common/Wrapper";
@@ -81,11 +81,21 @@ const BlogPost = ({
       <PrismTheme />
 
       <PostHeader>
-        <Img fluid={fluid} />
+        <Img
+          css={{
+            height: "100%",
+          }}
+          fluid={fluid}
+        />
       </PostHeader>
 
       <Wrapper>
-        <h1>{postTitle}</h1>
+        <h1
+          css={{
+            ...ellipsis(),
+          }}>
+          {postTitle}
+        </h1>
 
         <PostDate style={{ marginTop: 5 }} date={date} />
         <PostTags tags={tags} />
