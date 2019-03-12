@@ -28,6 +28,7 @@ export default () => (
               }
               frontmatter {
                 title
+                tags
                 date(formatString: "YYYY-MM-DD")
               }
             }

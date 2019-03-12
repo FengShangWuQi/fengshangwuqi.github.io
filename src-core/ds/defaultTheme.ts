@@ -5,6 +5,7 @@ const color = {
   textLight: "#85929A",
 
   bg: "#FFFFFF",
+  bgLight: "#E7EAEB",
 };
 
 export const defaultTheme = {

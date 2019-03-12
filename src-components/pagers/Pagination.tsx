@@ -89,7 +89,7 @@ const PaginationItem = ({
               color: ds.color.bg,
               background: ds.color.primary,
             }
-          : { color: ds.color.textLight, background: "#E7EAEB" },
+          : { color: ds.color.textLight, background: ds.color.bgLight },
       ]}>
       {children}
     </Link>

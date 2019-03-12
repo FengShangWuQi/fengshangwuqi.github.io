@@ -1,8 +1,8 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, RefObject } from "react";
 
 import { rxFromEvent } from "src-core/rxjs";
 
-export const useHover = () => {
+export const useHover = (): [RefObject<any>, boolean] => {
   const [isHovered, setIsHovered] = useState(false);
   const hoverRef = useRef(null);
 

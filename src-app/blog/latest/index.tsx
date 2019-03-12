@@ -9,6 +9,7 @@ interface ILatest extends ILatestList {}
 export const Latest = ({ posts }: ILatest) => (
   <Wrapper>
     <Title>最近的文章</Title>
+
     <LatestList posts={posts} />
   </Wrapper>
 );
