@@ -13,19 +13,21 @@ export const Title = ({ children }: { children: React.ReactNode }) => {
   const rect = useRect(ref);
 
   return (
-    <h2
+    <div
       ref={ref}
-      css={
+      css={[
+        {
+          ...margin(rhythm(2), 0, rhythm(3 / 4)),
+          fontSize: ds.size.l,
+          color: ds.color.text,
+        },
         rect.width > ds.grid.m
           ? {
-              ...margin(rhythm(2), 0, rhythm(3 / 4)),
               ...border("bottom", 3, "solid", ds.color.primary),
-              fontSize: ds.size.l,
-              color: ds.color.text,
             }
-          : {}
-      }>
+          : {},
+      ]}>
       {children}
-    </h2>
+    </div>
   );
 };
