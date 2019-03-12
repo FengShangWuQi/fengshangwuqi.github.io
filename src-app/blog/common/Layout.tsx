@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Global } from "@emotion/core";
 
+import { useRect } from "src-core/react";
 import {
   ThemeProvider,
   DSReset,
@@ -36,16 +37,28 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export const Container = ({ children }: { children: React.ReactNode }) => (
-  <div
-    css={{
-      ...margin(0, "auto", rhythm(3)),
-      ...position("relative"),
-      maxWidth: 1200,
-    }}>
-    {children}
-  </div>
-);
+export const Container = ({ children }: { children: React.ReactNode }) => {
+  const ds = useDesignSystem();
+
+  const ref = useRef(null);
+  const rect = useRect(ref);
+
+  return (
+    <div
+      ref={ref}
+      css={[
+        {
+          ...position("relative"),
+          maxWidth: 1200,
+        },
+        rect.width < ds.grid.lg
+          ? { ...margin(0, "auto") }
+          : { ...margin(0, "auto", rhythm(3)) },
+      ]}>
+      {children}
+    </div>
+  );
+};
 
 const BlogGlobal = () => {
   const ds = useDesignSystem();

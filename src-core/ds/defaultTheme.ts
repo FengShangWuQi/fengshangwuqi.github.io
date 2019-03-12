@@ -32,6 +32,13 @@ export const defaultTheme = {
     m: 8,
     l: 10,
   },
+
+  grid: {
+    s: 576,
+    m: 768,
+    l: 992,
+    lg: 1200,
+  },
 };
 
 export type ITheme = typeof defaultTheme;

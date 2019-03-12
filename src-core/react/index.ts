@@ -1,4 +1,5 @@
 export * from "./withoutBubble";
+export * from "./pickElmAttrs";
 
 export * from "./useRect";
 export * from "./useScript";
