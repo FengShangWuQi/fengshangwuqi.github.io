@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "gatsby";
 import { rgba } from "polished";
 
-import { useHover } from "src-core/react";
-import { flex, position, padding } from "src-core/style";
+import { useHover, useRect } from "src-core/react";
+import { flex, position, padding, ellipsis } from "src-core/style";
 import { useDesignSystem } from "src-core/ds";
 
 import { rhythm } from "../common/typography";
@@ -15,9 +15,9 @@ export interface IArchiveList {
 
 interface IArchiveItem {
   title: string;
-  tags: string[];
   path: string;
-  date: string;
+  addOnLeft?: React.ReactNode;
+  addOnRight?: React.ReactNode;
 }
 
 interface IArchiveNode {
@@ -37,15 +37,21 @@ interface IArchiveNode {
 export const ArchiveList = ({ posts }: IArchiveList) => {
   const ds = useDesignSystem();
 
+  const ref = useRef(null);
+  const rect = useRect(ref);
+
+  const isLarge = rect.width >= ds.grid.m;
+
   return (
     <div
+      ref={ref}
       css={{
         ...position("relative"),
         fontSize: ds.size.s,
 
         "&:before": {
           ...position("absolute"),
-          left: 90,
+          left: rect.width > ds.grid.m ? 90 : 0,
           top: 0,
           content: `""`,
           width: 2,
@@ -53,20 +59,46 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
           background: rgba(ds.color.primary, 0.3),
         },
       }}>
-      {posts.map(({ node }: IArchiveNode) => (
-        <ArchiveItem
-          key={node.fields.slug}
-          title={node.frontmatter.title}
-          tags={node.frontmatter.tags}
-          path={node.fields.slug}
-          date={node.frontmatter.date}
-        />
-      ))}
+      {posts.map(({ node }: IArchiveNode) => {
+        const postTime = (
+          <time
+            css={{
+              width: 90,
+              minWidth: 90,
+              color: rgba(ds.color.textLight, 0.3),
+            }}>
+            {node.frontmatter.date}
+          </time>
+        );
+        const postTags = node.frontmatter.tags.map((tag: string) => (
+          <PostTag key={tag} tag={tag} />
+        ));
+
+        return (
+          <div>
+            <ArchiveItem
+              key={node.fields.slug}
+              title={node.frontmatter.title}
+              path={node.fields.slug}
+              addOnLeft={isLarge && postTime}
+              addOnRight={isLarge && postTags}
+            />
+            {!isLarge && (
+              <div
+                css={{
+                  marginLeft: rhythm(7 / 8),
+                }}>
+                {postTime}
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 };
 
-const ArchiveItem = ({ path, title, tags, date }: IArchiveItem) => {
+const ArchiveItem = ({ path, title, addOnLeft, addOnRight }: IArchiveItem) => {
   const ds = useDesignSystem();
 
   const [hoverRef, isHovered] = useHover();
@@ -80,13 +112,7 @@ const ArchiveItem = ({ path, title, tags, date }: IArchiveItem) => {
         ...position("relative"),
         ...padding(rhythm(3 / 4), 0),
       }}>
-      <time
-        css={{
-          width: 90,
-          color: rgba(ds.color.textLight, 0.3),
-        }}>
-        {date}
-      </time>
+      {addOnLeft}
 
       <div
         style={{
@@ -100,8 +126,8 @@ const ArchiveItem = ({ path, title, tags, date }: IArchiveItem) => {
       />
 
       <div
-        ref={hoverRef}
         css={{
+          ...ellipsis(),
           marginLeft: rhythm(7 / 8),
         }}>
         <Link
@@ -110,11 +136,9 @@ const ArchiveItem = ({ path, title, tags, date }: IArchiveItem) => {
             color: ds.color.textLight,
           }}
           to={path}>
-          {title}
+          <span ref={hoverRef}>{title}</span>
         </Link>
-        {tags.map((tag: string) => (
-          <PostTag key={tag} tag={tag} />
-        ))}
+        {addOnRight}
       </div>
     </div>
   );
