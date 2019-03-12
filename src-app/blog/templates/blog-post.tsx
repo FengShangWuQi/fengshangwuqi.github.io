@@ -1,18 +1,18 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import { CSSObject } from "@emotion/core";
 
 import { useDesignSystem } from "src-core/ds";
 import { Discussion } from "src-core/disqus";
 import { margin, padding } from "src-core/style";
 
-import { Header } from "src-components/headers";
-
 import { Layout } from "../common/Layout";
 import { Wrapper } from "../common/Wrapper";
 import { Footer } from "../common/Footer";
 import { rhythm } from "../common/typography";
+import { PostHeader } from "../post/PostHeader";
 import { PrismTheme } from "../post/PrismTheme";
 import { PostTag } from "../post/PostTag";
 import { PostContainer } from "../post/PostContainer";
@@ -39,6 +39,17 @@ export const postQuery = graphql`
         tags
         date(formatString: "YYYY-MM-DD")
         original
+        cover {
+          childImageSharp {
+            fluid(maxWidth: 1200, maxHeight: 400) {
+              aspectRatio
+              src
+              srcSet
+              sizes
+              tracedSVG
+            }
+          }
+        }
       }
     }
   }
@@ -53,7 +64,14 @@ const BlogPost = ({
     markdownRemark: {
       html,
       fields: { slug },
-      frontmatter: { title: postTitle, date, tags },
+      frontmatter: {
+        title: postTitle,
+        date,
+        tags,
+        cover: {
+          childImageSharp: { fluid },
+        },
+      },
     },
   },
 }: any) => {
@@ -62,7 +80,9 @@ const BlogPost = ({
       <Helmet title={`${postTitle} - ${metaTitle}`} />
       <PrismTheme />
 
-      <Header />
+      <PostHeader>
+        <Img fluid={fluid} />
+      </PostHeader>
 
       <Wrapper>
         <h1>{postTitle}</h1>

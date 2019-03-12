@@ -39,6 +39,13 @@ export const defaultTheme = {
     l: 992,
     lg: 1200,
   },
+
+  zIndex: {
+    low: 10,
+    mid: 100,
+    high: 300,
+    higher: 500,
+  },
 };
 
 export type ITheme = typeof defaultTheme;
