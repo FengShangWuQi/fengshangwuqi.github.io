@@ -1,17 +1,17 @@
-import React, { useRef } from "react";
+import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import { CSSObject } from "@emotion/core";
 
 import { useDesignSystem } from "src-core/ds";
 import { Discussion } from "src-core/disqus";
-import { useRect } from "src-core/react";
 import { margin, padding } from "src-core/style";
 
 import { Header } from "src-components/headers";
 
 import { Layout } from "../common/Layout";
 import { Wrapper } from "../common/Wrapper";
+import { Footer } from "../common/Footer";
 import { rhythm } from "../common/typography";
 import { PrismTheme } from "../post/PrismTheme";
 import { PostTag } from "../post/PostTag";
@@ -75,7 +75,9 @@ const BlogPost = ({
         </PostContainer>
       </Wrapper>
 
-      <PostEditLink slug={slug} />
+      <Footer>
+        <PostEditLink slug={slug} />
+      </Footer>
 
       <PostDiscussion url={`${siteUrl}${pathPrefix}${slug}`} slug={slug} />
     </Layout>
@@ -116,29 +118,16 @@ export const PostTags = ({ tags }: { tags: string[] }) => (
   </div>
 );
 
-const PostEditLink = ({ slug }: { slug: string }) => {
-  const ds = useDesignSystem();
-
-  const ref = useRef(null);
-  const rect = useRect(ref);
-
-  return (
-    <div
-      ref={ref}
-      css={
-        rect.width < ds.grid.lg
-          ? { paddingLeft: 25, marginTop: rhythm(1) }
-          : { marginTop: rhythm(5 / 2) }
-      }>
-      <a
-        href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/posts${slug}/index.md`}
-        target="_blank"
-        rel="noopener noreferrer">
-        Edit this post
-      </a>
-    </div>
-  );
-};
+const PostEditLink = ({ slug }: { slug: string }) => (
+  <div>
+    <a
+      href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/posts${slug}/index.md`}
+      target="_blank"
+      rel="noopener noreferrer">
+      Edit this post
+    </a>
+  </div>
+);
 
 const PostDiscussion = ({ url, slug }: { url: string; slug: string }) => (
   <div

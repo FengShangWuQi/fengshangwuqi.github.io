@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { size } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { flex, margin } from "src-core/style";
+import { flex } from "src-core/style";
 
 export interface IPaginationProps {
   total: number;
@@ -26,7 +26,6 @@ export const Pagination = ({ total, offset, size }: IPaginationProps) => {
           alignItems: "center",
           justifyContent: "flex-end",
         }),
-        ...margin(18, 0),
       }}>
       {Array.from({ length: totalPage }, (_, i) => i + 1).map(num => {
         const onLeft: boolean = num <= MAX_ITEM + 1;

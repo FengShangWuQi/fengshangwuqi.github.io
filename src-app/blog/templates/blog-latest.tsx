@@ -6,6 +6,7 @@ import { Header } from "src-components/headers";
 import { Pagination } from "src-components/pagers";
 
 import { Layout } from "../common/Layout";
+import { Footer } from "../common/Footer";
 import { Latest } from "../latest";
 
 export const LatestQuery = graphql`
@@ -63,6 +64,9 @@ export default ({
     <Header />
 
     <Latest posts={posts} />
-    <Pagination total={total} size={size} offset={offset} />
+
+    <Footer>
+      <Pagination total={total} size={size} offset={offset} />
+    </Footer>
   </Layout>
 );
