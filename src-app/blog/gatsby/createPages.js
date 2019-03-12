@@ -49,23 +49,23 @@ module.exports = async ({ graphql, actions }) => {
   });
 
   // Create Latest(Index) Page
+  createPage({
+    path: "/",
+    component: latestTemplate,
+  });
+
+  // Create Archive Page
   const size = Number(process.env.PAGE_SIZE);
   const totalPage = Math.ceil(totalCount / size);
   Array.from({ length: totalPage }, (_, i) => i + 1).forEach(num => {
     createPage({
-      path: num === 1 ? "/" : `/${num}`,
-      component: latestTemplate,
+      path: num === 1 ? "/archive" : `/archive/${num}`,
+      component: archiveTemplate,
       context: {
         total: totalCount,
         size,
         offset: (num - 1) * size,
       },
     });
-  });
-
-  // Create Archive Page
-  createPage({
-    path: "/archive",
-    component: archiveTemplate,
   });
 };

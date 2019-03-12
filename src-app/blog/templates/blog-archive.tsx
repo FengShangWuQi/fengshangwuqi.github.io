@@ -1,54 +1,65 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { StaticQuery, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import { Header } from "src-components/headers";
+import { Pagination } from "src-components/pagers";
 
 import { Layout } from "../common/Layout";
+import { Footer } from "../common/Footer";
 import { Archive } from "../archive";
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      {
-        site {
-          siteMetadata {
-            title
+export const ArchiveQuery = graphql`
+  query($size: Int!, $offset: Int!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(
+      limit: $size
+      skip: $offset
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      totalCount
+      edges {
+        node {
+          fields {
+            slug
           }
-        }
-        allMarkdownRemark(
-          limit: 1000
-          sort: { fields: [frontmatter___date], order: DESC }
-        ) {
-          totalCount
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                tags
-                date(formatString: "YYYY-MM-DD")
-              }
-            }
+          frontmatter {
+            title
+            tags
+            date(formatString: "YYYY-MM-DD")
           }
         }
       }
-    `}
-    render={({
-      site: {
-        siteMetadata: { title },
-      },
-      allMarkdownRemark: { edges: posts, totalCount },
-    }) => (
-      <Layout>
-        <Helmet title={`归档 - ${title}`} />
+    }
+  }
+`;
 
-        <Header />
+export default ({
+  data: {
+    site: {
+      siteMetadata: { title },
+    },
+    allMarkdownRemark: { edges: posts, totalCount },
+  },
+  pageContext: { total, size, offset },
+}: any) => (
+  <Layout>
+    <Helmet title={`归档 - ${title}`} />
+    <Header />
 
-        <Archive posts={posts} totalCount={totalCount} />
-      </Layout>
-    )}
-  />
+    <Archive posts={posts} totalCount={totalCount} />
+
+    <Footer>
+      <Pagination
+        total={total}
+        size={size}
+        offset={offset}
+        pathPrefix="archive"
+      />
+    </Footer>
+  </Layout>
 );

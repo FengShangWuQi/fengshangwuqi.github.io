@@ -3,22 +3,20 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 
 import { Header } from "src-components/headers";
-import { Pagination } from "src-components/pagers";
 
 import { Layout } from "../common/Layout";
-import { Footer } from "../common/Footer";
+
 import { Latest } from "../latest";
 
 export const LatestQuery = graphql`
-  query($size: Int!, $offset: Int!) {
+  {
     site {
       siteMetadata {
         title
       }
     }
     allMarkdownRemark(
-      limit: $size
-      skip: $offset
+      limit: 6
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -57,16 +55,11 @@ export default ({
     },
     allMarkdownRemark: { edges: posts },
   },
-  pageContext: { total, size, offset },
 }: any) => (
   <Layout>
     <Helmet title={title} />
     <Header />
 
     <Latest posts={posts} />
-
-    <Footer>
-      <Pagination total={total} size={size} offset={offset} />
-    </Footer>
   </Layout>
 );

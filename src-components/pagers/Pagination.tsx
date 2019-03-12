@@ -6,12 +6,18 @@ import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 
 export interface IPaginationProps {
+  pathPrefix?: string;
   total: number;
   size: number;
   offset: number;
 }
 
-export const Pagination = ({ total, offset, size }: IPaginationProps) => {
+export const Pagination = ({
+  total,
+  offset,
+  size,
+  pathPrefix,
+}: IPaginationProps) => {
   const ds = useDesignSystem();
 
   const totalPage = Math.ceil(total / size);
@@ -35,7 +41,10 @@ export const Pagination = ({ total, offset, size }: IPaginationProps) => {
 
         if (onLeft || onMiddle || onRight) {
           return (
-            <PaginationItem key={num} isActive={num === currPage}>
+            <PaginationItem
+              key={num}
+              isActive={num === currPage}
+              pathPrefix={pathPrefix}>
               {num}
             </PaginationItem>
           );
@@ -63,16 +72,24 @@ export const Pagination = ({ total, offset, size }: IPaginationProps) => {
 
 const PaginationItem = ({
   children,
+  pathPrefix = "",
   isActive,
 }: {
+  pathPrefix?: string;
   children: number;
   isActive?: boolean;
 }) => {
   const ds = useDesignSystem();
+  const path =
+    children === 1
+      ? `/${pathPrefix}`
+      : pathPrefix
+      ? `/${pathPrefix}/${children}`
+      : `/${children}`;
 
   return (
     <Link
-      to={children === 1 ? "/" : `/${children}`}
+      to={path}
       css={[
         {
           ...size(24),
