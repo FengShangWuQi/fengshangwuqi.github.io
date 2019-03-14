@@ -1,20 +1,31 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 
 import { Header } from "src-components/headers";
 import { Pagination } from "src-components/pagers";
+import { SEO } from "src-components/seo";
 
 import { Layout } from "../common/Layout";
 import { Footer } from "../common/Footer";
 import { Archive } from "../archive";
 
-export const ArchiveQuery = graphql`
+export const archiveQuery = graphql`
   query($size: Int!, $offset: Int!) {
     site {
       siteMetadata {
         title
+        description
+        siteUrl
+        author
+        social {
+          Twitter
+          GitHub
+        }
+        contact {
+          Email
+        }
       }
+      pathPrefix
     }
     allMarkdownRemark(
       limit: $size
@@ -41,15 +52,25 @@ export const ArchiveQuery = graphql`
 export default ({
   data: {
     site: {
-      siteMetadata: { title },
+      siteMetadata: { title, description, siteUrl, author, social, contact },
+      pathPrefix,
     },
     allMarkdownRemark: { edges: posts, totalCount },
   },
   pageContext: { total, size, offset },
 }: any) => (
   <Layout>
-    <Helmet title={`归档 - ${title}`} />
-    <Header />
+    <SEO
+      title={`归档 - ${title}`}
+      description={`归档 - ${description}`}
+      keywords={["归档", title, author]}
+      url={`${siteUrl}${pathPrefix}/archive`}
+      imageSrc={require("static/cover.png")}
+      author={author}
+      twitterCreator={social["Twitter"]}
+    />
+
+    <Header social={social} contact={contact} />
 
     <Archive posts={posts} totalCount={totalCount} />
 

@@ -1,5 +1,4 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { CSSObject } from "@emotion/core";
@@ -7,6 +6,8 @@ import { CSSObject } from "@emotion/core";
 import { useDesignSystem } from "src-core/ds";
 import { Discussion } from "src-core/disqus";
 import { margin, padding, ellipsis } from "src-core/style";
+
+import { SEO } from "src-components/seo";
 
 import { Layout } from "../common/Layout";
 import { Wrapper } from "../common/Wrapper";
@@ -23,11 +24,18 @@ export const postQuery = graphql`
       siteMetadata {
         title
         siteUrl
+        author
+        social {
+          Twitter
+          GitHub
+        }
+        repository
       }
       pathPrefix
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt(pruneLength: 200)
       fields {
         slug
       }
@@ -58,12 +66,13 @@ export const postQuery = graphql`
 const BlogPost = ({
   data: {
     site: {
-      siteMetadata: { title: metaTitle, siteUrl },
+      siteMetadata: { title: metaTitle, siteUrl, author, social, repository },
       pathPrefix,
     },
     markdownRemark: {
       html,
       fields: { slug },
+      excerpt,
       frontmatter: {
         title: postTitle,
         date,
@@ -77,7 +86,17 @@ const BlogPost = ({
 }: any) => {
   return (
     <Layout>
-      <Helmet title={`${postTitle} - ${metaTitle}`} />
+      <SEO
+        title={`${postTitle} - ${metaTitle}`}
+        description={excerpt}
+        keywords={[postTitle, metaTitle, author, ...tags]}
+        url={`${siteUrl}${pathPrefix}${slug}`}
+        imageSrc={fluid.src}
+        author={author}
+        datePublished={date}
+        twitterCreator={social["Twitter"]}
+        isBlogPost
+      />
       <PrismTheme />
 
       <PostHeader>
@@ -106,7 +125,11 @@ const BlogPost = ({
       </Wrapper>
 
       <Footer>
-        <PostEditLink slug={slug} />
+        <PostEditLink
+          username={social["GitHub"]}
+          slug={slug}
+          repository={repository}
+        />
       </Footer>
 
       <PostDiscussion url={`${siteUrl}${pathPrefix}${slug}`} slug={slug} />
@@ -148,10 +171,18 @@ export const PostTags = ({ tags }: { tags: string[] }) => (
   </div>
 );
 
-const PostEditLink = ({ slug }: { slug: string }) => (
+const PostEditLink = ({
+  slug,
+  username,
+  repository,
+}: {
+  slug: string;
+  username: string;
+  repository: string;
+}) => (
   <div>
     <a
-      href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/posts${slug}/index.md`}
+      href={`https://github.com/${username}/${repository}/blob/dev/posts${slug}/index.md`}
       target="_blank"
       rel="noopener noreferrer">
       Edit this post

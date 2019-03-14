@@ -7,7 +7,15 @@ import { size, position, flex } from "src-core/style";
 
 import { Stars } from "src-components/canvas";
 
-export const Header = () => {
+import { IDictionary } from "utils/object";
+
+export const Header = ({
+  social,
+  contact,
+}: {
+  social: IDictionary<string>;
+  contact: IDictionary<string>;
+}) => {
   const ds = useDesignSystem();
 
   return (
@@ -18,7 +26,7 @@ export const Header = () => {
           <Container>
             <div>
               <Title />
-              <Contact />
+              <Contact Email={contact["Email"]} />
               <div
                 css={{
                   paddingTop: 16,
@@ -26,12 +34,12 @@ export const Header = () => {
                   fontSize: ds.size.s,
                 }}>
                 <SocialLink
-                  src="https://github.com/FengShangWuQi"
+                  src={`https://github.com/${social["GitHub"]}`}
                   color="#e0a458">
                   GitHub
                 </SocialLink>
                 <SocialLink
-                  src="https://twitter.com/fengshangwuqi"
+                  src={`https://twitter.com/${social["Twitter"].slice(1)}`}
                   color="#419d78">
                   Twitter
                 </SocialLink>
@@ -113,7 +121,7 @@ const Title = () => {
   );
 };
 
-const Contact = () => {
+const Contact = ({ Email }: { Email: string }) => {
   const ds = useDesignSystem();
 
   return (
@@ -127,7 +135,7 @@ const Contact = () => {
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale",
       }}>
-      fengshangwuqi@gmail.com
+      {Email}
     </div>
   );
 };

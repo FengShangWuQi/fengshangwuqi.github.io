@@ -7,10 +7,18 @@ require("dotenv").config({
 
 exports.siteMetadata = {
   siteMetadata: {
+    author: "枫上雾棋",
     title: process.env.META_TITLE,
-    author: process.env.META_AUTHOR,
     description: process.env.META_DECS,
     siteUrl: process.env.SITE_URL,
+    social: {
+      Twitter: "@fengshangwuqi",
+      GitHub: "FengShangWuQi",
+    },
+    contact: {
+      Email: "fengshangwuqi@gmail.com",
+    },
+    repository: "fengshangwuqi.github.io",
   },
 };
 

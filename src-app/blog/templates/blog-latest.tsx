@@ -1,19 +1,30 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 
 import { Header } from "src-components/headers";
+import { SEO } from "src-components/seo";
 
 import { Layout } from "../common/Layout";
 
 import { Latest } from "../latest";
 
-export const LatestQuery = graphql`
+export const latestQuery = graphql`
   {
     site {
       siteMetadata {
         title
+        author
+        siteUrl
+        description
+        social {
+          Twitter
+          GitHub
+        }
+        contact {
+          Email
+        }
       }
+      pathPrefix
     }
     allMarkdownRemark(
       limit: 6
@@ -51,14 +62,24 @@ export const LatestQuery = graphql`
 export default ({
   data: {
     site: {
-      siteMetadata: { title },
+      siteMetadata: { title, description, siteUrl, author, social, contact },
+      pathPrefix,
     },
     allMarkdownRemark: { edges: posts },
   },
 }: any) => (
   <Layout>
-    <Helmet title={title} />
-    <Header />
+    <SEO
+      title={title}
+      description={description}
+      keywords={[title, author]}
+      url={`${siteUrl}${pathPrefix}`}
+      imageSrc={require("static/cover.png")}
+      author={author}
+      twitterCreator={social["Twitter"]}
+    />
+
+    <Header social={social} contact={contact} />
 
     <Latest posts={posts} />
   </Layout>
