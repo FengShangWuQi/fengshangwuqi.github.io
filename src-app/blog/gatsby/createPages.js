@@ -55,7 +55,7 @@ module.exports = async ({ graphql, actions }) => {
   });
 
   // Create Archive Page
-  const size = Number(process.env.PAGE_SIZE);
+  const size = Number(process.env.ARCHIVE_SIZE);
   const totalPage = Math.ceil(totalCount / size);
   Array.from({ length: totalPage }, (_, i) => i + 1).forEach(num => {
     createPage({
