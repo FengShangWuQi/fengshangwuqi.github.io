@@ -61,11 +61,11 @@ export default ({
 }: any) => (
   <Layout>
     <SEO
-      title={`归档 - ${title}`}
+      title={title}
       description={`归档 - ${description}`}
       keywords={["归档", title, author]}
       url={`${siteUrl}${pathPrefix}/archive`}
-      imageSrc={require("static/cover.png")}
+      imageSrc={`${siteUrl}${pathPrefix}${require("static/cover.png")}`}
       author={author}
       twitterCreator={social["Twitter"]}
     />

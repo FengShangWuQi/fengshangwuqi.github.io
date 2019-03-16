@@ -3,11 +3,13 @@ import Helmet from "react-helmet";
 
 export const OpenGraph = ({
   title,
+  description,
   url,
   imageSrc,
   isBlogPost,
 }: {
   title: string;
+  description: string;
   url: string;
   imageSrc: string;
   isBlogPost?: boolean;
@@ -18,6 +20,10 @@ export const OpenGraph = ({
         {
           name: "og:title",
           content: title,
+        },
+        {
+          name: "og:description",
+          content: description,
         },
         {
           name: "og:type",

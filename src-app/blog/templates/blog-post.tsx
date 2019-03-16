@@ -87,11 +87,11 @@ const BlogPost = ({
   return (
     <Layout>
       <SEO
-        title={`${postTitle} - ${metaTitle}`}
+        title={postTitle}
         description={excerpt}
         keywords={[postTitle, metaTitle, author, ...tags]}
         url={`${siteUrl}${pathPrefix}${slug}`}
-        imageSrc={fluid.src}
+        imageSrc={`${siteUrl}${pathPrefix}${fluid.src}`}
         author={author}
         datePublished={date}
         twitterCreator={social["Twitter"]}

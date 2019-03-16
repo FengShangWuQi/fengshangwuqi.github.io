@@ -56,6 +56,7 @@ export const SEO = ({
       />
       <OpenGraph
         title={title}
+        description={description}
         url={url}
         imageSrc={imageSrc}
         isBlogPost={isBlogPost}
