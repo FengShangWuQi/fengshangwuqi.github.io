@@ -3,34 +3,34 @@ import Helmet from "react-helmet";
 
 import { OpenGraph } from "./OpenGraph";
 import { TwitterCard } from "./TwitterCard";
-import { SchemaOrg } from "./SchemaOrg";
+import { SchemaOrg, ISchemaOrgProps } from "./SchemaOrg";
 
-export const SEO = ({
-  title,
-  description,
-  keywords,
-  url,
-  imageSrc,
-  author,
-  isBlogPost,
-  datePublished,
-  twitterCreator,
-}: {
+export interface IBaseSEO {
   title: string;
   description: string;
-  keywords: string[];
-  url: string;
   imageSrc: string;
-  author: string;
-  twitterCreator: string;
-  isBlogPost?: boolean;
-  datePublished?: string;
-}) => {
+}
+
+export interface ISEOProps extends ISchemaOrgProps {
+  keywords: string[];
+}
+
+export const SEO = ({
+  keywords,
+  twitter,
+  isBlogPost,
+  url,
+  author,
+  datePublished,
+  github,
+  siteUrl,
+  ...baseProps
+}: ISEOProps) => {
   return (
     <>
       <Helmet
         htmlAttributes={{ lang: "zh-CN" }}
-        title={title}
+        title={baseProps.title}
         link={[
           {
             rel: "canonical",
@@ -43,7 +43,7 @@ export const SEO = ({
           },
           {
             name: "description",
-            content: description,
+            content: baseProps.description,
           },
         ].concat(
           keywords.length > 0
@@ -54,27 +54,17 @@ export const SEO = ({
             : [],
         )}
       />
-      <OpenGraph
-        title={title}
-        description={description}
-        url={url}
-        imageSrc={imageSrc}
-        isBlogPost={isBlogPost}
-      />
-      <TwitterCard
-        title={title}
-        description={description}
-        imageSrc={imageSrc}
-        creator={twitterCreator}
-      />
+      <OpenGraph {...baseProps} url={url} isBlogPost={isBlogPost} />
+      <TwitterCard {...baseProps} twitter={twitter} />
       <SchemaOrg
-        title={title}
+        {...baseProps}
         url={url}
-        imageSrc={imageSrc}
-        description={description}
         author={author}
-        isBlogPost={isBlogPost}
         datePublished={datePublished}
+        github={github}
+        twitter={twitter}
+        siteUrl={siteUrl}
+        isBlogPost={isBlogPost}
       />
     </>
   );

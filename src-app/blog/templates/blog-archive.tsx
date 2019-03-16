@@ -63,11 +63,13 @@ export default ({
     <SEO
       title={title}
       description={`归档 - ${description}`}
+      imageSrc={`${siteUrl}${pathPrefix}${require("static/cover.png")}`}
       keywords={["归档", title, author]}
       url={`${siteUrl}${pathPrefix}/archive`}
-      imageSrc={`${siteUrl}${pathPrefix}${require("static/cover.png")}`}
       author={author}
-      twitterCreator={social["Twitter"]}
+      twitter={social["Twitter"]}
+      github={social["GitHub"]}
+      siteUrl={siteUrl}
     />
 
     <Header social={social} contact={contact} />

@@ -72,11 +72,13 @@ export default ({
     <SEO
       title={title}
       description={description}
+      imageSrc={`${siteUrl}${pathPrefix}${require("static/cover.png")}`}
       keywords={[title, author]}
       url={`${siteUrl}${pathPrefix}`}
-      imageSrc={`${siteUrl}${pathPrefix}${require("static/cover.png")}`}
       author={author}
-      twitterCreator={social["Twitter"]}
+      twitter={social["Twitter"]}
+      github={social["GitHub"]}
+      siteUrl={siteUrl}
     />
 
     <Header social={social} contact={contact} />

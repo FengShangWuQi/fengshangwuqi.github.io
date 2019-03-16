@@ -1,17 +1,18 @@
 import React from "react";
 import Helmet from "react-helmet";
 
+import { IBaseSEO } from "./SEO";
+
+export interface ITwitterCardProps extends IBaseSEO {
+  twitter: string;
+}
+
 export const TwitterCard = ({
   title,
   description,
   imageSrc,
-  creator,
-}: {
-  title: string;
-  description: string;
-  imageSrc: string;
-  creator: string;
-}) => {
+  twitter,
+}: ITwitterCardProps) => {
   return (
     <Helmet
       meta={[
@@ -33,7 +34,7 @@ export const TwitterCard = ({
         },
         {
           name: "twitter:creator",
-          content: creator,
+          content: twitter,
         },
       ]}
     />

@@ -89,12 +89,14 @@ const BlogPost = ({
       <SEO
         title={postTitle}
         description={excerpt}
+        imageSrc={`${siteUrl}${pathPrefix}${fluid.src}`}
         keywords={[postTitle, metaTitle, author, ...tags]}
         url={`${siteUrl}${pathPrefix}${slug}`}
-        imageSrc={`${siteUrl}${pathPrefix}${fluid.src}`}
         author={author}
+        twitter={social["Twitter"]}
+        github={social["GitHub"]}
+        siteUrl={siteUrl}
         datePublished={date}
-        twitterCreator={social["Twitter"]}
         isBlogPost
       />
       <PrismTheme />

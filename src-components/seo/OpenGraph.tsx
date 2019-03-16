@@ -1,19 +1,20 @@
 import React from "react";
 import Helmet from "react-helmet";
 
+import { IBaseSEO } from "./SEO";
+
+export interface IOpenGraphProps extends IBaseSEO {
+  url: string;
+  isBlogPost?: boolean;
+}
+
 export const OpenGraph = ({
   title,
   description,
   url,
   imageSrc,
   isBlogPost,
-}: {
-  title: string;
-  description: string;
-  url: string;
-  imageSrc: string;
-  isBlogPost?: boolean;
-}) => {
+}: IOpenGraphProps) => {
   return (
     <Helmet
       meta={[
