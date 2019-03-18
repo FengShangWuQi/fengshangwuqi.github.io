@@ -3,10 +3,9 @@ import { Link } from "gatsby";
 import { rgba } from "polished";
 
 import { useHover, useRect } from "src-core/react";
-import { flex, position, padding, ellipsis } from "src-core/style";
+import { rhythm, flex, position, padding, ellipsis } from "src-core/style";
 import { useDesignSystem } from "src-core/ds";
 
-import { rhythm } from "../common/typography";
 import { PostTag } from "../post/PostTag";
 
 export interface IArchiveList {

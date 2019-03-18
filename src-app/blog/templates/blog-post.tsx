@@ -5,14 +5,13 @@ import { CSSObject } from "@emotion/core";
 
 import { useDesignSystem } from "src-core/ds";
 import { Discussion } from "src-core/disqus";
-import { margin, padding, ellipsis } from "src-core/style";
+import { rhythm, margin, padding, ellipsis } from "src-core/style";
 
 import { SEO } from "src-components/seo";
 
 import { Layout } from "../common/Layout";
 import { Wrapper } from "../common/Wrapper";
 import { Footer } from "../common/Footer";
-import { rhythm } from "../common/typography";
 import { PostHeader } from "../post/PostHeader";
 import { PrismTheme } from "../post/PrismTheme";
 import { PostTag } from "../post/PostTag";

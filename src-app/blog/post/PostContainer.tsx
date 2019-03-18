@@ -2,9 +2,7 @@ import React from "react";
 import { rgba } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { flex, border, margin, padding } from "src-core/style";
-
-import { rhythm } from "../common/typography";
+import { rhythm, flex, border, margin, padding } from "src-core/style";
 
 export const PostContainer = ({ children }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();

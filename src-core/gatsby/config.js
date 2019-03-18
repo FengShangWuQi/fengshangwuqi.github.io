@@ -39,7 +39,7 @@ exports.sources = (process.env.SOURCES || "pages").split(" ").map(source => ({
 exports.typography = {
   resolve: "gatsby-plugin-typography",
   options: {
-    pathToConfigModule: `src-app/${process.env.APP}/common/typography`,
+    pathToConfigModule: "src-core/style/typography",
   },
 };
 

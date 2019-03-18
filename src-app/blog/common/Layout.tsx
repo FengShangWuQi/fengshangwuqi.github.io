@@ -8,11 +8,10 @@ import {
   defaultTheme,
   useDesignSystem,
 } from "src-core/ds";
-import { border, position, margin } from "src-core/style";
+import { rhythm, border, position, margin } from "src-core/style";
 
 import { Nav } from "./Nav";
 import { Loadingbar } from "./LoadingBar";
-import { rhythm } from "./typography";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   const blogTheme = {

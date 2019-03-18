@@ -2,9 +2,7 @@ import React, { useRef } from "react";
 
 import { useDesignSystem } from "src-core/ds";
 import { useRect } from "src-core/react";
-import { padding } from "src-core/style";
-
-import { rhythm } from "./typography";
+import { rhythm, padding } from "src-core/style";
 
 export const Footer = ({ children }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();

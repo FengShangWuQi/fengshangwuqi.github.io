@@ -1,9 +1,7 @@
 import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
-import { margin, border } from "src-core/style";
-
-import { rhythm } from "../common/typography";
+import { rhythm, margin, border } from "src-core/style";
 
 export const Title = ({
   children,
