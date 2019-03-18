@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 
 import { OpenGraph } from "./OpenGraph";
-import { TwitterCard } from "./TwitterCard";
+import { TwitterCard, ITwitterCardProps } from "./TwitterCard";
 import { SchemaOrg, ISchemaOrgProps } from "./SchemaOrg";
 
 export interface IBaseSEO {
@@ -11,7 +11,7 @@ export interface IBaseSEO {
   imageSrc: string;
 }
 
-export interface ISEOProps extends ISchemaOrgProps {
+export interface ISEOProps extends ISchemaOrgProps, ITwitterCardProps {
   keywords: string[];
 }
 
@@ -22,8 +22,6 @@ export const SEO = ({
   url,
   author,
   datePublished,
-  github,
-  siteUrl,
   ...baseProps
 }: ISEOProps) => {
   return (
@@ -61,9 +59,6 @@ export const SEO = ({
         url={url}
         author={author}
         datePublished={datePublished}
-        github={github}
-        twitter={twitter}
-        siteUrl={siteUrl}
         isBlogPost={isBlogPost}
       />
     </>

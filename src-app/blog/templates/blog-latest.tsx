@@ -77,8 +77,6 @@ export default ({
       url={`${siteUrl}${pathPrefix}`}
       author={author}
       twitter={social["Twitter"]}
-      github={social["GitHub"]}
-      siteUrl={siteUrl}
     />
 
     <Header social={social} contact={contact} />

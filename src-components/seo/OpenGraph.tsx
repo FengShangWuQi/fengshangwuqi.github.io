@@ -11,8 +11,8 @@ export interface IOpenGraphProps extends IBaseSEO {
 export const OpenGraph = ({
   title,
   description,
-  url,
   imageSrc,
+  url,
   isBlogPost,
 }: IOpenGraphProps) => {
   return (

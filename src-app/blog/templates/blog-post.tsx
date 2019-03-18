@@ -94,8 +94,6 @@ const BlogPost = ({
         url={`${siteUrl}${pathPrefix}${slug}`}
         author={author}
         twitter={social["Twitter"]}
-        github={social["GitHub"]}
-        siteUrl={siteUrl}
         datePublished={date}
         isBlogPost
       />

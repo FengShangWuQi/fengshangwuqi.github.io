@@ -2,13 +2,10 @@ import React from "react";
 import Helmet from "react-helmet";
 
 import { IOpenGraphProps } from "./OpenGraph";
-import { ITwitterCardProps } from "./TwitterCard";
 
-export interface ISchemaOrgProps extends IOpenGraphProps, ITwitterCardProps {
+export interface ISchemaOrgProps extends IOpenGraphProps {
   author: string;
   datePublished?: string;
-  github: string;
-  siteUrl: string;
 }
 
 export const SchemaOrg = ({
@@ -19,9 +16,6 @@ export const SchemaOrg = ({
   url,
   author,
   datePublished,
-  twitter,
-  github,
-  siteUrl,
 }: ISchemaOrgProps) => {
   const baseSchema = [
     {
@@ -29,47 +23,6 @@ export const SchemaOrg = ({
       "@type": "WebSite",
       url,
       name: title,
-    },
-  ];
-  const listSchema = [
-    ...baseSchema,
-    {
-      "@context": "http://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          item: {
-            "@id": siteUrl,
-            name: "blog",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          item: {
-            "@id": `${siteUrl}/archive`,
-            name: "archive",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          item: {
-            "@id": `https://github.com/${github}`,
-            name: "GitHub",
-          },
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
-          item: {
-            "@id": `https://twitter.com/${twitter.slice(1)}`,
-            name: "Twitter",
-          },
-        },
-      ],
     },
   ];
   const postSchema = [
@@ -93,7 +46,7 @@ export const SchemaOrg = ({
       datePublished,
     },
   ];
-  const schema = isBlogPost ? postSchema : listSchema;
+  const schema = isBlogPost ? postSchema : baseSchema;
 
   return (
     <Helmet
