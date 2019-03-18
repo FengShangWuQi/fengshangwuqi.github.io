@@ -1,5 +1,5 @@
 const { join } = require("path");
-const gatsbyPath = join(__dirname, "../../src-core/gatsby");
+const gatsbyPath = join(__dirname, "../../../src-core/gatsby");
 
 const {
   siteMetadata,

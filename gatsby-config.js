@@ -1,7 +1,7 @@
 const { join } = require("path");
-const configFile = join(__dirname, "src-app", process.env.APP, "config.ts");
+const gatsbyPath = join(__dirname, "src-app", process.env.APP, "gatsby");
 
-const configs = require(configFile);
+const configs = require(`${gatsbyPath}/config`);
 
 module.exports = {
   ...configs,
