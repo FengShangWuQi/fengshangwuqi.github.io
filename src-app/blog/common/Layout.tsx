@@ -36,7 +36,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export const Container = ({ children }: { children: React.ReactNode }) => {
+const Container = ({ children }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();
 
   const ref = useRef(null);
