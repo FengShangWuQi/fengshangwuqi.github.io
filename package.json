@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "clean": "rimraf public dist/${APP} .cache",
-    "test": "tsc --noEmit && npm run lint",
+    "test": "tsc --noEmit",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "lint": "eslint --fix '**/*.js'",
     "start": "ts-node ./tools/index.ts",
@@ -83,6 +83,7 @@
     "@emotion/babel-preset-css-prop": "10.0.9",
     "@types/cross-spawn": "6.0.0",
     "@types/inquirer": "0.0.44",
+    "@types/invariant": "2.2.29",
     "@types/node": "11.11.3",
     "babel-eslint": "10.0.1",
     "babel-loader": "8.0.5",

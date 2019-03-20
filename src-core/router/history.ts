@@ -1,18 +1,18 @@
 import { IDictionary } from "utils/object";
 import { canUseDOM } from "utils/dom";
 
-import { ILocation, ILocationContext } from "./Location";
+import { getLocation, ILocation } from "./Location";
 
-const getLocation = (source: Window): ILocation => ({
-  ...source.location,
-  state: source.history.state || `${Date.now()}-init`,
-});
+export interface IHistory {
+  location: ILocation;
+  navigateTo: (to: string, state: IDictionary<string>) => void;
+}
 
-export const createHistory = (source: Window): ILocationContext => {
+export const createHistory = (source: Window): IHistory => {
   let location = getLocation(source);
 
   const navigateTo = (to: string, state: IDictionary<string>) => {
-    source.history.pushState(state, "", to);
+    source.history.pushState({ ...state, key: `${Date.now()}` }, "", to);
     location = getLocation(source);
   };
 
@@ -22,8 +22,8 @@ export const createHistory = (source: Window): ILocationContext => {
   };
 };
 
-const getSource = () => canUseDOM && window;
-
+const getSource = () => (canUseDOM ? window : {});
 const source = getSource();
 
 export const globalHistory = createHistory(source as Window);
+export const { navigateTo } = globalHistory;
