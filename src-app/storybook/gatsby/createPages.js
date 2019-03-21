@@ -7,7 +7,7 @@ module.exports = async ({ actions }) => {
 
   // Create Index Page
   createPage({
-    path: "/",
+    path: "*",
     component: indexTemplate,
   });
 };
