@@ -5,7 +5,7 @@ import { padding } from "src-core/style";
 
 import { IDictionary } from "utils/object";
 
-export const Nav = ({ modules }: { modules: IDictionary<string[]> }) => {
+export const SideBar = ({ modules }: { modules: IDictionary<string[]> }) => {
   return (
     <Container>
       {Object.keys(modules).map(moduleName => (
