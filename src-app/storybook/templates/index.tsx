@@ -1,16 +1,17 @@
 import React from "react";
 
+import { Router, Route, IBaseRoute } from "src-core/router";
+
 import { flex, position, size, margin } from "src-core/style";
 
 import { IDictionary } from "utils/object";
 
 import { Layout } from "../common/Layout";
-import { Nav } from "../common/Nav";
-import { Storybook } from "../common/Storybook";
+import { SideBar } from "../common/SideBar";
 import { Header } from "../common/Header";
 
 export default () => {
-  const groupModuleList: IDictionary<
+  const groupModuleCompList: IDictionary<
     IDictionary<IDictionary<React.FunctionComponent>>
   > = Object.keys(groups).reduce((prevGroups, groupName) => {
     const currGroup = groups[groupName as keyof typeof groups].keys();
@@ -36,23 +37,38 @@ export default () => {
     return { ...prevGroups, [groupName]: modules };
   }, {});
 
-  const currGroup = groupModuleList.components;
-  const modules = Object.keys(currGroup).reduce(
-    (prevModules, moduleName) => ({
+  const currGroup = "components";
+  const currModules: IDictionary<string[]> = Object.keys(
+    groupModuleCompList[currGroup],
+  ).reduce(
+    (prevModules, currModule) => ({
       ...prevModules,
-      [moduleName]: Object.keys(currGroup[moduleName]),
+      [currModule]: Object.keys(groupModuleCompList[currGroup][currModule]),
     }),
     {},
   );
-  const Comp = groupModuleList.components["menus"]["BaseMenu"];
 
   return (
     <Layout>
       <Header />
 
       <Container>
-        <Nav modules={modules} />
-        <Storybook Comp={Comp} />
+        <SideBar modules={currModules} />
+
+        <Router pathPrefix={currGroup}>
+          {Object.keys(currModules).map(currModule =>
+            currModules[currModule as keyof typeof currModules].map(
+              currComp => (
+                <Route
+                  component={
+                    groupModuleCompList[currGroup][currModule][currComp]
+                  }
+                  path={`${currModule}/${currComp}`}
+                />
+              ),
+            ),
+          )}
+        </Router>
       </Container>
     </Layout>
   );
@@ -72,7 +88,9 @@ const groups = {
   utils: (require as any).context("utils", true, /\/__storybook__\/(.+)\.tsx$/),
 };
 
-const Container = ({ children }: { children: React.ReactNode }) => {
+const Container = ({
+  children,
+}: { children: React.ReactNode } & IBaseRoute) => {
   return (
     <div
       css={[
