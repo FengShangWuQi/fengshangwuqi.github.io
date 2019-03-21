@@ -1,9 +1,9 @@
-import React from "react";
+import React, { createContext, useContext } from "react";
 import invariant from "invariant";
 
 import { IDictionary } from "utils/object";
 
-import { Location, useLocation } from "./Location";
+import { useLocation } from "./Location";
 import { Redirect, validateRedirect } from "./Redirect";
 import { IRoute } from "./Route";
 import {
@@ -15,13 +15,8 @@ import {
   dynamicRe,
 } from ".";
 
-export interface IRouter {
-  pathPrefix?: string;
-  children: React.ReactNode;
-}
-
-export interface IRouterCore {
-  children: React.ReactNode;
+export interface IRouterContext {
+  pathPrefix: string;
 }
 
 // static > dynamic > root > splat
@@ -33,17 +28,16 @@ const SPLAT_PENALTY = -5;
 
 const RESERVED_NAME = ["uri", "path"];
 
-export const Router = ({ pathPrefix, children }: IRouter) => {
-  return (
-    <Location pathPrefix={pathPrefix}>
-      <RouterCore>{children}</RouterCore>
-    </Location>
-  );
-};
+export const RouterContext = createContext({} as IRouterContext);
+export const RouterProvider = RouterContext.Provider;
 
-const RouterCore = ({ children }: IRouterCore) => {
-  const { location, pathPrefix } = useLocation();
-  const { pathname } = location;
+export const useRouter = () => useContext(RouterContext);
+
+export const Router = ({ children }: { children: React.ReactNode }) => {
+  const { pathPrefix } = useRouter();
+  const {
+    location: { pathname },
+  } = useLocation();
 
   const routes = React.Children.map(
     children as React.ReactElement,
@@ -65,7 +59,9 @@ const RouterCore = ({ children }: IRouterCore) => {
         ...params,
       },
       element.props.children ? (
-        <Router pathPrefix={newPathprefix}>{element.props.children}</Router>
+        <RouterProvider value={{ pathPrefix: newPathprefix }}>
+          <Router>{element.props.children}</Router>
+        </RouterProvider>
       ) : (
         undefined
       ),

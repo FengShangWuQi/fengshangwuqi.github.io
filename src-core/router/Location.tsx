@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 import { IDictionary } from "utils/object";
 
@@ -10,12 +10,12 @@ export interface ILocation extends Location {
 
 export interface ILocationProps {
   history?: IHistory;
-  pathPrefix?: string;
   children: React.ReactNode;
 }
 
-export interface ILocationContext extends IHistory {
-  pathPrefix: string;
+export interface ILocationContext {
+  location: ILocation;
+  navigateTo: (to: string, state?: IDictionary<string>) => void;
 }
 
 export const LocationContext = createContext({} as ILocationContext);
@@ -25,14 +25,22 @@ export const useLocation = () => useContext(LocationContext);
 
 export const Location = ({
   history = globalHistory,
-  pathPrefix = "/",
   children,
 }: ILocationProps) => {
+  const { navigateTo } = history;
+  const [location, setLocation] = useState(history.location);
+
+  useEffect(() => {
+    const unsubscribe = history.subscribe(setLocation);
+
+    return unsubscribe;
+  }, []);
+
   return (
     <LocationProvider
       value={{
-        ...history,
-        pathPrefix,
+        location,
+        navigateTo,
       }}>
       {children}
     </LocationProvider>

@@ -1,11 +1,15 @@
 import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
+import { Link } from "src-core/router";
+
 import { padding } from "src-core/style";
 
 import { IDictionary } from "utils/object";
 
 export const SideBar = ({ modules }: { modules: IDictionary<string[]> }) => {
+  const ds = useDesignSystem();
+
   return (
     <Container>
       {Object.keys(modules).map(moduleName => (
@@ -13,7 +17,14 @@ export const SideBar = ({ modules }: { modules: IDictionary<string[]> }) => {
           <div>{moduleName}</div>
           <div>
             {modules[moduleName].map(compName => (
-              <div key={compName}>{compName}</div>
+              <Link
+                css={{
+                  color: ds.color.bg,
+                }}
+                key={compName}
+                to={`${moduleName}/${compName}`}>
+                {compName}
+              </Link>
             ))}
           </div>
         </div>

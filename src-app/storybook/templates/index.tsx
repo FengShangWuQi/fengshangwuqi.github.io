@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Router, Route, IBaseRoute } from "src-core/router";
+import {
+  RouterProvider,
+  Location,
+  Router,
+  Route,
+  IBaseRoute,
+} from "src-core/router";
 
 import { flex, position, size, margin } from "src-core/style";
 
@@ -49,28 +55,34 @@ export default () => {
   );
 
   return (
-    <Layout>
-      <Header />
+    <RouterProvider value={{ pathPrefix: "/" }}>
+      <Location>
+        <Layout>
+          <Header />
 
-      <Container>
-        <SideBar modules={currModules} />
+          <Container>
+            <RouterProvider value={{ pathPrefix: currGroup }}>
+              <SideBar modules={currModules} />
+            </RouterProvider>
 
-        <Router pathPrefix={currGroup}>
-          {Object.keys(currModules).map(currModule =>
-            currModules[currModule as keyof typeof currModules].map(
-              currComp => (
-                <Route
-                  component={
-                    groupModuleCompList[currGroup][currModule][currComp]
-                  }
-                  path={`${currModule}/${currComp}`}
-                />
-              ),
-            ),
-          )}
-        </Router>
-      </Container>
-    </Layout>
+            <Router>
+              {Object.keys(currModules).map(currModule =>
+                currModules[currModule as keyof typeof currModules].map(
+                  currComp => (
+                    <Route
+                      component={
+                        groupModuleCompList[currGroup][currModule][currComp]
+                      }
+                      path={`${currGroup}/${currModule}/${currComp}`}
+                    />
+                  ),
+                ),
+              )}
+            </Router>
+          </Container>
+        </Layout>
+      </Location>
+    </RouterProvider>
   );
 };
 
