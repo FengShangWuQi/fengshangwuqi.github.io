@@ -5,6 +5,7 @@ import { IDictionary } from "utils/object";
 
 import { Location, useLocation } from "./Location";
 import { Redirect, validateRedirect } from "./Redirect";
+import { IRoute } from "./Route";
 import {
   stripSlashes,
   segmentize,
@@ -22,12 +23,6 @@ export interface IRouter {
 export interface IRouterCore {
   children: React.ReactNode;
 }
-
-type IRoutes = {
-  path?: string;
-  default?: boolean;
-  value: React.ReactElement;
-}[];
 
 // static > dynamic > root > splat
 const SEGMENT_POINT = 4;
@@ -57,10 +52,12 @@ const RouterCore = ({ children }: IRouterCore) => {
   const match = isMatch(routes, pathname);
 
   if (match) {
-    const {
-      params,
-      route: { value: element },
-    } = match;
+    const { params, route } = match;
+    const { element } = route;
+
+    const newPathprefix = route.default
+      ? pathPrefix
+      : route.path!.replace(/\*$/, "");
 
     return React.cloneElement(
       element,
@@ -68,7 +65,7 @@ const RouterCore = ({ children }: IRouterCore) => {
         ...params,
       },
       element.props.children ? (
-        <Router>{element.props.children}</Router>
+        <Router pathPrefix={newPathprefix}>{element.props.children}</Router>
       ) : (
         undefined
       ),
@@ -82,7 +79,7 @@ const createRoutes = (pathPrefix: string) => (element: React.ReactElement) => {
   validateRedirect(element);
 
   if (element.props.default) {
-    return { value: element, default: true };
+    return { element, default: true };
   }
 
   const elementPath =
@@ -95,11 +92,11 @@ const createRoutes = (pathPrefix: string) => (element: React.ReactElement) => {
   return {
     path: element.props.children ? `${stripSlashes(path)}/*` : path,
     default: element.props.default,
-    value: element,
+    element,
   };
 };
 
-const isMatch = (routes: IRoutes, uri: string) => {
+const isMatch = (routes: IRoute[], uri: string) => {
   let match = null;
   let default_match = null;
 
@@ -170,7 +167,7 @@ const isMatch = (routes: IRoutes, uri: string) => {
   return match || default_match;
 };
 
-const getRankRoutes = (routes: IRoutes) =>
+const getRankRoutes = (routes: IRoute[]) =>
   routes
     .map((route, index) => {
       const score = route.default
