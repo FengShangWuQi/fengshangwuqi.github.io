@@ -1,7 +1,7 @@
 import React, { createContext, useContext } from "react";
 import invariant from "invariant";
 
-import { IDictionary, isUndefined } from "utils/object";
+import { IDictionary } from "utils/object";
 
 import { useLocation } from "./Location";
 import { IRoute } from "./Route";
@@ -183,7 +183,7 @@ const getRankRoutes = (routes: IRoute[]) =>
 
 const validateRouter = (element: React.ReactElement) => {
   invariant(
-    !isUndefined(element.props.path) || element.props.default,
+    element.props.path || element.props.default,
     `<Router>: Children of <Router> must have a \`path\` or \`default\` prop. None found on element type \`${
       element.type
     }\``,
