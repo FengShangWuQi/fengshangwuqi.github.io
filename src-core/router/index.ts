@@ -4,6 +4,7 @@ export * from "./Location";
 export * from "./Router";
 export * from "./Route";
 export * from "./Link";
+export * from "./Redirect";
 
 export const dynamicRe = /^:(.+)/;
 

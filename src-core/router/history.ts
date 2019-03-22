@@ -13,8 +13,19 @@ export const createHistory = (source: Window): IHistory => {
   const location = getLocation(source);
   const location$ = new rxBehaviorSubject(location);
 
-  const navigateTo = (to: string, state?: IDictionary<string>) => {
-    source.history.pushState({ ...state, key: `${Date.now()}` }, "", to);
+  const navigateTo = (
+    to: string,
+    {
+      state,
+      replace = false,
+    }: { state?: IDictionary<string>; replace?: boolean },
+  ) => {
+    if (replace) {
+      source.history.replaceState(state, "", to);
+    } else {
+      source.history.pushState(state, "", to);
+    }
+
     location$.next(getLocation(source));
   };
 

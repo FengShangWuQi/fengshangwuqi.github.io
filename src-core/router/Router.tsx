@@ -4,7 +4,6 @@ import invariant from "invariant";
 import { IDictionary, isUndefined } from "utils/object";
 
 import { useLocation } from "./Location";
-import { Redirect } from "./Redirect";
 import { IRoute } from "./Route";
 import {
   stripSlashes,
@@ -78,8 +77,7 @@ const createRoutes = (pathPrefix: string) => (element: React.ReactElement) => {
     return { element, default: true };
   }
 
-  const elementPath =
-    element.type === Redirect ? element.props.from : element.props.path;
+  const elementPath = element.props.path;
   const path =
     elementPath === "/"
       ? pathPrefix
@@ -185,10 +183,8 @@ const getRankRoutes = (routes: IRoute[]) =>
 
 const validateRouter = (element: React.ReactElement) => {
   invariant(
-    !isUndefined(element.props.path) ||
-      element.props.default ||
-      element.type === Redirect,
-    `<Router>: Children of <Router> must have a \`path\` or \`default\` prop, or be a \`<Redirect>\`. None found on element type \`${
+    !isUndefined(element.props.path) || element.props.default,
+    `<Router>: Children of <Router> must have a \`path\` or \`default\` prop. None found on element type \`${
       element.type
     }\``,
   );

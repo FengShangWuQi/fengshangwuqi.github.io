@@ -15,7 +15,10 @@ export interface ILocationProps {
 
 export interface ILocationContext {
   location: ILocation;
-  navigateTo: (to: string, state?: IDictionary<string>) => void;
+  navigateTo: (
+    to: string,
+    { state, replace }: { state?: IDictionary<string>; replace?: boolean },
+  ) => void;
 }
 
 export const LocationContext = createContext({} as ILocationContext);
@@ -49,5 +52,5 @@ export const Location = ({
 
 export const getLocation = (source: Window): ILocation => ({
   ...source.location,
-  state: source.history.state || { key: `${Date.now()}-init` },
+  state: source.history.state || { key: `${Date.now()}-navigate` },
 });

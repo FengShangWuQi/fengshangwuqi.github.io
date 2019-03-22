@@ -17,7 +17,7 @@ export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
   const { pathPrefix } = useRouter();
   const { location, navigateTo } = useLocation();
 
-  const href = resolve(to, pathPrefix);
+  const href = resolvePath(to, pathPrefix);
 
   const isCurrent = location.pathname === href;
 
@@ -26,13 +26,13 @@ export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
       {...pickElmAttrs(otherProps)}
       aria-current={isCurrent ? "page" : undefined}
       href={href}
-      onClick={withoutBubble(() => navigateTo(href, state))}>
+      onClick={withoutBubble(() => navigateTo(href, { state }))}>
       {children}
     </a>
   );
 };
 
-const resolve = (to: string, pathPrefix: string) => {
+export const resolvePath = (to: string, pathPrefix: string) => {
   if (isStartsWith(to, "/")) {
     return to;
   }
