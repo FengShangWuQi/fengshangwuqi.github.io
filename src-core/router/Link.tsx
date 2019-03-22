@@ -48,7 +48,7 @@ export const resolvePath = (to: string, pathPrefix: string) => {
 
   if (!isStartsWith(toSegments[0], ".")) {
     const pathName = prefixSegments.concat(toSegments).join("/");
-    return addQuery(toPathName === "/" ? pathName : `/${pathName}`, toQuery);
+    return addQuery(pathPrefix === "/" ? pathName : `/${pathName}`, toQuery);
   }
 
   const allSegments = prefixSegments.concat(toSegments);
