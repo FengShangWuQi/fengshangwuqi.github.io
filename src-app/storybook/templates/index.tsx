@@ -5,10 +5,13 @@ import {
   Location,
   Router,
   Route,
+  Link,
   IBaseRoute,
 } from "src-core/router";
 
 import { flex, position, size, margin } from "src-core/style";
+
+import { BaseMenu, BaseMenuItem } from "src-components/menus";
 
 import { IDictionary } from "utils/object";
 
@@ -58,7 +61,27 @@ export default () => {
     <RouterProvider value={{ pathPrefix: "/" }}>
       <Location>
         <Layout>
-          <Header />
+          <Header>
+            <div
+              css={{
+                ...flex({
+                  justifyContent: "space-between",
+                }),
+              }}>
+              <Link to="/">枫上雾棋的 storybook</Link>
+              <BaseMenu
+                css={{
+                  height: 50,
+                  lineHeight: "50px",
+                }}>
+                {Object.keys(groupModuleCompList).map(groupName => (
+                  <Link to={groupName} key={groupName}>
+                    <BaseMenuItem>{groupName.toUpperCase()}</BaseMenuItem>
+                  </Link>
+                ))}
+              </BaseMenu>
+            </div>
+          </Header>
 
           <Container>
             <RouterProvider value={{ pathPrefix: currGroup }}>

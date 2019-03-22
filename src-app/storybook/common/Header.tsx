@@ -1,11 +1,10 @@
 import React from "react";
 
-import { Link } from "src-core/router";
 import { useDesignSystem } from "src-core/ds";
 
 import { margin } from "src-core/style";
 
-export const Header = () => {
+export const Header = ({ children }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();
 
   return (
@@ -15,19 +14,17 @@ export const Header = () => {
         lineHeight: "50px",
         color: ds.color.bg,
         background: ds.color.primary,
+        overflow: "hidden",
+        "& a": {
+          color: ds.color.bg,
+        },
       }}>
       <div
         css={{
           ...margin(0, "auto"),
           maxWidth: 1200,
         }}>
-        <Link
-          css={{
-            color: ds.color.bg,
-          }}
-          to="/">
-          枫上雾棋的 storybook
-        </Link>
+        {children}
       </div>
     </div>
   );
