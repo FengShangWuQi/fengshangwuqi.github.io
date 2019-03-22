@@ -38,7 +38,33 @@ export const createHistory = (source: Window): IHistory => {
   };
 };
 
-const getSource = () => (canUseDOM ? window : {});
+const createSource = () => {
+  const states: IDictionary<string>[] = [];
+  const stack = [{ pathname: "/", search: "" }];
+
+  let index = 0;
+
+  const location = stack[index];
+
+  const state = states[index];
+
+  const pushState = (state: IDictionary<string>, _: string, uri: string) => {
+    const [pathname, search = ""] = uri.split("?");
+    index++;
+    stack.push({ pathname, search });
+    states.push(state);
+  };
+
+  return {
+    location,
+    history: {
+      state,
+      pushState,
+    },
+  };
+};
+
+const getSource = () => (canUseDOM ? window : createSource());
 const source = getSource();
 
 export const globalHistory = createHistory(source as Window);
