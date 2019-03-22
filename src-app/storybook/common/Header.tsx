@@ -1,6 +1,8 @@
 import React from "react";
 
+import { Link } from "src-core/router";
 import { useDesignSystem } from "src-core/ds";
+
 import { margin } from "src-core/style";
 
 export const Header = () => {
@@ -19,7 +21,13 @@ export const Header = () => {
           ...margin(0, "auto"),
           maxWidth: 1200,
         }}>
-        枫上雾棋的 storybook
+        <Link
+          css={{
+            color: ds.color.bg,
+          }}
+          to="/">
+          枫上雾棋的 storybook
+        </Link>
       </div>
     </div>
   );
