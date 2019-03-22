@@ -1,10 +1,10 @@
 import React, { createContext, useContext } from "react";
 import invariant from "invariant";
 
-import { IDictionary } from "utils/object";
+import { IDictionary, isUndefined } from "utils/object";
 
 import { useLocation } from "./Location";
-import { Redirect, validateRedirect } from "./Redirect";
+import { Redirect } from "./Redirect";
 import { IRoute } from "./Route";
 import {
   stripSlashes,
@@ -72,7 +72,7 @@ export const Router = ({ children }: { children: React.ReactNode }) => {
 };
 
 const createRoutes = (pathPrefix: string) => (element: React.ReactElement) => {
-  validateRedirect(element);
+  validateRouter(element);
 
   if (element.props.default) {
     return { element, default: true };
@@ -182,6 +182,17 @@ const getRankRoutes = (routes: IRoute[]) =>
     .sort((a, b) =>
       a.score < b.score ? 1 : a.score > b.score ? -1 : a.index - b.index,
     );
+
+const validateRouter = (element: React.ReactElement) => {
+  invariant(
+    !isUndefined(element.props.path) ||
+      element.props.default ||
+      element.type === Redirect,
+    `<Router>: Children of <Router> must have a \`path\` or \`default\` prop, or be a \`<Redirect>\`. None found on element type \`${
+      element.type
+    }\``,
+  );
+};
 
 const validateReservedName = (dynamicSegment: string, path: string) => {
   invariant(
