@@ -79,4 +79,3 @@ const getSource = () => (canUseDOM ? window : createSource());
 const source = getSource();
 
 export const globalHistory = createHistory(source as Window);
-export const { navigateTo } = globalHistory;
