@@ -47,6 +47,7 @@ export default () => {
   }, {});
 
   const currGroup = "components";
+  const defaultGroup = "components";
   const currModules: IDictionary<string[]> = Object.keys(
     groupModuleCompList[currGroup],
   ).reduce(
@@ -68,7 +69,7 @@ export default () => {
                   justifyContent: "space-between",
                 }),
               }}>
-              <Link to="/">枫上雾棋的 storybook</Link>
+              <Link to={`/${defaultGroup}`}>枫上雾棋的 storybook</Link>
               <BaseMenu
                 css={{
                   height: 50,
@@ -84,9 +85,7 @@ export default () => {
           </Header>
 
           <Container>
-            <RouterProvider value={{ pathPrefix: currGroup }}>
-              <SideBar modules={currModules} />
-            </RouterProvider>
+            <SideBar group={currGroup} modules={currModules} />
 
             <Router>
               {Object.keys(currModules).map(currModule =>
