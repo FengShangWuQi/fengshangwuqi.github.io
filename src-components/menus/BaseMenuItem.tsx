@@ -1,35 +1,35 @@
 import React from "react";
 import { CSSObject } from "@emotion/core";
 
+import { pickElmAttrs } from "src-core/react";
+
 import { padding } from "src-core/style";
 
 import { useMenu } from "./Menu";
 import { MenuItem, menuItemStyle, menuItemModeStyle } from "./MenuItem";
 
-interface IBaseMenuItem {
-  style?: CSSObject;
-}
-
 export const BaseMenuItem = ({
   children,
-  style,
-  ...props
-}: IBaseMenuItem & { children: React.ReactNode }) => {
+  ...otherProps
+}: {
+  children: React.ReactNode;
+}) => {
   const { mode, right } = useMenu();
 
   return (
     <li
+      {...pickElmAttrs(otherProps)}
       css={[
         { ...menuItemModeStyle(mode!, right!) },
         { ...menuItemStyle },
         { ...baseMenuItemStyle },
-        { ...style },
       ]}>
-      <MenuItem {...props}>{children}</MenuItem>
+      <MenuItem>{children}</MenuItem>
     </li>
   );
 };
 
 const baseMenuItemStyle: CSSObject = {
   ...padding(0, 15),
+  cursor: "pointer",
 };

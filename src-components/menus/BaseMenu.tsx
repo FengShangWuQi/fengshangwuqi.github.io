@@ -1,19 +1,22 @@
 import React from "react";
 import { CSSObject } from "@emotion/core";
 
-import { Menu, IMenu, menuModeStyle } from "./Menu";
+import { pickElmAttrs } from "src-core/react";
 
-interface IBaseMenu extends IMenu {
-  style?: CSSObject;
-}
+import { Menu, IMenu, menuModeStyle } from "./Menu";
 
 export const BaseMenu = ({
   children,
-  style,
-  ...props
-}: IBaseMenu & { children: React.ReactNode }) => (
-  <ul css={[{ ...menuModeStyle }, { ...baseMenuStyle }, { ...style }]}>
-    <Menu {...props}>{children}</Menu>
+  mode,
+  right,
+  ...otherProps
+}: IMenu & { children: React.ReactNode }) => (
+  <ul
+    {...pickElmAttrs(otherProps)}
+    css={[{ ...menuModeStyle(mode) }, { ...baseMenuStyle }]}>
+    <Menu mode={mode} right={right}>
+      {children}
+    </Menu>
   </ul>
 );
 

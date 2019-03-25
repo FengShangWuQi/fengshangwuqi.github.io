@@ -33,7 +33,9 @@ export const Menu = ({
   </MenuProvider>
 );
 
-export const menuModeStyle = (mode: MenuMode): CSSObject => {
+export const menuModeStyle = (
+  mode: MenuMode = MenuMode.HORIZONTAL,
+): CSSObject => {
   switch (mode) {
     case MenuMode.HORIZONTAL:
       return {};
