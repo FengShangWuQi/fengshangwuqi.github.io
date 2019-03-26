@@ -1,10 +1,13 @@
 import { useEffect } from "react";
 
-import { IDictionary } from "utils/object";
+import {
+  globalHistory,
+  useLocation,
+  useMatch,
+  resolvePath,
+} from "src-core/router";
 
-import { useRouter } from "./Router";
-import { useLocation } from "./Location";
-import { resolvePath } from "./Link";
+import { IDictionary } from "utils/object";
 
 export interface IRedirect {
   to: string;
@@ -12,11 +15,11 @@ export interface IRedirect {
 }
 
 export const Redirect = ({ to, state }: IRedirect) => {
-  const { pathPrefix } = useRouter();
-  const { navigateTo } = useLocation();
+  const { navigateTo = globalHistory.navigateTo } = useLocation();
+  const { uri = "/" } = useMatch();
 
   useEffect(() => {
-    const redirectTo = resolvePath(to, pathPrefix);
+    const redirectTo = resolvePath(to, uri);
 
     navigateTo(redirectTo, {
       state: state || { key: `${Date.now()}-redirect` },
