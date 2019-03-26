@@ -1,7 +1,7 @@
 import React from "react";
 
 import { withoutBubble, pickElmAttrs } from "src-core/react";
-import { useLocation, useRouter } from "src-core/router";
+import { globalHistory, useLocation, useMatch } from "src-core/router";
 
 import { IDictionary } from "utils/object";
 
@@ -14,10 +14,13 @@ export interface ILinkProps {
 }
 
 export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
-  const { pathPrefix } = useRouter();
-  const { location, navigateTo } = useLocation();
+  const {
+    location = globalHistory.location,
+    navigateTo = globalHistory.navigateTo,
+  } = useLocation();
+  const { uri = "/" } = useMatch();
 
-  const href = resolvePath(to, pathPrefix);
+  const href = resolvePath(to, uri);
 
   const isCurrent = location.pathname === href;
 
@@ -32,7 +35,7 @@ export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
   );
 };
 
-export const resolvePath = (to: string, pathPrefix: string) => {
+export const resolvePath = (to: string, uri: string) => {
   if (isStartsWith(to, "/")) {
     return to;
   }
@@ -40,18 +43,18 @@ export const resolvePath = (to: string, pathPrefix: string) => {
   const [toPathName, toQuery] = to.split("?");
 
   const toSegments = segmentize(toPathName);
-  const prefixSegments = segmentize(pathPrefix);
+  const uriSegments = segmentize(uri);
 
   if (toSegments[0] === "") {
-    return addQuery(pathPrefix, toQuery);
+    return addQuery(uri, toQuery);
   }
 
   if (!isStartsWith(toSegments[0], ".")) {
-    const pathName = prefixSegments.concat(toSegments).join("/");
-    return addQuery(pathPrefix === "/" ? pathName : `/${pathName}`, toQuery);
+    const pathName = uriSegments.concat(toSegments).join("/");
+    return addQuery(uri === "/" ? pathName : `/${pathName}`, toQuery);
   }
 
-  const allSegments = prefixSegments.concat(toSegments);
+  const allSegments = uriSegments.concat(toSegments);
   const segments: string[] = [];
 
   allSegments.forEach(segment => {
