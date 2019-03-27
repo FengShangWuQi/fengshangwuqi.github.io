@@ -1,40 +1,40 @@
 import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
-import { RouterProvider, Link, IBaseRoute } from "src-core/router";
+import { useMatch, Link } from "src-core/router";
 
 import { padding } from "src-core/style";
 
-import { IDictionary } from "utils/object";
+import { groupModuleCompList } from "../templates";
 
-export const SideBar = ({
-  modules,
-  group,
-}: { modules: IDictionary<string[]>; group?: string } & IBaseRoute) => {
+export const SideBar = () => {
   const ds = useDesignSystem();
+  const {
+    params: { group },
+  } = useMatch();
+
+  const currGroup = groupModuleCompList[group];
 
   return (
-    <RouterProvider value={{ pathPrefix: `/${group}` }}>
-      <Container>
-        {Object.keys(modules).map(moduleName => (
-          <div key={moduleName}>
-            <div>{moduleName}</div>
-            <div>
-              {modules[moduleName].map(compName => (
-                <Link
-                  css={{
-                    color: ds.color.bg,
-                  }}
-                  key={compName}
-                  to={`${moduleName}/${compName}`}>
-                  {compName}
-                </Link>
-              ))}
-            </div>
+    <Container>
+      {Object.keys(currGroup).map(moduleName => (
+        <div key={moduleName}>
+          <div>{moduleName}</div>
+          <div>
+            {Object.keys(currGroup[moduleName]).map(compName => (
+              <Link
+                css={{
+                  color: ds.color.bg,
+                }}
+                key={compName}
+                to={`${moduleName}/${compName}`}>
+                {compName}
+              </Link>
+            ))}
           </div>
-        ))}
-      </Container>
-    </RouterProvider>
+        </div>
+      ))}
+    </Container>
   );
 };
 
