@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Redirect, Link, useRouter } from "src-core/router";
+import { Link, useRouter } from "src-core/router";
 
 import { flex, position, size, margin } from "src-core/style";
 
@@ -8,33 +8,12 @@ import { BaseMenu, BaseMenuItem } from "src-components/menus";
 
 import { IDictionary } from "utils/object";
 
+import { routes } from "../route";
 import { Layout } from "../common/Layout";
-import { SideBar } from "../common/SideBar";
 import { Header } from "../common/Header";
-import { Storybook } from "../common/Storybook";
 
 export default () => {
-  const rootRoutes = {
-    "/": {
-      component: () => <Redirect to="components" />,
-      routes: {
-        ":group": {
-          component: SideBar,
-          routes: {
-            ":module": {
-              routes: {
-                ":component": {
-                  component: Storybook,
-                },
-              },
-            },
-          },
-        },
-      },
-    },
-  };
-
-  const routeResult = useRouter({ routes: rootRoutes, pathPrefix: "/" });
+  const routeResult = useRouter({ routes, pathPrefix: "/" });
 
   return (
     <Layout>
