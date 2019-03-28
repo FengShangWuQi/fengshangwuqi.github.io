@@ -32,22 +32,7 @@ export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
   } = useLocation();
   const { uri = "/" } = useMatch();
 
-  let pathname = "";
-  let search = "";
-  let hash = "";
-
-  if (isString(to)) {
-    const searchMatch = /\?(.+)\#/.exec(to as string);
-    const hashMatch = /\#(.+)/.exec(to as string);
-
-    if (searchMatch) search = searchMatch[1];
-    if (hashMatch) hash = hashMatch[1];
-    pathname = (to as string).split("?")[0];
-  } else {
-    pathname = (to as ToObj).pathname;
-    search = toSearchString((to as ToObj).search);
-    hash = (to as ToObj).hash || "";
-  }
+  const { pathname, search, hash } = parsePath(to);
 
   const pathTo = resolvePath(pathname as string, uri);
 
@@ -88,4 +73,25 @@ export const resolvePath = (to: string, uri: string) => {
   });
 
   return `/${segments.join("/")}`;
+};
+
+export const parsePath = (to: string | ToObj) => {
+  let pathname = "";
+  let search = "";
+  let hash = "";
+
+  if (isString(to)) {
+    const searchMatch = /\?(.+)\#/.exec(to as string);
+    const hashMatch = /\#(.+)/.exec(to as string);
+
+    if (searchMatch) search = searchMatch[1];
+    if (hashMatch) hash = hashMatch[1];
+    pathname = (to as string).split("?")[0];
+  } else {
+    pathname = (to as ToObj).pathname;
+    search = toSearchString((to as ToObj).search);
+    hash = (to as ToObj).hash || "";
+  }
+
+  return { pathname, search, hash };
 };

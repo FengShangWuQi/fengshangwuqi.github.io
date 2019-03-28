@@ -5,6 +5,7 @@ import {
   useLocation,
   useMatch,
   resolvePath,
+  parsePath,
 } from "src-core/router";
 
 import { IDictionary } from "utils/object";
@@ -19,7 +20,10 @@ export const Redirect = ({ to, state }: IRedirect) => {
   const { uri = "/" } = useMatch();
 
   useEffect(() => {
-    const redirectTo = resolvePath(to, uri);
+    const { pathname, search, hash } = parsePath(to);
+
+    const pathTo = resolvePath(pathname as string, uri);
+    const redirectTo = `${pathTo}${search}${hash}`;
 
     navigateTo(redirectTo, {
       state: state || { key: `${Date.now()}-redirect` },
