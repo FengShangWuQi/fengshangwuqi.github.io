@@ -1,4 +1,4 @@
-import { isUndefined } from ".";
+import { isUndefined } from "utils/object";
 
 export const get = (obj: object, path: string[], defaultValue?: any) => {
   path.forEach(key => {

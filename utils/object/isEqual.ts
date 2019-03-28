@@ -1,4 +1,4 @@
-import { has } from ".";
+import { has, toString } from "utils/object";
 
 export const isEqual = (a: any, b: any): boolean => {
   if (a === b) {
@@ -9,8 +9,6 @@ export const isEqual = (a: any, b: any): boolean => {
 };
 
 export const isDeepEqual = (a: any, b: any): boolean => {
-  const toString = (value: any) => Object.prototype.toString.call(value);
-
   if (toString(a) !== toString(b)) {
     return false;
   }
