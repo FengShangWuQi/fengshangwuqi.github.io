@@ -1,13 +1,8 @@
 import React, { useRef } from "react";
 import { Global } from "@emotion/core";
 
-import { useRect } from "src-core/react";
-import {
-  ThemeProvider,
-  DSReset,
-  defaultTheme,
-  useDesignSystem,
-} from "src-core/ds";
+import { Bootstrap, useRect } from "src-core/react";
+import { defaultTheme, useDesignSystem } from "src-core/ds";
 import { rhythm, border, position, margin } from "src-core/style";
 
 import { Nav } from "./Nav";
@@ -23,8 +18,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <ThemeProvider theme={blogTheme}>
-      <DSReset />
+    <Bootstrap ds={blogTheme}>
       <BlogGlobal />
 
       <Loadingbar />
@@ -32,7 +26,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
         <Nav />
         {children}
       </Container>
-    </ThemeProvider>
+    </Bootstrap>
   );
 };
 
