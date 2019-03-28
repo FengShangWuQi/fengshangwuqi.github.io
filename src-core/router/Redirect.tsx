@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
 import {
-  globalHistory,
   useLocation,
   useMatch,
   resolvePath,
@@ -18,7 +17,7 @@ export interface IRedirect {
 }
 
 export const Redirect = ({ from, to, state }: IRedirect) => {
-  const { location, navigateTo = globalHistory.navigateTo } = useLocation();
+  const { location, navigateTo } = useLocation();
   const { uri = "/" } = useMatch();
 
   useEffect(() => {
@@ -36,4 +35,27 @@ export const Redirect = ({ from, to, state }: IRedirect) => {
   }, []);
 
   return null;
+};
+
+export const useRedirect = (
+  from: string,
+  to: string | ToObj,
+  state?: IDictionary<string>,
+) => {
+  const { location, navigateTo } = useLocation();
+  const { uri = "/" } = useMatch();
+
+  useEffect(() => {
+    if (!from || (from && resolvePath(from, uri) === location.pathname)) {
+      const { pathname, search, hash } = parsePath(to);
+
+      const pathTo = resolvePath(pathname as string, uri);
+      const redirectTo = `${pathTo}${search}${hash}`;
+
+      navigateTo(redirectTo, {
+        state: state || { key: `${Date.now()}-redirect` },
+        replace: true,
+      });
+    }
+  }, [location.pathname]);
 };
