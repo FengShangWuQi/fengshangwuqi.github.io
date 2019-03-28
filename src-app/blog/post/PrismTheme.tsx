@@ -32,7 +32,7 @@ export const PrismTheme = () => {
         },
         ".gatsby-highlight-code-line": {
           ...margin(0, -25),
-          ...padding("0.125rem", 0),
+          ...padding("0.125rem", 25),
           display: "block",
           background: "#2e3440",
         },
