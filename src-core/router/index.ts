@@ -6,6 +6,7 @@ export * from "./Route";
 export * from "./Match";
 export * from "./Link";
 export * from "./Redirect";
+export * from "./Search";
 
 export const dynamicRe = /^:(.+)/;
 
