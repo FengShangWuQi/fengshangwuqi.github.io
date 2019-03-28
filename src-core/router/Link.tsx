@@ -1,14 +1,26 @@
 import React from "react";
 
 import { withoutBubble, pickElmAttrs } from "src-core/react";
-import { globalHistory, useLocation, useMatch } from "src-core/router";
+import {
+  globalHistory,
+  useLocation,
+  useMatch,
+  toSearchString,
+} from "src-core/router";
 
-import { IDictionary } from "utils/object";
+import { IDictionary, isString } from "utils/object";
+import { startsWith } from "utils/string";
 
-import { segmentize } from ".";
+import { segmentize, SearchQuery } from "src-core/router";
+
+export type ToObj = {
+  pathname: string;
+  search?: SearchQuery;
+  hash?: string;
+};
 
 export interface ILinkProps {
-  to: string;
+  to: string | ToObj;
   state?: IDictionary<string>;
   children: React.ReactNode;
 }
@@ -20,9 +32,28 @@ export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
   } = useLocation();
   const { uri = "/" } = useMatch();
 
-  const href = resolvePath(to, uri);
+  let pathname = "";
+  let search = "";
+  let hash = "";
 
-  const isCurrent = location.pathname === href;
+  if (isString(to)) {
+    const searchMatch = /\?(.+)\#/.exec(to as string);
+    const hashMatch = /\#(.+)/.exec(to as string);
+
+    if (searchMatch) search = searchMatch[1];
+    if (hashMatch) hash = hashMatch[1];
+    pathname = (to as string).split("?")[0];
+  } else {
+    pathname = (to as ToObj).pathname;
+    search = toSearchString((to as ToObj).search);
+    hash = (to as ToObj).hash || "";
+  }
+
+  const pathTo = resolvePath(pathname as string, uri);
+
+  const href = `${pathTo}${search}${hash}`;
+
+  const isCurrent = location.pathname === pathTo;
 
   return (
     <a
@@ -36,22 +67,16 @@ export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
 };
 
 export const resolvePath = (to: string, uri: string) => {
-  if (isStartsWith(to, "/")) {
+  if (startsWith(to, "/")) {
     return to;
   }
 
-  const [toPathName, toQuery] = to.split("?");
-
-  const toSegments = segmentize(toPathName);
+  const toSegments = segmentize(to);
   const uriSegments = segmentize(uri);
 
-  if (toSegments[0] === "") {
-    return addQuery(uri, toQuery);
-  }
-
-  if (!isStartsWith(toSegments[0], ".")) {
+  if (!startsWith(toSegments[0], ".")) {
     const pathName = uriSegments.concat(toSegments).join("/");
-    return addQuery(uri === "/" ? pathName : `/${pathName}`, toQuery);
+    return uri === "/" ? pathName : `/${pathName}`;
   }
 
   const allSegments = uriSegments.concat(toSegments);
@@ -59,14 +84,8 @@ export const resolvePath = (to: string, uri: string) => {
 
   allSegments.forEach(segment => {
     if (segment === "..") segments.pop();
-    else if (segment !== ".") segments.push(segment);
+    else if (segment !== "" && segment !== ".") segments.push(segment);
   });
 
-  return addQuery(`/${segments.join("/")}`, toQuery);
+  return `/${segments.join("/")}`;
 };
-
-const isStartsWith = (str: string, str2: string) =>
-  str.substr(0, str2.length) === str2;
-
-const addQuery = (pathName: string, query: string) =>
-  query ? `${pathName}?${query}` : pathName;
