@@ -1,64 +1,22 @@
 import React from "react";
 
-import { Link, useRouter } from "src-core/router";
-
-import { flex, position, size, margin } from "src-core/style";
-
-import { BaseMenu, BaseMenuItem } from "src-components/menus";
+import { Bootstrap } from "src-core/react";
+import { useRouter } from "src-core/router";
 
 import { IDictionary } from "utils/object";
 
+import { storybookTheme, StorybookGlobal } from "../common/Layout";
 import { routes } from "../route";
-import { Layout } from "../common/Layout";
-import { Header } from "../common/Header";
 
 export default () => {
-  const routeResult = useRouter({ routes, pathPrefix: "/" });
+  const routeResult = useRouter({ routes });
 
   return (
-    <Layout>
-      <Header>
-        <div
-          css={{
-            ...flex({
-              justifyContent: "space-between",
-            }),
-          }}>
-          <Link to="/">枫上雾棋的 storybook</Link>
-          <BaseMenu
-            css={{
-              height: 50,
-              lineHeight: "50px",
-            }}>
-            {Object.keys(groupModuleCompList).map(groupName => (
-              <Link to={groupName} key={groupName}>
-                <BaseMenuItem>{groupName.toUpperCase()}</BaseMenuItem>
-              </Link>
-            ))}
-          </BaseMenu>
-        </div>
-      </Header>
+    <Bootstrap ds={storybookTheme}>
+      <StorybookGlobal />
 
-      <Container>{routeResult}</Container>
-    </Layout>
-  );
-};
-
-const Container = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div
-      css={[
-        {
-          ...flex({}),
-          ...position("relative"),
-          ...margin(0, "auto"),
-          ...size("100%"),
-          marginTop: 40,
-          maxWidth: 1200,
-        },
-      ]}>
-      {children}
-    </div>
+      {routeResult}
+    </Bootstrap>
   );
 };
 

@@ -1,12 +1,7 @@
 import React from "react";
 
 import { withoutBubble, pickElmAttrs } from "src-core/react";
-import {
-  globalHistory,
-  useLocation,
-  useMatch,
-  toSearchString,
-} from "src-core/router";
+import { useLocation, useMatch, toSearchString } from "src-core/router";
 
 import { IDictionary, isString } from "utils/object";
 import { startsWith } from "utils/string";
@@ -26,10 +21,7 @@ export interface ILinkProps {
 }
 
 export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
-  const {
-    location = globalHistory.location,
-    navigateTo = globalHistory.navigateTo,
-  } = useLocation();
+  const { location, navigateTo } = useLocation();
   const { uri = "/" } = useMatch();
 
   const { pathname, search, hash } = parsePath(to);

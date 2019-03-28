@@ -1,28 +1,17 @@
 import React from "react";
 import { Global } from "@emotion/core";
 
-import { ThemeProvider, DSReset, defaultTheme } from "src-core/ds";
+import { defaultTheme } from "src-core/ds";
 
-export const Layout = ({ children }: { children: React.ReactNode }) => {
-  const storybookTheme = {
-    ...defaultTheme,
-    color: {
-      ...defaultTheme.color,
-      primary: "#c2185b",
-    },
-  };
-
-  return (
-    <ThemeProvider theme={storybookTheme}>
-      <DSReset />
-      <StorybookGlobal />
-
-      {children}
-    </ThemeProvider>
-  );
+export const storybookTheme = {
+  ...defaultTheme,
+  color: {
+    ...defaultTheme.color,
+    primary: "#c2185b",
+  },
 };
 
-const StorybookGlobal = () => {
+export const StorybookGlobal = () => {
   return (
     <Global
       styles={{

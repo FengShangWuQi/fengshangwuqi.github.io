@@ -1,11 +1,18 @@
 import React from "react";
 
+import { useRedirect, Link } from "src-core/router";
 import { useDesignSystem } from "src-core/ds";
 
-import { margin } from "src-core/style";
+import { flex, margin } from "src-core/style";
 
-export const Header = ({ children }: { children: React.ReactNode }) => {
+import { BaseMenu, BaseMenuItem } from "src-components/menus";
+
+import { groupModuleCompList } from "../templates";
+
+export const Header = () => {
   const ds = useDesignSystem();
+
+  useRedirect("/components", "/components/tags/Tag");
 
   return (
     <div
@@ -24,7 +31,25 @@ export const Header = ({ children }: { children: React.ReactNode }) => {
           ...margin(0, "auto"),
           maxWidth: 1200,
         }}>
-        {children}
+        <div
+          css={{
+            ...flex({
+              justifyContent: "space-between",
+            }),
+          }}>
+          <Link to="/">枫上雾棋的 storybook</Link>
+          <BaseMenu
+            css={{
+              height: 50,
+              lineHeight: "50px",
+            }}>
+            {Object.keys(groupModuleCompList).map(groupName => (
+              <Link to={`/${groupName}`} key={groupName}>
+                <BaseMenuItem>{groupName.toUpperCase()}</BaseMenuItem>
+              </Link>
+            ))}
+          </BaseMenu>
+        </div>
       </div>
     </div>
   );
