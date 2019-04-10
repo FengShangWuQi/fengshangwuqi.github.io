@@ -26,12 +26,12 @@ export const PostTag = ({ tag }: { tag: string }) => {
 
   return (
     <Tag
-      color={color}
-      bg={bg}
-      style={{
+      css={{
         marginRight: 4,
         fontWeight: "bold",
-      }}>
+      }}
+      color={color}
+      bg={bg}>
       #{tag}
     </Tag>
   );
