@@ -64,7 +64,6 @@ const BlogGlobal = () => {
           ...border("bottom", 3, "solid", ds.color.primary),
           paddingBottom: `calc(${rhythm(1 / 4)} - 1px)`,
           fontWeight: "normal",
-          color: ds.color.text,
         },
         h1: {
           ...margin(rhythm(3 / 2), 0, rhythm(3 / 4)),
