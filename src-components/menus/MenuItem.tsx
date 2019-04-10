@@ -1,6 +1,8 @@
 import React from "react";
 import { CSSObject } from "@emotion/core";
 
+import { padding, rhythm } from "src-core/style";
+
 import { MenuMode } from "./Menu";
 
 export const MenuItem = ({ children }: { children: React.ReactNode }) => {
@@ -13,12 +15,20 @@ export const menuItemModeStyle = (
 ): CSSObject => {
   switch (mode) {
     case MenuMode.HORIZONTAL:
-      return { float: right ? "right" : "left" };
+      return { ...padding(0, rhythm(3 / 4)), float: right ? "right" : "left" };
     case MenuMode.VERTICAL:
-      return {};
+      return {
+        height: 32,
+        lineHeight: "32px",
+        paddingLeft: rhythm(1 / 2),
+        "&:first-child": {
+          marginTop: 8,
+        },
+        "&:last-child": {
+          marginBottom: 8,
+        },
+      };
   }
 };
 
-export const menuItemStyle: CSSObject = {
-  textAlign: "center",
-};
+export const menuItemStyle: CSSObject = {};

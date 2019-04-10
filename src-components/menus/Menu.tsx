@@ -38,8 +38,13 @@ export const menuModeStyle = (
 ): CSSObject => {
   switch (mode) {
     case MenuMode.HORIZONTAL:
-      return {};
+      return {
+        height: 80,
+        lineHeight: "80px",
+      };
     case MenuMode.VERTICAL:
-      return {};
+      return {
+        width: 200,
+      };
   }
 };

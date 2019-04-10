@@ -21,7 +21,6 @@ export const BaseMenu = ({
 );
 
 const baseMenuStyle: CSSObject = {
-  height: 80,
-  lineHeight: "80px",
   listStyle: "none",
+  overflow: "hidden",
 };

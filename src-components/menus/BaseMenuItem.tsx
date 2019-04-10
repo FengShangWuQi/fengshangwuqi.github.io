@@ -3,8 +3,6 @@ import { CSSObject } from "@emotion/core";
 
 import { pickElmAttrs } from "src-core/react";
 
-import { padding } from "src-core/style";
-
 import { useMenu } from "./Menu";
 import { MenuItem, menuItemStyle, menuItemModeStyle } from "./MenuItem";
 
@@ -29,7 +27,4 @@ export const BaseMenuItem = ({
   );
 };
 
-const baseMenuItemStyle: CSSObject = {
-  ...padding(0, 15),
-  cursor: "pointer",
-};
+const baseMenuItemStyle: CSSObject = {};
