@@ -29,7 +29,7 @@ export const Header = () => {
       <div
         css={{
           ...margin(0, "auto"),
-          maxWidth: 1200,
+          width: 1200,
         }}>
         <div
           css={{
@@ -44,9 +44,11 @@ export const Header = () => {
               lineHeight: "50px",
             }}>
             {Object.keys(groupModuleCompList).map(groupName => (
-              <Link to={`/${groupName}`} key={groupName}>
-                <BaseMenuItem>{groupName.toUpperCase()}</BaseMenuItem>
-              </Link>
+              <BaseMenuItem>
+                <Link key={groupName} to={`/${groupName}`}>
+                  {groupName.toUpperCase()}
+                </Link>
+              </BaseMenuItem>
             ))}
           </BaseMenu>
         </div>
