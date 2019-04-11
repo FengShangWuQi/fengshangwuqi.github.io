@@ -21,10 +21,10 @@ export const menuItemModeStyle = (
         height: 32,
         lineHeight: "32px",
         paddingLeft: rhythm(1 / 2),
-        "&:first-child": {
+        "&:first-of-type": {
           marginTop: 8,
         },
-        "&:last-child": {
+        "&:last-of-type": {
           marginBottom: 8,
         },
       };
