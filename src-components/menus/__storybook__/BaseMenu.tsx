@@ -14,7 +14,7 @@ export default () => (
         lineHeight: "60px",
       }}>
       {["docs", "blog", "github"].map(item => (
-        <BaseMenuItem>
+        <BaseMenuItem key={item}>
           <a
             href="#"
             css={{
@@ -35,7 +35,7 @@ export default () => (
       }}
       mode={MenuMode.VERTICAL}>
       {["docs", "blog", "github"].map(item => (
-        <BaseMenuItem>
+        <BaseMenuItem key={item}>
           <a
             href="#"
             css={{

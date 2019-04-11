@@ -44,10 +44,8 @@ export const Header = () => {
               lineHeight: "50px",
             }}>
             {Object.keys(groupModuleCompList).map(groupName => (
-              <BaseMenuItem>
-                <Link key={groupName} to={`/${groupName}`}>
-                  {groupName.toUpperCase()}
-                </Link>
+              <BaseMenuItem key={groupName}>
+                <Link to={`/${groupName}`}>{groupName.toUpperCase()}</Link>
               </BaseMenuItem>
             ))}
           </BaseMenu>
