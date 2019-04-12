@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
 
 import { Pagination } from "src-components/pagers";
 import { SEO } from "src-components/seo";
@@ -79,7 +79,9 @@ export default ({
         total={total}
         size={size}
         offset={offset}
-        pathPrefix="archive"
+        onChange={page =>
+          navigate(page === 1 ? `/archive` : `/archive/${page}`)
+        }
       />
     </Footer>
   </Layout>

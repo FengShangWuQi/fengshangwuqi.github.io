@@ -1,27 +1,27 @@
-import React from "react";
-import { Link } from "gatsby";
+import React, { useState } from "react";
 import { size } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 
 export interface IPaginationProps {
-  pathPrefix?: string;
   total: number;
   size: number;
   offset: number;
+  onChange?: (page: number) => void;
 }
 
 export const Pagination = ({
   total,
   offset,
   size,
-  pathPrefix,
+  onChange,
 }: IPaginationProps) => {
   const ds = useDesignSystem();
 
+  const [currPage, setCurrPage] = useState(Math.floor(offset / size) + 1);
+
   const totalPage = Math.ceil(total / size);
-  const currPage = Math.floor(offset / size) + 1;
 
   const MAX_ITEM = 1;
 
@@ -30,7 +30,6 @@ export const Pagination = ({
       css={{
         ...flex({
           alignItems: "center",
-          justifyContent: "flex-end",
         }),
       }}>
       {Array.from({ length: totalPage }, (_, i) => i + 1).map(num => {
@@ -44,7 +43,10 @@ export const Pagination = ({
             <PaginationItem
               key={num}
               isActive={num === currPage}
-              pathPrefix={pathPrefix}>
+              onPageChange={page => {
+                setCurrPage(page);
+                onChange && onChange(page);
+              }}>
               {num}
             </PaginationItem>
           );
@@ -72,24 +74,17 @@ export const Pagination = ({
 
 const PaginationItem = ({
   children,
-  pathPrefix = "",
-  isActive,
+  isActive = false,
+  onPageChange,
 }: {
-  pathPrefix?: string;
   children: number;
   isActive?: boolean;
+  onPageChange: (page: number) => void;
 }) => {
   const ds = useDesignSystem();
-  const path =
-    children === 1
-      ? `/${pathPrefix}`
-      : pathPrefix
-      ? `/${pathPrefix}/${children}`
-      : `/${children}`;
 
   return (
-    <Link
-      to={path}
+    <div
       css={[
         {
           ...size(24),
@@ -99,6 +94,7 @@ const PaginationItem = ({
           }),
           marginLeft: 8,
           borderRadius: ds.radius.base,
+          cursor: "pointer",
         },
         isActive
           ? {
@@ -106,8 +102,9 @@ const PaginationItem = ({
               background: ds.color.primary,
             }
           : { color: ds.color.textLight, background: ds.color.bgLight },
-      ]}>
+      ]}
+      onClick={() => onPageChange(children)}>
       {children}
-    </Link>
+    </div>
   );
 };
