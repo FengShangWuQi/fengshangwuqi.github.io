@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import { Header } from "src-components/headers";
 import { SEO } from "src-components/seo";
 
 import { Layout } from "../common/Layout";
+import { Header } from "../common/Header";
 
 import { Latest } from "../latest";
 

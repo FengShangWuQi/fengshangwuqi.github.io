@@ -1,11 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import { Header } from "src-components/headers";
 import { Pagination } from "src-components/pagers";
 import { SEO } from "src-components/seo";
 
 import { Layout } from "../common/Layout";
+import { Header } from "../common/Header";
 import { Footer } from "../common/Footer";
 import { Archive } from "../archive";
 
