@@ -1,3 +1,3 @@
 import { toString } from "utils/object";
 
-export const isString = (obj: any) => toString(obj) === "[object String]";
+export const isString = (value: any) => toString(value) === "[object String]";
