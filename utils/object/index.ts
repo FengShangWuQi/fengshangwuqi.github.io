@@ -8,6 +8,7 @@ export * from "./isString";
 export * from "./isNull";
 export * from "./isFunction";
 export * from "./isMap";
+export * from "./isSet";
 
 export interface IDictionary<T> {
   [index: string]: T;
