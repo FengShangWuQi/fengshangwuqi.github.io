@@ -7,12 +7,28 @@ import { flex, margin } from "src-core/style";
 
 import { BaseMenu, BaseMenuItem } from "src-components/menus";
 
+import { isEmpty } from "utils/object";
+
 import { groupModuleCompList } from "../templates";
 
 export const Header = () => {
   const ds = useDesignSystem();
 
-  useRedirect("/components", "/components/tags/Tag");
+  const groups = Object.keys(groupModuleCompList);
+
+  groups.map(groupName => {
+    const group = groupModuleCompList[groupName];
+
+    if (!isEmpty(group)) {
+      const moduleName = Object.keys(group)[0];
+      const componentName = Object.keys(group[moduleName])[0];
+
+      useRedirect(
+        `/${groupName}`,
+        `/${groupName}/${moduleName}/${componentName}`,
+      );
+    }
+  });
 
   return (
     <div

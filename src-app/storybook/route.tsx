@@ -7,7 +7,7 @@ import { Storybook } from "./common/Storybook";
 
 export const routes = {
   "/": {
-    component: () => <Redirect to="/components/tags/Tag" />,
+    component: () => <Redirect to="/components" />,
     routes: {
       ":group": {
         component: Header,
