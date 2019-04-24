@@ -2,6 +2,8 @@ export * from "./has";
 export * from "./get";
 
 export * from "./isEqual";
+export * from "./isEmpty";
+
 export * from "./isUndefined";
 export * from "./isObject";
 export * from "./isString";
