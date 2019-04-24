@@ -9,6 +9,7 @@ export * from "./isNull";
 export * from "./isFunction";
 export * from "./isMap";
 export * from "./isSet";
+export * from "./isArguments";
 
 export interface IDictionary<T> {
   [index: string]: T;
