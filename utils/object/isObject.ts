@@ -1,4 +1,4 @@
-import { isNull } from "utils/object";
+import { isNull } from ".";
 
 export const isObject = (value: any) => {
   const type = typeof value;

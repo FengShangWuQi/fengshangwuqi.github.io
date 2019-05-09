@@ -1,5 +1,5 @@
-import { isNull, isString, isMap, isSet, isArguments } from "utils/object";
-import { isArray, isArrayLike } from "utils/array";
+import { isNull, isString, isMap, isSet, isArguments } from ".";
+import { isArray, isArrayLike } from "../array";
 
 export const isEmpty = (value: any) => {
   if (isNull(value)) {

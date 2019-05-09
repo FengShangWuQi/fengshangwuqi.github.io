@@ -1,4 +1,4 @@
-import { has, toString } from "utils/object";
+import { has, toString } from ".";
 
 export const isEqual = (a: any, b: any): boolean => {
   if (a === b) {

@@ -1,4 +1,4 @@
-import { isNull, isUndefined, isFunction } from "utils/object";
+import { isNull, isUndefined, isFunction } from "../object";
 
 export const isArrayLike = (value: any) => {
   if (isNull(value) || isUndefined(value) || isFunction(value)) {
