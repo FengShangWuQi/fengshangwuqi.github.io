@@ -11,7 +11,7 @@ export class Item {
 
   constructor(props: IItemProps) {
     this.id = props.id;
-    this.board = `@${props.board}`;
+    this.board = props.board;
     this.description = props.description;
   }
 }

@@ -27,10 +27,22 @@ import {
 class Taskbook {
   data = storage.getData(tbPath);
 
+  validateID(id: string) {
+    if (!(id && this.data[id])) {
+      withWrap();
+      message.error("id illegal");
+      process.exit(1);
+    }
+  }
+
   generateID() {
     const ids = Object.keys(this.data).map(id => Number(id));
 
     return ids.length === 0 ? 1 : Math.max(...ids) + 1;
+  }
+
+  getItemAlias(item: any) {
+    return item.isTask ? "Task" : "Note";
   }
 
   groupByBoard() {
@@ -86,10 +98,12 @@ class Taskbook {
     let item = null;
 
     if (taskDesc && noteDesc) {
+      withWrap();
       message.error("-t or -n, can not have both.");
       process.exit(1);
     }
     if (!(taskDesc || noteDesc)) {
+      withWrap();
       message.error("-t or -n, must have one.");
       process.exit(1);
     }
@@ -98,7 +112,7 @@ class Taskbook {
     if (taskDesc) {
       item = new Task({
         id: String(this.generateID()),
-        board,
+        board: `@${board}`,
         description: taskDesc,
         priority: priority || priorityType.normal,
         status: statusType.pending,
@@ -130,15 +144,12 @@ class Taskbook {
     priority?: number;
     status?: number;
   }) {
-    if (!(id && this.data[id])) {
-      message.error("id illegal");
-      process.exit(1);
-    }
+    this.validateID(id);
 
     const { [id]: item, ...rest } = this.data;
 
     if (board) {
-      item.board = board;
+      item.board = `@${board}`;
     }
     if (description) {
       item.description = description;
@@ -160,7 +171,20 @@ class Taskbook {
     });
 
     withWrap();
-    message.success(`Edit ${item.isTask ? "Task" : "Note"} ${id}`);
+    message.success(`Edit ${this.getItemAlias(item)} ${id}`);
+  }
+
+  deleteItem({ id }: { id: string }) {
+    this.validateID(id);
+
+    const { [id]: item, ...rest } = this.data;
+
+    storage.setData(tbPath, {
+      ...rest,
+    });
+
+    withWrap();
+    message.success(`Delete ${this.getItemAlias(item)} ${id}`);
   }
 
   displayBoard(board: string, items: any) {
@@ -173,7 +197,7 @@ class Taskbook {
     });
   }
 
-  displayBoardItem(item: any) {
+  displayItem(item: any) {
     const { id, isTask, status, description, priority } = item;
 
     const prefix = `${" ".repeat(4 - id.length)}${dim(`${id}.`)} `;
@@ -216,7 +240,7 @@ class Taskbook {
 
       this.displayBoard(board, items);
 
-      items.map((item: any) => this.displayBoardItem(item));
+      items.map((item: any) => this.displayItem(item));
     });
   }
 

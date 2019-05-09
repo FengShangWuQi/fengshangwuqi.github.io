@@ -50,7 +50,7 @@ cli.command({
 cli.command({
   command: "edit [id]",
   desc: "Edit Item",
-  aliases: "upd",
+  aliases: "u",
   builder: (yargs: any) =>
     yargs.options({
       b: {
@@ -81,6 +81,17 @@ cli.command({
       description: argv.description,
       priority: argv.priority,
       status: argv.status,
+    });
+  },
+});
+
+cli.command({
+  command: "delete [id]",
+  desc: "Delete Item",
+  aliases: "rm",
+  handler: (argv: any) => {
+    tb.deleteItem({
+      id: argv.id,
     });
   },
 });
