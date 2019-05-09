@@ -146,6 +146,17 @@ class Taskbook {
   }) {
     this.validateID(id);
 
+    if (
+      isUndefined(board) &&
+      isUndefined(description) &&
+      isUndefined(priority) &&
+      isUndefined(status)
+    ) {
+      withWrap();
+      message.error("edit must have one argv.");
+      process.exit(1);
+    }
+
     const { [id]: item, ...rest } = this.data;
 
     if (board) {
