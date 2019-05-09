@@ -1,0 +1,37 @@
+{
+  "name": "taskbook",
+  "description": "枫上雾棋的看板",
+  "version": "1.0.0",
+  "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
+  "main": "cjs/cli.js",
+  "files": [
+    "cjs/",
+    "es/"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "start": "NODE_CONFIG_DIR=../../.taskbook ts-node ./cli.ts"
+  },
+  "bin": {
+    "tb": "./cjs/cli.js"
+  },
+  "dependencies": {
+    "chalk": "2.4.2",
+    "config": "3.1.0",
+    "fs-extra": "7.0.1",
+    "signale": "1.4.0",
+    "yargs": "13.2.2"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.34",
+    "@types/fs-extra": "^5.1.0",
+    "@types/signale": "^1.2.1",
+    "rollup": "1.11.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "ts-node": "8.1.0",
+    "tslib": "^1.9.3",
+    "typescript": "^3.4.5"
+  },
+  "license": "MIT"
+}
