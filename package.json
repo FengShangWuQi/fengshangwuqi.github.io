@@ -18,7 +18,10 @@
     "start": "ts-node ./tools/index.ts",
     "development": "gatsby develop -o",
     "build": "npm run clean && gatsby build --prefix-paths && mkdir -p dist/${APP} && mv public/* dist/${APP}",
-    "release": "gh-pages -d dist/${APP} -b ${APP_BRANCH} -m deploy::${APP} && gh-pages-clean"
+    "release": "gh-pages -d dist/${APP} -b ${BRANCH} -m deploy::${APP} && gh-pages-clean"
+  },
+  "bin": {
+    "tb": "./tools/taskbook/cjs/cli.js"
   },
   "husky": {
     "hooks": {
