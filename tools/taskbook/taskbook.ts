@@ -20,6 +20,8 @@ import {
   blue,
   red,
   yellow,
+  isUndefined,
+  withWrap,
 } from "./utils";
 
 class Taskbook {
@@ -91,7 +93,7 @@ class Taskbook {
       message.error("-t or -n, must have one.");
       process.exit(1);
     }
-    priority !== void 0 && validatePriority(priority);
+    !isUndefined(priority) && validatePriority(priority);
 
     if (taskDesc) {
       item = new Task({
@@ -101,19 +103,18 @@ class Taskbook {
         priority: priority || priorityType.normal,
         status: statusType.pending,
       });
-
-      message.success(`craete Task ${item!.id}`);
     } else if (noteDesc) {
       item = new Note({
         id: String(this.generateID()),
         board,
         description: noteDesc,
       });
-
-      message.success(`craete Note ${item!.id}`);
     }
 
     storage.setData(tbPath, { ...this.data, [item!.id]: item });
+
+    withWrap();
+    message.success(`craete ${taskDesc ? "Task" : "Note"} ${item!.id}`);
   }
 
   updateItem({
@@ -142,11 +143,11 @@ class Taskbook {
     if (description) {
       item.description = description;
     }
-    if (priority !== void 0 && item.isTask) {
+    if (!isUndefined(priority) && item.isTask) {
       validatePriority(priority);
       item.priority = priority;
     }
-    if (status !== void 0 && item.isTask) {
+    if (!isUndefined(status) && item.isTask) {
       validateStatus(status);
       item.status = status;
     }
@@ -158,9 +159,8 @@ class Taskbook {
       },
     });
 
-    item.isTask
-      ? message.success(`Edit Task ${id}`)
-      : message.success(`Edit Note ${id}`);
+    withWrap();
+    message.success(`Edit ${item.isTask ? "Task" : "Note"} ${id}`);
   }
 
   displayBoard(board: string, items: any) {

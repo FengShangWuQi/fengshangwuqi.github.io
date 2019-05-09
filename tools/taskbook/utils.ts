@@ -16,3 +16,10 @@ export const message = {
       `${chalk.black.bgRed(" error ".toUpperCase())} ${dim(message)}`,
     ),
 };
+
+export const withWrap = () => console.log();
+
+export const isUndefined = (value: any) => {
+  const undefined = void 0;
+  return value === undefined;
+};
