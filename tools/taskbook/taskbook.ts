@@ -112,7 +112,7 @@ class Taskbook {
     if (taskDesc) {
       item = new Task({
         id: String(this.generateID()),
-        board: `@${board}`,
+        board: `@${board}`.toUpperCase(),
         description: taskDesc,
         priority: priority || priorityType.normal,
         status: statusType.pending,
@@ -120,7 +120,7 @@ class Taskbook {
     } else if (noteDesc) {
       item = new Note({
         id: String(this.generateID()),
-        board,
+        board: `@${board}`.toUpperCase(),
         description: noteDesc,
       });
     }
@@ -160,7 +160,7 @@ class Taskbook {
     const { [id]: item, ...rest } = this.data;
 
     if (board) {
-      item.board = `@${board}`;
+      item.board = `@${board}`.toUpperCase();
     }
     if (description) {
       item.description = description;
