@@ -149,6 +149,7 @@ exports.feed = {
         }
       `,
       output: "/rss.xml",
+      title: "fengshangwuqi's blog RSS Feed",
     },
   ],
 };
