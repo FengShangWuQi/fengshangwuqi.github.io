@@ -37,7 +37,9 @@ export const Storybook = () => {
               marginTop: rhythm(3),
             }}>
             <a
-              href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/src-${group}/${module}/${component}.tsx`}
+              href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/${getGroupPath(
+                group,
+              )}/${module}/${component}.tsx`}
               target="_blank"
               rel="noopener noreferrer">
               Edit this component
@@ -47,4 +49,12 @@ export const Storybook = () => {
       </div>
     )
   );
+};
+
+const getGroupPath = (group: string) => {
+  if (group === "core" || group === "components") {
+    return `src-${group}`;
+  }
+
+  return group;
 };
