@@ -3,6 +3,7 @@ import { size } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
+import { pickElmAttrs } from "src-core/react";
 
 export interface IPaginationProps {
   total: number;
@@ -16,6 +17,7 @@ export const Pagination = ({
   offset,
   size,
   onChange,
+  ...otherProps
 }: IPaginationProps) => {
   const ds = useDesignSystem();
 
@@ -27,6 +29,7 @@ export const Pagination = ({
 
   return (
     <div
+      {...pickElmAttrs(otherProps)}
       css={{
         ...flex({
           alignItems: "center",

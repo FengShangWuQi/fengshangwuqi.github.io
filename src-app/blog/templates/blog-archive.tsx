@@ -76,6 +76,9 @@ export default ({
 
     <Footer>
       <Pagination
+        css={{
+          float: "right",
+        }}
         total={total}
         size={size}
         offset={offset}
