@@ -32,6 +32,7 @@ const groups = {
     /\/__storybook__\/(.+)\.tsx$/,
   ),
   utils: (require as any).context("utils", true, /\/__storybook__\/(.+)\.tsx$/),
+  cases: (require as any).context("cases", true, /\/__storybook__\/(.+)\.tsx$/),
 };
 
 export const groupModuleCompList: IDictionary<
