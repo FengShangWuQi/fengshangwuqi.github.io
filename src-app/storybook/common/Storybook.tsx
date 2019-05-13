@@ -39,7 +39,9 @@ export const Storybook = () => {
             <a
               href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/${getGroupPath(
                 group,
-              )}/${module}/${component}.tsx`}
+              )}/${module}/${
+                group === "cases" ? "__storybook__/" : ""
+              }${component}.tsx`}
               target="_blank"
               rel="noopener noreferrer">
               Edit this component

@@ -18,7 +18,7 @@ export const SideBar = ({ group }: { group: string }) => {
     <div
       css={{
         marginRight: 40,
-        width: 160,
+        width: 220,
         height: "100%",
         fontSize: ds.size.s,
         ...border("right", 1, "solid", ds.color.primary),
