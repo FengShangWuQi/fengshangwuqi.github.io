@@ -7,7 +7,6 @@ export interface IRect {
   left: number;
   width: number;
   height: number;
-  placement: "top" | "bottom";
 }
 
 export const getRect = (targetElm: Element, relatedElm: Element): IRect => {
@@ -19,7 +18,6 @@ export const getRect = (targetElm: Element, relatedElm: Element): IRect => {
     left: (targetRect.left || 0) - relatedRect.left,
     width: targetRect.width || 0,
     height: targetRect.height || 0,
-    placement: targetRect.top > window.innerHeight / 2 ? "top" : "bottom",
   };
 };
 
@@ -29,7 +27,6 @@ export const useRect = (elmRef: RefObject<Element | null>) => {
     top: 0,
     width: 0,
     height: 0,
-    placement: "top",
   };
 
   const [rect, setRect] = useState(defaultRect);
