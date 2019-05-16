@@ -2,7 +2,7 @@ import React from "react";
 
 import { useMatch } from "src-core/router";
 
-import { flex, margin, rhythm } from "src-core/style";
+import { flex, margin, rhythm, padding } from "src-core/style";
 
 import { groupModuleCompList } from "../templates";
 import { SideBar } from "./SideBar";
@@ -19,9 +19,9 @@ export const Storybook = () => {
       <div
         css={{
           ...flex({}),
-          ...margin(0, "auto"),
-          marginTop: 40,
-          width: 1200,
+          ...margin(40, "auto", 0),
+          ...padding(0, 24),
+          maxWidth: 1200,
         }}>
         <SideBar group={group} />
         <div

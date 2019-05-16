@@ -3,7 +3,7 @@ import React from "react";
 import { useRedirect, Link } from "src-core/router";
 import { useDesignSystem } from "src-core/ds";
 
-import { flex, margin } from "src-core/style";
+import { flex, margin, padding } from "src-core/style";
 
 import { BaseMenu, BaseMenuItem } from "src-components/menus";
 
@@ -45,7 +45,8 @@ export const Header = () => {
       <div
         css={{
           ...margin(0, "auto"),
-          width: 1200,
+          ...padding(0, 24),
+          maxWidth: 1200,
         }}>
         <div
           css={{
@@ -53,7 +54,13 @@ export const Header = () => {
               justifyContent: "space-between",
             }),
           }}>
-          <Link to="/">枫上雾棋的 storybook</Link>
+          <Link
+            css={{
+              minWidth: 220,
+            }}
+            to="/">
+            枫上雾棋的 storybook
+          </Link>
           <BaseMenu
             css={{
               height: 50,

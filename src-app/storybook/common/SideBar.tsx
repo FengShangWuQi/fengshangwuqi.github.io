@@ -17,11 +17,11 @@ export const SideBar = ({ group }: { group: string }) => {
   return (
     <div
       css={{
+        ...border("right", 1, "solid", ds.color.primary),
         marginRight: 40,
         width: 220,
         height: "100%",
         fontSize: ds.size.s,
-        ...border("right", 1, "solid", ds.color.primary),
       }}>
       {Object.keys(currGroup).map(moduleName => (
         <div key={moduleName}>

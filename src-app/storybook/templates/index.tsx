@@ -1,4 +1,6 @@
 import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
 
 import { Bootstrap } from "src-core/react";
 import { useRouter } from "src-core/router";
@@ -8,12 +10,37 @@ import { IDictionary } from "utils/object";
 import { storybookTheme, StorybookGlobal } from "../common/Layout";
 import { routes } from "../route";
 
-export default () => {
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
+
+export default ({
+  data: {
+    site: {
+      siteMetadata: { title },
+    },
+  },
+}: any) => {
   const routeResult = useRouter({ routes });
 
   return (
     <Bootstrap ds={storybookTheme}>
       <StorybookGlobal />
+      <Helmet
+        title={title}
+        meta={[
+          {
+            name: "viewport",
+            content: "user-scalable=no",
+          },
+        ]}
+      />
 
       {routeResult}
     </Bootstrap>
