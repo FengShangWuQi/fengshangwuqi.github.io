@@ -11,9 +11,19 @@ const {
   helmet,
   twitter,
   offline,
+  svgr,
 } = require(`${gatsbyPath}/config`);
 
-const plugins = [ts, emotion, typography, twitter, helmet, analytics, offline];
+const plugins = [
+  ts,
+  emotion,
+  typography,
+  twitter,
+  helmet,
+  analytics,
+  offline,
+  svgr,
+];
 
 module.exports = {
   ...siteMetadata,

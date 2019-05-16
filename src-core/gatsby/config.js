@@ -94,6 +94,43 @@ exports.helmet = "gatsby-plugin-react-helmet";
 // Loads the Twitter JavaScript for embedding tweets
 exports.twitter = "gatsby-plugin-twitter";
 
+// Transform SVGs into React components
+exports.svgr = {
+  resolve: "gatsby-plugin-svgr",
+  options: {
+    icon: true,
+    replaceAttrValues: {
+      "#555": "currentColor",
+    },
+    svgoConfig: {
+      cleanupAttrs: true,
+      cleanupIDs: true,
+      cleanupEnableBackground: true,
+      inlineStyles: true,
+      collapseGroups: true,
+      convertStyleToAttrs: true,
+      convertColors: true,
+      convertShapeToPath: true,
+      removeDoctype: true,
+      removeXMLProcInst: true,
+      removeComments: true,
+      removeMetadata: true,
+      removeTitle: true,
+      removeDesc: true,
+      removeUselessDefs: true,
+      removeEditorsNSData: true,
+      removeEmptyAttrs: true,
+      removeHiddenElems: true,
+      removeEmptyText: true,
+      removeEmptyContainers: true,
+      removeViewBox: true,
+      removeUnknownsAndDefaults: true,
+      removeUselessStrokeAndFill: true,
+      removeUnusedNS: true,
+    },
+  },
+};
+
 // Work offline and more resistant to bad network connections
 exports.offline = "gatsby-plugin-offline";
 
