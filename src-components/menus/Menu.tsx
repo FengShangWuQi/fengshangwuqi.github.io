@@ -1,6 +1,8 @@
 import React, { createContext, useContext } from "react";
 import { CSSObject } from "@emotion/core";
 
+import { padding } from "src-core/style";
+
 export enum MenuMode {
   VERTICAL,
   HORIZONTAL,
@@ -44,6 +46,7 @@ export const menuModeStyle = (
       };
     case MenuMode.VERTICAL:
       return {
+        ...padding(10, 0),
         width: 200,
       };
   }

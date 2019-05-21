@@ -21,12 +21,6 @@ export const menuItemModeStyle = (
         height: 32,
         lineHeight: "32px",
         paddingLeft: rhythm(1 / 2),
-        "&:first-of-type": {
-          marginTop: 8,
-        },
-        "&:last-of-type": {
-          marginBottom: 8,
-        },
       };
   }
 };
