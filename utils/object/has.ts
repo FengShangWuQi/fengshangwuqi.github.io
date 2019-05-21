@@ -1,5 +1,7 @@
+import { isArray } from "../array";
+
 export const has = (obj: object, path: string | string[]): boolean => {
-  if (!Array.isArray(path)) {
+  if (!isArray(path)) {
     return hasWithKey(obj, path);
   }
 
