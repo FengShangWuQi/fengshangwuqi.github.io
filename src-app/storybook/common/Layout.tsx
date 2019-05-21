@@ -35,6 +35,11 @@ export const StorybookGlobal = () => {
           ...border("bottom", 1, "solid", ds.color.primary),
           paddingBottom: rhythm(1 / 2),
         },
+
+        pre: {
+          ...border("left", 2, "solid", "#ddd"),
+          marginBottom: 0,
+        },
       }}
     />
   );
