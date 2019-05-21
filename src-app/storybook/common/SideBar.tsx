@@ -42,7 +42,7 @@ export const SideBar = ({ group }: { group: string }) => {
                 }}
                 key={compName}
                 to={`/${group}/${moduleName}/${compName}`}>
-                <BaseMenuItem> {compName}</BaseMenuItem>
+                <BaseMenuItem>{compName}</BaseMenuItem>
               </Link>
             ))}
           </BaseMenu>
