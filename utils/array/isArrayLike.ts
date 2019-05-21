@@ -12,7 +12,7 @@ export const isArrayLike = (value: any) => {
   return (
     typeof len === "number" &&
     len >= 0 &&
-    value % 1 == 0 &&
-    value <= MAX_ARRAY_INDEX
+    len % 1 == 0 &&
+    len <= MAX_ARRAY_INDEX
   );
 };
