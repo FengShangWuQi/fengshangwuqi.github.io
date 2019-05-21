@@ -15,11 +15,9 @@ export const isDeepEqual = (a: any, b: any): boolean => {
 
   switch (toString(a)) {
     case "[object Array]":
-      isArrEqual(a, b);
-      break;
+      return isArrEqual(a, b);
     case "[object Object]":
-      isObjEqual(a, b);
-      break;
+      return isObjEqual(a, b);
     case "[object Number]":
     case "[object RegExp]":
     case "[object Date]":
@@ -32,7 +30,7 @@ export const isDeepEqual = (a: any, b: any): boolean => {
 const isArrEqual = (a: [], b: []): boolean => {
   let len = a.length;
 
-  if (len! === b.length) {
+  if (len !== b.length) {
     return false;
   }
 
