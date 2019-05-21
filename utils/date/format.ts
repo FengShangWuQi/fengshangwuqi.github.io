@@ -7,11 +7,8 @@ export const format = (date: Date, formatStr: string) => {
       .toString()
       .slice(-2),
     YYYY: date.getFullYear().toString(),
-    M: date.getMonth().toString(),
-    MM: date
-      .getMonth()
-      .toString()
-      .padStart(2, "0"),
+    M: (date.getMonth() + 1).toString(),
+    MM: (date.getMonth() + 1).toString().padStart(2, "0"),
     D: date.getDate().toString(),
     DD: date
       .getDate()
