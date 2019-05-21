@@ -19,7 +19,7 @@ export const Storybook = () => {
       <div
         css={{
           ...flex({}),
-          ...margin(40, "auto", 0),
+          ...margin(40, "auto"),
           ...padding(0, 24),
           maxWidth: 1200,
         }}>
@@ -41,7 +41,7 @@ export const Storybook = () => {
                 group,
               )}/${module}/${
                 group === "cases" ? "__storybook__/" : ""
-              }${component}.tsx`}
+              }${component}.${getSuffix(group)}`}
               target="_blank"
               rel="noopener noreferrer">
               Edit this component
@@ -59,4 +59,12 @@ const getGroupPath = (group: string) => {
   }
 
   return group;
+};
+
+export const getSuffix = (group: string) => {
+  if (group === "utils") {
+    return "ts";
+  }
+
+  return "tsx";
 };
