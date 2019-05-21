@@ -1,8 +1,8 @@
-import { isNull, isString, isMap, isSet, isArguments } from ".";
+import { isString, isMap, isSet, isArguments } from ".";
 import { isArray, isArrayLike } from "../array";
 
 export const isEmpty = (value: any) => {
-  if (isNull(value)) {
+  if (value == null) {
     return true;
   }
 
