@@ -6,8 +6,8 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  titleCase("top")
-  // => Top
+        {`titleCase("top")
+// => Top
 `}
       </pre>
 

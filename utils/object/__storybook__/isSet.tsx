@@ -6,11 +6,11 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  isSet(new Set())
-  // => true
+        {`isSet(new Set())
+// => true
 
-  isSet(new WeakSet())
-  // => false
+isSet(new WeakSet())
+// => false
 `}
       </pre>
 

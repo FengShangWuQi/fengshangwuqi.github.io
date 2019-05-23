@@ -6,8 +6,8 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  isFunction(() => {})
-  // => true
+        {`isFunction(() => {})
+// => true
 `}
       </pre>
 

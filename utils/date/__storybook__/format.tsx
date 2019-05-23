@@ -6,8 +6,8 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  format(new Date(), "YY-MM-DD hh:mm:ss");
-  // => 10-10-10 10:10:10
+        {`format(new Date(), "YY-MM-DD hh:mm:ss");
+// => 10-10-10 10:10:10
 `}
       </pre>
 

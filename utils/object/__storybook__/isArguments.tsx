@@ -6,15 +6,15 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  isArguments(
-    (function() {
-      return arguments;
-    })(),
-  )
-  // => true
+        {`isArguments(
+  (function() {
+    return arguments;
+  })(),
+)
+// => true
 
-  isArguments([1, 2, 3])
-  // => false
+isArguments([1, 2, 3])
+// => false
 `}
       </pre>
 

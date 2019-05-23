@@ -6,11 +6,11 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  isUndefined(void 0)
-  // => true
+        {`isUndefined(void 0)
+// => true
 
-  isUndefined(null)
-  // => false
+isUndefined(null)
+// => false
 `}
       </pre>
 

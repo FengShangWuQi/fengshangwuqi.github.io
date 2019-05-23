@@ -39,6 +39,7 @@ export const StorybookGlobal = () => {
         pre: {
           ...border("left", 2, "solid", "#ddd"),
           marginBottom: 0,
+          paddingLeft: 18,
         },
       }}
     />

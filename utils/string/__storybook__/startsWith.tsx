@@ -6,11 +6,11 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  startsWith("/path", "/")
-  // => true
+        {`startsWith("/path", "/")
+// => true
 
-  startsWith("/path", "path")
-  // => false
+startsWith("/path", "path")
+// => false
 `}
       </pre>
 

@@ -6,25 +6,25 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  isObject({})
-  // => true
+        {`isObject({})
+// => true
 
-  isObject([1, 2, 3])
-  // => true
+isObject([1, 2, 3])
+// => true
 
-  isObject(() => {})
-  // => true
+isObject(() => {})
+// => true
 
-  isObject("123")
-  // => false
+isObject("123")
+// => false
 
-  isObject(123)
-  // => false
+isObject(123)
+// => false
 
-  isObject(null)
-  // => false
+isObject(null)
+// => false
 
-  isObject(void 0)
+isObject(void 0)
   // => false
 `}
       </pre>

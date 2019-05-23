@@ -6,11 +6,11 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  isString("abc")
-  // => true
+        {`isString("abc")
+// => true
 
-  isString(123)
-  // => false
+isString(123)
+// => false
 `}
       </pre>
 

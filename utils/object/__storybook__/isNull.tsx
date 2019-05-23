@@ -6,11 +6,11 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  isNull(null)
-  // => true
+        {`isNull(null)
+// => true
 
-  isNull(void 0)
-  // => false
+isNull(void 0)
+// => false
 `}
       </pre>
 

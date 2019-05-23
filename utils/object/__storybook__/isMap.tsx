@@ -6,11 +6,11 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  isMap(new Map())
-  // => true
+        {`isMap(new Map())
+// => true
 
-  isMap(new WeakMap())
-  // => false
+isMap(new WeakMap())
+// => false
 `}
       </pre>
 
