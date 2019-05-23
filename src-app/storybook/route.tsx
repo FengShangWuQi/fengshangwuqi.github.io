@@ -7,7 +7,7 @@ import { Storybook } from "./common/Storybook";
 
 export const routes = {
   "/": {
-    component: () => <Redirect to="/components" />,
+    component: () => <Redirect to="core" />,
     routes: {
       ":group": {
         component: Header,
