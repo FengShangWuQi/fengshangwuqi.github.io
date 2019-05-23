@@ -6,17 +6,15 @@ export default () => {
   return (
     <div>
       <pre>
-        {`<Discussion
-  shortname={shortname}
-  config={{
-    identifier,
-    url,
-  }}
-/>
+        {`const App = () => {
+  const ds = useDesignSystem();
+
+  return <div css={{ background: ds.color.bg }} />
+}
 `}
       </pre>
 
-      <EditLink path="src-core/disqus/Discussion.tsx" />
+      <EditLink path="src-core/ds/useDesignSystem.ts" />
     </div>
   );
 };

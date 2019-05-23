@@ -6,17 +6,12 @@ export default () => {
   return (
     <div>
       <pre>
-        {`<Discussion
-  shortname={shortname}
-  config={{
-    identifier,
-    url,
-  }}
-/>
+        {`const App = ({ ...otherprops }) =>
+  <div {...pickElmAttrs(otherProps)} />
 `}
       </pre>
 
-      <EditLink path="src-core/disqus/Discussion.tsx" />
+      <EditLink path="src-core/react/pickElmAttrs.ts" />
     </div>
   );
 };

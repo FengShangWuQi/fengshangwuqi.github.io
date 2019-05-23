@@ -6,17 +6,14 @@ export default () => {
   return (
     <div>
       <pre>
-        {`<Discussion
-  shortname={shortname}
-  config={{
-    identifier,
-    url,
-  }}
-/>
+        {`<ThemeProvider theme={defaultTheme}>
+  <DSReset />
+  {children}
+</ThemeProvider>
 `}
       </pre>
 
-      <EditLink path="src-core/disqus/Discussion.tsx" />
+      <EditLink path="src-core/ds/reset.tsx" />
     </div>
   );
 };
