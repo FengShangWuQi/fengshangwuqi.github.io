@@ -12,7 +12,7 @@ export const useSearch = () => {
   const { location, navigateTo } = useLocation();
 
   const { pathname, search, hash } = location;
-  const query = parse(search);
+  const query = parseSearchString(search);
 
   const setQuery = (newQuery: SearchQuery) => {
     navigateTo(`${pathname}${toSearchString(newQuery)}${hash}`, {
@@ -30,7 +30,8 @@ export const toSearchString = (query: SearchQuery) => {
 
 export const parseSearchString = (search: string): SearchQuery => {
   if (search[0] === "?") {
-    search = search.slice(1);
+    return parse(search.slice(1));
   }
+
   return parse(search);
 };
