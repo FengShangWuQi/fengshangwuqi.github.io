@@ -1,14 +1,20 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 export default () => {
   return (
-    <pre>
-      {`  isNull(null)
+    <div>
+      <pre>
+        {`  isNull(null)
   // => true
 
   isNull(void 0)
   // => false
 `}
-    </pre>
+      </pre>
+
+      <EditLink path="utils/object/isNull.ts" />
+    </div>
   );
 };

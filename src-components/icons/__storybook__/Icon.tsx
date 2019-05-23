@@ -1,38 +1,44 @@
 import React from "react";
 
-import { useDesignSystem } from "../../../src-core/ds";
-import { flex } from "../../../src-core/style";
+import { useDesignSystem } from "src-core/ds";
+import { flex } from "src-core/style";
 
-import { IconMenu } from "../";
+import { EditLink } from "src-app/storybook/common/Storybook";
+
+import { IconMenu } from "..";
 
 export default () => {
   const ds = useDesignSystem();
 
   return (
-    <div
-      css={{
-        ...flex({
-          flexWrap: "wrap",
-        }),
-        color: "#555",
-        fill: "#555",
-      }}>
+    <div>
       <div
         css={{
           ...flex({
-            flexDirection: "column",
-            alignItems: "center",
+            flexWrap: "wrap",
           }),
-          width: "16.66%",
+          color: "#555",
+          fill: "#555",
         }}>
-        <span
+        <div
           css={{
-            fontSize: ds.size.xxl,
+            ...flex({
+              flexDirection: "column",
+              alignItems: "center",
+            }),
+            width: "16.66%",
           }}>
-          <IconMenu />
-        </span>
-        <span css={{ fontSize: ds.size.s }}>IconMenu</span>
+          <span
+            css={{
+              fontSize: ds.size.xxl,
+            }}>
+            <IconMenu />
+          </span>
+          <span css={{ fontSize: ds.size.s }}>IconMenu</span>
+        </div>
       </div>
+
+      <EditLink path="src-components/icons/Icon.tsx" />
     </div>
   );
 };

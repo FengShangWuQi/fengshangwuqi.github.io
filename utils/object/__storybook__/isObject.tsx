@@ -1,9 +1,12 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 export default () => {
   return (
-    <pre>
-      {`  isObject({})
+    <div>
+      <pre>
+        {`  isObject({})
   // => true
 
   isObject([1, 2, 3])
@@ -24,6 +27,9 @@ export default () => {
   isObject(void 0)
   // => false
 `}
-    </pre>
+      </pre>
+
+      <EditLink path="utils/object/isObject.ts" />
+    </div>
   );
 };

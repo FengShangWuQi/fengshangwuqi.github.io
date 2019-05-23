@@ -1,5 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
+
 import { rxBehaviorSubject } from "src-core/rxjs";
+
+import { EditLink } from "src-app/storybook/common/Storybook";
 
 export default () => {
   const rootRef = useRef(null);
@@ -53,35 +56,39 @@ export default () => {
   }, []);
 
   return (
-    <div
-      ref={rootRef}
-      css={{
-        padding: 10,
-        width: 300,
-        height: 240,
-        border: "1px solid #eee",
-        overflow: "scroll",
-      }}>
-      {items.map(item => (
-        <div
-          key={item}
-          css={{
-            margin: "16px auto",
-            paddingLeft: 8,
-            color: "#333333",
-            background: "#f1f1f1cc",
-            border: "1px solid #dbdbdb",
-            borderRadius: 5,
-          }}>
-          {item}
-        </div>
-      ))}
-      <footer
-        ref={footerRef}
+    <div>
+      <div
+        ref={rootRef}
         css={{
-          height: 10,
-        }}
-      />
+          padding: 10,
+          width: 300,
+          height: 240,
+          border: "1px solid #eee",
+          overflow: "scroll",
+        }}>
+        {items.map(item => (
+          <div
+            key={item}
+            css={{
+              margin: "16px auto",
+              paddingLeft: 8,
+              color: "#333333",
+              background: "#f1f1f1cc",
+              border: "1px solid #dbdbdb",
+              borderRadius: 5,
+            }}>
+            {item}
+          </div>
+        ))}
+        <footer
+          ref={footerRef}
+          css={{
+            height: 10,
+          }}
+        />
+      </div>
+
+      <EditLink path="cases/IntersectionObserver/__storybook__/InfiniteScroll.tsx" />
     </div>
   );
 };

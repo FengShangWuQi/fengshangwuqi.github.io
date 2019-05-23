@@ -1,9 +1,12 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 export default () => {
   return (
-    <pre>
-      {`  isArguments(
+    <div>
+      <pre>
+        {`  isArguments(
     (function() {
       return arguments;
     })(),
@@ -13,6 +16,9 @@ export default () => {
   isArguments([1, 2, 3])
   // => false
 `}
-    </pre>
+      </pre>
+
+      <EditLink path="utils/object/isArguments.ts" />
+    </div>
   );
 };

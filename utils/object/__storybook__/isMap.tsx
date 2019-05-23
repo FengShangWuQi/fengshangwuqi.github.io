@@ -1,14 +1,20 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 export default () => {
   return (
-    <pre>
-      {`  isMap(new Map())
+    <div>
+      <pre>
+        {`  isMap(new Map())
   // => true
 
   isMap(new WeakMap())
   // => false
 `}
-    </pre>
+      </pre>
+
+      <EditLink path="utils/object/isMap.ts" />
+    </div>
   );
 };

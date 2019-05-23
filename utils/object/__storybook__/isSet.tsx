@@ -1,14 +1,20 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 export default () => {
   return (
-    <pre>
-      {`  isSet(new Set())
+    <div>
+      <pre>
+        {`  isSet(new Set())
   // => true
 
   isSet(new WeakSet())
   // => false
 `}
-    </pre>
+      </pre>
+
+      <EditLink path="utils/object/isSet.ts" />
+    </div>
   );
 };

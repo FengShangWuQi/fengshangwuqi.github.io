@@ -1,10 +1,12 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 import { Trigger, popupPlacement } from "../";
 
 export default () => {
   return (
-    <>
+    <div>
       <Trigger
         placement={popupPlacement.bottom}
         closeOnClickOutside
@@ -33,6 +35,8 @@ export default () => {
           );
         }}
       </Trigger>
-    </>
+
+      <EditLink path="src-components/pagers/Pagination.tsx" />
+    </div>
   );
 };

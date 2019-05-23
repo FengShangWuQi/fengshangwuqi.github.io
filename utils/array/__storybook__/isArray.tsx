@@ -1,9 +1,12 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 export default () => {
   return (
-    <pre>
-      {`  isArray([1, 2, 3]);
+    <div>
+      <pre>
+        {`  isArray([1, 2, 3]);
   // => true
 
   isArray(new Set([1, 2, 3]))
@@ -15,6 +18,9 @@ export default () => {
   isArray({ 1: "a", 2: "b", 3: "c", length: 3 })
   // => false
 `}
-    </pre>
+      </pre>
+
+      <EditLink path="utils/array/isArray.ts" />
+    </div>
   );
 };

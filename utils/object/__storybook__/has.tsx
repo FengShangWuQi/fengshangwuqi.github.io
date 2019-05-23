@@ -1,9 +1,12 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 export default () => {
   return (
-    <pre>
-      {`  const obj = { a: [{ b: { c: 3 } }] };
+    <div>
+      <pre>
+        {`  const obj = { a: [{ b: { c: 3 } }] };
             
   has(object, "a")
   // => true
@@ -20,6 +23,9 @@ export default () => {
   has(object, ["a", "0", "b", "d"])
   // => false
 `}
-    </pre>
+      </pre>
+
+      <EditLink path="utils/object/has.ts" />
+    </div>
   );
 };

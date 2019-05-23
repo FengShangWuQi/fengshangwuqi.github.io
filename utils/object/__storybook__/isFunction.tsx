@@ -1,11 +1,17 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 export default () => {
   return (
-    <pre>
-      {`  isFunction(() => {})
+    <div>
+      <pre>
+        {`  isFunction(() => {})
   // => true
 `}
-    </pre>
+      </pre>
+
+      <EditLink path="utils/object/isFunction.ts" />
+    </div>
   );
 };

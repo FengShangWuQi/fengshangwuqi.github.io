@@ -31,40 +31,24 @@ export const Storybook = () => {
           <h1>{component}</h1>
 
           <SB />
-
-          <div
-            css={{
-              marginTop: rhythm(3),
-            }}>
-            <a
-              href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/${getGroupPath(
-                group,
-              )}/${module}/${
-                group === "cases" ? "__storybook__/" : ""
-              }${component}.${getSuffix(group)}`}
-              target="_blank"
-              rel="noopener noreferrer">
-              Edit this component
-            </a>
-          </div>
         </div>
       </div>
     )
   );
 };
 
-const getGroupPath = (group: string) => {
-  if (group === "core" || group === "components") {
-    return `src-${group}`;
-  }
-
-  return group;
-};
-
-export const getSuffix = (group: string) => {
-  if (group === "utils") {
-    return "ts";
-  }
-
-  return "tsx";
+export const EditLink = ({ path }: { path: string }) => {
+  return (
+    <div
+      css={{
+        marginTop: rhythm(3),
+      }}>
+      <a
+        href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/${path}`}
+        target="_blank"
+        rel="noopener noreferrer">
+        Edit on GitHub
+      </a>
+    </div>
+  );
 };

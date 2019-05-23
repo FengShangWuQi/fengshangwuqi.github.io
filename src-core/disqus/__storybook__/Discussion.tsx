@@ -6,15 +6,17 @@ export default () => {
   return (
     <div>
       <pre>
-        {`  isUndefined(void 0)
-  // => true
-
-  isUndefined(null)
-  // => false
+        {`  <Discussion
+   shortname={shortname}
+   config={{
+     identifier,
+     url,
+   }}
+  />
 `}
       </pre>
 
-      <EditLink path="utils/object/isUndefined.ts" />
+      <EditLink path="src-core/disqus/Discussion.tsx" />
     </div>
   );
 };

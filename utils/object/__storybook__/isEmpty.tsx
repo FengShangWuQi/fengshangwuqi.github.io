@@ -1,9 +1,12 @@
 import React from "react";
 
+import { EditLink } from "src-app/storybook/common/Storybook";
+
 export default () => {
   return (
-    <pre>
-      {`  isEmpty({})
+    <div>
+      <pre>
+        {`  isEmpty({})
   // => true
 
   isEmpty(null)
@@ -21,6 +24,9 @@ export default () => {
   isEmpty([1, 2, 3])
   // => false
 `}
-    </pre>
+      </pre>
+
+      <EditLink path="utils/object/isEmpty.ts" />
+    </div>
   );
 };
