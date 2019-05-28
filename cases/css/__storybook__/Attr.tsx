@@ -35,7 +35,7 @@ export default () => {
         </span>
       </div>
 
-      <EditLink path="cases/css/__storybook__/Attr.tsx" />
+      <EditLink path="cases/css/__storybook__/attr.tsx" />
     </div>
   );
 };

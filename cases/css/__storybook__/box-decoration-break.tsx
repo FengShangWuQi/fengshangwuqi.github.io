@@ -27,7 +27,7 @@ export default () => {
         l'élément est alors appelé un fragment.
       </span>
 
-      <EditLink path="cases/css/__storybook__/BoxDecorationBreak.tsx" />
+      <EditLink path="cases/css/__storybook__/box-decoration-break.tsx" />
     </div>
   );
 };

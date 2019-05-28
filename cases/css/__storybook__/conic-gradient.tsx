@@ -27,7 +27,7 @@ export default () => {
         />
       </div>
 
-      <EditLink path="cases/css/__storybook__/Attr.tsx" />
+      <EditLink path="cases/css/__storybook__/conic-gradient.tsx" />
     </div>
   );
 };
