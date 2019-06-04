@@ -244,7 +244,7 @@ class Taskbook {
   }
 
   displayItemsByBoard() {
-    const data = this.groupByBoard();
+    const data = this.groupByBoard() as { [key: string]: any };
 
     Object.keys(data).map(board => {
       const items = data[board];
