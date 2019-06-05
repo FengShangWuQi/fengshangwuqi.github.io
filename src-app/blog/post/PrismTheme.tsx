@@ -39,9 +39,6 @@ export const PrismTheme = () => {
         ".token.comment": {
           color: "#6272a4",
         },
-        ".token.url": {
-          color: "#f1fa8c",
-        },
         [`.token.boolean,
           .token.number,
           .token.constant,
@@ -63,7 +60,9 @@ export const PrismTheme = () => {
         ".token.punctuation": {
           color: ds.color.bg,
         },
-        [`.token.attr-value,
+        [`a.vglnk,
+        .token.url,
+        .token.attr-value,
           .token.string,
           .token.string a,
           .token.char,

@@ -22,7 +22,7 @@ export const PostContainer = ({ children }: { children: React.ReactNode }) => {
           'Segoe UI Emoji',
           'Segoe UI Symbol'`,
         lineHeight: 1.625,
-        "& a:not(.anchor):not(.gatsby-resp-image-link)": {
+        "& a:not(.anchor):not(.gatsby-resp-image-link):not(.vglnk)": {
           ...border("bottom", 1, "solid", "#ddd"),
           background: rgba("#ddd", 0.3),
         },
