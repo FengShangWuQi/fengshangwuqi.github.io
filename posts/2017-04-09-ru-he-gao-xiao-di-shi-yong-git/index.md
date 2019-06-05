@@ -47,7 +47,7 @@ $ ssh-keygen -t rsa -C "邮箱"
 # 初始化仓库
 $ git init
 
-将源代码提交到暂存区
+# 将源代码提交到暂存区
 $ git add .
 
 # 提交暂存区的源代码
@@ -208,24 +208,27 @@ $ git push origin --delete 标签名
 $ git push origin :refs/tags/标签名
 ```
 
-### 提交
+### log
+
+花式查看提交
 
 ```bash
-# 花式查看提交
 $ git log --pretty=oneline  // 只显示一行
 $ git log --abbrev-commit   // 只显示 SHA-1 的前几个字符
 $ git log --graph           // 显示 ASCII 图形表示的分支合并历史
 $ git log --relative-date   // 使用较短的相对时间显示
 $ git log --name-only       // 仅在提交信息后显示已修改的文件清单
-$ git log -n 			          // 显示最近的 n 条提交
+$ git log -n                // 显示最近的 n 条提交
 $ git log --author=fengshangwuqi  // 仅显示指定作者相关的提交
 $ git log --grep                  // 仅显示含指定关键字的提交
 ```
 
+### 提交
+
 没有任何改动的提交：
 
 ```bash
-git commit -m "a no chnage commit" --allow-empty
+$ git commit -m "a no chnage commit" --allow-empty
 ```
 
 主要用于一下情形：
@@ -234,6 +237,14 @@ git commit -m "a no chnage commit" --allow-empty
 - 记录对项目的跟代码无关的改动；
 - 跟使用你仓库的其他人交流；
 - 作为仓库的第一次提交，因为第一次提交后不能被 **rebase**；
+
+再次提交：
+
+```bash
+$ git cherry-pick <commit-id> [-e "new message"]
+```
+
+将某次 commit 再次提交，常用于将某个分支某个功能的 commit 提取到其他分支或当前分支某些 commit 搞掉了，拿到对应 commit-id，重新提交。
 
 ### git pull 与 git pull --rebase 的区别
 
@@ -297,9 +308,6 @@ dist
 .#*
 *#
 *~
-
-# vim
-.agignore
 
 # 敏感信息
 default.yml
