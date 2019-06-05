@@ -1,11 +1,1 @@
-<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg t="1557917578197" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" 
-    xmlns="http://www.w3.org/2000/svg" p-id="6413" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16">
-    <defs>
-        <style type="text/css"></style>
-    </defs>
-    <path d="M192.662463 640.429021l637.429711 0 0 70.827115-637.429711 0 0-70.827115Z" p-id="6414" fill="#555555"></path>
-    <path d="M192.662463 446.99345l637.429711 0 0 70.825069-637.429711 0 0-70.825069Z" p-id="6415" fill="#555555"></path>
-    <path d="M192.662463 256.658498l637.429711 0 0 70.825069-637.429711 0 0-70.825069Z" p-id="6416" fill="#555555"></path>
-</svg>
+<svg role="img" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24" aria-labelledby="hamburgerIconTitle" stroke="#555555" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#555555"> <title id="hamburgerIconTitle">Menu</title> <path d="M6 7L18 7M6 12L18 12M6 17L18 17"/> </svg>
