@@ -38,15 +38,18 @@ const iconExport = (name: string) =>
 const iconStorybook = (icons: string[]) => `
     import React from "react";
 
-    import { useDesignSystem } from "../../../src-core/ds";
-    import { flex } from "../../../src-core/style";
+    import { useDesignSystem } from "src-core/ds";
+    import { flex } from "src-core/style";
+
+    import { EditLink } from "src-app/storybook/common/Storybook";
     
-    import { ${icons.map(name => getIconName(name)).join(",")} } from "../"
+    import { ${icons.map(name => getIconName(name)).join(",")} } from ".."
     
     export default () => {
         const ds = useDesignSystem();
 
         return (
+          <div>
             <div css={{
               ...flex({
                 flexWrap: "wrap",
@@ -75,6 +78,9 @@ const iconStorybook = (icons: string[]) => `
                 )
                 .join("")}
             </div>
+
+            <EditLink path="src-components/icons/Icon.tsx" />
+          </div>
         )
   }`;
 
