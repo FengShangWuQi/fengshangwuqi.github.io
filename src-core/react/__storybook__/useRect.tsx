@@ -33,7 +33,6 @@ export default () => {
             <div
               ref={ref}
               css={{ width: 300, height: 200, border: "1px solid #333" }}
-              title={`${rect.width}, ${rect.height}`}
             />
             <div
               css={{
