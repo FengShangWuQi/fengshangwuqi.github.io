@@ -1,3 +1,4 @@
+export { Observable as rxObservable } from "rxjs";
 export { BehaviorSubject as rxBehaviorSubject } from "rxjs";
 export { fromEvent as rxFromEvent } from "rxjs";
 export { merge as rxMerge } from "rxjs";
