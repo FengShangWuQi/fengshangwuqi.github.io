@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { withoutBubble } from "src-core/react";
+import { withoutBubble, useToggle } from "src-core/react";
 
 import { EditLink } from "src-app/storybook/common/Storybook";
 
 import { Redirect } from "..";
 
 export default () => {
-  const [toggle, setToggle] = useState(false);
+  const [on, toggle] = useToggle(false);
 
   return (
     <div>
@@ -25,13 +25,13 @@ useRedirect("/core/router/Redirect", "/core/router/Match")
         <a
           href="#!"
           onClick={withoutBubble(() => {
-            setToggle(true);
+            toggle();
           })}>
           Redirect to Match
         </a>
       </div>
 
-      {toggle && <Redirect to="../Match" />}
+      {on && <Redirect to="../Match" />}
 
       <EditLink path="src-core/router/Redirect.tsx" />
     </div>
