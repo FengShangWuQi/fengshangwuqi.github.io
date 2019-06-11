@@ -36,6 +36,10 @@ export const StorybookGlobal = () => {
           paddingBottom: rhythm(1 / 2),
         },
 
+        button: {
+          cursor: "pointer",
+        },
+
         pre: {
           ...border("left", 2, "solid", "#ddd"),
           marginBottom: 0,
