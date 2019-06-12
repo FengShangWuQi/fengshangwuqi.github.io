@@ -417,3 +417,8 @@ Location: https://github.com/...
 - :construction_worker:
 - :whale:
 - :clap:
+
+### 推荐教程
+
+- [Git 教程- 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/896043488029600)
+- [Learn Git Branching](https://learngitbranching.js.org/)
