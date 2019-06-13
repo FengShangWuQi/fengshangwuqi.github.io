@@ -1,28 +1,18 @@
 import React from "react";
 
-import { rxBehaviorSubject } from "src-core/rxjs";
+import { rxInterval, rxTake } from "src-core/rxjs";
 import { EditLink } from "src-app/storybook/common/Storybook";
 
 import { useObservable } from "..";
 
-const counter$ = new rxBehaviorSubject(0);
+const number$ = rxInterval(200).pipe(rxTake(100));
 
 export default () => {
-  const value = useObservable(counter$, counter$.value);
+  const value = useObservable(number$);
 
   return (
     <div>
-      <div>{value} time</div>
-
-      <button
-        css={{
-          marginTop: 24,
-        }}
-        onClick={() => {
-          counter$.next(value + 1);
-        }}>
-        click
-      </button>
+      <div>value: {value}</div>
 
       <EditLink path="src-core/react/useObservable.ts" />
     </div>

@@ -4,8 +4,8 @@ import { rxObservable } from "src-core/rxjs";
 
 export const useObservable = <T>(
   observable: rxObservable<T>,
-  defaultValue: T,
-): T => {
+  defaultValue?: T,
+) => {
   const [value, setValue] = useState(defaultValue);
 
   useEffect(() => {
