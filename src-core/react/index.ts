@@ -10,3 +10,5 @@ export * from "./useHover";
 export * from "./useWhyDidYouUpdate";
 export * from "./useObservable";
 export * from "./useToggle";
+export * from "./useRequest";
+export * from "./useDebounce";
