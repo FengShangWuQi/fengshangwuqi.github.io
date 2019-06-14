@@ -33,6 +33,10 @@ export default () => {
   return (
     <Bootstrap ds={storybookTheme}>
       <StorybookGlobal />
+      {/** TODO:
+           The dependency react-side-effect uses legacy componentWillMount lifecycle method
+           https://github.com/nfl/react-helmet/issues/413
+      */}
       <Helmet
         title={title}
         meta={[
