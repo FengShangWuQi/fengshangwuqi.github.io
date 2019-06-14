@@ -12,6 +12,7 @@ const {
   twitter,
   offline,
   svgr,
+  pageCreator,
 } = require(`${gatsbyPath}/config`);
 
 const plugins = [
@@ -23,6 +24,7 @@ const plugins = [
   analytics,
   offline,
   svgr,
+  pageCreator,
 ];
 
 module.exports = {

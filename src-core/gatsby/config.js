@@ -35,6 +35,13 @@ exports.sources = (process.env.SOURCES || "pages").split(" ").map(source => ({
   },
 }));
 
+exports.pageCreator = {
+  resolve: `gatsby-plugin-page-creator`,
+  options: {
+    path: path.join(__dirname, "../../src-app", process.env.APP, "pages"),
+  },
+};
+
 // typography
 exports.typography = {
   resolve: "gatsby-plugin-typography",
