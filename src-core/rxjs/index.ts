@@ -9,3 +9,5 @@ export { debounceTime as rxDebounceTime } from "rxjs/operators";
 export { filter as rxFilter } from "rxjs/operators";
 export { delay as rxDelay } from "rxjs/operators";
 export { take as rxTake } from "rxjs/operators";
+export { map as rxMap } from "rxjs/operators";
+export { tap as rxTap } from "rxjs/operators";

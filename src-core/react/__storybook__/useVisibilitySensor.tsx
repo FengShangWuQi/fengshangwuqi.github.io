@@ -1,59 +1,36 @@
-import React, { useEffect, useState, useRef } from "react";
-
-import { rxBehaviorSubject } from "src-core/rxjs";
+import React, { useRef, useState, useEffect } from "react";
 
 import { EditLink } from "src-app/storybook/common/Storybook";
+
+import { useVisibilitySensor } from "../";
 
 export default () => {
   const rootRef = useRef(null);
   const footerRef = useRef(null);
 
-  const items$ = new rxBehaviorSubject([1, 2, 3, 4, 5]);
-  const [items, setItems] = useState(items$.value);
+  const isVisible = useVisibilitySensor(footerRef, {
+    root: rootRef.current,
+  });
+
+  const [items, setItems] = useState([1, 2, 3, 4, 5]);
 
   const loadItems = (n: number) => {
-    const items = items$.value;
     const offset = items.length;
 
-    items$.next([
+    setItems([
       ...items,
       ...Array.from({ length: n }, (_, i) => i + 1 + offset),
     ]);
   };
 
   useEffect(() => {
-    const io = new IntersectionObserver(
-      entries => {
-        if (entries[0].intersectionRatio <= 0) {
-          return;
-        }
-
-        setTimeout(() => {
-          loadItems(5);
-          console.log("Loaded new items");
-        }, 500);
-      },
-      {
-        root: rootRef.current,
-      },
-    );
-
-    io.observe(footerRef.current!);
-
-    return () => {
-      io.disconnect();
-    };
-  }, []);
-
-  useEffect(() => {
-    items$.subscribe(value => {
-      setItems(value);
-    });
-
-    return () => {
-      items$.unsubscribe();
-    };
-  }, []);
+    if (isVisible) {
+      setTimeout(() => {
+        loadItems(5);
+        console.log("Loaded new items");
+      }, 500);
+    }
+  }, [isVisible]);
 
   return (
     <div>
@@ -88,7 +65,7 @@ export default () => {
         />
       </div>
 
-      <EditLink path="cases/IntersectionObserver/__storybook__/InfiniteScroll.tsx" />
+      <EditLink path="src-core/react/useVisibilitySensor.ts" />
     </div>
   );
 };
