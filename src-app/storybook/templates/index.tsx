@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 import { Bootstrap } from "src-core/react";
 import { useRouter } from "src-core/router";
@@ -10,23 +10,24 @@ import { IDictionary } from "utils/object";
 import { storybookTheme, StorybookGlobal } from "../common/Layout";
 import { routes } from "../route";
 
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
+export const useSiteMetadata = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query SiteMetaData {
+        site {
+          siteMetadata {
+            title
+          }
+        }
       }
-    }
-  }
-`;
+    `,
+  );
+  return site.siteMetadata;
+};
 
-export default ({
-  data: {
-    site: {
-      siteMetadata: { title },
-    },
-  },
-}: any) => {
+export default () => {
+  const { title } = useSiteMetadata();
+
   const routeResult = useRouter({ routes });
 
   return (

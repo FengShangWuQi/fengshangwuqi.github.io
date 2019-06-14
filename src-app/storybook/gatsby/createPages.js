@@ -10,8 +10,4 @@ module.exports = async ({ actions }) => {
     path: "/",
     component: indexTemplate,
   });
-  createPage({
-    path: "*",
-    component: indexTemplate,
-  });
 };
