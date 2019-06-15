@@ -78,7 +78,7 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
-    "react-spring": "8.0.24",
+    "react-spring": "8.0.25",
     "react-typography": "0.16.19",
     "rxjs": "6.5.2",
     "typescript": "3.5.2",
