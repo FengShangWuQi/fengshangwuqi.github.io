@@ -18,7 +18,7 @@
   "dependencies": {
     "chalk": "2.4.2",
     "config": "3.1.0",
-    "fs-extra": "7.0.1",
+    "fs-extra": "8.0.1",
     "signale": "1.4.0",
     "yargs": "13.2.2"
   },
