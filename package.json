@@ -109,7 +109,6 @@
     "globby": "9.2.0",
     "husky": "2.4.1",
     "lint-staged": "8.2.1",
-    "npm-check": "5.9.0",
     "prettier": "1.18.2",
     "rimraf": "2.6.3",
     "ts-node": "8.3.0"
