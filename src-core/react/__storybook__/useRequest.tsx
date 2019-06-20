@@ -24,7 +24,9 @@ export default () => {
         css={{
           marginBottom: 24,
         }}
-        onClick={request}>
+        onClick={() => {
+          request();
+        }}>
         click
       </button>
 

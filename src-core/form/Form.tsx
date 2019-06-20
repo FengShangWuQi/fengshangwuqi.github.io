@@ -16,7 +16,8 @@ export interface IFormState<TFormValues> {
 
 export interface IFormContext {
   formName: string;
-  state: IFormState<any>;
+  formState: IFormState<any>;
+  setFormState: (state: IFormState<any>) => void;
 }
 
 export interface IFormProps<TFormValues> extends IRequestOpts {
@@ -67,7 +68,6 @@ export const Form = ({
     {
       url: action,
       method,
-      ...valuesToArg(values),
     },
     {
       onSuccess: res => {
@@ -90,7 +90,8 @@ export const Form = ({
     <FormProvider
       value={{
         formName: name,
-        state,
+        formState: state,
+        setFormState: setState,
       }}>
       <form
         onSubmit={withoutBubble(() => {
@@ -99,7 +100,7 @@ export const Form = ({
             isSubmitting: true,
           });
           onSubmit && onSubmit(values);
-          request();
+          request(valuesToArg(values));
         })}>
         {children({ values, isSubmitting })}
       </form>

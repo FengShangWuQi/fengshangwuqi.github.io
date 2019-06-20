@@ -10,13 +10,13 @@ export interface IRequestOpts {
 export const useRequest = (
   config: AxiosRequestConfig,
   opts: IRequestOpts,
-): [() => void, boolean] => {
+): [(arg?: AxiosRequestConfig) => void, boolean] => {
   const [requesting, setRequesting] = useState(false);
 
-  const request = () => {
+  const request = (arg?: AxiosRequestConfig) => {
     setRequesting(true);
 
-    axios(config)
+    axios({ ...config, ...arg })
       .then(res => {
         opts.onSuccess && opts.onSuccess(res);
       })

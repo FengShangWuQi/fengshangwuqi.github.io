@@ -9,7 +9,7 @@ export const useObservable = <T>(
   const [value, setValue] = useState(defaultValue);
 
   useEffect(() => {
-    const subscription = observable.subscribe(setValue);
+    const subscription = observable.subscribe(setValue as (value: T) => void);
 
     return () => {
       subscription.unsubscribe();
