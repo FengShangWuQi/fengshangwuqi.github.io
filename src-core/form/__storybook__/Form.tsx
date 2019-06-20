@@ -2,23 +2,50 @@ import React from "react";
 
 import { EditLink } from "src-app/storybook/common/Storybook";
 
-import { Form, useForm } from "..";
+import { Form, useForm, Field, useField, Input } from "..";
 
 export default () => {
   return (
     <div>
       <Form
         name="demo"
-        valuesToArg={() => ({})}
+        method="post"
+        action="https://api.github.com/authorizations"
+        valuesToArg={({ username, password }) => ({
+          headers: {
+            Accept: "application/json",
+            Authorization: `Basic ${btoa(`${username}:${password}`)}`,
+          },
+        })}
         onSubmit={values => {
-          console.log(values);
+          alert(
+            JSON.stringify(
+              {
+                ...values,
+                password: values.password.replace(/\S/g, "*"),
+              },
+              null,
+              2,
+            ),
+          );
+        }}
+        onSuccess={() => {
+          alert("success");
+        }}
+        onFail={() => {
+          alert("fail");
         }}>
         {({ isSubmitting }) => {
           return (
             <div>
               <CtxLog />
 
-              <button disabled={isSubmitting}>submit</button>
+              <NameInput />
+              <PassInput />
+
+              <button type="submit" disabled={isSubmitting}>
+                submit
+              </button>
             </div>
           );
         }}
@@ -27,6 +54,22 @@ export default () => {
       <EditLink path="src-core/form/Form.tsx" />
     </div>
   );
+};
+
+const NameInput = () => (
+  <Field name="username" label="用户名" validate={{ required: true }}>
+    {fieldProps => <Input {...fieldProps} placeholder="username"></Input>}
+  </Field>
+);
+
+const PassInput = () => {
+  const fieldProps = useField({
+    name: "password",
+    label: "密码",
+    validate: { required: true },
+  });
+
+  return <Input {...fieldProps} type="password" placeholder="password"></Input>;
 };
 
 const CtxLog = () => {
