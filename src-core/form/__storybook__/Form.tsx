@@ -2,7 +2,7 @@ import React from "react";
 
 import { EditLink } from "src-app/storybook/common/Storybook";
 
-import { Form, useForm, Field, useField, Input } from "..";
+import { Form, useForm, Field, useField, BaseInput } from "..";
 
 export default () => {
   return (
@@ -58,7 +58,9 @@ export default () => {
 
 const NameInput = () => (
   <Field name="username" label="用户名" validate={{ required: true }}>
-    {fieldProps => <Input {...fieldProps} placeholder="username"></Input>}
+    {fieldProps => (
+      <BaseInput {...fieldProps} placeholder="username"></BaseInput>
+    )}
   </Field>
 );
 
@@ -69,7 +71,12 @@ const PassInput = () => {
     validate: { required: true },
   });
 
-  return <Input {...fieldProps} type="password" placeholder="password"></Input>;
+  return (
+    <BaseInput
+      {...fieldProps}
+      type="password"
+      placeholder="password"></BaseInput>
+  );
 };
 
 const CtxLog = () => {
