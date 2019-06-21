@@ -5,7 +5,6 @@ import { useForm } from "./Form";
 export interface IFieldProps {
   name: string;
   label?: string;
-  defaultValue?: string;
   validate?: IFieldValidate;
   onValueChange?: (value: string) => void;
 }
