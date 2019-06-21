@@ -4,6 +4,7 @@ import { useForm } from "./Form";
 
 export interface IFieldProps {
   name: string;
+  desc?: string;
   label?: string;
   validate?: IFieldValidate;
   onValueChange?: (value: string) => void;
@@ -13,17 +14,19 @@ export interface IFieldInnerProps extends IFieldValidate, IFieldState {
   name: string;
   value?: string;
   onChange?: (e: React.ChangeEvent<any>) => void;
+  onFocus?: (e: React.FocusEvent<any>) => void;
+  onBlur: (e: React.FocusEvent<any>) => void;
 }
 
 export interface IFieldState {
   focus?: boolean;
+  changed?: boolean;
   error?: string;
 }
 
 export interface IFieldValidate {
   required?: boolean;
-  maxlength?: number;
-  size?: number;
+  pattern?: string;
 }
 
 export const Field = ({
@@ -36,14 +39,47 @@ export const Field = ({
   children: (innerProps: IFieldInnerProps) => React.ReactNode;
 }) => {
   const { formState, setFormState } = useForm();
-  const { values = {} } = formState;
+  const { values = {}, fields } = formState;
 
   const formUpdateField = (nextValue: string) => {
     setFormState({
       ...formState,
+      fields: {
+        ...fields,
+        [name]: {
+          ...fields[name],
+          changed: true,
+        },
+      },
       values: {
-        ...formState.values,
+        ...values,
         [name]: nextValue,
+      },
+    });
+  };
+
+  const formFocusField = () => {
+    setFormState({
+      ...formState,
+      fields: {
+        ...fields,
+        [name]: {
+          ...fields[name],
+          focus: true,
+        },
+      },
+    });
+  };
+
+  const formBlurField = () => {
+    setFormState({
+      ...formState,
+      fields: {
+        ...fields,
+        [name]: {
+          ...fields[name],
+          focus: false,
+        },
       },
     });
   };
@@ -57,6 +93,12 @@ export const Field = ({
           const nextValue = e!.target.value;
           formUpdateField(nextValue);
           onValueChange && onValueChange(nextValue);
+        },
+        onFocus: () => {
+          formFocusField();
+        },
+        onBlur: () => {
+          formBlurField();
         },
         ...validate,
         ...otherProps,
@@ -72,14 +114,47 @@ export const useField = ({
   ...otherProps
 }: IFieldProps): IFieldInnerProps => {
   const { formState, setFormState } = useForm();
-  const { values = {} } = formState;
+  const { values = {}, fields } = formState;
 
   const formUpdateField = (nextValue: string) => {
     setFormState({
       ...formState,
+      fields: {
+        ...fields,
+        [name]: {
+          ...fields[name],
+          changed: true,
+        },
+      },
       values: {
-        ...formState.values,
+        ...values,
         [name]: nextValue,
+      },
+    });
+  };
+
+  const formFocusField = () => {
+    setFormState({
+      ...formState,
+      fields: {
+        ...fields,
+        [name]: {
+          ...fields[name],
+          focus: true,
+        },
+      },
+    });
+  };
+
+  const formBlurField = () => {
+    setFormState({
+      ...formState,
+      fields: {
+        ...fields,
+        [name]: {
+          ...fields[name],
+          focus: false,
+        },
       },
     });
   };
@@ -91,6 +166,12 @@ export const useField = ({
       const nextValue = e!.target.value;
       formUpdateField(nextValue);
       onValueChange && onValueChange(nextValue);
+    },
+    onFocus: () => {
+      formFocusField();
+    },
+    onBlur: () => {
+      formBlurField();
     },
     ...validate,
     ...otherProps,
