@@ -86,7 +86,7 @@
     "typography": "0.16.19"
   },
   "devDependencies": {
-    "@babel/core": "7.4.5",
+    "@babel/core": "7.5.5",
     "@commitlint/cli": "8.0.0",
     "@commitlint/config-conventional": "8.0.0",
     "@emotion/babel-preset-css-prop": "10.0.9",
