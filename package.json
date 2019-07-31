@@ -104,7 +104,7 @@
     "eslint": "6.0.0",
     "eslint-config-prettier": "5.0.0",
     "eslint-plugin-prettier": "3.1.0",
-    "eslint-plugin-react": "7.14.0",
+    "eslint-plugin-react": "7.14.3",
     "fs-extra": "8.1.0",
     "gh-pages": "2.0.1",
     "globby": "10.0.1",
