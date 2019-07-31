@@ -87,8 +87,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
-    "@commitlint/cli": "8.0.0",
-    "@commitlint/config-conventional": "8.0.0",
+    "@commitlint/cli": "8.1.0",
+    "@commitlint/config-conventional": "8.1.0",
     "@emotion/babel-preset-css-prop": "10.0.9",
     "@types/cross-spawn": "6.0.0",
     "@types/fs-extra": "7.0.0",
