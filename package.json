@@ -91,7 +91,7 @@
     "@emotion/babel-preset-css-prop": "10.0.14",
     "@types/cross-spawn": "6.0.0",
     "@types/fs-extra": "8.0.0",
-    "@types/inquirer": "6.0.3",
+    "@types/inquirer": "6.5.0",
     "@types/node": "12.6.8",
     "@types/prettier": "1.18.0",
     "babel-eslint": "10.0.2",
