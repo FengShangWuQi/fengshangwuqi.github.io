@@ -1,11 +1,12 @@
 import React from "react";
+import { interval } from "rxjs";
+import { take } from "rxjs/operators";
 
-import { rxInterval, rxTake } from "src-core/rxjs";
 import { EditLink } from "src-app/storybook/common/Storybook";
 
 import { useObservable } from "..";
 
-const number$ = rxInterval(200).pipe(rxTake(100));
+const number$ = interval(200).pipe(take(100));
 
 export default () => {
   const value = useObservable(number$);

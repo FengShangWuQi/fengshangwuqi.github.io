@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-
-import { rxObservable } from "src-core/rxjs";
+import { Observable } from "rxjs";
 
 export const useObservable = <T>(
-  observable: rxObservable<T>,
+  observable: Observable<T>,
   defaultValue?: T,
 ) => {
   const [value, setValue] = useState(defaultValue);

@@ -1,4 +1,4 @@
-import { rxBehaviorSubject, rxFromEvent } from "src-core/rxjs";
+import { BehaviorSubject, fromEvent } from "rxjs";
 
 import { IDictionary } from "utils/object";
 import { canUseDOM } from "utils/dom";
@@ -11,7 +11,7 @@ export interface IHistory extends ILocationContext {
 
 export const createHistory = (source: Window): IHistory => {
   const location = getLocation(source);
-  const location$ = new rxBehaviorSubject(location);
+  const location$ = new BehaviorSubject(location);
 
   const navigateTo = (
     to: string,
@@ -32,7 +32,7 @@ export const createHistory = (source: Window): IHistory => {
   const subscribe = (fn: (value: ILocation) => void) => {
     const sub$ = location$.subscribe(fn);
 
-    const popstate$ = rxFromEvent(source, "popstate").subscribe(() => {
+    const popstate$ = fromEvent(source, "popstate").subscribe(() => {
       location$.next(getLocation(source));
     });
 

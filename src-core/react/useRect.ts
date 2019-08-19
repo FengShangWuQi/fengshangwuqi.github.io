@@ -1,6 +1,5 @@
 import { useState, useLayoutEffect, RefObject } from "react";
-
-import { rxFromEvent } from "src-core/rxjs";
+import { fromEvent } from "rxjs";
 
 export interface IRect {
   top: number;
@@ -40,7 +39,7 @@ export const useRect = (elmRef: RefObject<Element | null>) => {
 
     refresh();
 
-    const resize$ = rxFromEvent(window, "resize").subscribe(refresh);
+    const resize$ = fromEvent(window, "resize").subscribe(refresh);
 
     return () => {
       resize$.unsubscribe();

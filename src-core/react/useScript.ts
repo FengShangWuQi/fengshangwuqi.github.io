@@ -1,6 +1,5 @@
 import { useLayoutEffect, useState } from "react";
-
-import { rxFromEvent } from "src-core/rxjs";
+import { fromEvent } from "rxjs";
 
 import { removeChild } from "utils/dom";
 
@@ -17,13 +16,13 @@ export const useScript = ({ src, id }: { src: string; id: string }) => {
     script.src = src;
     script.id = id;
 
-    const load$ = rxFromEvent(script, "load").subscribe(() =>
+    const load$ = fromEvent(script, "load").subscribe(() =>
       setState({
         load: true,
         error: false,
       }),
     );
-    const error$ = rxFromEvent(script, "error").subscribe(() =>
+    const error$ = fromEvent(script, "error").subscribe(() =>
       setState({
         load: true,
         error: true,

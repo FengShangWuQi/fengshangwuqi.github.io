@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect, RefObject } from "react";
-
-import { rxFromEvent } from "src-core/rxjs";
+import { fromEvent } from "rxjs";
 
 export const useHover = (): [RefObject<any>, boolean] => {
   const [isHovered, setIsHovered] = useState(false);
@@ -9,10 +8,10 @@ export const useHover = (): [RefObject<any>, boolean] => {
   useEffect(() => {
     const node = hoverRef.current;
 
-    const mouseover$ = rxFromEvent(node!, "mouseover").subscribe(() =>
+    const mouseover$ = fromEvent(node!, "mouseover").subscribe(() =>
       setIsHovered(true),
     );
-    const mouseout$ = rxFromEvent(node!, "mouseout").subscribe(() =>
+    const mouseout$ = fromEvent(node!, "mouseout").subscribe(() =>
       setIsHovered(false),
     );
 

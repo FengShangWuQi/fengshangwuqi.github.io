@@ -1,8 +1,9 @@
 import React, { useState, useRef, RefObject, useEffect } from "react";
 import { createPortal } from "react-dom";
+import { fromEvent } from "rxjs";
+import { filter as rxFilter } from "rxjs/operators";
 
 import { pickElmAttrs, useRect } from "src-core/react";
-import { rxFromEvent, rxFilter } from "src-core/rxjs";
 
 export enum popupPlacement {
   top,
@@ -94,7 +95,7 @@ const PopupContainer = ({
 
   useEffect(() => {
     if (closeOnClickOutside) {
-      const clicks = rxFromEvent(document, "click");
+      const clicks = fromEvent(document, "click");
       const clicksOnOutside = clicks.pipe(
         rxFilter(e => {
           if (
