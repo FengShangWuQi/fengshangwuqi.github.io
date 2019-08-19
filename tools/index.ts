@@ -24,6 +24,7 @@ const APP_ENVS = (app: string, action: string) => {
     case Actions.dev: {
       return {
         ...env,
+        GATSBY_TELEMETRY_DISABLED: "1",
         BRANCH: Branchs.DEV,
       };
     }
@@ -34,7 +35,7 @@ const APP_ENVS = (app: string, action: string) => {
       };
     }
     default: {
-      return env;
+      return { ...env, GATSBY_TELEMETRY_DISABLED: "1" };
     }
   }
 };

@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ],
+  "build": {
+    "env": {
+      "APP": "blog",
+      "SITE_URL": "https://fengshangwuqi.github.io",
+      "PATH_PREFIX": "/",
+      "META_TITLE": "枫上雾棋的日志",
+      "META_DECS": "枫上雾棋的日志",
+      "SOURCES": "posts",
+      "ARCHIVE_SIZE": "15",
+      "TRACKING_ID": "UA-114534441-1",
+      "GATSBY_TELEMETRY_DISABLED": "1"
+    }
+  }
+}
