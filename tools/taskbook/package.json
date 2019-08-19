@@ -20,7 +20,7 @@
     "config": "3.2.2",
     "fs-extra": "8.1.0",
     "signale": "1.4.0",
-    "yargs": "13.3.0"
+    "yargs": "14.0.0"
   },
   "devDependencies": {
     "@types/config": "0.0.34",
