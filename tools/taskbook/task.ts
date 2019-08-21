@@ -5,6 +5,7 @@ import { message } from "./utils";
 export interface ITaskProps extends IItemProps {
   status: number;
   priority: number;
+  endTime?: string;
 }
 
 export enum priorityType {

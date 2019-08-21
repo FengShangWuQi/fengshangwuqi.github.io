@@ -90,9 +90,7 @@ cli.command({
   desc: "Delete Item",
   aliases: "rm",
   handler: (argv: any) => {
-    tb.deleteItem({
-      id: argv.id,
-    });
+    tb.deleteItem(argv.id);
   },
 });
 

@@ -23,3 +23,20 @@ export const isUndefined = (value: any) => {
   const undefined = void 0;
   return value === undefined;
 };
+
+export const formatDate = (date: Date) =>
+  `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+
+export const today = formatDate(new Date());
+
+export const getLastDayOfWeek = () => {
+  const date = new Date();
+
+  return formatDate(
+    new Date(
+      date.getFullYear(),
+      date.getMonth(),
+      date.getDate() + 7 - date.getDay(),
+    ),
+  );
+};

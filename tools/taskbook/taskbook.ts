@@ -22,6 +22,8 @@ import {
   yellow,
   isUndefined,
   withWrap,
+  today,
+  getLastDayOfWeek,
 } from "./utils";
 
 class Taskbook {
@@ -30,7 +32,7 @@ class Taskbook {
   validateID(id: string) {
     if (!(id && this.data[id])) {
       withWrap();
-      message.error("id illegal");
+      message.error(`id ${id} illegal`);
       process.exit(1);
     }
   }
@@ -43,6 +45,10 @@ class Taskbook {
 
   getItemAlias(item: any) {
     return item.isTask ? "Task" : "Note";
+  }
+
+  getBoardName(name: string) {
+    return `@${name}`.toUpperCase();
   }
 
   groupByBoard() {
@@ -110,12 +116,23 @@ class Taskbook {
     !isUndefined(priority) && validatePriority(priority);
 
     if (taskDesc) {
+      let endTime = {};
+      switch (board) {
+        case "daily":
+          endTime = { endTime: today };
+          break;
+        case "weekly":
+          endTime = { endTime: getLastDayOfWeek() };
+          break;
+      }
+
       item = new Task({
         id: String(this.generateID()),
-        board: `@${board}`.toUpperCase(),
+        board: this.getBoardName(board),
         description: taskDesc,
         priority: priority || priorityType.normal,
         status: statusType.pending,
+        ...endTime,
       });
     } else if (noteDesc) {
       item = new Note({
@@ -137,12 +154,14 @@ class Taskbook {
     description,
     priority,
     status,
+    endTime,
   }: {
     id: string;
     board?: string;
     description?: string;
     priority?: number;
     status?: number;
+    endTime?: string;
   }) {
     this.validateID(id);
 
@@ -173,6 +192,9 @@ class Taskbook {
       validateStatus(status);
       item.status = status;
     }
+    if (endTime) {
+      item.endTime = endTime;
+    }
 
     storage.setData(tbPath, {
       ...rest,
@@ -185,7 +207,7 @@ class Taskbook {
     message.success(`Edit ${this.getItemAlias(item)} ${id}`);
   }
 
-  deleteItem({ id }: { id: string }) {
+  deleteItem(id: string) {
     this.validateID(id);
 
     const { [id]: item, ...rest } = this.data;
@@ -244,15 +266,62 @@ class Taskbook {
   }
 
   displayItemsByBoard() {
-    const data = this.groupByBoard() as { [key: string]: any };
+    const dailyBoardName = this.getBoardName("daily");
+    const weeklyBoardName = this.getBoardName("weekly");
+    const data = this.groupByBoard() as {
+      [key: string]: Array<any>;
+    };
 
-    Object.keys(data).map(board => {
-      const items = data[board];
-
-      this.displayBoard(board, items);
-
-      items.map((item: any) => this.displayItem(item));
+    const dailyItems = data[dailyBoardName].map(item => {
+      if (!item.endTime || item.endTime !== today) {
+        const newItem = { ...item, endTime: today, status: 0, board: "daily" };
+        this.updateItem(newItem);
+        return newItem;
+      }
+      return item;
     });
+    const weeklyItems = data[weeklyBoardName].map(item => {
+      const lastDayOfWeek = getLastDayOfWeek();
+      if (!item.endTime || item.endTime !== lastDayOfWeek) {
+        const newItem = {
+          ...item,
+          endTime: lastDayOfWeek,
+          status: 0,
+          board: "weekly",
+        };
+        this.updateItem(newItem);
+        return newItem;
+      }
+      return item;
+    });
+
+    const newDate = {
+      ...data,
+      [dailyBoardName]: dailyItems,
+      [weeklyBoardName]: weeklyItems,
+    };
+
+    Object.keys(newDate)
+      .sort()
+      .map(board => {
+        const items = newDate[board];
+
+        if (new Date().getDay() === 1) {
+          const filterItems = items.filter(({ id, status, endTime }) => {
+            if (isUndefined(endTime) && status === 1) {
+              this.deleteItem(id);
+              return false;
+            }
+            return true;
+          });
+
+          this.displayBoard(board, filterItems);
+          filterItems.map((item: any) => this.displayItem(item));
+        } else {
+          this.displayBoard(board, items);
+          items.map((item: any) => this.displayItem(item));
+        }
+      });
   }
 
   displayStats() {
