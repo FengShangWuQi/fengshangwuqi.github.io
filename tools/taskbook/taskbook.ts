@@ -137,7 +137,7 @@ class Taskbook {
     } else if (noteDesc) {
       item = new Note({
         id: String(this.generateID()),
-        board: `@${board}`.toUpperCase(),
+        board: this.getBoardName(board),
         description: noteDesc,
       });
     }
@@ -145,7 +145,9 @@ class Taskbook {
     storage.setData(tbPath, { ...this.data, [item!.id]: item });
 
     withWrap();
-    message.success(`craete ${taskDesc ? "Task" : "Note"} ${item!.id}`);
+    message.success(
+      `craete ${taskDesc ? "Task" : "Note"} ${item!.board}-${item!.id}`,
+    );
   }
 
   updateItem({
@@ -179,7 +181,7 @@ class Taskbook {
     const { [id]: item, ...rest } = this.data;
 
     if (board) {
-      item.board = `@${board}`.toUpperCase();
+      item.board = this.getBoardName(board);
     }
     if (description) {
       item.description = description;
@@ -204,7 +206,7 @@ class Taskbook {
     });
 
     withWrap();
-    message.success(`Edit ${this.getItemAlias(item)} ${id}`);
+    message.success(`Edit ${this.getItemAlias(item)} ${item.board}-${id}`);
   }
 
   deleteItem(id: string) {
@@ -217,7 +219,7 @@ class Taskbook {
     });
 
     withWrap();
-    message.success(`Delete ${this.getItemAlias(item)} ${id}`);
+    message.success(`Delete ${this.getItemAlias(item)} ${item.board}-${id}`);
   }
 
   displayBoard(board: string, items: any) {
