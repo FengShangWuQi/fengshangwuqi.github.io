@@ -22,6 +22,7 @@ import {
   yellow,
   isUndefined,
   withWrap,
+  formatDate,
   today,
   getLastDayOfWeek,
 } from "./utils";
@@ -119,10 +120,10 @@ class Taskbook {
       let endTime = {};
       switch (board) {
         case "daily":
-          endTime = { endTime: today };
+          endTime = { endTime: formatDate(today) };
           break;
         case "weekly":
-          endTime = { endTime: getLastDayOfWeek() };
+          endTime = { endTime: formatDate(getLastDayOfWeek()) };
           break;
       }
 
@@ -275,15 +276,20 @@ class Taskbook {
     };
 
     const dailyItems = data[dailyBoardName].map(item => {
-      if (!item.endTime || item.endTime !== today) {
-        const newItem = { ...item, endTime: today, status: 0, board: "daily" };
+      if (!item.endTime || item.endTime !== formatDate(today)) {
+        const newItem = {
+          ...item,
+          endTime: formatDate(today),
+          status: 0,
+          board: "daily",
+        };
         this.updateItem(newItem);
         return newItem;
       }
       return item;
     });
     const weeklyItems = data[weeklyBoardName].map(item => {
-      const lastDayOfWeek = getLastDayOfWeek();
+      const lastDayOfWeek = formatDate(getLastDayOfWeek());
       if (!item.endTime || item.endTime !== lastDayOfWeek) {
         const newItem = {
           ...item,
@@ -310,7 +316,11 @@ class Taskbook {
 
         if (new Date().getDay() === 1) {
           const filterItems = items.filter(({ id, status, endTime }) => {
-            if (isUndefined(endTime) && status === 1) {
+            if (
+              (isUndefined(endTime) ||
+                today.getTime() > getLastDayOfWeek().getTime()) &&
+              status === 1
+            ) {
               this.deleteItem(id);
               return false;
             }

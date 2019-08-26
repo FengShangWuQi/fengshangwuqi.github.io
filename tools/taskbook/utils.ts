@@ -27,16 +27,14 @@ export const isUndefined = (value: any) => {
 export const formatDate = (date: Date) =>
   `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
 
-export const today = formatDate(new Date());
+export const today = new Date();
 
 export const getLastDayOfWeek = () => {
   const date = new Date();
 
-  return formatDate(
-    new Date(
-      date.getFullYear(),
-      date.getMonth(),
-      date.getDate() + 7 - date.getDay(),
-    ),
+  return new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate() + 7 - date.getDay(),
   );
 };
