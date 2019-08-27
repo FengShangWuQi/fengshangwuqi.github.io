@@ -218,6 +218,7 @@ class Taskbook {
     storage.setData(tbPath, {
       ...rest,
     });
+    this.data = rest;
 
     withWrap();
     message.success(`Delete ${this.getItemAlias(item)} ${item.board}-${id}`);
