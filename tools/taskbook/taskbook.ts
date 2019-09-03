@@ -315,13 +315,9 @@ class Taskbook {
       .map(board => {
         const items = newDate[board];
 
-        if (new Date().getDay() === 1) {
+        if (new Date().getDay() === 7) {
           const filterItems = items.filter(({ id, status, endTime }) => {
-            if (
-              (isUndefined(endTime) ||
-                today.getTime() > getLastDayOfWeek().getTime()) &&
-              status === 1
-            ) {
+            if (isUndefined(endTime) && status === 1) {
               this.deleteItem(id);
               return false;
             }
