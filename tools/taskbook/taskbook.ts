@@ -330,8 +330,10 @@ class Taskbook {
             return true;
           });
 
-          this.displayBoard(board, filterItems);
-          filterItems.map((item: any) => this.displayItem(item));
+          if (filterItems.length !== 0) {
+            this.displayBoard(board, filterItems);
+            filterItems.map((item: any) => this.displayItem(item));
+          }
         } else {
           this.displayBoard(board, items);
           items.map((item: any) => this.displayItem(item));
