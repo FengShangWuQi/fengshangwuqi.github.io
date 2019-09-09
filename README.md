@@ -13,8 +13,8 @@
 
 - [blog](https://fengshangwuqi.github.io)
 - [storybook](https://fengshangwuqi.netlify.com/)
-- [taskbook](https://github.com/FengShangWuQi/fengshangwuqi.github.io/tree/dev/tools/taskbook)
+- [taskbook](./tools/taskbook)
 
-我的微信：fengshangwuqi，添加请备注来源
+我的微信，添加请备注来源
 
 ![wechat](./static/contact.jpeg)
