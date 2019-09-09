@@ -277,7 +277,10 @@ class Taskbook {
     };
 
     const dailyItems = data[dailyBoardName].map(item => {
-      if (!item.endTime || item.endTime !== formatDate(today)) {
+      if (
+        (!item.endTime || item.endTime !== formatDate(today)) &&
+        item.status === 1
+      ) {
         const newItem = {
           ...item,
           endTime: formatDate(today),
@@ -291,7 +294,10 @@ class Taskbook {
     });
     const weeklyItems = data[weeklyBoardName].map(item => {
       const lastDayOfWeek = formatDate(getLastDayOfWeek());
-      if (!item.endTime || item.endTime !== lastDayOfWeek) {
+      if (
+        (!item.endTime || item.endTime !== lastDayOfWeek) &&
+        item.status === 1
+      ) {
         const newItem = {
           ...item,
           endTime: lastDayOfWeek,
