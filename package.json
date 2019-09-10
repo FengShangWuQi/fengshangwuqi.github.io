@@ -81,7 +81,7 @@
     "react-spring": "8.0.27",
     "react-typography": "0.16.19",
     "rxjs": "6.5.3",
-    "typescript": "3.6.2",
+    "typescript": "3.6.3",
     "typography": "0.16.19"
   },
   "devDependencies": {
