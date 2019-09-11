@@ -92,7 +92,7 @@
     "@types/cross-spawn": "6.0.0",
     "@types/fs-extra": "8.0.0",
     "@types/inquirer": "6.5.0",
-    "@types/node": "12.7.4",
+    "@types/node": "12.7.5",
     "@types/prettier": "1.18.2",
     "babel-loader": "8.0.6",
     "chalk": "2.4.2",
