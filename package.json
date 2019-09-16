@@ -11,7 +11,7 @@
     "emotion"
   ],
   "scripts": {
-    "clean": "rimraf public dist/${APP} .cache",
+    "clean": "rimraf dist/${APP} && gatsby clean",
     "test": "tsc --noEmit",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "check": "npx npm-check -u -E",
