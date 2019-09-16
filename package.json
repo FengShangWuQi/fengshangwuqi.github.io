@@ -11,17 +11,17 @@
     "emotion"
   ],
   "scripts": {
-    "clean": "rimraf dist/${APP} && gatsby clean",
+    "clean": "gatsby clean",
     "test": "tsc --noEmit",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "check": "npx npm-check -u -E",
     "generate": "ts-node ./tools/generate/index.ts",
     "start": "ts-node ./tools/index.ts",
     "development": "gatsby develop -o",
-    "build": "npm run clean && gatsby build --prefix-paths && mkdir -p dist/${APP} && cp -r public/ dist/${APP}",
+    "build": "npm run clean && gatsby build --prefix-paths",
     "serve": "gatsby serve -o --prefix-paths",
     "repl": "gatsby repl",
-    "release": "gh-pages -d dist/${APP} -b ${BRANCH} -m deploy::${APP} && gh-pages-clean",
+    "release": "gh-pages -d public -b ${BRANCH} -m deploy::${APP} && gh-pages-clean",
     "now-build": "gatsby build --prefix-paths"
   },
   "bin": {
