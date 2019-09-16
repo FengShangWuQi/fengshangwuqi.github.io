@@ -10,6 +10,7 @@ enum Actions {
   b = "build",
   r = "release",
   s = "serve",
+  repl = "repl",
 }
 
 enum Branchs {

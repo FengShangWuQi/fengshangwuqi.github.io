@@ -20,6 +20,7 @@
     "development": "gatsby develop -o",
     "build": "npm run clean && gatsby build --prefix-paths && mkdir -p dist/${APP} && cp -r public/ dist/${APP}",
     "serve": "gatsby serve -o --prefix-paths",
+    "repl": "gatsby repl",
     "release": "gh-pages -d dist/${APP} -b ${BRANCH} -m deploy::${APP} && gh-pages-clean",
     "now-build": "gatsby build --prefix-paths"
   },
