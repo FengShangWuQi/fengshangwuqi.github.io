@@ -58,6 +58,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### Node ###	
+package-lock.json
+
 # Logs
 logs
 *.log
