@@ -276,7 +276,7 @@ class Taskbook {
       [key: string]: Array<any>;
     };
 
-    const dailyItems = data[dailyBoardName].map(item => {
+    const dailyItems = (data[dailyBoardName] || []).map(item => {
       if (
         (!item.endTime || item.endTime !== formatDate(today)) &&
         item.status === 1
@@ -292,7 +292,7 @@ class Taskbook {
       }
       return item;
     });
-    const weeklyItems = data[weeklyBoardName].map(item => {
+    const weeklyItems = (data[weeklyBoardName] || []).map(item => {
       const lastDayOfWeek = formatDate(getLastDayOfWeek());
       if (
         (!item.endTime || item.endTime !== lastDayOfWeek) &&
@@ -320,6 +320,10 @@ class Taskbook {
       .sort()
       .map(board => {
         const items = newDate[board];
+
+        if (items.length === 0) {
+          return;
+        }
 
         if (new Date().getDay() === 7) {
           const filterItems = items.filter(({ id, status, endTime }) => {
