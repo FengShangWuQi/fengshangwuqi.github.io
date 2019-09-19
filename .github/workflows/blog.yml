@@ -1,0 +1,28 @@
+name: Blog
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  build-and-deploy:
+    runs-on: macOS-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        APP: blog
+        SITE_URL: https://fengshangwuqi.github.io
+        PATH_PREFIX: /
+        META_TITLE: 枫上雾棋的日志
+        META_DECS: 枫上雾棋的日志
+        SOURCES: posts
+        ARCHIVE_SIZE: 15
+        TRACKING_ID: UA-114534441-1
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BASE_BRANCH: dev
+        BRANCH: master
+        BUILD_SCRIPT: npm install && npm run build
+        FOLDER: public

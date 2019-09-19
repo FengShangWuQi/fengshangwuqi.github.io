@@ -1,0 +1,20 @@
+name: Test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: macOS-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: install dependencies
+      run: |
+        npm install
+        cd tools/taskbook
+        npm install
+    - name: run test
+      run: npm test

@@ -1,0 +1,25 @@
+name: Blog
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  build-and-deploy:
+    runs-on: macOS-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        APP: storybook
+        SITE_URL: https://fengshangwuqi.netlify.com
+        PATH_PREFIX: /
+        META_TITLE: 枫上雾棋的 storybook
+        META_DECS: 枫上雾棋的 storybook
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BASE_BRANCH: dev
+        BRANCH: gh-pages
+        BUILD_SCRIPT: npm install && npm run build
+        FOLDER: public
