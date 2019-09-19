@@ -94,6 +94,15 @@ cli.command({
   },
 });
 
+cli.command({
+  command: "clean",
+  desc: "Clean done Items",
+  aliases: "cld",
+  handler: () => {
+    tb.cleanItem();
+  },
+});
+
 const argv = cli.argv;
 const cmd = argv._[0];
 
