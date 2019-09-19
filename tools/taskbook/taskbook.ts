@@ -224,6 +224,55 @@ class Taskbook {
     message.success(`Delete ${this.getItemAlias(item)} ${item.board}-${id}`);
   }
 
+  autoDailyItemsStatus() {
+    const data = this.groupByBoard() as {
+      [key: string]: Array<any>;
+    };
+    const dailyBoardName = this.getBoardName("daily");
+
+    return (data[dailyBoardName] || []).map(item => {
+      if (
+        (!item.endTime || item.endTime !== formatDate(today)) &&
+        item.status === 1
+      ) {
+        const newItem = {
+          ...item,
+          endTime: formatDate(today),
+          status: 0,
+          board: "daily",
+        };
+        this.updateItem(newItem);
+        return newItem;
+      }
+      return item;
+    });
+  }
+
+  autoWeeklyItemsStatus() {
+    const data = this.groupByBoard() as {
+      [key: string]: Array<any>;
+    };
+    const weeklyBoardName = this.getBoardName("weekly");
+
+    return (data[weeklyBoardName] || []).map(item => {
+      const lastDayOfWeek = formatDate(getLastDayOfWeek());
+      if (
+        (!item.endTime || item.endTime !== lastDayOfWeek) &&
+        item.status === 1
+      ) {
+        const newItem = {
+          ...item,
+          endTime: lastDayOfWeek,
+          status: 0,
+          board: "weekly",
+        };
+        this.updateItem(newItem);
+        return newItem;
+      }
+      return item;
+    });
+  }
+
   displayBoard(board: string, items: any) {
     const { done, pending } = this.getItemsStats(items);
 
@@ -270,45 +319,14 @@ class Taskbook {
   }
 
   displayItemsByBoard() {
-    const dailyBoardName = this.getBoardName("daily");
-    const weeklyBoardName = this.getBoardName("weekly");
     const data = this.groupByBoard() as {
       [key: string]: Array<any>;
     };
+    const dailyBoardName = this.getBoardName("daily");
+    const weeklyBoardName = this.getBoardName("weekly");
 
-    const dailyItems = (data[dailyBoardName] || []).map(item => {
-      if (
-        (!item.endTime || item.endTime !== formatDate(today)) &&
-        item.status === 1
-      ) {
-        const newItem = {
-          ...item,
-          endTime: formatDate(today),
-          status: 0,
-          board: "daily",
-        };
-        this.updateItem(newItem);
-        return newItem;
-      }
-      return item;
-    });
-    const weeklyItems = (data[weeklyBoardName] || []).map(item => {
-      const lastDayOfWeek = formatDate(getLastDayOfWeek());
-      if (
-        (!item.endTime || item.endTime !== lastDayOfWeek) &&
-        item.status === 1
-      ) {
-        const newItem = {
-          ...item,
-          endTime: lastDayOfWeek,
-          status: 0,
-          board: "weekly",
-        };
-        this.updateItem(newItem);
-        return newItem;
-      }
-      return item;
-    });
+    const dailyItems = this.autoDailyItemsStatus();
+    const weeklyItems = this.autoWeeklyItemsStatus();
 
     const newDate = {
       ...data,
