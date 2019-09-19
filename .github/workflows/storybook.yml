@@ -5,12 +5,12 @@ on:
       - dev
 jobs:
   build-and-deploy:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: checkout
       uses: actions/checkout@master
 
-    - name: Build and Deploy
+    - name: build and deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
         APP: storybook

@@ -2,12 +2,12 @@ name: Test
 on: [push, pull_request]
 jobs:
   test:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: checkout
       uses: actions/checkout@master
 
-    - name: Setup Node
+    - name: setup node
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
