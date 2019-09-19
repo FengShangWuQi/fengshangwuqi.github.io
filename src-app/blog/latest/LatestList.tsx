@@ -57,7 +57,7 @@ export const LatestList = ({ posts }: ILatestList) => {
           original={node.frontmatter.original}
           tags={node.frontmatter.tags}
           date={node.frontmatter.date}
-          fluid={node.frontmatter.cover.childImageSharp.fluid!}
+          fluid={node.frontmatter.cover.childImageSharp.fluid! as FluidObject}
         />
       ))}
     </div>
