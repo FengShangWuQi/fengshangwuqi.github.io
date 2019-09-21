@@ -10,16 +10,7 @@ export default () => {
     component: () => <Redirect to="core" />,
     routes: {
       ":group": {
-        component: Header,
-        routes: {
-          ":module": {
-            routes: {
-              ":component": {
-                component: Storybook,
-              },
-            },
-          },
-        },
+        component: Layout,
       },
     },
   },
