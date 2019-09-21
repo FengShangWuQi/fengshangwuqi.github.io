@@ -4,7 +4,6 @@ import Img from "gatsby-image";
 import { CSSObject } from "@emotion/core";
 
 import { useDesignSystem } from "src-core/ds";
-import { Discussion } from "src-core/disqus";
 import { rhythm, margin, padding, ellipsis } from "src-core/style";
 
 import { SEO } from "src-components/seo";
@@ -12,10 +11,13 @@ import { SEO } from "src-components/seo";
 import { Layout } from "../common/Layout";
 import { Wrapper } from "../common/Wrapper";
 import { Footer } from "../common/Footer";
-import { PostHeader } from "../post/PostHeader";
-import { PrismTheme } from "../post/PrismTheme";
-import { PostTag } from "../post/PostTag";
-import { PostContainer } from "../post/PostContainer";
+import {
+  Discussion,
+  PostHeader,
+  PostTag,
+  PostContainer,
+  PrismTheme,
+} from "../post";
 
 export const postQuery = graphql`
   query($slug: String!) {
