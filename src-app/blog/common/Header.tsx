@@ -5,7 +5,7 @@ import { useRect } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 import { size, position, flex } from "src-core/style";
 
-import { Stars } from "src-components/canvas";
+import { Stars } from "./Stars";
 
 import { IDictionary } from "utils/object";
 
