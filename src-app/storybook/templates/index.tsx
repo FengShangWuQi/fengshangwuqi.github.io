@@ -3,12 +3,11 @@ import Helmet from "react-helmet";
 import { graphql, useStaticQuery } from "gatsby";
 
 import { Bootstrap } from "src-core/react";
-import { useRouter } from "src-core/router";
+import { useRouter, Redirect } from "src-core/router";
 
 import { IDictionary } from "utils/object";
 
-import { storybookTheme, StorybookGlobal } from "../common/Layout";
-import { routes } from "../route";
+import { storybookTheme, Layout } from "../common/Layout";
 
 export const useSiteMetadata = () => {
   const { site } = useStaticQuery(
@@ -28,11 +27,10 @@ export const useSiteMetadata = () => {
 export default () => {
   const { title } = useSiteMetadata();
 
-  const routeResult = useRouter({ routes });
+  const rootResult = useRouter({ routes: rootRoutes });
 
   return (
     <Bootstrap ds={storybookTheme}>
-      <StorybookGlobal />
       {/** TODO:
            The dependency react-side-effect uses legacy componentWillMount lifecycle method
            https://github.com/nfl/react-helmet/issues/413
@@ -47,9 +45,20 @@ export default () => {
         ]}
       />
 
-      {routeResult}
+      {rootResult}
     </Bootstrap>
   );
+};
+
+const rootRoutes = {
+  "/": {
+    component: () => <Redirect to="core" />,
+    routes: {
+      ":group": {
+        component: Layout,
+      },
+    },
+  },
 };
 
 const groups = {

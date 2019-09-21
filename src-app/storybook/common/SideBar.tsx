@@ -18,10 +18,12 @@ export const SideBar = ({ group }: { group: string }) => {
     <div
       css={{
         ...border("right", 1, "solid", ds.color.primary),
-        marginRight: 40,
-        width: 220,
-        height: "100%",
+        height: "calc(100vh - 130px)",
         fontSize: ds.size.s,
+        overflow: "scroll",
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
       }}>
       {Object.keys(currGroup).map(moduleName => (
         <div key={moduleName}>

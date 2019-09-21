@@ -2,7 +2,6 @@ import React from "react";
 
 import {
   useLocation,
-  Location,
   RouteProvider,
   Route,
   MatchProvider,
@@ -28,21 +27,19 @@ export const useRouter = ({ routes = {}, pathPrefix = "/" }: IRouterCore) => {
   }
 
   return (
-    <Location>
-      <Router>
-        {Object.keys(flatRoutes).map(path => {
-          const { component: Component, ...rest } = flatRoutes[path];
+    <Router>
+      {Object.keys(flatRoutes).map(path => {
+        const { component: Component, ...rest } = flatRoutes[path];
 
-          return (
-            <Route key={path} path={path}>
-              <RouteProvider value={{ ...rest }}>
-                <Component />
-              </RouteProvider>
-            </Route>
-          );
-        })}
-      </Router>
-    </Location>
+        return (
+          <Route key={path} path={path}>
+            <RouteProvider value={{ ...rest }}>
+              <Component />
+            </RouteProvider>
+          </Route>
+        );
+      })}
+    </Router>
   );
 };
 
