@@ -1,5 +1,7 @@
 import React from "react";
 
+import { withoutBubble } from "src-core/react";
+
 import { EditLink } from "src-app/storybook/common/Storybook";
 
 import { BaseMenu, BaseMenuItem, MenuMode } from "..";
@@ -20,6 +22,7 @@ export default () => (
           <BaseMenuItem key={item}>
             <a
               href="#"
+              onClick={withoutBubble(() => {})}
               css={{
                 color: "#ffffff",
               }}>
@@ -41,6 +44,7 @@ export default () => (
           <BaseMenuItem key={item}>
             <a
               href="#"
+              onClick={withoutBubble(() => {})}
               css={{
                 color: "#ffffff",
               }}>
