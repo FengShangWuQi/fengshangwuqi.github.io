@@ -367,7 +367,7 @@ class Taskbook {
           return;
         }
 
-        if (new Date().getDay() === 7) {
+        if (new Date().getDay() === 0) {
           const filterItems = items.filter(({ id, status, endTime }) => {
             if (isUndefined(endTime) && status === 1) {
               this.deleteItem(id);
