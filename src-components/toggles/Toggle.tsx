@@ -1,12 +1,13 @@
 import React, { useState, useRef, RefObject } from "react";
 
 import { useDesignSystem } from "src-core/ds";
+import { pickElmAttrs } from "src-core/react";
 
 export const Toggle = ({
   defaultChecked,
   icons,
   onChange,
-  ...inputProps
+  ...otherProps
 }: {
   icons?: { checked: React.ReactNode; unchecked: React.ReactNode };
   defaultChecked?: boolean;
@@ -30,6 +31,7 @@ export const Toggle = ({
 
   return (
     <div
+      {...pickElmAttrs(otherProps)}
       css={{
         position: "relative",
         display: "inline-block",
@@ -48,7 +50,6 @@ export const Toggle = ({
       <ToggleThumb isChecked={checked} hasFocus={hasFocus} />
 
       <input
-        {...inputProps}
         css={{
           position: "absolute",
           top: 4,

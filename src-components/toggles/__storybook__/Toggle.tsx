@@ -11,10 +11,10 @@ export default () => {
         defaultChecked={true}
         icons={{
           checked: (
-            <img src={require("./images/moon.png")} width="16" height="16" />
+            <img src={require("../images/moon.png")} width="16" height="16" />
           ),
           unchecked: (
-            <img src={require("./images/sun.png")} width="16" height="16" />
+            <img src={require("../images/sun.png")} width="16" height="16" />
           ),
         }}
       />
