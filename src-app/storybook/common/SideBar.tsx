@@ -30,7 +30,7 @@ export const SideBar = ({ group }: { group: string }) => {
           <div
             css={{
               lineHeight: "32px",
-              color: "#1B1D1D",
+              color: ds.color.secondary,
               fontSize: ds.size.m,
               fontWeight: "bold",
             }}>

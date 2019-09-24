@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 
+import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 
 import { EditLink } from "src-app/storybook/common/Storybook";
@@ -7,6 +8,8 @@ import { EditLink } from "src-app/storybook/common/Storybook";
 import { useRect } from "..";
 
 export default () => {
+  const ds = useDesignSystem();
+
   const ref = useRef(null);
   const rect = useRect(ref);
 
@@ -32,7 +35,11 @@ export default () => {
             top: {rect.top}
             <div
               ref={ref}
-              css={{ width: 300, height: 200, border: "1px solid #333" }}
+              css={{
+                width: 300,
+                height: 200,
+                border: `1px solid ${ds.color.text}`,
+              }}
             />
             <div
               css={{

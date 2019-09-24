@@ -17,8 +17,8 @@ export default () => {
           ...flex({
             flexWrap: "wrap",
           }),
-          color: "#555",
-          fill: "#555",
+          color: ds.color.text,
+          fill: ds.color.text,
         }}>
         <div
           css={{

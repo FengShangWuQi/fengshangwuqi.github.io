@@ -2,7 +2,7 @@ import React from "react";
 import { Global } from "@emotion/core";
 
 import { Bootstrap } from "src-core/react";
-import { defaultTheme, useDesignSystem } from "src-core/ds";
+import { useDesignSystem, defaultTheme } from "src-core/ds";
 import { rhythm, margin, border } from "src-core/style";
 
 import { Header } from "./Header";
@@ -12,8 +12,13 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     ...defaultTheme,
     color: {
       ...defaultTheme.color,
+
       primary: "#c2185b",
+      secondary: "#d81b60",
+
       text: "#1B1D1D",
+
+      bg: "#fafafa",
     },
   };
 
@@ -36,7 +41,6 @@ const StorybookGlobal = () => {
         "html, body": {
           width: "100%",
           height: "100%",
-          background: "#fafafa",
           overflow: "hidden",
         },
 

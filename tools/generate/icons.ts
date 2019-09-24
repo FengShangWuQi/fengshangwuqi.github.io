@@ -54,8 +54,8 @@ const iconStorybook = (icons: string[]) => `
               ...flex({
                 flexWrap: "wrap",
               }),
-              color: "#555",
-              fill: "#555",
+              color: ds.color.text,
+              fill: ds.color.text,
             }}>
               ${icons
                 .map(

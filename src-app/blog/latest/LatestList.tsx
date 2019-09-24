@@ -45,7 +45,7 @@ export const LatestList = ({ posts }: ILatestList) => {
     <div
       css={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(320px,1fr))",
+        gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
         gridGap: 50,
       }}>
       {posts.map(({ node }: INode) => (
