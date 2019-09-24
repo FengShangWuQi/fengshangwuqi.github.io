@@ -15,7 +15,14 @@ export const Storybook = () => {
 
   return (
     SB && (
-      <div>
+      <div
+        css={{
+          height: "calc(100vh - 130px)",
+          overflow: "scroll",
+          "&::-webkit-scrollbar": {
+            display: "none",
+          },
+        }}>
         <h1>{component}</h1>
         <SB />
       </div>
