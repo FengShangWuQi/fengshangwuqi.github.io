@@ -1,54 +1,45 @@
 import React from "react";
 import { Global } from "@emotion/core";
-import { isEmpty } from "utils/object";
 
+import { Bootstrap } from "src-core/react";
 import { useRouter, useRedirect, useMatch } from "src-core/router";
 import { defaultTheme, useDesignSystem } from "src-core/ds";
 import { padding, rhythm, margin, border, grid } from "src-core/style";
+
+import { isEmpty } from "utils/object";
 
 import { Header } from "../common/Header";
 import { Storybook } from "../common/Storybook";
 import { groupModuleCompList } from "../templates";
 import { SideBar } from "./SideBar";
 
-export const storybookTheme = {
-  ...defaultTheme,
-  color: {
-    ...defaultTheme.color,
-    primary: "#c2185b",
-    text: "#1B1D1D",
-  },
-};
-
 export const Layout = () => {
+  const storybookTheme = {
+    ...defaultTheme,
+    color: {
+      ...defaultTheme.color,
+      primary: "#c2185b",
+      text: "#1B1D1D",
+    },
+  };
+
   const {
     params: { group },
   } = useMatch();
-
   const mainResult = useRouter({ routes: MainRoute, pathPrefix: ":group" });
 
   groupRedirect();
 
   return (
-    <div>
+    <Bootstrap ds={storybookTheme}>
       <StorybookGlobal />
-      <Header />
 
-      <div
-        css={{
-          ...grid({
-            gridTemplateColumns: "220px auto",
-            gridColumnGap: 40,
-          }),
-          ...margin(40, "auto"),
-          ...padding(0, 24),
-          maxWidth: 1200,
-          minWidth: 900,
-        }}>
+      <Header />
+      <Container>
         <SideBar group={group} />
         {mainResult}
-      </div>
-    </div>
+      </Container>
+    </Bootstrap>
   );
 };
 
@@ -77,6 +68,24 @@ const groupRedirect = () => {
       );
     }
   });
+};
+
+const Container = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div
+      css={{
+        ...grid({
+          gridTemplateColumns: "220px auto",
+          gridColumnGap: 40,
+        }),
+        ...margin(40, "auto"),
+        ...padding(0, 24),
+        maxWidth: 1200,
+        minWidth: 900,
+      }}>
+      {children}
+    </div>
+  );
 };
 
 const StorybookGlobal = () => {

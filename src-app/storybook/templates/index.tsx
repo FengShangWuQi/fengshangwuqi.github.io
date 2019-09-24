@@ -1,13 +1,12 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql, useStaticQuery } from "gatsby";
+import Helmet from "react-helmet";
 
-import { Bootstrap } from "src-core/react";
 import { useRouter, Redirect } from "src-core/router";
 
 import { IDictionary } from "utils/object";
 
-import { storybookTheme, Layout } from "../common/Layout";
+import { Layout } from "../common/Layout";
 
 export const useSiteMetadata = () => {
   const { site } = useStaticQuery(
@@ -30,11 +29,11 @@ export default () => {
   const rootResult = useRouter({ routes: rootRoutes });
 
   return (
-    <Bootstrap ds={storybookTheme}>
+    <>
       {/** TODO:
-           The dependency react-side-effect uses legacy componentWillMount lifecycle method
-           https://github.com/nfl/react-helmet/issues/413
-      */}
+         The dependency react-side-effect uses legacy componentWillMount lifecycle method
+         https://github.com/nfl/react-helmet/issues/413
+    */}
       <Helmet
         title={title}
         meta={[
@@ -44,9 +43,8 @@ export default () => {
           },
         ]}
       />
-
       {rootResult}
-    </Bootstrap>
+    </>
   );
 };
 
