@@ -13,3 +13,4 @@ export * from "./useToggle";
 export * from "./useRequest";
 export * from "./useDebounce";
 export * from "./useVisibilitySensor";
+export * from "./useLocalStorage";
