@@ -7,6 +7,7 @@ import { useRouter, Redirect } from "src-core/router";
 import { IDictionary } from "utils/object";
 
 import { Layout } from "../common/Layout";
+import { Main } from "../common/Main";
 
 export const useSiteMetadata = () => {
   const { site } = useStaticQuery(
@@ -29,11 +30,11 @@ export default () => {
   const rootResult = useRouter({ routes: rootRoutes });
 
   return (
-    <>
+    <Layout>
       {/** TODO:
          The dependency react-side-effect uses legacy componentWillMount lifecycle method
          https://github.com/nfl/react-helmet/issues/413
-    */}
+      */}
       <Helmet
         title={title}
         meta={[
@@ -44,7 +45,7 @@ export default () => {
         ]}
       />
       {rootResult}
-    </>
+    </Layout>
   );
 };
 
@@ -53,7 +54,7 @@ const rootRoutes = {
     component: () => <Redirect to="core" />,
     routes: {
       ":group": {
-        component: Layout,
+        component: Main,
       },
     },
   },
