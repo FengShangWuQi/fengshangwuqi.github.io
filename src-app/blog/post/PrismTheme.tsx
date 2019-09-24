@@ -28,7 +28,7 @@ export const PrismTheme = () => {
             Courier,
             monospace`,
           fontSize: 0.85,
-          color: ds.color.bg,
+          color: "#fff",
         },
         ".gatsby-highlight-code-line": {
           ...margin(0, -25),
@@ -58,7 +58,7 @@ export const PrismTheme = () => {
           color: "#66d9ef",
         },
         ".token.punctuation": {
-          color: ds.color.bg,
+          color: "#fff",
         },
         [`a.vglnk,
         .token.url,

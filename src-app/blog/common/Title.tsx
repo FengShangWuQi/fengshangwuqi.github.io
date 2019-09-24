@@ -18,7 +18,6 @@ export const Title = ({
         {
           ...margin(rhythm(2), 0, rhythm(3 / 4)),
           fontSize: ds.size.l,
-          color: ds.color.text,
         },
         withBorder
           ? {

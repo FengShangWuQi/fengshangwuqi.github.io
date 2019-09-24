@@ -63,8 +63,6 @@ const Wrapper = ({
     height: number;
   }) => React.ReactNode;
 }) => {
-  const ds = useDesignSystem();
-
   const ref = useRef(null);
   const rect = useRect(ref);
 
@@ -75,7 +73,6 @@ const Wrapper = ({
         ...position("relative"),
         ...size("100%", 400),
         background: "#171a19",
-        color: ds.color.text,
         cursor: "grab",
         "&:active": {
           cursor: "grabbing",
@@ -87,8 +84,6 @@ const Wrapper = ({
 };
 
 const Container = ({ children }: { children: React.ReactNode }) => {
-  const ds = useDesignSystem();
-
   return (
     <div
       css={{
@@ -99,7 +94,6 @@ const Container = ({ children }: { children: React.ReactNode }) => {
         margin: "0 auto",
         width: "90%",
         maxWidth: 1000,
-        color: ds.color.bg,
       }}>
       {children}
     </div>
@@ -115,6 +109,7 @@ const Title = () => {
         lineHeight: "63px",
         fontFamily: "serif",
         fontSize: ds.size.xl,
+        color: "#fff",
       }}>
       枫上雾棋的日志
     </div>

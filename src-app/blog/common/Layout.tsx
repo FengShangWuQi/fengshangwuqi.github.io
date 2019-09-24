@@ -14,6 +14,8 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     color: {
       ...defaultTheme.color,
       primary: "#3c2584",
+
+      bgLight: "#eeeeee",
     },
   };
 

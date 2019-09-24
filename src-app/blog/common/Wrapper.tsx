@@ -1,25 +1,18 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
-import { useRect } from "src-core/react";
 import { rhythm, padding } from "src-core/style";
 
 export const Wrapper = ({ children }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();
 
-  const ref = useRef(null);
-  const rect = useRect(ref);
-
   return (
     <div
-      ref={ref}
-      css={[
-        {
-          ...padding(0, 25, rhythm(5 / 2)),
-          overflow: "hidden",
-        },
-        rect.width > ds.grid.m ? { boxShadow: "inset 0 0 30px #eee" } : {},
-      ]}>
+      css={{
+        ...padding(0, 25, rhythm(5 / 2)),
+        boxShadow: `inset 0 0 30px ${ds.color.bgLight}`,
+        overflow: "hidden",
+      }}>
       {children}
     </div>
   );
