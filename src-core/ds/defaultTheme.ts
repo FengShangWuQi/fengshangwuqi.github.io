@@ -1,5 +1,8 @@
+import { tint } from "polished";
+
 const color = {
-  primary: "#ffa7c4",
+  primary: "#318cff",
+  secondary: "#c41d7f",
 
   text: "#000000",
   textLight: "#85929A",
@@ -9,6 +12,10 @@ const color = {
 };
 
 export const defaultTheme = {
+  reverse() {
+    return reverse(this);
+  },
+
   color,
 
   fontFamily: {
@@ -46,6 +53,24 @@ export const defaultTheme = {
     high: 300,
     higher: 500,
   },
+};
+
+const reverse = (ds: ITheme) => {
+  return {
+    ...ds,
+
+    color: {
+      ...ds.color,
+
+      primary: tint(0.4, ds.color.primary),
+      secondary: tint(0.4, ds.color.secondary),
+
+      text: "#d0ccc5",
+
+      bg: "#181a1b",
+      bgLight: "#1d1f20",
+    },
+  };
 };
 
 export type ITheme = typeof defaultTheme;

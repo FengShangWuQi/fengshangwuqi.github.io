@@ -16,6 +16,7 @@ export const DSReset = () => {
           body: {
             fontFamily: ds.fontFamily.system,
             color: ds.color.text,
+            background: ds.color.bg,
           },
 
           a: {
