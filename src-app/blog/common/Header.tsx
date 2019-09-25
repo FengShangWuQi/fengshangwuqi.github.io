@@ -43,6 +43,11 @@ export const Header = ({
                   color="#419d78">
                   Twitter
                 </SocialLink>
+                <SocialLink
+                  src={`https://fengshangwuqi.netlify.com`}
+                  color="#d9594c">
+                  Storybook
+                </SocialLink>
               </div>
             </div>
           </Container>
@@ -110,6 +115,7 @@ const Title = () => {
         fontFamily: "serif",
         fontSize: ds.size.xl,
         color: "#fff",
+        letterSpacing: 2,
       }}>
       枫上雾棋的日志
     </div>
