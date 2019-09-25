@@ -19,6 +19,9 @@
     "type": "git",
     "url": "git@github.com:FengShangWuQi/fengshangwuqi.github.io.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "chalk": "2.4.2",
     "fs-extra": "8.1.0",
