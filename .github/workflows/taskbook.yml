@@ -19,5 +19,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
       run: |
+        cd tools/taskbook
         npm run build
         npm publish
