@@ -10,7 +10,7 @@
 
 - [blog](https://fengshangwuqi.github.io)
 - [storybook](https://fengshangwuqi.netlify.com/)
-- [taskbook](https://github.com/FengShangWuQi/fengshangwuqi.github.io/tree/dev/tools/taskbook)
+- [taskbook](https://github.com/FengShangWuQi/fengshangwuqi.github.io/packages/26967)
 
 我的微信，添加请备注来源
 
