@@ -96,6 +96,7 @@
     "@types/react-helmet": "5.0.10",
     "@types/typography": "0.16.3",
     "babel-loader": "8.0.6",
+    "babel-preset-gatsby": "0.2.14",
     "chalk": "2.4.2",
     "cross-spawn": "7.0.0",
     "dotenv": "8.1.0",
