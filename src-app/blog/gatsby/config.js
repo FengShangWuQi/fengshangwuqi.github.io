@@ -14,6 +14,7 @@ const {
   helmet,
   twitter,
   offline,
+  feed,
 } = require(`${gatsbyPath}/config.js`);
 
 const plugins = [
@@ -25,6 +26,7 @@ const plugins = [
   ...sharps,
   twitter,
   helmet,
+  feed,
   analytics,
   offline,
 ];

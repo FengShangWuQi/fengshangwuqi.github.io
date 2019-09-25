@@ -140,3 +140,61 @@ exports.svgr = {
 
 // Work offline and more resistant to bad network connections
 exports.offline = "gatsby-plugin-offline";
+
+// Create an RSS feed (or multiple feeds)
+exports.feed = {
+  resolve: "gatsby-plugin-feed",
+  options: {
+    query: `	
+        {	
+          site {	
+            siteMetadata {	
+              title	
+              author	
+              description	
+              siteUrl	
+            }	
+          }	
+        }
+    `,
+    feeds: [
+      {
+        serialize: ({ query: { site, allMarkdownRemark } }) => {
+          return allMarkdownRemark.edges.map(edge => {
+            return Object.assign({}, edge.node.frontmatter, {
+              description: edge.node.excerpt,
+              date: edge.node.frontmatter.date,
+              url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              custom_elements: [{ "content:encoded": edge.node.html }],
+            });
+          });
+        },
+        query: `	
+          {	
+            allMarkdownRemark(	
+              limit: 1000,	
+              sort: { fields: [frontmatter___date], order: DESC }	
+            ) {	
+              edges {	
+                node {	
+                  excerpt(pruneLength: 95)	
+                  fields { slug }	
+                  html	
+                  frontmatter {	
+                    title	
+                    date(formatString: "YYYY-MM-DD")	
+                    tags
+                    original
+                  }	
+                }	
+              }	
+            }	
+          }	
+        `,
+        output: "/rss.xml",
+        title: "fengshangwuqi's blog RSS Feed",
+      },
+    ],
+  },
+};
