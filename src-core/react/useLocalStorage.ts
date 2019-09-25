@@ -1,17 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { isFunction } from "utils/object";
 
 export const useLocalStorage = (key: string, initialValue: any) => {
-  const [storedValue, setStoredValue] = useState(() => {
-    try {
-      const item = window.localStorage.getItem(key);
-      return item ? JSON.parse(item) : initialValue;
-    } catch (err) {
-      console.error(err);
-      return initialValue;
-    }
-  });
+  const [storedValue, setStoredValue] = useState(initialValue);
 
   const setValue = (value: any) => {
     try {
@@ -22,6 +14,15 @@ export const useLocalStorage = (key: string, initialValue: any) => {
       console.error(err);
     }
   };
+
+  useEffect(() => {
+    try {
+      const item = window.localStorage.getItem(key);
+      item && setStoredValue(JSON.parse(item));
+    } catch (err) {
+      console.error(err);
+    }
+  }, []);
 
   return [storedValue, setValue];
 };
