@@ -1,7 +1,7 @@
 {
-  "name": "taskbook",
-  "description": "枫上雾棋的看板",
+  "name": "@fengshangwuqi/taskbook",
   "version": "1.0.0",
+  "description": "在终端友好地管理你的 notes 和 tasks",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "main": "cjs/cli.js",
   "files": [
@@ -10,15 +10,19 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "start": "NODE_CONFIG_DIR=../../.taskbook ts-node ./cli.ts"
+    "start": "ts-node ./cli.ts"
   },
   "bin": {
     "tb": "./cjs/cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:FengShangWuQi/fengshangwuqi.github.io.git"
+  },
   "dependencies": {
     "chalk": "2.4.2",
-    "config": "3.2.2",
     "fs-extra": "8.1.0",
+    "os": "0.1.1",
     "signale": "1.4.0",
     "yargs": "14.0.0"
   },

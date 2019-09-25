@@ -9,9 +9,6 @@ dist/
 es/
 cjs/
 
-# tools
-.taskbook
-
 # Created by https://www.gitignore.io/api/vim,node,linux,macos,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=vim,node,linux,macos,visualstudiocode
 

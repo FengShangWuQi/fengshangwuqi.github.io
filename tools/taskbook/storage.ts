@@ -1,10 +1,8 @@
 import * as path from "path";
 import * as fse from "fs-extra";
-import * as Config from "config";
+import * as os from "os";
 
-const taskbookDir: string = Config.get("taskbookDir");
-
-export const tbPath = path.join(taskbookDir, "tb.json");
+export const tbPath = path.join(os.homedir(), ".taskbook", "tb.json");
 
 class Storage {
   getData(filePath: string) {

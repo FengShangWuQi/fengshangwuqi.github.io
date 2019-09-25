@@ -1,0 +1,23 @@
+name: Taskbook
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+
+    - name: setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: install dependencies
+      run: |
+        cd tools/taskbook
+        npm install
+    - name: build and publish
+      env:
+        GITHUB_TOKEN: ${{ secrets.PACKAGE_TOKEN }}
+      run: |
+        npm run build
+        npm publish

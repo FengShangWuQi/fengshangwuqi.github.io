@@ -3,19 +3,19 @@ Taskbook
 </h1>
 
 <h4 align="center">
-在终端友好地管理你的笔记或任务
+在终端友好地管理你的 notes 和 tasks
 </h4>
 
 ### 使用
 
 ```
 $ sudo npm link
-$ tb                                    按看板排序展示所有任务和笔记
-$ tb add -t xx                          添加 xx 任务到 @TODO 看板
-$ tb add -n yy                          添加 yy 笔记到 @TODO 看板
-$ tb add -b weekly -t "a post"          添加 a post 任务到 @weekly 看板
-$ tb u 1 -m zz -b cc -s 1               更新 ID 为 1 的任务，任务描述为 zz，任务看板为 @CC，任务状态为已完成
-$ tb rm 1                               删除 ID 为 1 的任务
+$ tb                                    按看板排序展示所有 notes 和 tasks
+$ tb add -t xx                          添加 xx task 到 @TODO 看板
+$ tb add -n yy                          添加 yy note 到 @TODO 看板
+$ tb add -b weekly -t "a post"          添加 a post task 到 @weekly 看板
+$ tb u 1 -m zz -b cc -s 1               更新 ID 为 1 的 task，task 描述为 zz，task 看板为 @CC，task 状态为已完成
+$ tb rm 1                               删除 ID 为 1 的 task
 ```
 
 ### 特性

@@ -6,7 +6,3 @@ yarn.lock
 .cache
 public
 dist
-
-.taskbook
-
-
