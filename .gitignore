@@ -1,9 +1,6 @@
 # gatsby
 public
 
-# yarn
-yarn.lock
-
 # build
 dist/
 es/
@@ -54,9 +51,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-### Node ###	
-package-lock.json
 
 # Logs
 logs
