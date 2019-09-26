@@ -13,8 +13,8 @@ jobs:
         node-version: '10.x'
     - name: install dependencies
       run: |
-        npm install
+        npm ci
         cd tools/taskbook
-        npm install
+        npm ci
     - name: run test
       run: npm test

@@ -18,7 +18,7 @@ jobs:
     - name: install dependencies
       run: |
         cd tools/taskbook
-        npm install
+        npm ci
     - name: build and publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}

@@ -4,9 +4,9 @@ ENV APP_DIR=/blog
 
 WORKDIR $APP_DIR
 
-COPY package.json $APP_DIR
-RUN npm install
 COPY . $APP_DIR
+RUN npm ci
+
 RUN npm start bg b
 
 FROM nginx:alpine
