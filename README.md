@@ -1,12 +1,8 @@
 > # [枫上雾棋的日志](https://fengshangwuqi.github.io)
 
-[![gatsby][gatsby-svg]][gatsby-url]
-[![Netlify Status][netlify-svg]][netlify-url]
-
-[gatsby-svg]: https://img.shields.io/badge/gatsbyjs-V2-blue.svg
-[gatsby-url]: https://github.com/gatsbyjs/gatsby
-[netlify-svg]: https://api.netlify.com/api/v1/badges/1c3538cc-a5a4-444c-82bc-65e5c2e5ae02/deploy-status
-[netlify-url]: https://app.netlify.com/sites/fengshangwuqi/deploys
+![Blog Build Status](https://github.com/FengShangWuQi/fengshangwuqi.github.io/workflows/Blog/badge.svg)
+![Storybook Build Status](https://github.com/FengShangWuQi/fengshangwuqi.github.io/workflows/Storybook/badge.svg)
+![Test Build Status](https://github.com/FengShangWuQi/fengshangwuqi.github.io/workflows/Test/badge.svg)
 
 - [blog](https://fengshangwuqi.github.io)
 - [storybook](https://fengshangwuqi.netlify.com/)
