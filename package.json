@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "clean": "gatsby clean",
-    "test": "tsc --noEmit",
+    "test": "tsc --noEmit && snyk test",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "check": "npm-check -u -E",
     "generate": "ts-node ./tools/generate/index.ts",
@@ -106,6 +106,7 @@
     "npm-check": "5.9.0",
     "prettier": "1.18.2",
     "rimraf": "3.0.0",
+    "snyk": "1.228.5",
     "ts-node": "8.4.1"
   },
   "license": "MIT",
