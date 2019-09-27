@@ -1,6 +1,8 @@
 name: Taskbook
 on:
   push:
+    branches:
+      - dev
     paths:
       - tools/taskbook/*
 jobs:
