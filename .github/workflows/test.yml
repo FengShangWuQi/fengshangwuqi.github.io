@@ -7,13 +7,6 @@ jobs:
     - name: checkout
       uses: actions/checkout@master
 
-    - name: setup snyk
-      uses: clarkio/snyk-cli-action@master
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-    - name: snyk test
-      run: snyk test
-
     - name: setup node
       uses: actions/setup-node@v1
       with:
