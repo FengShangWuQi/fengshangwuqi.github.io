@@ -1,8 +1,8 @@
 name: Taskbook
 on:
   push:
-    branches:
-      - taskbook
+    paths:
+      - tools/taskbook/*
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
