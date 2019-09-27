@@ -10,8 +10,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "start": "ts-node ./cli.ts",
-    "r": "gh-pages -d cjs -b taskbook -m deploy::taskbook"
+    "start": "ts-node ./cli.ts"
   },
   "bin": {
     "tb": "./cjs/cli.js"
