@@ -4,7 +4,7 @@ on:
     branches:
       - dev
     paths:
-      - tools/taskbook/*
+      - tools/taskbook/package.json
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
