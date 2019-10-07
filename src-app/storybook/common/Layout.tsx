@@ -60,6 +60,7 @@ const StorybookGlobal = () => {
 
         pre: {
           ...border("left", 2, "solid", "#ddd"),
+          fontFamily: "monospace",
           marginBottom: 0,
           paddingLeft: 18,
         },
