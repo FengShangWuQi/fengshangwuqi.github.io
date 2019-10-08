@@ -30,7 +30,7 @@
     "yargs": "14.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.6.2",
+    "@babel/core": "7.6.3",
     "@types/config": "0.0.34",
     "@types/fs-extra": "8.0.0",
     "@types/signale": "1.2.1",
