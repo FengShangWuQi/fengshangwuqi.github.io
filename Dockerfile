@@ -4,8 +4,9 @@ ENV APP_DIR=/blog
 
 WORKDIR $APP_DIR
 
-COPY . $APP_DIR
+COPY package*.json $APP_DIR/
 RUN npm ci
+COPY . $APP_DIR/
 
 RUN npm start bg b
 
