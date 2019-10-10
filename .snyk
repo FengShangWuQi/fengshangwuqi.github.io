@@ -2,8 +2,15 @@
 version: v1.13.5
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
+  SNYK-JS-AXIOS-472067:
+    - axios:
+        reason: None given
+        expires: '2019-11-09T14:45:18.800Z'
+    - gatsby > axios:
+        reason: None given
+        expires: '2019-11-09T14:45:18.800Z'
   'npm:mem:20180117':
     - gatsby > @gatsbyjs/relay-compiler > yargs > os-locale > mem:
         reason: None given
-        expires: '2019-10-26T08:33:14.071Z'
+        expires: '2019-11-09T14:45:18.800Z'
 patch: {}
