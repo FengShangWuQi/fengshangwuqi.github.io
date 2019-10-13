@@ -78,7 +78,6 @@
     "react-spring": "8.0.27",
     "react-typography": "0.16.19",
     "rxjs": "6.5.3",
-    "typescript": "3.6.4",
     "typography": "0.16.19"
   },
   "devDependencies": {
@@ -106,7 +105,8 @@
     "npm-check": "5.9.0",
     "prettier": "1.18.2",
     "rimraf": "3.0.0",
-    "ts-node": "8.4.1"
+    "ts-node": "8.4.1",
+    "typescript": "3.6.4"
   },
   "license": "MIT",
   "engines": {
