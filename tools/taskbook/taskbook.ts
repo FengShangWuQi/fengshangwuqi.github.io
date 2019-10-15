@@ -367,23 +367,8 @@ class Taskbook {
           return;
         }
 
-        if (new Date().getDay() === 0) {
-          const filterItems = items.filter(({ id, status, endTime }) => {
-            if (isUndefined(endTime) && status === 1) {
-              this.deleteItem(id);
-              return false;
-            }
-            return true;
-          });
-
-          if (filterItems.length !== 0) {
-            this.displayBoard(board, filterItems);
-            filterItems.map((item: any) => this.displayItem(item));
-          }
-        } else {
-          this.displayBoard(board, items);
-          items.map((item: any) => this.displayItem(item));
-        }
+        this.displayBoard(board, items);
+        items.map((item: any) => this.displayItem(item));
       });
   }
 
