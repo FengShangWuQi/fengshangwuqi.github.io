@@ -33,7 +33,7 @@
   "devDependencies": {
     "@babel/core": "7.6.4",
     "@types/config": "0.0.34",
-    "@types/fs-extra": "8.0.0",
+    "@types/fs-extra": "8.0.1",
     "@types/signale": "1.2.1",
     "gh-pages": "2.1.1",
     "npm-check": "5.9.0",

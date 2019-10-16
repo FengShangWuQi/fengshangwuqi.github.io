@@ -85,7 +85,7 @@
     "@commitlint/config-conventional": "8.2.0",
     "@emotion/babel-preset-css-prop": "10.0.17",
     "@types/cross-spawn": "6.0.1",
-    "@types/fs-extra": "8.0.0",
+    "@types/fs-extra": "8.0.1",
     "@types/inquirer": "6.5.0",
     "@types/node": "12.11.1",
     "@types/prettier": "1.18.3",
