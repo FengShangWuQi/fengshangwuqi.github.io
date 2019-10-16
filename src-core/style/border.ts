@@ -1,15 +1,16 @@
 import { CSSObject } from "@emotion/core";
 
 import { titleCase } from "utils/string";
+import { isString } from "utils/object";
 
 import { sides } from ".";
 
 export const border = (
-  side: string,
+  side: string | number,
   ...values: Array<string | number>
 ): CSSObject => {
-  if (sides.includes(side)) {
-    const key = titleCase(side);
+  if (isString(side) && sides.includes(side as string)) {
+    const key = titleCase(side as string);
     return {
       [`border${key}Width`]: values[0],
       [`border${key}Style`]: values[1] as string,
