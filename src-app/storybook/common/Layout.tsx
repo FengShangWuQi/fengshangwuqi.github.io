@@ -1,5 +1,6 @@
 import React from "react";
 import { Global } from "@emotion/core";
+import { rgba } from "polished";
 
 import { Bootstrap } from "src-core/react";
 import { useDesignSystem, defaultTheme } from "src-core/ds";
@@ -14,9 +15,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       ...defaultTheme.color,
 
       primary: "#c2185b",
-      secondary: "#d81b60",
-
-      text: "#1B1D1D",
+      secondary: rgba("#c2185b", 0.85),
 
       bg: "#fafafa",
     },

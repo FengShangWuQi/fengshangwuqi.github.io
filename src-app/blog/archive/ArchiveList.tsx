@@ -39,7 +39,7 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
   const ref = useRef(null);
   const rect = useRect(ref);
 
-  const isLarge = rect.width >= ds.grid.m;
+  const isLarge = rect.width >= ds.screen.m;
 
   return (
     <div

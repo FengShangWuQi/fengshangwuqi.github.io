@@ -1,5 +1,6 @@
 import React from "react";
 
+import { useDesignSystem } from "src-core/ds";
 import { useMatch } from "src-core/router";
 
 import { rhythm } from "src-core/style";
@@ -10,6 +11,8 @@ export const Storybook = () => {
   const {
     params: { group, module, component },
   } = useMatch();
+
+  const ds = useDesignSystem();
 
   const SB = groupModuleCompList[group][module][component];
 
@@ -23,7 +26,12 @@ export const Storybook = () => {
             display: "none",
           },
         }}>
-        <h1>{component}</h1>
+        <h1
+          css={{
+            color: ds.color.textLight,
+          }}>
+          {component}
+        </h1>
         <SB />
       </div>
     )

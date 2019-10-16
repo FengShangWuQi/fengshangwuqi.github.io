@@ -14,7 +14,7 @@ export const Footer = ({ children }: { children: React.ReactNode }) => {
     <div
       ref={ref}
       css={
-        rect.width < ds.grid.lg
+        rect.width < ds.screen.xl
           ? { ...padding(rhythm(1), 25, rhythm(8 / 7)) }
           : { paddingTop: rhythm(1) }
       }>

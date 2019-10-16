@@ -14,8 +14,6 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
     color: {
       ...defaultTheme.color,
       primary: "#3c2584",
-
-      bgLight: "#eeeeee",
     },
   };
 
@@ -46,7 +44,7 @@ const Container = ({ children }: { children: React.ReactNode }) => {
           ...position("relative"),
           maxWidth: 1200,
         },
-        rect.width < ds.grid.lg
+        rect.width < ds.screen.xl
           ? { ...margin(0, "auto") }
           : { ...margin(0, "auto", rhythm(3)) },
       ]}>
