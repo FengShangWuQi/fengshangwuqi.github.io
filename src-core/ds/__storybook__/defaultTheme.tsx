@@ -25,7 +25,7 @@ export default () => {
         <ThemeGroup theme={["bg", "bgLight"]} />
       </div>
 
-      <EditLink path="src-core/ds/colorPalette.ts" />
+      <EditLink path="src-core/ds/defaultTheme.ts" />
     </div>
   );
 };
