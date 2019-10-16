@@ -1,22 +1,26 @@
-import { tint } from "polished";
+import { rgba } from "polished";
+
+import { colorPalette } from "./colorPalette";
 
 const color = {
-  primary: "#318cff",
-  secondary: "#c41d7f",
+  primary: colorPalette.blue,
+  secondary: rgba(colorPalette.blue, 0.85),
 
-  text: "#000000",
-  textLight: "#85929A",
+  success: colorPalette.green,
+  warning: colorPalette.amber,
+  error: colorPalette.red,
+  info: colorPalette.blue,
 
-  bg: "#FFFFFF",
-  bgLight: "#E7EAEB",
+  text: rgba(colorPalette.black, 0.85),
+  textLight: rgba(colorPalette.black, 0.65),
+
+  bg: colorPalette.white,
+  bgLight: rgba(colorPalette.black, 0.1),
 };
 
 export const defaultTheme = {
-  reverse() {
-    return reverse(this);
-  },
-
   color,
+  colorPalette,
 
   fontFamily: {
     system: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif`,
@@ -40,37 +44,28 @@ export const defaultTheme = {
     l: 10,
   },
 
-  grid: {
+  padding: {
+    s: 8,
+    base: 12,
+    m: 16,
+    l: 24,
+  },
+
+  screen: {
     s: 576,
     m: 768,
     l: 992,
-    lg: 1200,
+    xl: 1200,
+    xxl: 1600,
   },
 
   zIndex: {
-    low: 10,
-    mid: 100,
-    high: 300,
-    higher: 500,
+    affix: 10,
+    modal: 1000,
+    message: 1010,
+    dropdown: 1050,
+    tooltip: 1060,
   },
-};
-
-const reverse = (ds: ITheme) => {
-  return {
-    ...ds,
-
-    color: {
-      ...ds.color,
-
-      primary: tint(0.4, ds.color.primary),
-      secondary: tint(0.4, ds.color.secondary),
-
-      text: "#d0ccc5",
-
-      bg: "#181a1b",
-      bgLight: "#1d1f20",
-    },
-  };
 };
 
 export type ITheme = typeof defaultTheme;
