@@ -9,6 +9,7 @@
     "es/"
   ],
   "scripts": {
+    "check": "npm-check -u -E",
     "build": "rollup -c",
     "start": "ts-node ./cli.ts"
   },
@@ -35,7 +36,8 @@
     "@types/fs-extra": "8.0.0",
     "@types/signale": "1.2.1",
     "gh-pages": "2.1.1",
-    "rollup": "1.21.2",
+    "npm-check": "5.9.0",
+    "rollup": "1.24.0",
     "rollup-plugin-babel": "4.3.3",
     "rollup-plugin-typescript": "1.0.1",
     "ts-node": "8.3.0",
