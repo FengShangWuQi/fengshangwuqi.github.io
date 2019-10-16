@@ -28,10 +28,10 @@
     "fs-extra": "8.1.0",
     "os": "0.1.1",
     "signale": "1.4.0",
-    "yargs": "14.0.0"
+    "yargs": "14.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.6.2",
+    "@babel/core": "7.6.4",
     "@types/config": "0.0.34",
     "@types/fs-extra": "8.0.0",
     "@types/signale": "1.2.1",
@@ -40,9 +40,9 @@
     "rollup": "1.24.0",
     "rollup-plugin-babel": "4.3.3",
     "rollup-plugin-typescript": "1.0.1",
-    "ts-node": "8.3.0",
+    "ts-node": "8.4.1",
     "tslib": "1.10.0",
-    "typescript": "3.6.2"
+    "typescript": "3.6.4"
   },
   "license": "MIT"
 }
