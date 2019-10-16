@@ -13,6 +13,7 @@ export * from "./isMap";
 export * from "./isSet";
 export * from "./isArguments";
 export * from "./isBoolean";
+export * from "./isNumber";
 
 export interface IDictionary<T> {
   [index: string]: T;
