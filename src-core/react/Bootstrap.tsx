@@ -1,7 +1,14 @@
-import React, { StrictMode } from "react";
+import React, { useState, StrictMode } from "react";
 
-import { ThemeProvider, DSReset, ITheme } from "src-core/ds";
+import {
+  ThemeProvider,
+  DSReset,
+  ITheme,
+  ToggleThemeProvider,
+} from "src-core/ds";
 import { Location } from "src-core/router";
+
+import { merge } from "utils/object";
 
 export const Bootstrap = ({
   ds,
@@ -10,13 +17,21 @@ export const Bootstrap = ({
   ds: ITheme;
   children: React.ReactNode;
 }) => {
+  const [theme, setTheme] = useState(ds);
+
   return (
     <StrictMode>
       <Location>
-        <ThemeProvider theme={ds}>
-          <DSReset />
-          {children}
-        </ThemeProvider>
+        <ToggleThemeProvider
+          value={{
+            toggleTheme: adjustedTheme =>
+              setTheme(merge(theme, adjustedTheme) as ITheme),
+          }}>
+          <ThemeProvider theme={theme}>
+            <DSReset />
+            {children}
+          </ThemeProvider>
+        </ToggleThemeProvider>
       </Location>
     </StrictMode>
   );

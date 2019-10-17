@@ -9,18 +9,6 @@ import { rhythm, margin, border } from "src-core/style";
 import { Header } from "./Header";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
-  const storybookTheme = {
-    ...defaultTheme,
-    color: {
-      ...defaultTheme.color,
-
-      primary: "#c2185b",
-      secondary: rgba("#c2185b", 0.85),
-
-      bg: "#fafafa",
-    },
-  };
-
   return (
     <Bootstrap ds={storybookTheme}>
       <StorybookGlobal />
@@ -29,6 +17,18 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       {children}
     </Bootstrap>
   );
+};
+
+export const storybookTheme = {
+  ...defaultTheme,
+  color: {
+    ...defaultTheme.color,
+
+    primary: "#c2185b",
+    secondary: rgba("#c2185b", 0.85),
+
+    bg: "#fafafa",
+  },
 };
 
 const StorybookGlobal = () => {
