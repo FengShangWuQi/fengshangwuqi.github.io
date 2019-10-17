@@ -20,7 +20,7 @@ export default () => {
         const value = colorPalette[color as keyof typeof colorPalette];
 
         return (
-          <div>
+          <div key={color}>
             <div
               css={{
                 marginTop: ds.padding.l,
@@ -71,6 +71,7 @@ const ColorGroup = ({ color }: { color: string }) => {
       }}>
       {colorArr.map((background, index) => (
         <ColorBlock
+          key={background}
           css={{
             ...(index === randomIndex && {
               borderRadius: "50%",
