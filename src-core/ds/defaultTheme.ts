@@ -27,7 +27,6 @@ export const defaultTheme = {
   },
 
   size: {
-    xxs: 10,
     xs: 12,
     s: 14,
     base: 16,
