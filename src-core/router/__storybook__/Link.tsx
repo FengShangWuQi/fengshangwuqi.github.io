@@ -1,7 +1,5 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { Link } from "..";
 
 export default () => {
@@ -19,7 +17,7 @@ export default () => {
         <Link to="../Match">Link to Match</Link>
       </div>
 
-      <EditLink path="src-core/router/Link.tsx" />
+      {/* <EditLink path="src-core/router/Link.tsx" /> */}
     </div>
   );
 };

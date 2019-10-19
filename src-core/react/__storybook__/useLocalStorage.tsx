@@ -1,7 +1,5 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { useLocalStorage } from "..";
 
 export default () => {
@@ -24,7 +22,7 @@ export default () => {
         click
       </button>
 
-      <EditLink path="src-core/react/useLocalStorage.ts" />
+      {/* <EditLink path="src-core/react/useLocalStorage.ts" /> */}
     </div>
   );
 };

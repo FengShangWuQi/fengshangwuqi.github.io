@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { useDebounce } from "../";
 
 export default () => {
@@ -25,7 +23,7 @@ export default () => {
         click
       </button>
 
-      <EditLink path="src-core/react/useDebounce.ts" />
+      {/* <EditLink path="src-core/react/useDebounce.ts" /> */}
     </div>
   );
 };

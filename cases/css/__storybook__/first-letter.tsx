@@ -1,7 +1,5 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 export default () => {
   return (
     <div
@@ -35,7 +33,7 @@ export default () => {
         by other content (such as images or inline tables).
       </p>
 
-      <EditLink path="cases/css/__storybook__/first-letter.tsx" />
+      {/* <EditLink path="cases/css/__storybook__/first-letter.tsx" /> */}
     </div>
   );
 };

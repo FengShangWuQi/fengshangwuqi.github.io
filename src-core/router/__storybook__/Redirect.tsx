@@ -2,8 +2,6 @@ import React from "react";
 
 import { withoutBubble, useToggle } from "src-core/react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { Redirect } from "..";
 
 export default () => {
@@ -33,7 +31,7 @@ useRedirect("/core/router/Redirect", "/core/router/Match")
 
       {on && <Redirect to="../Match" />}
 
-      <EditLink path="src-core/router/Redirect.tsx" />
+      {/* <EditLink path="src-core/router/Redirect.tsx" /> */}
     </div>
   );
 };

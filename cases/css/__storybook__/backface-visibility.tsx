@@ -4,25 +4,21 @@ import { rgba } from "polished";
 import { pickElmAttrs } from "src-core/react";
 import { flex, position, size } from "src-core/style";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 export default () => {
   return (
-    <div>
-      <div
+    <div
+      css={{
+        ...flex({}),
+      }}>
+      <BackFaceVisibility
         css={{
-          ...flex({}),
-        }}>
-        <BackFaceVisibility
-          css={{
-            marginRight: 24,
-          }}
-        />
-        <BackFaceVisibility hidden />
-      </div>
-
-      <EditLink path="cases/css/__storybook__/backface-visibility.tsx" />
+          marginRight: 24,
+        }}
+      />
+      <BackFaceVisibility hidden />
     </div>
+
+    // <EditLink path="cases/css/__storybook__/backface-visibility.tsx" />
   );
 };
 

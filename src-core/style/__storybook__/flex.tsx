@@ -1,7 +1,5 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { flex } from "..";
 
 export default () => {
@@ -32,7 +30,7 @@ export default () => {
         CSS FlexBox
       </div>
 
-      <EditLink path="src-core/style/flex.ts" />
+      {/* <EditLink path="src-core/style/flex.ts" /> */}
     </div>
   );
 };

@@ -1,11 +1,8 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 export default () => {
   return (
-    <div>
-      <pre>{`const { location, navigateTo } = useLocation();
+    <pre>{`const { location, navigateTo } = useLocation();
 const { pathname, search, hash } = location;
       
 <a
@@ -15,7 +12,6 @@ const { pathname, search, hash } = location;
 </a>
 `}</pre>
 
-      <EditLink path="src-core/router/Location.tsx" />
-    </div>
+    // <EditLink path="src-core/router/Location.tsx" />
   );
 };

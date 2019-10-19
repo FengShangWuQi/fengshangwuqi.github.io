@@ -1,7 +1,5 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { useToggle } from "..";
 
 export default () => {
@@ -19,7 +17,7 @@ export default () => {
         click
       </button>
 
-      <EditLink path="src-core/react/useToggle.ts" />
+      {/* <EditLink path="src-core/react/useToggle.ts" /> */}
     </div>
   );
 };

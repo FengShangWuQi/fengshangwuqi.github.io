@@ -1,7 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { useVisibilitySensor } from "../";
 
 export default () => {
@@ -65,7 +63,7 @@ export default () => {
         />
       </div>
 
-      <EditLink path="src-core/react/useVisibilitySensor.ts" />
+      {/* <EditLink path="src-core/react/useVisibilitySensor.ts" /> */}
     </div>
   );
 };

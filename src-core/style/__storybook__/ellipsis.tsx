@@ -1,7 +1,5 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { ellipsis } from "..";
 
 export default () => {
@@ -20,7 +18,7 @@ export default () => {
         这是一个非常长的标题
       </div>
 
-      <EditLink path="src-core/style/ellipsis.ts" />
+      {/* <EditLink path="src-core/style/ellipsis.ts" /> */}
     </div>
   );
 };

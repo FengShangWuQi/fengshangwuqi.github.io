@@ -1,7 +1,5 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { grid } from "..";
 
 export default () => {
@@ -69,7 +67,7 @@ export default () => {
         </div>
       </div>
 
-      <EditLink path="src-core/style/grid.ts" />
+      {/* <EditLink path="src-core/style/grid.ts" /> */}
     </div>
   );
 };

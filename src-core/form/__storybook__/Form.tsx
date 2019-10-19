@@ -1,58 +1,52 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { Form, useForm, Field, useField, BaseInput } from "..";
 
-export default () => {
+export const FormDemo = () => {
   return (
-    <div>
-      <Form
-        name="demo"
-        method="post"
-        action="https://api.github.com/authorizations"
-        valuesToArg={({ username, password }) => ({
-          headers: {
-            Accept: "application/json",
-            Authorization: `Basic ${btoa(`${username}:${password}`)}`,
-          },
-        })}
-        onSubmit={values => {
-          alert(
-            JSON.stringify(
-              {
-                ...values,
-                password: values.password.replace(/\S/g, "*"),
-              },
-              null,
-              2,
-            ),
-          );
-        }}
-        onSuccess={() => {
-          alert("success");
-        }}
-        onFail={() => {
-          alert("fail");
-        }}>
-        {({ isSubmitting }) => {
-          return (
-            <div>
-              <CtxLog />
+    <Form
+      name="demo"
+      method="post"
+      action="https://api.github.com/authorizations"
+      valuesToArg={({ username, password }) => ({
+        headers: {
+          Accept: "application/json",
+          Authorization: `Basic ${btoa(`${username}:${password}`)}`,
+        },
+      })}
+      onSubmit={values => {
+        alert(
+          JSON.stringify(
+            {
+              ...values,
+              password: values.password.replace(/\S/g, "*"),
+            },
+            null,
+            2,
+          ),
+        );
+      }}
+      onSuccess={() => {
+        alert("success");
+      }}
+      onFail={() => {
+        alert("fail");
+      }}>
+      {({ isSubmitting }) => {
+        return (
+          <div>
+            <CtxLog />
 
-              <NameInput />
-              <PassInput />
+            <NameInput />
+            <PassInput />
 
-              <button type="submit" disabled={isSubmitting}>
-                submit
-              </button>
-            </div>
-          );
-        }}
-      </Form>
-
-      <EditLink path="src-core/form/Form.tsx" />
-    </div>
+            <button type="submit" disabled={isSubmitting}>
+              submit
+            </button>
+          </div>
+        );
+      }}
+    </Form>
   );
 };
 

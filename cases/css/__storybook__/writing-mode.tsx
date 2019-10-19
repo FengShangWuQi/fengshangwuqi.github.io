@@ -3,31 +3,27 @@ import React from "react";
 import { flex } from "src-core/style";
 import { pickElmAttrs } from "src-core/react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 export default () => {
   return (
-    <div>
-      <div
+    <div
+      css={{
+        ...flex({
+          justifyContent: "space-between",
+        }),
+      }}>
+      <Poetry
         css={{
-          ...flex({
-            justifyContent: "space-between",
-          }),
-        }}>
-        <Poetry
-          css={{
-            writingMode: "vertical-lr",
-          }}
-        />
-        <Poetry
-          css={{
-            writingMode: "vertical-rl",
-          }}
-        />
-      </div>
-
-      <EditLink path="cases/css/__storybook__/writing-mode.tsx" />
+          writingMode: "vertical-lr",
+        }}
+      />
+      <Poetry
+        css={{
+          writingMode: "vertical-rl",
+        }}
+      />
     </div>
+
+    // <EditLink path="cases/css/__storybook__/writing-mode.tsx" />
   );
 };
 

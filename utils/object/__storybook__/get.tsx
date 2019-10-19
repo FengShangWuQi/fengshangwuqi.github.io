@@ -1,12 +1,9 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 export default () => {
   return (
-    <div>
-      <pre>
-        {`const obj = { a: [{ b: { c: 3 } }] };
+    <pre>
+      {`const obj = { a: [{ b: { c: 3 } }] };
             
 get(object, ["a"])
 // => [ { b: { c: 3 } } ]
@@ -26,9 +23,8 @@ get(object, ["a", "0", "b", "c", "d"])
 get(object, ["a", "0", "b", "c", "d"], 4)
 // => 4
 `}
-      </pre>
+    </pre>
 
-      <EditLink path="utils/object/get.ts" />
-    </div>
+    // <EditLink path="utils/object/get.ts" />
   );
 };

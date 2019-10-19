@@ -1,20 +1,16 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 export default () => {
   return (
-    <div>
-      <pre>
-        {`startsWith("/path", "/")
+    <pre>
+      {`startsWith("/path", "/")
 // => true
 
 startsWith("/path", "path")
 // => false
 `}
-      </pre>
+    </pre>
 
-      <EditLink path="utils/string/startsWith.ts" />
-    </div>
+    // <EditLink path="utils/string/startsWith.ts" />
   );
 };

@@ -3,8 +3,6 @@ import React, { useRef } from "react";
 import { useRect } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { useWhyDidYouUpdate } from "..";
 
 export default () => {
@@ -16,17 +14,15 @@ export default () => {
   useWhyDidYouUpdate("rect", rect);
 
   return (
-    <div>
-      <div
-        ref={ref}
-        css={{
-          width: "100%",
-          height: 250,
-          border: `1px solid ${ds.color.text}`,
-        }}
-      />
+    <div
+      ref={ref}
+      css={{
+        width: "100%",
+        height: 250,
+        border: `1px solid ${ds.color.text}`,
+      }}
+    />
 
-      <EditLink path="src-core/react/useWhyDidYouUpdate.ts" />
-    </div>
+    // <EditLink path="src-core/react/useWhyDidYouUpdate.ts" />
   );
 };

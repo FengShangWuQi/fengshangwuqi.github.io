@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { usePrevious } from "..";
 
 export default () => {
@@ -24,7 +22,7 @@ export default () => {
         click
       </button>
 
-      <EditLink path="src-core/react/usePrevious.ts" />
+      {/* <EditLink path="src-core/react/usePrevious.ts" /> */}
     </div>
   );
 };

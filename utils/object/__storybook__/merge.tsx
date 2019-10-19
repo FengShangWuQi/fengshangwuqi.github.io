@@ -1,12 +1,9 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 export default () => {
   return (
-    <div>
-      <pre>
-        {`const object = {
+    <pre>
+      {`const object = {
     a: [{ b: 2 }, { d: 4 }],
 };
 
@@ -17,9 +14,8 @@ const other = {
 merge(object, other);
 // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
 `}
-      </pre>
+    </pre>
 
-      <EditLink path="utils/object/merge.ts" />
-    </div>
+    // <EditLink path="utils/object/merge.ts" />
   );
 };

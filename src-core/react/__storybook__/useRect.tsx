@@ -3,8 +3,6 @@ import React, { useRef } from "react";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { useRect } from "..";
 
 export default () => {
@@ -14,45 +12,43 @@ export default () => {
   const rect = useRect(ref);
 
   return (
-    <div>
+    <div
+      css={{
+        ...flex({
+          alignItems: "center",
+        }),
+      }}>
       <div
         css={{
-          ...flex({
-            alignItems: "center",
-          }),
+          ...flex({}),
         }}>
         <div
           css={{
-            ...flex({}),
+            marginTop: 20,
           }}>
+          left: {rect.left}
+        </div>
+        <div>
+          top: {rect.top}
+          <div
+            ref={ref}
+            css={{
+              width: 300,
+              height: 200,
+              border: `1px solid ${ds.color.text}`,
+            }}
+          />
           <div
             css={{
-              marginTop: 20,
+              textAlign: "center",
             }}>
-            left: {rect.left}
-          </div>
-          <div>
-            top: {rect.top}
-            <div
-              ref={ref}
-              css={{
-                width: 300,
-                height: 200,
-                border: `1px solid ${ds.color.text}`,
-              }}
-            />
-            <div
-              css={{
-                textAlign: "center",
-              }}>
-              width: {rect.width}
-            </div>
+            width: {rect.width}
           </div>
         </div>
-        height: {rect.height}
       </div>
-
-      <EditLink path="src-core/react/useRect.ts" />
+      height: {rect.height}
     </div>
+
+    // <EditLink path="src-core/react/useRect.ts" />
   );
 };

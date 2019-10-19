@@ -1,17 +1,13 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 export default () => {
   return (
-    <div>
-      <pre>
-        {`titleCase("top")
+    <pre>
+      {`titleCase("top")
 // => Top
 `}
-      </pre>
+    </pre>
 
-      <EditLink path="utils/string/titleCase.ts" />
-    </div>
+    // <EditLink path="utils/string/titleCase.ts" />
   );
 };

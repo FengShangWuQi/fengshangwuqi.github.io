@@ -1,7 +1,5 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { useSearch } from "..";
 
 export default () => {
@@ -32,7 +30,7 @@ export default () => {
         </button>
       </div>
 
-      <EditLink path="src-core/router/Route.tsx" />
+      {/* <EditLink path="src-core/router/Route.tsx" /> */}
     </div>
   );
 };

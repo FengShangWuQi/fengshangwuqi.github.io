@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 import { useRequest } from "../";
 
 export default () => {
@@ -35,7 +33,7 @@ export default () => {
         {response && <pre>{JSON.stringify(response, null, 2)}</pre>}
       </div>
 
-      <EditLink path="src-core/react/useRequest.ts" />
+      {/* <EditLink path="src-core/react/useRequest.ts" /> */}
     </div>
   );
 };

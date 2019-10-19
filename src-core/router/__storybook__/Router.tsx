@@ -1,11 +1,8 @@
 import React from "react";
 
-import { EditLink } from "src-app/storybook/common/Storybook";
-
 export default () => {
   return (
-    <div>
-      <pre>{`const routes = {
+    <pre>{`const routes = {
   "/": {
     component: () => <Redirect to="core" />,
     routes: {
@@ -19,7 +16,6 @@ export default () => {
 const routeResult = useRouter({ routes });
 `}</pre>
 
-      <EditLink path="src-core/router/Router.tsx" />
-    </div>
+    // <EditLink path="src-core/router/Router.tsx" />
   );
 };
