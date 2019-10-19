@@ -27,7 +27,7 @@ export const archiveQuery = graphql`
       }
       pathPrefix
     }
-    allMarkdownRemark(
+    allMdx(
       limit: $size
       skip: $offset
       sort: { fields: [frontmatter___date], order: DESC }
@@ -55,7 +55,7 @@ export default ({
       siteMetadata: { title, description, siteUrl, author, social, contact },
       pathPrefix,
     },
-    allMarkdownRemark: { edges: posts, totalCount },
+    allMdx: { edges: posts, totalCount },
   },
   pageContext: { total, size, offset },
 }: any) => (

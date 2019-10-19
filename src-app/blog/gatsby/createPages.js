@@ -1,6 +1,6 @@
 const { resolve } = require("path");
 
-module.exports = async ({ graphql, actions }) => {
+module.exports = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
 
   const templatePath = "src-app/blog/templates/";
@@ -8,9 +8,9 @@ module.exports = async ({ graphql, actions }) => {
   const archiveTemplate = resolve(`${templatePath}/blog-archive.tsx`);
   const postTemplate = resolve(`${templatePath}/blog-post.tsx`);
 
-  const allMarkdown = await graphql(`
-    {
-      allMarkdownRemark(limit: 1000) {
+  const result = await graphql(`
+    query {
+      allMdx {
         totalCount
         edges {
           node {
@@ -23,15 +23,12 @@ module.exports = async ({ graphql, actions }) => {
     }
   `);
 
-  if (allMarkdown.errors) {
-    console.error(allMarkdown.errors);
-
-    throw Error(allMarkdown.errors);
+  if (result.errors) {
+    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
   }
 
-  const { edges: posts, totalCount } = allMarkdown.data.allMarkdownRemark;
+  const { edges: posts, totalCount } = result.data.allMdx;
 
-  // Create blog posts pages
   posts.forEach(post => {
     const {
       node: {
@@ -48,13 +45,11 @@ module.exports = async ({ graphql, actions }) => {
     });
   });
 
-  // Create Latest(Index) Page
   createPage({
     path: "/",
     component: latestTemplate,
   });
 
-  // Create Archive Page
   const size = Number(process.env.ARCHIVE_SIZE);
   const totalPage = Math.ceil(totalCount / size);
   Array.from({ length: totalPage }, (_, i) => i + 1).forEach(num => {

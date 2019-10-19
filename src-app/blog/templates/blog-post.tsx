@@ -1,9 +1,10 @@
 import React from "react";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { CSSObject } from "@emotion/core";
 
-import { useDesignSystem } from "src-core/ds";
+import { useDesignSystem, PrismTheme } from "src-core/ds";
 import { rhythm, margin, padding, ellipsis } from "src-core/style";
 
 import { SEO } from "src-components/seo";
@@ -11,13 +12,7 @@ import { SEO } from "src-components/seo";
 import { Layout } from "../common/Layout";
 import { Wrapper } from "../common/Wrapper";
 import { Footer } from "../common/Footer";
-import {
-  Discussion,
-  PostHeader,
-  PostTag,
-  PostContainer,
-  PrismTheme,
-} from "../post";
+import { Discussion, PostHeader, PostTag, PostContainer } from "../post";
 
 export const postQuery = graphql`
   query($slug: String!) {
@@ -34,8 +29,8 @@ export const postQuery = graphql`
       }
       pathPrefix
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
       excerpt(pruneLength: 200)
       fields {
         slug
@@ -64,34 +59,31 @@ export const postQuery = graphql`
   }
 `;
 
-const BlogPost = ({
-  data: {
-    site: {
-      siteMetadata: { title: metaTitle, siteUrl, author, social, repository },
-      pathPrefix,
-    },
-    markdownRemark: {
-      html,
-      fields: { slug },
-      excerpt,
-      frontmatter: {
-        title: postTitle,
-        date,
-        tags,
-        cover: {
-          childImageSharp: { fluid },
-        },
+const BlogPost = ({ data: { site, mdx } }: any) => {
+  const {
+    siteMetadata: { title: siteTitle, siteUrl, author, social, repository },
+    pathPrefix,
+  } = site;
+  const {
+    body,
+    fields: { slug },
+    excerpt,
+    frontmatter: {
+      title: postTitle,
+      date,
+      tags,
+      cover: {
+        childImageSharp: { fluid },
       },
     },
-  },
-}: any) => {
+  } = mdx;
   return (
     <Layout>
       <SEO
         title={postTitle}
         description={excerpt}
         imageSrc={`${siteUrl}${pathPrefix}${fluid.src}`}
-        keywords={[postTitle, metaTitle, author, ...tags]}
+        keywords={[postTitle, siteTitle, author, ...tags]}
         url={`${siteUrl}${pathPrefix}${slug}`}
         author={author}
         twitter={social["Twitter"]}
@@ -121,7 +113,7 @@ const BlogPost = ({
         <PostTags tags={tags} />
 
         <PostContainer>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <MDXRenderer>{body}</MDXRenderer>
         </PostContainer>
       </Wrapper>
 

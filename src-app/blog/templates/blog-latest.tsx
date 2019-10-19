@@ -26,10 +26,7 @@ export const latestQuery = graphql`
       }
       pathPrefix
     }
-    allMarkdownRemark(
-      limit: 6
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allMdx(limit: 6, sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt(pruneLength: 95)
@@ -65,7 +62,7 @@ export default ({
       siteMetadata: { title, description, siteUrl, author, social, contact },
       pathPrefix,
     },
-    allMarkdownRemark: { edges: posts },
+    allMdx: { edges: posts },
   },
 }: any) => (
   <Layout>
