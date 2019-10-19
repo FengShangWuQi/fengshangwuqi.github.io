@@ -180,8 +180,8 @@ const path = `${year.pop()}/${month.pop()}/${day.pop()}`;
 
 path 拿到了，我们就可以通过上面的 **REST API** 获取相应的 content：
 
-```jsx{10,24}
-const GitHubAPI = new class {
+```jsx {10,24}
+const GitHubAPI = new (class {
   constructor(prefix, owner, repo) {
     this.prefix = prefix;
     this.owner = owner;
@@ -213,7 +213,7 @@ const GitHubAPI = new class {
 
     return contents;
   }
-}(githubAPIPrefix, owner, repo);
+})(githubAPIPrefix, owner, repo);
 
 export default GitHubAPI;
 ```
