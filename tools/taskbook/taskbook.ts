@@ -224,28 +224,16 @@ class Taskbook {
     message.success(`Delete ${this.getItemAlias(item)} ${item.board}-${id}`);
   }
 
-  cleanItem() {
-    const data = this.data as {
+  cleanItems() {
+    const data = { ...this.data } as {
       [key: string]: any;
     };
 
-    const restData = Object.values(data).reduce((curr, prev) => {
-      if (!curr.endTime && curr.status === 1) {
-        this.deleteItem(curr.id);
-        return prev;
+    Object.values(data).map(item => {
+      if (!item.endTime && item.status === 1) {
+        this.deleteItem(item.id);
       }
-      return {
-        ...prev,
-        [curr.id]: {
-          ...curr,
-        },
-      };
-    }, {});
-
-    this.data = restData;
-
-    withWrap();
-    message.success(`Clean done items`);
+    });
   }
 
   autoDailyItemsStatus() {

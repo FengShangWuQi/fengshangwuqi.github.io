@@ -97,9 +97,8 @@ cli.command({
 cli.command({
   command: "clean",
   desc: "Clean done Items",
-  aliases: "cld",
   handler: () => {
-    tb.cleanItem();
+    tb.cleanItems();
   },
 });
 
