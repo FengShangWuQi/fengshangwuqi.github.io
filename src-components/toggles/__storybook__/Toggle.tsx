@@ -3,12 +3,21 @@ import { rgba } from "polished";
 
 import { useToglleTheme } from "src-core/ds";
 import { useToggle } from "src-core/react";
+import { flex } from "src-core/style";
 
 import { storybookTheme } from "src-app/storybook/common/Layout";
 
 import { Toggle } from "..";
 
-export const ToggleDemo = () => {
+export const BaseToggle = () => (
+  <Toggle
+    css={{
+      marginLeft: 3,
+    }}
+  />
+);
+
+export const ToggleWithIcon = () => {
   const { toggleTheme } = useToglleTheme();
   const [on, toggle] = useToggle(false);
 
@@ -35,6 +44,7 @@ export const ToggleDemo = () => {
     <Toggle
       css={{
         marginLeft: 3,
+        background: "#0f1114",
       }}
       defaultChecked={on}
       icons={{
@@ -49,3 +59,31 @@ export const ToggleDemo = () => {
     />
   );
 };
+
+export const ToggleWithLabel = () => (
+  <div
+    css={{
+      ...flex({
+        alignItems: "center",
+      }),
+    }}>
+    <Toggle id="toggleWithLabel" css={{ marginLeft: 3, marginRight: 5 }} />
+    <label
+      htmlFor="toggleWithLabel"
+      css={{
+        cursor: "pointer",
+      }}>
+      label
+    </label>
+  </div>
+);
+
+export const DisabledToggle = () => (
+  <Toggle
+    css={{
+      marginLeft: 3,
+    }}
+    defaultChecked={true}
+    disabled
+  />
+);
