@@ -4,12 +4,11 @@ import { rgba } from "polished";
 import { useToglleTheme } from "src-core/ds";
 import { useToggle } from "src-core/react";
 
-import { storybookTheme } from "src-app//storybook/common/Layout";
-import { EditLink } from "src-app/storybook/common/Storybook";
+import { storybookTheme } from "src-app/storybook/common/Layout";
 
 import { Toggle } from "..";
 
-export default () => {
+export const ToggleDemo = () => {
   const { toggleTheme } = useToglleTheme();
   const [on, toggle] = useToggle(false);
 
@@ -33,24 +32,20 @@ export default () => {
   };
 
   return (
-    <div>
-      <Toggle
-        css={{
-          marginLeft: 3,
-        }}
-        defaultChecked={on}
-        icons={{
-          checked: (
-            <img src={require("../images/moon.png")} width="16" height="16" />
-          ),
-          unchecked: (
-            <img src={require("../images/sun.png")} width="16" height="16" />
-          ),
-        }}
-        onChange={toggle}
-      />
-
-      <EditLink path="src-components/toggles/Toggle.tsx" />
-    </div>
+    <Toggle
+      css={{
+        marginLeft: 3,
+      }}
+      defaultChecked={on}
+      icons={{
+        checked: (
+          <img src={require("../images/moon.png")} width="16" height="16" />
+        ),
+        unchecked: (
+          <img src={require("../images/sun.png")} width="16" height="16" />
+        ),
+      }}
+      onChange={toggle}
+    />
   );
 };
