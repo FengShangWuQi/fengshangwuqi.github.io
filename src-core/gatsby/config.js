@@ -26,8 +26,7 @@ exports.pathPrefix = {
   pathPrefix: process.env.PATH_PREFIX,
 };
 
-// Create File nodes from the file system
-exports.sources = (process.env.SOURCES || "pages").split(" ").map(source => ({
+exports.sources = process.env.SOURCES.split(" ").map(source => ({
   resolve: "gatsby-source-filesystem",
   options: {
     path: path.join(__dirname, "../../", source),
@@ -35,14 +34,6 @@ exports.sources = (process.env.SOURCES || "pages").split(" ").map(source => ({
   },
 }));
 
-exports.pageCreator = {
-  resolve: `gatsby-plugin-page-creator`,
-  options: {
-    path: path.join(__dirname, "../../src-app", process.env.APP, "pages"),
-  },
-};
-
-// typography
 exports.typography = {
   resolve: "gatsby-plugin-typography",
   options: {
@@ -50,7 +41,6 @@ exports.typography = {
   },
 };
 
-// Google Analytics
 exports.analytics = {
   resolve: "gatsby-plugin-google-analytics",
   options: {
@@ -58,11 +48,11 @@ exports.analytics = {
   },
 };
 
-// Parses Markdown files
-exports.remarks = {
-  resolve: "gatsby-transformer-remark",
+exports.mdx = {
+  resolve: `gatsby-plugin-mdx`,
   options: {
-    plugins: [
+    extensions: [`.mdx`, `.md`],
+    gatsbyRemarkPlugins: [
       {
         resolve: "gatsby-remark-images",
         options: {
@@ -86,22 +76,16 @@ exports.remarks = {
   },
 };
 
-// TypeScript
 exports.ts = "gatsby-plugin-typescript";
 
-// emotion
 exports.emotion = "gatsby-plugin-emotion";
 
-// Creates ImageSharp nodes from image types
 exports.sharps = ["gatsby-transformer-sharp", "gatsby-plugin-sharp"];
 
-// A document head manager
 exports.helmet = "gatsby-plugin-react-helmet";
 
-// Loads the Twitter JavaScript for embedding tweets
 exports.twitter = "gatsby-plugin-twitter";
 
-// Transform SVGs into React components
 exports.svgr = {
   resolve: "gatsby-plugin-svgr",
   options: {
@@ -138,10 +122,8 @@ exports.svgr = {
   },
 };
 
-// Work offline and more resistant to bad network connections
 exports.offline = "gatsby-plugin-offline";
 
-// Create an RSS feed (or multiple feeds)
 exports.feed = {
   resolve: "gatsby-plugin-feed",
   options: {
@@ -159,28 +141,27 @@ exports.feed = {
     `,
     feeds: [
       {
-        serialize: ({ query: { site, allMarkdownRemark } }) => {
-          return allMarkdownRemark.edges.map(edge => {
+        serialize: ({ query: { site, allMdx } }) => {
+          return allMdx.edges.map(edge => {
             return Object.assign({}, edge.node.frontmatter, {
               description: edge.node.excerpt,
               date: edge.node.frontmatter.date,
               url: site.siteMetadata.siteUrl + edge.node.fields.slug,
               guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-              custom_elements: [{ "content:encoded": edge.node.html }],
+              custom_elements: [{ "content:encoded": edge.node.body }],
             });
           });
         },
         query: `	
           {	
-            allMarkdownRemark(	
-              limit: 1000,	
+            allMdx(
               sort: { fields: [frontmatter___date], order: DESC }	
             ) {	
               edges {	
                 node {	
                   excerpt(pruneLength: 95)	
                   fields { slug }	
-                  html	
+                  body	
                   frontmatter {	
                     title	
                     date(formatString: "YYYY-MM-DD")	
