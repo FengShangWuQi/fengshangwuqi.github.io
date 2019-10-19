@@ -1,32 +1,32 @@
 import React from "react";
+import { Link } from "gatsby";
 
 import { useDesignSystem } from "src-core/ds";
-import { Link } from "src-core/router";
-
 import { border } from "src-core/style";
 
 import { BaseMenu, BaseMenuItem, MenuMode } from "src-components/menus";
 
-import { groupModuleCompList } from "../templates";
+import { IDictionary } from "utils/object";
 
-export const SideBar = ({ group }: { group: string }) => {
+import { Container } from "../common/Layout";
+
+export const SideBar = ({
+  group,
+  modules,
+}: {
+  group: string;
+  modules: IDictionary<string[]>;
+}) => {
   const ds = useDesignSystem();
 
-  const currGroup = groupModuleCompList[group];
-
   return (
-    <div
+    <Container
       css={{
         ...border("right", 1, "solid", ds.color.primary),
-        height: "calc(100vh - 130px)",
         fontSize: ds.size.s,
-        overflow: "scroll",
-        "&::-webkit-scrollbar": {
-          display: "none",
-        },
       }}>
-      {Object.keys(currGroup).map(moduleName => (
-        <div key={moduleName}>
+      {Object.keys(modules).map(module => (
+        <div key={module}>
           <div
             css={{
               lineHeight: "32px",
@@ -34,22 +34,22 @@ export const SideBar = ({ group }: { group: string }) => {
               fontSize: ds.size.m,
               fontWeight: "bold",
             }}>
-            {moduleName}
+            {module}
           </div>
           <BaseMenu mode={MenuMode.VERTICAL}>
-            {Object.keys(currGroup[moduleName]).map(compName => (
+            {modules[module].map(title => (
               <Link
                 css={{
                   color: ds.color.text,
                 }}
-                key={compName}
-                to={`/${group}/${moduleName}/${compName}`}>
-                <BaseMenuItem>{compName}</BaseMenuItem>
+                key={title}
+                to={`/${group}/${module}/${title}`}>
+                <BaseMenuItem>{title}</BaseMenuItem>
               </Link>
             ))}
           </BaseMenu>
         </div>
       ))}
-    </div>
+    </Container>
   );
 };

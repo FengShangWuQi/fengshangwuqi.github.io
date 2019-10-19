@@ -1,15 +1,13 @@
 import React from "react";
+import { Link } from "gatsby";
 
-import { Link } from "src-core/router";
 import { useDesignSystem } from "src-core/ds";
 
 import { flex, margin, padding } from "src-core/style";
 
 import { BaseMenu, BaseMenuItem } from "src-components/menus";
 
-import { groupModuleCompList } from "../templates";
-
-export const Header = () => {
+export const Header = ({ groups }: { groups: string[] }) => {
   const ds = useDesignSystem();
 
   return (
@@ -48,9 +46,9 @@ export const Header = () => {
               height: 50,
               lineHeight: "50px",
             }}>
-            {Object.keys(groupModuleCompList).map(groupName => (
-              <BaseMenuItem key={groupName}>
-                <Link to={`/${groupName}`}>{groupName.toUpperCase()}</Link>
+            {groups.map(group => (
+              <BaseMenuItem key={group}>
+                <Link to={group}>{group.toUpperCase()}</Link>
               </BaseMenuItem>
             ))}
           </BaseMenu>

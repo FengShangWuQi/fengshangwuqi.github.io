@@ -6,7 +6,6 @@ import {
   ITheme,
   ToggleThemeProvider,
 } from "src-core/ds";
-import { Location } from "src-core/router";
 
 import { merge } from "utils/object";
 
@@ -21,18 +20,16 @@ export const Bootstrap = ({
 
   return (
     <StrictMode>
-      <Location>
-        <ToggleThemeProvider
-          value={{
-            toggleTheme: adjustedTheme =>
-              setTheme(merge(theme, adjustedTheme) as ITheme),
-          }}>
-          <ThemeProvider theme={theme}>
-            <DSReset />
-            {children}
-          </ThemeProvider>
-        </ToggleThemeProvider>
-      </Location>
+      <ToggleThemeProvider
+        value={{
+          toggleTheme: adjustedTheme =>
+            setTheme(merge(theme, adjustedTheme) as ITheme),
+        }}>
+        <ThemeProvider theme={theme}>
+          <DSReset />
+          {children}
+        </ThemeProvider>
+      </ToggleThemeProvider>
     </StrictMode>
   );
 };

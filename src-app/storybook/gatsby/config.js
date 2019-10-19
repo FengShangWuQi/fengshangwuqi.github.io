@@ -4,6 +4,8 @@ const gatsbyPath = join(__dirname, "../../../src-core/gatsby");
 const {
   siteMetadata,
   pathPrefix,
+  sources,
+  mdx,
   typography,
   analytics,
   ts,
@@ -13,20 +15,20 @@ const {
   twitter,
   offline,
   svgr,
-  pageCreator,
 } = require(`${gatsbyPath}/config`);
 
 const plugins = [
   ts,
   emotion,
   typography,
+  ...sources,
+  mdx,
   ...sharps,
   twitter,
   helmet,
   analytics,
   offline,
   svgr,
-  pageCreator,
 ];
 
 module.exports = {

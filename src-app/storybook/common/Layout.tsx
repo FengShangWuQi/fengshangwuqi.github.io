@@ -2,18 +2,16 @@ import React from "react";
 import { Global } from "@emotion/core";
 import { rgba } from "polished";
 
-import { Bootstrap } from "src-core/react";
-import { useDesignSystem, defaultTheme } from "src-core/ds";
-import { rhythm, margin, border } from "src-core/style";
-
-import { Header } from "./Header";
+import { Bootstrap, pickElmAttrs } from "src-core/react";
+import { useDesignSystem, defaultTheme, PrismTheme } from "src-core/ds";
+import { rhythm, margin, padding, border } from "src-core/style";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <Bootstrap ds={storybookTheme}>
       <StorybookGlobal />
+      <PrismTheme />
 
-      <Header />
       {children}
     </Bootstrap>
   );
@@ -56,14 +54,48 @@ const StorybookGlobal = () => {
         button: {
           cursor: "pointer",
         },
-
-        pre: {
-          ...border("left", 2, "solid", "#ddd"),
-          fontFamily: "monospace",
-          marginBottom: 0,
-          paddingLeft: 18,
-        },
       }}
     />
+  );
+};
+
+export const Center = ({
+  children,
+  ...otherProps
+}: {
+  children: React.ReactNode;
+}) => {
+  return (
+    <div
+      {...pickElmAttrs(otherProps)}
+      css={{
+        ...margin(40, "auto"),
+        ...padding(0, 24),
+        maxWidth: 1200,
+        minWidth: 900,
+      }}>
+      {children}
+    </div>
+  );
+};
+
+export const Container = ({
+  children,
+  ...otherProps
+}: {
+  children: React.ReactNode;
+}) => {
+  return (
+    <div
+      {...pickElmAttrs(otherProps)}
+      css={{
+        height: "calc(100vh - 130px)",
+        overflow: "scroll",
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
+      }}>
+      {children}
+    </div>
   );
 };
