@@ -4,21 +4,31 @@ import { useDesignSystem } from "src-core/ds";
 import { pickElmAttrs } from "src-core/react";
 
 export const Toggle = ({
+  id,
+  disabled,
   defaultChecked,
   icons,
   onChange,
   ...otherProps
 }: {
-  icons?: { checked: React.ReactNode; unchecked: React.ReactNode };
+  id?: string;
+  disabled?: boolean;
   defaultChecked?: boolean;
+  icons?: { checked: React.ReactNode; unchecked: React.ReactNode };
   onChange?: (isChecked: boolean) => void;
 }) => {
+  const ds = useDesignSystem();
+
   const inputRef = useRef(null) as RefObject<HTMLInputElement>;
 
   const [checked, setChecked] = useState(defaultChecked || false);
   const [hasFocus, setFocus] = useState(false);
 
   const handleClick = () => {
+    if (disabled) {
+      return;
+    }
+
     setChecked(!checked);
 
     onChange && onChange(!checked);
@@ -35,17 +45,22 @@ export const Toggle = ({
       css={{
         position: "relative",
         display: "inline-block",
-        cursor: "pointer",
+        padding: 0,
+        width: 50,
+        height: 24,
+        borderRadius: 30,
+        background: ds.color.primary,
+        transition: "all 0.2s ease",
+        cursor: disabled ? "not-allowed" : "pointer",
+        opacity: disabled ? 0.4 : 1,
       }}
       onClick={handleClick}>
-      <ToggleTrack>
-        <ToggleTrackCheck isChecked={checked}>
-          {icons && icons.checked}
-        </ToggleTrackCheck>
-        <ToggleTrackUnCheck isChecked={checked}>
-          {icons && icons.unchecked}
-        </ToggleTrackUnCheck>
-      </ToggleTrack>
+      <ToggleTrackCheck isChecked={checked}>
+        {icons && icons.checked}
+      </ToggleTrackCheck>
+      <ToggleTrackUnCheck isChecked={checked}>
+        {icons && icons.unchecked}
+      </ToggleTrackUnCheck>
 
       <ToggleThumb isChecked={checked} hasFocus={hasFocus} />
 
@@ -55,8 +70,11 @@ export const Toggle = ({
           top: 4,
           left: 4,
           zIndex: -1,
+          opacity: 0,
         }}
         ref={inputRef}
+        id={id}
+        disabled={disabled}
         type="checkbox"
         onFocus={() => {
           setFocus(true);
@@ -65,22 +83,6 @@ export const Toggle = ({
           setFocus(false);
         }}
       />
-    </div>
-  );
-};
-
-const ToggleTrack = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div
-      css={{
-        padding: 0,
-        width: 50,
-        height: 24,
-        borderRadius: 30,
-        background: "#0f1114",
-        transition: "all 0.2s ease",
-      }}>
-      {children}
     </div>
   );
 };
@@ -157,7 +159,7 @@ const ToggleThumb = ({
         width: 22,
         height: 22,
         borderRadius: "50%",
-        background: "#fafafa",
+        background: ds.color.bg,
         boxSizing: "border-box",
         transition: "all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms",
         transform: "translateX(0)",
