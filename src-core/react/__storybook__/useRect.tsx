@@ -5,7 +5,7 @@ import { flex } from "src-core/style";
 
 import { useRect } from "..";
 
-export default () => {
+export const UseRectDemo = () => {
   const ds = useDesignSystem();
 
   const ref = useRef(null);
@@ -24,12 +24,13 @@ export default () => {
         }}>
         <div
           css={{
-            marginTop: 20,
+            marginTop: 16,
           }}>
           left: {rect.left}
         </div>
         <div>
-          top: {rect.top}
+          <div>top: {rect.top}</div>
+
           <div
             ref={ref}
             css={{
@@ -38,6 +39,7 @@ export default () => {
               border: `1px solid ${ds.color.text}`,
             }}
           />
+
           <div
             css={{
               textAlign: "center",
@@ -46,9 +48,8 @@ export default () => {
           </div>
         </div>
       </div>
-      height: {rect.height}
-    </div>
 
-    // <EditLink path="src-core/react/useRect.ts" />
+      <div>height: {rect.height}</div>
+    </div>
   );
 };
