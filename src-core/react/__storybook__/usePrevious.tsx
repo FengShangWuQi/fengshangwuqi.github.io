@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 
+import { useDesignSystem } from "src-core/ds";
+
 import { usePrevious } from "..";
 
-export default () => {
+export const UsePreviousDemo = () => {
+  const ds = useDesignSystem();
+
   const [count, setCount] = useState(0);
   const prevCount = usePrevious(count);
 
@@ -14,15 +18,13 @@ export default () => {
 
       <button
         css={{
-          marginTop: 24,
+          marginTop: ds.padding.l,
         }}
         onClick={() => {
           setCount(count + 1);
         }}>
         click
       </button>
-
-      {/* <EditLink path="src-core/react/usePrevious.ts" /> */}
     </div>
   );
 };
