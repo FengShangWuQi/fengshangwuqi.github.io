@@ -4,7 +4,7 @@ import { useDesignSystem } from "src-core/ds";
 
 import { useDebounce } from "../";
 
-export const DebounceCounter = () => {
+export const UseDebounceDemo = () => {
   const ds = useDesignSystem();
 
   const [count, setCount] = useState(0);

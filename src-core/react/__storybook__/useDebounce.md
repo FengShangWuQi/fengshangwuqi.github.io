@@ -6,11 +6,11 @@ title: useDebounce
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { DebounceCounter } from "./useDebounce";
+import { UseDebounceDemo } from "./useDebounce";
 
-<DebounceCounter />
+<UseDebounceDemo />
 
-```jsx
+```jsx {2}
 const [count] = useState(0);
 const debounceCount = useDebounce(count, 200);
 ```
