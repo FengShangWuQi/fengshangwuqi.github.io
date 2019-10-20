@@ -1,29 +1,30 @@
 import React, { useState } from "react";
 
+import { useDesignSystem } from "src-core/ds";
+
 import { useDebounce } from "../";
 
-export default () => {
+export const DebounceCounter = () => {
+  const ds = useDesignSystem();
+
   const [count, setCount] = useState(0);
   const debounceCount = useDebounce(count, 200);
 
   return (
     <div>
       <div>
-        <div>count: {count}</div>
-        <div>debounceCount: {debounceCount}</div>
+        count: {count}, debounceCount: {debounceCount}
       </div>
 
       <button
         css={{
-          marginTop: 24,
+          marginTop: ds.padding.l,
         }}
         onClick={() => {
           setCount(count + 1);
         }}>
         click
       </button>
-
-      {/* <EditLink path="src-core/react/useDebounce.ts" /> */}
     </div>
   );
 };
