@@ -6,12 +6,8 @@ import { useObservable } from "..";
 
 const number$ = interval(200).pipe(take(100));
 
-export default () => {
+export const UseObservableDemo = () => {
   const value = useObservable(number$);
 
-  return (
-    <div>value: {value}</div>
-
-    // <EditLink path="src-core/react/useObservable.ts" /></div>
-  );
+  return <div>value: {value}</div>;
 };
