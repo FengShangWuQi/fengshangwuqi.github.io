@@ -2,8 +2,8 @@ import React from "react";
 
 import { useToggle } from "..";
 
-export default () => {
-  const [on, toggle] = useToggle(false);
+export const ToggleDemo = () => {
+  const [on, toggle] = useToggle();
 
   return (
     <div>
@@ -13,11 +13,9 @@ export default () => {
         css={{
           marginTop: 24,
         }}
-        onClick={() => toggle()}>
+        onClick={toggle}>
         click
       </button>
-
-      {/* <EditLink path="src-core/react/useToggle.ts" /> */}
     </div>
   );
 };

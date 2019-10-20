@@ -1,14 +1,10 @@
 import { useState } from "react";
 
-import { isBoolean } from "utils/object";
+export const useToggle = (defaultValue?: boolean): [boolean, () => void] => {
+  const [value, setValue] = useState(!!defaultValue);
 
-export const useToggle = (
-  defaultValue: boolean,
-): [boolean, (nextValue?: boolean) => void] => {
-  const [value, setValue] = useState(defaultValue);
-
-  const toggle = (nextValue?: boolean) => {
-    return isBoolean(nextValue) ? setValue(nextValue!) : setValue(!value);
+  const toggle = () => {
+    return setValue(!value);
   };
 
   return [value, toggle];
