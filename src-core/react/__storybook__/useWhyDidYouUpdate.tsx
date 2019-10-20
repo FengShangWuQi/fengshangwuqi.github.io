@@ -5,7 +5,7 @@ import { useDesignSystem } from "src-core/ds";
 
 import { useWhyDidYouUpdate } from "..";
 
-export default () => {
+export const UseWhyDidYouUpdateDemo = () => {
   const ds = useDesignSystem();
 
   const ref = useRef(null);
@@ -22,7 +22,5 @@ export default () => {
         border: `1px solid ${ds.color.text}`,
       }}
     />
-
-    // <EditLink path="src-core/react/useWhyDidYouUpdate.ts" />
   );
 };
