@@ -2,7 +2,7 @@ import React from "react";
 
 import { useLocalStorage } from "..";
 
-export default () => {
+export const UseLocalStorageDemo = () => {
   const key = "count";
   const [storedValue, setStoredValue] = useLocalStorage(key, 0);
 
@@ -21,8 +21,6 @@ export default () => {
         }}>
         click
       </button>
-
-      {/* <EditLink path="src-core/react/useLocalStorage.ts" /> */}
     </div>
   );
 };
