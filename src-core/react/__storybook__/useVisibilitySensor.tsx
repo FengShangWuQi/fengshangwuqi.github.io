@@ -1,8 +1,12 @@
 import React, { useRef, useState, useEffect } from "react";
 
+import { useDesignSystem } from "src-core/ds";
+
 import { useVisibilitySensor } from "../";
 
-export default () => {
+export const UseVisibilitySensorDemo = () => {
+  const ds = useDesignSystem();
+
   const rootRef = useRef(null);
   const footerRef = useRef(null);
 
@@ -35,22 +39,21 @@ export default () => {
       <div
         ref={rootRef}
         css={{
-          padding: 10,
+          padding: ds.padding.s,
           width: 300,
           height: 240,
-          border: "1px solid #eee",
+          border: `1px solid ${ds.color.primary}`,
           overflow: "scroll",
         }}>
         {items.map(item => (
           <div
             key={item}
             css={{
-              margin: "16px auto",
-              paddingLeft: 8,
-              color: "#333333",
-              background: "#f1f1f1cc",
-              border: "1px solid #dbdbdb",
-              borderRadius: 5,
+              margin: `16px auto`,
+              paddingLeft: ds.padding.s,
+              color: ds.color.bg,
+              background: ds.color.secondary,
+              borderRadius: ds.radius.base,
             }}>
             {item}
           </div>
@@ -62,8 +65,6 @@ export default () => {
           }}
         />
       </div>
-
-      {/* <EditLink path="src-core/react/useVisibilitySensor.ts" /> */}
     </div>
   );
 };
