@@ -1,8 +1,12 @@
 import React from "react";
 
+import { useDesignSystem } from "src-core/ds";
+
 import { useToggle } from "..";
 
 export const ToggleDemo = () => {
+  const ds = useDesignSystem();
+
   const [on, toggle] = useToggle();
 
   return (
@@ -11,7 +15,7 @@ export const ToggleDemo = () => {
 
       <button
         css={{
-          marginTop: 24,
+          marginTop: ds.padding.l,
         }}
         onClick={toggle}>
         click

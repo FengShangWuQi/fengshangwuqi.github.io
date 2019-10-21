@@ -1,8 +1,12 @@
 import React from "react";
 
+import { useDesignSystem } from "src-core/ds";
+
 import { useLocalStorage } from "..";
 
 export const UseLocalStorageDemo = () => {
+  const ds = useDesignSystem();
+
   const key = "count";
   const [storedValue, setStoredValue] = useLocalStorage(key, 0);
 
@@ -14,7 +18,7 @@ export const UseLocalStorageDemo = () => {
 
       <button
         css={{
-          marginTop: 24,
+          marginTop: ds.padding.l,
         }}
         onClick={() => {
           setStoredValue((count: number) => count + 1);

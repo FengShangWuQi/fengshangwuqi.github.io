@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 
+import { useDesignSystem } from "src-core/ds";
+
 import { useRequest } from "../";
 
-export default () => {
-  const [response, setResponse] = useState(null);
+export const UseRequestDemo = () => {
+  const ds = useDesignSystem();
+
+  const [response, setResponse] = useState(null as any);
 
   const [request, requesting] = useRequest(
     {
-      url: "https://api.github.com/users/FengShangWuQi",
+      url:
+        "https://api.github.com/repos/FengShangWuQi/fengshangwuqi.github.io/pulls",
     },
     {
       onSuccess: ({ data }) => {
@@ -20,7 +25,7 @@ export default () => {
     <div>
       <button
         css={{
-          marginBottom: 24,
+          marginBottom: ds.padding.l,
         }}
         onClick={() => {
           request();
@@ -30,10 +35,30 @@ export default () => {
 
       <div>
         {requesting && "loading..."}
-        {response && <pre>{JSON.stringify(response, null, 2)}</pre>}
+        {response && (
+          <ul>
+            {response.map((item: any) => (
+              <div
+                css={{
+                  marginBottom: 4,
+                }}>
+                <a
+                  href={item.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  #{item.number}
+                </a>
+                <span
+                  css={{
+                    marginLeft: ds.padding.s,
+                  }}>
+                  {item.title}
+                </span>
+              </div>
+            ))}
+          </ul>
+        )}
       </div>
-
-      {/* <EditLink path="src-core/react/useRequest.ts" /> */}
     </div>
   );
 };
