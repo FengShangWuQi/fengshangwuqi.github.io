@@ -372,8 +372,13 @@ let g:NERDDefaultNesting = 0
 ### git
 
 ```vim
+set updatetime=100
+
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
+
+let g:gitgutter_max_signs = 800
 ```
 
 [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
