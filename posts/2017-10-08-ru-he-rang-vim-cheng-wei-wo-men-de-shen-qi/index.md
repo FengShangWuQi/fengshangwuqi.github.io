@@ -385,6 +385,8 @@ let g:gitgutter_max_signs = 800
 
 [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
 
+[tpope/vim-rhubarb](https://github.com/tpope/vim-rhubarb)
+
 ### Markdown
 
 ```vim
