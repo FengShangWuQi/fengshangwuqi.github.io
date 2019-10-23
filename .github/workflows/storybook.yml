@@ -13,13 +13,8 @@ jobs:
     - name: build and deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
-        APP: storybook
-        SITE_URL: https://fengshangwuqi.netlify.com
-        PATH_PREFIX: /
-        META_TITLE: 枫上雾棋的 storybook
-        META_DECS: 枫上雾棋的 storybook
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: dev
         BRANCH: gh-pages
-        BUILD_SCRIPT: npm ci && npm run build
+        BUILD_SCRIPT: npm ci && npm start sb b
         FOLDER: public
