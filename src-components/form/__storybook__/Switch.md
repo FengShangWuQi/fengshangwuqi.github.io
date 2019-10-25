@@ -1,25 +1,25 @@
 ---
 group: components
-module: toggles
-title: Toggle
+module: form
+title: Switch
 ---
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { BaseToggle, ToggleWithLabel, ToggleWithIcon, DisabledToggle } from "./Toggle";
+import { BaseSwitch, SwitchWithLabel, SwitchWithIcon, DisabledSwitch } from "./Switch";
 
-<BaseToggle />
+<BaseSwitch />
 
 ```jsx
-// base toggle
-<Toggle />
+// base Switch
+<Switch />
 ```
 
-<ToggleWithIcon />
+<SwitchWithIcon />
 
 ```jsx
-// toggle with icon
-<Toggle
+// Switch with icon
+<Switch
   css={{
     background: "#0f1114",
   }}
@@ -33,21 +33,21 @@ import { BaseToggle, ToggleWithLabel, ToggleWithIcon, DisabledToggle } from "./T
 />
 ```
 
-<ToggleWithLabel />
+<SwitchWithLabel />
 
 ```jsx
-// toggle with label
+// Switch with label
 <div>
-  <Toggle id="xx" />
+  <Switch id="xx" />
   <label htmlFor="xx">label</label>
 </div>
 ```
 
-<DisabledToggle />
+<DisabledSwitch />
 
 ```jsx
-// disabled toggle
-<Toggle defaultChecked={true} disabled />
+// disabled Switch
+<Switch defaultChecked={true} disabled />
 ```
 
-<Source path="src-components/toggles/Toggle.tsx" />
+<Source path="src-components/form/Switch.tsx" />

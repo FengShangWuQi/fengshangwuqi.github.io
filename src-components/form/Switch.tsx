@@ -3,7 +3,7 @@ import React, { useState, useRef, RefObject } from "react";
 import { useDesignSystem } from "src-core/ds";
 import { pickElmAttrs } from "src-core/react";
 
-export const Toggle = ({
+export const Switch = ({
   id,
   disabled,
   defaultChecked,

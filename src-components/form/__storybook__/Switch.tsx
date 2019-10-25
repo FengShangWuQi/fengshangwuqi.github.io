@@ -7,17 +7,17 @@ import { flex } from "src-core/style";
 
 import { storybookTheme } from "src-app/storybook/common/Layout";
 
-import { Toggle } from "..";
+import { Switch } from "../Switch";
 
-export const BaseToggle = () => (
-  <Toggle
+export const BaseSwitch = () => (
+  <Switch
     css={{
       marginLeft: 3,
     }}
   />
 );
 
-export const ToggleWithIcon = () => {
+export const SwitchWithIcon = () => {
   const { toggleTheme } = useToglleTheme();
   const [on, toggle] = useToggle(false);
 
@@ -41,7 +41,7 @@ export const ToggleWithIcon = () => {
   };
 
   return (
-    <Toggle
+    <Switch
       css={{
         marginLeft: 3,
         background: "#0f1114",
@@ -60,14 +60,14 @@ export const ToggleWithIcon = () => {
   );
 };
 
-export const ToggleWithLabel = () => (
+export const SwitchWithLabel = () => (
   <div
     css={{
       ...flex({
         alignItems: "center",
       }),
     }}>
-    <Toggle id="toggleWithLabel" css={{ marginLeft: 3, marginRight: 5 }} />
+    <Switch id="toggleWithLabel" css={{ marginLeft: 3, marginRight: 5 }} />
     <label
       htmlFor="toggleWithLabel"
       css={{
@@ -78,8 +78,8 @@ export const ToggleWithLabel = () => (
   </div>
 );
 
-export const DisabledToggle = () => (
-  <Toggle
+export const DisabledSwitch = () => (
+  <Switch
     css={{
       marginLeft: 3,
     }}
