@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@emotion/core": "10.0.22",
-    "@emotion/styled": "10.0.22",
+    "@emotion/styled": "10.0.23",
     "@mdx-js/mdx": "1.5.1",
     "@mdx-js/react": "1.5.1",
     "@svgr/webpack": "4.3.3",
@@ -86,7 +86,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
-    "@emotion/babel-preset-css-prop": "10.0.22",
+    "@emotion/babel-preset-css-prop": "10.0.23",
     "@types/cross-spawn": "6.0.1",
     "@types/fs-extra": "8.0.1",
     "@types/inquirer": "6.5.0",
