@@ -55,7 +55,7 @@ export const SwitchWithIcon = () => {
           <img src={require("../images/sun.png")} width="16" height="16" />
         ),
       }}
-      onChange={toggle}
+      onValueChange={toggle}
     />
   );
 };

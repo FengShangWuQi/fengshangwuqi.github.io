@@ -8,15 +8,12 @@ export const Switch = ({
   disabled,
   defaultChecked,
   icons,
-  onChange,
+  onValueChange,
   ...otherProps
 }: {
-  id?: string;
-  disabled?: boolean;
-  defaultChecked?: boolean;
-  icons?: { checked: React.ReactNode; unchecked: React.ReactNode };
-  onChange?: (isChecked: boolean) => void;
-}) => {
+  icons?: { checked?: React.ReactNode; unchecked?: React.ReactNode };
+  onValueChange?: (isChecked: boolean) => void;
+} & React.InputHTMLAttributes<HTMLInputElement>) => {
   const ds = useDesignSystem();
 
   const inputRef = useRef(null) as RefObject<HTMLInputElement>;
@@ -28,10 +25,6 @@ export const Switch = ({
     if (disabled) {
       return;
     }
-
-    setChecked(!checked);
-
-    onChange && onChange(!checked);
 
     if (inputRef.current) {
       inputRef.current.focus();
@@ -55,16 +48,19 @@ export const Switch = ({
         opacity: disabled ? 0.4 : 1,
       }}
       onClick={handleClick}>
-      <ToggleTrackCheck isChecked={checked}>
+      <ToggleTrackCheck data-testid="switch-track-check" isChecked={checked}>
         {icons && icons.checked}
       </ToggleTrackCheck>
-      <ToggleTrackUnCheck isChecked={checked}>
+      <ToggleTrackUnCheck
+        data-testid="switch-track-uncheck"
+        isChecked={checked}>
         {icons && icons.unchecked}
       </ToggleTrackUnCheck>
 
       <ToggleThumb isChecked={checked} hasFocus={hasFocus} />
 
       <input
+        data-testid="switch-checkbox"
         css={{
           position: "absolute",
           top: 4,
@@ -76,11 +72,16 @@ export const Switch = ({
         id={id}
         disabled={disabled}
         type="checkbox"
+        checked={checked}
         onFocus={() => {
           setFocus(true);
         }}
         onBlur={() => {
           setFocus(false);
+        }}
+        onChange={() => {
+          setChecked(!checked);
+          onValueChange && onValueChange(!checked);
         }}
       />
     </div>
@@ -90,12 +91,14 @@ export const Switch = ({
 const ToggleTrackCheck = ({
   isChecked,
   children,
+  ...otherProps
 }: {
   isChecked: boolean;
   children: React.ReactNode;
 }) => {
   return (
     <div
+      {...pickElmAttrs(otherProps)}
       css={{
         position: "absolute",
         width: 17,
@@ -117,12 +120,14 @@ const ToggleTrackCheck = ({
 const ToggleTrackUnCheck = ({
   isChecked,
   children,
+  ...otherProps
 }: {
   isChecked: boolean;
   children: React.ReactNode;
 }) => {
   return (
     <div
+      {...pickElmAttrs(otherProps)}
       css={{
         position: "absolute",
         width: 17,
