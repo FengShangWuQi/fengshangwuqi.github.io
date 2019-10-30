@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@emotion/core": "10.0.22",
-    "@emotion/styled": "10.0.22",
+    "@emotion/styled": "10.0.23",
     "@mdx-js/mdx": "1.5.1",
     "@mdx-js/react": "1.5.1",
     "@svgr/webpack": "4.3.3",
