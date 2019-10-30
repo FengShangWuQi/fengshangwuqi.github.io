@@ -27,7 +27,6 @@
     "paths": {
       "*": ["*", "__types__/*"]
     },
-    "types": ["@emotion/core", "node"],
     "allowSyntheticDefaultImports": true,
 
     /* 其他选项 */

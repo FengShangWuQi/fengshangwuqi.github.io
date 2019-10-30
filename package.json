@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "clean": "gatsby clean",
-    "test": "tsc --noEmit",
+    "test": "jest --coverage",
+    "tsc": "tsc --noEmit",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "check": "npm-check -u -E",
     "generate": "ts-node ./tools/generate/index.ts",
@@ -29,8 +30,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test && lint-staged",
-      "pre-push": "npm test",
+      "pre-commit": "npm test && npm run tsc && lint-staged",
+      "pre-push": "npm test && npm run tsc",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -84,18 +85,22 @@
     "typography": "0.16.19"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "7.6.0",
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
-    "@emotion/babel-preset-css-prop": "10.0.22",
+    "@testing-library/jest-dom": "4.2.0",
+    "@testing-library/react": "9.3.0",
     "@types/cross-spawn": "6.0.1",
     "@types/fs-extra": "8.0.1",
     "@types/inquirer": "6.5.0",
+    "@types/jest": "24.0.21",
     "@types/node": "12.11.7",
     "@types/prettier": "1.18.3",
     "@types/react": "16.9.11",
     "@types/react-dom": "16.9.3",
     "@types/react-helmet": "5.0.12",
     "@types/typography": "0.16.3",
+    "babel-jest": "24.9.0",
     "babel-preset-gatsby": "0.2.20",
     "chalk": "2.4.2",
     "cross-spawn": "7.0.1",
@@ -104,6 +109,7 @@
     "gh-pages": "2.1.1",
     "globby": "10.0.1",
     "husky": "3.0.9",
+    "jest": "24.9.0",
     "lint-staged": "9.4.2",
     "npm-check": "5.9.0",
     "prettier": "1.18.2",

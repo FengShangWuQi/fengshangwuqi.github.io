@@ -18,3 +18,5 @@ jobs:
         npm ci
     - name: run test
       run: npm test
+    - name: run tsc
+      run: npm run tsc
