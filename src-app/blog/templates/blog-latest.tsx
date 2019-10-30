@@ -41,11 +41,7 @@ export const latestQuery = graphql`
             cover {
               childImageSharp {
                 fluid(maxWidth: 350, maxHeight: 196) {
-                  aspectRatio
-                  src
-                  srcSet
-                  sizes
-                  tracedSVG
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

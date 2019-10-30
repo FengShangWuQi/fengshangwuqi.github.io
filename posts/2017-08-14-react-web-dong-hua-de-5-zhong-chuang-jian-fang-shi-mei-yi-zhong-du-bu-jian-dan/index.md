@@ -6,7 +6,7 @@ tags:
   - CSS
   - Animation
 date: 2017-08-14
-cover: ./header.png
+cover: header.png
 ---
 
 原文：[React Animations in Depth](https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e) by Nader Dabit

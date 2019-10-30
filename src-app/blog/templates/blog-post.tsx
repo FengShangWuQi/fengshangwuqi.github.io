@@ -46,11 +46,7 @@ export const postQuery = graphql`
         cover {
           childImageSharp {
             fluid(maxWidth: 1200, maxHeight: 400) {
-              aspectRatio
-              src
-              srcSet
-              sizes
-              tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }

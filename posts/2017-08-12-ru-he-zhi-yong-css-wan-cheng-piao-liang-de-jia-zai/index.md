@@ -5,7 +5,7 @@ tags:
   - CSS
   - Animation
 date: 2017-08-12
-cover: ./header.png
+cover: header.png
 ---
 
 原文：[How to create a beautiful animated loader with nothing but CSS](https://codeburst.io/how-to-create-a-beautiful-animated-loader-with-nothing-but-css-d1962fc5a66c) by Julien Benchetrit

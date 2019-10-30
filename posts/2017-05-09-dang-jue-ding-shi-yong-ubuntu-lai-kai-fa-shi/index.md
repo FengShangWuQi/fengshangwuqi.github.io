@@ -4,7 +4,7 @@ original: true
 tags:
   - Ubuntu
 date: 2017-05-09
-cover: ./header.png
+cover: header.png
 ---
 
 ## 入门

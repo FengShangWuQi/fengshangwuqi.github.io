@@ -4,7 +4,7 @@ original: false
 tags:
   - CSS
 date: 2018-01-19
-cover: ./header.png
+cover: header.png
 ---
 
 原文：[Crooked Style Sheets](https://github.com/jbtronics/CrookedStyleSheets) by jbtronics

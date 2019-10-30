@@ -4,7 +4,7 @@ original: true
 tags:
   - Vim
 date: 2017-10-08
-cover: ./header.png
+cover: header.png
 ---
 
 > **Vim** 是一个上古神器，刚刚接触的同学可能很难驾驭，本篇文章主要带领大家快速入门，并持续分享当前流行的一些 **vim-plugin**，有兴趣的同学还可以参考 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库继续研究 **Tmux** 和 **Zsh**。

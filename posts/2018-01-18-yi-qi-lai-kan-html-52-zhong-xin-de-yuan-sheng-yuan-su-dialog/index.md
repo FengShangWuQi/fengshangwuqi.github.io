@@ -5,7 +5,7 @@ tags:
   - HTML 5
   - dialog
 date: 2018-01-18
-cover: ./header.png
+cover: header.png
 ---
 
 原文：[Meet the New Dialog Element](https://keithjgrant.com/posts/2018/meet-the-new-dialog-element) by Keith

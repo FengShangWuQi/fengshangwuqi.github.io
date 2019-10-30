@@ -5,7 +5,7 @@ tags:
   - React
   - Context
 date: 2018-02-01
-cover: ./header.png
+cover: header.png
 ---
 
 原文：[React's ⚛️ new Context API](https://blog.kentcdodds.com/reacts-%EF%B8%8F-new-context-api-70c9fe01596b) by kentcdodds

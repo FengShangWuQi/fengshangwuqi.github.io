@@ -4,7 +4,7 @@ original: true
 tags:
   - Git
 date: 2017-04-09
-cover: ./header.png
+cover: header.png
 ---
 
 ## 基本操作

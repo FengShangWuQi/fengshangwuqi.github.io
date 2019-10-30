@@ -4,7 +4,7 @@ original: true
 tags:
   - Chrome Extension
 date: 2018-04-04
-cover: ./header.png
+cover: header.png
 ---
 
 > 最近接触了一下 **chrome 扩展**，发现这确实是一个好东西，使用简单的 **HTML**，**CSS** 和 **JavaScript** 就可为浏览器新增我们想要的功能，并且，使用 **chrome 扩展** 开发，不用担心 **跨域** 等消息传递问题，还有讨厌的 **兼容性** 问题，结合操作用户页面 dom，开发的开心度可谓是可观的。下面，我们就一起通过一个实例来看看 **chrome 扩展** 开发。
