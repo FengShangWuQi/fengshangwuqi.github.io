@@ -6,7 +6,7 @@ import { Switch } from "../Switch";
 
 afterEach(cleanup);
 
-describe("Switch", () => {
+describe("Switch #components #form", () => {
   it("when render - with default attributes", () => {
     const { getByTestId } = render(<Switch />);
 
