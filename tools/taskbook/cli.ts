@@ -1,5 +1,3 @@
-// #!/usr/bin/env node
-
 import { tb } from "./taskbook";
 
 const cli = require("yargs")
