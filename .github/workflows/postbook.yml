@@ -1,0 +1,30 @@
+name: Postbook
+on:
+  push:
+    branches:
+      - dev
+    paths:
+      - tools/postbook/package.json
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+
+    - name: setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+        registry-url: 'https://npm.pkg.github.com'
+    - name: install dependencies
+      run: |
+        cd tools/postbook
+        npm ci
+    - name: build and publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
+      run: |
+        cd tools/postbook
+        npm run build
+        npm publish

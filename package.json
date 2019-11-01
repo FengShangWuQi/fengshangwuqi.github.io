@@ -26,7 +26,8 @@
     "now-build": "gatsby build --prefix-paths"
   },
   "bin": {
-    "tb": "./tools/taskbook/lib/index.js"
+    "tb": "./tools/taskbook/lib/index.js",
+    "pb": "./tools/postbook/lib/index.js"
   },
   "husky": {
     "hooks": {
