@@ -14,8 +14,8 @@ jobs:
     - name: install dependencies
       run: |
         npm ci
-        cd tools/taskbook
-        npm ci
+        cd tools
+        npm install && npm run bootstrap
     - name: run test
       run: npm test
     - name: run tsc

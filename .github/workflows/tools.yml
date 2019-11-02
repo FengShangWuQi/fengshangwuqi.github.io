@@ -1,10 +1,10 @@
-name: Postbook
+name: tools
 on:
   push:
     branches:
       - dev
     paths:
-      - tools/postbook/package.json
+      - tools
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
@@ -19,12 +19,12 @@ jobs:
         registry-url: 'https://npm.pkg.github.com'
     - name: install dependencies
       run: |
-        cd tools/postbook
+        cd tools
         npm ci
     - name: build and publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
       run: |
-        cd tools/postbook
+        cd tools
         npm run build
-        npm publish
+        npm run r

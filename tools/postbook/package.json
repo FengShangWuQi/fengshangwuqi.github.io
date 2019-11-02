@@ -10,7 +10,6 @@
   ],
   "scripts": {
     "check": "npm-check -u -E",
-    "build": "rollup -c ../../rollup.config.js",
     "start": "ts-node ./cli.ts'"
   },
   "bin": {
@@ -35,7 +34,6 @@
     "@types/fs-extra": "8.0.1",
     "@types/pinyin": "2.8.1",
     "npm-check": "5.9.0",
-    "rollup": "1.26.0",
     "ts-node": "8.4.1",
     "typescript": "3.6.4"
   },

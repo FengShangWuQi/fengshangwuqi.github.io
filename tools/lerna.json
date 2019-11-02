@@ -1,0 +1,4 @@
+{
+  "packages": ["taskbook", "postbook"],
+  "version": "independent"
+}
