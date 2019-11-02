@@ -25,6 +25,11 @@
     "release": "gh-pages -d public -b ${BRANCH} -m deploy::${APP} && gh-pages-clean",
     "now-build": "gatsby build --prefix-paths"
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm test && npm run tsc && lint-staged",
