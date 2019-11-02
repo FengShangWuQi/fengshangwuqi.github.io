@@ -1,7 +1,1 @@
-import {
-  toBeChecked,
-  toBeDisabled,
-  toBeEmpty,
-} from "@testing-library/jest-dom";
-
-expect.extend({ toBeChecked, toBeDisabled, toBeEmpty });
+import "@testing-library/jest-dom/extend-expect";
