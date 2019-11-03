@@ -6,29 +6,14 @@ import chalk from "chalk";
 
 import { camelCase } from "../../utils/string";
 
-export const generateIcons = () => {
-  const icons = globby
-    .sync(process.cwd() + "/src-components/basic/icons/*.svg")
-    .map(filePath => {
-      const ext = path.extname(filePath);
-      const base = path.basename(filePath, ext);
+const formatCode = (code: string, filePath: string) =>
+  prettier.format(code, {
+    ...prettier.resolveConfig.sync(filePath),
+    parser: "typescript",
+  });
 
-      return base;
-    });
-
-  const exportPath = process.cwd() + "/src-components/basic/Icon.tsx";
-  fse.ensureFileSync(exportPath);
-  fse.writeFileSync(
-    exportPath,
-    formatCode(icons.map(name => iconExport(name)).join(""), exportPath),
-  );
-  successGenerate(exportPath);
-
-  const sbPath = process.cwd() + "/src-components/basic/__storybook__/Icon.tsx";
-  fse.ensureFileSync(sbPath);
-  fse.writeFileSync(sbPath, formatCode(iconStorybook(icons), sbPath));
-  successGenerate(sbPath);
-};
+const successGenerate = (path: string) =>
+  console.log(chalk.green(`generate file ${path}`));
 
 const getIconName = (name: string) =>
   `Icon${camelCase(name).replace(/^[a-z]/, match => match.toUpperCase())}`;
@@ -86,11 +71,26 @@ const iconStorybook = (icons: string[]) => `
         )
   }`;
 
-const formatCode = (code: string, filePath: string) =>
-  prettier.format(code, {
-    ...prettier.resolveConfig.sync(filePath),
-    parser: "typescript",
-  });
+export const generateIcons = () => {
+  const icons = globby
+    .sync(process.cwd() + "/src-components/basic/icons/*.svg")
+    .map(filePath => {
+      const ext = path.extname(filePath);
+      const base = path.basename(filePath, ext);
 
-const successGenerate = (path: string) =>
-  console.log(chalk.green(`generate file ${path}`));
+      return base;
+    });
+
+  const exportPath = process.cwd() + "/src-components/basic/Icon.tsx";
+  fse.ensureFileSync(exportPath);
+  fse.writeFileSync(
+    exportPath,
+    formatCode(icons.map(name => iconExport(name)).join(""), exportPath),
+  );
+  successGenerate(exportPath);
+
+  const sbPath = process.cwd() + "/src-components/basic/__storybook__/Icon.tsx";
+  fse.ensureFileSync(sbPath);
+  fse.writeFileSync(sbPath, formatCode(iconStorybook(icons), sbPath));
+  successGenerate(sbPath);
+};

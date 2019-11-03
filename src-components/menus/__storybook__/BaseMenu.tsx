@@ -5,7 +5,7 @@ import { useDesignSystem } from "src-core/ds";
 
 import { BaseMenu, BaseMenuItem, MenuMode } from "..";
 
-export default () => {
+export const BaseMenuDemo = () => {
   const ds = useDesignSystem();
 
   return (

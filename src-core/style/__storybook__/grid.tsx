@@ -2,7 +2,7 @@ import React from "react";
 
 import { grid } from "..";
 
-export default () => {
+export const GridDemo = () => {
   return (
     <div>
       <pre>{`{

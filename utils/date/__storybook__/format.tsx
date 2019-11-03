@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const FormatDemo = () => {
   return (
     <pre>
       {`format(new Date(), "YY-MM-DD hh:mm:ss");

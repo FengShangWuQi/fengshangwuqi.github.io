@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const isArrayLikeDemo = () => {
   return (
     <pre>
       {`isArrayLike([1, 2, 3]);

@@ -3,7 +3,7 @@ import React from "react";
 import { flex } from "src-core/style";
 import { pickElmAttrs } from "src-core/react";
 
-export default () => {
+export const PoetryDemo = () => {
   return (
     <div
       css={{

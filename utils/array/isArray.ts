@@ -1,7 +1,4 @@
 import { toString } from "../object";
 
-export const isArray =
-  Array.isArray ||
-  function(value: any) {
-    return toString(value) === "[object Array]";
-  };
+export const isArray = (value: any) =>
+  Array.isArray(value) || toString(value) === "[object Array]";

@@ -2,7 +2,7 @@ import React from "react";
 
 import { Trigger, popupPlacement } from "../";
 
-export default () => {
+export const TriggerDemo = () => {
   return (
     <Trigger
       placement={popupPlacement.bottom}

@@ -2,7 +2,7 @@ import React from "react";
 
 import { useMatch } from "..";
 
-export default () => {
+export const MartchDemo = () => {
   const match = useMatch();
 
   return (

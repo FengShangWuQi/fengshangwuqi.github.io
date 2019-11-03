@@ -2,7 +2,7 @@ import React from "react";
 
 import { flex } from "..";
 
-export default () => {
+export const FlexDemo = () => {
   return (
     <div>
       <pre>{`{

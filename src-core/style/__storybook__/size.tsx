@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const SizeDemo = () => {
   return (
     <pre>{`{
    ...size("100%", 400)

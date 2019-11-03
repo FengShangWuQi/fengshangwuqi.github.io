@@ -20,7 +20,7 @@ export const useSiteMetadata = () => {
   return site.siteMetadata;
 };
 
-export default ({ pageContext: { groups } }: any) => {
+const StorybookIndex = ({ pageContext: { groups } }: any) => {
   const { title } = useSiteMetadata();
 
   return (
@@ -40,3 +40,5 @@ export default ({ pageContext: { groups } }: any) => {
     </Layout>
   );
 };
+
+export default StorybookIndex;

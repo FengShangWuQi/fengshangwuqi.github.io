@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "..";
 
-export default () => {
+export const LinkDemo = () => {
   return (
     <div>
       <pre>{`<Link to="../Match" />

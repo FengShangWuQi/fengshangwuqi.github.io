@@ -8,12 +8,14 @@ export enum MenuMode {
   HORIZONTAL,
 }
 
-export interface IMenu {
+export interface IMenuContext {
   right?: boolean;
   mode?: MenuMode;
 }
 
-export interface IMenuContext extends IMenu {}
+export interface IMenu extends IMenuContext {
+  children: React.ReactNode;
+}
 
 export const MenuContext = createContext({} as IMenuContext);
 
@@ -25,7 +27,7 @@ export const Menu = ({
   mode = MenuMode.HORIZONTAL,
   right = false,
   children,
-}: IMenu & { children: React.ReactNode }) => (
+}: IMenu) => (
   <MenuProvider
     value={{
       mode,

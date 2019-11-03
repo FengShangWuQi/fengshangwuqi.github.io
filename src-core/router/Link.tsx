@@ -20,27 +20,25 @@ export interface ILinkProps {
   children: React.ReactNode;
 }
 
-export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
-  const { location, navigateTo } = useLocation();
-  const { uri = "/" } = useMatch();
+export const parsePath = (to: string | ToObj) => {
+  let pathname = "";
+  let search = "";
+  let hash = "";
 
-  const { pathname, search, hash } = parsePath(to);
+  if (isString(to)) {
+    const searchMatch = /\?(.+)#/.exec(to as string);
+    const hashMatch = /#(.+)/.exec(to as string);
 
-  const pathTo = resolvePath(pathname as string, uri);
+    if (searchMatch) search = searchMatch[1];
+    if (hashMatch) hash = hashMatch[1];
+    pathname = (to as string).split("?")[0];
+  } else {
+    pathname = (to as ToObj).pathname;
+    search = toSearchString((to as ToObj).search);
+    hash = (to as ToObj).hash || "";
+  }
 
-  const href = `${pathTo}${search}${hash}`;
-
-  const isCurrent = location.pathname === pathTo;
-
-  return (
-    <a
-      {...pickElmAttrs(otherProps)}
-      aria-current={isCurrent ? "page" : undefined}
-      href={href}
-      onClick={withoutBubble(() => navigateTo(href, { state }))}>
-      {children}
-    </a>
-  );
+  return { pathname, search, hash };
 };
 
 export const resolvePath = (to: string, uri: string) => {
@@ -67,23 +65,25 @@ export const resolvePath = (to: string, uri: string) => {
   return `/${segments.join("/")}`;
 };
 
-export const parsePath = (to: string | ToObj) => {
-  let pathname = "";
-  let search = "";
-  let hash = "";
+export const Link = ({ to, state, children, ...otherProps }: ILinkProps) => {
+  const { location, navigateTo } = useLocation();
+  const { uri = "/" } = useMatch();
 
-  if (isString(to)) {
-    const searchMatch = /\?(.+)\#/.exec(to as string);
-    const hashMatch = /\#(.+)/.exec(to as string);
+  const { pathname, search, hash } = parsePath(to);
 
-    if (searchMatch) search = searchMatch[1];
-    if (hashMatch) hash = hashMatch[1];
-    pathname = (to as string).split("?")[0];
-  } else {
-    pathname = (to as ToObj).pathname;
-    search = toSearchString((to as ToObj).search);
-    hash = (to as ToObj).hash || "";
-  }
+  const pathTo = resolvePath(pathname, uri);
 
-  return { pathname, search, hash };
+  const href = `${pathTo}${search}${hash}`;
+
+  const isCurrent = location.pathname === pathTo;
+
+  return (
+    <a
+      {...pickElmAttrs(otherProps)}
+      aria-current={isCurrent ? "page" : undefined}
+      href={href}
+      onClick={withoutBubble(() => navigateTo(href, { state }))}>
+      {children}
+    </a>
+  );
 };

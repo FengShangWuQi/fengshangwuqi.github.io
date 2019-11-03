@@ -2,7 +2,7 @@ import React from "react";
 
 import { position } from "src-core/style";
 
-export default () => {
+export const MixBlendModeDemo = () => {
   return (
     <div
       css={{

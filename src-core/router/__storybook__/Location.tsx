@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const LocationDemo = () => {
   return (
     <pre>{`const { location, navigateTo } = useLocation();
 const { pathname, search, hash } = location;

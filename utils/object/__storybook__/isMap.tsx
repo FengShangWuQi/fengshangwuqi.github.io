@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const IsMapDemo = () => {
   return (
     <pre>
       {`isMap(new Map())

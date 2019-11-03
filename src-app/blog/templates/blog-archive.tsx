@@ -49,7 +49,7 @@ export const archiveQuery = graphql`
   }
 `;
 
-export default ({
+const BlogArchive = ({
   data: {
     site: {
       siteMetadata: { title, description, siteUrl, author, social, contact },
@@ -89,3 +89,5 @@ export default ({
     </Footer>
   </Layout>
 );
+
+export default BlogArchive;

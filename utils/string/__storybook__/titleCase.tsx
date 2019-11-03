@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const TitleCaseDemo = () => {
   return (
     <pre>
       {`titleCase("top")

@@ -6,6 +6,8 @@ import { pickElmAttrs } from "src-core/react";
 import { useMenu } from "./Menu";
 import { MenuItem, menuItemStyle, menuItemModeStyle } from "./MenuItem";
 
+const baseMenuItemStyle: CSSObject = {};
+
 export const BaseMenuItem = ({
   children,
   ...otherProps
@@ -26,5 +28,3 @@ export const BaseMenuItem = ({
     </li>
   );
 };
-
-const baseMenuItemStyle: CSSObject = {};

@@ -5,6 +5,8 @@ import { padding, rhythm } from "src-core/style";
 
 import { MenuMode } from "./Menu";
 
+export const menuItemStyle: CSSObject = {};
+
 export const MenuItem = ({ children }: { children: React.ReactNode }) => {
   return <div css={[{ ...menuItemStyle }]}>{children}</div>;
 };
@@ -24,5 +26,3 @@ export const menuItemModeStyle = (
       };
   }
 };
-
-export const menuItemStyle: CSSObject = {};

@@ -6,17 +6,6 @@ import { Bootstrap, pickElmAttrs } from "src-core/react";
 import { useDesignSystem, defaultTheme, PrismTheme } from "src-core/ds";
 import { rhythm, margin, padding, border } from "src-core/style";
 
-export const Layout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <Bootstrap ds={storybookTheme}>
-      <StorybookGlobal />
-      <PrismTheme />
-
-      {children}
-    </Bootstrap>
-  );
-};
-
 export const storybookTheme = {
   ...defaultTheme,
   color: {
@@ -27,6 +16,17 @@ export const storybookTheme = {
 
     bg: "#fafafa",
   },
+};
+
+export const Layout = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <Bootstrap ds={storybookTheme}>
+      <StorybookGlobal />
+      <PrismTheme />
+
+      {children}
+    </Bootstrap>
+  );
 };
 
 const StorybookGlobal = () => {

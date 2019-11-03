@@ -4,9 +4,7 @@ import { Wrapper } from "../common/Wrapper";
 import { Title } from "../common/Title";
 import { LatestList, ILatestList } from "./LatestList";
 
-interface ILatest extends ILatestList {}
-
-export const Latest = ({ posts }: ILatest) => (
+export const Latest = ({ posts }: ILatestList) => (
   <Wrapper>
     <Title withBorder>最近的文章</Title>
 

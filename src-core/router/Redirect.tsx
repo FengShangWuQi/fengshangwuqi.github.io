@@ -24,7 +24,7 @@ export const Redirect = ({ from, to, state }: IRedirect) => {
     if (!from || (from && resolvePath(from, uri) === location.pathname)) {
       const { pathname, search, hash } = parsePath(to);
 
-      const pathTo = resolvePath(pathname as string, uri);
+      const pathTo = resolvePath(pathname, uri);
       const redirectTo = `${pathTo}${search}${hash}`;
 
       navigateTo(redirectTo, {
@@ -49,7 +49,7 @@ export const useRedirect = (
     if (!from || (from && resolvePath(from, uri) === location.pathname)) {
       const { pathname, search, hash } = parsePath(to);
 
-      const pathTo = resolvePath(pathname as string, uri);
+      const pathTo = resolvePath(pathname, uri);
       const redirectTo = `${pathTo}${search}${hash}`;
 
       navigateTo(redirectTo, {

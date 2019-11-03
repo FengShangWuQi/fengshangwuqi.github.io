@@ -19,10 +19,7 @@ export const message = {
 
 export const withWrap = () => console.log();
 
-export const isUndefined = (value: any) => {
-  const undefined = void 0;
-  return value === undefined;
-};
+export const isUndefined = (value: any) => value === void 0;
 
 export const formatDate = (date: Date) =>
   `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;

@@ -21,10 +21,6 @@ export const SwitchWithIcon = () => {
   const { toggleTheme } = useToglleTheme();
   const [on, toggle] = useToggle(false);
 
-  useEffect(() => {
-    toggleTheme(on ? otherTheme : originTheme);
-  }, [on]);
-
   const originTheme = {
     color: {
       ...storybookTheme.color,
@@ -39,6 +35,10 @@ export const SwitchWithIcon = () => {
       bg: "#181a1b",
     },
   };
+
+  useEffect(() => {
+    toggleTheme(on ? otherTheme : originTheme);
+  }, [on]);
 
   return (
     <Switch

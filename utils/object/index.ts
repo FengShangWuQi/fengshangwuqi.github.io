@@ -3,6 +3,8 @@ export * from "./get";
 export * from "./merge";
 
 export * from "./isEqual";
+export * from "./isObjEqual";
+export * from "./isArrEqual";
 export * from "./isEmpty";
 
 export * from "./isUndefined";

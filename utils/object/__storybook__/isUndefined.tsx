@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const IsUndefinedDemo = () => {
   return (
     <pre>
       {`isUndefined(void 0)

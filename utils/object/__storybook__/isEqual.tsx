@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const IsEqualDemo = () => {
   return (
     <pre>
       {`isEqual({ a: 1 }, { a: 1 })

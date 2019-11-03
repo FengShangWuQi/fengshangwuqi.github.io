@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const NormalizeDemo = () => {
   return (
     <pre>{`<Global styles={{ ...normalize() }} />`}</pre>
 

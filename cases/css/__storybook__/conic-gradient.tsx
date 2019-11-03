@@ -3,7 +3,7 @@ import React from "react";
 import { pickElmAttrs } from "src-core/react";
 import { flex } from "src-core/style";
 
-export default () => {
+export const ConicGradient = () => {
   return (
     <div
       css={{

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const GetDemo = () => {
   return (
     <pre>
       {`const obj = { a: [{ b: { c: 3 } }] };

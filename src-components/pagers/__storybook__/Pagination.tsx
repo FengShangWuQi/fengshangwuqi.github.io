@@ -2,7 +2,7 @@ import React from "react";
 
 import { Pagination } from "..";
 
-export default () => {
+export const PaginationDemo = () => {
   return (
     <Pagination total={100} size={10} offset={10} />
 

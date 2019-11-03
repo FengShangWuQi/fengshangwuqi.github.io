@@ -4,7 +4,7 @@ import { withoutBubble, useToggle } from "src-core/react";
 
 import { Redirect } from "..";
 
-export default () => {
+export const RedirectDemo = () => {
   const [on, toggle] = useToggle(false);
 
   return (

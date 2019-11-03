@@ -5,12 +5,12 @@ import { pickElmAttrs } from "src-core/react";
 
 import { Menu, IMenu, menuModeStyle } from "./Menu";
 
-export const BaseMenu = ({
-  children,
-  mode,
-  right,
-  ...otherProps
-}: IMenu & { children: React.ReactNode }) => (
+const baseMenuStyle: CSSObject = {
+  listStyle: "none",
+  overflow: "hidden",
+};
+
+export const BaseMenu = ({ children, mode, right, ...otherProps }: IMenu) => (
   <ul
     {...pickElmAttrs(otherProps)}
     css={[{ ...menuModeStyle(mode) }, { ...baseMenuStyle }]}>
@@ -19,8 +19,3 @@ export const BaseMenu = ({
     </Menu>
   </ul>
 );
-
-const baseMenuStyle: CSSObject = {
-  listStyle: "none",
-  overflow: "hidden",
-};

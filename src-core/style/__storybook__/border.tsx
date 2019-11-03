@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const BorderDemo = () => {
   return (
     <pre>{`{
   ...border("bottom", 1, "solid", "#eee")

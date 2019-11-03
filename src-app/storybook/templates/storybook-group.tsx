@@ -32,7 +32,7 @@ export const groupsQuery = graphql`
   }
 `;
 
-export default ({
+const StorybookGroup = ({
   data: { allMdx, site },
   pageContext: { group, groups, modules },
 }: any) => {
@@ -71,3 +71,5 @@ export default ({
     </Layout>
   );
 };
+
+export default StorybookGroup;

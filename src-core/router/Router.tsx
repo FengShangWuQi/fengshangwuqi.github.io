@@ -19,6 +19,39 @@ export interface IRouterCore {
   pathPrefix?: string;
 }
 
+const getFlatRoutes = ({
+  routes,
+  pathPrefix,
+}: IRouterCore): IDictionary<{
+  component: React.ComponentType;
+  [index: string]: any;
+}> =>
+  Object.keys(routes!).reduce((prev, path) => {
+    const elementPath =
+      pathPrefix === "/"
+        ? `/${stripSlashes(path)}`
+        : `/${stripSlashes(pathPrefix!)}/${stripSlashes(path)}`;
+
+    return {
+      ...prev,
+      ...(routes![path].component
+        ? {
+            [elementPath]: {
+              ...routes![path],
+            },
+          }
+        : {}),
+      ...(routes![path].routes
+        ? {
+            ...getFlatRoutes({
+              routes: routes![path].routes,
+              pathPrefix: elementPath,
+            }),
+          }
+        : {}),
+    };
+  }, {});
+
 export const useRouter = ({ routes = {}, pathPrefix = "/" }: IRouterCore) => {
   const flatRoutes = getFlatRoutes({ routes, pathPrefix });
 
@@ -82,36 +115,3 @@ export const Router = ({ children }: { children: React.ReactNode }) => {
     </>
   );
 };
-
-const getFlatRoutes = ({
-  routes,
-  pathPrefix,
-}: IRouterCore): IDictionary<{
-  component: React.ComponentType;
-  [index: string]: any;
-}> =>
-  Object.keys(routes!).reduce((prev, path) => {
-    const elementPath =
-      pathPrefix === "/"
-        ? `/${stripSlashes(path)}`
-        : `/${stripSlashes(pathPrefix!)}/${stripSlashes(path)}`;
-
-    return {
-      ...prev,
-      ...(routes![path].component
-        ? {
-            [elementPath]: {
-              ...routes![path],
-            },
-          }
-        : {}),
-      ...(routes![path].routes
-        ? {
-            ...getFlatRoutes({
-              routes: routes![path].routes,
-              pathPrefix: elementPath,
-            }),
-          }
-        : {}),
-    };
-  }, {});

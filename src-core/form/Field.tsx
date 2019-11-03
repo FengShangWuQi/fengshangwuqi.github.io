@@ -90,7 +90,7 @@ export const Field = ({
         name,
         value: values[name] || "",
         onChange: e => {
-          const nextValue = e!.target.value;
+          const nextValue = e.target.value;
           formUpdateField(nextValue);
           onValueChange && onValueChange(nextValue);
         },
@@ -163,7 +163,7 @@ export const useField = ({
     name,
     value: values[name] || "",
     onChange: e => {
-      const nextValue = e!.target.value;
+      const nextValue = e.target.value;
       formUpdateField(nextValue);
       onValueChange && onValueChange(nextValue);
     },

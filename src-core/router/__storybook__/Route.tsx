@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const RouteDemo = () => {
   return (
     <pre>{`<Route path={path}>
   <Component />

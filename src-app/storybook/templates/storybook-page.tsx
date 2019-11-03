@@ -29,7 +29,7 @@ export const storybookQuery = graphql`
   }
 `;
 
-export default ({
+const StorybookPage = ({
   data: { mdx, site },
   pageContext: { modules, groups },
 }: any) => {
@@ -66,3 +66,5 @@ export default ({
     </Layout>
   );
 };
+
+export default StorybookPage;

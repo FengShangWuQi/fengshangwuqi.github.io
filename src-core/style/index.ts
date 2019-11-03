@@ -12,9 +12,9 @@ export const directionalProperty = (
 
   const [
     firstValue,
-    secondValue = firstValue!,
-    thirdValue = firstValue!,
-    fourthValue = secondValue!,
+    secondValue = firstValue,
+    thirdValue = firstValue,
+    fourthValue = secondValue,
   ] = values;
   const defaultValue = [firstValue, secondValue, thirdValue, fourthValue];
   const directionalStyle: CSSObject = {};

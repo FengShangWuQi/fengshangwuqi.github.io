@@ -52,7 +52,7 @@ export const latestQuery = graphql`
   }
 `;
 
-export default ({
+const BlogLatest = ({
   data: {
     site: {
       siteMetadata: { title, description, siteUrl, author, social, contact },
@@ -77,3 +77,5 @@ export default ({
     <Latest posts={posts} />
   </Layout>
 );
+
+export default BlogLatest;

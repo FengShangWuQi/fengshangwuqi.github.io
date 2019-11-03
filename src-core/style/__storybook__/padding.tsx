@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const PaddingDemo = () => {
   return (
     <pre>{`{
    ...padding(rhythm(3 / 4), 0)

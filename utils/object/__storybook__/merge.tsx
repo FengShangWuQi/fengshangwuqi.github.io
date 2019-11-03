@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const MergeDemo = () => {
   return (
     <pre>
       {`const object = {

@@ -8,6 +8,19 @@ export type SearchQuery =
   | IDictionary<string | number | boolean | string[] | number[] | boolean[]>
   | undefined;
 
+export const parseSearchString = (search: string): SearchQuery => {
+  if (search.startsWith("?")) {
+    return parse(search.slice(1));
+  }
+
+  return parse(search);
+};
+
+export const toSearchString = (query: SearchQuery) => {
+  const str = stringify(query);
+  return str ? `?${str}` : "";
+};
+
 export const useSearch = () => {
   const { location, navigateTo } = useLocation();
 
@@ -21,17 +34,4 @@ export const useSearch = () => {
   };
 
   return { query, setQuery };
-};
-
-export const toSearchString = (query: SearchQuery) => {
-  const str = stringify(query);
-  return str ? `?${str}` : "";
-};
-
-export const parseSearchString = (search: string): SearchQuery => {
-  if (search[0] === "?") {
-    return parse(search.slice(1));
-  }
-
-  return parse(search);
 };

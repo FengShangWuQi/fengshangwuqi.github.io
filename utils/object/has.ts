@@ -1,8 +1,12 @@
 import { isArray } from "../array";
 
+export const hasWithKey = (obj: object, key: string): boolean => {
+  return obj != null && Object.prototype.hasOwnProperty.call(obj, key);
+};
+
 export const has = (obj: object, path: string | string[]): boolean => {
   if (!isArray(path)) {
-    return hasWithKey(obj, path);
+    return hasWithKey(obj, path as string);
   }
 
   const len = path.length;
@@ -17,8 +21,4 @@ export const has = (obj: object, path: string | string[]): boolean => {
   }
 
   return !!len;
-};
-
-export const hasWithKey = (obj: object, key: string): boolean => {
-  return obj != null && Object.prototype.hasOwnProperty.call(obj, key);
 };

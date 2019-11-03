@@ -13,6 +13,7 @@
   "scripts": {
     "clean": "gatsby clean",
     "test": "jest --coverage",
+    "lint": "eslint '**/*.{js,ts,tsx}'",
     "tsc": "tsc --noEmit",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "check": "npm-check -u -E",
@@ -32,13 +33,18 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test && npm run tsc && lint-staged",
-      "pre-push": "npm test && npm run tsc",
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run tsc && npm test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
-    "**/*.{js,ts,tsx,json,md}": [
+    "**/*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.{json,md}": [
       "prettier --write",
       "git add"
     ]
@@ -136,11 +142,16 @@
     "@types/react-dom": "16.9.3",
     "@types/react-helmet": "5.0.14",
     "@types/typography": "0.16.3",
+    "@typescript-eslint/eslint-plugin": "2.6.0",
+    "@typescript-eslint/parser": "2.6.0",
     "babel-jest": "24.9.0",
     "babel-preset-gatsby": "0.2.20",
     "chalk": "2.4.2",
     "cross-spawn": "7.0.1",
     "dotenv": "8.2.0",
+    "eslint": "6.6.0",
+    "eslint-plugin-react": "7.16.0",
+    "eslint-plugin-react-hooks": "2.2.0",
     "fs-extra": "8.1.0",
     "gh-pages": "2.1.1",
     "globby": "10.0.1",

@@ -2,7 +2,7 @@ import React from "react";
 
 import { useSearch } from "..";
 
-export default () => {
+export const SearchDemo = () => {
   const { query, setQuery } = useSearch();
 
   return (

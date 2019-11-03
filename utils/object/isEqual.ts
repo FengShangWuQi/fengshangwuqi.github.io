@@ -1,12 +1,4 @@
-import { has, toString } from ".";
-
-export const isEqual = (a: any, b: any): boolean => {
-  if (a === b) {
-    return true;
-  }
-
-  return isDeepEqual(a, b);
-};
+import { isArrEqual, isObjEqual, toString } from ".";
 
 export const isDeepEqual = (a: any, b: any): boolean => {
   if (toString(a) !== toString(b)) {
@@ -27,41 +19,10 @@ export const isDeepEqual = (a: any, b: any): boolean => {
   return false;
 };
 
-const isArrEqual = (a: [], b: []): boolean => {
-  let len = a.length;
-
-  if (len !== b.length) {
-    return false;
+export const isEqual = (a: any, b: any): boolean => {
+  if (a === b) {
+    return true;
   }
 
-  while (len--) {
-    if (!isEqual(a[len], b[len])) {
-      return false;
-    }
-  }
-
-  return true;
-};
-
-const isObjEqual = (a: Object, b: Object): boolean => {
-  const keys = Object.keys(a);
-  let len = keys.length;
-
-  if (len !== Object.keys(b).length) {
-    return false;
-  }
-
-  if (JSON.stringify(a) !== JSON.stringify(b)) {
-    return false;
-  }
-
-  while (len--) {
-    const key = keys[len] as keyof typeof a;
-
-    if (!(has(b, key) && isEqual(a[key], b[key]))) {
-      return false;
-    }
-  }
-
-  return true;
+  return isDeepEqual(a, b);
 };

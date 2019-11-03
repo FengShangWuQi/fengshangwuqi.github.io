@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { useRect } from "src-core/react";
 import { position } from "src-core/style";
 
-export default () => {
+export const AttrDemo = () => {
   const ref = useRef(null);
   const { height, top, left } = useRect(ref);
 

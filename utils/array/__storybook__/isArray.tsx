@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const isArrayDemo = () => {
   return (
     <pre>
       {`isArray([1, 2, 3]);

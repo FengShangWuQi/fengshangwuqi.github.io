@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const PositionDemo = () => {
   return (
     <pre>{`{
    ...position("absolute", 0, 0, 0, 0)

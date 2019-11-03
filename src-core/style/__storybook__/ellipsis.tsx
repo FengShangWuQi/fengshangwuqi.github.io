@@ -2,7 +2,7 @@ import React from "react";
 
 import { ellipsis } from "..";
 
-export default () => {
+export const EllipsisDemo = () => {
   return (
     <div>
       <pre>{`{

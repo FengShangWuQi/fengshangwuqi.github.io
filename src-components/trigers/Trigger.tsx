@@ -120,8 +120,8 @@ const PopupContainer = ({
   const targetRect = useRect(targetRef);
   const popupRect = useRect(popupRef);
 
-  let top: number = 0;
-  let left: number = 0;
+  let top = 0;
+  let left = 0;
 
   switch (placement) {
     case popupPlacement.top: {

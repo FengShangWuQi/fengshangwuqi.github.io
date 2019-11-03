@@ -1,6 +1,6 @@
 import React from "react";
 
-export default () => {
+export const MarginDemo = () => {
   return (
     <pre>{`{
    ...margin(0, "auto")

@@ -4,7 +4,7 @@ import { rgba } from "polished";
 import { pickElmAttrs } from "src-core/react";
 import { flex, position, size } from "src-core/style";
 
-export default () => {
+export const BackFaceVisibilityDemo = () => {
   return (
     <div
       css={{
