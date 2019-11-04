@@ -1,6 +1,6 @@
 import React from "react";
 
-import { render, cleanup, fireEvent } from "src-core/test";
+import { render, cleanup, fireEvent } from "src-core/test/react";
 
 import { Switch } from "../Switch";
 
