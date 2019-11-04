@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import { useDesignSystem } from "src-core/ds";
 import { border } from "src-core/style";
 
-import { BaseMenu, BaseMenuItem, MenuMode } from "src-components/menus";
+import { Menu, MenuItem, MenuMode } from "src-components/navigation/menus";
 
 import { IDictionary } from "utils/object";
 
@@ -36,7 +36,7 @@ export const SideBar = ({
             }}>
             {module}
           </div>
-          <BaseMenu mode={MenuMode.VERTICAL}>
+          <Menu mode={MenuMode.VERTICAL}>
             {modules[module].map(title => (
               <Link
                 css={{
@@ -44,10 +44,10 @@ export const SideBar = ({
                 }}
                 key={title}
                 to={`/${group}/${module}/${title}`}>
-                <BaseMenuItem>{title}</BaseMenuItem>
+                <MenuItem>{title}</MenuItem>
               </Link>
             ))}
-          </BaseMenu>
+          </Menu>
         </div>
       ))}
     </Container>

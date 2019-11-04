@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { BaseMenu, BaseMenuItem } from "src-components/menus";
+import { Menu, MenuItem } from "src-components/navigation/menus";
 
 export const Nav = () => (
-  <BaseMenu right>
+  <Menu right>
     {[
       { value: "rss.xml", label: "rss" },
       { value: "", label: "最新" },
       { value: "archive", label: "归档" },
     ].map(item => (
-      <BaseMenuItem key={item.value}>
+      <MenuItem key={item.value}>
         {item.label === "rss" ? (
           <a href={`/${item.value}`} target="_blank" rel="noopener noreferrer">
             {item.label.toUpperCase()}
@@ -18,7 +18,7 @@ export const Nav = () => (
         ) : (
           <Link to={item.value}>{item.label.toUpperCase()}</Link>
         )}
-      </BaseMenuItem>
+      </MenuItem>
     ))}
-  </BaseMenu>
+  </Menu>
 );

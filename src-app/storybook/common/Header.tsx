@@ -5,7 +5,7 @@ import { useDesignSystem } from "src-core/ds";
 
 import { flex, margin, padding } from "src-core/style";
 
-import { BaseMenu, BaseMenuItem } from "src-components/menus";
+import { Menu, MenuItem } from "src-components/navigation/menus";
 
 export const Header = ({ groups }: { groups: string[] }) => {
   const ds = useDesignSystem();
@@ -41,17 +41,17 @@ export const Header = ({ groups }: { groups: string[] }) => {
             to="/">
             枫上雾棋的 storybook
           </Link>
-          <BaseMenu
+          <Menu
             css={{
               height: 50,
               lineHeight: "50px",
             }}>
             {groups.map(group => (
-              <BaseMenuItem key={group}>
+              <MenuItem key={group}>
                 <Link to={group}>{group.toUpperCase()}</Link>
-              </BaseMenuItem>
+              </MenuItem>
             ))}
-          </BaseMenu>
+          </Menu>
         </div>
       </div>
     </div>
