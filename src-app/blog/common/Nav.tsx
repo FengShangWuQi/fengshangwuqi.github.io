@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import { Menu, MenuItem } from "src-components/navigation/menus";
+import { Menu, MenuItem } from "src-components/navigation/Menu";
 
 export const Nav = () => (
   <Menu right>

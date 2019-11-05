@@ -6,7 +6,7 @@ import { padding, rhythm } from "src-core/style";
 
 import { MenuMode, useMenu } from "./Menu";
 
-export const menuItemStyle: CSSObject = {};
+const menuItemStyle: CSSObject = {};
 
 const menuItemModeStyle = (mode: MenuMode, right: boolean): CSSObject => {
   switch (mode) {

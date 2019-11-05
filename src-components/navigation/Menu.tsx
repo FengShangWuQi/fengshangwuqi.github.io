@@ -63,3 +63,5 @@ export const Menu = ({
     </MenuProvider>
   </ul>
 );
+
+export * from "./MenuItem";

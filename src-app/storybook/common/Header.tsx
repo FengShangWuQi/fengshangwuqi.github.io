@@ -5,7 +5,7 @@ import { useDesignSystem } from "src-core/ds";
 
 import { flex, margin, padding } from "src-core/style";
 
-import { Menu, MenuItem } from "src-components/navigation/menus";
+import { Menu, MenuItem } from "src-components/navigation/Menu";
 
 export const Header = ({ groups }: { groups: string[] }) => {
   const ds = useDesignSystem();

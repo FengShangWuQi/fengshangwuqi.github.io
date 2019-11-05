@@ -3,7 +3,7 @@ import React from "react";
 import { withoutBubble } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 
-import { Menu, MenuItem, MenuMode } from "../menus";
+import { Menu, MenuItem, MenuMode } from "../Menu";
 
 const MenuItems = () => {
   const ds = useDesignSystem();

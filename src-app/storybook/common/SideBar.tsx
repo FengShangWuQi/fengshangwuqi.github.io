@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import { useDesignSystem } from "src-core/ds";
 import { border } from "src-core/style";
 
-import { Menu, MenuItem, MenuMode } from "src-components/navigation/menus";
+import { Menu, MenuItem, MenuMode } from "src-components/navigation/Menu";
 
 import { IDictionary } from "utils/object";
 
