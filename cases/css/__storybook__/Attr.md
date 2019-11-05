@@ -6,7 +6,7 @@ title: Attr
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { AttrDemo } from "./Attr";
+import { AttrDemo } from "../Attr";
 
 <AttrDemo />
 
