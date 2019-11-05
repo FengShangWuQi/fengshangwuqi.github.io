@@ -29,4 +29,4 @@ import { AttrDemo } from "../Attr";
 </div>
 ```
 
-<Source path="src-components/css/Attr.tsx" />
+<Source path="cases/css/Attr.tsx" />

@@ -4,23 +4,19 @@ import { rgba } from "polished";
 import { pickElmAttrs } from "src-core/react";
 import { flex, position, size } from "src-core/style";
 
-export const BackFaceVisibilityDemo = () => {
-  return (
-    <div
+export const BackFaceVisibilityDemo = () => (
+  <div
+    css={{
+      ...flex({}),
+    }}>
+    <BackFaceVisibility
       css={{
-        ...flex({}),
-      }}>
-      <BackFaceVisibility
-        css={{
-          marginRight: 24,
-        }}
-      />
-      <BackFaceVisibility hidden />
-    </div>
-
-    // <EditLink path="cases/css/__storybook__/backface-visibility.tsx" />
-  );
-};
+        marginRight: 24,
+      }}
+    />
+    <BackFaceVisibility hidden />
+  </div>
+);
 
 const BackFaceVisibility = ({
   hidden,
