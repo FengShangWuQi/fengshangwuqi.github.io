@@ -1,37 +1,101 @@
-import React, { useRef } from "react";
+import React from "react";
 
-import { useRect } from "src-core/react";
-import { position } from "src-core/style";
+import { pickElmAttrs } from "src-core/react";
+import { useDesignSystem } from "src-core/ds";
+import { flex } from "src-core/style";
 
 export const AttrDemo = () => {
-  const ref = useRef(null);
-  const { height, top, left } = useRect(ref);
+  const ds = useDesignSystem();
 
   return (
     <div
-      ref={ref}
       css={{
-        display: "inline-block",
+        marginLeft: ds.padding.s,
       }}>
-      <span
+      <div
         css={{
-          cursor: "pointer",
-          "&::before": {
-            ...position("absolute"),
-            left: left + 16,
-            top: top - height,
-            content: "attr(data-tip)",
-            opacity: 0,
-          },
-          "&:hover::before": {
-            opacity: 1,
-          },
-        }}
-        data-tip="hello">
-        Hover me!
-      </span>
-    </div>
+          marginBottom: ds.padding.m,
+        }}>
+        100、答题挺辛苦，这道题就送给你了
+      </div>
 
-    // <EditLink path="cases/css/__storybook__/attr.tsx" />
+      <Row
+        css={{
+          marginBottom: ds.padding.s,
+        }}>
+        <Radio name="100" id="100-A"></Radio>
+        <Label
+          css={{
+            "&::after": {
+              color: ds.color.success,
+            },
+          }}
+          htmlFor="100-A"
+          data-tip="✔︎ Perfect">
+          正确答案，请选我
+        </Label>
+      </Row>
+      <Row>
+        <Radio name="100" id="100-B"></Radio>
+        <Label
+          css={{
+            "&::after": {
+              color: ds.color.error,
+            },
+          }}
+          htmlFor="100-B"
+          data-tip="✘ Sad">
+          错误答案
+        </Label>
+      </Row>
+    </div>
   );
 };
+
+const Row = ({ children, ...otherProps }: { children: React.ReactNode }) => (
+  <div
+    {...pickElmAttrs(otherProps)}
+    css={{
+      ...flex({
+        alignItems: "center",
+      }),
+    }}>
+    {children}
+  </div>
+);
+
+const Radio = ({ ...otherProps }) => {
+  const ds = useDesignSystem();
+
+  return (
+    <input
+      {...pickElmAttrs(otherProps)}
+      type="radio"
+      css={{
+        marginTop: -3,
+        marginRight: ds.padding.s,
+        cursor: "pointer",
+        "&+label::after": {
+          content: "attr(data-tip)",
+          marginLeft: ds.padding.s,
+          display: "none",
+        },
+        "&:checked+label::after": {
+          display: "inline",
+        },
+      }}></input>
+  );
+};
+
+const Label = ({
+  children,
+  ...otherProps
+}: { children: React.ReactNode } & React.HTMLProps<HTMLElement>) => (
+  <label
+    {...pickElmAttrs(otherProps)}
+    css={{
+      cursor: "pointer",
+    }}>
+    {children}
+  </label>
+);
