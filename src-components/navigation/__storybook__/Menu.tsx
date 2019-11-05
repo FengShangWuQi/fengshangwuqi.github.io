@@ -1,4 +1,5 @@
 import React from "react";
+import { lighten } from "polished";
 
 import { withoutBubble } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
@@ -16,7 +17,7 @@ const MenuItems = () => {
             href="#"
             onClick={withoutBubble(() => {})}
             css={{
-              color: ds.color.text,
+              color: lighten(0.15, ds.colorPalette.gray),
             }}>
             {item.toUpperCase()}
           </a>
