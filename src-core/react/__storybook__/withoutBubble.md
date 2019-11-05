@@ -10,7 +10,7 @@ import { WithoutBubbleDemo } from "./withoutBubble";
 
 <WithoutBubbleDemo />
 
-```jsx
+```jsx {1}
 <a href="#!" onClick={withoutBubble(() => {})}>
   Link
 </a>

@@ -10,7 +10,7 @@ import { UseWhyDidYouUpdateDemo } from "./useWhyDidYouUpdate";
 
 <UseWhyDidYouUpdateDemo />
 
-```jsx
+```jsx {4}
 const ref = useRef(null);
 const rect = useRect(ref);
 

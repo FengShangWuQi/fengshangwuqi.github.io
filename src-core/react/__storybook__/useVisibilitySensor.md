@@ -10,7 +10,7 @@ import { UseVisibilitySensorDemo } from "./useVisibilitySensor";
 
 <UseVisibilitySensorDemo />
 
-```jsx
+```jsx {4}
 const rootRef = useRef(null);
 const footerRef = useRef(null);
 

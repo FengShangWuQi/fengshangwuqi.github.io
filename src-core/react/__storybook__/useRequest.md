@@ -10,7 +10,7 @@ import { UseRequestDemo } from "./useRequest";
 
 <UseRequestDemo />
 
-```jsx
+```jsx {1}
 const [request, requesting] = useRequest(
   {
     url,

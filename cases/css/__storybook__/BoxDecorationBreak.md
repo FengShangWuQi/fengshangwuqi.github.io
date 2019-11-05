@@ -10,7 +10,7 @@ import { BoxDecorationBreakDemo } from "../BoxDecorationBreak"
 
 <BoxDecorationBreakDemo />
 
-```jsx
+```jsx {8}
 <span
   css={{
     backgroundImage:

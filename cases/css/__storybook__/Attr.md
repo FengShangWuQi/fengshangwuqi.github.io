@@ -10,7 +10,7 @@ import { AttrDemo } from "../Attr";
 
 <AttrDemo />
 
-```jsx
+```jsx {7}
 <Row>
   <Radio
     name="answer"
