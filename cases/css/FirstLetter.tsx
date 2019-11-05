@@ -1,19 +1,23 @@
 import React from "react";
 
+import { useDesignSystem } from "src-core/ds";
+
 export const FirstLetterDemo = () => {
+  const ds = useDesignSystem();
+
   return (
     <div
       css={{
         "& p": {
           marginTop: 24,
-          fontSize: 16,
+          fontSize: ds.size.base,
           lineHeight: 1.625,
 
           "&:first-of-type::first-letter": {
             float: "left",
             paddingRight: 10,
             lineHeight: 1.1,
-            fontSize: 48,
+            fontSize: ds.size.xxl,
             color: "#cd5c5c",
           },
         },
@@ -32,8 +36,6 @@ export const FirstLetterDemo = () => {
         of the first line of a block-level element, but only when not preceded
         by other content (such as images or inline tables).
       </p>
-
-      {/* <EditLink path="cases/css/__storybook__/first-letter.tsx" /> */}
     </div>
   );
 };

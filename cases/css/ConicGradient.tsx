@@ -15,9 +15,9 @@ const Block = ({ ...otherProps }) => (
 export const PieChart = () => (
   <Block
     css={{
-      borderRadius: "50%",
       background:
         "conic-gradient(from -40deg, #0088FE 0% 40%, #00C49F 40% 50%, #FFBB28 50% 70%, #FF8042 70% 100%)",
+      borderRadius: "50%",
     }}
   />
 );
