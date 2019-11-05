@@ -40,7 +40,5 @@ export const MixBlendModeDemo = () => {
         mixblendmode
       </h1>
     </div>
-
-    // <EditLink path="cases/css/__storybook__/mix-blend-mode.tsx" />
   );
 };
