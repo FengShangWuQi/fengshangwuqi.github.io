@@ -1,8 +1,9 @@
 import React from "react";
 import { graphql, navigate } from "gatsby";
 
+import { SEO } from "src-core/seo";
+
 import { Pagination } from "src-components/navigation/Pagination";
-import { SEO } from "src-components/seo";
 
 import { Layout } from "../common/Layout";
 import { Header } from "../common/Header";

@@ -6,8 +6,7 @@ import { CSSObject } from "@emotion/core";
 
 import { useDesignSystem, PrismTheme } from "src-core/ds";
 import { rhythm, margin, padding, ellipsis } from "src-core/style";
-
-import { SEO } from "src-components/seo";
+import { SEO } from "src-core/seo";
 
 import { Layout } from "../common/Layout";
 import { Wrapper } from "../common/Wrapper";
