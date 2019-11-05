@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Form, useForm, Field, useField, BaseInput } from "..";
+import { Form, useForm, Field, useField, BaseInput } from "../form";
 
 export const FormDemo = () => {
   return (
