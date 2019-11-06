@@ -87,7 +87,7 @@ export const createPost = ({ title }: { title: string }) => {
   const meta = {
     title,
     original: true,
-    tags: ["JavaScript"],
+    tags: ["Front-End"],
     date,
     cover: "header.png",
   };
