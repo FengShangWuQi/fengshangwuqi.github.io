@@ -1,8 +1,8 @@
 import React from "react";
-import { rgba, border } from "polished";
+import { rgba, border, margin } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { rhythm, flex, margin, padding } from "src-core/style";
+import { rhythm, flex, padding } from "src-core/style";
 
 export const PostContainer = ({ children }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();

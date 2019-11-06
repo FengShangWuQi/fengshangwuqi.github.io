@@ -33,7 +33,6 @@ export * from "./flex";
 export * from "./grid";
 export * from "./size";
 export * from "./position";
-export * from "./margin";
 export * from "./padding";
 export * from "./normalize";
 export * from "./typography";

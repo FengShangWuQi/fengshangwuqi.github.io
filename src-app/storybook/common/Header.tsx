@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
+import { margin } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { flex, margin, padding } from "src-core/style";
+import { flex, padding } from "src-core/style";
 
 import { Menu, MenuItem } from "src-components/navigation/Menu";
 

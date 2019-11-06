@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 import Img, { GatsbyImageProps, FluidObject } from "gatsby-image";
-import { ellipsis } from "polished";
+import { ellipsis, margin } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { margin } from "src-core/style";
 
 import { PostDate, PostTags } from "../templates/blog-post";
 
