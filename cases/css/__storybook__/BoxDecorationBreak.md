@@ -10,11 +10,10 @@ import { BoxDecorationBreakDemo } from "../BoxDecorationBreak"
 
 <BoxDecorationBreakDemo />
 
-```jsx {6}
+```jsx {5}
 const BoxDecorationBreak = styled.div({
   backgroundImage: "linear-gradient(135deg, deeppink, dodgerblue, yellowgreen)",
   backgroundClip: "text",
-  WebkitBackgroundClip: "text",
   color: "transparent",
   boxDecorationBreak: "clone",
 });

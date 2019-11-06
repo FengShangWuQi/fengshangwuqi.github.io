@@ -20,18 +20,7 @@ import { BackFaceVisibilityDemo } from "../BackFaceVisibility";
       backfaceVisibility: hidden ? "hidden" : "visible",
     },
   }}>
-  <div
-    css={{
-      transform: "rotateY(0deg) translateZ(25px)",
-    }}>
-    {hidden ? "hidden" : "visible"}
-  </div>
-  <div
-    css={{
-      transform: "rotateY(-180deg) translateZ(25px)",
-    }}>
-    backface
-  </div>
+  ...
 </div>
 ```
 

@@ -14,8 +14,6 @@ import { FirstLetterDemo } from "../FirstLetter";
 const FirstLetter = styled.div({
   "&::first-letter": {
     float: "left",
-    paddingRight: 10,
-    lineHeight: 1.1,
     fontSize: ds.size.xxl,
     color: "#cd5c5c",
   },

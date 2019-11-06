@@ -17,22 +17,4 @@ import { HorizontalMenu, RightMenu, VerticalMenu } from "./Menu";
 </Menu>
 ```
 
-<RightMenu />
-
-```jsx
-// right menu
-<Menu right>
-  <MenuItems />
-</Menu>
-```
-
-<VerticalMenu />
-
-```jsx
-// menu with vertical mode
-<Menu mode={MenuMode.VERTICAL}>
-  <MenuItems />
-</Menu>
-```
-
 <Source path="src-components/navigation/menus/Menu.tsx" />
