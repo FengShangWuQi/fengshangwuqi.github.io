@@ -1,7 +1,8 @@
 import React from "react";
+import { border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { rhythm, margin, border } from "src-core/style";
+import { rhythm, margin } from "src-core/style";
 
 export const Title = ({
   children,

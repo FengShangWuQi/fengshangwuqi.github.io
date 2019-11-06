@@ -32,7 +32,6 @@ export const directionalProperty = (
 export * from "./flex";
 export * from "./grid";
 export * from "./size";
-export * from "./border";
 export * from "./position";
 export * from "./margin";
 export * from "./padding";

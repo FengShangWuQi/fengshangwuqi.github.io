@@ -1,9 +1,9 @@
 import React from "react";
-import { lighten, darken, rgba } from "polished";
+import { lighten, darken, rgba, border } from "polished";
 
 import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
-import { flex, border } from "src-core/style";
+import { flex } from "src-core/style";
 
 import { randomNum } from "utils";
 

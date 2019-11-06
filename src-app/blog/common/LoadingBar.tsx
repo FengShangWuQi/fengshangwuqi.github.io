@@ -1,6 +1,5 @@
 import React from "react";
-
-import { border } from "src-core/style";
+import { border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 

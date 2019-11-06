@@ -1,7 +1,7 @@
 import React from "react";
+import { border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { border } from "src-core/style";
 
 import { useHover } from "..";
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
+import { border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { border } from "src-core/style";
 
 import { Menu, MenuItem, MenuMode } from "src-components/navigation/Menu";
 
