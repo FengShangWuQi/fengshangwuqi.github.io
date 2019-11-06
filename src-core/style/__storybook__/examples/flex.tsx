@@ -1,6 +1,6 @@
 import React from "react";
 
-import { flex } from "../flex";
+import { flex } from "../../flex";
 
 export const FlexDemo = () => (
   <div

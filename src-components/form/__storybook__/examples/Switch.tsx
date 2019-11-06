@@ -7,7 +7,9 @@ import { flex } from "src-core/style";
 
 import { storybookTheme } from "src-app/storybook/common/Layout";
 
-import { Switch } from "../Switch";
+import { Switch } from "../../Switch";
+import moonSrc from "../../images/moon.png";
+import sunSrc from "../../images/sun.png";
 
 export const BaseSwitch = () => (
   <Switch
@@ -48,12 +50,8 @@ export const SwitchWithIcon = () => {
       }}
       defaultChecked={on}
       icons={{
-        checked: (
-          <img src={require("../images/moon.png")} width="16" height="16" />
-        ),
-        unchecked: (
-          <img src={require("../images/sun.png")} width="16" height="16" />
-        ),
+        checked: <img src={moonSrc} width="16" height="16" />,
+        unchecked: <img src={sunSrc} width="16" height="16" />,
       }}
       onValueChange={toggle}
     />

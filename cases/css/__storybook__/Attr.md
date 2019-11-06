@@ -1,12 +1,12 @@
 ---
 group: cases
 module: css
-title: Attr
+title: attr
 ---
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { AttrDemo } from "../Attr";
+import { AttrDemo } from "./examples/attr";
 
 <AttrDemo />
 
@@ -30,4 +30,4 @@ import { AttrDemo } from "../Attr";
 </Row>
 ```
 
-<Source path="cases/css/Attr.tsx" />
+<Source path="cases/css/__storybook__/examples/attr.tsx" />

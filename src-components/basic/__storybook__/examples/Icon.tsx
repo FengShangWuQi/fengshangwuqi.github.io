@@ -3,7 +3,7 @@ import React from "react";
 import { useDesignSystem } from "src-core/ds";
 import { grid } from "src-core/style";
 
-import { IconGithubFill } from "../Icon";
+import { IconGithubFill } from "../../Icon";
 
 export const IconDemo = () => {
   const ds = useDesignSystem();

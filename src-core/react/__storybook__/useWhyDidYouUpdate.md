@@ -6,7 +6,7 @@ title: useWhyDidYouUpdate
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseWhyDidYouUpdateDemo } from "./useWhyDidYouUpdate";
+import { UseWhyDidYouUpdateDemo } from "./examples/useWhyDidYouUpdate";
 
 <UseWhyDidYouUpdateDemo />
 

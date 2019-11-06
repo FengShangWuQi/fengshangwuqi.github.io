@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { useVisibilitySensor } from "../";
+import { useVisibilitySensor } from "../../useVisibilitySensor";
 
 export const UseVisibilitySensorDemo = () => {
   const ds = useDesignSystem();

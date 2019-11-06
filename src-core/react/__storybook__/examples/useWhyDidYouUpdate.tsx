@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { useRect } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 
-import { useWhyDidYouUpdate } from "..";
+import { useWhyDidYouUpdate } from "../../useWhyDidYouUpdate";
 
 export const UseWhyDidYouUpdateDemo = () => {
   const ds = useDesignSystem();

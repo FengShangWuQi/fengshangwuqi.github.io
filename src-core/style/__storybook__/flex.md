@@ -6,7 +6,7 @@ title: flex
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { FlexDemo } from "./Flex";
+import { FlexDemo } from "./examples/flex";
 
 <FlexDemo />
 

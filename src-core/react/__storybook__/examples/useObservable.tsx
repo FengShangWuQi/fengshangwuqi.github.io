@@ -2,7 +2,7 @@ import React from "react";
 import { interval } from "rxjs";
 import { take } from "rxjs/operators";
 
-import { useObservable } from "..";
+import { useObservable } from "../../useObservable";
 
 const number$ = interval(200).pipe(take(100));
 

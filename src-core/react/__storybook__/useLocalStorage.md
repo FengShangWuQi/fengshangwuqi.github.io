@@ -6,7 +6,7 @@ title: useLocalStorage
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseLocalStorageDemo } from "./useLocalStorage";
+import { UseLocalStorageDemo } from "./examples/useLocalStorage";
 
 <UseLocalStorageDemo />
 

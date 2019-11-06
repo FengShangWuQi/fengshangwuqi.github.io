@@ -6,7 +6,7 @@ title: useVisibilitySensor
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseVisibilitySensorDemo } from "./useVisibilitySensor";
+import { UseVisibilitySensorDemo } from "./examples/useVisibilitySensor";
 
 <UseVisibilitySensorDemo />
 

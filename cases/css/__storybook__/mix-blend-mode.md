@@ -1,12 +1,12 @@
 ---
 group: cases
 module: css
-title: MixBlendMode
+title: mix-blend-mode
 ---
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { MixBlendModeDemo } from "../MixBlendMode";
+import { MixBlendModeDemo } from "./examples/mix-blend-mode";
 
 <MixBlendModeDemo />
 
@@ -16,4 +16,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/MixBlendMode.tsx" />
+<Source path="cases/css/__storybook__/examples/mix-blend-mode.tsx" />

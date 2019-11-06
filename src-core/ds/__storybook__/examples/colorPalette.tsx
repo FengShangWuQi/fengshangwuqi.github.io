@@ -7,7 +7,7 @@ import { flex } from "src-core/style";
 
 import { randomNum } from "utils";
 
-import { colorPalette } from "../colorPalette";
+import { colorPalette } from "../../colorPalette";
 
 export const ColorPaletteDemo = () => {
   const ds = useDesignSystem();

@@ -6,7 +6,7 @@ title: Switch
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { BaseSwitch, SwitchWithLabel, SwitchWithIcon, DisabledSwitch } from "./Switch";
+import { BaseSwitch, SwitchWithLabel, SwitchWithIcon, DisabledSwitch } from "./examples/Switch";
 
 <BaseSwitch />
 

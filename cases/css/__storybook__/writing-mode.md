@@ -1,12 +1,12 @@
 ---
 group: cases
 module: css
-title: WritingMode
+title: writing-mode
 ---
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { VerticalRl } from "../WritingMode"
+import { VerticalRl } from "./examples/writing-mode"
 
 <VerticalRl />
 
@@ -16,4 +16,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/WritingMode.tsx" />
+<Source path="cases/css/__storybook__/examples/writing-mode.tsx" />

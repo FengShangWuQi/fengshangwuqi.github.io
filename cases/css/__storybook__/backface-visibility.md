@@ -1,12 +1,12 @@
 ---
 group: cases
 module: css
-title: BackFaceVisibility
+title: backface-visibility
 ---
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { BackFaceVisibilityDemo } from "../BackFaceVisibility";
+import { BackFaceVisibilityDemo } from "./examples/backface-visibility";
 
 <BackFaceVisibilityDemo />
 
@@ -24,4 +24,4 @@ import { BackFaceVisibilityDemo } from "../BackFaceVisibility";
 </div>
 ```
 
-<Source path="cases/css/BackFaceVisibility.tsx" />
+<Source path="cases/css/__storybook__/examples/backface-visibility.tsx" />

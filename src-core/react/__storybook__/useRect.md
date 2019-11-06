@@ -6,7 +6,7 @@ title: useRect
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseRectDemo } from "./useRect";
+import { UseRectDemo } from "./examples/useRect";
 
 <UseRectDemo />
 

@@ -6,7 +6,7 @@ title: colorPalette
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { ColorPaletteDemo } from "./colorPalette";
+import { ColorPaletteDemo } from "./examples/colorPalette";
 
 <ColorPaletteDemo />
 

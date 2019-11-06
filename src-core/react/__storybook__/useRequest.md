@@ -6,7 +6,7 @@ title: useRequest
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseRequestDemo } from "./useRequest";
+import { UseRequestDemo } from "./examples/useRequest";
 
 <UseRequestDemo />
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { useRequest } from "../";
+import { useRequest } from "../../useRequest";
 
 export const UseRequestDemo = () => {
   const ds = useDesignSystem();

@@ -6,7 +6,7 @@ title: Menu
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { HorizontalMenu, RightMenu, VerticalMenu } from "./Menu";
+import { HorizontalMenu, RightMenu, VerticalMenu } from "./examples/Menu";
 
 <HorizontalMenu />
 

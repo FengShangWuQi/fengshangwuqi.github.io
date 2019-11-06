@@ -6,7 +6,7 @@ title: withoutBubble
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { WithoutBubbleDemo } from "./withoutBubble";
+import { WithoutBubbleDemo } from "./examples/withoutBubble";
 
 <WithoutBubbleDemo />
 

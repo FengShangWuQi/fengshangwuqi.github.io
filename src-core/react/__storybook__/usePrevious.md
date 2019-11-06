@@ -6,7 +6,7 @@ title: usePrevious
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UsePreviousDemo } from "./usePrevious";
+import { UsePreviousDemo } from "./examples/usePrevious";
 
 <UsePreviousDemo />
 

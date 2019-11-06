@@ -1,6 +1,6 @@
 import React from "react";
 
-import { grid } from "../grid";
+import { grid } from "../../grid";
 
 export const GridDemo = () => (
   <div

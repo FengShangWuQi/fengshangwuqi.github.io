@@ -6,7 +6,7 @@ title: useDebounce
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseDebounceDemo } from "./useDebounce";
+import { UseDebounceDemo } from "./examples/useDebounce";
 
 <UseDebounceDemo />
 

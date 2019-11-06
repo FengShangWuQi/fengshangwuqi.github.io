@@ -4,7 +4,7 @@ import { lighten } from "polished";
 import { withoutBubble } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 
-import { Menu, MenuItem, MenuMode } from "../Menu";
+import { Menu, MenuItem, MenuMode } from "../../Menu";
 
 const MenuItems = () => {
   const ds = useDesignSystem();

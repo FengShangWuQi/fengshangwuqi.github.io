@@ -6,7 +6,7 @@ title: Icon
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { IconDemo } from "./Icon";
+import { IconDemo } from "./examples/Icon";
 
 <IconDemo />
 

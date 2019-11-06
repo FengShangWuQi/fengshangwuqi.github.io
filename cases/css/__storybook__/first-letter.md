@@ -1,12 +1,12 @@
 ---
 group: cases
 module: css
-title: FirstLetter
+title: first-letter
 ---
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { FirstLetterDemo } from "../FirstLetter";
+import { FirstLetterDemo } from "./examples/first-letter";
 
 <FirstLetterDemo />
 
@@ -20,4 +20,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/FirstLetter.tsx" />
+<Source path="cases/css/__storybook__/examples/first-letter.tsx" />

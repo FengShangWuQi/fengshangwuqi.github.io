@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { useLocalStorage } from "..";
+import { usePrevious } from "../../usePrevious";
 
-export const UseLocalStorageDemo = () => {
+export const UsePreviousDemo = () => {
   const ds = useDesignSystem();
 
-  const key = "count";
-  const [storedValue, setStoredValue] = useLocalStorage(key, 0);
+  const [count, setCount] = useState(0);
+  const prevCount = usePrevious(count);
 
   return (
     <div>
       <div>
-        {key}: {storedValue}
+        Now: {count}, before: {prevCount}
       </div>
 
       <button
@@ -21,7 +21,7 @@ export const UseLocalStorageDemo = () => {
           marginTop: ds.padding.l,
         }}
         onClick={() => {
-          setStoredValue((count: number) => count + 1);
+          setCount(count + 1);
         }}>
         click
       </button>

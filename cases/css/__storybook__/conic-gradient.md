@@ -1,12 +1,12 @@
 ---
 group: cases
 module: css
-title: ConicGradient
+title: conic-gradient
 ---
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { PieChart, Checkerboard, Starburst } from "../ConicGradient";
+import { PieChart, Checkerboard, Starburst } from "./examples/conic-gradient";
 
 <PieChart />
 
@@ -41,4 +41,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/ConicGradient.tsx" />
+<Source path="cases/css/__storybook__/examples/conic-gradient.tsx" />

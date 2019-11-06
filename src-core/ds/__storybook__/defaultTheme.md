@@ -6,7 +6,7 @@ title: defaultTheme
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { DefaultThemeDemo } from "./defaultTheme";
+import { DefaultThemeDemo } from "./examples/defaultTheme";
 
 <DefaultThemeDemo />
 

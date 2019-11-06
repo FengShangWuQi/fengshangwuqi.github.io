@@ -1,12 +1,12 @@
 ---
 group: cases
 module: css
-title: BoxDecorationBreak
+title: box-decoration-break
 ---
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { BoxDecorationBreakDemo } from "../BoxDecorationBreak"
+import { BoxDecorationBreakDemo } from "./examples/box-decoration-break"
 
 <BoxDecorationBreakDemo />
 
@@ -19,4 +19,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/BoxDecorationBreak.tsx" />
+<Source path="cases/css/__storybook__/examples/box-decoration-break.tsx" />

@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 
-import { useRect } from "..";
+import { useRect } from "../../useRect";
 
 export const UseRectDemo = () => {
   const ds = useDesignSystem();
