@@ -1,8 +1,8 @@
 import React from "react";
 import { Global } from "@emotion/core";
+import { normalize } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { normalize } from "src-core/style";
 
 export const DSReset = () => {
   const ds = useDesignSystem();

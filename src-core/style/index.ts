@@ -34,5 +34,4 @@ export * from "./grid";
 export * from "./size";
 export * from "./position";
 export * from "./padding";
-export * from "./normalize";
 export * from "./typography";
