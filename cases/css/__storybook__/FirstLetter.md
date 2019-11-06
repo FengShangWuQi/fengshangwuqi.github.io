@@ -11,7 +11,7 @@ import { FirstLetterDemo } from "../FirstLetter";
 <FirstLetterDemo />
 
 ```jsx {2}
-const FirstLetter = styled.div({
+styled.div({
   "&::first-letter": {
     float: "left",
     fontSize: ds.size.xxl,

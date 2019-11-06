@@ -11,7 +11,7 @@ import { BoxDecorationBreakDemo } from "../BoxDecorationBreak"
 <BoxDecorationBreakDemo />
 
 ```jsx {5}
-const BoxDecorationBreak = styled.div({
+styled.div({
   backgroundImage: "linear-gradient(135deg, deeppink, dodgerblue, yellowgreen)",
   backgroundClip: "text",
   color: "transparent",

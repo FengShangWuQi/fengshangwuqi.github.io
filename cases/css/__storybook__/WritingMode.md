@@ -11,7 +11,7 @@ import { VerticalRl } from "../WritingMode"
 <VerticalRl />
 
 ```jsx {2}
-const WritingMode = styled.div({
+styled.div({
   writingMode: "vertical-rl",
 });
 ```

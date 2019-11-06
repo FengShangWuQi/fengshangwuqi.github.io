@@ -11,7 +11,7 @@ import { MixBlendModeDemo } from "../MixBlendMode";
 <MixBlendModeDemo />
 
 ```jsx {2}
-const MixBlendMode = styled.div({
+styled.div({
   mixBlendMode: "darken",
 });
 ```
