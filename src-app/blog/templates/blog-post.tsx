@@ -98,12 +98,7 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
       </PostHeader>
 
       <Wrapper>
-        <h1
-          css={{
-            ...ellipsis(),
-          }}>
-          {postTitle}
-        </h1>
+        <h1>{postTitle}</h1>
 
         <PostDate style={{ marginTop: 5 }} date={date} />
         <PostTags tags={tags} />
