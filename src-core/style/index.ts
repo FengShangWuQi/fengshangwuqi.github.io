@@ -35,6 +35,5 @@ export * from "./size";
 export * from "./position";
 export * from "./margin";
 export * from "./padding";
-export * from "./ellipsis";
 export * from "./normalize";
 export * from "./typography";
