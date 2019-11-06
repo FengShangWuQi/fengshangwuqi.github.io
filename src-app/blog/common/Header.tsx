@@ -77,7 +77,7 @@ const Wrapper = ({
       ref={ref}
       css={{
         ...position("relative"),
-        ...size("100%", 400),
+        ...size(400, "100%"),
         background: "#171a19",
         cursor: "grab",
         "&:active": {

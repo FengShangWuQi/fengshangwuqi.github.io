@@ -6,7 +6,7 @@ export const PostHeader = ({ children }: { children: React.ReactNode }) => {
     <div
       css={{
         ...position("relative"),
-        ...size("100%", 400),
+        ...size(400, "100%"),
       }}>
       <div
         css={{
