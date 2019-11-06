@@ -1,6 +1,5 @@
 import React from "react";
-
-import { position } from "src-core/style";
+import { position } from "polished";
 
 export const MixBlendModeDemo = () => {
   return (

@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { Global } from "@emotion/core";
-import { border, margin } from "polished";
+import { border, margin, position } from "polished";
 
 import { Bootstrap, useRect } from "src-core/react";
 import { defaultTheme, useDesignSystem } from "src-core/ds";
-import { rhythm, position } from "src-core/style";
+import { rhythm } from "src-core/style";
 
 import { Nav } from "./Nav";
 import { Loadingbar } from "./LoadingBar";
