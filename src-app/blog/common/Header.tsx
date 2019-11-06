@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { useSpring, animated } from "react-spring";
-import { position } from "polished";
+import { position, size } from "polished";
 
 import { useRect } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
-import { size, flex } from "src-core/style";
+import { flex } from "src-core/style";
 
 import { Stars } from "./Stars";
 

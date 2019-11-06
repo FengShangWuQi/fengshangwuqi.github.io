@@ -1,7 +1,5 @@
 import React from "react";
-import { position } from "polished";
-
-import { size } from "src-core/style";
+import { position, size } from "polished";
 
 export const PostHeader = ({ children }: { children: React.ReactNode }) => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
-import { rgba, position } from "polished";
+import { rgba, position, size } from "polished";
 
 import { pickElmAttrs } from "src-core/react";
-import { flex, size } from "src-core/style";
+import { flex } from "src-core/style";
 
 export const BackFaceVisibilityDemo = () => (
   <div
