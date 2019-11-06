@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
+import { padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 import { useRect } from "src-core/react";
-import { rhythm, padding } from "src-core/style";
+import { rhythm } from "src-core/style";
 
 export const Footer = ({ children }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();

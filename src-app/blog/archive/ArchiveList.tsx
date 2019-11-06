@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { Link } from "gatsby";
-import { rgba, ellipsis } from "polished";
+import { rgba, ellipsis, padding } from "polished";
 
 import { useHover, useRect } from "src-core/react";
-import { rhythm, flex, position, padding } from "src-core/style";
+import { rhythm, flex, position } from "src-core/style";
 import { useDesignSystem } from "src-core/ds";
 
 import { PostTag } from "../post/PostTag";

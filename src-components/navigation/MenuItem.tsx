@@ -1,8 +1,9 @@
 import React from "react";
 import { CSSObject } from "@emotion/core";
+import { padding } from "polished";
 
 import { pickElmAttrs } from "src-core/react";
-import { padding, rhythm } from "src-core/style";
+import { rhythm } from "src-core/style";
 
 import { MenuMode, useMenu } from "./Menu";
 

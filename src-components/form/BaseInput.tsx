@@ -1,10 +1,10 @@
 import React from "react";
-import { margin } from "polished";
+import { margin, padding } from "polished";
 
 import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 
-import { padding, rhythm, flex } from "src-core/style";
+import { rhythm, flex } from "src-core/style";
 
 import { IFieldInnerProps } from "./Field";
 

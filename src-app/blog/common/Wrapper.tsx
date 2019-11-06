@@ -1,7 +1,8 @@
 import React from "react";
+import { padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { rhythm, padding } from "src-core/style";
+import { rhythm } from "src-core/style";
 
 export const Wrapper = ({ children }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();

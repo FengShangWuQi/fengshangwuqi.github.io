@@ -1,9 +1,8 @@
 import React from "react";
 import { Global } from "@emotion/core";
-import { margin } from "polished";
+import { margin, padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { padding } from "src-core/style";
 
 export const PrismTheme = () => {
   const ds = useDesignSystem();

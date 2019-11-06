@@ -1,8 +1,8 @@
 import React, { createContext, useContext } from "react";
 import { CSSObject } from "@emotion/core";
+import { padding } from "polished";
 
 import { pickElmAttrs } from "src-core/react";
-import { padding } from "src-core/style";
 
 export enum MenuMode {
   VERTICAL,

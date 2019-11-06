@@ -1,8 +1,8 @@
 import React from "react";
+import { padding } from "polished";
 
 import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
-import { padding } from "src-core/style";
 
 export interface ITag {
   color: string;

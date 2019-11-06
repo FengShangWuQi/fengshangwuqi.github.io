@@ -3,10 +3,10 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { CSSObject } from "@emotion/core";
-import { ellipsis, margin } from "polished";
+import { ellipsis, margin, padding } from "polished";
 
 import { useDesignSystem, PrismTheme } from "src-core/ds";
-import { rhythm, padding } from "src-core/style";
+import { rhythm } from "src-core/style";
 import { SEO } from "src-core/seo";
 
 import { Layout } from "../common/Layout";

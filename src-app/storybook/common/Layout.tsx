@@ -1,10 +1,10 @@
 import React from "react";
 import { Global } from "@emotion/core";
-import { rgba, border, margin } from "polished";
+import { rgba, border, margin, padding } from "polished";
 
 import { Bootstrap, pickElmAttrs } from "src-core/react";
 import { useDesignSystem, defaultTheme, PrismTheme } from "src-core/ds";
-import { rhythm, padding } from "src-core/style";
+import { rhythm } from "src-core/style";
 
 export const storybookTheme = {
   ...defaultTheme,
