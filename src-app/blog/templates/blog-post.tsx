@@ -76,7 +76,7 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
   return (
     <Layout>
       <SEO
-        title={postTitle}
+        title={`${postTitle} - ${siteTitle}`}
         description={excerpt}
         imageSrc={`${siteUrl}${pathPrefix}${fluid.src}`}
         keywords={[postTitle, siteTitle, author, ...tags]}
