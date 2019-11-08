@@ -1,9 +1,8 @@
 import isPropValid from "@emotion/is-prop-valid";
+import { Dictionary } from "lodash";
 
-import { IDictionary } from "utils/object";
-
-export const pickElmAttrs = (props: IDictionary<any>) => {
-  const p: IDictionary<any> = {};
+export const pickElmAttrs = (props: Dictionary<any>) => {
+  const p: Dictionary<any> = {};
 
   Object.keys(props).forEach(key => {
     if (isPropValid(key)) {

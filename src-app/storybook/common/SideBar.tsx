@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 import { border } from "polished";
+import { Dictionary } from "lodash";
 
 import { useDesignSystem } from "src-core/ds";
 
 import { Menu, MenuItem, MenuMode } from "src-components/navigation/Menu";
-
-import { IDictionary } from "utils/object";
 
 import { Container } from "../common/Layout";
 
@@ -15,7 +14,7 @@ export const SideBar = ({
   modules,
 }: {
   group: string;
-  modules: IDictionary<string[]>;
+  modules: Dictionary<string[]>;
 }) => {
   const ds = useDesignSystem();
 

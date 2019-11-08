@@ -1,9 +1,9 @@
 import { useRef, useEffect } from "react";
+import { Dictionary, isEqual } from "lodash";
 
-import { IDictionary, isEqual } from "utils/object";
 import { format } from "utils/date";
 
-export const useWhyDidYouUpdate = (name: string, props: IDictionary<any>) => {
+export const useWhyDidYouUpdate = (name: string, props: Dictionary<any>) => {
   const prevProps = useRef(props);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ export const useWhyDidYouUpdate = (name: string, props: IDictionary<any>) => {
     }
 
     const allKeys = Object.keys({ ...prevProps.current, ...props });
-    const changesObj: IDictionary<any> = {};
+    const changesObj: Dictionary<any> = {};
 
     allKeys.forEach(key => {
       if (!isEqual(prevProps.current[key], props[key])) {

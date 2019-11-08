@@ -1,4 +1,5 @@
 import React from "react";
+import { Dictionary } from "lodash";
 
 import {
   useLocation,
@@ -10,10 +11,8 @@ import {
   segmentize,
 } from "src-core/router";
 
-import { IDictionary } from "utils/object";
-
 export interface IRouterCore {
-  routes?: IDictionary<
+  routes?: Dictionary<
     { component?: React.ComponentType; [index: string]: any } & IRouterCore
   >;
   pathPrefix?: string;
@@ -22,7 +21,7 @@ export interface IRouterCore {
 const getFlatRoutes = ({
   routes,
   pathPrefix,
-}: IRouterCore): IDictionary<{
+}: IRouterCore): Dictionary<{
   component: React.ComponentType;
   [index: string]: any;
 }> =>

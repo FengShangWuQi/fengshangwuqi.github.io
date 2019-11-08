@@ -1,4 +1,5 @@
 import React, { useState, StrictMode } from "react";
+import { merge } from "lodash";
 
 import {
   ThemeProvider,
@@ -6,8 +7,6 @@ import {
   ITheme,
   ToggleThemeProvider,
 } from "src-core/ds";
-
-import { merge } from "utils/object";
 
 export const Bootstrap = ({
   ds,

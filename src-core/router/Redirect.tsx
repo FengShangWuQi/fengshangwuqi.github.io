@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Dictionary } from "lodash";
 
 import {
   useLocation,
@@ -8,12 +9,10 @@ import {
   ToObj,
 } from "src-core/router";
 
-import { IDictionary } from "utils/object";
-
 export interface IRedirect {
   to: string | ToObj;
   from?: string;
-  state?: IDictionary<string>;
+  state?: Dictionary<string>;
 }
 
 export const Redirect = ({ from, to, state }: IRedirect) => {
@@ -40,7 +39,7 @@ export const Redirect = ({ from, to, state }: IRedirect) => {
 export const useRedirect = (
   from: string,
   to: string | ToObj,
-  state?: IDictionary<string>,
+  state?: Dictionary<string>,
 ) => {
   const { location, navigateTo } = useLocation();
   const { uri = "/" } = useMatch();

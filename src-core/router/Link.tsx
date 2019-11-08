@@ -1,10 +1,8 @@
 import React from "react";
+import { Dictionary, isString, startsWith } from "lodash";
 
 import { withoutBubble, pickElmAttrs } from "src-core/react";
 import { useLocation, useMatch, toSearchString } from "src-core/router";
-
-import { IDictionary, isString } from "utils/object";
-import { startsWith } from "utils/string";
 
 import { segmentize, SearchQuery } from "src-core/router";
 
@@ -16,7 +14,7 @@ export type ToObj = {
 
 export interface ILinkProps {
   to: string | ToObj;
-  state?: IDictionary<string>;
+  state?: Dictionary<string>;
   children: React.ReactNode;
 }
 
@@ -26,16 +24,16 @@ export const parsePath = (to: string | ToObj) => {
   let hash = "";
 
   if (isString(to)) {
-    const searchMatch = /\?(.+)#/.exec(to as string);
-    const hashMatch = /#(.+)/.exec(to as string);
+    const searchMatch = /\?(.+)#/.exec(to);
+    const hashMatch = /#(.+)/.exec(to);
 
     if (searchMatch) search = searchMatch[1];
     if (hashMatch) hash = hashMatch[1];
-    pathname = (to as string).split("?")[0];
+    pathname = to.split("?")[0];
   } else {
-    pathname = (to as ToObj).pathname;
-    search = toSearchString((to as ToObj).search);
-    hash = (to as ToObj).hash || "";
+    pathname = to.pathname;
+    search = toSearchString(to.search);
+    hash = to.hash || "";
   }
 
   return { pathname, search, hash };

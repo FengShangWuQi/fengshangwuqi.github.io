@@ -1,6 +1,6 @@
 import { BehaviorSubject, fromEvent } from "rxjs";
+import { Dictionary } from "lodash";
 
-import { IDictionary } from "utils/object";
 import { canUseDOM } from "utils/dom";
 
 import { getLocation, ILocationContext, ILocation } from "./Location";
@@ -18,7 +18,7 @@ export const createHistory = (source: Window): IHistory => {
     {
       state,
       replace = false,
-    }: { state?: IDictionary<string>; replace?: boolean },
+    }: { state?: Dictionary<string>; replace?: boolean },
   ) => {
     if (replace) {
       source.history.replaceState(state, "", to);
@@ -50,7 +50,7 @@ export const createHistory = (source: Window): IHistory => {
 };
 
 const createSource = () => {
-  const states: IDictionary<string>[] = [];
+  const states: Dictionary<string>[] = [];
   const stack = [{ pathname: "/", search: "" }];
 
   let index = 0;
@@ -59,7 +59,7 @@ const createSource = () => {
 
   const state = states[index];
 
-  const pushState = (state: IDictionary<string>, _: string, uri: string) => {
+  const pushState = (state: Dictionary<string>, _: string, uri: string) => {
     const [pathname, search = ""] = uri.split("?");
     index++;
     stack.push({ pathname, search });

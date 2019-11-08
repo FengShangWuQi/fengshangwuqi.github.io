@@ -1,9 +1,8 @@
 import { createContext, useContext } from "react";
-
-import { IDictionary } from "utils/object";
+import { Dictionary } from "lodash";
 
 interface IToggleTheme {
-  toggleTheme: (theme: IDictionary<IDictionary<string | number>>) => void;
+  toggleTheme: (theme: Dictionary<Dictionary<string | number>>) => void;
 }
 
 export const ToggleThemeContext = createContext({} as IToggleTheme);

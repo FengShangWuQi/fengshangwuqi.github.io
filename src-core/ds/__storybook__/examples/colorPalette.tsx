@@ -1,11 +1,10 @@
 import React from "react";
 import { lighten, darken, rgba, border } from "polished";
+import { random } from "lodash";
 
 import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
-
-import { randomNum } from "utils";
 
 import { colorPalette } from "../../colorPalette";
 
@@ -59,7 +58,7 @@ const ColorGroup = ({ color }: { color: string }) => {
     lighten(0.3, color),
   ];
 
-  const randomIndex = randomNum(0, 10);
+  const randomIndex = random(10);
 
   return (
     <div

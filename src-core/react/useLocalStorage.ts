@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-
-import { isFunction } from "utils/object";
+import { isFunction } from "lodash";
 
 export const useLocalStorage = (key: string, initialValue: any) => {
   const [storedValue, setStoredValue] = useState(initialValue);

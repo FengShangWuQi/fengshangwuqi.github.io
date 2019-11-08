@@ -1,14 +1,13 @@
 import React, { createContext, useContext, useState } from "react";
 import { Method, AxiosRequestConfig } from "axios";
+import { Dictionary } from "lodash";
 
 import { withoutBubble, useRequest, IRequestOpts } from "src-core/react";
-
-import { IDictionary } from "utils/object";
 
 import { IFieldState } from "./Field";
 
 export interface IFormState<TFormValues> {
-  fields: IDictionary<IFieldState>;
+  fields: Dictionary<IFieldState>;
   initialValues: TFormValues;
   values: TFormValues;
   isSubmitting: boolean;

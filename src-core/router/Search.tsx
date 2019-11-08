@@ -1,11 +1,10 @@
 import { parse, stringify } from "querystring";
+import { Dictionary } from "lodash";
 
 import { useLocation } from "src-core/router";
 
-import { IDictionary } from "utils/object";
-
 export type SearchQuery =
-  | IDictionary<string | number | boolean | string[] | number[] | boolean[]>
+  | Dictionary<string | number | boolean | string[] | number[] | boolean[]>
   | undefined;
 
 export const parseSearchString = (search: string): SearchQuery => {

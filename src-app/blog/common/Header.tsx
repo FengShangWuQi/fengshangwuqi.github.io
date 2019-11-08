@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useSpring, animated } from "react-spring";
 import { position, size } from "polished";
+import { Dictionary } from "lodash";
 
 import { useRect } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
@@ -8,14 +9,12 @@ import { flex } from "src-core/style";
 
 import { Stars } from "./Stars";
 
-import { IDictionary } from "utils/object";
-
 export const Header = ({
   social,
   contact,
 }: {
-  social: IDictionary<string>;
-  contact: IDictionary<string>;
+  social: Dictionary<string>;
+  contact: Dictionary<string>;
 }) => {
   const ds = useDesignSystem();
 

@@ -4,7 +4,7 @@ import * as globby from "globby";
 import * as prettier from "prettier";
 import chalk from "chalk";
 
-import { camelCase } from "../../utils/string";
+import { camelCase } from "lodash";
 
 const formatCode = (code: string, filePath: string) =>
   prettier.format(code, {

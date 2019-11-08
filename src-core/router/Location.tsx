@@ -1,11 +1,10 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-
-import { IDictionary } from "utils/object";
+import { Dictionary } from "lodash";
 
 import { IHistory, globalHistory } from "./history";
 
 export interface ILocation extends Location {
-  state: IDictionary<string>;
+  state: Dictionary<string>;
 }
 
 export interface ILocationProps {
@@ -17,7 +16,7 @@ export interface ILocationContext {
   location: ILocation;
   navigateTo: (
     to: string,
-    { state, replace }: { state?: IDictionary<string>; replace?: boolean },
+    { state, replace }: { state?: Dictionary<string>; replace?: boolean },
   ) => void;
 }
 

@@ -1,11 +1,10 @@
 import { createContext, useContext } from "react";
+import { Dictionary } from "lodash";
 
 import { segmentize, dynamicRe } from "src-core/router";
 
-import { IDictionary } from "utils/object";
-
 export interface IMatchContext {
-  params: IDictionary<string>;
+  params: Dictionary<string>;
   path: string;
   uri: string;
 }
@@ -19,7 +18,7 @@ export const matchPath = (uri: string, path: string): IMatchContext | null => {
   const uriSegments = segmentize(uri);
   const pathSegments = segmentize(path);
 
-  const params: IDictionary<string> = {};
+  const params: Dictionary<string> = {};
 
   const max = Math.max(uriSegments.length, pathSegments.length);
   let index = 0;
