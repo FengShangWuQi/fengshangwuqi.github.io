@@ -12,5 +12,5 @@ ignore:
   'npm:mem:20180117':
     - gatsby > @gatsbyjs/relay-compiler > yargs > os-locale > mem:
         reason: None given
-        expires: '2019-11-09T14:45:18.800Z'
+        expires: '2019-12-10T10:14:53.094Z'
 patch: {}
