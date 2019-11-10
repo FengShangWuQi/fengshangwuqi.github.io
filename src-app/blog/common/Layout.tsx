@@ -44,7 +44,6 @@ const Container = ({ children }: { children: React.ReactNode }) => {
         {
           ...position("relative"),
           maxWidth: 1200,
-          minWidth: 900,
         },
         rect.width < ds.screen.xl
           ? { ...margin(0, "auto") }
