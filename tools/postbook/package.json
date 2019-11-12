@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/postbook",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "在终端友好地管理你的 posts",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "entry": "cli.ts",
