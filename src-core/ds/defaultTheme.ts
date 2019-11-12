@@ -61,6 +61,16 @@ const borderRadius = {
   full: "9999px",
 };
 
+const zIndex = {
+  auto: "auto",
+  "0": 0,
+  "10": 10,
+  "20": 20,
+  "30": 30,
+  "40": 40,
+  "50": 50,
+};
+
 export const defaultTheme = {
   color,
   colorPalette,
@@ -74,20 +84,14 @@ export const defaultTheme = {
   fontSize,
   borderRadius,
 
+  zIndex,
+
   screen: {
     s: 576,
     m: 768,
     l: 992,
     xl: 1200,
     xxl: 1600,
-  },
-
-  zIndex: {
-    affix: 10,
-    modal: 1000,
-    message: 1010,
-    dropdown: 1050,
-    tooltip: 1060,
   },
 };
 
