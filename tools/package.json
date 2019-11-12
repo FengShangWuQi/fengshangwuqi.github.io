@@ -6,7 +6,7 @@
     "check": "npm-check -u -E",
     "bootstrap": "lerna bootstrap",
     "build": "lerna exec -- rollup -c ../rollup.config.js",
-    "r": "lerna publish --yes"
+    "r": "lerna publish from-package --yes"
   },
   "devDependencies": {
     "@babel/core": "7.7.2",
