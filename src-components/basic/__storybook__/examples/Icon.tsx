@@ -13,8 +13,8 @@ export const IconDemo = () => {
       css={{
         ...grid({
           gridTemplateColumns: "repeat(6, 1fr)",
-          gridColumnGap: ds.padding.l,
-          gridRowGap: ds.padding.l,
+          gridColumnGap: ds.spacing[3],
+          gridRowGap: ds.spacing[3],
         }),
         color: ds.color.textLight,
         fill: ds.color.textLight,

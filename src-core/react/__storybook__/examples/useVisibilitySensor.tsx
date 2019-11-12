@@ -39,7 +39,7 @@ export const UseVisibilitySensorDemo = () => {
       <div
         ref={rootRef}
         css={{
-          padding: ds.padding.s,
+          padding: ds.spacing[3],
           width: 300,
           height: 240,
           border: `1px solid ${ds.color.primary}`,
@@ -50,7 +50,7 @@ export const UseVisibilitySensorDemo = () => {
             key={item}
             css={{
               margin: `16px auto`,
-              paddingLeft: ds.padding.s,
+              paddingLeft: ds.spacing[2],
               color: ds.color.bg,
               background: ds.color.secondary,
               borderRadius: ds.radius.base,

@@ -18,7 +18,7 @@ export const UseLocalStorageDemo = () => {
 
       <button
         css={{
-          marginTop: ds.padding.l,
+          marginTop: ds.spacing[2],
         }}
         onClick={() => {
           setStoredValue((count: number) => count + 1);

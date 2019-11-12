@@ -22,7 +22,7 @@ export const Source = ({ path }: { path: string }) => {
       rel="noopener noreferrer">
       <IconGithubFill
         css={{
-          marginRight: ds.padding.s,
+          marginRight: ds.spacing[2],
           fill: ds.color.primary,
         }}
       />

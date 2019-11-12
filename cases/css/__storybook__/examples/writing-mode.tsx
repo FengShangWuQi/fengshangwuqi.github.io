@@ -38,7 +38,7 @@ const Poetry = ({ ...otherProps }) => {
       {...pickElmAttrs(otherProps)}
       css={{
         "& p": {
-          margin: ds.padding.l,
+          margin: ds.spacing[3],
         },
       }}>
       <p>《水调歌头·明月几时有》</p>

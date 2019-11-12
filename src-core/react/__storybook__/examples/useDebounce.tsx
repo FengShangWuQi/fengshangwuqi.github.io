@@ -18,7 +18,7 @@ export const UseDebounceDemo = () => {
 
       <button
         css={{
-          marginTop: ds.padding.l,
+          marginTop: ds.spacing[2],
         }}
         onClick={() => {
           setCount(count + 1);

@@ -10,18 +10,18 @@ export const AttrDemo = () => {
   return (
     <div
       css={{
-        marginLeft: ds.padding.s,
+        marginLeft: ds.spacing[1],
       }}>
       <div
         css={{
-          marginBottom: ds.padding.m,
+          marginBottom: ds.spacing[3],
         }}>
         100、答题挺辛苦，这道题就送给你了
       </div>
 
       <Row
         css={{
-          marginBottom: ds.padding.s,
+          marginBottom: ds.spacing[1],
         }}>
         <Radio name="100" id="100-A"></Radio>
         <Label
@@ -73,11 +73,11 @@ const Radio = ({ ...otherProps }) => {
       type="radio"
       css={{
         marginTop: -3,
-        marginRight: ds.padding.s,
+        marginRight: ds.spacing[2],
         cursor: "pointer",
         "&+label::after": {
           content: "attr(data-tip)",
-          marginLeft: ds.padding.s,
+          marginLeft: ds.spacing[3],
           display: "none",
         },
         "&:checked+label::after": {

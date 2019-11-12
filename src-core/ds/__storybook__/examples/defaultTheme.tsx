@@ -13,18 +13,18 @@ export const DefaultThemeDemo = () => {
       css={{
         ...grid({
           gridTemplateColumns: "repeat(4, 1fr)",
-          gridColumnGap: ds.padding.l,
+          gridColumnGap: ds.spacing[6],
         }),
       }}>
-      <ThemeGroup theme={["primary", "secondary"]} />
-      <ThemeGroup theme={["success", "warning", "error", "info"]} />
-      <ThemeGroup theme={["text", "textLight"]} />
-      <ThemeGroup theme={["bg", "bgLight"]} />
+      <Group theme={["primary", "secondary"]} />
+      <Group theme={["success", "warning", "error", "info"]} />
+      <Group theme={["text", "textLight"]} />
+      <Group theme={["bg", "bgLight"]} />
     </div>
   );
 };
 
-const ThemeGroup = ({ theme }: { theme: string[] }) => {
+const Group = ({ theme }: { theme: string[] }) => {
   const ds = useDesignSystem();
 
   const { color } = ds;
@@ -32,25 +32,20 @@ const ThemeGroup = ({ theme }: { theme: string[] }) => {
   return (
     <div>
       {theme.map(value => (
-        <ThemeBlock
+        <Block
           key={value}
           css={{
             fontSize: ds.fontSize.sm,
             background: color[value as keyof typeof color],
           }}>
           {value.toUpperCase()}
-        </ThemeBlock>
+        </Block>
       ))}
     </div>
   );
 };
 
-const ThemeBlock = ({
-  children,
-  ...otherProps
-}: {
-  children: React.ReactNode;
-}) => {
+const Block = ({ children, ...otherProps }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();
 
   return (
@@ -58,7 +53,7 @@ const ThemeBlock = ({
       {...pickElmAttrs(otherProps)}
       css={{
         ...border(1, "solid", rgba(colorPalette.black, 0.12)),
-        paddingLeft: ds.padding.s,
+        paddingLeft: ds.spacing[2],
         height: 40,
         lineHeight: "40px",
         color: ds.colorPalette.white,

@@ -15,7 +15,7 @@ export const ToggleDemo = () => {
 
       <button
         css={{
-          marginTop: ds.padding.l,
+          marginTop: ds.spacing[2],
         }}
         onClick={toggle}>
         click
