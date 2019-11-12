@@ -96,7 +96,7 @@ const PaginationItem = ({
             justifyContent: "center",
           }),
           marginLeft: 8,
-          borderRadius: ds.radius.base,
+          borderRadius: ds.borderRadius.default,
           cursor: "pointer",
         },
         isActive

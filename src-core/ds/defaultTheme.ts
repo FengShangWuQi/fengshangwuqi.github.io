@@ -18,19 +18,6 @@ const color = {
   bgLight: rgba(colorPalette.black, 0.1),
 };
 
-const fontSize = {
-  xs: "0.75rem",
-  sm: "0.875rem",
-  base: "1rem",
-  lg: "1.125rem",
-  xl: "1.25rem",
-  "2xl": "1.5rem",
-  "3xl": "1.875rem",
-  "4xl": "2.25rem",
-  "5xl": "3rem",
-  "6xl": "4rem",
-};
-
 const spacing = {
   px: "1px",
   "0": "0",
@@ -53,6 +40,27 @@ const spacing = {
   "64": "16rem",
 };
 
+const fontSize = {
+  xs: "0.75rem",
+  sm: "0.875rem",
+  base: "1rem",
+  lg: "1.125rem",
+  xl: "1.25rem",
+  "2xl": "1.5rem",
+  "3xl": "1.875rem",
+  "4xl": "2.25rem",
+  "5xl": "3rem",
+  "6xl": "4rem",
+};
+
+const borderRadius = {
+  none: "0",
+  sm: "0.125rem",
+  default: "0.25rem",
+  lg: "0.5rem",
+  full: "9999px",
+};
+
 export const defaultTheme = {
   color,
   colorPalette,
@@ -61,16 +69,10 @@ export const defaultTheme = {
     system: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif`,
   },
 
-  fontSize,
-
   spacing,
 
-  radius: {
-    s: 2,
-    base: 4,
-    m: 8,
-    l: 10,
-  },
+  fontSize,
+  borderRadius,
 
   screen: {
     s: 576,

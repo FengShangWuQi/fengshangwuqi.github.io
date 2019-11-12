@@ -53,7 +53,7 @@ export const UseVisibilitySensorDemo = () => {
               paddingLeft: ds.spacing[2],
               color: ds.color.bg,
               background: ds.color.secondary,
-              borderRadius: ds.radius.base,
+              borderRadius: ds.borderRadius.lg,
             }}>
             {item}
           </div>

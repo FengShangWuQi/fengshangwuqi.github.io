@@ -23,7 +23,7 @@ export const UseHoverDemo = () => {
         color: ds.color.bg,
         background: ds.color.primary,
         boxShadow: `2px 4px 10px ${ds.colorPalette.gray[700]}`,
-        borderRadius: ds.radius.base,
+        borderRadius: ds.borderRadius.default,
         cursor: "pointer",
         transition: "all 280ms ease-out",
         ...(isHovered && {

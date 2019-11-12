@@ -13,7 +13,7 @@ export const PrismTheme = () => {
         ".gatsby-highlight": {
           ...margin(25),
           ...padding(25),
-          borderRadius: ds.radius.m,
+          borderRadius: ds.borderRadius.lg,
           background: "#282a36",
           overflow: "scroll",
         },

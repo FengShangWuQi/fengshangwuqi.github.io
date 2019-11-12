@@ -97,7 +97,7 @@ const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
             marginLeft: -3,
             width: 8,
             height: 8,
-            borderRadius: ds.radius.m,
+            borderRadius: ds.borderRadius.default,
             border: `1px solid ${ds.color.primary}`,
             background: isHovered ? ds.color.primary : ds.color.bg,
           }}
