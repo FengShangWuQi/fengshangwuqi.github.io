@@ -1,22 +1,17 @@
 import React from "react";
 import { Global } from "@emotion/core";
 import { rgba, border, margin, padding } from "polished";
+import produce from "immer";
 
 import { Bootstrap, pickElmAttrs } from "src-core/react";
 import { useDesignSystem, defaultTheme, PrismTheme } from "src-core/ds";
 import { rhythm } from "src-core/style";
 
-export const storybookTheme = {
-  ...defaultTheme,
-  color: {
-    ...defaultTheme.color,
-
-    primary: "#c2185b",
-    secondary: rgba("#c2185b", 0.85),
-
-    bg: "#fafafa",
-  },
-};
+export const storybookTheme = produce(defaultTheme, theme => {
+  theme.color.primary = "#c2185b";
+  theme.color.primary = rgba("#c2185b", 0.85);
+  theme.color.bg = "#fafafa";
+});
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (

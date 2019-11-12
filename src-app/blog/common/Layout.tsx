@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Global } from "@emotion/core";
 import { border, margin, position } from "polished";
+import produce from "immer";
 
 import { Bootstrap, useRect } from "src-core/react";
 import { defaultTheme, useDesignSystem } from "src-core/ds";
@@ -10,13 +11,9 @@ import { Nav } from "./Nav";
 import { Loadingbar } from "./LoadingBar";
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
-  const blogTheme = {
-    ...defaultTheme,
-    color: {
-      ...defaultTheme.color,
-      primary: "#3c2584",
-    },
-  };
+  const blogTheme = produce(defaultTheme, theme => {
+    theme.color.primary = "#3c2584";
+  });
 
   return (
     <Bootstrap ds={blogTheme}>
