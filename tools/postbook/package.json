@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/postbook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "在终端友好地管理你的 posts",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "entry": "cli.ts",
@@ -23,7 +23,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "chalk": "2.4.2",
+    "chalk": "3.0.0",
     "fs-extra": "8.1.0",
     "os": "0.1.1",
     "pinyin": "2.9.0",
@@ -34,8 +34,8 @@
     "@types/fs-extra": "8.0.1",
     "@types/pinyin": "2.8.1",
     "npm-check": "5.9.0",
-    "ts-node": "8.4.1",
-    "typescript": "3.6.4"
+    "ts-node": "8.5.0",
+    "typescript": "3.7.2"
   },
   "license": "MIT"
 }
