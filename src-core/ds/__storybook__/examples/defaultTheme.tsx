@@ -35,7 +35,7 @@ const ThemeGroup = ({ theme }: { theme: string[] }) => {
         <ThemeBlock
           key={value}
           css={{
-            fontSize: ds.size.s,
+            fontSize: ds.fontSize.sm,
             background: color[value as keyof typeof color],
           }}>
           {value.toUpperCase()}

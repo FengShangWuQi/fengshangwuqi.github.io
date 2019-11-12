@@ -46,7 +46,7 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
       ref={ref}
       css={{
         ...position("relative"),
-        fontSize: ds.size.s,
+        fontSize: ds.fontSize.sm,
 
         "&:before": {
           ...position("absolute"),

@@ -26,14 +26,14 @@ export const IconDemo = () => {
         <span
           css={{
             justifySelf: "center",
-            fontSize: ds.size.xxl,
+            fontSize: ds.fontSize["4xl"],
           }}>
           <IconGithubFill />
         </span>
         <span
           css={{
             justifySelf: "center",
-            fontSize: ds.size.s,
+            fontSize: ds.fontSize.sm,
           }}>
           IconGithubFill
         </span>

@@ -10,14 +10,14 @@ export const FirstLetterDemo = () => {
       css={{
         "& p": {
           marginTop: 24,
-          fontSize: ds.size.base,
+          fontSize: ds.fontSize.sm,
           lineHeight: 1.625,
 
           "&:first-of-type::first-letter": {
             float: "left",
             paddingRight: 10,
             lineHeight: 1.1,
-            fontSize: ds.size.xxl,
+            fontSize: ds.fontSize["5xl"],
             color: "#cd5c5c",
           },
         },

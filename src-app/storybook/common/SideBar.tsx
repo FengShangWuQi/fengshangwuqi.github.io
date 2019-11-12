@@ -22,7 +22,6 @@ export const SideBar = ({
     <Container
       css={{
         ...border("right", 1, "solid", ds.color.primary),
-        fontSize: ds.size.s,
       }}>
       {Object.keys(modules).map(module => (
         <div key={module}>
@@ -30,7 +29,7 @@ export const SideBar = ({
             css={{
               lineHeight: "32px",
               color: ds.color.secondary,
-              fontSize: ds.size.m,
+              fontSize: ds.fontSize.lg,
               fontWeight: "bold",
             }}>
             {module}
@@ -40,6 +39,7 @@ export const SideBar = ({
               <Link
                 css={{
                   color: ds.color.text,
+                  fontSize: ds.fontSize.sm,
                 }}
                 key={title}
                 to={`/${group}/${module}/${title}`}>

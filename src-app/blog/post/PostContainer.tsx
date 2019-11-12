@@ -1,16 +1,12 @@
 import React from "react";
 import { rgba, border, margin, padding } from "polished";
 
-import { useDesignSystem } from "src-core/ds";
 import { rhythm, flex } from "src-core/style";
 
 export const PostContainer = ({ children }: { children: React.ReactNode }) => {
-  const ds = useDesignSystem();
-
   return (
     <div
       css={{
-        fontSize: ds.size.base,
         fontFamily: `'-apple-system',
           'BlinkMacSystemFont',
           'Segoe UI',

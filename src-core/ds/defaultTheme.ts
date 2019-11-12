@@ -18,6 +18,19 @@ const color = {
   bgLight: rgba(colorPalette.black, 0.1),
 };
 
+const fontSize = {
+  xs: "0.75rem",
+  sm: "0.875rem",
+  base: "1rem",
+  lg: "1.125rem",
+  xl: "1.25rem",
+  "2xl": "1.5rem",
+  "3xl": "1.875rem",
+  "4xl": "2.25rem",
+  "5xl": "3rem",
+  "6xl": "4rem",
+};
+
 export const defaultTheme = {
   color,
   colorPalette,
@@ -26,15 +39,7 @@ export const defaultTheme = {
     system: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif`,
   },
 
-  size: {
-    xs: 12,
-    s: 14,
-    base: 16,
-    m: 18,
-    l: 24,
-    xl: 36,
-    xxl: 48,
-  },
+  fontSize,
 
   radius: {
     s: 2,

@@ -54,7 +54,7 @@ const Tag = ({ color, bg, children, ...otherProps }: ITag) => {
       css={{
         ...padding(2, 5),
         display: "inline-block",
-        fontSize: ds.size.xs,
+        fontSize: ds.fontSize.xs,
         borderRadius: ds.radius.base,
         color,
         background: bg,

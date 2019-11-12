@@ -45,7 +45,7 @@ export const BaseInputWrapper = ({
         <span
           css={{
             color: ds.color.textLight,
-            fontSize: ds.size.xs,
+            fontSize: ds.fontSize.xs,
           }}>
           {label}
         </span>
@@ -61,7 +61,7 @@ export const BaseInputWrapper = ({
           <span
             css={{
               marginLeft: 8,
-              fontSize: ds.size.xs,
+              fontSize: ds.fontSize.xs,
             }}>
             {desc}
           </span>

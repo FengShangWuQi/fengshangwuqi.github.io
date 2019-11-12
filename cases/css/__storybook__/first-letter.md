@@ -14,7 +14,7 @@ import { FirstLetterDemo } from "./examples/first-letter";
 styled.div({
   "&::first-letter": {
     float: "left",
-    fontSize: ds.size.xxl,
+    fontSize: ds.fontSize["5xl"],
     color: "#cd5c5c",
   },
 });

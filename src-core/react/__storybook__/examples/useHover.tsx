@@ -18,7 +18,7 @@ export const UseHoverDemo = () => {
         display: "inline-block",
         marginLeft: 10,
         padding: "0.75em 2em",
-        fontSize: ds.size.xs,
+        fontSize: ds.fontSize.xs,
         textTransform: "uppercase",
         color: ds.color.bg,
         background: ds.color.primary,

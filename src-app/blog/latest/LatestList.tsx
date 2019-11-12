@@ -82,7 +82,7 @@ const LatestItem = ({
           marginTop: 24,
         }}>
         <Link
-          css={{ ...ellipsis(), fontWeight: "bold", fontSize: ds.size.m }}
+          css={{ ...ellipsis(), fontWeight: "bold" }}
           to={path}
           title={title}>
           {title}
@@ -95,7 +95,7 @@ const LatestItem = ({
       <p
         css={{
           ...margin(16, 0),
-          fontSize: ds.size.s,
+          fontSize: ds.fontSize.xs,
           color: ds.color.textLight,
         }}>
         {excerpt}
