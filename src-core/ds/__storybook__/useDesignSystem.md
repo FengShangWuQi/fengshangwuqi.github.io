@@ -10,7 +10,7 @@ import { Source } from "src-app/storybook/common/Source";
 const App = () => {
   const ds = useDesignSystem();
 
-  return <div css={{ background: ds.color.bg }} />;
+  return <div css={{ background: ds.color.primary }} />;
 };
 ```
 

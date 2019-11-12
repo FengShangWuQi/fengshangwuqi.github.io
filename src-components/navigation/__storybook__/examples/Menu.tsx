@@ -17,7 +17,7 @@ const MenuItems = () => {
             href="#"
             onClick={withoutBubble(() => {})}
             css={{
-              color: lighten(0.15, ds.colorPalette.gray),
+              color: lighten(0.15, ds.colorPalette.gray[500]),
             }}>
             {item.toUpperCase()}
           </a>

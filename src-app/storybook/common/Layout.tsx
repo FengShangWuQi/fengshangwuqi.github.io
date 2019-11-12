@@ -9,7 +9,7 @@ import { rhythm } from "src-core/style";
 
 export const storybookTheme = produce(defaultTheme, theme => {
   theme.color.primary = "#c2185b";
-  theme.color.primary = rgba("#c2185b", 0.85);
+  theme.color.secondary = rgba("#c2185b", 0.85);
   theme.color.bg = "#fafafa";
 });
 

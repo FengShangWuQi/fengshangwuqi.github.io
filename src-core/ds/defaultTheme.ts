@@ -3,13 +3,13 @@ import { rgba } from "polished";
 import { colorPalette } from "./colorPalette";
 
 const color = {
-  primary: colorPalette.blue,
-  secondary: rgba(colorPalette.blue, 0.85),
+  primary: colorPalette.blue[500],
+  secondary: rgba(colorPalette.blue[500], 0.85),
 
-  success: colorPalette.green,
-  warning: colorPalette.amber,
-  error: colorPalette.red,
-  info: colorPalette.blue,
+  success: colorPalette.green[500],
+  warning: colorPalette.orange[500],
+  error: colorPalette.red[500],
+  info: colorPalette.blue[500],
 
   text: rgba(colorPalette.black, 0.85),
   textLight: rgba(colorPalette.black, 0.65),

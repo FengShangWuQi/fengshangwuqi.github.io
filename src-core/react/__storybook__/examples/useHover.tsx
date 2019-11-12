@@ -22,7 +22,7 @@ export const UseHoverDemo = () => {
         textTransform: "uppercase",
         color: ds.color.bg,
         background: ds.color.primary,
-        boxShadow: `2px 4px 10px ${ds.colorPalette.blueGray}`,
+        boxShadow: `2px 4px 10px ${ds.colorPalette.gray[700]}`,
         borderRadius: ds.radius.base,
         cursor: "pointer",
         transition: "all 280ms ease-out",
