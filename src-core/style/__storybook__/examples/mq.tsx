@@ -10,7 +10,7 @@ export const MqDemo = () => {
   return (
     <p
       css={mq(["lg"], {
-        color: [ds.color.text, ds.colorPalette.teal[500]],
+        color: [ds.color.secondary, ds.color.text],
       })}>
       Media Queries.
     </p>
