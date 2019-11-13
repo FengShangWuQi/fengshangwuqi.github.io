@@ -48,6 +48,8 @@ exports.analytics = {
   },
 };
 
+exports.catchLinks = "gatsby-plugin-catch-links";
+
 exports.mdx = {
   resolve: `gatsby-plugin-mdx`,
   options: {
