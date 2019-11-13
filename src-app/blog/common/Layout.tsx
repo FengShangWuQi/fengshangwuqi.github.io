@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Global } from "@emotion/core";
 import { border, margin, position } from "polished";
 import produce from "immer";
 
-import { Bootstrap, useRect } from "src-core/react";
+import { Bootstrap } from "src-core/react";
 import { defaultTheme, useDesignSystem } from "src-core/ds";
-import { rhythm } from "src-core/style";
+import { rhythm, mq } from "src-core/style";
 
 import { Nav } from "./Nav";
 import { Loadingbar } from "./LoadingBar";
@@ -29,23 +29,13 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
 };
 
 const Container = ({ children }: { children: React.ReactNode }) => {
-  const ds = useDesignSystem();
-
-  const ref = useRef(null);
-  const rect = useRect(ref);
-
   return (
     <div
-      ref={ref}
-      css={[
-        {
-          ...position("relative"),
-          maxWidth: 1200,
-        },
-        rect.width < ds.screen.xl
-          ? { ...margin(0, "auto") }
-          : { ...margin(0, "auto", rhythm(3)) },
-      ]}>
+      css={mq(["lg"], {
+        ...position("relative"),
+        margin: ["0 auto", `0 auto ${rhythm(3)}`],
+        maxWidth: 1200,
+      })}>
       {children}
     </div>
   );

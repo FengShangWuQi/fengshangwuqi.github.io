@@ -2,6 +2,13 @@ import { rgba } from "polished";
 
 import { colorPalette } from "./colorPalette";
 
+export enum breakpoint {
+  sm = 640,
+  md = 768,
+  lg = 1024,
+  xl = 1280,
+}
+
 const color = {
   primary: colorPalette.blue[500],
   secondary: rgba(colorPalette.blue[500], 0.85),
@@ -85,14 +92,6 @@ export const defaultTheme = {
   borderRadius,
 
   zIndex,
-
-  screen: {
-    s: 576,
-    m: 768,
-    l: 992,
-    xl: 1200,
-    xxl: 1600,
-  },
 };
 
 export type ITheme = typeof defaultTheme;

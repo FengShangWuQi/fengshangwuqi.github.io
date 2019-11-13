@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { rgba, ellipsis, padding, position } from "polished";
 
-import { useHover, useRect } from "src-core/react";
-import { rhythm, flex } from "src-core/style";
+import { useHover } from "src-core/react";
+import { rhythm, flex, mq } from "src-core/style";
 import { useDesignSystem } from "src-core/ds";
 
 import { PostTag } from "../post/PostTag";
@@ -36,14 +36,8 @@ interface IArchiveNode {
 export const ArchiveList = ({ posts }: IArchiveList) => {
   const ds = useDesignSystem();
 
-  const ref = useRef(null);
-  const rect = useRect(ref);
-
-  const isLarge = rect.width >= ds.screen.m;
-
   return (
     <div
-      ref={ref}
       css={{
         ...position("relative"),
         fontSize: ds.fontSize.sm,
@@ -69,7 +63,7 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
             title={node.frontmatter.title}
             path={node.fields.slug}
             date={node.frontmatter.date}
-            addOnRight={isLarge && postTags}
+            addOnRight={postTags}
           />
         );
       })}
@@ -116,7 +110,9 @@ const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
             to={path}>
             <span ref={hoverRef}>{title}</span>
           </Link>
-          {addOnRight}
+          <div css={mq(["md"], { display: ["none", "inline-block"] })}>
+            {addOnRight}
+          </div>
         </div>
       </div>
       <div
