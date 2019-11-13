@@ -69,13 +69,14 @@ const borderRadius = {
 };
 
 const zIndex = {
+  hide: -1,
   auto: "auto",
-  "0": 0,
-  "10": 10,
-  "20": 20,
-  "30": 30,
-  "40": 40,
-  "50": 50,
+  affix: 10,
+  popover: 500,
+  overlay: 1000,
+  modal: 1100,
+  toast: 1300,
+  tooltip: 1400,
 };
 
 export const defaultTheme = {

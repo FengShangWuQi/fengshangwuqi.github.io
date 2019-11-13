@@ -17,7 +17,7 @@ export const PostHeader = ({ children }: { children: React.ReactNode }) => {
           ...position("absolute", 0, 0, 0, 0),
           background: "transparent",
           boxShadow: "inset 120px 100px 500px 50px rgba(0, 0, 0, 0.75)",
-          zIndex: ds.zIndex[50],
+          zIndex: ds.zIndex.affix,
         }}
       />
       {children}
