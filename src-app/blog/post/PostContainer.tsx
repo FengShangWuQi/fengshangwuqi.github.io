@@ -1,5 +1,5 @@
 import React from "react";
-import { rgba, border, margin, padding } from "polished";
+import { rgba, border, margin, padding, ellipsis } from "polished";
 
 import { rhythm, flex } from "src-core/style";
 
@@ -21,6 +21,9 @@ export const PostContainer = ({ children }: { children: React.ReactNode }) => {
         "& a:not(.anchor):not(.gatsby-resp-image-link):not(.vglnk)": {
           ...border("bottom", 1, "solid", "#ddd"),
           background: rgba("#ddd", 0.3),
+        },
+        h3: {
+          ...ellipsis(),
         },
         ul: {
           marginTop: rhythm(1),
