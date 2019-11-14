@@ -99,7 +99,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
-    "@testing-library/jest-dom": "4.2.3",
+    "@testing-library/jest-dom": "4.2.4",
     "@testing-library/react": "9.3.2",
     "@testing-library/react-hooks": "3.2.1",
     "@types/cross-spawn": "6.0.1",
