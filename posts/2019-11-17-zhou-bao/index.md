@@ -46,7 +46,7 @@ Chrome 的目标是让用户告别加载延迟，未来，Chrome 可能会在在
 
 ### 1、[react-interactive-paycard](https://github.com/jasminmif/react-interactive-paycard)
 
-![react-interactive-paycard](./images/react-interactive-paycard.gif)
+![react-interactive-paycard](./images/react-interactive-paycard.jpg)
 
 有人看到 [JavaScript Weekly](https://javascriptweekly.com/issues/461) 最近展示的 [vue-interactive-paycard](https://github.com/muhammederdem/vue-interactive-paycard)，认为我们也需要 React 版本。
 
