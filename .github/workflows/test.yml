@@ -4,19 +4,18 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@master
+    - uses: actions/checkout@master
 
-    - name: setup node
+    - name: Setup Node
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - name: install dependencies
-      run: |
+
+    - run: |
         npm ci
         cd tools
-        npm install && npm run bootstrap
-    - name: run tsc
-      run: npm run tsc
-    - name: run test
-      run: npm test
+        npm ci && npm run bootstrap
+
+    - run: npm run tsc
+
+    - run: npm test

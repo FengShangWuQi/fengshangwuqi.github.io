@@ -10,22 +10,21 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@master
+    - uses: actions/checkout@master
 
-    - name: setup node
+    - name: Setup Node
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
         registry-url: 'https://npm.pkg.github.com'
-    - name: install dependencies
-      run: |
+
+    - run: |
         cd tools
         npm ci
-    - name: build and publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
-      run: |
+
+    - run: |
         cd tools
         npm run build
         npm run r
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}

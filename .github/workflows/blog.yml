@@ -7,14 +7,28 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@master
+    - uses: actions/checkout@master
+      
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+
+    - name: Cache dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - run: npm ci
+      
+    - run: npm start bg b
     
-    - name: build and deploy
-      uses: JamesIves/github-pages-deploy-action@master
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
       env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: dev
-        BRANCH: master
-        BUILD_SCRIPT: npm ci && npm start bg b
-        FOLDER: public
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./public
