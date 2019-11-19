@@ -21,7 +21,7 @@ const BlogGlobal = () => {
     <Global
       styles={{
         html: {
-          fontSize: ds.fontSize.base,
+          fontSize: ds.size.base,
         },
       }}
     />

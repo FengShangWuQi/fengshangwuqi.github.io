@@ -17,7 +17,7 @@ export const Title = ({
       css={[
         {
           ...margin(ds.spacing[12], 0, ds.spacing[4]),
-          fontSize: ds.fontSize.xl,
+          fontSize: ds.size.xl,
         },
         withBorder
           ? {

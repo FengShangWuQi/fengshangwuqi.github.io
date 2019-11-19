@@ -58,7 +58,7 @@ const lineHeights = {
   taller: 2,
 };
 
-const fontSize = {
+const size = {
   xs: "0.75rem",
   sm: "0.875rem",
   base: "1rem",
@@ -71,7 +71,7 @@ const fontSize = {
   "6xl": "4rem",
 };
 
-const borderRadius = {
+const radius = {
   none: "0",
   sm: "0.125rem",
   default: "0.25rem",
@@ -100,8 +100,8 @@ export const defaultTheme = {
 
   spacing,
   lineHeights,
-  fontSize,
-  borderRadius,
+  size,
+  radius,
   zIndex,
 };
 

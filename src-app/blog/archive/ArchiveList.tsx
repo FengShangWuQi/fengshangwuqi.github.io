@@ -40,7 +40,7 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
     <div
       css={{
         ...position("relative"),
-        fontSize: ds.fontSize.sm,
+        fontSize: ds.size.sm,
 
         "&:before": {
           ...position("absolute"),
@@ -92,7 +92,7 @@ const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
             marginLeft: -3,
             width: 8,
             height: 8,
-            borderRadius: ds.borderRadius.default,
+            borderRadius: ds.radius.default,
             background: isHovered ? ds.color.primary : ds.colorPalette.white,
           }}
         />

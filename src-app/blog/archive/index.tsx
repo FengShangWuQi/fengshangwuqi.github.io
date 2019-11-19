@@ -20,7 +20,7 @@ export const Archive = ({ posts, totalCount }: IArchive) => {
         <span
           css={{
             marginLeft: 8,
-            fontSize: ds.fontSize.xs,
+            fontSize: ds.size.xs,
           }}>{`${totalCount} 篇`}</span>
       </Title>
 

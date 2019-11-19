@@ -15,7 +15,7 @@ export const Source = ({ path }: { path: string }) => {
           alignItems: "center",
         }),
         marginTop: ds.spacing[5],
-        fontSize: ds.fontSize.xs,
+        fontSize: ds.size.xs,
       }}
       href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/${path}`}
       target="_blank"

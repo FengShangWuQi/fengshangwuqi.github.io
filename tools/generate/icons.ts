@@ -53,14 +53,14 @@ const iconStorybook = (icons: string[]) => `
               <span
                 css={{
 									justifySelf: "center",
-                  fontSize: ds.fontSize["4xl"],
+                  fontSize: ds.size["4xl"],
                 }}>
                 <${getIconName(name)} />
               </span>
 							<span
 								css={{
 									justifySelf: "center",
-                  fontSize: ds.fontSize.sm,
+                  fontSize: ds.size.sm,
 								}}>
 								IconGithubFill
 							</span>

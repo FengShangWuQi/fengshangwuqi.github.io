@@ -29,7 +29,7 @@ export const SideBar = ({
             css={{
               lineHeight: "32px",
               color: ds.color.secondary,
-              fontSize: ds.fontSize.lg,
+              fontSize: ds.size.lg,
               fontWeight: "bold",
             }}>
             {module}
@@ -39,7 +39,7 @@ export const SideBar = ({
               <Link
                 css={{
                   color: ds.color.text,
-                  fontSize: ds.fontSize.sm,
+                  fontSize: ds.size.sm,
                 }}
                 key={title}
                 to={`/${group}/${module}/${title}`}>

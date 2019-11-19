@@ -95,7 +95,7 @@ const LatestItem = ({
       <p
         css={{
           ...margin(16, 0),
-          fontSize: ds.fontSize.xs,
+          fontSize: ds.size.xs,
           color: ds.color.textLight,
         }}>
         {excerpt}

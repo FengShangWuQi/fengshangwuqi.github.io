@@ -35,7 +35,7 @@ const Group = ({ theme }: { theme: string[] }) => {
         <Block
           key={value}
           css={{
-            fontSize: ds.fontSize.sm,
+            fontSize: ds.size.sm,
             background: color[value as keyof typeof color],
           }}>
           {value.toUpperCase()}

@@ -31,7 +31,7 @@ export const Header = ({
                 css={{
                   paddingTop: 16,
                   lineHeight: "28px",
-                  fontSize: ds.fontSize.sm,
+                  fontSize: ds.size.sm,
                 }}>
                 <SocialLink
                   src={`https://github.com/${social["GitHub"]}`}
@@ -113,7 +113,7 @@ const Title = () => {
       css={{
         lineHeight: "63px",
         fontFamily: "serif",
-        fontSize: ds.fontSize["4xl"],
+        fontSize: ds.size["4xl"],
         color: "#fff",
         letterSpacing: 2,
       }}>
@@ -129,7 +129,7 @@ const Contact = ({ Email }: { Email: string }) => {
     <div
       css={{
         fontFamily: "sans-serif",
-        fontSize: ds.fontSize.sm,
+        fontSize: ds.size.sm,
         fontWeight: 400,
         lineHeight: "28px",
         color: "#ddd",

@@ -87,7 +87,7 @@ const Group = ({
         css={{
           marginTop: ds.spacing[5],
           marginBottom: ds.spacing[1],
-          fontSize: ds.fontSize.sm,
+          fontSize: ds.size.sm,
         }}>
         {startCase(color)}
       </div>
