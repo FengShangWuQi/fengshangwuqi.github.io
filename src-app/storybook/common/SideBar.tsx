@@ -30,7 +30,7 @@ export const SideBar = ({
               lineHeight: "32px",
               color: ds.color.secondary,
               fontSize: ds.size.lg,
-              fontWeight: "bold",
+              fontWeight: ds.weight.bold,
             }}>
             {module}
           </div>

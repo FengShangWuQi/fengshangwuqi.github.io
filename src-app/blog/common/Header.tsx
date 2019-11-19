@@ -130,7 +130,6 @@ const Contact = ({ Email }: { Email: string }) => {
       css={{
         fontFamily: "sans-serif",
         fontSize: ds.size.sm,
-        fontWeight: 400,
         lineHeight: "28px",
         color: "#ddd",
         WebkitFontSmoothing: "antialiased",

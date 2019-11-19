@@ -1,8 +1,8 @@
 import React from "react";
 import { padding } from "polished";
 
-import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
+import { pickElmAttrs } from "src-core/react";
 
 export interface ITag {
   color: string;
@@ -11,6 +11,8 @@ export interface ITag {
 }
 
 export const PostTag = ({ tag }: { tag: string }) => {
+  const ds = useDesignSystem();
+
   const getTagProps = (tag: string) => {
     switch (tag) {
       case "React":
@@ -36,7 +38,7 @@ export const PostTag = ({ tag }: { tag: string }) => {
     <Tag
       css={{
         marginRight: 4,
-        fontWeight: "bold",
+        fontWeight: ds.weight.bold,
       }}
       color={color}
       bg={bg}>

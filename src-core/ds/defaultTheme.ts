@@ -1,3 +1,4 @@
+import { CSSObject } from "@emotion/core";
 import { rgba } from "polished";
 
 import { colorPalette } from "./colorPalette";
@@ -48,29 +49,6 @@ const spacing = {
   "64": "16rem",
 };
 
-const lineHeights = {
-  normal: "normal",
-  none: 1,
-  shorter: 1.25,
-  short: 1.375,
-  base: 1.5,
-  tall: 1.625,
-  taller: 2,
-};
-
-const size = {
-  xs: "0.75rem",
-  sm: "0.875rem",
-  base: "1rem",
-  lg: "1.125rem",
-  xl: "1.25rem",
-  "2xl": "1.5rem",
-  "3xl": "1.875rem",
-  "4xl": "2.25rem",
-  "5xl": "3rem",
-  "6xl": "4rem",
-};
-
 const radius = {
   none: "0",
   sm: "0.125rem",
@@ -90,17 +68,47 @@ const zIndex = {
   tooltip: 1400,
 };
 
-export const defaultTheme = {
-  color,
-  colorPalette,
-
+const typography = {
   fontFamily: {
     system: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif`,
   },
 
+  weight: {
+    bold: "bold" as CSSObject["fontWeight"],
+    normal: "normal" as CSSObject["fontWeight"],
+  },
+
+  size: {
+    xs: "0.75rem",
+    sm: "0.875rem",
+    base: "1rem",
+    lg: "1.125rem",
+    xl: "1.25rem",
+    "2xl": "1.5rem",
+    "3xl": "1.875rem",
+    "4xl": "2.25rem",
+    "5xl": "3rem",
+    "6xl": "4rem",
+  },
+
+  lineHeight: {
+    normal: "normal",
+    none: 1,
+    shorter: 1.25,
+    short: 1.375,
+    base: 1.5,
+    tall: 1.625,
+    taller: 2,
+  },
+};
+
+export const defaultTheme = {
+  color,
+  colorPalette,
+
+  ...typography,
+
   spacing,
-  lineHeights,
-  size,
   radius,
   zIndex,
 };
