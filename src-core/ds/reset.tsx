@@ -14,6 +14,7 @@ export const DSReset = () => {
       <Global
         styles={{
           body: {
+            margin: 0,
             fontFamily: ds.fontFamily.system,
             color: ds.color.text,
             background: ds.color.bg,
