@@ -8,8 +8,6 @@ date: 2019-11-10
 cover: header.png
 ---
 
-每周天晚更新
-
 ## 前端动态
 
 ### 1、[TypeScript 发布 3.7](https://devblogs.microsoft.com/typescript/announcing-typescript-3-7/)
