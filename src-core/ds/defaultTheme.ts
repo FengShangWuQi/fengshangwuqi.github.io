@@ -8,6 +8,7 @@ export enum breakpoint {
   lg = 1024,
   xl = 1280,
 }
+export type breakpointKey = keyof typeof breakpoint;
 
 const color = {
   primary: colorPalette.blue[500],
@@ -45,6 +46,16 @@ const spacing = {
   "48": "12rem",
   "56": "14rem",
   "64": "16rem",
+};
+
+const lineHeights = {
+  normal: "normal",
+  none: 1,
+  shorter: 1.25,
+  short: 1.375,
+  base: 1.5,
+  tall: 1.625,
+  taller: 2,
 };
 
 const fontSize = {
@@ -88,10 +99,9 @@ export const defaultTheme = {
   },
 
   spacing,
-
+  lineHeights,
   fontSize,
   borderRadius,
-
   zIndex,
 };
 
