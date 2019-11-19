@@ -6,7 +6,6 @@ const {
   pathPrefix,
   sources,
   mdx,
-  typography,
   analytics,
   ts,
   emotion,
@@ -20,7 +19,6 @@ const {
 const plugins = [
   ts,
   emotion,
-  typography,
   ...sources,
   mdx,
   ...sharps,

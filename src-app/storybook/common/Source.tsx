@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
-import { inlineFlex, rhythm } from "src-core/style";
+import { inlineFlex } from "src-core/style";
 
 import { IconGithubFill } from "src-components/basic/Icon";
 
@@ -14,7 +14,7 @@ export const Source = ({ path }: { path: string }) => {
         ...inlineFlex({
           alignItems: "center",
         }),
-        marginTop: rhythm(2),
+        marginTop: ds.spacing[5],
         fontSize: ds.fontSize.xs,
       }}
       href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/${path}`}

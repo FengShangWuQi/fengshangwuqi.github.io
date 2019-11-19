@@ -1,7 +1,6 @@
 import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
-import { rhythm } from "src-core/style";
 
 export const Content = ({
   title,
@@ -15,7 +14,7 @@ export const Content = ({
   return (
     <div
       css={{
-        marginBottom: rhythm(5),
+        marginBottom: "7rem",
         "&:last-of-type": {
           marginBottom: 0,
         },

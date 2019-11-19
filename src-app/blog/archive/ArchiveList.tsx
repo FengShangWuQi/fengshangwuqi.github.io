@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import { rgba, ellipsis, padding, position } from "polished";
+import { rgba, ellipsis, padding, position, border } from "polished";
 
 import { useHover } from "src-core/react";
-import { rhythm, flex, mq } from "src-core/style";
+import { flex, mq } from "src-core/style";
 import { useDesignSystem } from "src-core/ds";
 
 import { PostTag } from "../post/PostTag";
@@ -84,27 +84,27 @@ const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
             alignItems: "center",
           }),
           ...position("relative"),
-          ...padding(rhythm(3 / 4), 0),
+          ...padding(ds.spacing[4], 0),
         }}>
         <div
           style={{
+            ...border(1, "solid", ds.color.primary),
             marginLeft: -3,
             width: 8,
             height: 8,
             borderRadius: ds.borderRadius.default,
-            border: `1px solid ${ds.color.primary}`,
-            background: isHovered ? ds.color.primary : ds.color.bg,
+            background: isHovered ? ds.color.primary : ds.colorPalette.white,
           }}
         />
 
         <div
           css={{
             ...ellipsis(),
-            marginLeft: rhythm(7 / 8),
+            marginLeft: ds.spacing[4],
           }}>
           <Link
             css={{
-              marginRight: rhythm(1 / 3),
+              marginRight: ds.spacing[3],
               color: ds.color.textLight,
             }}
             to={path}>
@@ -117,12 +117,10 @@ const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
       </div>
       <div
         css={{
-          marginLeft: rhythm(10 / 9),
+          marginLeft: ds.spacing[5],
         }}>
         <time
           css={{
-            width: 90,
-            minWidth: 90,
             color: rgba(ds.color.textLight, 0.3),
           }}>
           {date}

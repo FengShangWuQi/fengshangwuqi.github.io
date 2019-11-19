@@ -1,19 +1,21 @@
 import React from "react";
-import { padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { rhythm } from "src-core/style";
+import { mq } from "src-core/style";
 
 export const Wrapper = ({ children }: { children: React.ReactNode }) => {
   const ds = useDesignSystem();
 
   return (
     <div
-      css={{
-        ...padding(0, 25, rhythm(5 / 2)),
+      css={mq(["lg"], {
+        padding: [
+          `${ds.spacing[1]} ${ds.spacing[6]} 3.5rem`,
+          `${ds.spacing[1]} ${ds.spacing[8]} 3.5rem`,
+        ],
         boxShadow: `inset 0 0 30px ${ds.color.bgLight}`,
         overflow: "hidden",
-      }}>
+      })}>
       {children}
     </div>
   );

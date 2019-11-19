@@ -34,13 +34,6 @@ exports.sources = process.env.SOURCES.split(" ").map(source => ({
   },
 }));
 
-exports.typography = {
-  resolve: "gatsby-plugin-typography",
-  options: {
-    pathToConfigModule: "src-core/style/typography",
-  },
-};
-
 exports.analytics = {
   resolve: "gatsby-plugin-google-analytics",
   options: {

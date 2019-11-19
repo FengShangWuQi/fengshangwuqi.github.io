@@ -5,7 +5,6 @@ const {
   siteMetadata,
   pathPrefix,
   sources,
-  typography,
   analytics,
   mdx,
   ts,
@@ -20,7 +19,6 @@ const {
 const plugins = [
   ts,
   emotion,
-  typography,
   ...sources,
   mdx,
   ...sharps,

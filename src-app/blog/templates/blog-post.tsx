@@ -3,10 +3,10 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { CSSObject } from "@emotion/core";
-import { margin, padding } from "polished";
+import { margin } from "polished";
 
 import { useDesignSystem, PrismTheme } from "src-core/ds";
-import { rhythm } from "src-core/style";
+import { mq } from "src-core/style";
 import { SEO } from "src-core/seo";
 
 import { Layout } from "../common/Layout";
@@ -73,6 +73,7 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
       },
     },
   } = mdx;
+
   return (
     <Layout>
       <SEO
@@ -98,12 +99,12 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
       </PostHeader>
 
       <Wrapper>
-        <h1>{postTitle}</h1>
-
-        <PostDate style={{ marginTop: 5 }} date={date} />
-        <PostTags tags={tags} />
-
         <PostContainer>
+          <h1>{postTitle}</h1>
+
+          <PostDate style={{ marginTop: 5 }} date={date} />
+          <PostTags tags={tags} />
+
           <MDXRenderer>{body}</MDXRenderer>
         </PostContainer>
       </Wrapper>
@@ -174,21 +175,25 @@ const PostEditLink = ({
   </div>
 );
 
-const PostDiscussion = ({ url, slug }: { url: string; slug: string }) => (
-  <div
-    css={{
-      ...margin(rhythm(3), "auto", 0),
-      ...padding(0, 25),
-      maxWidth: 700,
-    }}>
-    <Discussion
-      shortname="feng-shang-wu-qi-de-ri-zhi"
-      config={{
-        identifier: slug,
-        url,
-      }}
-    />
-  </div>
-);
+const PostDiscussion = ({ url, slug }: { url: string; slug: string }) => {
+  const ds = useDesignSystem();
+
+  return (
+    <div
+      css={mq(["sm"], {
+        ...margin(ds.spacing[12], "auto", 0),
+        padding: [`0 ${ds.spacing[4]}`, 0],
+        maxWidth: 700,
+      })}>
+      <Discussion
+        shortname="feng-shang-wu-qi-de-ri-zhi"
+        config={{
+          identifier: slug,
+          url,
+        }}
+      />
+    </div>
+  );
+};
 
 export default BlogPost;

@@ -2,22 +2,24 @@ import React from "react";
 import { CSSObject } from "@emotion/core";
 import { padding } from "polished";
 
+import { useDesignSystem } from "src-core/ds";
 import { pickElmAttrs } from "src-core/react";
-import { rhythm } from "src-core/style";
 
 import { MenuMode, useMenu } from "./Menu";
 
 const menuItemStyle: CSSObject = {};
 
 const menuItemModeStyle = (mode: MenuMode, right: boolean): CSSObject => {
+  const ds = useDesignSystem();
+
   switch (mode) {
     case MenuMode.HORIZONTAL:
-      return { ...padding(0, rhythm(3 / 4)), float: right ? "right" : "left" };
+      return { ...padding(0, ds.spacing[4]), float: right ? "right" : "left" };
     case MenuMode.VERTICAL:
       return {
         height: 32,
         lineHeight: "32px",
-        paddingLeft: rhythm(1 / 2),
+        paddingLeft: ds.spacing[3],
       };
   }
 };

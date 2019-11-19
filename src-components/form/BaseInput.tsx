@@ -4,7 +4,7 @@ import { margin, padding } from "polished";
 import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 
-import { rhythm, flex } from "src-core/style";
+import { flex } from "src-core/style";
 
 import { IFieldInnerProps } from "./Field";
 
@@ -39,7 +39,7 @@ export const BaseInputWrapper = ({
   return (
     <div
       css={{
-        ...margin(rhythm(2 / 3), 0),
+        ...margin(ds.spacing[3], 0),
       }}>
       {label && (
         <span
@@ -71,11 +71,15 @@ export const BaseInputWrapper = ({
   );
 };
 
-export const Input = (props: IInputProps) => (
-  <input
-    css={{
-      ...padding(rhythm(1 / 7), rhythm(1 / 4)),
-    }}
-    {...pickElmAttrs(props)}
-  />
-);
+export const Input = (props: IInputProps) => {
+  const ds = useDesignSystem();
+
+  return (
+    <input
+      css={{
+        ...padding(ds.spacing[1], ds.spacing[2]),
+      }}
+      {...pickElmAttrs(props)}
+    />
+  );
+};

@@ -5,24 +5,12 @@ import produce from "immer";
 
 import { Bootstrap, pickElmAttrs } from "src-core/react";
 import { useDesignSystem, defaultTheme, PrismTheme } from "src-core/ds";
-import { rhythm } from "src-core/style";
 
 export const storybookTheme = produce(defaultTheme, theme => {
   theme.color.primary = "#c2185b";
   theme.color.secondary = rgba("#c2185b", 0.85);
   theme.color.bg = "#fafafa";
 });
-
-export const Layout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <Bootstrap ds={storybookTheme}>
-      <StorybookGlobal />
-      <PrismTheme />
-
-      {children}
-    </Bootstrap>
-  );
-};
 
 const StorybookGlobal = () => {
   const ds = useDesignSystem();
@@ -37,13 +25,13 @@ const StorybookGlobal = () => {
         },
 
         h1: {
-          marginBottom: rhythm(1),
+          marginBottom: ds.spacing[5],
         },
 
         h3: {
-          ...margin(rhythm(3 / 2), 0, rhythm(1)),
+          ...margin(ds.spacing[10], 0, ds.spacing[5]),
           ...border("bottom", 1, "solid", ds.color.primary),
-          paddingBottom: rhythm(1 / 2),
+          paddingBottom: ds.spacing[3],
         },
 
         button: {
@@ -92,5 +80,16 @@ export const Container = ({
       }}>
       {children}
     </div>
+  );
+};
+
+export const Layout = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <Bootstrap ds={storybookTheme}>
+      <StorybookGlobal />
+      <PrismTheme />
+
+      {children}
+    </Bootstrap>
   );
 };
