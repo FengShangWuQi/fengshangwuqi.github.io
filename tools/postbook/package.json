@@ -28,7 +28,7 @@
     "os": "0.1.1",
     "pinyin": "2.9.0",
     "regexpu-core": "4.6.0",
-    "yargs": "14.2.0"
+    "yargs": "14.2.2"
   },
   "devDependencies": {
     "@types/fs-extra": "8.0.1",
