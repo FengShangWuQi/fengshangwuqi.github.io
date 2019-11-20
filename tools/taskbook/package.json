@@ -9,7 +9,6 @@
     "lib/"
   ],
   "scripts": {
-    "check": "npm-check -u -E",
     "start": "ts-node ./cli.ts"
   },
   "bin": {

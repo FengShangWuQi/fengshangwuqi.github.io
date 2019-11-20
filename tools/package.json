@@ -3,7 +3,7 @@
   "private": true,
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "scripts": {
-    "check": "npm-check -u -E",
+    "check": "npm-check -u -E && lerna exec -- npm-check -u -E",
     "bootstrap": "lerna bootstrap",
     "build": "lerna exec -- rollup -c ../rollup.config.js",
     "r": "lerna publish from-package --yes"
