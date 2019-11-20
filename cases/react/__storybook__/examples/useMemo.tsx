@@ -9,7 +9,7 @@ export const UseMemoDemo = () => {
 
   const expensiveFn = () => {
     console.log(`expensive compute`);
-    return "xx";
+    return "memoizedValue";
   };
 
   const memoizedValue = useMemo(expensiveFn, []);
@@ -20,17 +20,15 @@ export const UseMemoDemo = () => {
         {count} - {memoizedValue}
       </div>
 
-      <div>
-        <button
-          css={{
-            marginTop: ds.spacing[2],
-          }}
-          onClick={() => {
-            setCount(count => count + 1);
-          }}>
-          click
-        </button>
-      </div>
+      <button
+        css={{
+          marginTop: ds.spacing[2],
+        }}
+        onClick={() => {
+          setCount(count => count + 1);
+        }}>
+        click
+      </button>
     </div>
   );
 };
