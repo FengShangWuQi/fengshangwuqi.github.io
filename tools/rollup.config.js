@@ -2,6 +2,7 @@ import path from "path";
 import babel from "rollup-plugin-babel";
 import nodeResolve from "rollup-plugin-node-resolve";
 import builtins from "rollup-plugin-node-builtins";
+import { terser } from "rollup-plugin-terser";
 
 const pkg = require(path.join(process.cwd(), "package.json"));
 
@@ -28,5 +29,6 @@ module.exports = {
       exclude: "node_modules/**",
       extensions: [".ts"],
     }),
+    terser(),
   ],
 };
