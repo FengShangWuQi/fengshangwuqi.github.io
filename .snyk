@@ -13,4 +13,11 @@ ignore:
     - gatsby > @gatsbyjs/relay-compiler > yargs > os-locale > mem:
         reason: None given
         expires: '2019-12-10T10:14:53.094Z'
+  SNYK-JS-ELLIPTIC-511941:
+    - gatsby > webpack > node-libs-browser > crypto-browserify > browserify-sign > elliptic:
+        reason: None given
+        expires: '2019-12-21T14:47:21.988Z'
+    - gatsby > webpack > node-libs-browser > crypto-browserify > create-ecdh > elliptic:
+        reason: None given
+        expires: '2019-12-21T14:47:21.988Z'
 patch: {}
