@@ -7,6 +7,7 @@
 - [blog](https://fengshangwuqi.github.io)
 - [storybook](https://fengshangwuqi.netlify.com/)
 - [taskbook](https://github.com/FengShangWuQi/fengshangwuqi.github.io/packages/26967)
+- [postbook](https://github.com/FengShangWuQi/fengshangwuqi.github.io/packages/53341)
 
 我的微信，添加请备注来源
 
