@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/postbook",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "在终端友好地管理你的 posts",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "entry": "cli.ts",
@@ -9,7 +9,7 @@
     "lib/"
   ],
   "scripts": {
-    "start": "ts-node ./cli.ts'"
+    "start": "ts-node ./cli.ts"
   },
   "bin": {
     "pb": "./lib/index.js"

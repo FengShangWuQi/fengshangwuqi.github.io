@@ -1,54 +1,18 @@
-import * as path from "path";
 import * as fse from "fs-extra";
-import * as os from "os";
-import * as pinyin_ from "pinyin";
-import * as rewritePattern_ from "regexpu-core";
-import chalk from "chalk";
+import * as chalk from "chalk";
 
-const pinyin = pinyin_;
-const rewritePattern = rewritePattern_;
-
-const configPath = path.join(os.homedir(), ".postbook", "config.json");
-
-const successLog = (message: string) => {
-  console.log(`${chalk.green(" success ".toUpperCase())} ${message}`);
-};
-
-const errorLog = (text: string | Error) => {
-  console.log(`${chalk.red("error")} ${text}`);
-};
-
-const formatDate = (date: Date) =>
-  `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
-
-const getPingYinTitle = (title: string) => {
-  const cnPattern = rewritePattern("\\p{Unified_Ideograph}", "u", {
-    unicodePropertyEscape: true,
-    useUnicodeFlag: true,
-  });
-  const pattern = `[^${cnPattern.slice(1, -1)}^a-z^A-Z^0-9/s]`;
-  const re = new RegExp(pattern, "gu");
-
-  const pingyinTitle = pinyin(title.replace(re, ""), {
-    style: pinyin.STYLE_NORMAL,
-  }).reduce((prev, curr) => prev.concat(`-${curr[0]}`), "");
-
-  return pingyinTitle;
-};
-
-const getConfig = () => {
-  if (fse.pathExistsSync(configPath)) {
-    const config = fse.readJsonSync(configPath);
-
-    return config;
-  }
-
-  errorLog("config file not found, pb init first.");
-};
+import {
+  getConfig,
+  pbPath,
+  configPath,
+  templateDir,
+  getTemplateContent,
+} from "./storage";
+import { successLog, errorLog, formatDate, getPingYinTitle } from "./utils";
 
 export const init = () => {
-  if (fse.pathExistsSync(configPath)) {
-    errorLog("config file existed, not pb init again");
+  if (fse.pathExistsSync(pbPath)) {
+    errorLog("config file existed, do not pb init again");
   } else {
     fse.outputJsonSync(
       configPath,
@@ -57,8 +21,10 @@ export const init = () => {
       },
       { spaces: 2 },
     );
+    fse.ensureDirSync(templateDir);
 
-    successLog(`init complete, create ${configPath}`);
+    successLog(`create ${configPath}`);
+    successLog(`create ${templateDir}`);
   }
 };
 
@@ -77,7 +43,18 @@ export const listPosts = () => {
     .map(post => console.log(`${" ".repeat(4)}${chalk.green(post)}\n`));
 };
 
-export const createPost = ({ title }: { title: string }) => {
+export const createPost = ({
+  title,
+  template,
+}: {
+  title: string;
+  template?: string;
+}) => {
+  if (!title) {
+    errorLog("title illegal");
+    return;
+  }
+
   const { postPath } = getConfig();
 
   const date = formatDate(new Date());
@@ -89,10 +66,10 @@ export const createPost = ({ title }: { title: string }) => {
     original: true,
     tags: ["Front-End"],
     date,
-    cover: "header.png",
+    cover: "header.jpg",
   };
 
-  const content = Object.keys(meta).reduce(
+  const metaContent = Object.keys(meta).reduce(
     (prev, curr) =>
       curr === "tags"
         ? prev.concat(
@@ -102,9 +79,13 @@ export const createPost = ({ title }: { title: string }) => {
     "",
   );
 
+  const finalContent = template
+    ? `---\n${metaContent}---\n\n${getTemplateContent(template)}`
+    : `---\n${metaContent}---`;
+
   const filePath = `${postPath}/${folderName}/index.md`;
 
-  fse.outputFileSync(filePath, `---\n${content}---`);
+  fse.outputFileSync(filePath, finalContent);
 
   successLog(`create ${filePath}`);
 };

@@ -19,9 +19,18 @@ cli.command({
   command: "create [title]",
   desc: "Create Post",
   aliases: "add",
+  builder: (yargs: any) =>
+    yargs.options({
+      t: {
+        alias: "template",
+        type: "string",
+        describe: `Add template`,
+      },
+    }),
   handler: (argv: any) => {
     pb.createPost({
       title: argv.title,
+      template: argv.template,
     });
   },
 });
