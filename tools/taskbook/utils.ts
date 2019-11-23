@@ -1,4 +1,4 @@
-import chalk from "chalk";
+import * as chalk from "chalk";
 import * as signale from "signale";
 
 signale.config({ displayLabel: false });
@@ -25,13 +25,3 @@ export const formatDate = (date: Date) =>
   `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
 
 export const today = new Date();
-
-export const getLastDayOfWeek = () => {
-  const date = new Date();
-
-  return new Date(
-    date.getFullYear(),
-    date.getMonth(),
-    date.getDate() + 7 - date.getDay(),
-  );
-};

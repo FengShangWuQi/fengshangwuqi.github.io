@@ -24,7 +24,6 @@ import {
   withWrap,
   formatDate,
   today,
-  getLastDayOfWeek,
 } from "./utils";
 
 class Taskbook {
@@ -118,13 +117,9 @@ class Taskbook {
 
     if (taskDesc) {
       let endTime = {};
-      switch (board) {
-        case "daily":
-          endTime = { endTime: formatDate(today) };
-          break;
-        case "weekly":
-          endTime = { endTime: formatDate(getLastDayOfWeek()) };
-          break;
+
+      if (board === "daily") {
+        endTime = { endTime: formatDate(today) };
       }
 
       item = new Task({
@@ -260,31 +255,6 @@ class Taskbook {
     });
   }
 
-  autoWeeklyItemsStatus() {
-    const data = this.groupByBoard() as {
-      [key: string]: Array<any>;
-    };
-    const weeklyBoardName = this.getBoardName("weekly");
-
-    return (data[weeklyBoardName] || []).map(item => {
-      const lastDayOfWeek = formatDate(getLastDayOfWeek());
-      if (
-        (!item.endTime || item.endTime !== lastDayOfWeek) &&
-        item.status === 1
-      ) {
-        const newItem = {
-          ...item,
-          endTime: lastDayOfWeek,
-          status: 0,
-          board: "weekly",
-        };
-        this.updateItem(newItem);
-        return newItem;
-      }
-      return item;
-    });
-  }
-
   displayBoard(board: string, items: any) {
     const { done, pending } = this.getItemsStats(items);
 
@@ -334,16 +304,13 @@ class Taskbook {
     const data = this.groupByBoard() as {
       [key: string]: Array<any>;
     };
-    const dailyBoardName = this.getBoardName("daily");
-    const weeklyBoardName = this.getBoardName("weekly");
 
+    const dailyBoardName = this.getBoardName("daily");
     const dailyItems = this.autoDailyItemsStatus();
-    const weeklyItems = this.autoWeeklyItemsStatus();
 
     const newDate = {
       ...data,
       [dailyBoardName]: dailyItems,
-      [weeklyBoardName]: weeklyItems,
     };
 
     Object.keys(newDate)
