@@ -29,7 +29,9 @@ const iconStorybook = (icons: string[]) => `
     import { useDesignSystem } from "src-core/ds";
     import { grid } from "src-core/style";
     
-    import { ${icons.map(name => getIconName(name)).join(",")} } from ".."
+    import { ${icons
+      .map(name => getIconName(name))
+      .join(",")} } from "../../Icon"
     
     export const IconDemo = () => {
         const ds = useDesignSystem();
@@ -89,7 +91,8 @@ export const generateIcons = () => {
   );
   successGenerate(exportPath);
 
-  const sbPath = process.cwd() + "/src-components/basic/__storybook__/Icon.tsx";
+  const sbPath =
+    process.cwd() + "/src-components/basic/__storybook__/examples/Icon.tsx";
   fse.ensureFileSync(sbPath);
   fse.writeFileSync(sbPath, formatCode(iconStorybook(icons), sbPath));
   successGenerate(sbPath);
