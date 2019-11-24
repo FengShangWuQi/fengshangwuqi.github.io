@@ -86,14 +86,14 @@ GitHub 宣布开放 **Arctic Code Vault**（“北极代码库”）的计划。
 
 GitHub 首次发布官方的手机客户端，iOS 用户可 “尝鲜”，安卓版将稍后发布。目前还是 beta（公测版），可以通过 [官方渠道](https://github.com/mobile/beta?platforms=ios) 进行下载。
 
-## 最后
+## 最后一提
 
-> 问你一个简单的问题
+1、上周留了一个问题，答案是不管程序执行多少道，最终打印的都是 **["first", "second"]**，因为 [Promise.all](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) 返回值将会按照参数内的 promise 顺序排列，而不是由调用 promise 的完成顺序决定。
+
+2、a.x 是什么
 
 ```jsx
 var a = { n: 1 };
-
 a.x = a = { n: 2 };
-
-alert(a.x); // --> a.x 是什么
+console.log(a.x);
 ```
