@@ -108,11 +108,9 @@ Chakra UI 提供了一组可访问，可重用和可组合的 React 组件，这
 
 开发者报告，苹果 Mac App Store 的应用审核流程开始自动拒绝使用 Electron 框架开发的 App，原因是它们使用的私有 API 调用。这些 API 调用是 Electron 框架的一部分，并不在应用之中。
 
-## 最后
+## 最后一提
 
-> 作者留了一个问题给你，并且不给答案。
-
-我们有一个 timer 函数，它返回的是一个 Promise，这个 Promise 在随机一段时间后 resolve。我们用 Promise.all 接受两个 timer，最终打印的是什么？
+1、我们有一个 timer 函数，它返回的是一个 Promise，这个 Promise 在随机一段时间后 resolve。我们用 Promise.all 接受两个 timer，最终打印的是什么？
 
 ```js
 const timer = a => {
