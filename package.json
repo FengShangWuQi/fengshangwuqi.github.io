@@ -68,7 +68,7 @@
     "gatsby-plugin-offline": "3.0.22",
     "gatsby-plugin-page-creator": "2.1.31",
     "gatsby-plugin-react-helmet": "3.1.15",
-    "gatsby-plugin-sharp": "2.3.2",
+    "gatsby-plugin-sharp": "2.3.3",
     "gatsby-plugin-svgr": "2.0.2",
     "gatsby-plugin-twitter": "2.1.14",
     "gatsby-plugin-typescript": "2.1.19",
