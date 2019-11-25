@@ -19,4 +19,4 @@ const expensiveFn = () => {
 const memoizedValue = useMemo(expensiveFn, []);
 ```
 
-<Source path="cases/css/__storybook__/examples/useMemo.tsx" />
+<Source path="cases/react/__storybook__/examples/useMemo.tsx" />
