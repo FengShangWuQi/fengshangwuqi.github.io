@@ -105,5 +105,4 @@ const cmd = argv._[0];
 
 if (!cmd) {
   tb.displayItemsByBoard();
-  tb.displayStats();
 }

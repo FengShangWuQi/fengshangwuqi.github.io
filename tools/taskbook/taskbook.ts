@@ -1,3 +1,6 @@
+import * as chalk from "chalk";
+import * as signale from "signale";
+
 import { storage, tbPath } from "./storage";
 import {
   Task,
@@ -7,24 +10,12 @@ import {
   validateStatus,
 } from "./task";
 import { Note } from "./note";
-import {
-  log,
-  note,
-  pending,
-  underline,
-  dim,
-  success,
-  message,
-  green,
-  magenta,
-  blue,
-  red,
-  yellow,
-  isUndefined,
-  withWrap,
-  formatDate,
-  today,
-} from "./utils";
+import { message, isUndefined, withWrap, formatDate } from "./utils";
+
+signale.config({ displayLabel: false });
+
+const { log, note, pending, success } = signale;
+const { underline, red, yellow, gray } = chalk;
 
 class Taskbook {
   data = storage.getData(tbPath);
@@ -67,29 +58,6 @@ class Taskbook {
     }, {});
   }
 
-  getItemsStats(items: Array<any>) {
-    let [pending, done, notes] = [0, 0, 0];
-
-    items.forEach(item => {
-      if (item.isTask) {
-        switch (item.status) {
-          case statusType.done: {
-            done++;
-            break;
-          }
-          case statusType.pending: {
-            pending++;
-            break;
-          }
-        }
-      } else {
-        notes++;
-      }
-    });
-
-    return { done, pending, notes };
-  }
-
   createItem({
     board,
     taskDesc,
@@ -119,7 +87,7 @@ class Taskbook {
       let endTime = {};
 
       if (board === "daily") {
-        endTime = { endTime: formatDate(today) };
+        endTime = { endTime: formatDate(new Date()) };
       }
 
       item = new Task({
@@ -239,12 +207,12 @@ class Taskbook {
 
     return (data[dailyBoardName] || []).map(item => {
       if (
-        (!item.endTime || item.endTime !== formatDate(today)) &&
+        (!item.endTime || item.endTime !== formatDate(new Date())) &&
         item.status === 1
       ) {
         const newItem = {
           ...item,
-          endTime: formatDate(today),
+          endTime: formatDate(new Date()),
           status: 0,
           board: "daily",
         };
@@ -255,36 +223,31 @@ class Taskbook {
     });
   }
 
-  displayBoard(board: string, items: any) {
-    const { done, pending } = this.getItemsStats(items);
-
+  displayBoard(board: string) {
     log({
-      prefix: "\n ",
+      prefix: "\n",
       message: underline(board),
-      suffix: dim(`[${done}/${done + pending}]`),
     });
   }
 
   displayItem(item: any) {
     const { id, isTask, status, description, priority } = item;
 
-    const prefix = `${" ".repeat(4 - id.length)}${dim(`${id}.`)} `;
-    const suffix = "";
+    const prefix = " ";
+    const suffix = gray(`#${id}`);
     let message = description;
 
-    switch (priority) {
-      case priorityType.hign: {
-        message = red(`${description} (!!)`);
-        break;
+    if (status !== statusType.done) {
+      switch (priority) {
+        case priorityType.hign: {
+          message = red(description);
+          break;
+        }
+        case priorityType.medium: {
+          message = yellow(description);
+          break;
+        }
       }
-      case priorityType.medium: {
-        message = yellow(`${description} (!)`);
-        break;
-      }
-    }
-
-    if (status === statusType.done) {
-      message = dim(description);
     }
 
     const msgObj = {
@@ -322,26 +285,11 @@ class Taskbook {
           return;
         }
 
-        this.displayBoard(board, items);
+        this.displayBoard(board);
         items.map((item: any) => this.displayItem(item));
       });
-  }
 
-  displayStats() {
-    const { done, pending, notes } = this.getItemsStats(
-      Object.values(this.data),
-    );
-    const total = done + pending;
-    const percent = total === 0 ? 0 : Math.floor((done * 100) / total);
-
-    const status = [
-      `${green(String(done))} ${dim("done")}`,
-      `${magenta(String(pending))} ${dim("pending")}`,
-      `${blue(String(notes))} ${dim("notes")}`,
-    ];
-
-    log({ prefix: "\n ", message: dim(`${percent}% of all tasks complete.`) });
-    log({ prefix: " ", message: status.join(dim(" · ")), suffix: "\n" });
+    withWrap();
   }
 }
 
