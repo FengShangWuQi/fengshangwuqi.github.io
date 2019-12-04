@@ -1,6 +1,6 @@
 ---
 group: core
-module: react
+module: hooks
 title: useDebounce
 ---
 
@@ -15,4 +15,4 @@ const [count] = useState(0);
 const debounceCount = useDebounce(count, 200);
 ```
 
-<Source path="src-core/react/useDebounce.ts" />
+<Source path="src-core/hooks/useDebounce.ts" />

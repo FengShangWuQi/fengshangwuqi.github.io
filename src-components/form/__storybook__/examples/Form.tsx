@@ -26,12 +26,13 @@ export const FormDemo = () => {
           ),
         );
       }}
-      onSuccess={() => {
-        alert("success");
-      }}
-      onFail={() => {
-        alert("fail");
-      }}>
+      // onSuccess={() => {
+      //   alert("success");
+      // }}
+      // onFail={() => {
+      //   alert("fail");
+      // }}
+    >
       {({ isSubmitting }) => {
         return (
           <div>

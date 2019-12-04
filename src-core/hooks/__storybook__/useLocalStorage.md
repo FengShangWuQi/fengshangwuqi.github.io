@@ -1,6 +1,6 @@
 ---
 group: core
-module: react
+module: hooks
 title: useLocalStorage
 ---
 
@@ -14,4 +14,4 @@ import { UseLocalStorageDemo } from "./examples/useLocalStorage";
 const [storedValue, setStoredValue] = useLocalStorage("count", 0);
 ```
 
-<Source path="src-core/react/useLocalStorage.ts" />
+<Source path="src-core/hooks/useLocalStorage.ts" />

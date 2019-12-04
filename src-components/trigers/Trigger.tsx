@@ -3,7 +3,8 @@ import { createPortal } from "react-dom";
 import { fromEvent } from "rxjs";
 import { filter as rxFilter } from "rxjs/operators";
 
-import { pickElmAttrs, useRect } from "src-core/react";
+import { pickElmAttrs } from "src-core/react";
+import { useRect } from "src-core/hooks";
 
 export enum popupPlacement {
   top,

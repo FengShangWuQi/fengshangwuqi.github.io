@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import { useRect } from "src-core/react";
+import { useRect } from "src-core/hooks";
 import { useDesignSystem } from "src-core/ds";
 
 import { useWhyDidYouUpdate } from "../../useWhyDidYouUpdate";

@@ -1,6 +1,6 @@
 ---
 group: core
-module: react
+module: hooks
 title: useWhyDidYouUpdate
 ---
 
@@ -17,4 +17,4 @@ const rect = useRect(ref);
 useWhyDidYouUpdate("rect", rect);
 ```
 
-<Source path="src-core/react/useWhyDidYouUpdate.ts" />
+<Source path="src-core/hooks/useWhyDidYouUpdate.ts" />

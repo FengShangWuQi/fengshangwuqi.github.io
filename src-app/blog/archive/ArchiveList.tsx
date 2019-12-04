@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { rgba, ellipsis, padding, position, border } from "polished";
 
-import { useHover } from "src-core/react";
+import { useHover } from "src-core/hooks";
 import { flex, mq } from "src-core/style";
 import { useDesignSystem } from "src-core/ds";
 

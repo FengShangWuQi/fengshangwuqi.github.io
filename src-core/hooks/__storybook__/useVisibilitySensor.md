@@ -1,6 +1,6 @@
 ---
 group: core
-module: react
+module: hooks
 title: useVisibilitySensor
 ---
 
@@ -19,4 +19,4 @@ const isVisible = useVisibilitySensor(footerRef, {
 });
 ```
 
-<Source path="src-core/react/useVisibilitySensor.ts" />
+<Source path="src-core/hooks/useVisibilitySensor.ts" />

@@ -1,6 +1,6 @@
 ---
 group: core
-module: react
+module: hooks
 title: useToggle
 ---
 
@@ -14,4 +14,4 @@ import { ToggleDemo } from "./examples/useToggle";
 const [on, toggle] = useToggle();
 ```
 
-<Source path="src-core/react/useToggle.ts" />
+<Source path="src-core/hooks/useToggle.ts" />

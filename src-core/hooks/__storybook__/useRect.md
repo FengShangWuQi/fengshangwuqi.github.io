@@ -1,6 +1,6 @@
 ---
 group: core
-module: react
+module: hooks
 title: useRect
 ---
 
@@ -17,4 +17,4 @@ const rect = useRect(ref);
 const { left, top, width, height } = rect;
 ```
 
-<Source path="src-core/react/useRect.ts" />
+<Source path="src-core/hooks/useRect.ts" />

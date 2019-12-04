@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 import { position, size } from "polished";
 import { Dictionary } from "lodash";
 
-import { useRect } from "src-core/react";
+import { useRect } from "src-core/hooks";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 

@@ -1,6 +1,6 @@
 ---
 group: core
-module: react
+module: hooks
 title: usePrevious
 ---
 
@@ -15,4 +15,4 @@ const [count] = useState(0);
 const prevCount = usePrevious(count);
 ```
 
-<Source path="src-core/react/usePrevious.ts" />
+<Source path="src-core/hooks/usePrevious.ts" />

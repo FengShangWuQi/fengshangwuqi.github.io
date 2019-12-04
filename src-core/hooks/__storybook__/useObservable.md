@@ -1,6 +1,6 @@
 ---
 group: core
-module: react
+module: hooks
 title: useObservable
 ---
 
@@ -14,4 +14,4 @@ import { UseObservableDemo } from "./examples/useObservable";
 const value = useObservable(number$);
 ```
 
-<Source path="src-core/react/useObservable.ts" />
+<Source path="src-core/hooks/useObservable.ts" />

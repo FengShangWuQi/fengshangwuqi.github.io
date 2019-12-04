@@ -1,6 +1,6 @@
 ---
 group: core
-module: react
+module: hooks
 title: useHover
 ---
 
@@ -14,4 +14,4 @@ import { UseHoverDemo } from "./examples/useHover";
 const [hoverRef, isHovered] = useHover();
 ```
 
-<Source path="src-core/react/useHover.ts" />
+<Source path="src-core/hooks/useHover.ts" />

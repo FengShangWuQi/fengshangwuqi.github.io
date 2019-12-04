@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 import { Method, AxiosRequestConfig } from "axios";
 import { Dictionary } from "lodash";
 
-import { withoutBubble, useRequest, IRequestOpts } from "src-core/react";
+import { withoutBubble } from "src-core/react";
 
 import { IFieldState } from "./Field";
 
@@ -19,7 +19,7 @@ export interface IFormContext {
   setFormState: (state: IFormState<any>) => void;
 }
 
-export interface IFormProps<TFormValues> extends IRequestOpts {
+export interface IFormProps<TFormValues> {
   name: string;
   initialValues?: TFormValues;
   action?: string;
@@ -45,13 +45,13 @@ export const useForm = () => useContext(FormContext);
 export const Form = ({
   name,
   initialValues,
-  action,
-  method,
+  // action,
+  // method,
   onSubmit,
-  valuesToArg,
-  onSuccess,
-  onFail,
-  onFinish,
+  // valuesToArg,
+  // onSuccess,
+  // onFail,
+  // onFinish,
   children,
 }: IFormProps<any>) => {
   const [state, setState] = useState({
@@ -63,27 +63,27 @@ export const Form = ({
 
   const { values, isSubmitting } = state;
 
-  const [request] = useRequest(
-    {
-      url: action,
-      method,
-    },
-    {
-      onSuccess: res => {
-        onSuccess && onSuccess(res);
-      },
-      onFail: error => {
-        onFail && onFail(error);
-      },
-      onFinish: () => {
-        onFinish && onFinish();
-        setState({
-          ...state,
-          isSubmitting: false,
-        });
-      },
-    },
-  );
+  // const [request] = useRequest(
+  //   {
+  //     url: action,
+  //     method,
+  //   },
+  //   {
+  //     onSuccess: res => {
+  //       onSuccess && onSuccess(res);
+  //     },
+  //     onFail: error => {
+  //       onFail && onFail(error);
+  //     },
+  //     onFinish: () => {
+  //       onFinish && onFinish();
+  //       setState({
+  //         ...state,
+  //         isSubmitting: false,
+  //       });
+  //     },
+  //   },
+  // );
 
   return (
     <FormProvider
@@ -99,7 +99,7 @@ export const Form = ({
             isSubmitting: true,
           });
           onSubmit && onSubmit(values);
-          request(valuesToArg(values));
+          // request(valuesToArg(values));
         })}>
         {children({ values, isSubmitting })}
       </form>
