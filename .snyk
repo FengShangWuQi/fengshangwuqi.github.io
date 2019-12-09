@@ -20,4 +20,8 @@ ignore:
     - gatsby > webpack > node-libs-browser > crypto-browserify > create-ecdh > elliptic:
         reason: None given
         expires: '2019-12-21T14:47:21.988Z'
+  SNYK-JS-SERIALIZEJAVASCRIPT-536840:
+    - gatsby > terser-webpack-plugin > serialize-javascript:
+        reason: None given
+        expires: '2020-01-08T15:31:38.336Z'
 patch: {}
