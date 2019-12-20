@@ -83,7 +83,7 @@
     "gatsby-source-filesystem": "2.1.43",
     "gatsby-transformer-remark": "2.6.45",
     "gatsby-transformer-sharp": "2.3.9",
-    "immer": "5.0.0",
+    "immer": "5.1.0",
     "lodash": "4.17.15",
     "polished": "3.4.2",
     "prismjs": "1.17.1",
