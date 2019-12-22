@@ -50,13 +50,13 @@
     ]
   },
   "dependencies": {
-    "@emotion/core": "10.0.22",
-    "@emotion/styled": "10.0.23",
+    "@emotion/core": "10.0.27",
+    "@emotion/styled": "10.0.27",
     "@mdx-js/mdx": "1.5.3",
     "@mdx-js/react": "1.5.3",
     "@svgr/webpack": "4.3.3",
     "axios": "0.19.0",
-    "emotion-theming": "10.0.19",
+    "emotion-theming": "10.0.27",
     "facepaint": "1.2.1",
     "gatsby": "2.18.16",
     "gatsby-image": "2.2.37",
