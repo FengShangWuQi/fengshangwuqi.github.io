@@ -1,5 +1,5 @@
 import React from "react";
-import { rgba, border, margin, padding, ellipsis } from "polished";
+import { rgba, border, margin, padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 import { flex, fluidType } from "src-core/style";
@@ -27,7 +27,7 @@ export const PostContainer = ({ children }: { children: React.ReactNode }) => {
         h3: {
           ...fluidType("sm", "xl", 18, 22),
           ...margin(ds.spacing[10], 0, 0),
-          ...ellipsis(),
+          boxDecorationBreak: "clone",
         },
         "h2 + h3": {
           marginTop: ds.spacing[6],
