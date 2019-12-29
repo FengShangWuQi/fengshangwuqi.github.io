@@ -2,6 +2,7 @@
 title: 周报 @ 2019.12.29
 original: true
 tags:
+  - Weekly
   - Front-End
 date: 2019-12-29
 cover: header.jpg
