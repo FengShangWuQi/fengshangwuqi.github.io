@@ -13,7 +13,7 @@
     "@babel/plugin-proposal-class-properties": "7.7.4",
     "@babel/preset-env": "7.7.6",
     "@babel/preset-typescript": "7.7.4",
-    "lerna": "3.20.0",
+    "lerna": "3.20.2",
     "npm-check": "5.9.0",
     "rollup": "1.28.0",
     "rollup-plugin-babel": "4.3.3",
