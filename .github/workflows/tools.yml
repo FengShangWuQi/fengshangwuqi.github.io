@@ -6,25 +6,24 @@ on:
     paths:
       - tools/taskbook/package.json
       - tools/postbook/package.json
+
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+          registry-url: 'https://npm.pkg.github.com'
 
-    - name: Setup Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-        registry-url: 'https://npm.pkg.github.com'
+      - run: |
+          cd tools
+          npm ci
 
-    - run: |
-        cd tools
-        npm ci
-
-    - run: |
-        cd tools
-        npm run build
-        npm run r
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
+      - run: |
+          cd tools
+          npm run build
+          npm run r
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}

@@ -3,22 +3,19 @@ on:
   push:
     branches:
       - dev
+
 jobs:
   lhci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
         with:
           node-version: 10.x
 
       - run: npm ci
-      
       - run: npm start bg b
 
-      - name: run Lighthouse CI
-        run: |
+      - run: |
           npm install -g @lhci/cli@0.3.x
           lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
