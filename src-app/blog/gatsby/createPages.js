@@ -46,16 +46,17 @@ module.exports = async ({ graphql, actions, reporter }) => {
   });
 
   createPage({
-    path: "/",
-    component: latestTemplate,
+    path: "/archive",
+    component: archiveTemplate,
   });
 
-  const size = Number(process.env.ARCHIVE_SIZE);
+  const size = Number(process.env.SIZE);
   const totalPage = Math.ceil(totalCount / size);
+
   Array.from({ length: totalPage }, (_, i) => i + 1).forEach(num => {
     createPage({
-      path: num === 1 ? "/archive" : `/archive/${num}`,
-      component: archiveTemplate,
+      path: num === 1 ? "/" : `/latest/${num}`,
+      component: latestTemplate,
       context: {
         total: totalCount,
         size,

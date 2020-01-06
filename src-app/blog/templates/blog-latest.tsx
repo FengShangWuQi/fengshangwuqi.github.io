@@ -1,15 +1,17 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
+import { margin, border } from "polished";
 
+import { useDesignSystem } from "src-core/ds";
 import { SEO } from "src-core/seo";
 
-import { Layout } from "../common/Layout";
-import { Header } from "../common/Header";
+import { Pagination } from "src-components/navigation/Pagination";
 
-import { Latest } from "../latest";
+import { Layout, Wrapper, Footer } from "../common";
+import { LatestHeader, LatestList } from "../latest/";
 
 export const latestQuery = graphql`
-  {
+  query($size: Int!, $offset: Int!) {
     site {
       siteMetadata {
         title
@@ -26,7 +28,11 @@ export const latestQuery = graphql`
       }
       pathPrefix
     }
-    allMdx(limit: 6, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(
+      limit: $size
+      skip: $offset
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt(pruneLength: 95)
@@ -60,6 +66,7 @@ const BlogLatest = ({
     },
     allMdx: { edges: posts },
   },
+  pageContext: { total, size, offset },
 }: any) => (
   <Layout>
     <SEO
@@ -72,10 +79,41 @@ const BlogLatest = ({
       twitter={social["Twitter"]}
     />
 
-    <Header social={social} contact={contact} />
+    <LatestHeader social={social} contact={contact} />
 
-    <Latest posts={posts} />
+    <Wrapper withShadow>
+      <LatestTitle>最近的文章</LatestTitle>
+
+      <LatestList posts={posts} />
+    </Wrapper>
+
+    <Footer>
+      <Pagination
+        css={{
+          float: "right",
+        }}
+        total={total}
+        size={size}
+        offset={offset}
+        onChange={page => navigate(page === 1 ? `/` : `/latest/${page}`)}
+      />
+    </Footer>
   </Layout>
 );
+
+const LatestTitle = ({ children }: { children: React.ReactNode }) => {
+  const ds = useDesignSystem();
+
+  return (
+    <div
+      css={{
+        ...margin(ds.spacing[12], 0, ds.spacing[4]),
+        ...border("bottom", 3, "solid", ds.color.primary),
+        fontSize: ds.size.xl,
+      }}>
+      {children}
+    </div>
+  );
+};
 
 export default BlogLatest;

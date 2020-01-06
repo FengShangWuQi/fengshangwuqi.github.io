@@ -3,7 +3,13 @@ import React from "react";
 import { useDesignSystem } from "src-core/ds";
 import { mq } from "src-core/style";
 
-export const Wrapper = ({ children }: { children: React.ReactNode }) => {
+export const Wrapper = ({
+  withShadow,
+  children,
+}: {
+  withShadow?: boolean;
+  children: React.ReactNode;
+}) => {
   const ds = useDesignSystem();
 
   return (
@@ -13,8 +19,8 @@ export const Wrapper = ({ children }: { children: React.ReactNode }) => {
           `${ds.spacing[1]} ${ds.spacing[6]} 3.5rem`,
           `${ds.spacing[1]} ${ds.spacing[8]} 3.5rem`,
         ],
-        boxShadow: `inset 0 0 30px ${ds.color.bgLight}`,
         overflow: "hidden",
+        ...(withShadow && { boxShadow: `inset 0 0 30px ${ds.color.bgLight}` }),
       })}>
       {children}
     </div>

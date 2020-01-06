@@ -7,8 +7,7 @@ import { Bootstrap } from "src-core/react";
 import { defaultTheme, useDesignSystem } from "src-core/ds";
 import { mq } from "src-core/style";
 
-import { Nav } from "./Nav";
-import { Loadingbar } from "./LoadingBar";
+import { Loadingbar, Nav } from ".";
 
 const blogTheme = produce(defaultTheme, theme => {
   theme.color.primary = "#3c2584";

@@ -7,9 +7,9 @@ import { useRect } from "src-core/hooks";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 
-import { Stars } from "./Stars";
+import { Stars } from "../common/Stars";
 
-export const Header = ({
+export const LatestHeader = ({
   social,
   contact,
 }: {

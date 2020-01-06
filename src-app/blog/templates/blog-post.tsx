@@ -9,9 +9,7 @@ import { useDesignSystem, PrismTheme } from "src-core/ds";
 import { mq } from "src-core/style";
 import { SEO } from "src-core/seo";
 
-import { Layout } from "../common/Layout";
-import { Wrapper } from "../common/Wrapper";
-import { Footer } from "../common/Footer";
+import { Layout, Wrapper, Footer } from "../common";
 import { Discussion, PostHeader, PostTag, PostContainer } from "../post";
 
 export const postQuery = graphql`
@@ -98,7 +96,7 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
         />
       </PostHeader>
 
-      <Wrapper>
+      <Wrapper withShadow>
         <PostContainer>
           <h1>{postTitle}</h1>
 
