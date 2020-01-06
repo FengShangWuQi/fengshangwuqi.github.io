@@ -1,17 +1,13 @@
 import React from "react";
-import { graphql, navigate } from "gatsby";
+import { graphql } from "gatsby";
 
 import { SEO } from "src-core/seo";
 
-import { Pagination } from "src-components/navigation/Pagination";
-
-import { Layout } from "../common/Layout";
-import { Header } from "../common/Header";
-import { Footer } from "../common/Footer";
-import { Archive } from "../archive";
+import { Layout, Wrapper } from "../common";
+import { ArchiveList } from "../archive";
 
 export const archiveQuery = graphql`
-  query($size: Int!, $offset: Int!) {
+  {
     site {
       siteMetadata {
         title
@@ -28,11 +24,7 @@ export const archiveQuery = graphql`
       }
       pathPrefix
     }
-    allMdx(
-      limit: $size
-      skip: $offset
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
@@ -53,12 +45,11 @@ export const archiveQuery = graphql`
 const BlogArchive = ({
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl, author, social, contact },
+      siteMetadata: { title, description, siteUrl, author, social },
       pathPrefix,
     },
-    allMdx: { edges: posts, totalCount },
+    allMdx: { edges: posts },
   },
-  pageContext: { total, size, offset },
 }: any) => (
   <Layout>
     <SEO
@@ -71,23 +62,9 @@ const BlogArchive = ({
       twitter={social["Twitter"]}
     />
 
-    <Header social={social} contact={contact} />
-
-    <Archive posts={posts} totalCount={totalCount} />
-
-    <Footer>
-      <Pagination
-        css={{
-          float: "right",
-        }}
-        total={total}
-        size={size}
-        offset={offset}
-        onChange={page =>
-          navigate(page === 1 ? `/archive` : `/archive/${page}`)
-        }
-      />
-    </Footer>
+    <Wrapper>
+      <ArchiveList posts={posts} />
+    </Wrapper>
   </Layout>
 );
 

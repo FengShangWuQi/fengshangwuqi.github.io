@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-import { rgba, ellipsis, padding, position, border } from "polished";
+import { rgba, padding, position, border } from "polished";
 
 import { useHover } from "src-core/hooks";
-import { flex, mq } from "src-core/style";
+import { flex } from "src-core/style";
 import { useDesignSystem } from "src-core/ds";
-
-import { PostTag } from "../post/PostTag";
 
 export interface IArchiveList {
   posts: IArchiveNode[];
@@ -15,8 +13,6 @@ export interface IArchiveList {
 interface IArchiveItem {
   title: string;
   path: string;
-  date: string;
-  addOnRight?: React.ReactNode;
 }
 
 interface IArchiveNode {
@@ -53,17 +49,11 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
         },
       }}>
       {posts.map(({ node }: IArchiveNode) => {
-        const postTags = node.frontmatter.tags.map((tag: string) => (
-          <PostTag key={tag} tag={tag} />
-        ));
-
         return (
           <ArchiveItem
             key={node.fields.slug}
             title={node.frontmatter.title}
             path={node.fields.slug}
-            date={node.frontmatter.date}
-            addOnRight={postTags}
           />
         );
       })}
@@ -71,7 +61,7 @@ export const ArchiveList = ({ posts }: IArchiveList) => {
   );
 };
 
-const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
+const ArchiveItem = ({ path, title }: IArchiveItem) => {
   const ds = useDesignSystem();
 
   const [hoverRef, isHovered] = useHover();
@@ -84,7 +74,7 @@ const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
             alignItems: "center",
           }),
           ...position("relative"),
-          ...padding(ds.spacing[4], 0),
+          ...padding(ds.spacing[2], 0),
         }}>
         <div
           style={{
@@ -99,7 +89,6 @@ const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
 
         <div
           css={{
-            ...ellipsis(),
             marginLeft: ds.spacing[4],
           }}>
           <Link
@@ -110,21 +99,7 @@ const ArchiveItem = ({ path, title, date, addOnRight }: IArchiveItem) => {
             to={path}>
             <span ref={hoverRef}>{title}</span>
           </Link>
-          <div css={mq(["md"], { display: ["none", "inline-block"] })}>
-            {addOnRight}
-          </div>
         </div>
-      </div>
-      <div
-        css={{
-          marginLeft: ds.spacing[5],
-        }}>
-        <time
-          css={{
-            color: rgba(ds.color.textLight, 0.3),
-          }}>
-          {date}
-        </time>
       </div>
     </div>
   );
