@@ -7,7 +7,7 @@ import { useRect } from "src-core/hooks";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 
-import { Stars } from "../common/Stars";
+import { Stars } from "cases/html/__storybook__/examples/Stars";
 
 export const LatestHeader = ({
   social,
