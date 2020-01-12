@@ -2,18 +2,18 @@ import { useState, useEffect } from "react";
 import { Observable } from "rxjs";
 
 export const useObservable = <T>(
-  observable: Observable<T>,
+  ob$: Observable<T>,
   defaultValue?: T,
-) => {
-  const [value, setValue] = useState(defaultValue);
+): T | undefined => {
+  const [value, setValue] = useState<T | undefined>(defaultValue);
 
   useEffect(() => {
-    const subscription = observable.subscribe(setValue as (value: T) => void);
+    const sub = ob$.subscribe(setValue);
 
     return () => {
-      subscription.unsubscribe();
+      sub.unsubscribe();
     };
-  }, [observable]);
+  }, [ob$]);
 
   return value;
 };

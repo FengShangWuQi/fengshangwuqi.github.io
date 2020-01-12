@@ -4,7 +4,7 @@ import { useLocalStorage } from "../useLocalStorage";
 
 afterEach(() => localStorage.clear());
 
-describe("useLocalStorage #core #react", () => {
+describe("useLocalStorage #core #hooks", () => {
   it("when value - with curr value", () => {
     const { result } = renderHook(() => useLocalStorage("count", 2));
 

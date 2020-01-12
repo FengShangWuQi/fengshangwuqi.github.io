@@ -2,7 +2,7 @@ import { renderHook } from "@testing-library/react-hooks";
 
 import { useDebounce } from "../useDebounce";
 
-describe("useDebounce #core #react", () => {
+describe("useDebounce #core #hooks", () => {
   it("useDebounce", async () => {
     let count = 0;
     const { result, rerender, waitForNextUpdate } = renderHook(() =>

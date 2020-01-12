@@ -2,7 +2,7 @@ import { renderHook, act } from "@testing-library/react-hooks";
 
 import { useToggle } from "../useToggle";
 
-describe("useToggle #core #react", () => {
+describe("useToggle #core #hooks", () => {
   it("when default - with false", () => {
     const { result } = renderHook(() => useToggle());
 
