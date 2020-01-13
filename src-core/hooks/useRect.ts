@@ -1,5 +1,6 @@
 import { useState, useLayoutEffect, RefObject } from "react";
-import { fromEvent } from "rxjs";
+import { fromEvent, merge as observableMerge } from "rxjs";
+import { debounceTime } from "rxjs/operators";
 
 export interface IRect {
   top: number;
@@ -39,10 +40,15 @@ export const useRect = (elmRef: RefObject<Element | null>) => {
 
     refresh();
 
-    const resize$ = fromEvent(window, "resize").subscribe(refresh);
+    const resize$ = fromEvent(globalThis, "resize");
+    const orientationchange$ = fromEvent(globalThis, "orientationchange");
+
+    const sub = observableMerge(resize$, orientationchange$)
+      .pipe(debounceTime(200))
+      .subscribe(refresh);
 
     return () => {
-      resize$.unsubscribe();
+      sub.unsubscribe();
     };
   }, []);
 
