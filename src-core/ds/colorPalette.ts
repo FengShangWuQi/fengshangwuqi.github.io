@@ -1,6 +1,4 @@
 export const colorPalette = {
-  transparent: "transparent",
-
   black: "#000",
   white: "#fff",
 

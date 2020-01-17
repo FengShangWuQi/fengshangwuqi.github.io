@@ -6,7 +6,7 @@ title: writing-mode
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { VerticalRl } from "./examples/writing-mode"
+import { VerticalRl } from "./writing-mode.stories"
 
 <VerticalRl />
 

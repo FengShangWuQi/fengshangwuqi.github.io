@@ -2,7 +2,7 @@ import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { useToggle } from "../../useToggle";
+import { useToggle } from "../useToggle";
 
 export const ToggleDemo = () => {
   const ds = useDesignSystem();

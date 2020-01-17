@@ -6,7 +6,7 @@ title: useObservable
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseObservableDemo } from "./examples/useObservable";
+import { UseObservableDemo } from "./useObservable.stories";
 
 <UseObservableDemo />
 

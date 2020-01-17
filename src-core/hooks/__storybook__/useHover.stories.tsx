@@ -3,7 +3,7 @@ import { border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { useHover } from "../../useHover";
+import { useHover } from "../useHover";
 
 export const UseHoverDemo = () => {
   const ds = useDesignSystem();

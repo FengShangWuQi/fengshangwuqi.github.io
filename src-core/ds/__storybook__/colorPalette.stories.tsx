@@ -22,7 +22,7 @@ export const ColorPaletteDemo = () => {
   const ds = useDesignSystem();
 
   const { colorPalette } = ds;
-  const { transparent, white, black, ...otherColor } = colorPalette;
+  const { white, black, ...otherColor } = colorPalette;
 
   return (
     <div>
@@ -37,7 +37,7 @@ export const ColorPaletteDemo = () => {
             <Block
               css={{
                 ...border(1, "solid", rgba(black, 0.12)),
-                background: color,
+                background: color === "white" ? white : black,
               }}
             />
           </Group>

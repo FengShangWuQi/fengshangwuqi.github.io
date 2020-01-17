@@ -1,6 +1,30 @@
 import React, { useRef, useLayoutEffect } from "react";
 
-export const Barrage = ({
+import { useDesignSystem } from "src-core/ds";
+import { useRect } from "src-core/hooks";
+
+export const BarrageDemo = () => {
+  const ds = useDesignSystem();
+
+  const ref = useRef(null);
+  const rect = useRect(ref);
+
+  const data = Array.from({ length: 30 }, (_, i) => `${String(i).repeat(3)}`);
+
+  return (
+    <div
+      ref={ref}
+      css={{
+        width: "100%",
+        height: 300,
+        background: ds.colorPalette.gray[800],
+      }}>
+      <Barrage width={rect.width} height={rect.height} data={data} />
+    </div>
+  );
+};
+
+const Barrage = ({
   width,
   height,
   data,

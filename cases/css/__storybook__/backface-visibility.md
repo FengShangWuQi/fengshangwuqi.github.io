@@ -6,7 +6,7 @@ title: backface-visibility
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { BackFaceVisibilityDemo } from "./examples/backface-visibility";
+import { BackFaceVisibilityDemo } from "./backface-visibility.stories";
 
 <BackFaceVisibilityDemo />
 
@@ -24,4 +24,4 @@ import { BackFaceVisibilityDemo } from "./examples/backface-visibility";
 </div>
 ```
 
-<Source path="cases/css/__storybook__/examples/backface-visibility.tsx" />
+<Source path="cases/css/__storybook__/backface-visibility.md" />

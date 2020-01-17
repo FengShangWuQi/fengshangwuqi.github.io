@@ -6,7 +6,7 @@ title: grid
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { GridDemo } from "./examples/grid";
+import { GridDemo } from "./grid.stories";
 
 <GridDemo />
 

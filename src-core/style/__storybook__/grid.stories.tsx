@@ -2,7 +2,7 @@ import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { grid } from "../../grid";
+import { grid } from "../grid";
 
 export const GridDemo = () => {
   const ds = useDesignSystem();

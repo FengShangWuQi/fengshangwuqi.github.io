@@ -6,7 +6,7 @@ title: media-queries
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { MqDemo } from "./examples/mq";
+import { MqDemo } from "./mq.stories";
 
 <MqDemo />
 

@@ -6,7 +6,7 @@ title: conic-gradient
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { PieChart, Checkerboard, Starburst } from "./examples/conic-gradient";
+import { PieChart, Checkerboard, Starburst } from "./conic-gradient.stories";
 
 <PieChart />
 

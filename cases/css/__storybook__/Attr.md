@@ -6,7 +6,7 @@ title: attr
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { AttrDemo } from "./examples/attr";
+import { AttrDemo } from "./attr.stories";
 
 <AttrDemo />
 
@@ -30,4 +30,4 @@ import { AttrDemo } from "./examples/attr";
 </Row>
 ```
 
-<Source path="cases/css/__storybook__/examples/attr.tsx" />
+<Source path="cases/css/__storybook__/attr.md" />

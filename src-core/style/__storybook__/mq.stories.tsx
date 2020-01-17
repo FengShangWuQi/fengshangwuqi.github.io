@@ -2,7 +2,7 @@ import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { mq } from "../../mq";
+import { mq } from "../mq";
 
 export const MqDemo = () => {
   const ds = useDesignSystem();

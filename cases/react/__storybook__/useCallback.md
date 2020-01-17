@@ -6,7 +6,7 @@ title: useCallback
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseCallbackDemo } from "./examples/useCallback";
+import { UseCallbackDemo } from "./useCallback.stories";
 
 <UseCallbackDemo />
 

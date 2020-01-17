@@ -6,7 +6,7 @@ title: useMemo
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseMemoDemo } from "./examples/useMemo";
+import { UseMemoDemo } from "./useMemo.stories";
 
 <UseMemoDemo />
 

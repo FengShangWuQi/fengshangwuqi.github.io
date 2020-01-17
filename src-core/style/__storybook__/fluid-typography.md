@@ -6,7 +6,7 @@ title: fluid-typography
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { FluidTypeDemo } from "./examples/fluidType";
+import { FluidTypeDemo } from "./fluidType.stories";
 
 <FluidTypeDemo />
 

@@ -6,13 +6,7 @@ title: canvas
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { BarrageDemo, StarsDemo } from "./examples/canvas";
-
-<StarsDemo  />
-
-```jsx
-<Stars width={rect.width} height={rect.height} />
-```
+import { BarrageDemo } from "./canvas.stories";
 
 <BarrageDemo  />
 

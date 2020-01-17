@@ -6,7 +6,7 @@ title: useHover
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { UseHoverDemo } from "./examples/useHover";
+import { UseHoverDemo } from "./useHover.stories";
 
 <UseHoverDemo />
 

@@ -6,7 +6,7 @@ title: first-letter
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { FirstLetterDemo } from "./examples/first-letter";
+import { FirstLetterDemo } from "./first-letter.stories";
 
 <FirstLetterDemo />
 

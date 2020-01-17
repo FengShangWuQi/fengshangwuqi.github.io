@@ -6,7 +6,7 @@ title: box-decoration-break
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { BoxDecorationBreakDemo } from "./examples/box-decoration-break"
+import { BoxDecorationBreakDemo } from "./box-decoration-break.stories"
 
 <BoxDecorationBreakDemo />
 
@@ -19,4 +19,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/examples/box-decoration-break.tsx" />
+<Source path="cases/css/__storybook__/box-decoration-break.md" />

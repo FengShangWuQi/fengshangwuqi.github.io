@@ -6,7 +6,7 @@ title: useToggle
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { ToggleDemo } from "./examples/useToggle";
+import { ToggleDemo } from "./useToggle.stories";
 
 <ToggleDemo />
 

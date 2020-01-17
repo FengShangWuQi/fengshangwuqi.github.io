@@ -6,7 +6,7 @@ title: mix-blend-mode
 
 import { Source } from "src-app/storybook/common/Source";
 
-import { MixBlendModeDemo } from "./examples/mix-blend-mode";
+import { MixBlendModeDemo } from "./mix-blend-mode.stories";
 
 <MixBlendModeDemo />
 

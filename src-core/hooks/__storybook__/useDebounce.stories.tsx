@@ -2,18 +2,18 @@ import React, { useState } from "react";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { usePrevious } from "../../usePrevious";
+import { useDebounce } from "../useDebounce";
 
-export const UsePreviousDemo = () => {
+export const UseDebounceDemo = () => {
   const ds = useDesignSystem();
 
   const [count, setCount] = useState(0);
-  const prevCount = usePrevious(count);
+  const debounceCount = useDebounce(count, 200);
 
   return (
     <div>
       <div>
-        Now: {count}, before: {prevCount}
+        count: {count}, debounceCount: {debounceCount}
       </div>
 
       <button

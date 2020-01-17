@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { useRect } from "src-core/hooks";
 import { useDesignSystem } from "src-core/ds";
 
-import { useWhyDidYouUpdate } from "../../useWhyDidYouUpdate";
+import { useWhyDidYouUpdate } from "../useWhyDidYouUpdate";
 
 export const UseWhyDidYouUpdateDemo = () => {
   const ds = useDesignSystem();
@@ -17,7 +17,7 @@ export const UseWhyDidYouUpdateDemo = () => {
     <div
       ref={ref}
       css={{
-        width: "100%",
+        width: "90%",
         height: 250,
         border: `1px solid ${ds.color.text}`,
       }}

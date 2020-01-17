@@ -2,7 +2,7 @@ import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { useLocalStorage } from "../../useLocalStorage";
+import { useLocalStorage } from "../useLocalStorage";
 
 export const UseLocalStorageDemo = () => {
   const ds = useDesignSystem();

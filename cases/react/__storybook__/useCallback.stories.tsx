@@ -7,7 +7,9 @@ export const UseCallbackDemo = () => {
 
   const [count, setCount] = useState(1);
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    console.log("click");
+  };
 
   const memoizedCallback = useCallback(handleClick, []);
 
