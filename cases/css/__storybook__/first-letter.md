@@ -20,4 +20,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/examples/first-letter.tsx" />
+<Source path="cases/css/__storybook__/first-letter.stories.tsx" />

@@ -30,4 +30,4 @@ import { AttrDemo } from "./attr.stories";
 </Row>
 ```
 
-<Source path="cases/css/__storybook__/attr.md" />
+<Source path="cases/css/__storybook__/attr.stories.tsx" />

@@ -16,4 +16,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/examples/writing-mode.tsx" />
+<Source path="cases/css/__storybook__/writing-mode.stories.tsx" />

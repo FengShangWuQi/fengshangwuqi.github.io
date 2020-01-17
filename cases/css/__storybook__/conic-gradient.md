@@ -41,4 +41,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/examples/conic-gradient.tsx" />
+<Source path="cases/css/__storybook__/conic-gradient.stories.tsx" />

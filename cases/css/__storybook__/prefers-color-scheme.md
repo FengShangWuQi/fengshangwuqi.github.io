@@ -17,4 +17,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/examples/prefers-color-scheme.tsx" />
+<Source path="cases/css/__storybook__/prefers-color-scheme.stories.tsx" />

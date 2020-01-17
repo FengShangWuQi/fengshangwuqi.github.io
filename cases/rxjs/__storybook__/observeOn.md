@@ -20,4 +20,4 @@ intervals.pipe(observeOn(animationFrameScheduler)).subscribe(val => {
 });
 ```
 
-<Source path="cases/rxjs/observeOn.stories.tsx" />
+<Source path="cases/rxjs/__storybook__/observeOn.stories.tsx" />

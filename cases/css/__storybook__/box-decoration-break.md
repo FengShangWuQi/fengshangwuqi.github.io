@@ -19,4 +19,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/box-decoration-break.md" />
+<Source path="cases/css/__storybook__/box-decoration-break.stories.tsx" />

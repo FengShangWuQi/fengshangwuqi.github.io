@@ -25,4 +25,4 @@ const theGlobalThis = getGlobalThis();
 const theGlobalThis = globalThis;
 ```
 
-<Source path="cases/javascript/__storybook__/globalThis.md" />
+<Source path="cases/javascript/__storybook__/globalThis.stories.tsx" />

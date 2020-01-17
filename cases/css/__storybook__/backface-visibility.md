@@ -24,4 +24,4 @@ import { BackFaceVisibilityDemo } from "./backface-visibility.stories";
 </div>
 ```
 
-<Source path="cases/css/__storybook__/backface-visibility.md" />
+<Source path="cases/css/__storybook__/backface-visibility.stories.tsx" />

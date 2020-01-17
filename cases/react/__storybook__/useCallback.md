@@ -31,4 +31,4 @@ const Parent = () => {
 const Child = React.memo(({}: { onClick: () => void }) => null);
 ```
 
-<Source path="cases/react/__storybook__/examples/useCallback.tsx" />
+<Source path="cases/react/__storybook__/useCallback.stories.tsx" />

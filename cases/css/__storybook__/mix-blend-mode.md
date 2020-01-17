@@ -16,4 +16,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/examples/mix-blend-mode.tsx" />
+<Source path="cases/css/__storybook__/mix-blend-mode.stories.tsx" />

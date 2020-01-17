@@ -14,4 +14,4 @@ import { BarrageDemo } from "./canvas.stories";
 <Barrage width={rect.width} height={rect.height} data={data} />
 ```
 
-<Source path="cases/html/__storybook__/examples/canvas.tsx" />
+<Source path="cases/html/__storybook__/canvas.stories.tsx" />
