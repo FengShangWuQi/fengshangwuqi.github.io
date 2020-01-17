@@ -1,6 +1,10 @@
 import { useState, useLayoutEffect, RefObject } from "react";
-import { fromEvent, merge as observableMerge } from "rxjs";
-import { debounceTime } from "rxjs/operators";
+import {
+  animationFrameScheduler,
+  fromEvent,
+  merge as observableMerge,
+} from "rxjs";
+import { observeOn, debounceTime } from "rxjs/operators";
 
 export interface IRect {
   top: number;
@@ -44,6 +48,7 @@ export const useRect = (elmRef: RefObject<Element | null>) => {
     const orientationchange$ = fromEvent(globalThis, "orientationchange");
 
     const sub = observableMerge(resize$, orientationchange$)
+      .pipe(observeOn(animationFrameScheduler))
       .pipe(debounceTime(200))
       .subscribe(refresh);
 
