@@ -53,7 +53,7 @@
     "@emotion/styled": "10.0.23",
     "@mdx-js/mdx": "1.5.5",
     "@mdx-js/react": "1.5.5",
-    "@svgr/webpack": "5.0.1",
+    "@svgr/webpack": "5.1.0",
     "axios": "0.19.1",
     "emotion-theming": "10.0.19",
     "facepaint": "1.2.1",
