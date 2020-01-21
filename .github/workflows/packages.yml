@@ -1,10 +1,10 @@
-name: packages
+name: Packages
 on:
   push:
     branches:
       - dev
     paths:
-      - packages
+      - packages/**
 
 jobs:
   build-and-publish:
