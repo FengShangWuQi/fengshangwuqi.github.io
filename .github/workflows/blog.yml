@@ -12,16 +12,16 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-
+      
       - uses: actions/cache@v1
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-yarn-
 
-      - run: npm ci
-      - run: npm start bg b
+      - run: yarn
+      - run: yarn start bg b
       
       - uses: peaceiris/actions-gh-pages@v2
         env:

@@ -1,11 +1,10 @@
-name: tools
+name: packages
 on:
   push:
     branches:
       - dev
     paths:
-      - tools/taskbook/package.json
-      - tools/postbook/package.json
+      - packages
 
 jobs:
   build-and-publish:
@@ -17,13 +16,9 @@ jobs:
           node-version: '10.x'
           registry-url: 'https://npm.pkg.github.com'
 
-      - run: |
-          cd tools
-          npm ci
+      - run: yarn
 
-      - run: |
-          cd tools
-          npm run build
-          npm run r
+      - run: yarn pkg:build
+      - run: yarn pkg:r
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
