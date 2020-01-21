@@ -13,8 +13,8 @@ jobs:
         with:
           node-version: '12.x'
 
-      - run: npm ci
-      - run: npm start bg b
+      - run: yarn
+      - run: yarn start bg b
 
       - run: |
           npm install -g @lhci/cli@0.3.x
