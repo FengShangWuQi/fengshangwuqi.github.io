@@ -4,11 +4,12 @@ ENV APP_DIR=/blog
 
 WORKDIR $APP_DIR
 
-COPY package*.json $APP_DIR/
-RUN npm ci
+COPY package.json $APP_DIR/
+COPY yarn.lock $APP_DIR/
+RUN yarn
 COPY . $APP_DIR/
 
-RUN npm start bg b
+RUN yarn start bg b
 
 FROM nginx:alpine
 
