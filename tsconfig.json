@@ -2,7 +2,7 @@
   "compilerOptions": {
     /* 基本选项 */
     "rootDir": ".",
-    "target": "esnext",
+    "target": "es2015",
     "module": "commonjs",
     "lib": ["dom", "esnext"],
     "allowJs": false,
@@ -30,7 +30,8 @@
     "allowSyntheticDefaultImports": true,
 
     /* 其他选项 */
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "skipLibCheck": true
   },
 
   "exclude": ["node_modules"]
