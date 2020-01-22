@@ -30,8 +30,5 @@
     "@types/fs-extra": "8.0.1",
     "@types/pinyin": "2.8.1"
   },
-  "license": "MIT",
-  "engines": {
-    "node": ">=12.14.1"
-  }
+  "license": "MIT"
 }

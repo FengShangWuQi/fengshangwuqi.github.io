@@ -29,8 +29,5 @@
     "@types/fs-extra": "8.0.1",
     "@types/signale": "1.2.1"
   },
-  "license": "MIT",
-  "engines": {
-    "node": ">=12.14.1"
-  }
+  "license": "MIT"
 }
