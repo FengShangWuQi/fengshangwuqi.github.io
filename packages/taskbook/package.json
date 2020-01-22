@@ -3,16 +3,13 @@
   "version": "1.0.6",
   "description": "在终端友好地管理你的 notes 和 tasks",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
-  "entry": "cli.ts",
-  "main": "lib/index.js",
+  "main": "dist/taskbook.cjs.js",
+  "module": "dist/taskbook.esm.js",
   "files": [
-    "lib/"
+    "dist/"
   ],
-  "scripts": {
-    "start": "ts-node ./cli.ts"
-  },
   "bin": {
-    "tb": "./lib/index.js"
+    "tb": "dist/taskbook.cjs.js"
   },
   "repository": {
     "type": "git",
@@ -30,9 +27,7 @@
   },
   "devDependencies": {
     "@types/fs-extra": "8.0.1",
-    "@types/signale": "1.2.1",
-    "ts-node": "8.5.4",
-    "typescript": "3.7.5"
+    "@types/signale": "1.2.1"
   },
   "license": "MIT",
   "engines": {

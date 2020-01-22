@@ -1,8 +1,6 @@
 {
+  "name": "fswq-blog",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "homepage": "https://fengshangwuqi.github.io",
   "keywords": [
@@ -11,11 +9,19 @@
     "typescript",
     "emotion"
   ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "scripts": {
     "clean": "gatsby clean",
     "test": "tsc --noEmit && jest --coverage",
     "lint": "eslint '**/*.{js,ts,tsx}'",
-    "pkg:build": "lerna exec -- rollup -c ../../rollup.config.js",
+    "pkg:build": "preconstruct build",
     "pkg:r": "lerna publish from-package --yes",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "generate": "ts-node ./tools/generate/index.ts",
@@ -99,6 +105,7 @@
     "@babel/preset-typescript": "7.8.3",
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
+    "@preconstruct/cli": "1.1.4",
     "@testing-library/jest-dom": "5.0.0",
     "@testing-library/react": "9.4.0",
     "@testing-library/react-hooks": "3.2.1",

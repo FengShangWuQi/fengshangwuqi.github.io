@@ -3,7 +3,6 @@ public
 
 # build
 dist/
-lib/
 
 # lock
 package-lock.json
