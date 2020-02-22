@@ -1,5 +1,18 @@
 const r = m => require.resolve(m);
 
-module.exports = () => ({
-  presets: [r("@babel/preset-typescript")],
-});
+const preset = () => {
+  return {
+    presets: [
+      [
+        r("@babel/preset-typescript"),
+        {
+          isTSX: true,
+          allExtensions: true,
+        },
+      ],
+    ],
+    plugins: [],
+  };
+};
+
+module.exports = preset;
