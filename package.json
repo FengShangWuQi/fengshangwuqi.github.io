@@ -20,7 +20,8 @@
   },
   "scripts": {
     "clean": "gatsby clean",
-    "test": "tsc --noEmit && jest --coverage",
+    "test": " jest --coverage",
+    "tsc": "tsc --noEmit",
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "pkg:build": "preconstruct build",
     "pkg:r": "lerna publish from-package --yes",
@@ -42,7 +43,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged && pretty-quick --staged",
-      "pre-push": "yarn test",
+      "pre-push": "yarn test && yarn tsc",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -100,8 +101,6 @@
     "rxjs": "6.5.4"
   },
   "devDependencies": {
-    "@babel/core": "7.8.7",
-    "@babel/plugin-proposal-class-properties": "7.8.3",
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@preconstruct/cli": "1.1.8",
@@ -122,7 +121,7 @@
     "@typescript-eslint/eslint-plugin": "2.23.0",
     "@typescript-eslint/parser": "2.23.0",
     "babel-jest": "25.1.0",
-    "babel-preset-gatsby": "0.2.33",
+    "babel-preset-gatsby": "0.2.35",
     "chalk": "3.0.0",
     "cross-spawn": "7.0.1",
     "dotenv": "8.2.0",

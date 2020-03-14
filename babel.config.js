@@ -1,13 +1,3 @@
 module.exports = {
-  presets: [
-    [
-      "babel-preset-gatsby",
-      {
-        targets: {
-          browsers: [">0.25%", "not dead"],
-        },
-      },
-    ],
-    "./packages/babel-preset",
-  ],
+  presets: ["./packages/babel-preset", "babel-preset-gatsby"],
 };
