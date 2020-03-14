@@ -23,7 +23,7 @@
     "fs-extra": "8.1.0",
     "os": "0.1.1",
     "pinyin": "2.9.0",
-    "regexpu-core": "4.6.0",
+    "regexpu-core": "4.7.0",
     "yargs": "15.1.0"
   },
   "devDependencies": {
