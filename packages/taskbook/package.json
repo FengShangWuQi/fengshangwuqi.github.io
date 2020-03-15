@@ -4,7 +4,7 @@
   "description": "在终端友好地管理你的 notes 和 tasks",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "main": "dist/taskbook.cjs.js",
-  "module": "dist/taskbook.esm.js",
+  "module": "dist/taskbook.es.js",
   "files": [
     "dist/"
   ],

@@ -1,18 +1,26 @@
-import path from "path";
+import { join } from "path";
 import babel from "rollup-plugin-babel";
 import nodeResolve from "rollup-plugin-node-resolve";
 import builtins from "rollup-plugin-node-builtins";
 import { terser } from "rollup-plugin-terser";
 
-const pkg = require(path.join(process.cwd(), "package.json"));
+const cwd = process.cwd();
+
+const pkg = require(join(cwd, "package.json"));
+const inputFile = join(cwd, "index.ts");
 
 module.exports = {
-  input: pkg.entry,
+  input: inputFile,
   output: [
     {
-      file: pkg.main,
+      file: join(cwd, pkg.main),
       format: "cjs",
-      banner: "#!/usr/bin/env node",
+      banner: pkg.bin ? "#!/usr/bin/env node" : "",
+    },
+    {
+      file: join(cwd, pkg.module),
+      format: "es",
+      banner: pkg.bin ? "#!/usr/bin/env node" : "",
     },
   ],
   external: [...Object.keys(pkg.dependencies)],

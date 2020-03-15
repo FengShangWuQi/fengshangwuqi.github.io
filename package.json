@@ -12,18 +12,12 @@
   "workspaces": [
     "packages/*"
   ],
-  "preconstruct": {
-    "packages": [
-      "packages/*",
-      "!packages/babel-preset"
-    ]
-  },
   "scripts": {
     "clean": "gatsby clean",
     "test": " jest --coverage",
     "tsc": "tsc --noEmit",
     "lint": "eslint '**/*.{js,ts,tsx}'",
-    "pkg:build": "preconstruct build",
+    "pkg:build": "lerna exec -- rollup -c ../../rollup.config.js",
     "pkg:r": "lerna publish from-package --yes",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "generate": "ts-node ./tools/generate/index.ts",
@@ -103,7 +97,6 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
-    "@preconstruct/cli": "1.1.8",
     "@testing-library/jest-dom": "5.1.1",
     "@testing-library/react": "9.5.0",
     "@testing-library/react-hooks": "3.2.1",

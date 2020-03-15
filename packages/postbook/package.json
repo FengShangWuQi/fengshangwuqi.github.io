@@ -4,7 +4,7 @@
   "description": "在终端友好地管理你的 posts",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "main": "dist/postbook.cjs.js",
-  "module": "dist/postbook.esm.js",
+  "module": "dist/postbook.es.js",
   "files": [
     "dist/"
   ],

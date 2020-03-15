@@ -1,0 +1,45 @@
+import * as pb from "./postbook";
+
+export const cli = (() => {
+  const y = require("yargs")
+    .scriptName("pb")
+    .usage("$0 <cmd> [args]")
+    .help()
+    .alias("h", "help")
+    .epilog("copyright 2019");
+
+  y.command({
+    command: "init",
+    desc: "Cli Init",
+    handler: () => {
+      pb.init();
+    },
+  });
+
+  y.command({
+    command: "create [title]",
+    desc: "Create Post",
+    aliases: "add",
+    builder: (yargs: any) =>
+      yargs.options({
+        t: {
+          alias: "template",
+          type: "string",
+          describe: `Add template`,
+        },
+      }),
+    handler: (argv: any) => {
+      pb.createPost({
+        title: argv.title,
+        template: argv.template,
+      });
+    },
+  });
+
+  const argv = y.argv;
+  const cmd = argv._[0];
+
+  if (!cmd) {
+    pb.listPosts();
+  }
+})();
