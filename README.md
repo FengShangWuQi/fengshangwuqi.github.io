@@ -1,10 +1,10 @@
-> # [枫上雾棋的日志](https://fengshangwuqi.github.io)
+> # [枫上雾棋的日志](https://www.fengshangwuqi.com)
 
 ![Blog Build Status](https://github.com/FengShangWuQi/fengshangwuqi.github.io/workflows/Blog/badge.svg)
 ![Storybook Build Status](https://github.com/FengShangWuQi/fengshangwuqi.github.io/workflows/Storybook/badge.svg)
 ![Test Build Status](https://github.com/FengShangWuQi/fengshangwuqi.github.io/workflows/Test/badge.svg)
 
-- [blog](https://fengshangwuqi.github.io)
+- [blog](https://www.fengshangwuqi.com)
 - [storybook](https://fengshangwuqi.netlify.com/)
 - [taskbook](https://github.com/FengShangWuQi/fengshangwuqi.github.io/packages/26967)
 - [postbook](https://github.com/FengShangWuQi/fengshangwuqi.github.io/packages/53341)
