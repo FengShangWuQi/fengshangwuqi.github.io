@@ -1,6 +1,6 @@
-import * as pb from "./postbook";
+import { init, createPost, listPosts } from "./postbook";
 
-export const cli = (() => {
+export const cli = () => {
   const y = require("yargs")
     .scriptName("pb")
     .usage("$0 <cmd> [args]")
@@ -12,7 +12,7 @@ export const cli = (() => {
     command: "init",
     desc: "Cli Init",
     handler: () => {
-      pb.init();
+      init();
     },
   });
 
@@ -29,7 +29,7 @@ export const cli = (() => {
         },
       }),
     handler: (argv: any) => {
-      pb.createPost({
+      createPost({
         title: argv.title,
         template: argv.template,
       });
@@ -40,6 +40,6 @@ export const cli = (() => {
   const cmd = argv._[0];
 
   if (!cmd) {
-    pb.listPosts();
+    listPosts();
   }
-})();
+};

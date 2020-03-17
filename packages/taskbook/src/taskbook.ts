@@ -1,5 +1,5 @@
-import * as chalk from "chalk";
-import * as signale from "signale";
+import chalk from "chalk";
+import signale from "signale";
 
 import { storage, tbPath } from "./storage";
 import {

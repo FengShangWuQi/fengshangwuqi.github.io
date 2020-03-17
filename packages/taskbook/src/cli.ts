@@ -1,6 +1,6 @@
 import { tb } from "./taskbook";
 
-export const cli = (() => {
+export const cli = () => {
   const y = require("yargs")
     .scriptName("tb")
     .usage("$0 <cmd> [args]")
@@ -107,4 +107,4 @@ export const cli = (() => {
   if (!cmd) {
     tb.displayItemsByBoard();
   }
-})();
+};

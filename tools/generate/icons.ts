@@ -1,7 +1,7 @@
-import * as path from "path";
-import * as fse from "fs-extra";
-import * as globby from "globby";
-import * as prettier from "prettier";
+import path from "path";
+import fse from "fs-extra";
+import globby from "globby";
+import prettier from "prettier";
 import chalk from "chalk";
 
 import { camelCase } from "lodash";
@@ -29,9 +29,7 @@ const iconStorybook = (icons: string[]) => `
     import { useDesignSystem } from "src-core/ds";
     import { grid } from "src-core/style";
     
-    import { ${icons
-      .map(name => getIconName(name))
-      .join(",")} } from "../../Icon"
+    import { ${icons.map(name => getIconName(name)).join(",")} } from "../Icon"
     
     export const IconDemo = () => {
         const ds = useDesignSystem();
@@ -92,7 +90,7 @@ export const generateIcons = () => {
   successGenerate(exportPath);
 
   const sbPath =
-    process.cwd() + "/src-components/basic/__storybook__/examples/Icon.tsx";
+    process.cwd() + "/src-components/basic/__storybook__/Icon.stories.tsx";
   fse.ensureFileSync(sbPath);
   fse.writeFileSync(sbPath, formatCode(iconStorybook(icons), sbPath));
   successGenerate(sbPath);

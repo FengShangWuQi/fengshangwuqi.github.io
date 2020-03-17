@@ -1,9 +1,6 @@
-import * as pinyin_ from "pinyin";
-import * as rewritePattern_ from "regexpu-core";
-import * as chalk from "chalk";
-
-const pinyin = pinyin_;
-const rewritePattern = rewritePattern_;
+import pinyin from "pinyin";
+import rewritePattern from "regexpu-core";
+import chalk from "chalk";
 
 export const successLog = (message: string) =>
   console.log(`${chalk.green(" success ".toUpperCase())} ${message}`);

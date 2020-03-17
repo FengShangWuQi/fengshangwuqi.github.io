@@ -9,7 +9,10 @@
     "dist/"
   ],
   "bin": {
-    "tb": "dist/taskbook.cjs.js"
+    "tb": "bin/taskbook.js"
+  },
+  "scripts": {
+    "test": "ts-node bin/taskbook.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +30,8 @@
   },
   "devDependencies": {
     "@types/fs-extra": "8.0.1",
-    "@types/signale": "1.2.1"
+    "@types/signale": "1.2.1",
+    "ts-node": "8.6.2"
   },
   "license": "MIT"
 }

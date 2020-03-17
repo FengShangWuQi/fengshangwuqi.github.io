@@ -1,6 +1,6 @@
-import * as path from "path";
-import * as fse from "fs-extra";
-import * as os from "os";
+import path from "path";
+import fse from "fs-extra";
+import os from "os";
 
 import { errorLog } from "./utils";
 

@@ -1,4 +1,4 @@
-import * as spawn from "cross-spawn";
+import spawn from "cross-spawn";
 
 export const run = (script: string, envs: { [key: string]: string } = {}) => {
   const cmd = spawn("npm", ["run", script], {

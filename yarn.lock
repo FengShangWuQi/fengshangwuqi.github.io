@@ -2905,6 +2905,13 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/globby@9.1.0":
+  version "9.1.0"
+  resolved "https://registry.npm.taobao.org/@types/globby/download/@types/globby-9.1.0.tgz#08e2cf99c64f8e45c6cfbe05e9d8ac763aca6482"
+  integrity sha1-COLPmcZPjkXGz74F6disdjrKZII=
+  dependencies:
+    globby "*"
+
 "@types/history@*":
   version "4.7.5"
   resolved "https://registry.npm.taobao.org/@types/history/download/@types/history-4.7.5.tgz#527d20ef68571a4af02ed74350164e7a67544860"
@@ -9015,7 +9022,7 @@ globals@^12.1.0:
   dependencies:
     type-fest "^0.8.1"
 
-globby@11.0.0:
+globby@*, globby@11.0.0:
   version "11.0.0"
   resolved "https://registry.npm.taobao.org/globby/download/globby-11.0.0.tgz#56fd0e9f0d4f8fb0c456f1ab0dee96e1380bc154"
   integrity sha1-Vv0Onw1Pj7DEVvGrDe6W4TgLwVQ=
