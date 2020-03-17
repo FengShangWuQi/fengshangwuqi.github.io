@@ -27,7 +27,7 @@
     "paths": {
       "*": ["*", "__types__/*"]
     },
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
 
     /* 其他选项 */
     "experimentalDecorators": true,
