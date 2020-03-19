@@ -6,9 +6,7 @@
     "pkgkit": "bin/pkgkit.js"
   },
   "scripts": {
-    "clean": "rimraf dist",
-    "prepare": "yarn build",
-    "build": "yarn clean && ts-node bin/pkgkit.js build"
+    "build": "ts-node bin/pkgkit.js build"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -25,7 +23,6 @@
   "devDependencies": {
     "@types/rollup-plugin-node-builtins": "2.1.1",
     "@types/yargs": "15.0.4",
-    "rimraf": "3.0.2",
     "ts-node": "8.6.2"
   },
   "license": "MIT",
