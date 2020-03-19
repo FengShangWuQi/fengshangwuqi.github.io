@@ -1,7 +1,9 @@
+import yargs from "yargs";
+
 import { init, createPost, listPosts } from "./postbook";
 
 export const cli = () => {
-  const y = require("yargs")
+  const y = yargs
     .scriptName("pb")
     .usage("$0 <cmd> [args]")
     .help()
@@ -10,7 +12,7 @@ export const cli = () => {
 
   y.command({
     command: "init",
-    desc: "Cli Init",
+    describe: "Cli Init",
     handler: () => {
       init();
     },
@@ -18,7 +20,7 @@ export const cli = () => {
 
   y.command({
     command: "create [title]",
-    desc: "Create Post",
+    describe: "Create Post",
     aliases: "add",
     builder: (yargs: any) =>
       yargs.options({

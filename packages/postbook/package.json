@@ -3,20 +3,11 @@
   "version": "1.0.6",
   "description": "在终端友好地管理你的 posts",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
-  "main": "dist/postbook.cjs.js",
-  "module": "dist/postbook.es.js",
-  "files": [
-    "dist/"
-  ],
   "bin": {
     "pb": "bin/postbook.js"
   },
   "scripts": {
     "test": "ts-node bin/postbook.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:FengShangWuQi/fengshangwuqi.github.io.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -34,5 +25,10 @@
     "@types/pinyin": "2.8.1",
     "ts-node": "8.6.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js"
 }

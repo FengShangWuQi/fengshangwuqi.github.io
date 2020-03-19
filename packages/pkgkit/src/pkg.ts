@@ -6,8 +6,8 @@ interface Dictionary<T> {
 }
 
 export const usePkg = (): [
-  Dictionary<string>,
-  (value: Dictionary<string>) => void,
+  Dictionary<string | string[]>,
+  (value: Dictionary<string | string[]>) => void,
 ] => {
   const pkgPath = join(process.cwd(), "package.json");
 
@@ -19,8 +19,8 @@ export const usePkg = (): [
     process.exit(1);
   }
 
-  const setPkg = (value: Dictionary<string>) => {
-    writeJsonSync(pkgPath, { ...pkg, value });
+  const setPkg = (value: Dictionary<string | string[]>) => {
+    writeJsonSync(pkgPath, { ...pkg, ...value }, { spaces: "  " });
   };
 
   return [pkg, setPkg];

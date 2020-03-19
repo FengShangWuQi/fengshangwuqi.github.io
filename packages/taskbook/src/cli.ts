@@ -1,7 +1,9 @@
+import yargs from "yargs";
+
 import { tb } from "./taskbook";
 
 export const cli = () => {
-  const y = require("yargs")
+  const y = yargs
     .scriptName("tb")
     .usage("$0 <cmd> [args]")
     .help()
@@ -10,7 +12,7 @@ export const cli = () => {
 
   y.command({
     command: "create",
-    desc: "Create Item",
+    describe: "Create Item",
     aliases: "add",
     builder: (yargs: any) =>
       yargs.options({
@@ -48,7 +50,7 @@ export const cli = () => {
 
   y.command({
     command: "edit [id]",
-    desc: "Edit Item",
+    describe: "Edit Item",
     aliases: "u",
     builder: (yargs: any) =>
       yargs.options({
@@ -86,7 +88,7 @@ export const cli = () => {
 
   y.command({
     command: "delete [id]",
-    desc: "Delete Item",
+    describe: "Delete Item",
     aliases: "rm",
     handler: (argv: any) => {
       tb.deleteItem(argv.id);
@@ -95,7 +97,7 @@ export const cli = () => {
 
   y.command({
     command: "clean",
-    desc: "Clean done Items",
+    describe: "Clean done Items",
     handler: () => {
       tb.cleanItems();
     },

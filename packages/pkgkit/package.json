@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "bin": {
-    "tb": "bin/pkgtik.js"
+    "pkgkit": "bin/pkgkit.js"
   },
   "scripts": {
-    "init": "ts-node bin/pkgkit.js init",
-    "build": "ts-node bin/pkgkit.js build"
+    "clean": "rimraf dist",
+    "prepare": "yarn build",
+    "build": "yarn clean && ts-node bin/pkgkit.js build"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "@rollup/plugin-node-resolve": "7.1.1",
+    "chalk": "3.0.0",
     "fs-extra": "8.1.0",
     "rollup": "2.0.6",
     "rollup-plugin-babel": "4.4.0",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "@types/rollup-plugin-node-builtins": "2.1.1",
     "@types/yargs": "15.0.4",
+    "rimraf": "3.0.2",
     "ts-node": "8.6.2"
   },
   "license": "MIT",

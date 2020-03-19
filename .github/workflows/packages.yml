@@ -17,7 +17,7 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
 
       - run: yarn
-      #- run: yarn pkg:build
+      - run: yarn pkg:build
       #- run: yarn pkg:r
       #  env:
       #    NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}

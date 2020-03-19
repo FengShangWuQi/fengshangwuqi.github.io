@@ -1,24 +1,30 @@
 import { join } from "path";
-import { pathExistsSync } from "fs-extra";
+import { pathExists, remove } from "fs-extra";
 import { rollup, RollupOptions, OutputOptions } from "rollup";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import builtins from "rollup-plugin-node-builtins";
 import rollupBabel from "rollup-plugin-babel";
 
 import { usePkg, outputs } from "./pkg";
+import { successLog, warnLog } from "./utils";
 
 export const build = async () => {
   const cwd = process.cwd();
 
   const indexFile = join(cwd, "index.ts");
 
-  const exists = pathExistsSync(indexFile);
+  const exists = await pathExists(indexFile);
+
+  const [pkg, setPkg] = usePkg();
 
   if (!exists) {
-    process.exit(1);
+    warnLog(`exit ${pkg.name}`);
+    return;
   }
 
-  const [pkg] = usePkg();
+  await remove("./dist");
+
+  setPkg({ ...outputs });
 
   const inputOps: RollupOptions = {
     input: indexFile,
@@ -26,18 +32,15 @@ export const build = async () => {
     plugins: [
       builtins(),
       nodeResolve({
-        extensions: [".ts", ".tsx", ".js", ".jsx"],
+        extensions: [".ts"],
       }),
       rollupBabel({
         babelrc: false,
         presets: ["@babel/preset-typescript"],
-        plugins: [
-          "@babel/plugin-transform-runtime",
-          "@babel/plugin-proposal-class-properties",
-        ],
+        plugins: ["@babel/plugin-proposal-class-properties"],
         runtimeHelpers: true,
         exclude: "node_modules/**",
-        extensions: [".ts", ".tsx", ".js", ".jsx"],
+        extensions: [".ts"],
       }),
     ],
   };
@@ -58,4 +61,6 @@ export const build = async () => {
 
   await bundle.write(mainOutputOps);
   await bundle.write(moduleOutputOps);
+
+  successLog(`build ${pkg.name}`);
 };

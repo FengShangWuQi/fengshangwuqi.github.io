@@ -21,9 +21,5 @@ export const cli = () => {
       build();
       break;
     }
-    case "init": {
-      console.log("init");
-      break;
-    }
   }
 };

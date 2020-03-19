@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:FengShangWuQi/fengshangwuqi.github.io.git"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
