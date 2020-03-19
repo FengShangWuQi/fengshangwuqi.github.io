@@ -90,8 +90,8 @@
     "lodash": "4.17.15",
     "polished": "3.4.4",
     "prismjs": "1.19.0",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-helmet": "5.2.1",
     "react-spring": "8.0.27",
     "rxjs": "6.5.4"
@@ -123,7 +123,7 @@
     "dotenv": "8.2.0",
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.19.0",
-    "eslint-plugin-react-hooks": "2.5.0",
+    "eslint-plugin-react-hooks": "2.5.1",
     "fs-extra": "8.1.0",
     "gh-pages": "2.2.0",
     "globby": "11.0.0",
@@ -133,7 +133,7 @@
     "lint-staged": "10.0.8",
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
-    "react-test-renderer": "16.13.0",
+    "react-test-renderer": "16.13.1",
     "rimraf": "3.0.2",
     "ts-node": "8.6.2",
     "typescript": "3.8.3"
