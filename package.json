@@ -20,7 +20,7 @@
     "tsc": "tsc --noEmit",
     "prepare": "lerna run --scope @fswq/pkgkit build",
     "pkg:build": "lerna exec pkgkit build",
-    "pkg:r": "lerna publish from-git --yes",
+    "pkg:r": "lerna publish from-package --yes",
     "generate": "ts-node ./tools/generate/index.ts",
     "start": "ts-node ./tools/index.ts",
     "development": "gatsby develop -o",
