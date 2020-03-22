@@ -19,7 +19,6 @@
     "test": " jest --coverage",
     "tsc": "tsc --noEmit",
     "prepare": "lerna run --scope @fswq/pkgkit build",
-    "pkg:clean": "rimraf packages/*/node_modules packages/*/dist",
     "pkg:build": "lerna exec pkgkit build",
     "pkg:r": "lerna publish from-package --yes",
     "generate": "ts-node ./tools/generate/index.ts",
