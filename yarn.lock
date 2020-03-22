@@ -3033,13 +3033,6 @@
   resolved "https://registry.npm.taobao.org/@types/facepaint/download/@types/facepaint-1.2.1.tgz#925f8f0f2ed7766487c58736d37c2ceded6966f8"
   integrity sha1-kl+PDy7XdmSHxYc203ws7e1pZvg=
 
-"@types/fs-extra@8.0.1":
-  version "8.0.1"
-  resolved "https://registry.npm.taobao.org/@types/fs-extra/download/@types/fs-extra-8.0.1.tgz?cache=0&sync_timestamp=1581987811892&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Ffs-extra%2Fdownload%2F%40types%2Ffs-extra-8.0.1.tgz#a2378d6e7e8afea1564e44aafa2e207dadf77686"
-  integrity sha1-ojeNbn6K/qFWTkSq+i4gfa33doY=
-  dependencies:
-    "@types/node" "*"
-
 "@types/fs-extra@8.1.0":
   version "8.1.0"
   resolved "https://registry.npm.taobao.org/@types/fs-extra/download/@types/fs-extra-8.1.0.tgz?cache=0&sync_timestamp=1581987811892&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Ffs-extra%2Fdownload%2F%40types%2Ffs-extra-8.1.0.tgz#1114834b53c3914806cd03b3304b37b3bd221a4d"
@@ -13139,7 +13132,7 @@ node-object-hash@^2.0.0:
   resolved "https://registry.npm.taobao.org/node-object-hash/download/node-object-hash-2.0.0.tgz#9971fcdb7d254f05016bd9ccf508352bee11116b"
   integrity sha1-mXH8230lTwUBa9nM9Qg1K+4REWs=
 
-node-pre-gyp@*, node-pre-gyp@^0.14.0:
+node-pre-gyp@^0.14.0:
   version "0.14.0"
   resolved "https://registry.npm.taobao.org/node-pre-gyp/download/node-pre-gyp-0.14.0.tgz#9a0596533b877289bcad4e143982ca3d904ddc83"
   integrity sha1-mgWWUzuHcom8rU4UOYLKPZBN3IM=
