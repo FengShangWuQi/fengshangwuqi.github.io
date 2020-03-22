@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "chalk": "3.0.0",
-    "fs-extra": "8.1.0",
+    "fs-extra": "9.0.0",
     "os": "0.1.1",
     "pinyin": "2.9.0",
     "regexpu-core": "4.6.0",
