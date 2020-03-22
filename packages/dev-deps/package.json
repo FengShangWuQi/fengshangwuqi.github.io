@@ -4,6 +4,7 @@
   "description": "dev common deps",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {

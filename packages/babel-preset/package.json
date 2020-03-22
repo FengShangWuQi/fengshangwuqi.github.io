@@ -4,6 +4,7 @@
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "main": "index.js",
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {

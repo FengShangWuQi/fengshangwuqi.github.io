@@ -10,6 +10,7 @@
     "test": "ts-node bin/taskbook.js"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
