@@ -3167,10 +3167,10 @@
   resolved "https://registry.npm.taobao.org/@types/pinyin/download/@types/pinyin-2.8.1.tgz#bc1fb2f305a28ed86304e573ea77c5a29275b1ff"
   integrity sha1-vB+y8wWijthjBOVz6nfFopJ1sf8=
 
-"@types/prettier@1.19.0":
-  version "1.19.0"
-  resolved "https://registry.npm.taobao.org/@types/prettier/download/@types/prettier-1.19.0.tgz?cache=0&sync_timestamp=1580843897528&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fprettier%2Fdownload%2F%40types%2Fprettier-1.19.0.tgz#a2502fb7ce9b6626fdbfc2e2a496f472de1bdd05"
-  integrity sha1-olAvt86bZib9v8LipJb0ct4b3QU=
+"@types/prettier@1.19.1":
+  version "1.19.1"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-1.19.1.tgz#33509849f8e679e4add158959fdb086440e9553f"
+  integrity sha512-5qOlnZscTn4xxM5MeGXAMOsIOIKIbh9e85zJWfBRVPlRMEVawzoPhINYbRGkBZCI8LxvBe7tJCdWiarA99OZfQ==
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -13139,7 +13139,7 @@ node-object-hash@^2.0.0:
   resolved "https://registry.npm.taobao.org/node-object-hash/download/node-object-hash-2.0.0.tgz#9971fcdb7d254f05016bd9ccf508352bee11116b"
   integrity sha1-mXH8230lTwUBa9nM9Qg1K+4REWs=
 
-node-pre-gyp@*, node-pre-gyp@^0.14.0:
+node-pre-gyp@^0.14.0:
   version "0.14.0"
   resolved "https://registry.npm.taobao.org/node-pre-gyp/download/node-pre-gyp-0.14.0.tgz#9a0596533b877289bcad4e143982ca3d904ddc83"
   integrity sha1-mgWWUzuHcom8rU4UOYLKPZBN3IM=
