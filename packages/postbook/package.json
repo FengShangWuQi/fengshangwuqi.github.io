@@ -10,8 +10,8 @@
     "test": "ts-node bin/postbook.js"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
   },
   "dependencies": {
     "chalk": "3.0.0",
