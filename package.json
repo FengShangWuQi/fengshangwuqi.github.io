@@ -96,8 +96,6 @@
     "rxjs": "6.5.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.5",
-    "@commitlint/config-conventional": "8.3.4",
     "@testing-library/jest-dom": "5.1.1",
     "@testing-library/react": "10.0.1",
     "@testing-library/react-hooks": "3.2.1",
@@ -109,7 +107,6 @@
     "@types/jest": "25.1.4",
     "@types/lodash": "4.14.149",
     "@types/node": "13.9.2",
-    "@types/prettier": "1.19.0",
     "@types/react": "16.9.25",
     "@types/react-dom": "16.9.5",
     "@types/react-helmet": "5.0.15",
@@ -126,16 +123,9 @@
     "fs-extra": "9.0.0",
     "gh-pages": "2.2.0",
     "globby": "11.0.0",
-    "husky": "4.2.3",
     "jest": "25.1.0",
     "lerna": "3.20.2",
-    "lint-staged": "10.0.8",
-    "prettier": "2.0.1",
-    "pretty-quick": "2.0.1",
-    "react-test-renderer": "16.13.1",
-    "rimraf": "3.0.2",
-    "ts-node": "8.8.1",
-    "typescript": "3.8.3"
+    "react-test-renderer": "16.13.1"
   },
   "license": "MIT",
   "engines": {
