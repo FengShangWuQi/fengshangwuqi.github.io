@@ -14,8 +14,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
+          registry-url: "https://npm.pkg.github.com"
 
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.PACKAGES_TOKEN }}" > ~/.npmrc
       - run: yarn
       - run: yarn pkg:build
       - run: yarn pkg:r
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
