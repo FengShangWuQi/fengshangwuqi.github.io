@@ -68,7 +68,6 @@ exports.mdx = {
       "gatsby-remark-prismjs",
       "gatsby-remark-smartypants",
     ],
-    plugins: [`gatsby-remark-images`],
   },
 };
 
