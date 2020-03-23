@@ -115,7 +115,7 @@ const PopupContainer = ({
       };
     }
 
-    return () => {};
+    return;
   }, []);
 
   const targetRect = useRect(targetRef);

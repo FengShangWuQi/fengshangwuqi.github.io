@@ -11,7 +11,11 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  plugins: ["@typescript-eslint", "react", "react-hooks"],
+  plugins: [
+    "@typescript-eslint/eslint-plugin",
+    "eslint-plugin-react",
+    "eslint-plugin-react-hooks",
+  ],
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
