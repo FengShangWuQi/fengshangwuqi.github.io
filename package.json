@@ -19,7 +19,7 @@
     "test": " jest --coverage",
     "tsc": "tsc --noEmit",
     "ncu": "ncu -u && lerna exec -- ncu -u",
-    "pkg:build": "lerna run --scope @fswq/pkgkit build && lerna exec pkgkit build",
+    "pkg:build": "lerna run --scope @fengshangwuqi/pkgkit build && lerna exec pkgkit build",
     "pkg:r": "lerna publish from-package --yes",
     "generate": "ts-node ./tools/generate/index.ts",
     "start": "ts-node ./tools/index.ts",
