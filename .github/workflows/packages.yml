@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: "12.x"
 
-      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.PACKAGES_TOKEN }}" > ~/.npmrc
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.PACKAGES_TOKEN }}" > ~/.npmrc
       - run: yarn
       - run: yarn pkg:build
       - run: yarn pkg:r

@@ -6,8 +6,7 @@
   "command": {
     "publish": {
       "message": "chore(release): %s",
-      "ignoreChanges": ["**/__tests__/**", "**/*.md"],
-      "registry": "https://npm.pkg.github.com"
+      "ignoreChanges": ["**/__tests__/**", "**/*.md"]
     }
   }
 }
