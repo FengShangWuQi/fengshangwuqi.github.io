@@ -2,6 +2,7 @@
   "name": "@fswq/dev-deps",
   "version": "1.0.0",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
+  "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {
     "access": "public"
   },

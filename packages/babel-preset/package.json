@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "main": "index.js",
+  "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {
     "access": "public"
   },

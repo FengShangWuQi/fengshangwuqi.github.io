@@ -9,6 +9,7 @@
   "scripts": {
     "test": "ts-node bin/taskbook.js"
   },
+  "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {
     "access": "public"
   },

@@ -8,6 +8,7 @@
   "scripts": {
     "build": "ts-node bin/pkgkit.js build"
   },
+  "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {
     "access": "public"
   },
