@@ -15,16 +15,16 @@
   },
   "dependencies": {
     "chalk": "3.0.0",
-    "fs-extra": "8.1.0",
+    "fs-extra": "9.0.0",
     "os": "0.1.1",
     "pinyin": "2.9.0",
-    "regexpu-core": "4.6.0",
-    "yargs": "15.1.0"
+    "regexpu-core": "4.7.0",
+    "yargs": "15.3.1"
   },
   "devDependencies": {
-    "@types/fs-extra": "8.0.1",
+    "@types/fs-extra": "8.1.0",
     "@types/pinyin": "2.8.1",
-    "ts-node": "8.6.2"
+    "ts-node": "8.8.1"
   },
   "license": "MIT",
   "files": [
