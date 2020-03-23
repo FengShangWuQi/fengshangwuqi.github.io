@@ -1,13 +1,14 @@
 {
   "name": "@fengshangwuqi/pkgkit",
   "version": "1.0.0",
-  "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
+  "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "bin": {
     "pkgkit": "bin/pkgkit.js"
   },
   "scripts": {
     "build": "ts-node bin/pkgkit.js build"
   },
+  "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {
     "access": "public"
   },

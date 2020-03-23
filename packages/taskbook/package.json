@@ -2,7 +2,7 @@
   "name": "@fengshangwuqi/taskbook",
   "version": "1.0.6",
   "description": "在终端友好地管理你的 notes 和 tasks",
-  "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
+  "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "bin": {
     "tb": "bin/taskbook.js"
   },
