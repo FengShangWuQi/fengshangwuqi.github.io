@@ -10,8 +10,7 @@
     "test": "ts-node bin/taskbook.js"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "dependencies": {
     "chalk": "3.0.0",

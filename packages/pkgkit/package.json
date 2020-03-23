@@ -9,7 +9,7 @@
     "build": "ts-node bin/pkgkit.js build"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "dependencies": {
     "@rollup/plugin-node-resolve": "7.1.1",

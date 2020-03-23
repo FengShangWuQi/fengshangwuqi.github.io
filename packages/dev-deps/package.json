@@ -4,8 +4,7 @@
   "description": "dev common deps",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "dependencies": {
     "@commitlint/cli": "8.3.5",

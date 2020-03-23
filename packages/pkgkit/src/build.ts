@@ -1,5 +1,5 @@
 import { join } from "path";
-import { pathExists, remove } from "fs-extra";
+import { pathExists } from "fs-extra";
 import { rollup, RollupOptions, OutputOptions } from "rollup";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import builtins from "rollup-plugin-node-builtins";
@@ -21,8 +21,6 @@ export const build = async () => {
     warnLog(`exit ${pkg.name}`);
     return;
   }
-
-  await remove("./dist");
 
   setPkg({ ...outputs });
 
