@@ -17,7 +17,7 @@ jobs:
       - run: yarn start bg b
 
       - uses: peaceiris/actions-gh-pages@v3
-        env:
+        with:
           github_token: ${{ secrets.REPO_TOKEN }}
           publish_branch: master
           publish_dir: ./public
