@@ -12,7 +12,7 @@ dev-deps
 $ npm install @fengshangwuqi/dev-deps
 ```
 
-## 使用
+### 使用
 
 ```json
 {
