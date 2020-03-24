@@ -11,5 +11,9 @@ jobs:
           node-version: "12.x"
 
       - run: yarn
-
       - run: yarn test
+
+      - uses: codecov/codecov-action@v1
+        with:
+          file: ./coverage.xml
+          fail_ci_if_error: true
