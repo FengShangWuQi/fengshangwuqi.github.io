@@ -3,10 +3,12 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
+  "ignoreChanges": ["**/__tests__/**", "**/*.md"],
   "command": {
-    "publish": {
-      "message": "chore(release): %s",
-      "ignoreChanges": ["**/__tests__/**", "**/*.md"]
+    "version": {
+      "allowBranch": "master",
+      "exact": true,
+      "message": "chore(release): %s"
     }
   }
 }
