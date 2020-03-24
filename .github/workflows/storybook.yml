@@ -18,6 +18,6 @@ jobs:
 
       - uses: peaceiris/actions-gh-pages@v3
         env:
-          PERSONAL_TOKEN: ${{ secrets.REPO_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./public
+          github_token: ${{ secrets.REPO_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./public
