@@ -9,7 +9,7 @@ dev-deps
 ### 安装
 
 ```
-$ npm install @fengshangwuqi/dev-deps
+$ npm install @fengshangwuqi/dev-deps -D
 ```
 
 ### 使用
