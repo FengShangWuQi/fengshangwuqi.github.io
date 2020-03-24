@@ -3222,7 +3222,17 @@
   resolved "https://registry.npm.taobao.org/@types/yoga-layout/download/@types/yoga-layout-1.9.1.tgz#6c00e4a151a9a529397d580e2cf6f3947a42a928"
   integrity sha1-bADkoVGppSk5fVgOLPbzlHpCqSg=
 
-"@typescript-eslint/eslint-plugin@2.24.0", "@typescript-eslint/eslint-plugin@^2.24.0":
+"@typescript-eslint/eslint-plugin@2.25.0":
+  version "2.25.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-2.25.0.tgz#0b60917332f20dcff54d0eb9be2a9e9f4c9fbd02"
+  integrity sha1-C2CRczLyDc/1TQ65viqen0yfvQI=
+  dependencies:
+    "@typescript-eslint/experimental-utils" "2.25.0"
+    functional-red-black-tree "^1.0.1"
+    regexpp "^3.0.0"
+    tsutils "^3.17.1"
+
+"@typescript-eslint/eslint-plugin@^2.24.0":
   version "2.24.0"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-2.24.0.tgz?cache=0&sync_timestamp=1584677523989&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.24.0.tgz#a86cf618c965a462cddf3601f594544b134d6d68"
   integrity sha1-qGz2GMllpGLN3zYB9ZRUSxNNbWg=
@@ -3242,7 +3252,27 @@
     "@typescript-eslint/typescript-estree" "2.24.0"
     eslint-scope "^5.0.0"
 
-"@typescript-eslint/parser@2.24.0", "@typescript-eslint/parser@^2.24.0":
+"@typescript-eslint/experimental-utils@2.25.0":
+  version "2.25.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/experimental-utils/download/@typescript-eslint/experimental-utils-2.25.0.tgz#13691c4fe368bd377b1e5b1e4ad660b220bf7714"
+  integrity sha1-E2kcT+NovTd7HlseStZgsiC/dxQ=
+  dependencies:
+    "@types/json-schema" "^7.0.3"
+    "@typescript-eslint/typescript-estree" "2.25.0"
+    eslint-scope "^5.0.0"
+    eslint-utils "^2.0.0"
+
+"@typescript-eslint/parser@2.25.0":
+  version "2.25.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-2.25.0.tgz?cache=0&sync_timestamp=1585008949421&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.25.0.tgz#abfb3d999084824d9a756d9b9c0f36fba03adb76"
+  integrity sha1-q/s9mZCEgk2adW2bnA82+6A623Y=
+  dependencies:
+    "@types/eslint-visitor-keys" "^1.0.0"
+    "@typescript-eslint/experimental-utils" "2.25.0"
+    "@typescript-eslint/typescript-estree" "2.25.0"
+    eslint-visitor-keys "^1.1.0"
+
+"@typescript-eslint/parser@^2.24.0":
   version "2.24.0"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-2.24.0.tgz?cache=0&sync_timestamp=1584676993558&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.24.0.tgz#2cf0eae6e6dd44d162486ad949c126b887f11eb8"
   integrity sha1-LPDq5ubdRNFiSGrZScEmuIfxHrg=
@@ -3256,6 +3286,19 @@
   version "2.24.0"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-2.24.0.tgz#38bbc8bb479790d2f324797ffbcdb346d897c62a"
   integrity sha1-OLvIu0eXkNLzJHl/+82zRtiXxio=
+  dependencies:
+    debug "^4.1.1"
+    eslint-visitor-keys "^1.1.0"
+    glob "^7.1.6"
+    is-glob "^4.0.1"
+    lodash "^4.17.15"
+    semver "^6.3.0"
+    tsutils "^3.17.1"
+
+"@typescript-eslint/typescript-estree@2.25.0":
+  version "2.25.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-2.25.0.tgz#b790497556734b7476fa7dd3fa539955a5c79e2c"
+  integrity sha1-t5BJdVZzS3R2+n3T+lOZVaXHniw=
   dependencies:
     debug "^4.1.1"
     eslint-visitor-keys "^1.1.0"
@@ -4112,10 +4155,10 @@ babel-plugin-macros@^2.0.0, babel-plugin-macros@^2.8.0:
     cosmiconfig "^6.0.0"
     resolve "^1.12.0"
 
-babel-plugin-remove-graphql-queries@^2.8.0:
-  version "2.8.0"
-  resolved "https://registry.npm.taobao.org/babel-plugin-remove-graphql-queries/download/babel-plugin-remove-graphql-queries-2.8.0.tgz#d600e75e48da2a38bc7a373dc9898c9f67245e10"
-  integrity sha1-1gDnXkjaKji8ejc9yYmMn2ckXhA=
+babel-plugin-remove-graphql-queries@^2.8.1:
+  version "2.8.1"
+  resolved "https://registry.npm.taobao.org/babel-plugin-remove-graphql-queries/download/babel-plugin-remove-graphql-queries-2.8.1.tgz#dde87a8d42a08f87575119a5b88cd5f53107d068"
+  integrity sha1-3eh6jUKgj4dXURmluIzV9TEH0Gg=
 
 babel-plugin-syntax-jsx@^6.18.0:
   version "6.18.0"
@@ -4149,10 +4192,10 @@ babel-polyfill@6.26.0:
     core-js "^2.5.0"
     regenerator-runtime "^0.10.5"
 
-babel-preset-gatsby@0.3.0, babel-preset-gatsby@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npm.taobao.org/babel-preset-gatsby/download/babel-preset-gatsby-0.3.0.tgz#bdbaa346c8a17f5b9cbceb65afede1ae748eed07"
-  integrity sha1-vbqjRsihf1ucvOtlr+3hrnSO7Qc=
+babel-preset-gatsby@0.3.1, babel-preset-gatsby@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.npm.taobao.org/babel-preset-gatsby/download/babel-preset-gatsby-0.3.1.tgz#13b6894f3b7bd208dbb3ba1edc8840c4a0c7fdc2"
+  integrity sha1-E7aJTzt70gjbs7oe3IhAxKDH/cI=
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.8.3"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.8.3"
@@ -4166,7 +4209,7 @@ babel-preset-gatsby@0.3.0, babel-preset-gatsby@^0.3.0:
     babel-plugin-dynamic-import-node "^2.3.0"
     babel-plugin-macros "^2.8.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
 
 babel-preset-jest@^25.1.0:
   version "25.1.0"
@@ -7168,6 +7211,13 @@ eslint-utils@^1.4.3:
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
+eslint-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/eslint-utils/download/eslint-utils-2.0.0.tgz#7be1cc70f27a72a76cd14aa698bcabed6890e1cd"
+  integrity sha1-e+HMcPJ6cqds0UqmmLyr7WiQ4c0=
+  dependencies:
+    eslint-visitor-keys "^1.1.0"
+
 eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/eslint-visitor-keys/download/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
@@ -8103,10 +8153,10 @@ fwd-stream@^1.0.4:
   dependencies:
     readable-stream "~1.0.26-4"
 
-gatsby-cli@^2.11.0:
-  version "2.11.0"
-  resolved "https://registry.npm.taobao.org/gatsby-cli/download/gatsby-cli-2.11.0.tgz?cache=0&sync_timestamp=1584708423435&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgatsby-cli%2Fdownload%2Fgatsby-cli-2.11.0.tgz#922ee3d0bb97c5a4465ed1d259b476a2dc688a5f"
-  integrity sha1-ki7j0LuXxaRGXtHSWbR2otxoil8=
+gatsby-cli@^2.11.1:
+  version "2.11.1"
+  resolved "https://registry.npm.taobao.org/gatsby-cli/download/gatsby-cli-2.11.1.tgz#d6fddf35bf36e1d9d90ca559be60f85e716d8b1e"
+  integrity sha1-1v3fNb824dnZDKVZvmD4XnFtix4=
   dependencies:
     "@babel/code-frame" "^7.8.3"
     "@babel/runtime" "^7.8.7"
@@ -8123,8 +8173,8 @@ gatsby-cli@^2.11.0:
     execa "^3.4.0"
     fs-exists-cached "^1.0.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.1.0"
-    gatsby-telemetry "^1.2.0"
+    gatsby-core-utils "^1.1.1"
+    gatsby-telemetry "^1.2.1"
     hosted-git-info "^3.0.4"
     is-valid-path "^0.1.1"
     lodash "^4.17.15"
@@ -8151,74 +8201,74 @@ gatsby-cli@^2.11.0:
     ink "^2.7.1"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/gatsby-core-utils/download/gatsby-core-utils-1.1.0.tgz#bbc62ed9ec3f4d379215b346d1837423d3a32f2e"
-  integrity sha1-u8Yu2ew/TTeSFbNG0YN0I9OjLy4=
+gatsby-core-utils@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/gatsby-core-utils/download/gatsby-core-utils-1.1.1.tgz#3ebe4c6fe277ef8d91e1b708bd65ef4f7dc0928b"
+  integrity sha1-Pr5Mb+J3742R4bcIvWXvT33Akos=
   dependencies:
     ci-info "2.0.0"
     configstore "^5.0.1"
     node-object-hash "^2.0.0"
 
-gatsby-graphiql-explorer@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npm.taobao.org/gatsby-graphiql-explorer/download/gatsby-graphiql-explorer-0.3.0.tgz#79db602d4b943e9b8309cdaed366a7a2b251a9f1"
-  integrity sha1-edtgLUuUPpuDCc2u02anorJRqfE=
+gatsby-graphiql-explorer@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.npm.taobao.org/gatsby-graphiql-explorer/download/gatsby-graphiql-explorer-0.3.1.tgz#ea38430e1b748c681be0e17e85b9ead8ad51fdeb"
+  integrity sha1-6jhDDht0jGgb4OF+hbnq2K1R/es=
   dependencies:
     "@babel/runtime" "^7.8.7"
 
-gatsby-image@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.npm.taobao.org/gatsby-image/download/gatsby-image-2.3.0.tgz#4533b9dc784f97332c11d78bddb07fcaacd41cbd"
-  integrity sha1-RTO53HhPlzMsEdeL3bB/yqzUHL0=
+gatsby-image@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npm.taobao.org/gatsby-image/download/gatsby-image-2.3.1.tgz?cache=0&sync_timestamp=1585044558831&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgatsby-image%2Fdownload%2Fgatsby-image-2.3.1.tgz#6898e03a489e9b43242562d70079bd8ed10c5d99"
+  integrity sha1-aJjgOkiem0MkJWLXAHm9jtEMXZk=
   dependencies:
     "@babel/runtime" "^7.8.7"
     object-fit-images "^3.2.4"
     prop-types "^15.7.2"
 
-gatsby-link@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.npm.taobao.org/gatsby-link/download/gatsby-link-2.3.0.tgz#9982d5e6ab85698a35afe916bda81466fcb249e0"
-  integrity sha1-mYLV5quFaYo1r+kWvagUZvyySeA=
+gatsby-link@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npm.taobao.org/gatsby-link/download/gatsby-link-2.3.1.tgz#7c7b0d32087256735201ec58ed394e6abc6d7ae3"
+  integrity sha1-fHsNMghyVnNSAexY7TlOarxteuM=
   dependencies:
     "@babel/runtime" "^7.8.7"
     "@types/reach__router" "^1.3.0"
     prop-types "^15.7.2"
 
-gatsby-page-utils@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npm.taobao.org/gatsby-page-utils/download/gatsby-page-utils-0.1.0.tgz#fa9b093d0a0979036d8b4fb0cb2ad8106d7908cb"
-  integrity sha1-+psJPQoJeQNti0+wyyrYEG15CMs=
+gatsby-page-utils@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npm.taobao.org/gatsby-page-utils/download/gatsby-page-utils-0.1.1.tgz#f93ed3fd11c96944f888e9d85abdb7b83af927d6"
+  integrity sha1-+T7T/RHJaUT4iOnYWr23uDr5J9Y=
   dependencies:
     "@babel/runtime" "^7.8.7"
     bluebird "^3.7.2"
     chokidar "3.3.1"
     fs-exists-cached "^1.0.0"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-catch-links@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-catch-links/download/gatsby-plugin-catch-links-2.2.0.tgz#4bf6e246904af50035b4c8cf2bdf00d909029647"
-  integrity sha1-S/biRpBK9QA1tMjPK98A2QkClkc=
+gatsby-plugin-catch-links@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-catch-links/download/gatsby-plugin-catch-links-2.2.1.tgz#8e546743b43e4548c4eda9d855987a8f98eb7695"
+  integrity sha1-jlRnQ7Q+RUjE7anYVZh6j5jrdpU=
   dependencies:
     "@babel/runtime" "^7.8.7"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-emotion@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-emotion/download/gatsby-plugin-emotion-4.2.0.tgz#94ea3671d62df64163b3689508d93e64a9acda70"
-  integrity sha1-lOo2cdYt9kFjs2iVCNk+ZKms2nA=
+gatsby-plugin-emotion@4.2.1:
+  version "4.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-emotion/download/gatsby-plugin-emotion-4.2.1.tgz#d4244460e23d1bb5cca76266ba8990f534234e32"
+  integrity sha1-1CREYOI9G7XMp2JmuomQ9TQjTjI=
   dependencies:
     "@babel/runtime" "^7.8.7"
     "@emotion/babel-preset-css-prop" "^10.0.27"
 
-gatsby-plugin-feed@2.4.0:
-  version "2.4.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-feed/download/gatsby-plugin-feed-2.4.0.tgz#9fa2ca2c4846f104ccfb393e274852e83c5423aa"
-  integrity sha1-n6LKLEhG8QTM+zk+J0hS6DxUI6o=
+gatsby-plugin-feed@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-feed/download/gatsby-plugin-feed-2.4.1.tgz#a85301556e080f89a47d21d95271ff18a3b0482d"
+  integrity sha1-qFMBVW4ID4mkfSHZUnH/GKOwSC0=
   dependencies:
     "@babel/runtime" "^7.8.7"
     "@hapi/joi" "^15.1.1"
@@ -8226,17 +8276,17 @@ gatsby-plugin-feed@2.4.0:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-google-analytics@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-google-analytics/download/gatsby-plugin-google-analytics-2.2.0.tgz#8ba9994607bdc2d57feec4401002038fb261e29c"
-  integrity sha1-i6mZRge9wtV/7sRAEAIDj7Jh4pw=
+gatsby-plugin-google-analytics@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-google-analytics/download/gatsby-plugin-google-analytics-2.2.1.tgz?cache=0&sync_timestamp=1585044559402&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgatsby-plugin-google-analytics%2Fdownload%2Fgatsby-plugin-google-analytics-2.2.1.tgz#0dbc464dce05784ed80766bf51eba783f8970145"
+  integrity sha1-DbxGTc4FeE7YB2a/Ueung/iXAUU=
   dependencies:
     "@babel/runtime" "^7.8.7"
 
-gatsby-plugin-mdx@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-mdx/download/gatsby-plugin-mdx-1.1.0.tgz#7cdf1da4db4b25ac8ed24339a0299b1368466cc5"
-  integrity sha1-fN8dpNtLJayO0kM5oCmbE2hGbMU=
+gatsby-plugin-mdx@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-mdx/download/gatsby-plugin-mdx-1.1.1.tgz#5090f7fcb9886d47c7043195d77f067d7c25a801"
+  integrity sha1-UJD3/LmIbUfHBDGV138GfXwlqAE=
   dependencies:
     "@babel/core" "^7.8.7"
     "@babel/generator" "^7.8.8"
@@ -8253,7 +8303,7 @@ gatsby-plugin-mdx@1.1.0:
     escape-string-regexp "^1.0.5"
     eval "^0.1.4"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
     gray-matter "^4.0.2"
     json5 "^2.1.2"
     loader-utils "^1.4.0"
@@ -8274,49 +8324,49 @@ gatsby-plugin-mdx@1.1.0:
     unist-util-remove "^1.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-plugin-offline@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-offline/download/gatsby-plugin-offline-3.1.0.tgz#cbe00051a5c6b219a9a2dd102c792c7baf488559"
-  integrity sha1-y+AAUaXGshmpot0QLHkse69IhVk=
+gatsby-plugin-offline@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-offline/download/gatsby-plugin-offline-3.1.1.tgz#acbab9fbc0eb0a4fff60097827117568564049f8"
+  integrity sha1-rLq5+8DrCk//YAl4JxF1aFZASfg=
   dependencies:
     "@babel/runtime" "^7.8.7"
     cheerio "^1.0.0-rc.3"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
     glob "^7.1.6"
     idb-keyval "^3.2.0"
     lodash "^4.17.15"
     workbox-build "^4.3.1"
 
-gatsby-plugin-page-creator@2.2.0, gatsby-plugin-page-creator@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-page-creator/download/gatsby-plugin-page-creator-2.2.0.tgz#e48257a0450fbc16742fc91a19b7a4e00330b6ff"
-  integrity sha1-5IJXoEUPvBZ0L8kaGbek4AMwtv8=
+gatsby-plugin-page-creator@2.2.1, gatsby-plugin-page-creator@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-page-creator/download/gatsby-plugin-page-creator-2.2.1.tgz#d0da8cdf1ea0d71eb5bb3fb0241e35fb7a5742df"
+  integrity sha1-0NqM3x6g1x61uz+wJB41+3pXQt8=
   dependencies:
     "@babel/runtime" "^7.8.7"
     bluebird "^3.7.2"
     fs-exists-cached "^1.0.0"
-    gatsby-page-utils "^0.1.0"
+    gatsby-page-utils "^0.1.1"
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-react-helmet@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-react-helmet/download/gatsby-plugin-react-helmet-3.2.0.tgz#8356956f9df6c0509aeba809575ce86ec9c56948"
-  integrity sha1-g1aVb532wFCa66gJV1zobsnFaUg=
+gatsby-plugin-react-helmet@3.2.1:
+  version "3.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-react-helmet/download/gatsby-plugin-react-helmet-3.2.1.tgz?cache=0&sync_timestamp=1585044560210&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgatsby-plugin-react-helmet%2Fdownload%2Fgatsby-plugin-react-helmet-3.2.1.tgz#28a89e884e5447f7aefead2a80749e3745f5f5a9"
+  integrity sha1-KKieiE5UR/eu/q0qgHSeN0X19ak=
   dependencies:
     "@babel/runtime" "^7.8.7"
 
-gatsby-plugin-sharp@2.5.1:
-  version "2.5.1"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-sharp/download/gatsby-plugin-sharp-2.5.1.tgz#e901630a97823545404cb9f2f77eecf841f15c5f"
-  integrity sha1-6QFjCpeCNUVATLny937s+EHxXF8=
+gatsby-plugin-sharp@2.5.2:
+  version "2.5.2"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-sharp/download/gatsby-plugin-sharp-2.5.2.tgz#73a12ebfc053a940cd75e920cd3f292e0bdc3dcd"
+  integrity sha1-c6Euv8BTqUDNdekgzT8pLgvcPc0=
   dependencies:
     "@babel/runtime" "^7.8.7"
     async "^2.6.3"
     bluebird "^3.7.2"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
     got "^8.3.2"
     imagemin "^6.1.0"
     imagemin-mozjpeg "^8.0.0"
@@ -8337,17 +8387,17 @@ gatsby-plugin-svgr@2.0.2:
   resolved "https://registry.npm.taobao.org/gatsby-plugin-svgr/download/gatsby-plugin-svgr-2.0.2.tgz#22e08fb67ec63b68aca6ac3e89962af20214e2a5"
   integrity sha1-IuCPtn7GO2ispqw+iZYq8gIU4qU=
 
-gatsby-plugin-twitter@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-twitter/download/gatsby-plugin-twitter-2.2.0.tgz#45e16670bb3f4652108483c03a33a6ed04a1b6a4"
-  integrity sha1-ReFmcLs/RlIQhIPAOjOm7QShtqQ=
+gatsby-plugin-twitter@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-twitter/download/gatsby-plugin-twitter-2.2.1.tgz#7f953f90a12bf9a3430641b213ab4671d5f22d7a"
+  integrity sha1-f5U/kKEr+aNDBkGyE6tGcdXyLXo=
   dependencies:
     "@babel/runtime" "^7.8.7"
 
-gatsby-plugin-typescript@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.npm.taobao.org/gatsby-plugin-typescript/download/gatsby-plugin-typescript-2.3.0.tgz#fe8645f0b739c6ac2445f88f0de659633103caf4"
-  integrity sha1-/oZF8Lc5xqwkRfiPDeZZYzEDyvQ=
+gatsby-plugin-typescript@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npm.taobao.org/gatsby-plugin-typescript/download/gatsby-plugin-typescript-2.3.1.tgz#fadc8004a85cf2a033f17140e482f7d72fd3bf10"
+  integrity sha1-+tyABKhc8qAz8XFA5IL31y/TvxA=
   dependencies:
     "@babel/core" "^7.8.7"
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.8.3"
@@ -8355,21 +8405,21 @@ gatsby-plugin-typescript@2.3.0:
     "@babel/plugin-proposal-optional-chaining" "^7.8.3"
     "@babel/preset-typescript" "^7.8.3"
     "@babel/runtime" "^7.8.7"
-    babel-plugin-remove-graphql-queries "^2.8.0"
+    babel-plugin-remove-graphql-queries "^2.8.1"
 
-gatsby-react-router-scroll@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-react-router-scroll/download/gatsby-react-router-scroll-2.2.0.tgz#1d5ca513ca2daae8c01dbb2023ca8d59b8c5f660"
-  integrity sha1-HVylE8otqujAHbsgI8qNWbjF9mA=
+gatsby-react-router-scroll@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-react-router-scroll/download/gatsby-react-router-scroll-2.2.1.tgz#6fbdb67af08c0f0493503971f4cdc19462f10841"
+  integrity sha1-b722evCMDwSTUDlx9M3BlGLxCEE=
   dependencies:
     "@babel/runtime" "^7.8.7"
     scroll-behavior "^0.9.12"
     warning "^3.0.0"
 
-gatsby-remark-autolink-headers@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-remark-autolink-headers/download/gatsby-remark-autolink-headers-2.2.0.tgz#e716f9c24534b81d8463dbad96569e09129a9da7"
-  integrity sha1-5xb5wkU0uB2EY9utllaeCRKanac=
+gatsby-remark-autolink-headers@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-remark-autolink-headers/download/gatsby-remark-autolink-headers-2.2.1.tgz?cache=0&sync_timestamp=1585044580361&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgatsby-remark-autolink-headers%2Fdownload%2Fgatsby-remark-autolink-headers-2.2.1.tgz#8ec4f0d0bbfa82185d8e9bff7c0d014329258192"
+  integrity sha1-jsTw0Lv6ghhdjpv/fA0BQyklgZI=
   dependencies:
     "@babel/runtime" "^7.8.7"
     github-slugger "^1.3.0"
@@ -8377,10 +8427,10 @@ gatsby-remark-autolink-headers@2.2.0:
     mdast-util-to-string "^1.1.0"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-copy-linked-files@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-remark-copy-linked-files/download/gatsby-remark-copy-linked-files-2.2.0.tgz#bdd944b0409d9e6bab04a6ef521a35b1c9d19d9b"
-  integrity sha1-vdlEsECdnmurBKbvUho1scnRnZs=
+gatsby-remark-copy-linked-files@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-remark-copy-linked-files/download/gatsby-remark-copy-linked-files-2.2.1.tgz?cache=0&sync_timestamp=1585044580936&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgatsby-remark-copy-linked-files%2Fdownload%2Fgatsby-remark-copy-linked-files-2.2.1.tgz#1e95420ff61f5ecb1c79dc8d0ec2ce2ac0aa3226"
+  integrity sha1-HpVCD/YfXsscedyNDsLOKsCqMiY=
   dependencies:
     "@babel/runtime" "^7.8.7"
     cheerio "^1.0.0-rc.3"
@@ -8406,15 +8456,15 @@ gatsby-remark-external-links@0.0.4:
     unist-util-find "^1.0.1"
     unist-util-visit "^1.1.3"
 
-gatsby-remark-images@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-remark-images/download/gatsby-remark-images-3.2.0.tgz#71adce134b0d62805a1d2ebeae946cfe03166de7"
-  integrity sha1-ca3OE0sNYoBaHS6+rpRs/gMWbec=
+gatsby-remark-images@3.2.1:
+  version "3.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-remark-images/download/gatsby-remark-images-3.2.1.tgz?cache=0&sync_timestamp=1585044581347&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgatsby-remark-images%2Fdownload%2Fgatsby-remark-images-3.2.1.tgz#0f767fda76c85cb0ddca2f7ff1b82ca5b4fb716a"
+  integrity sha1-D3Z/2nbIXLDdyi9/8bgspbT7cWo=
   dependencies:
     "@babel/runtime" "^7.8.7"
     chalk "^2.4.2"
     cheerio "^1.0.0-rc.3"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
     is-relative-url "^3.0.0"
     lodash "^4.17.15"
     mdast-util-definitions "^1.2.5"
@@ -8423,19 +8473,19 @@ gatsby-remark-images@3.2.0:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.1.2"
 
-gatsby-remark-prismjs@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.npm.taobao.org/gatsby-remark-prismjs/download/gatsby-remark-prismjs-3.4.0.tgz#0642ad08c79738b27a0ba3cba0243162080402d9"
-  integrity sha1-BkKtCMeXOLJ6C6PLoCQxYggEAtk=
+gatsby-remark-prismjs@3.4.1:
+  version "3.4.1"
+  resolved "https://registry.npm.taobao.org/gatsby-remark-prismjs/download/gatsby-remark-prismjs-3.4.1.tgz#455c60f24882a6167d3035806310d462b9d4f2ec"
+  integrity sha1-RVxg8kiCphZ9MDWAYxDUYrnU8uw=
   dependencies:
     "@babel/runtime" "^7.8.7"
     parse-numeric-range "^0.0.2"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-responsive-iframe@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.npm.taobao.org/gatsby-remark-responsive-iframe/download/gatsby-remark-responsive-iframe-2.3.0.tgz#612a945e068eb870d0fd4bd493501624ff5b0fd9"
-  integrity sha1-YSqUXgaOuHDQ/UvUk1AWJP9bD9k=
+gatsby-remark-responsive-iframe@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npm.taobao.org/gatsby-remark-responsive-iframe/download/gatsby-remark-responsive-iframe-2.3.1.tgz#707bb89fd7aeeaeee9923e1c31a8f94681038e6d"
+  integrity sha1-cHu4n9eu6u7pkj4cMaj5RoEDjm0=
   dependencies:
     "@babel/runtime" "^7.8.7"
     cheerio "^1.0.0-rc.3"
@@ -8443,20 +8493,20 @@ gatsby-remark-responsive-iframe@2.3.0:
     lodash "^4.17.15"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-smartypants@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-remark-smartypants/download/gatsby-remark-smartypants-2.2.0.tgz#40abef6865cd30575307f73572e9c13f98785af2"
-  integrity sha1-QKvvaGXNMFdTB/c1cunBP5h4WvI=
+gatsby-remark-smartypants@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-remark-smartypants/download/gatsby-remark-smartypants-2.2.1.tgz#f38eb5e6b82a34898f10a36de811b2326e70dca3"
+  integrity sha1-84615rgqNImPEKNt6BGyMm5w3KM=
   dependencies:
     "@babel/runtime" "^7.8.7"
     retext "^5.0.0"
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-source-filesystem@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.npm.taobao.org/gatsby-source-filesystem/download/gatsby-source-filesystem-2.2.1.tgz#878309ba203ffbd239cd2432363cb98e0e4f6eb1"
-  integrity sha1-h4MJuiA/+9I5zSQyNjy5jg5PbrE=
+gatsby-source-filesystem@2.2.2:
+  version "2.2.2"
+  resolved "https://registry.npm.taobao.org/gatsby-source-filesystem/download/gatsby-source-filesystem-2.2.2.tgz?cache=0&sync_timestamp=1585044581862&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgatsby-source-filesystem%2Fdownload%2Fgatsby-source-filesystem-2.2.2.tgz#9ecbc9e64fedd1c30b4d21f7e148016353b2dc17"
+  integrity sha1-nsvJ5k/t0cMLTSH34UgBY1Oy3Bc=
   dependencies:
     "@babel/runtime" "^7.8.7"
     better-queue "^3.8.10"
@@ -8464,7 +8514,7 @@ gatsby-source-filesystem@2.2.1:
     chokidar "3.3.1"
     file-type "^12.4.2"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
     got "^9.6.0"
     md5-file "^3.2.3"
     mime "^2.4.4"
@@ -8474,10 +8524,10 @@ gatsby-source-filesystem@2.2.1:
     valid-url "^1.0.9"
     xstate "^4.8.0"
 
-gatsby-telemetry@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/gatsby-telemetry/download/gatsby-telemetry-1.2.0.tgz#e69bfe2a0041cf6a4afc238af879d07453f15cbd"
-  integrity sha1-5pv+KgBBz2pK/COK+HnQdFPxXL0=
+gatsby-telemetry@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npm.taobao.org/gatsby-telemetry/download/gatsby-telemetry-1.2.1.tgz#6b04db03c6070657e6fa903b5d43d89d7a86d44b"
+  integrity sha1-awTbA8YHBlfm+pA7XUPYnXqG1Es=
   dependencies:
     "@babel/code-frame" "^7.8.3"
     "@babel/runtime" "^7.8.7"
@@ -8486,7 +8536,7 @@ gatsby-telemetry@^1.2.0:
     configstore "^5.0.1"
     envinfo "^7.5.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
     git-up "4.0.1"
     is-docker "2.0.0"
     lodash "^4.17.15"
@@ -8497,14 +8547,14 @@ gatsby-telemetry@^1.2.0:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-transformer-remark@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.npm.taobao.org/gatsby-transformer-remark/download/gatsby-transformer-remark-2.7.0.tgz#6f0f4ca26abc927bfda4807aa0d468b2e8b919b0"
-  integrity sha1-bw9Momq8knv9pIB6oNRosui5GbA=
+gatsby-transformer-remark@2.7.1:
+  version "2.7.1"
+  resolved "https://registry.npm.taobao.org/gatsby-transformer-remark/download/gatsby-transformer-remark-2.7.1.tgz#986871c3ca9a1b7d1c609e8f378a68d808827770"
+  integrity sha1-mGhxw8qaG30cYJ6PN4po2AiCd3A=
   dependencies:
     "@babel/runtime" "^7.8.7"
     bluebird "^3.7.2"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
     gray-matter "^4.0.2"
     hast-util-raw "^4.0.0"
     hast-util-to-html "^4.0.1"
@@ -8524,10 +8574,10 @@ gatsby-transformer-remark@2.7.0:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.4.1"
 
-gatsby-transformer-sharp@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.npm.taobao.org/gatsby-transformer-sharp/download/gatsby-transformer-sharp-2.4.1.tgz#2bd09aac425f3ffba5bde25b92c2b530cc86f367"
-  integrity sha1-K9CarEJfP/ulveJbksK1MMyG82c=
+gatsby-transformer-sharp@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.npm.taobao.org/gatsby-transformer-sharp/download/gatsby-transformer-sharp-2.4.2.tgz#a2649d623ea8c5e42a9920d008e7b9bd64ef75b9"
+  integrity sha1-omSdYj6oxeQqmSDQCOe5vWTvdbk=
   dependencies:
     "@babel/runtime" "^7.8.7"
     bluebird "^3.7.2"
@@ -8537,10 +8587,10 @@ gatsby-transformer-sharp@2.4.1:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby@2.20.2:
-  version "2.20.2"
-  resolved "https://registry.npm.taobao.org/gatsby/download/gatsby-2.20.2.tgz#6ac71097f27e732d7b38ae7dba2e1088d62ba7a5"
-  integrity sha1-ascQl/J+cy17OK59ui4QiNYrp6U=
+gatsby@2.20.3:
+  version "2.20.3"
+  resolved "https://registry.npm.taobao.org/gatsby/download/gatsby-2.20.3.tgz#f7d9f9ea95ec21b8c43b75aabea187b98964e71f"
+  integrity sha1-99n56pXsIbjEO3WqvqGHuYlk5x8=
   dependencies:
     "@babel/code-frame" "^7.8.3"
     "@babel/core" "^7.8.7"
@@ -8563,8 +8613,8 @@ gatsby@2.20.2:
     babel-loader "^8.0.6"
     babel-plugin-add-module-exports "^0.3.3"
     babel-plugin-dynamic-import-node "^2.3.0"
-    babel-plugin-remove-graphql-queries "^2.8.0"
-    babel-preset-gatsby "^0.3.0"
+    babel-plugin-remove-graphql-queries "^2.8.1"
+    babel-preset-gatsby "^0.3.1"
     better-opn "1.0.0"
     better-queue "^3.8.10"
     bluebird "^3.7.2"
@@ -8603,13 +8653,13 @@ gatsby@2.20.2:
     flat "^4.1.0"
     fs-exists-cached "1.0.0"
     fs-extra "^8.1.0"
-    gatsby-cli "^2.11.0"
-    gatsby-core-utils "^1.1.0"
-    gatsby-graphiql-explorer "^0.3.0"
-    gatsby-link "^2.3.0"
-    gatsby-plugin-page-creator "^2.2.0"
-    gatsby-react-router-scroll "^2.2.0"
-    gatsby-telemetry "^1.2.0"
+    gatsby-cli "^2.11.1"
+    gatsby-core-utils "^1.1.1"
+    gatsby-graphiql-explorer "^0.3.1"
+    gatsby-link "^2.3.1"
+    gatsby-plugin-page-creator "^2.2.1"
+    gatsby-react-router-scroll "^2.2.1"
+    gatsby-telemetry "^1.2.1"
     glob "^7.1.6"
     got "8.3.2"
     graphql "^14.6.0"
@@ -11600,10 +11650,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npm.taobao.org/lines-and-columns/download/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@10.0.8:
-  version "10.0.8"
-  resolved "https://registry.npm.taobao.org/lint-staged/download/lint-staged-10.0.8.tgz#0f7849cdc336061f25f5d4fcbcfa385701ff4739"
-  integrity sha1-D3hJzcM2Bh8l9dT8vPo4VwH/Rzk=
+lint-staged@10.0.9:
+  version "10.0.9"
+  resolved "https://registry.npm.taobao.org/lint-staged/download/lint-staged-10.0.9.tgz?cache=0&sync_timestamp=1585026158027&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flint-staged%2Fdownload%2Flint-staged-10.0.9.tgz#185aabb2432e9467c84add306c990f1c20da3cdb"
+  integrity sha1-GFqrskMulGfISt0wbJkPHCDaPNs=
   dependencies:
     chalk "^3.0.0"
     commander "^4.0.1"
@@ -14635,10 +14685,10 @@ prepend-http@^2.0.0:
   resolved "https://registry.npm.taobao.org/prepend-http/download/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
-prettier@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npm.taobao.org/prettier/download/prettier-2.0.1.tgz#3f00ac71263be34684b2b2c8d7e7f63737592dac"
-  integrity sha1-PwCscSY740aEsrLI1+f2NzdZLaw=
+prettier@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npm.taobao.org/prettier/download/prettier-2.0.2.tgz?cache=0&sync_timestamp=1585003006072&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fprettier%2Fdownload%2Fprettier-2.0.2.tgz#1ba8f3eb92231e769b7fcd7cb73ae1b6b74ade08"
+  integrity sha1-G6jz65IjHnabf818tzrhtrdK3gg=
 
 pretty-bytes@^5.1.0, pretty-bytes@^5.3.0:
   version "5.3.0"
