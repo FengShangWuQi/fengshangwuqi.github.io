@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - dev
+    schedule:
+      - cron: "0 2 * * 0"
 
 jobs:
   build:
@@ -15,3 +17,4 @@ jobs:
           name: fswq/blog
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+          cache: ${{ github.event_name != 'schedule' }}
