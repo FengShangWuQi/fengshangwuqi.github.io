@@ -1,4 +1,4 @@
-FROM node:lts-alpine as builder
+FROM node:current as builder
 
 ENV APP=blog    \
     APP_DIR=/src-blog
