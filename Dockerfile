@@ -1,18 +1,19 @@
-FROM node:lts-alpine as builder
+FROM node:alpine as builder
 
-ENV APP_DIR=/blog
+ENV APP=blog    \
+    APP_DIR=/src-blog
 
 WORKDIR $APP_DIR
 
 COPY package.json $APP_DIR/
 COPY yarn.lock $APP_DIR/
 RUN yarn
-COPY . $APP_DIR/
 
-RUN yarn start bg b
+COPY . $APP_DIR/
+RUN yarn build
 
 FROM nginx:alpine
 
-COPY --from=builder /blog/public /usr/share/nginx/html
+COPY --from=builder /src-blog/public /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
