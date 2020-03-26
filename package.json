@@ -19,6 +19,7 @@
     "test": " jest --coverage",
     "tsc": "rimraf typings && tsc",
     "ncu": "ncu -u && lerna exec -- ncu -u",
+    "pkg:clean": "lerna exec rimraf dist",
     "pkg:build": "lerna run --scope @fengshangwuqi/pkgkit build && lerna exec pkgkit build",
     "pkg:r": "lerna publish from-package --yes",
     "generate": "ts-node ./tools/generate/index.ts",
