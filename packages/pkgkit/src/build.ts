@@ -38,14 +38,14 @@ export const build = async () => {
 
   if (!isIndexExists) {
     warnLog(`exit ${pkg.name}, ${indexFile} not exists`);
-    process.exit(1);
+    process.exit(0);
   }
 
   spawn.sync("tsc", ["--emitDeclarationOnly", "--outDir", `${root}/${outDir}`]);
 
   if (!isTypeExists) {
     warnLog(`exit ${pkg.name}, ${typeFile} not exists`);
-    process.exit(1);
+    process.exit(0);
   }
 
   setPkg({ ...outputs });

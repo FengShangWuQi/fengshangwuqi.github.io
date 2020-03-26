@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/postbook",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "bin": {
     "pb": "bin/postbook.js"
@@ -32,5 +32,6 @@
     "dist/"
   ],
   "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js"
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts"
 }
