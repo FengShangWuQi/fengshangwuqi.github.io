@@ -1,41 +1,54 @@
-import fse from "fs-extra";
+import {
+  outputFile,
+  readdir,
+  pathExists,
+  outputJson,
+  ensureDir,
+} from "fs-extra";
 import chalk from "chalk";
+import { format } from "date-fns";
 
 import {
   getConfig,
   pbPath,
   configPath,
   templateDir,
+  getMetaContent,
   getTemplateContent,
 } from "./storage";
-import { successLog, errorLog, formatDate, getPingYinTitle } from "./utils";
+import { successLog, errorLog, getPingYinTitle } from "./utils";
 
-export const init = () => {
-  if (fse.pathExistsSync(pbPath)) {
+export const init = async () => {
+  const isConfigExists = await pathExists(pbPath);
+
+  if (isConfigExists) {
     errorLog("config file existed, do not pb init again");
   } else {
-    fse.outputJsonSync(
+    await outputJson(
       configPath,
       {
         postPath: "",
       },
       { spaces: 2 },
     );
-    fse.ensureDirSync(templateDir);
+    await ensureDir(templateDir);
 
     successLog(`create ${configPath}`);
     successLog(`create ${templateDir}`);
   }
 };
 
-export const listPosts = () => {
-  const { postPath } = getConfig();
+export const listPosts = async () => {
+  const { postPath } = await getConfig();
 
-  if (!fse.pathExistsSync(postPath)) {
-    return;
+  const isPostExists = await pathExists(postPath);
+
+  if (!isPostExists) {
+    errorLog("postPath illegal");
+    process.exit(1);
   }
 
-  const postlist = fse.readdirSync(postPath);
+  const postlist = await readdir(postPath);
 
   console.log();
   postlist
@@ -43,49 +56,44 @@ export const listPosts = () => {
     .map(post => console.log(`${" ".repeat(4)}${chalk.green(post)}\n`));
 };
 
-export const createPost = ({
+export const createPost = async ({
   title,
   template,
+  meta,
 }: {
   title: string;
   template?: string;
+  meta?: string;
 }) => {
   if (!title) {
     errorLog("title illegal");
-    return;
+    process.exit(1);
   }
 
-  const { postPath } = getConfig();
+  const { postPath } = await getConfig();
 
-  const date = formatDate(new Date());
+  const date = format(new Date(), "yyyy-MM-dd");
   const pingyinTitle = getPingYinTitle(title);
   const folderName = `${date}${pingyinTitle}`;
 
-  const meta = {
-    title,
-    original: true,
-    tags: ["Front-End"],
-    date,
-    cover: "header.jpg",
-  };
+  const commonMeta = `title: ${title}\ndate: ${date}`;
+  let finalMeta = commonMeta;
 
-  const metaContent = Object.keys(meta).reduce(
-    (prev, curr) =>
-      curr === "tags"
-        ? prev.concat(
-            `${curr}:\n${meta.tags.map(tag => `${" ".repeat(2)}- ${tag}\n`)}`,
-          )
-        : prev.concat(`${curr}: ${meta[curr as keyof typeof meta]}\n`),
-    "",
-  );
+  if (meta) {
+    const metaContent = await getMetaContent(meta);
+    finalMeta = `${commonMeta}\n${metaContent}`;
+  }
 
-  const finalContent = template
-    ? `---\n${metaContent}---\n\n${getTemplateContent(template)}`
-    : `---\n${metaContent}---`;
+  let finalContent = `---\n${finalMeta}\n---`;
+
+  if (template) {
+    const templateContent = await getTemplateContent(template);
+    finalContent = `---\n${finalMeta}\n---\n\n${templateContent}`;
+  }
 
   const filePath = `${postPath}/${folderName}/index.md`;
 
-  fse.outputFileSync(filePath, finalContent);
+  await outputFile(filePath, finalContent);
 
   successLog(`create ${filePath}`);
 };

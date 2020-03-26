@@ -14,9 +14,9 @@ export const cli = () => {
   y.command("init", "pkg initial");
 
   const argv = y.argv;
-  const command = argv._[0];
+  const cmd = argv._[0];
 
-  switch (command) {
+  switch (cmd) {
     case "build": {
       build();
       break;

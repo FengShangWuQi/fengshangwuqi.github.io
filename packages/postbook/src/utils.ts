@@ -2,14 +2,11 @@ import pinyin from "pinyin";
 import rewritePattern from "regexpu-core";
 import chalk from "chalk";
 
-export const successLog = (message: string) =>
-  console.log(`${chalk.green(" success ".toUpperCase())} ${message}`);
+export const successLog = (msg: string) =>
+  console.log(`${chalk.green("success")} ${msg}`);
 
-export const errorLog = (text: string | Error) =>
-  console.log(`${chalk.red("error")} ${text}`);
-
-export const formatDate = (date: Date) =>
-  `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+export const errorLog = (msg: string | Error) =>
+  console.log(`${chalk.red("error")} ${msg}`);
 
 export const getPingYinTitle = (title: string) => {
   const cnPattern = rewritePattern("\\p{Unified_Ideograph}", "u", {
