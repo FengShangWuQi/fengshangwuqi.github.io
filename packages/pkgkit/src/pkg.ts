@@ -28,6 +28,7 @@ export const usePkg = (): [
 
 export const outputs = {
   files: ["dist/"],
+  types: "dist/index.d.ts",
   main: "dist/index.cjs.js",
   module: "dist/index.es.js",
 };
