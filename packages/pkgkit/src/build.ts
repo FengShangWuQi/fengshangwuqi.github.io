@@ -31,10 +31,8 @@ export const build = async () => {
   const [pkg, setPkg] = usePkg();
 
   const indexFile = join(cwd, "index.ts");
-  const typeFile = join(root, outDir, relative(root, cwd), "index.d.ts");
 
   const isIndexExists = await pathExists(indexFile);
-  const isTypeExists = await pathExists(typeFile);
 
   if (!isIndexExists) {
     warnLog(`exit ${pkg.name}, ${indexFile} not exists`);
@@ -42,11 +40,6 @@ export const build = async () => {
   }
 
   spawn.sync("tsc", ["--emitDeclarationOnly", "--outDir", `${root}/${outDir}`]);
-
-  if (!isTypeExists) {
-    warnLog(`exit ${pkg.name}, ${typeFile} not exists`);
-    process.exit(0);
-  }
 
   setPkg({ ...outputs });
 
@@ -82,7 +75,7 @@ export const build = async () => {
       ],
     },
     {
-      input: typeFile,
+      input: join(root, outDir, relative(root, cwd), "index.d.ts"),
       output: [
         {
           file: join(cwd, outputs.types),
