@@ -6,9 +6,9 @@
   "ignoreChanges": ["**/__tests__/**", "**/*.md"],
   "command": {
     "version": {
-      "allowBranch": "master",
       "exact": true,
-      "message": "chore(release): %s"
+      "allowBranch": "dev",
+      "message": "chore(release): publish %s"
     }
   }
 }
