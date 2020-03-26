@@ -17,7 +17,7 @@
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "test": " jest --coverage",
-    "tsc": "tsc --noEmit",
+    "tsc": "rimraf typings && tsc",
     "ncu": "ncu -u && lerna exec -- ncu -u",
     "pkg:build": "lerna run --scope @fengshangwuqi/pkgkit build && lerna exec pkgkit build",
     "pkg:r": "lerna publish from-package --yes",

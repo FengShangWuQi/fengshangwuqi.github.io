@@ -1,22 +1,24 @@
 {
   "compilerOptions": {
     /* 基本选项 */
-    "rootDir": ".",
     "target": "es2015",
     "module": "commonjs",
     "lib": ["dom", "esnext"],
     "allowJs": false,
     "jsx": "react",
+    "declaration": true,
+    "rootDir": ".",
+    "outDir": "typings",
+    "emitDeclarationOnly": true,
     "importHelpers": true,
     "removeComments": true,
-    "sourceMap": false,
+    "diagnostics": true,
 
     /* 严格的类型检查选项 */
     "strict": true,
 
     /* 额外的检查 */
     "noUnusedLocals": true,
-    "preserveConstEnums": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -34,5 +36,5 @@
     "skipLibCheck": true
   },
 
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "typings", "**/*.spec.ts"]
 }
