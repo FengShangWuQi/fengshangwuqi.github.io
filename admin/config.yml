@@ -1,0 +1,20 @@
+backend:
+  name: fengshangwuqi.github.io
+  repo: FengShangWuQi/fengshangwuqi.github.io
+  branch: dev
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "IsOriginal", name: "original", widget: "boolean" }
+      - { label: "Tags", name: "tags", widget: "Array" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Cover", name: "cover", widget: "string" }
