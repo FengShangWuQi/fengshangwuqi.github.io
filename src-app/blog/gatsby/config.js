@@ -14,6 +14,7 @@ const {
   twitter,
   offline,
   feed,
+  netlifyCMS,
 } = require(`${gatsbyPath}/config.js`);
 
 const plugins = [
@@ -23,6 +24,7 @@ const plugins = [
   mdx,
   ...sharps,
   twitter,
+  netlifyCMS,
   helmet,
   feed,
   analytics,

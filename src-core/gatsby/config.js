@@ -81,6 +81,8 @@ exports.helmet = "gatsby-plugin-react-helmet";
 
 exports.twitter = "gatsby-plugin-twitter";
 
+exports.netlifyCMS = "gatsby-plugin-netlify-cms";
+
 exports.svgr = {
   resolve: "gatsby-plugin-svgr",
   options: {
