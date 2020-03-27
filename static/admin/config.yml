@@ -4,17 +4,17 @@ backend:
   branch: dev
 
 media_folder: static/assets
-public_folder: /assets
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts/posts"
+  - name: post
+    label: Post
+    folder: posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "IsOriginal", name: "original", widget: "boolean" }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Cover", name: "cover", widget: "string" }
+      - { label: Title, name: title, widget: string }
+      - { label: IsOriginal, name: original, widget: boolean, default: true }
+      - { label: Tags, name: tags, widget: list }
+      - { label: Date, name: date, widget: datetime }
+      - { label: Cover, name: cover, widget: string, default: header.png }
+      - { name: body, label: Body, widget: markdown }
