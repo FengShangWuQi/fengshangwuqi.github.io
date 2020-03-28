@@ -10,9 +10,11 @@ export const fluidType = (
 ): CSSObject => ({
   fontSize: minFontSize,
   [`@media (min-width: ${breakpoint[minVw]}px)`]: {
-    fontSize: `calc(${minFontSize}px + (${maxFontSize -
-      minFontSize}) * (100vw - ${breakpoint[minVw]}px) / (${breakpoint[maxVw] -
-      breakpoint[minVw]}))`,
+    fontSize: `calc(${minFontSize}px + (${
+      maxFontSize - minFontSize
+    }) * (100vw - ${breakpoint[minVw]}px) / (${
+      breakpoint[maxVw] - breakpoint[minVw]
+    }))`,
   },
   [`@media (min-width: ${breakpoint[maxVw]}px)`]: {
     fontSize: maxFontSize,

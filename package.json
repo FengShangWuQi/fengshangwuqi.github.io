@@ -13,11 +13,11 @@
     "packages/*"
   ],
   "scripts": {
-    "clean": "gatsby clean",
+    "clean": "gatsby clean && rimraf typings",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "test": " jest --coverage",
-    "tsc": "rimraf typings && tsc",
+    "tsc": "tsc",
     "ncu": "ncu -u && lerna exec -- ncu -u",
     "pkg:clean": "lerna exec rimraf dist",
     "pkg:v": "lerna version patch --no-commit-hooks --yes",
@@ -59,6 +59,11 @@
       ".cache",
       "dist"
     ]
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "jsxBracketSameLine": true,
+    "arrowParens": "avoid"
   },
   "dependencies": {
     "@emotion/core": "10.0.28",

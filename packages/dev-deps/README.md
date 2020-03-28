@@ -34,6 +34,11 @@ $ npm install @fengshangwuqi/dev-deps -D
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": ["eslint --fix"]
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "jsxBracketSameLine": true,
+    "arrowParens": "avoid"
   }
 }
 ```

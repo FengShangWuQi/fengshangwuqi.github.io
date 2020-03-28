@@ -18,14 +18,14 @@ export const Discussion = ({
     if ((window as any).DISQUS && doc.getElementById(id)) {
       (window as any).DISQUS!.reset({
         reload: true,
-        config: function() {
+        config: function () {
           this.page.identifier = identifier;
           this.page.url = url;
         },
       });
     } else {
       (window as any).disqus_shortname = shortname;
-      (window as any).disqus_config = function() {
+      (window as any).disqus_config = function () {
         this.page.identifier = identifier;
         this.page.url = url;
       };

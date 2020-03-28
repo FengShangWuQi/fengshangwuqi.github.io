@@ -143,7 +143,7 @@ input {
 ```js
 var colorInput = document.querySelector("#div-bkgd");
 
-colorInput.addEventListener("change", function() {
+colorInput.addEventListener("change", function () {
   document.documentElement.style.setProperty("--background", this.value);
 });
 ```
