@@ -133,8 +133,5 @@
     "lerna": "3.20.2",
     "react-test-renderer": "16.13.1"
   },
-  "license": "MIT",
-  "engines": {
-    "node": ">=12.16.1"
-  }
+  "license": "MIT"
 }
