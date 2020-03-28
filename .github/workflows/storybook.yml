@@ -18,6 +18,6 @@ jobs:
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.REPO_TOKEN }}
+          personal_token: ${{ secrets.REPO_TOKEN }}
           external_repository: FengShangWuQi/storybook
           publish_dir: ./public
