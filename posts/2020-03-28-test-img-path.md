@@ -11,3 +11,7 @@ cover: /static/assets/cover.png
 ### 1、12123123
 
 段落
+
+![daaa](/static/assets/cover.png)
+
+![daaa](/assets/cover.png)
