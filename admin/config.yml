@@ -3,6 +3,8 @@ backend:
   repo: FengShangWuQi/fengshangwuqi.github.io
   branch: dev
 
+publish_mode: editorial_workflow
+
 media_folder: static/assets
 
 collections:
@@ -11,10 +13,17 @@ collections:
     folder: posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{slug}}"
     fields:
-      - { label: Title, name: title, widget: string }
-      - { label: IsOriginal, name: original, widget: boolean, default: true }
-      - { label: Tags, name: tags, widget: list }
-      - { label: Date, name: date, widget: datetime }
-      - { label: Cover, name: cover, widget: string, default: header.png }
-      - { name: body, label: Body, widget: markdown }
+      - { label: 标题, name: title, widget: string }
+      - { label: 是否原创, name: original, widget: boolean, default: true }
+      - {
+          label: 标签,
+          name: tags,
+          widget: select,
+          multiple: true,
+          options: ["Weekly", "Front-End"],
+        }
+      - { label: 时间, name: date, widget: date, format: "YYYY-MM-DD" }
+      - { label: 封面, name: cover, widget: string, default: header.png }
+      - { label: 内容, name: body, widget: markdown }
