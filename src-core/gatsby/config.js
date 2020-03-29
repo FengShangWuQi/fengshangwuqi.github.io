@@ -26,7 +26,7 @@ exports.pathPrefix = {
   pathPrefix: process.env.PATH_PREFIX,
 };
 
-exports.sources = process.env.SOURCES.split(" ").map(source => ({
+exports.sources = process.env.SOURCES.split(",").map(source => ({
   resolve: "gatsby-source-filesystem",
   options: {
     path: path.join(__dirname, "../../", source),
@@ -48,6 +48,7 @@ exports.mdx = {
   options: {
     extensions: [`.mdx`, `.md`],
     gatsbyRemarkPlugins: [
+      "gatsby-remark-relative-images",
       {
         resolve: "gatsby-remark-images",
         options: {

@@ -6,13 +6,37 @@ backend:
 publish_mode: editorial_workflow
 
 media_folder: static/assets
+public_folder: /assets
 
 collections:
   - name: post
     label: Post
     folder: posts
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{slug}}"
+    fields:
+      - { label: 标题, name: title, widget: string }
+      - { label: 是否原创, name: original, widget: boolean, default: true }
+      - {
+          label: 标签,
+          name: tags,
+          widget: select,
+          multiple: true,
+          options: ["Front-End"],
+        }
+      - { label: 时间, name: date, widget: date, format: "YYYY-MM-DD" }
+      - {
+          label: 封面,
+          name: cover,
+          widget: image,
+          allow_multiple: false,
+          default: cover.png,
+        }
+      - { label: 内容, name: body, widget: markdown }
+  - name: zhoubao
+    label: ZhouBao
+    folder: zhoubao
+    create: true
     preview_path: "{{slug}}"
     fields:
       - { label: 标题, name: title, widget: string }
@@ -25,5 +49,11 @@ collections:
           options: ["Weekly", "Front-End"],
         }
       - { label: 时间, name: date, widget: date, format: "YYYY-MM-DD" }
-      - { label: 封面, name: cover, widget: string, default: header.png }
+      - {
+          label: 封面,
+          name: cover,
+          widget: image,
+          allow_multiple: false,
+          default: cover.png,
+        }
       - { label: 内容, name: body, widget: markdown }

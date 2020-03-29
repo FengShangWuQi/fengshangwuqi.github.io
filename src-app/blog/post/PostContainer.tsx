@@ -51,6 +51,12 @@ export const PostContainer = ({ children }: { children: React.ReactNode }) => {
           ...margin(ds.spacing[6], ds.spacing[8]),
         },
 
+        img: {
+          display: "block",
+          margin: "0 auto",
+          maxWidth: 600,
+        },
+
         blockquote: {
           ...margin(ds.spacing[6], 0, 0),
           ...padding(ds.spacing[5], ds.spacing[4]),
