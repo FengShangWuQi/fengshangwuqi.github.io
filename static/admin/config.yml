@@ -22,7 +22,8 @@ collections:
           name: tags,
           widget: select,
           multiple: true,
-          options: ["Front-End"],
+          options: ["Front-End", "React"],
+          default: ["Front-End"],
         }
       - { label: 时间, name: date, widget: date, format: "YYYY-MM-DD" }
       - {
@@ -30,7 +31,7 @@ collections:
           name: cover,
           widget: image,
           allow_multiple: false,
-          default: cover.png,
+          default: /assets/posts/default.png,
         }
       - { label: 内容, name: body, widget: markdown }
   - name: zhoubao
@@ -47,6 +48,7 @@ collections:
           widget: select,
           multiple: true,
           options: ["Weekly", "Front-End"],
+          default: ["Weekly", "Front-End"],
         }
       - { label: 时间, name: date, widget: date, format: "YYYY-MM-DD" }
       - {
@@ -54,6 +56,6 @@ collections:
           name: cover,
           widget: image,
           allow_multiple: false,
-          default: cover.png,
+          default: /assets/zhoubao/default.png,
         }
       - { label: 内容, name: body, widget: markdown }
