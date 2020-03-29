@@ -12,6 +12,6 @@ cover: /assets/cover.png
 
 段落
 
-![daaa](/static/assets/cover.png)
+![daaa](static/assets/cover.png)
 
-![daaa](/assets/cover.png)
+![daaa](assets/cover.png)
