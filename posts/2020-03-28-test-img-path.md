@@ -4,7 +4,7 @@ original: true
 tags:
   - Front-End
 date: '2020-03-28'
-cover: assets/cover.png
+cover: /assets/cover.png
 ---
 ## **前端**
 
@@ -14,4 +14,4 @@ cover: assets/cover.png
 
 ![daaa](/static/assets/cover.png)
 
-![daaa](assets/cover.png)
+![daaa](/assets/cover.png)
