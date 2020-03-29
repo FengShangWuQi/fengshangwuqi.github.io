@@ -16,6 +16,4 @@ cover: /assets/cover.png
 
 ![daaa](assets/cover.png)
 
-![daaa](/static/assets/cover.png)
-
 ![daaa](/assets/cover.png)
