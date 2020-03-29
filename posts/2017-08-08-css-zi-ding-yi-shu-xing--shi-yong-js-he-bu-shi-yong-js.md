@@ -4,7 +4,7 @@ original: false
 tags:
   - CSS
 date: 2017-08-08
-cover: header.png
+cover: /assets/posts/2017-08-08-css-zi-ding-yi-shu-xing--shi-yong-js-he-bu-shi-yong-js.png
 ---
 
 原文：[CSS Custom Properties—Dynamic Changes With And Without Javascript](http://vanseodesign.com/css/custom-properties-and-javascript/?utm_source=CSS-Weekly&utm_campaign=Issue-276&utm_medium=web) by Steven Bradley

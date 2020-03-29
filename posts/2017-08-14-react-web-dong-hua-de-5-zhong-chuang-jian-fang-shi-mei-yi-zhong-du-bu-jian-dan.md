@@ -6,7 +6,7 @@ tags:
   - CSS
   - Animation
 date: 2017-08-14
-cover: header.png
+cover: /assets/posts/2017-08-14-react-web-dong-hua-de-5-zhong-chuang-jian-fang-shi-mei-yi-zhong-du-bu-jian-dan.png
 ---
 
 原文：[React Animations in Depth](https://medium.com/react-native-training/react-animations-in-depth-433e2b3f0e8e) by Nader Dabit
@@ -60,7 +60,7 @@ cover: header.png
 
 下面，我们就开始书写我们的 **React** 组件。
 
-![animation](./images/css-animation.gif)
+![animation](/assets/posts/2017-08-14-react-web-dong-hua-de-5-zhong-chuang-jian-fang-shi-mei-yi-zhong-du-bu-jian-dan/css-animation.gif)
 
 ```jsx
 class App extends Component {
@@ -115,7 +115,7 @@ class App extends Component {
 
 在下面的 demo 中，我们将创建一个 **input**，当用户输入时，我们将一个 **button** 从 **disable** 转变为 **enable**。
 
-![style](./images/js-style.gif)
+![style](/assets/posts/2017-08-14-react-web-dong-hua-de-5-zhong-chuang-jian-fang-shi-mei-yi-zhong-du-bu-jian-dan/js-style.gif)
 
 ```jsx
 class App extends Component {
@@ -227,7 +227,7 @@ $ yarn add react-motion
 
 在下面的 demo 中，我们将创建一个 **dropdown** 菜单，当点击按钮时，下拉菜单友好展开。
 
-![motion](./images/react-motion.gif)
+![motion](/assets/posts/2017-08-14-react-web-dong-hua-de-5-zhong-chuang-jian-fang-shi-mei-yi-zhong-du-bu-jian-dan/react-motion.gif)
 
 ```jsx
 import { Motion, spring } from "react-motion";
@@ -319,7 +319,7 @@ $ yarn add animated
 
 在下面的 demo 中，我们将模拟在提交表单成功后显示的动画 **message**。
 
-![animated](./images/Animated.gif)
+![animated](/assets/posts/2017-08-14-react-web-dong-hua-de-5-zhong-chuang-jian-fang-shi-mei-yi-zhong-du-bu-jian-dan/Animated.gif)
 
 ```jsx
 import Animated from "animated/lib/targets/react-dom";
@@ -423,7 +423,7 @@ $ yarn add velocity-react
 
 在下面的 demo 中，我们将创建一个很酷的动画输入。
 
-![Velocity](./images/Velocity-React.gif)
+![Velocity](/assets/posts/2017-08-14-react-web-dong-hua-de-5-zhong-chuang-jian-fang-shi-mei-yi-zhong-du-bu-jian-dan/Velocity-React.gif)
 
 ```jsx
 import { VelocityComponent } from "velocity-react";

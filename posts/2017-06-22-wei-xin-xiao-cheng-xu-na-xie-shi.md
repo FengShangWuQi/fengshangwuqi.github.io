@@ -4,7 +4,7 @@ original: true
 tags:
   - WeChat Mini Program
 date: 2017-06-22
-cover: header.png
+cover: /assets/posts/2017-06-22-wei-xin-xiao-cheng-xu-na-xie-shi.png
 ---
 
 > 微信小程序自 **1** 月发布以来有段时间了，之前给我的印象就是背影很美，估计是个美女，因为听到小程序不需要下载，安装，信息触手可及，用完即走，无需卸载，感觉那可谓是前途无量，然而当时 **Linux** 用的正欢，所以最近才来体验了一波。但就开发体验而言，表示实在 **有点不爽**
@@ -21,7 +21,7 @@ cover: header.png
 
 ### 不能使用第三方库
 
-![目录](./images/content.png)
+![目录](/assets/posts/2017-06-22-wei-xin-xiao-cheng-xu-na-xie-shi/content.png)
 
 小程序框架由以上四种类型文件组成
 
@@ -34,7 +34,7 @@ cover: header.png
 
 ### 调试器不支持自动补全
 
-![自动补全](./images/debug.png)
+![自动补全](/assets/posts/2017-06-22-wei-xin-xiao-cheng-xu-na-xie-shi/debug.png)
 
 我们在调整页面样式的时候，经常借助 **Chrome 开发者工具**，在里面修改某个元素的样式非常方便，而且可以直接预览，之后可将修改过的样式代码直接复制粘贴到文件中，大大地提高了开发者的效率，然而微信开发者工具虽也有调试器，但却并 **不支持 css 属性和样式自动补全**，相信使用 **Chrome** 开发者工具调试过样式的同学都会感觉特别憋屈。
 
@@ -44,4 +44,4 @@ cover: header.png
 
 最后附上一个练手的 demo -- [wechat-douban-movie](https://github.com/FengShangWuQi/wechat-douban-movie)
 
-![截图](./images/screenshot.gif)
+![截图](/assets/posts/2017-06-22-wei-xin-xiao-cheng-xu-na-xie-shi/screenshot.gif)
