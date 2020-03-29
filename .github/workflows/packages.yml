@@ -19,7 +19,7 @@ jobs:
 
       - run: yarn
       - run: yarn pkg:build
-      - run: yarn pkg:r
+      - run: yarn lerna publish from-package --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -30,6 +30,6 @@ jobs:
 
       - run: yarn
       - run: yarn pkg:build
-      - run: yarn pkg:r
+      - run: yarn lerna publish from-package --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
