@@ -12,6 +12,11 @@
   "workspaces": [
     "packages/*"
   ],
+  "appkit": {
+    "dev": "gatsby develop -o",
+    "build": "npm run clean && gatsby build --prefix-paths",
+    "release": "gh-pages -d public -b master"
+  },
   "scripts": {
     "clean": "gatsby clean && rimraf typings",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
@@ -23,13 +28,7 @@
     "pkg:build": "lerna run --scope @fengshangwuqi/pkgkit build && lerna exec pkgkit build",
     "pkg:r": "lerna version patch --no-commit-hooks --yes",
     "generate": "ts-node ./tools/generate/index.ts",
-    "start": "ts-node ./tools/index.ts",
-    "development": "gatsby develop -o",
-    "build": "npm run clean && gatsby build --prefix-paths",
-    "serve": "gatsby serve -o --prefix-paths",
-    "repl": "gatsby repl",
-    "release": "gh-pages -d public -b ${BRANCH} -m deploy::${APP} && gh-pages-clean",
-    "now-build": "gatsby build --prefix-paths"
+    "start": "ts-node packages/appkit/bin/appkit.js"
   },
   "commitlint": {
     "extends": [
