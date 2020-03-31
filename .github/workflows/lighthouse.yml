@@ -22,6 +22,7 @@ jobs:
           META_TITLE: 枫上雾棋的 storybook
           META_DECS: 枫上雾棋的 storybook
           SOURCES: static/assets,posts,zhoubao
+          SIZE: 6
           TRACKING_ID: ${{ secrets.TRACKING_ID }}
 
       - run: |

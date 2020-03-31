@@ -19,9 +19,10 @@ jobs:
           APP: storybook
           SITE_URL: https://storybook.fengshangwuqi.com
           PATH_PREFIX: /
-          META_TITLE: 枫上雾棋的日志
-          META_DECS: 枫上雾棋的日志
+          META_TITLE: 枫上雾棋的 storybook
+          META_DECS: 枫上雾棋的 storybook
           SOURCES: src-core,src-components,utils,cases
+          SIZE: 6
           TRACKING_ID: ${{ secrets.TRACKING_ID }}
 
       - uses: peaceiris/actions-gh-pages@v3
