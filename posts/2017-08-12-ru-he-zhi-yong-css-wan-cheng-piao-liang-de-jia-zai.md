@@ -5,7 +5,7 @@ tags:
   - CSS
   - Animation
 date: 2017-08-12
-cover: /assets/posts/2017-08-12-ru-he-zhi-yong-css-wan-cheng-piao-liang-de-jia-zai.png
+cover: /assets/posts-css-loading.png
 ---
 
 原文：[How to create a beautiful animated loader with nothing but CSS](https://codeburst.io/how-to-create-a-beautiful-animated-loader-with-nothing-but-css-d1962fc5a66c) by Julien Benchetrit
@@ -27,7 +27,7 @@ cover: /assets/posts/2017-08-12-ru-he-zhi-yong-css-wan-cheng-piao-liang-de-jia-z
 
 在开始一起构建它前, 我们先看看它最后的效果：
 
-![效果](/assets/posts/2017-08-12-ru-he-zhi-yong-css-wan-cheng-piao-liang-de-jia-zai/result.gif)
+![效果](/assets/posts-css-loading-result.gif)
 
 正如你所看到的, 我们将经历 **4** 个步骤：
 
@@ -64,7 +64,7 @@ cover: /assets/posts/2017-08-12-ru-he-zhi-yong-css-wan-cheng-piao-liang-de-jia-z
 
 ### 构建 logo 本身
 
-![logo](/assets/posts/2017-08-12-ru-he-zhi-yong-css-wan-cheng-piao-liang-de-jia-zai/logo.png)
+![logo](/assets/posts-css-loading-logo.png)
 
 一开始我们先实现 logo 本身, 而不是最终版本的效果。
 
@@ -107,7 +107,7 @@ cover: /assets/posts/2017-08-12-ru-he-zhi-yong-css-wan-cheng-piao-liang-de-jia-z
 
 logo 的效果图如下：
 
-![logo result](/assets/posts/2017-08-12-ru-he-zhi-yong-css-wan-cheng-piao-liang-de-jia-zai/logoResult.png)
+![logo result](/assets/posts-css-loading-logoResult.png)
 
 ### 边框动画
 
@@ -157,7 +157,7 @@ logo 的效果图如下：
 
 下面是效果：
 
-![border](/assets/posts/2017-08-12-ru-he-zhi-yong-css-wan-cheng-piao-liang-de-jia-zai/border.png)
+![border](/assets/posts-css-loading-border.png)
 
 接下来, 我们就用 **keyframe** 做 `div.logo::before` 的第一个动画。
 

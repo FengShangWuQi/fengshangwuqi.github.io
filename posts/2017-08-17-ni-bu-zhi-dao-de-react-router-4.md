@@ -5,7 +5,7 @@ tags:
   - React
   - React Router
 date: 2017-08-17
-cover: /assets/posts/2017-08-17-ni-bu-zhi-dao-de-react-router-4.png
+cover: /assets/posts-react-router-4.png
 ---
 
 原文：[All About React Router 4](https://css-tricks.com/react-router-4/) by James K Nelson
