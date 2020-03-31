@@ -1,9 +1,6 @@
 // https://www.gatsbyjs.org/docs/gatsby-config/
 
 const path = require("path");
-require("dotenv").config({
-  path: path.join(__dirname, "../../src-app", process.env.APP, ".env"),
-});
 
 exports.siteMetadata = {
   siteMetadata: {
@@ -82,7 +79,19 @@ exports.helmet = "gatsby-plugin-react-helmet";
 
 exports.twitter = "gatsby-plugin-twitter";
 
-exports.netlifyCMS = "gatsby-plugin-netlify-cms";
+exports.netlifyCMS = {
+  resolve: "gatsby-plugin-netlify-cms",
+  options: {
+    htmlTitle: `${process.env.APP} Content Manager`,
+    manualInit: true,
+    modulePath: path.join(
+      __dirname,
+      "../../src-app",
+      process.env.APP,
+      "cms/cms.js",
+    ),
+  },
+};
 
 exports.svgr = {
   resolve: "gatsby-plugin-svgr",

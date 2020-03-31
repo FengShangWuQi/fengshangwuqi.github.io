@@ -14,7 +14,15 @@ jobs:
           node-version: "12.x"
 
       - run: yarn
-      - run: yarn start bg b
+      - run: yarn gatsby build --prefix-paths
+        env:
+          APP: blog
+          SITE_URL: https://blog.fengshangwuqi.com
+          PATH_PREFIX: /
+          META_TITLE: 枫上雾棋的 storybook
+          META_DECS: 枫上雾棋的 storybook
+          SOURCES: static/assets,posts,zhoubao
+          TRACKING_ID: ${{ secrets.TRACKING_ID }}
 
       - uses: peaceiris/actions-gh-pages@v3
         with:

@@ -11,10 +11,18 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: "12.x"
 
       - run: yarn
-      - run: yarn start bg b
+      - run: yarn gatsby build --prefix-paths
+        env:
+          APP: blog
+          SITE_URL: https://blog.fengshangwuqi.com
+          PATH_PREFIX: /
+          META_TITLE: 枫上雾棋的 storybook
+          META_DECS: 枫上雾棋的 storybook
+          SOURCES: static/assets,posts,zhoubao
+          TRACKING_ID: ${{ secrets.TRACKING_ID }}
 
       - run: |
           npm install -g @lhci/cli@0.3.x

@@ -1,3 +1,6 @@
+import { join } from "path";
+import dotenv from "dotenv";
+
 import { run } from "./run";
 
 enum Apps {
@@ -20,7 +23,11 @@ enum Branchs {
 }
 
 const APP_ENVS = (app: string, action: string) => {
-  const env = { APP: app };
+  const result = dotenv.config({
+    path: join(__dirname, "../src-app/", app, ".env"),
+  });
+
+  const env = { ...result.parsed, APP: app };
 
   switch (action) {
     case Actions.dev: {
