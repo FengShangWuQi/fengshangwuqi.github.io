@@ -3275,7 +3275,17 @@
   resolved "https://registry.npm.taobao.org/@types/zen-observable/download/@types/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
   integrity sha1-i2OrfxqlMhJIqtWsiQpIVlbc6k0=
 
-"@typescript-eslint/eslint-plugin@2.25.0", "@typescript-eslint/eslint-plugin@^2.24.0":
+"@typescript-eslint/eslint-plugin@2.26.0":
+  version "2.26.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-2.26.0.tgz?cache=0&sync_timestamp=1585637547392&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.26.0.tgz#04c96560c8981421e5a9caad8394192363cc423f"
+  integrity sha1-BMllYMiYFCHlqcqtg5QZI2PMQj8=
+  dependencies:
+    "@typescript-eslint/experimental-utils" "2.26.0"
+    functional-red-black-tree "^1.0.1"
+    regexpp "^3.0.0"
+    tsutils "^3.17.1"
+
+"@typescript-eslint/eslint-plugin@^2.24.0":
   version "2.25.0"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-2.25.0.tgz#0b60917332f20dcff54d0eb9be2a9e9f4c9fbd02"
   integrity sha1-C2CRczLyDc/1TQ65viqen0yfvQI=
@@ -3295,7 +3305,27 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/parser@2.25.0", "@typescript-eslint/parser@^2.24.0":
+"@typescript-eslint/experimental-utils@2.26.0":
+  version "2.26.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/experimental-utils/download/@typescript-eslint/experimental-utils-2.26.0.tgz#063390c404d9980767d76274df386c0aa675d91d"
+  integrity sha1-BjOQxATZmAdn12J03zhsCqZ12R0=
+  dependencies:
+    "@types/json-schema" "^7.0.3"
+    "@typescript-eslint/typescript-estree" "2.26.0"
+    eslint-scope "^5.0.0"
+    eslint-utils "^2.0.0"
+
+"@typescript-eslint/parser@2.26.0":
+  version "2.26.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-2.26.0.tgz?cache=0&sync_timestamp=1585637546650&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.26.0.tgz#385463615818b33acb72a25b39c03579df93d76f"
+  integrity sha1-OFRjYVgYszrLcqJbOcA1ed+T128=
+  dependencies:
+    "@types/eslint-visitor-keys" "^1.0.0"
+    "@typescript-eslint/experimental-utils" "2.26.0"
+    "@typescript-eslint/typescript-estree" "2.26.0"
+    eslint-visitor-keys "^1.1.0"
+
+"@typescript-eslint/parser@^2.24.0":
   version "2.25.0"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-2.25.0.tgz#abfb3d999084824d9a756d9b9c0f36fba03adb76"
   integrity sha1-q/s9mZCEgk2adW2bnA82+6A623Y=
@@ -3309,6 +3339,19 @@
   version "2.25.0"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-2.25.0.tgz?cache=0&sync_timestamp=1585359916993&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.25.0.tgz#b790497556734b7476fa7dd3fa539955a5c79e2c"
   integrity sha1-t5BJdVZzS3R2+n3T+lOZVaXHniw=
+  dependencies:
+    debug "^4.1.1"
+    eslint-visitor-keys "^1.1.0"
+    glob "^7.1.6"
+    is-glob "^4.0.1"
+    lodash "^4.17.15"
+    semver "^6.3.0"
+    tsutils "^3.17.1"
+
+"@typescript-eslint/typescript-estree@2.26.0":
+  version "2.26.0"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-2.26.0.tgz#d8132cf1ee8a72234f996519a47d8a9118b57d56"
+  integrity sha1-2BMs8e6KciNPmWUZpH2KkRi1fVY=
   dependencies:
     debug "^4.1.1"
     eslint-visitor-keys "^1.1.0"
@@ -12266,10 +12309,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npm.taobao.org/lines-and-columns/download/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@10.0.9:
-  version "10.0.9"
-  resolved "https://registry.npm.taobao.org/lint-staged/download/lint-staged-10.0.9.tgz?cache=0&sync_timestamp=1585026158027&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flint-staged%2Fdownload%2Flint-staged-10.0.9.tgz#185aabb2432e9467c84add306c990f1c20da3cdb"
-  integrity sha1-GFqrskMulGfISt0wbJkPHCDaPNs=
+lint-staged@10.1.0:
+  version "10.1.0"
+  resolved "https://registry.npm.taobao.org/lint-staged/download/lint-staged-10.1.0.tgz?cache=0&sync_timestamp=1585575168270&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flint-staged%2Fdownload%2Flint-staged-10.1.0.tgz#18785bb005d5ed404f1c1db6563e082f7a7baac2"
+  integrity sha1-GHhbsAXV7UBPHB22Vj4IL3p7qsI=
   dependencies:
     chalk "^3.0.0"
     commander "^4.0.1"
@@ -17399,10 +17442,10 @@ rollup-pluginutils@^2.8.1:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.npm.taobao.org/rollup/download/rollup-2.2.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frollup%2Fdownload%2Frollup-2.2.0.tgz#d82cfd6eda6d9561593a7e8a2fc0b72811a89b49"
-  integrity sha1-2Cz9btptlWFZOn6KL8C3KBGom0k=
+rollup@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npm.taobao.org/rollup/download/rollup-2.3.1.tgz#844c5cdf88d212ff7e59212088c37eacc521a2f9"
+  integrity sha1-hExc34jSEv9+WSEgiMN+rMUhovk=
   optionalDependencies:
     fsevents "~2.1.2"
 

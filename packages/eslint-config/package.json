@@ -8,8 +8,8 @@
     "access": "public"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "2.25.0",
-    "@typescript-eslint/parser": "2.25.0",
+    "@typescript-eslint/eslint-plugin": "2.26.0",
+    "@typescript-eslint/parser": "2.26.0",
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "3.0.0"
