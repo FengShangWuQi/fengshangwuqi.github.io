@@ -1,12 +1,12 @@
 import yargs from "yargs";
 
 import { build } from "./build";
+import { init } from "./init";
 
 export const cli = () => {
   const y = yargs
     .scriptName("pkgkit")
-    .usage("$0 <action>")
-    .demandCommand(1, "must provide a valid command")
+    .usage("$0 <action> <pkg>")
     .version()
     .help();
 
@@ -14,11 +14,16 @@ export const cli = () => {
   y.command("init", "pkg initial");
 
   const argv = y.argv;
-  const cmd = argv._[0];
+  const action = argv._[0];
+  const pkg = argv._[1];
 
-  switch (cmd) {
+  switch (action) {
     case "build": {
       build();
+      break;
+    }
+    case "init": {
+      init(pkg);
       break;
     }
   }

@@ -6,7 +6,7 @@
     "appkit": "bin/appkit.js"
   },
   "scripts": {
-    "test": "ts-node bin/appkit.js dev blog"
+    "test": "ts-node bin/appkit.js"
   },
   "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {

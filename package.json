@@ -25,6 +25,7 @@
     "tsc": "tsc",
     "ncu": "ncu -u && lerna exec -- ncu -u",
     "pkg:clean": "lerna exec rimraf dist",
+    "pkg:init": "ts-node packages/pkgkit/bin/pkgkit.js init",
     "pkg:build": "lerna run --scope @fengshangwuqi/pkgkit build && lerna exec pkgkit build",
     "pkg:r": "lerna version patch --no-commit-hooks --yes",
     "generate": "ts-node ./tools/generate/index.ts",
