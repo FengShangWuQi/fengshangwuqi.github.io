@@ -3074,10 +3074,10 @@
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-13.9.5.tgz?cache=0&sync_timestamp=1585327957293&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-13.9.5.tgz#59738bf30b31aea1faa2df7f4a5f55613750cf00"
   integrity sha1-WXOL8wsxrqH6ot9/Sl9VYTdQzwA=
 
-"@types/node@13.9.8":
-  version "13.9.8"
-  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-13.9.8.tgz?cache=0&sync_timestamp=1585613445978&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-13.9.8.tgz#09976420fc80a7a00bf40680c63815ed8c7616f4"
-  integrity sha1-CZdkIPyAp6AL9AaAxjgV7Yx2FvQ=
+"@types/node@13.11.0":
+  version "13.11.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.11.0.tgz#390ea202539c61c8fa6ba4428b57e05bc36dc47b"
+  integrity sha512-uM4mnmsIIPK/yeO+42F2RQhGUIs39K2RFmugcJANppXe6J1nvH87PvzPZYpza7Xhhs8Yn9yIAVdLZ84z61+0xQ==
 
 "@types/node@^8.5.7":
   version "8.10.59"
