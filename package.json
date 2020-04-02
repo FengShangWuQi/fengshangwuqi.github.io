@@ -127,7 +127,7 @@
     "@types/react-helmet": "5.0.15",
     "babel-jest": "25.2.4",
     "babel-preset-gatsby": "0.3.1",
-    "chalk": "3.0.0",
+    "chalk": "4.0.0",
     "cross-spawn": "7.0.1",
     "fs-extra": "9.0.0",
     "gh-pages": "2.2.0",
