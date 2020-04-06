@@ -18,13 +18,15 @@ exports.siteMetadata = {
 
 exports.pathPrefix = process.env.PATH_PREFIX;
 
-exports.sources = process.env.SOURCES.split(",").map(source => ({
-  resolve: "gatsby-source-filesystem",
-  options: {
-    path: path.join(process.cwd(), source),
-    name: source,
-  },
-}));
+exports.sources = process.env.SOURCES
+  ? process.env.SOURCES.split(",").map(source => ({
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: path.join(process.cwd(), source),
+        name: source,
+      },
+    }))
+  : [];
 
 exports.mdx = {
   resolve: `gatsby-plugin-mdx`,
@@ -74,12 +76,14 @@ exports.analytics = {
   },
 };
 
-exports.netlifyCMS = {
-  resolve: "gatsby-plugin-netlify-cms",
-  options: {
-    manualInit: true,
-    modulePath: path.join(process.cwd(), process.env.CMS_PATH),
-  },
-};
+exports.netlifyCMS = process.env.CMS_PATH
+  ? {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        manualInit: true,
+        modulePath: path.join(process.cwd(), process.env.CMS_PATH),
+      },
+    }
+  : {};
 
 exports.offline = "gatsby-plugin-offline";
