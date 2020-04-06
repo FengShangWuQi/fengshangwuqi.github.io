@@ -1,7 +1,6 @@
 FROM node:current as builder
 
-ENV APP=blog    \
-    APP_DIR=/src-blog
+ENV APP_DIR=/src-blog
 
 WORKDIR $APP_DIR
 
@@ -9,7 +8,7 @@ COPY package.json $APP_DIR/
 RUN yarn
 
 COPY . $APP_DIR/
-RUN yarn build
+RUN yarn start build blog
 
 FROM nginx:alpine
 
