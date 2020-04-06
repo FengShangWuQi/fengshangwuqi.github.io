@@ -1,15 +1,14 @@
 import { join } from "path";
-import { readJson } from "fs-extra";
 import dotenv from "dotenv";
 
 import { errLog, run } from "./utils";
 
-export const devkit = async (action: string, app: string) => {
+export const appkit = (action: string, app: string) => {
   const pkgPath = join(process.cwd(), "package.json");
 
-  const pkg = await readJson(pkgPath);
+  const pkg = require(pkgPath);
 
-  if (!pkg || !pkg.appkit?.[action]) {
+  if (!pkg?.appkit?.[action]) {
     errLog(`package.json not exists, or appkit ${action} script not exists`);
     process.exit(1);
   }
@@ -18,5 +17,8 @@ export const devkit = async (action: string, app: string) => {
     path: join(process.cwd(), `.env.${app}`),
   });
 
-  run(pkg.appkit?.[action], { APP: app, ...result.parsed });
+  run(pkg.appkit?.[action], {
+    APP: app,
+    ...result.parsed,
+  });
 };

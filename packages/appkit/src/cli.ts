@@ -1,6 +1,6 @@
 import yargs from "yargs";
 
-import { devkit } from "./devkit";
+import { appkit } from "./appkit";
 
 export const cli = () => {
   const y = yargs
@@ -21,7 +21,7 @@ export const cli = () => {
     case "dev":
     case "build":
     case "release":
-      devkit(action, app);
+      appkit(action, app);
       break;
     default:
       break;
