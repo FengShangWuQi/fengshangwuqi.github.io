@@ -7,13 +7,6 @@ exports.siteMetadata = {
   title: process.env.META_TITLE,
   description: process.env.META_DECS,
   siteUrl: process.env.SITE_URL,
-  social: {
-    Twitter: process.env.META_SOCIAL_TWITTER,
-    GitHub: process.env.META_SOCIAL_GITHUB,
-  },
-  contact: {
-    Email: process.env.META_CONTACT_EMAIL,
-  },
 };
 
 exports.pathPrefix = process.env.PATH_PREFIX;
