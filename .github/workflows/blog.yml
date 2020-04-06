@@ -20,9 +20,6 @@ jobs:
           META_AUTHOR: 枫上雾棋
           META_TITLE: 枫上雾棋的 blog
           META_DECS: 枫上雾棋的 blog
-          META_SOCIAL_TWITTER: "@fengshangwuqi"
-          META_SOCIAL_GITHUB: FengShangWuQi
-          META_CONTACT_EMAIL: fengshangwuqi@gmail.com
           SITE_URL: https://blog.fengshangwuqi.com
           PATH_PREFIX: /
           CMS_PATH: src-app/blog/cms/cms.js

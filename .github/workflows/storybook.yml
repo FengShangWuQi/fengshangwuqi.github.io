@@ -20,9 +20,6 @@ jobs:
           META_AUTHOR: 枫上雾棋
           META_TITLE: 枫上雾棋的 storybook
           META_DECS: 枫上雾棋的 storybook
-          META_SOCIAL_TWITTER: "@fengshangwuqi"
-          META_SOCIAL_GITHUB: FengShangWuQi
-          META_CONTACT_EMAIL: fengshangwuqi@gmail.com
           SITE_URL: https://storybook.fengshangwuqi.com
           PATH_PREFIX: /
           SOURCES: src-core,src-components,utils,cases
