@@ -1,4 +1,4 @@
-name: Storybook
+name: Blog
 on:
   push:
     branches:
@@ -16,21 +16,22 @@ jobs:
       - run: yarn
       - run: yarn gatsby build --prefix-paths
         env:
-          APP: storybook
+          APP: blog
           META_AUTHOR: 枫上雾棋
-          META_TITLE: 枫上雾棋的 storybook
-          META_DECS: 枫上雾棋的 storybook
+          META_TITLE: 枫上雾棋的 blog
+          META_DECS: 枫上雾棋的 blog
           META_SOCIAL_TWITTER: "@fengshangwuqi"
           META_SOCIAL_GITHUB: FengShangWuQi
           META_CONTACT_EMAIL: fengshangwuqi@gmail.com
-          SITE_URL: https://storybook.fengshangwuqi.com
+          SITE_URL: https://blog.fengshangwuqi.com
           PATH_PREFIX: /
-          SOURCES: src-core,src-components,utils,cases
+          CMS_PATH: src-app/blog/cms/cms.js
+          SOURCES: static/assets,posts,zhoubao
           SIZE: 6
           TRACKING_ID: ${{ secrets.TRACKING_ID }}
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.REPO_TOKEN }}
-          publish_branch: storybook
+          publish_branch: master
           publish_dir: ./public
