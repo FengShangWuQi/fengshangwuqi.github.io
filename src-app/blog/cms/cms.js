@@ -56,7 +56,6 @@ CMS.init({
         label: "Post",
         folder: "posts",
         create: true,
-        preview_path: "{{slug}}",
         fields: [
           titleField,
           originalField,
@@ -74,7 +73,6 @@ CMS.init({
         label: "ZhouBao",
         folder: "zhoubao",
         create: true,
-        preview_path: "{{slug}}",
         fields: [
           titleField,
           originalField,
