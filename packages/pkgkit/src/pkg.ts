@@ -1,25 +1,19 @@
 import { join } from "path";
-import { readJsonSync, writeJsonSync } from "fs-extra";
-
-interface Dictionary<T> {
-  [index: string]: T;
-}
+import { writeJsonSync } from "fs-extra";
 
 export const usePkg = (): [
-  Dictionary<string | string[]>,
-  (value: Dictionary<string | string[]>) => void,
+  Record<string, any>,
+  (value: Record<string, any>) => void,
 ] => {
   const pkgPath = join(process.cwd(), "package.json");
 
-  const pkg = readJsonSync(pkgPath, {
-    throws: false,
-  });
+  const pkg = require(pkgPath);
 
   if (!pkg) {
     process.exit(1);
   }
 
-  const setPkg = (value: Dictionary<string | string[]>) => {
+  const setPkg = (value: Record<string, any>) => {
     writeJsonSync(pkgPath, { ...pkg, ...value }, { spaces: "  " });
   };
 

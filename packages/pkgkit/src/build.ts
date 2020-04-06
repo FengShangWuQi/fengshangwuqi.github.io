@@ -5,6 +5,7 @@ import { rollup, RollupOptions, OutputOptions } from "rollup";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import builtins from "rollup-plugin-node-builtins";
 import rollupBabel from "rollup-plugin-babel";
+import json from "@rollup/plugin-json";
 import dts from "rollup-plugin-dts";
 
 import { usePkg, outputs } from "./pkg";
@@ -64,10 +65,16 @@ export const build = async () => {
         nodeResolve({
           extensions: [".ts"],
         }),
+        json(),
         rollupBabel({
           babelrc: false,
           presets: ["@babel/preset-typescript"],
-          plugins: ["@babel/plugin-proposal-class-properties"],
+          plugins: [
+            "@babel/plugin-proposal-class-properties",
+            "@babel/plugin-proposal-object-rest-spread",
+            "@babel/plugin-proposal-optional-chaining",
+            "@babel/plugin-proposal-nullish-coalescing-operator",
+          ],
           runtimeHelpers: true,
           exclude: "node_modules/**",
           extensions: [".ts"],
@@ -86,17 +93,21 @@ export const build = async () => {
     },
   ];
 
-  await Promise.all(
-    rollupOpts.map(opt => {
-      return rollup(opt).then(bundle => {
-        return Promise.all(
-          (opt.output! as OutputOptions[]).map(outputOpts => {
-            return bundle.write(outputOpts);
-          }),
-        );
-      });
-    }),
-  );
+  try {
+    await Promise.all(
+      rollupOpts.map(opt => {
+        return rollup(opt).then(bundle => {
+          return Promise.all(
+            (opt.output! as OutputOptions[]).map(outputOpts => {
+              return bundle.write(outputOpts);
+            }),
+          );
+        });
+      }),
+    );
+  } catch (err) {
+    console.error(err);
+  }
 
   successLog(`build ${pkg.name}`);
 };
