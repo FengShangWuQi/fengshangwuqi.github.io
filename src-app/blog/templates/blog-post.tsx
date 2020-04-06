@@ -19,10 +19,6 @@ export const postQuery = graphql`
         title
         siteUrl
         author
-        social {
-          Twitter
-          GitHub
-        }
       }
       pathPrefix
     }
@@ -54,7 +50,7 @@ export const postQuery = graphql`
 
 const BlogPost = ({ data: { site, mdx } }: any) => {
   const {
-    siteMetadata: { title: siteTitle, siteUrl, author, social },
+    siteMetadata: { title: siteTitle, siteUrl, author },
     pathPrefix,
   } = site;
   const {
@@ -80,7 +76,7 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
         keywords={[postTitle, siteTitle, author, ...tags]}
         url={`${siteUrl}${pathPrefix}${slug}`}
         author={author}
-        twitter={social["Twitter"]}
+        twitter="@fengshangwuqi"
         datePublished={date}
         isBlogPost
       />

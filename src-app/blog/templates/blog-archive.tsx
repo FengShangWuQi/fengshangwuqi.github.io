@@ -14,13 +14,6 @@ export const archiveQuery = graphql`
         description
         siteUrl
         author
-        social {
-          Twitter
-          GitHub
-        }
-        contact {
-          Email
-        }
       }
       pathPrefix
     }
@@ -45,7 +38,7 @@ export const archiveQuery = graphql`
 const BlogArchive = ({
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl, author, social },
+      siteMetadata: { title, description, siteUrl, author },
       pathPrefix,
     },
     allMdx: { edges: posts },
@@ -59,7 +52,7 @@ const BlogArchive = ({
       keywords={["归档", title, author]}
       url={`${siteUrl}${pathPrefix}/archive`}
       author={author}
-      twitter={social["Twitter"]}
+      twitter="@fengshangwuqi"
     />
 
     <Wrapper>

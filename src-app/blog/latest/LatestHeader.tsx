@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { useSpring, animated } from "react-spring";
 import { position, size } from "polished";
-import { Dictionary } from "lodash";
 
 import { useRect } from "src-core/hooks";
 import { useDesignSystem } from "src-core/ds";
@@ -9,13 +8,7 @@ import { flex } from "src-core/style";
 
 import { Stars } from "./Stars";
 
-export const LatestHeader = ({
-  social,
-  contact,
-}: {
-  social: Dictionary<string>;
-  contact: Dictionary<string>;
-}) => {
+export const LatestHeader = () => {
   const ds = useDesignSystem();
 
   return (
@@ -26,7 +19,7 @@ export const LatestHeader = ({
           <Container>
             <div>
               <Title />
-              <Contact Email={contact["Email"]} />
+              <Contact Email="fengshangwuqi@gmail.com" />
               <div
                 css={{
                   paddingTop: 16,
@@ -34,17 +27,17 @@ export const LatestHeader = ({
                   fontSize: ds.size.sm,
                 }}>
                 <SocialLink
-                  src={`https://github.com/${social["GitHub"]}`}
+                  src={`https://github.com/FengShangWuQi`}
                   color="#e0a458">
                   GitHub
                 </SocialLink>
                 <SocialLink
-                  src={`https://twitter.com/${social["Twitter"].slice(1)}`}
+                  src={`https://twitter.com/fengshangwuqi`}
                   color="#419d78">
                   Twitter
                 </SocialLink>
                 <SocialLink
-                  src={`https://fengshangwuqi.netlify.com`}
+                  src={`https://storybook.fengshangwuqi.com`}
                   color="#d9594c">
                   Storybook
                 </SocialLink>

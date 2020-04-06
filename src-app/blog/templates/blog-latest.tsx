@@ -18,13 +18,6 @@ export const latestQuery = graphql`
         author
         siteUrl
         description
-        social {
-          Twitter
-          GitHub
-        }
-        contact {
-          Email
-        }
       }
       pathPrefix
     }
@@ -61,7 +54,7 @@ export const latestQuery = graphql`
 const BlogLatest = ({
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl, author, social, contact },
+      siteMetadata: { title, description, siteUrl, author },
       pathPrefix,
     },
     allMdx: { edges: posts },
@@ -76,10 +69,10 @@ const BlogLatest = ({
       keywords={[title, author]}
       url={`${siteUrl}${pathPrefix}`}
       author={author}
-      twitter={social["Twitter"]}
+      twitter="@fengshangwuqi"
     />
 
-    <LatestHeader social={social} contact={contact} />
+    <LatestHeader />
 
     <Wrapper withShadow>
       <LatestTitle>最近的文章</LatestTitle>
