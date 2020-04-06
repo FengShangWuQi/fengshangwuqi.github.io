@@ -9,7 +9,7 @@ import { useDesignSystem, PrismTheme } from "src-core/ds";
 import { mq } from "src-core/style";
 import { SEO } from "src-core/seo";
 
-import { Layout, Wrapper, Footer } from "../common";
+import { Layout, Wrapper } from "../common";
 import { Discussion, PostHeader, PostTag, PostContainer } from "../post";
 
 export const postQuery = graphql`
@@ -23,7 +23,6 @@ export const postQuery = graphql`
           Twitter
           GitHub
         }
-        repository
       }
       pathPrefix
     }
@@ -55,7 +54,7 @@ export const postQuery = graphql`
 
 const BlogPost = ({ data: { site, mdx } }: any) => {
   const {
-    siteMetadata: { title: siteTitle, siteUrl, author, social, repository },
+    siteMetadata: { title: siteTitle, siteUrl, author, social },
     pathPrefix,
   } = site;
   const {
@@ -107,14 +106,6 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
         </PostContainer>
       </Wrapper>
 
-      <Footer>
-        <PostEditLink
-          username={social["GitHub"]}
-          slug={slug}
-          repository={repository}
-        />
-      </Footer>
-
       <PostDiscussion url={`${siteUrl}${pathPrefix}${slug}`} slug={slug} />
     </Layout>
   );
@@ -151,25 +142,6 @@ export const PostTags = ({ tags }: { tags: string[] }) => (
     {tags.map((tag: string) => (
       <PostTag key={tag} tag={tag} />
     ))}
-  </div>
-);
-
-const PostEditLink = ({
-  slug,
-  username,
-  repository,
-}: {
-  slug: string;
-  username: string;
-  repository: string;
-}) => (
-  <div>
-    <a
-      href={`https://github.com/${username}/${repository}/blob/dev/posts${slug}/index.md`}
-      target="_blank"
-      rel="noopener noreferrer">
-      Edit this post
-    </a>
   </div>
 );
 
