@@ -10,6 +10,8 @@ $ npm install @fengshangwuqi/appkit -g
 
 ### 使用
 
+1、修改 package.json；
+
 ```json
 {
   "appkit": {
@@ -23,8 +25,14 @@ $ npm install @fengshangwuqi/appkit -g
 }
 ```
 
-或者
+2、使用 `.env` 或 `.env.${appName}` 注入环境变量;
+
+3、运行相应脚本;
 
 ```
+$ appkit release
+
+or
+
 $ appkit release appName
 ```

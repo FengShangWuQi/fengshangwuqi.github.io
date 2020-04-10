@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 import { errLog, run } from "./utils";
 
-export const appkit = (action: string, app: string) => {
+export const appkit = (action: string, app?: string) => {
   const pkgPath = join(process.cwd(), "package.json");
 
   const pkg = require(pkgPath);
@@ -14,11 +14,11 @@ export const appkit = (action: string, app: string) => {
   }
 
   const result = dotenv.config({
-    path: join(process.cwd(), `.env.${app}`),
+    path: join(process.cwd(), app ? `.env.${app}` : ".env"),
   });
 
   run(pkg.appkit?.[action], {
-    APP: app,
+    ...(app && { APP: app }),
     ...result.parsed,
   });
 };
