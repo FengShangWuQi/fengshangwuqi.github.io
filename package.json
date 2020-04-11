@@ -65,6 +65,7 @@
     "arrowParens": "avoid"
   },
   "dependencies": {
+    "@fengshangwuqi/appkit": "1.0.6",
     "@svgr/webpack": "5.3.1",
     "axios": "0.19.2",
     "emotion-theming": "10.0.27",

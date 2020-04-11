@@ -1,4 +1,4 @@
-FROM node:current as builder
+FROM node:lts-alpine as builder
 
 ENV APP_DIR=/src-blog
 
@@ -8,7 +8,7 @@ COPY package.json $APP_DIR/
 RUN yarn
 
 COPY . $APP_DIR/
-RUN yarn start build blog
+RUN yarn appkit build blog
 
 FROM nginx:alpine
 
