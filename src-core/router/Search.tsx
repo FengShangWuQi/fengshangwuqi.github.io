@@ -7,7 +7,7 @@ export type SearchQuery =
   | Dictionary<string | number | boolean | string[] | number[] | boolean[]>
   | undefined;
 
-export const parseSearchString = (search: string): SearchQuery => {
+export const parseSearchString = (search: string) => {
   if (search.startsWith("?")) {
     return parse(search.slice(1));
   }
