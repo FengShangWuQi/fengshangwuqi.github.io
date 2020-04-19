@@ -1,4 +1,490 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Apr 2020 10:42:37 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#11 @ 2020.03.15]]></title><description><![CDATA[前端动态 1、 一文道尽软件架构及前端架构演进 软件架构是关于软件开发中重要的事情，思考软件架构其实就是思考哪些是最重要的事情，并且要保持这些部分始终运行在良好的状态下。…]]></description><link>https://blog.fengshangwuqi.com/2020-03-15-of-11/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/2020-03-15-of-11/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 15 Mar 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Apr 2020 11:49:19 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[2020-04-19-of-12]]></title><description><![CDATA[前端动态 1、 了解 CSS min()/max()/clamp() 数学函数 min ()/ max ()/ clamp () 这  3  个数学函数是现代浏览器  201…]]></description><link>https://blog.fengshangwuqi.com/周报-12-2020-04-12/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/周报-12-2020-04-12/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 19 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i &lt; sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; target[key] = source[key]; } return target; }
+
+/* @jsx mdx */
+var _frontmatter = {
+  &quot;title&quot;: &quot;2020-04-19-of-12&quot;,
+  &quot;original&quot;: true,
+  &quot;tags&quot;: [&quot;Weekly&quot;, &quot;Front-End&quot;],
+  &quot;date&quot;: &quot;2020-04-19T00:00:00.000Z&quot;,
+  &quot;cover&quot;: &quot;/assets/zhoubao-12.jpg&quot;
+};
+
+var makeShortcode = function makeShortcode(name) {
+  return function MDXDefaultShortcode(props) {
+    console.warn(&quot;Component &quot; + name + &quot; was not imported, exported, or provided by MDXProvider as global scope&quot;);
+    return mdx(&quot;div&quot;, props);
+  };
+};
+
+var layoutProps = {
+  _frontmatter: _frontmatter
+};
+var MDXLayout = &quot;wrapper&quot;;
+return function MDXContent(_ref) {
+  var components = _ref.components,
+      props = _objectWithoutProperties(_ref, [&quot;components&quot;]);
+
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: &quot;MDXLayout&quot;
+  }), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;前端动态&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h2&quot;
+  }, {
+    &quot;href&quot;: &quot;#%E5%89%8D%E7%AB%AF%E5%8A%A8%E6%80%81&quot;,
+    &quot;aria-label&quot;: &quot;前端动态 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;\u524D\u7AEF\u52A8\u6001&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;1、了解-css-minmaxclamp-数学函数&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#1%E3%80%81%E4%BA%86%E8%A7%A3-css-minmaxclamp-%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0&quot;,
+    &quot;aria-label&quot;: &quot;1、了解 css minmaxclamp 数学函数 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;1\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.zhangxinxu.com/wordpress/2020/04/css-min-max-clamp/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;\u4E86\u89E3 CSS min()/max()/clamp() \u6570\u5B66\u51FD\u6570&quot;)), mdx(&quot;p&quot;, null, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;min&quot;), &quot;()/&quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;max&quot;), &quot;()/&quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;clamp&quot;), &quot;() \u8FD9 &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;3&quot;), &quot; \u4E2A\u6570\u5B66\u51FD\u6570\u662F\u73B0\u4EE3\u6D4F\u89C8\u5668 &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;2018&quot;), &quot; \u5E74\u5E95\u5F00\u59CB\u652F\u6301\u7684\uFF0C\u56E0\u6B64\uFF0C\u5982\u679C\u4F60\u80C6\u513F\u8DB3\u591F\u80A5\uFF0C\u662F\u53EF\u4EE5\u5728\u5B9E\u9645\u9879\u76EE\u4E2D\u5C0F\u8303\u56F4\u4F7F\u7528\u7684\u3002&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;2、这个程序员写的免费在线-ps，让他三十岁前财务自由&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#2%E3%80%81%E8%BF%99%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E5%86%99%E7%9A%84%E5%85%8D%E8%B4%B9%E5%9C%A8%E7%BA%BF-ps%EF%BC%8C%E8%AE%A9%E4%BB%96%E4%B8%89%E5%8D%81%E5%B2%81%E5%89%8D%E8%B4%A2%E5%8A%A1%E8%87%AA%E7%94%B1&quot;,
+    &quot;aria-label&quot;: &quot;2、这个程序员写的免费在线 ps，让他三十岁前财务自由 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;2\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://zhuanlan.zhihu.com/p/70636726&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;\u8FD9\u4E2A\u7A0B\u5E8F\u5458\u5199\u7684\u514D\u8D39\u5728\u7EBF PS\uFF0C\u8BA9\u4ED6\u4E09\u5341\u5C81\u524D\u8D22\u52A1\u81EA\u7531&quot;)), mdx(&quot;p&quot;, null, &quot;\u5BB6\u4F4F\u6377\u514B\u7684 &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;\u4F0A\u4E07&quot;), &quot; \u662F\u4E2A &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;90&quot;), &quot; \u540E &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;\u81EA\u7531\u804C\u4E1A\u7A0B\u5E8F\u5458&quot;), &quot;\uFF0C\u4ECE\u6765\u6CA1\u6709\u516C\u53F8\u7684\u6B63\u5F0F\u5DE5\u4F5C\uFF0C\u81EA\u5B66\u751F\u65F6\u4EE3\u8D77\uFF0C\u4ED6\u5C31\u9760\u7740\u81EA\u5DF1\u7684\u7F16\u7A0B\u5929\u8D4B\u6323\u96F6\u82B1\u94B1\u517B\u6D3B\u81EA\u5DF1\uFF0C\u5176\u4E2D\u6709\u4E00\u4E2A\u540D\u53EB &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Photopea&quot;), &quot; \u7684\u56FE\u7247\u7F16\u8F91\u5668\u9879\u76EE\uFF0C\u8BA9\u4ECA\u5929\u7684\u4ED6\u8FC7\u4E0A\u4E86\u6BCF\u6708\u88AB\u52A8\u6536\u5165\u4E0A\u4E07\u7F8E\u5143\u7684\u300C\u8D22\u52A1\u81EA\u7531\u300D\u751F\u6D3B\u3002&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;3、2019-年十大-web-hacking-技术&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#3%E3%80%812019-%E5%B9%B4%E5%8D%81%E5%A4%A7-web-hacking-%E6%8A%80%E6%9C%AF&quot;,
+    &quot;aria-label&quot;: &quot;3、2019 年十大 web hacking 技术 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;3\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.infoq.cn/article/jyrHvXsUV9R4DGBLdCj2&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;2019 \u5E74\u5341\u5927 Web Hacking \u6280\u672F&quot;)), mdx(&quot;p&quot;, null, &quot;\u4F17\u6240\u5468\u77E5\uFF0C\u6BCF\u5E74\uFF0C\u4E13\u4E1A\u7814\u7A76\u4EBA\u5458\u3001\u7ECF\u9A8C\u4E30\u5BCC\u7684\u6E17\u900F\u6D4B\u8BD5\u4EBA\u5458\u3001bug \u8D4F\u91D1\u730E\u4EBA\u548C\u5B66\u8005\u90FD\u4F1A\u53D1\u8868\u5927\u91CF\u7684\u535A\u5BA2\u6587\u7AE0\u3001\u6F14\u793A\u6587\u7A3F\u3001\u89C6\u9891\u548C\u767D\u76AE\u4E66\u3002\u65E0\u8BBA\u662F\u63D0\u51FA\u65B0\u7684\u653B\u51FB\u6280\u672F\u3001\u6DF7\u5408\u8001\u7684\u6280\u672F\uFF0C\u8FD8\u662F\u8BB0\u5F55\u6F0F\u6D1E\u67E5\u627E\u7ED3\u679C\u7684\uFF0C\u5176\u4E2D\u8BB8\u591A\u90FD\u5305\u542B\u53EF\u5E94\u7528\u5230\u5176\u4ED6\u5730\u65B9\u7684\u65B0\u601D\u60F3\u3002&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;4、docker-镜像构建教程：减小镜像体积&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#4%E3%80%81docker-%E9%95%9C%E5%83%8F%E6%9E%84%E5%BB%BA%E6%95%99%E7%A8%8B%EF%BC%9A%E5%87%8F%E5%B0%8F%E9%95%9C%E5%83%8F%E4%BD%93%E7%A7%AF&quot;,
+    &quot;aria-label&quot;: &quot;4、docker 镜像构建教程：减小镜像体积 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;4\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://fuckcloudnative.io/posts/docker-images-part1-reducing-image-size/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;Docker \u955C\u50CF\u6784\u5EFA\u6559\u7A0B\uFF1A\u51CF\u5C0F\u955C\u50CF\u4F53\u79EF&quot;)), mdx(&quot;p&quot;, null, &quot;\u672C\u6587\u4ECB\u7ECD\u5982\u4F55\u4E00\u6B65\u6B65\u538B\u7F29\u955C\u50CF\u6587\u4EF6\u7684\u4F53\u79EF\uFF0C\u5C06 C \u8BED\u8A00\u7684 hello world \u4ECE\u6700\u521D\u7684 &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;1 GB&quot;), &quot; \u538B\u7F29\u5230 &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;94 KB&quot;), &quot;\u3002&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;5、基于-webpack-的应用治理&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#5%E3%80%81%E5%9F%BA%E4%BA%8E-webpack-%E7%9A%84%E5%BA%94%E7%94%A8%E6%B2%BB%E7%90%86&quot;,
+    &quot;aria-label&quot;: &quot;5、基于 webpack 的应用治理 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;5\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://www.infoq.cn/article/mr9ALQzALxW9fyBZdvKV&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;\u57FA\u4E8E webpack \u7684\u5E94\u7528\u6CBB\u7406&quot;)), mdx(&quot;p&quot;, null, &quot;\u5F53\u524D\u5E02\u9762\u4E0A\u5927\u90E8\u5206\u524D\u7AEF\u5E94\u7528\u90FD\u662F\u57FA\u4E8E webpack \u8FDB\u884C\u6784\u5EFA\uFF0C\u800C\u968F\u7740\u5E94\u7528\u65E5\u76CA\u5E9E\u5927\uFF0Cwebpack \u5E94\u7528\u5C31\u4F1A\u51FA\u73B0\u6784\u5EFA\u901F\u5EA6\u6162\uFF0C\u6784\u5EFA\u7ED3\u679C\u4F53\u79EF\u5927\u7B49\u4E00\u7CFB\u5217\u95EE\u9898\u3002&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;6、前端下载文件与读取文件内容&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#6%E3%80%81%E5%89%8D%E7%AB%AF%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E4%B8%8E%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9&quot;,
+    &quot;aria-label&quot;: &quot;6、前端下载文件与读取文件内容 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;6\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://juejin.im/post/5e9840336fb9a03c4c5bd1e0&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;\u524D\u7AEF\u4E0B\u8F7D\u6587\u4EF6\u4E0E\u8BFB\u53D6\u6587\u4EF6\u5185\u5BB9&quot;)), mdx(&quot;p&quot;, null, &quot;\u4F20\u7EDF\u7684\u6587\u4EF6\u4E0B\u8F7D\u505A\u6CD5\u662F\u5728\u540E\u7AEF\u5B58\u50A8\u6216\u8005\u5373\u65F6\u751F\u6210\u4E00\u4E2A\u6587\u4EF6\u6765\u63D0\u4F9B\u4E0B\u8F7D\u529F\u80FD\uFF0C\u8FD9\u6837\u7684\u4F18\u52BF\u662F\u53EF\u4EE5\u505A\u6743\u9650\u63A7\u5236\u3001\u65B9\u4FBF\u6570\u636E\u4E8C\u6B21\u5904\u7406\uFF0C\u4F46\u7F3A\u70B9\u662F\u9700\u8981\u989D\u5916\u53D1\u8D77\u8BF7\u6C42\u3001\u589E\u5927\u670D\u52A1\u7AEF\u538B\u529B\u3001\u4E0B\u8F7D\u901F\u5EA6\u6162\u3002\u4F46\u968F\u7740 HTML5 \u7684\u6807\u51C6\u53D1\u5E03\uFF0C\u6211\u5927\u524D\u7AEF\u5DF2\u7ECF\u5B8C\u5168\u53EF\u4EE5\u72EC\u7ACB\u5B9E\u73B0\u6587\u4EF6\u4E0B\u8F7D\u4E0E\u5BFC\u51FA\u4E86\u3002&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;明星项目&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h2&quot;
+  }, {
+    &quot;href&quot;: &quot;#%E6%98%8E%E6%98%9F%E9%A1%B9%E7%9B%AE&quot;,
+    &quot;aria-label&quot;: &quot;明星项目 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;\u660E\u661F\u9879\u76EE&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;1、puppeteer&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#1%E3%80%81puppeteer&quot;,
+    &quot;aria-label&quot;: &quot;1、puppeteer permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;1\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://github.com/puppeteer/puppeteer/releases/tag/v3.0.0&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;puppeteer&quot;)), mdx(&quot;p&quot;, null, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Puppeteer&quot;), &quot; \u73B0\u5728\u652F\u6301 &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;Firefox&quot;), &quot; \u4E86\uFF0C\u5E76\u4E14\u5F00\u59CB\u5F80 &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;TypeScript&quot;), &quot; \u8FC1\u79FB\u3002&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;2、lurukebrowser-2020&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#2%E3%80%81lurukebrowser-2020&quot;,
+    &quot;aria-label&quot;: &quot;2、lurukebrowser 2020 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;2\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://github.com/luruke/browser-2020&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;luruke/browser-2020&quot;)), mdx(&quot;p&quot;, null, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;2020&quot;), &quot; \u5E74\uFF0C\u6D4F\u89C8\u5668\u53EF\u4EE5\u505A\u66F4\u591A\u4EE4\u4EBA\u60CA\u5947\u7684\u4E8B\u3002&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;本周热点&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h2&quot;
+  }, {
+    &quot;href&quot;: &quot;#%E6%9C%AC%E5%91%A8%E7%83%AD%E7%82%B9&quot;,
+    &quot;aria-label&quot;: &quot;本周热点 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;\u672C\u5468\u70ED\u70B9&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;1、github-核心功能对所有开发者免费&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#1%E3%80%81github-%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%E5%AF%B9%E6%89%80%E6%9C%89%E5%BC%80%E5%8F%91%E8%80%85%E5%85%8D%E8%B4%B9&quot;,
+    &quot;aria-label&quot;: &quot;1、github 核心功能对所有开发者免费 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;1\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://github.blog/2020-04-14-github-is-now-free-for-teams/&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;GitHub \u6838\u5FC3\u529F\u80FD\u5BF9\u6240\u6709\u5F00\u53D1\u8005\u514D\u8D39&quot;)), mdx(&quot;p&quot;, null, &quot;\u5728\u79C1\u6709\u5E93\u514D\u8D39\u4E4B\u540E\uFF0C&quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;GitHub&quot;), &quot; \u5BA3\u5E03\u5176\u6838\u5FC3\u529F\u80FD\u5BF9\u6240\u6709\u5F00\u53D1\u8005 &quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;\u514D\u8D39&quot;), &quot;\uFF0C\u79C1\u6709\u5E93\u4E0D\u518D\u6709\u9650\u5236\uFF0C\u52A0\u5165\u79C1\u6709\u5E93\u7684\u5408\u4F5C\u8005\u6570\u91CF\u4E5F\u4E0D\u518D\u53D7\u9650\u5236\u3002&quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;GitHub&quot;), &quot; \u540C\u65F6\u5BA3\u5E03\u964D\u4F4E\u4ED8\u8D39\u65B9\u6848\u7684\u91D1\u989D\u3002&quot;), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;2、百度网盘回应-pandownload-开发者被捕：积极配合警方&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#2%E3%80%81%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%9B%9E%E5%BA%94-pandownload-%E5%BC%80%E5%8F%91%E8%80%85%E8%A2%AB%E6%8D%95%EF%BC%9A%E7%A7%AF%E6%9E%81%E9%85%8D%E5%90%88%E8%AD%A6%E6%96%B9&quot;,
+    &quot;aria-label&quot;: &quot;2、百度网盘回应 pandownload 开发者被捕：积极配合警方 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;2\u3001&quot;, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;https://tech.sina.com.cn/i/2020-04-16/doc-iircuyvh8073969.shtml?cre=tianyi&amp;mod=pctech&amp;loc=13&amp;r=25&amp;rfunc=2&amp;tj=none&amp;tr=25&quot;,
+    &quot;target&quot;: &quot;_blank&quot;,
+    &quot;rel&quot;: &quot;noopener noreferrer&quot;
+  }), &quot;\u767E\u5EA6\u7F51\u76D8\u56DE\u5E94 Pandownload \u5F00\u53D1\u8005\u88AB\u6355\uFF1A\u79EF\u6781\u914D\u5408\u8B66\u65B9&quot;)), mdx(&quot;p&quot;, null, &quot;\u65B0\u6D6A\u79D1\u6280\u8BAF 4 \u6708 16 \u65E5\u4E0A\u5348\u6D88\u606F\uFF0C\u9488\u5BF9\u767E\u5EA6\u7F51\u76D8\u201C&quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;\u7834\u89E3\u7248\u201DPandownload \u5F00\u53D1\u8005\u88AB\u6355\u4E00\u4E8B&quot;), &quot;\uFF0C\u767E\u5EA6\u7F51\u76D8\u901A\u8FC7\u5B98\u65B9\u5FAE\u535A\u53D1\u5E03\u58F0\u660E\u56DE\u5E94\u79F0\uFF0C\u201C\u79EF\u6781\u914D\u5408\u8B66\u65B9\uFF0C\u4E25\u5389\u6253\u51FB\u4FB5\u72AF\u767E\u5EA6\u7F51\u76D8\u7528\u6237\u6570\u636E\u9690\u79C1\u7684\u72AF\u7F6A\u884C\u4E3A\u3002\u201D&quot;), mdx(&quot;h2&quot;, {
+    &quot;id&quot;: &quot;最后一提&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h2&quot;
+  }, {
+    &quot;href&quot;: &quot;#%E6%9C%80%E5%90%8E%E4%B8%80%E6%8F%90&quot;,
+    &quot;aria-label&quot;: &quot;最后一提 permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;\u6700\u540E\u4E00\u63D0&quot;), mdx(&quot;p&quot;, null, &quot;1\u3001&quot;, mdx(&quot;strong&quot;, {
+    parentName: &quot;p&quot;
+  }, &quot;\u4F60\u89C9\u5F97\u6CA1\u6CD5\u6301\u7EED\u52AA\u529B\uFF0C\u6839\u672C\u539F\u56E0\u53EF\u80FD\u662F\uFF1A\u4F60\u89C9\u5F97\u8FD9\u4E8B\u60C5\u4E0D\u91CD\u8981&quot;), &quot;\u3002&quot;));
+}
+;
+MDXContent.isMDXComponent = true;</content:encoded></item><item><title><![CDATA[周报#11 @ 2020.03.15]]></title><description><![CDATA[前端动态 1、 一文道尽软件架构及前端架构演进 软件架构是关于软件开发中重要的事情，思考软件架构其实就是思考哪些是最重要的事情，并且要保持这些部分始终运行在良好的状态下。…]]></description><link>https://blog.fengshangwuqi.com/2020-03-15-of-11/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/2020-03-15-of-11/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 15 Mar 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
