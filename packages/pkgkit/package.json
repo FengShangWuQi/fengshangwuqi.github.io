@@ -32,7 +32,7 @@
     "@types/rollup-plugin-node-builtins": "2.1.1",
     "@types/yargs": "15.0.4",
     "rimraf": "3.0.2",
-    "ts-node": "8.8.2"
+    "ts-node": "8.9.0"
   },
   "license": "MIT",
   "files": [
