@@ -5,7 +5,7 @@ ENV APP_DIR=/src-blog
 WORKDIR $APP_DIR
 
 COPY package.json $APP_DIR/
-COPY yarn.lcok $APP_DIR/
+COPY yarn.lock $APP_DIR/
 RUN yarn
 
 COPY . $APP_DIR/
