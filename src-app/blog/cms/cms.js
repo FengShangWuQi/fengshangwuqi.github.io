@@ -36,7 +36,53 @@ const coverField = {
   default: "/assets/default.png",
 };
 
-const bodyFiled = { label: "Body", name: "body", widget: "markdown" };
+const commonField = {
+  // preview_path: "{{slug}}",
+  editor: {
+    preview: false,
+  },
+  create: true,
+};
+
+const bodyFiled = {
+  label: "Body",
+  name: "body",
+  widget: "markdown",
+};
+
+const zhoubaoTemplate = `
+## 前端动态
+
+### 1、[]()
+
+### 2、[]()
+
+### 3、[]()
+
+### 4、[]()
+
+### 5、[]()
+
+### 6、[]()
+
+## 明星项目
+
+### 1、[]()
+
+### 2、[]()
+
+## 本周热点
+
+### 1、[]()
+
+### 2、[]()
+
+## 最后一提
+
+1、
+
+2、 
+`;
 
 CMS.init({
   config: {
@@ -52,10 +98,10 @@ CMS.init({
     public_folder: "/assets",
     collections: [
       {
+        ...commonField,
         name: "post",
         label: "Post",
         folder: "posts",
-        create: true,
         fields: [
           titleField,
           originalField,
@@ -69,10 +115,10 @@ CMS.init({
         ],
       },
       {
+        ...commonField,
         name: "zhoubao",
         label: "ZhouBao",
         folder: "zhoubao",
-        create: true,
         fields: [
           titleField,
           originalField,
@@ -82,7 +128,7 @@ CMS.init({
           },
           timeField,
           coverField,
-          bodyFiled,
+          { ...bodyFiled, default: zhoubaoTemplate },
         ],
       },
     ],
