@@ -65,7 +65,7 @@
     "arrowParens": "avoid"
   },
   "dependencies": {
-    "@svgr/webpack": "5.3.1",
+    "@svgr/webpack": "5.4.0",
     "axios": "0.19.2",
     "emotion-theming": "10.0.27",
     "facepaint": "1.2.1",
