@@ -25,7 +25,7 @@
   "devDependencies": {
     "@types/fs-extra": "8.1.0",
     "@types/pinyin": "2.8.1",
-    "ts-node": "8.9.0"
+    "ts-node": "8.10.1"
   },
   "license": "MIT",
   "files": [
