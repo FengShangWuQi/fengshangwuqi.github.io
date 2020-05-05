@@ -73,7 +73,7 @@
     "gatsby-image": "2.3.5",
     "gatsby-plugin-feed": "^2.4.4",
     "gatsby-plugin-svgr": "^2.0.2",
-    "immer": "6.0.3",
+    "immer": "6.0.5",
     "lodash": "4.17.15",
     "polished": "3.5.2",
     "react": "16.13.1",
