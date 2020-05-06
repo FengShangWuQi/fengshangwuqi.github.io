@@ -18,14 +18,14 @@
     "fs-extra": "9.0.0",
     "lodash": "4.17.15",
     "os": "0.1.1",
-    "pinyin": "2.9.0",
+    "pinyin": "2.9.1",
     "regexpu-core": "4.7.0",
     "yargs": "15.3.1"
   },
   "devDependencies": {
     "@types/fs-extra": "8.1.0",
     "@types/pinyin": "2.8.1",
-    "ts-node": "8.9.0"
+    "ts-node": "8.10.1"
   },
   "license": "MIT",
   "files": [
