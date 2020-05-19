@@ -4,7 +4,8 @@ import { pathExists, pathExistsSync } from "fs-extra";
 import { rollup, RollupOptions, OutputOptions } from "rollup";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import builtins from "rollup-plugin-node-builtins";
-import rollupBabel from "rollup-plugin-babel";
+import commonjs from "@rollup/plugin-commonjs";
+import babel from "@rollup/plugin-babel";
 import json from "@rollup/plugin-json";
 import dts from "rollup-plugin-dts";
 
@@ -62,20 +63,15 @@ export const build = async () => {
       external: Object.keys(pkg.dependencies),
       plugins: [
         builtins(),
+        commonjs(),
         nodeResolve({
-          extensions: [".ts"],
+          extensions: [".ts", ".js"],
         }),
         json(),
-        rollupBabel({
+        babel({
           babelrc: false,
-          presets: ["@babel/preset-typescript"],
-          plugins: [
-            "@babel/plugin-proposal-class-properties",
-            "@babel/plugin-proposal-object-rest-spread",
-            "@babel/plugin-proposal-optional-chaining",
-            "@babel/plugin-proposal-nullish-coalescing-operator",
-          ],
-          runtimeHelpers: true,
+          presets: ["@fengshangwuqi/babel-preset"],
+          babelHelpers: "runtime",
           exclude: "node_modules/**",
           extensions: [".ts"],
         }),
