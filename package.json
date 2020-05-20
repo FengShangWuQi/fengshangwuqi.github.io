@@ -88,7 +88,7 @@
     "@testing-library/react-hooks": "3.2.1",
     "@types/cross-spawn": "6.0.1",
     "@types/facepaint": "1.2.1",
-    "@types/fs-extra": "8.1.0",
+    "@types/fs-extra": "9.0.1",
     "@types/globby": "9.1.0",
     "@types/inquirer": "6.5.0",
     "@types/jest": "25.2.2",
