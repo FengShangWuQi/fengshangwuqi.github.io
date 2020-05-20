@@ -1338,6 +1338,17 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
+"@fengshangwuqi/appkit@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@fengshangwuqi/appkit/-/appkit-1.0.6.tgz#6ded40175c510173035dc528fb040477249053b9"
+  integrity sha512-hsnIUvE3QcW7Ink7Ynuvevqiapj5KiAeAz3uR+74sEX2Dj5OGHVvcN7M/+OIRiPehq4dz3c238UMwLHz4LvUlA==
+  dependencies:
+    chalk "4.0.0"
+    cross-spawn "7.0.2"
+    dotenv "8.2.0"
+    fs-extra "9.0.0"
+    yargs "15.3.1"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -2797,10 +2808,10 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rollup/plugin-babel@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.0.0.tgz#2f01c9555927449c82cb13dd9e56213a358e1ce9"
-  integrity sha512-YpVnwdUeVj/fDFN75Y3CAzJTMYNcqbH05SJs551wqj+BSwLT9pS3dqJrVDPYl3eH4OrI8ueiEseX5VgUn+0HLA==
+"@rollup/plugin-babel@5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.0.2.tgz#d9351b9545b0c586a193fc99830d4b1a25317ed5"
+  integrity sha512-GiL7jL+FGppzQ1Sn4y2ER4UYXlgXFFEt+sHm4WJEzQwI76Yf9oy2QDqIvcon6xApZWlik3L8fezRGC6Mj2vRXg==
   dependencies:
     "@babel/helper-module-imports" "^7.7.4"
     "@rollup/pluginutils" "^3.0.8"
