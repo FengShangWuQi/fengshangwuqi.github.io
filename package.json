@@ -29,7 +29,9 @@
     "pkg:build": "lerna run --scope @fengshangwuqi/pkgkit build && lerna exec pkgkit build",
     "pkg:r": "lerna version patch --no-commit-hooks --yes",
     "generate": "ts-node ./tools/generate/index.ts",
-    "start": "ts-node packages/appkit/bin/appkit.js"
+    "start": "ts-node packages/appkit/bin/appkit.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "commitlint": {
     "extends": [
@@ -80,7 +82,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-spring": "8.0.27",
-    "rxjs": "6.5.5"
+    "rxjs": "6.5.5",
+    "snyk": "^1.323.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.7.0",
@@ -107,5 +110,6 @@
     "lerna": "3.21.0",
     "react-test-renderer": "16.13.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
