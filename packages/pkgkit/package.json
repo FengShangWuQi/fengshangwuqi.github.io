@@ -23,7 +23,7 @@
     "cross-spawn": "7.0.2",
     "fs-extra": "9.0.0",
     "rollup": "2.10.0",
-    "rollup-plugin-dts": "1.4.3",
+    "rollup-plugin-dts": "1.4.7",
     "rollup-plugin-node-builtins": "2.1.2",
     "yargs": "15.3.1"
   },
