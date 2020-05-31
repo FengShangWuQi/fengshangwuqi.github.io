@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/gatsby-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "main": "index.js",
   "repository": "github:FengShangWuQi/fengshangwuqi.github.io",

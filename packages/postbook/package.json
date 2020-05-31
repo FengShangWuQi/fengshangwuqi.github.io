@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/postbook",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "bin": {
     "pb": "bin/postbook.js"
