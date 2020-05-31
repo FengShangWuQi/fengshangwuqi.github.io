@@ -9,7 +9,7 @@ COPY yarn.lock $APP_DIR/
 RUN yarn
 
 COPY . $APP_DIR/
-RUN yarn start build blog
+RUN yarn appkit build blog
 
 FROM nginx:alpine
 
