@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/fs-extra": "9.0.1",
     "@types/signale": "1.4.1",
-    "ts-node": "8.10.1"
+    "ts-node": "8.10.2"
   },
   "license": "MIT",
   "files": [

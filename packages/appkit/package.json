@@ -14,14 +14,14 @@
   },
   "dependencies": {
     "chalk": "4.0.0",
-    "cross-spawn": "7.0.2",
+    "cross-spawn": "7.0.3",
     "dotenv": "8.2.0",
     "fs-extra": "9.0.0",
     "yargs": "15.3.1"
   },
   "devDependencies": {
     "@types/yargs": "15.0.5",
-    "ts-node": "8.10.1"
+    "ts-node": "8.10.2"
   },
   "license": "MIT",
   "files": [
