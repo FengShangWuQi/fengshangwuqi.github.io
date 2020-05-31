@@ -22,14 +22,3 @@ jobs:
       - run: yarn lerna publish from-package --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
-          registry-url: "https://npm.pkg.github.com"
-
-      - run: yarn
-      - run: yarn pkg:build
-      - run: yarn lerna publish from-package --yes
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
