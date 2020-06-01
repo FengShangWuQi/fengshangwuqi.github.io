@@ -33,7 +33,7 @@
     "gatsby-remark-smartypants": "2.3.2",
     "gatsby-source-filesystem": "2.3.8",
     "gatsby-transformer-sharp": "2.5.3",
-    "netlify-cms-app": "2.12.13",
+    "netlify-cms-app": "2.12.14",
     "prismjs": "1.20.0",
     "react-helmet": "6.0.0"
   },
