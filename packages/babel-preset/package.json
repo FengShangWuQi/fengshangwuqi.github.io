@@ -2,7 +2,6 @@
   "name": "@fengshangwuqi/babel-preset",
   "version": "1.0.6",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
-  "main": "index.js",
   "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {
     "access": "public"

@@ -37,5 +37,5 @@
     "skipLibCheck": true
   },
 
-  "exclude": ["node_modules", "typings", "**/*.spec.ts"]
+  "exclude": ["node_modules", "typings"]
 }
