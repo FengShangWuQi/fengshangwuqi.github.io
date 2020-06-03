@@ -2,12 +2,16 @@ import { transform } from "@babel/core";
 
 import babelPreset from "../";
 
-describe("transform #babel", () => {
-  it("transform", () => {
-    const result = transform(`const a: number = 1;`, {
-      presets: [babelPreset],
-    });
+const babelOpts = {
+  babelrc: false,
+  presets: [babelPreset],
+};
 
-    console.log(result?.code);
+describe("transform #babel", () => {
+  it("transform ts", () => {
+    const code = `const a: number = 1;`;
+    const result = transform(code, babelOpts);
+
+    expect(result?.code).toBe(`"use strict";\n\nconst a = 1;`);
   });
 });

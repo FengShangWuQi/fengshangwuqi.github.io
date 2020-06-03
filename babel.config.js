@@ -1,18 +1,10 @@
 module.exports = {
-  presets: [
+  presets: ["babel-preset-gatsby"],
+  plugins: [
     [
-      "babel-preset-gatsby",
-      {
-        targets: {
-          browsers: [">0.25%", "not dead"],
-        },
-      },
-    ],
-    [
-      "@babel/preset-typescript",
+      "@babel/plugin-transform-typescript",
       {
         isTSX: true,
-        allExtensions: true,
       },
     ],
   ],
