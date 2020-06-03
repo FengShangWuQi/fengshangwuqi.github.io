@@ -1,7 +1,8 @@
 {
   "name": "@fengshangwuqi/babel-preset",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
+  "main": "index.js",
   "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {
     "access": "public"
@@ -18,11 +19,5 @@
   "devDependencies": {
     "@babel/core": "7.10.2"
   },
-  "license": "MIT",
-  "files": [
-    "dist/"
-  ],
-  "types": "dist/index.d.ts",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js"
+  "license": "MIT"
 }

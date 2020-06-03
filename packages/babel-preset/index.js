@@ -1,8 +1,8 @@
-import pkg from "../package.json";
+const r = m => require.resolve(m);
 
-const r = (m: string) => require.resolve(m);
+const pkg = require("./package.json");
 
-export default () => ({
+const presets = () => ({
   presets: [
     [
       r("@babel/preset-env"),
@@ -36,3 +36,5 @@ export default () => ({
     [r("@babel/plugin-proposal-nullish-coalescing-operator")],
   ].filter(Boolean),
 });
+
+module.exports = presets;
