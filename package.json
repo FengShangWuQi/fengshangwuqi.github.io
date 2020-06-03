@@ -66,6 +66,7 @@
   },
   "dependencies": {
     "@fengshangwuqi/appkit": "1.0.7",
+    "@fengshangwuqi/babel-preset": "1.0.5",
     "@svgr/webpack": "5.4.0",
     "axios": "0.19.2",
     "emotion-theming": "10.0.27",

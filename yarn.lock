@@ -1393,6 +1393,30 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
+"@fengshangwuqi/appkit@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@fengshangwuqi/appkit/-/appkit-1.0.7.tgz#55ecf39b165fa7a7de51194e8521a0e7274366ed"
+  integrity sha512-MheXVVZbe0VmJ32Tw/8i/uPBBr+U45NmNfjdjYoAMbQBckcNfvbEXZ7Z5wCOIFd+w8YllrpkxFli4Fa1DNUz/w==
+  dependencies:
+    chalk "4.0.0"
+    cross-spawn "7.0.3"
+    dotenv "8.2.0"
+    fs-extra "9.0.0"
+    yargs "15.3.1"
+
+"@fengshangwuqi/babel-preset@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@fengshangwuqi/babel-preset/-/babel-preset-1.0.5.tgz#da5994b4cc425933dc5dd3045a172c5cf5c2070d"
+  integrity sha512-7BEIRVh0NEfFd5Ozl0eQ95gg93YTx679GE4wlURpAViCnglcE/t0uXYsePIHSvC+WcLFzY3m3EYLUB8cc4hqAg==
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "7.10.1"
+    "@babel/plugin-proposal-nullish-coalescing-operator" "7.10.1"
+    "@babel/plugin-proposal-optional-chaining" "7.10.1"
+    "@babel/plugin-transform-runtime" "7.10.1"
+    "@babel/plugin-transform-typescript" "7.10.1"
+    "@babel/preset-env" "7.10.2"
+    "@babel/runtime-corejs3" "7.10.2"
+
 "@graphql-tools/code-file-loader@6.0.6":
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/@graphql-tools/code-file-loader/-/code-file-loader-6.0.6.tgz#1cd37ad24da945277394fed7a82990cdf447d22a"
