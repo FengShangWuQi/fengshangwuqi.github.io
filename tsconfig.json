@@ -29,6 +29,7 @@
     "paths": {
       "*": ["*", "__types__/*"]
     },
+    "resolveJsonModule": true,
     "esModuleInterop": true,
 
     /* 其他选项 */
