@@ -14,4 +14,13 @@ describe("transform #babel", () => {
 
     expect(result?.code).toBe(`"use strict";\n\nconst a = 1;`);
   });
+
+  it("transform class", () => {
+    const code = `class Book {}`;
+    const result = transform(code, babelOpts);
+
+    console.log(result);
+
+    expect(result?.code).toBe(`"use strict";\n\nclass Book {};`);
+  });
 });
