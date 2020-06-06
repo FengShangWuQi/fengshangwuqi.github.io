@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/appkit",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "bin": {
     "appkit": "bin/appkit.js"
