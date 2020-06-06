@@ -30,6 +30,7 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
   },
   settings: {
     react: {
