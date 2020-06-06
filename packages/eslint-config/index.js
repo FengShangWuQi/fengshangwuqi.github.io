@@ -26,7 +26,6 @@ module.exports = {
   rules: {
     "@typescript-eslint/no-unsafe-return": 1,
     "@typescript-eslint/no-unsafe-assignment": 1,
-    "@typescript-eslint/interface-name-prefix": 1,
     "@typescript-eslint/explicit-function-return-type": 1,
     "@typescript-eslint/no-non-null-assertion": 1,
     "@typescript-eslint/no-var-requires": 1,
