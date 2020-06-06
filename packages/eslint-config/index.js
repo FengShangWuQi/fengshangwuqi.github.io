@@ -24,13 +24,13 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
   rules: {
-    "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/no-var-requires": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-unsafe-return": 1,
+    "@typescript-eslint/no-unsafe-assignment": 1,
+    "@typescript-eslint/interface-name-prefix": 1,
+    "@typescript-eslint/explicit-function-return-type": 1,
+    "@typescript-eslint/no-non-null-assertion": 1,
+    "@typescript-eslint/no-var-requires": 1,
+    "@typescript-eslint/no-explicit-any": 1,
   },
   settings: {
     react: {
