@@ -77,7 +77,7 @@
     "gatsby-plugin-svgr": "^2.0.2",
     "immer": "6.0.9",
     "lodash": "4.17.15",
-    "polished": "3.6.4",
+    "polished": "3.6.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-spring": "8.0.27",
