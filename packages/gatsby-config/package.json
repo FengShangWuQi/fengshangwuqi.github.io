@@ -35,7 +35,7 @@
     "gatsby-transformer-sharp": "2.5.4",
     "netlify-cms-app": "2.12.14",
     "prismjs": "1.20.0",
-    "react-helmet": "6.0.0"
+    "react-helmet": "6.1.0"
   },
   "license": "MIT",
   "devDependencies": {
