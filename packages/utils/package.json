@@ -1,0 +1,10 @@
+{
+  "name": "@fengshangwuqi/utils",
+  "version": "1.0.0",
+  "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
+  "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}
