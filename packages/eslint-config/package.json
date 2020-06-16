@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/eslint-config",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "main": "index.js",
   "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
