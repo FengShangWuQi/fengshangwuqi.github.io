@@ -1,1 +1,1 @@
-export * from "./src/comparator";
+export * from "./src";
