@@ -60,7 +60,7 @@ export const build = async () => {
           banner: pkg.bin ? "#!/usr/bin/env node" : "",
         },
       ],
-      external: Object.keys(pkg.dependencies),
+      external: Object.keys(pkg.dependencies || {}),
       plugins: [
         builtins(),
         commonjs(),
@@ -89,21 +89,17 @@ export const build = async () => {
     },
   ];
 
-  try {
-    await Promise.all(
-      rollupOpts.map(opt => {
-        return rollup(opt).then(bundle => {
-          return Promise.all(
-            (opt.output! as OutputOptions[]).map(outputOpts => {
-              return bundle.write(outputOpts);
-            }),
-          );
-        });
-      }),
-    );
-  } catch (err) {
+  await Promise.all(
+    rollupOpts.map(opt => {
+      return rollup(opt).then(bundle => {
+        return Promise.all(
+          ([] as OutputOptions[]).concat(opt.output || []).map(bundle.write),
+        );
+      });
+    }),
+  ).catch(err => {
     console.error(err);
-  }
+  });
 
   successLog(`build ${pkg.name}`);
 };
