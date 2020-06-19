@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/pkgkit",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "bin": {
     "pkgkit": "bin/pkgkit.js"
