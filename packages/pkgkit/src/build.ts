@@ -37,7 +37,7 @@ export const build = async () => {
   const isIndexExists = await pathExists(indexFile);
 
   if (!isIndexExists) {
-    warnLog(`exit ${pkg.name}, ${indexFile} not exists`);
+    warnLog(`exit ${pkg.name}`);
     process.exit(0);
   }
 

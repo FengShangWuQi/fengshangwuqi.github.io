@@ -7,7 +7,8 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "yarn clean && ts-node bin/pkgkit.js build"
+    "build": "ts-node bin/pkgkit.js build",
+    "prepare": "yarn clean && cross-env NODE_ENV=production yarn build"
   },
   "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {
@@ -31,6 +32,7 @@
   "devDependencies": {
     "@types/rollup-plugin-node-builtins": "2.1.1",
     "@types/yargs": "15.0.5",
+    "cross-env": "7.0.2",
     "rimraf": "3.0.2",
     "ts-node": "8.10.2",
     "typescript": "3.9.5"
