@@ -18,5 +18,8 @@
     "ts-node": "8.10.2",
     "typescript": "3.9.5"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "7.0.2"
+  }
 }
