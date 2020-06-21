@@ -1,6 +1,6 @@
 import { transform } from "@babel/core";
 
-import babelPreset from "../";
+import babelPreset from "../src";
 
 const babelOpts = {
   babelrc: false,
