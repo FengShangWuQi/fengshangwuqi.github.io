@@ -5,7 +5,7 @@ import pluginProposalClassProperties from "@babel/plugin-proposal-class-properti
 import pluginProposalOptionalChaining from "@babel/plugin-proposal-optional-chaining";
 import pluginProposalNullishCoalescingOperator from "@babel/plugin-proposal-nullish-coalescing-operator";
 
-import pkg from "./package.json";
+import pkg from "../package.json";
 
 export default declare(() => {
   return {

@@ -2,6 +2,11 @@
   "name": "@fengshangwuqi/babel-preset",
   "version": "1.0.7",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "babel src/index.ts --out-file dist/index.cjs.js --presets=@babel/preset-env,@babel/preset-typescript",
+    "prepare": "yarn clean && cross-env NODE_ENV=production yarn build"
+  },
   "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
   "publishConfig": {
     "access": "public"
@@ -15,7 +20,12 @@
     "@babel/runtime-corejs3": "7.10.2"
   },
   "devDependencies": {
-    "@babel/core": "7.10.2"
+    "@babel/cli": "7.10.3",
+    "@babel/core": "7.10.2",
+    "@babel/preset-env": "7.10.3",
+    "@babel/preset-typescript": "7.10.1",
+    "cross-env": "7.0.2",
+    "rimraf": "3.0.2"
   },
   "license": "MIT",
   "files": [
