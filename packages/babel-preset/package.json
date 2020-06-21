@@ -14,14 +14,14 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "7.10.1",
     "@babel/plugin-proposal-nullish-coalescing-operator": "7.10.1",
-    "@babel/plugin-proposal-optional-chaining": "7.10.1",
-    "@babel/plugin-transform-runtime": "7.10.1",
-    "@babel/plugin-transform-typescript": "7.10.1",
-    "@babel/runtime-corejs3": "7.10.2"
+    "@babel/plugin-proposal-optional-chaining": "7.10.3",
+    "@babel/plugin-transform-runtime": "7.10.3",
+    "@babel/plugin-transform-typescript": "7.10.3",
+    "@babel/runtime-corejs3": "7.10.3"
   },
   "devDependencies": {
     "@babel/cli": "7.10.3",
-    "@babel/core": "7.10.2",
+    "@babel/core": "7.10.3",
     "@babel/preset-env": "7.10.3",
     "@babel/preset-typescript": "7.10.1",
     "cross-env": "7.0.2",
