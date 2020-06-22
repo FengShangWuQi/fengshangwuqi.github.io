@@ -4,12 +4,8 @@ ENV APP_DIR=/src-blog
 
 WORKDIR $APP_DIR
 
-COPY package.json $APP_DIR/
-COPY yarn.lock $APP_DIR/
-RUN yarn
-
 COPY . $APP_DIR/
-RUN yarn appkit build blog
+RUN yarn && yarn pkg:build && yarn appkit build blog
 
 FROM nginx:alpine
 
