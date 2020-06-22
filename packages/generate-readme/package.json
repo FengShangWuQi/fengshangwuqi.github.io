@@ -1,0 +1,24 @@
+{
+  "name": "@fengshangwuqi/generate-readme",
+  "version": "1.0.0",
+  "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
+  "repository": "github:FengShangWuQi/fengshangwuqi.github.io",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "globby": "11.0.1",
+    "gray-matter": "4.0.2",
+    "markdown-table": "2.0.0"
+  },
+  "devDependencies": {
+    "@types/markdown-table": "2.0.0"
+  },
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "types": "dist/index.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js"
+}
