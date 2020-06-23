@@ -3,7 +3,7 @@ import matter from "gray-matter";
 import table from "markdown-table";
 
 export const fromFrontMatter = (): string => {
-  const targetFiles = globby.sync(["**/*.md", "README.md"], {
+  const targetFiles = globby.sync(["**/*.md", "!README.md"], {
     gitignore: true,
   });
 
