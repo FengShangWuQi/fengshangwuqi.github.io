@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/babel-preset",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "scripts": {
     "clean": "rimraf dist",
