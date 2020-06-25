@@ -7,6 +7,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
+    "test": "ts-node bin/pkgkit.js",
     "build": "ts-node bin/pkgkit.js build",
     "prepare": "yarn clean && cross-env NODE_ENV=production yarn build"
   },

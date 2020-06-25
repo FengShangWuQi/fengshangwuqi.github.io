@@ -1,7 +1,7 @@
 import yargs from "yargs";
 
 import { build } from "./build";
-import { init } from "./init";
+import { add } from "./add";
 
 export const cli = () => {
   const y = yargs
@@ -11,7 +11,7 @@ export const cli = () => {
     .help();
 
   y.command("build", "pkg build");
-  y.command("init", "pkg initial");
+  y.command("add", "pkg add");
 
   const argv = y.argv;
   const action = argv._[0];
@@ -22,8 +22,8 @@ export const cli = () => {
       build();
       break;
     }
-    case "init": {
-      init(pkg);
+    case "add": {
+      add(pkg);
       break;
     }
   }
