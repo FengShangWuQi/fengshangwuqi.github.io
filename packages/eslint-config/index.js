@@ -24,9 +24,9 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
   rules: {
+    "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-unsafe-return": 1,
     "@typescript-eslint/no-unsafe-assignment": 1,
-    "@typescript-eslint/explicit-function-return-type": 1,
     "@typescript-eslint/no-non-null-assertion": 1,
     "@typescript-eslint/no-var-requires": 1,
     "@typescript-eslint/no-explicit-any": 1,
