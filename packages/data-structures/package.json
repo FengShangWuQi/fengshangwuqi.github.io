@@ -1,0 +1,18 @@
+{
+  "name": "@fengshangwuqi/data-structures",
+  "version": "1.0.0",
+  "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@fengshangwuqi/utils": "1.0.6"
+  },
+  "license": "MIT",
+  "files": [
+    "dist/"
+  ],
+  "types": "dist/index.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js"
+}
