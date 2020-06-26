@@ -3,15 +3,8 @@
   "private": true,
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "homepage": "https://fengshangwuqi.github.io",
-  "keywords": [
-    "gatsby",
-    "react",
-    "typescript",
-    "emotion"
-  ],
-  "workspaces": [
-    "packages/*"
-  ],
+  "keywords": ["gatsby", "react", "typescript", "emotion"],
+  "workspaces": ["packages/*"],
   "appkit": {
     "dev": "gatsby develop -o",
     "build": "npm run clean && gatsby build --prefix-paths",
@@ -25,16 +18,14 @@
     "tsc": "tsc",
     "ncu": "ncu -u && lerna exec -- ncu -u",
     "pkg:clean": "lerna exec rimraf dist",
-    "pkg:init": "ts-node packages/pkgkit/bin/pkgkit.js init",
+    "pkg:add": "ts-node packages/pkgkit/bin/pkgkit.js add",
     "pkg:build": "lerna run prepare && lerna exec pkgkit build",
     "pkg:r": "lerna version patch --no-commit-hooks --yes",
     "generate": "ts-node ./tools/generate/index.ts",
     "start": "ts-node packages/appkit/bin/appkit.js"
   },
   "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+    "extends": ["@commitlint/config-conventional"]
   },
   "husky": {
     "hooks": {
@@ -44,20 +35,11 @@
     }
   },
   "lint-staged": {
-    "**/*.{js,ts,tsx}": [
-      "eslint --fix"
-    ]
+    "**/*.{js,ts,tsx}": ["eslint --fix"]
   },
   "eslintConfig": {
-    "extends": [
-      "./packages/eslint-config"
-    ],
-    "ignorePatterns": [
-      "node_modules",
-      "public",
-      ".cache",
-      "dist"
-    ]
+    "extends": ["./packages/eslint-config"],
+    "ignorePatterns": ["node_modules", "public", ".cache", "dist"]
   },
   "prettier": {
     "trailingComma": "all",

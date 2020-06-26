@@ -16,7 +16,7 @@ const writePackageJSON = async (pkgName: string, pkgPath: string) => {
   const userEmail = getGitConfig("user.email").trim();
 
   const initPkg = {
-    name: `${userName}/${pkgName}`,
+    name: `@${userName}/${pkgName}`,
     version: "1.0.0",
     author: `${userName} <${userEmail}>`,
     publishConfig: {
