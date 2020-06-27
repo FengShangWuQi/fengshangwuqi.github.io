@@ -9,9 +9,13 @@
   "dependencies": {
     "globby": "11.0.1",
     "gray-matter": "4.0.2",
+    "imagemin": "7.0.1",
+    "imagemin-webp": "6.0.0",
     "markdown-table": "2.0.0"
   },
   "devDependencies": {
+    "@types/imagemin": "7.0.0",
+    "@types/imagemin-webp": "5.1.0",
     "@types/markdown-table": "2.0.0"
   },
   "license": "MIT",
