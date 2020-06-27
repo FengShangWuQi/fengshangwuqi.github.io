@@ -1,5 +1,6 @@
 import { fromFrontMatter } from "./fromFrontMatter";
 import { fromMindnode } from "./fromMindnode";
+import chalk from "chalk";
 
 export enum README_TYPE {
   FRONT_MATTER = "FRONT_MATTER",
@@ -17,4 +18,6 @@ export const generateReadme = (from: keyof typeof README_TYPE) => {
     default:
       return "";
   }
+
+  console.log(chalk.green("success".toUpperCase()), "generate readme");
 };
