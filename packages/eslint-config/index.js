@@ -30,6 +30,7 @@ module.exports = {
     "@typescript-eslint/no-non-null-assertion": 1,
     "@typescript-eslint/no-var-requires": 1,
     "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/no-floating-promises": [2, { ignoreIIFE: true }],
   },
   settings: {
     react: {
