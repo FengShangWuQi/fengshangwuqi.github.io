@@ -16,7 +16,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@babel/core": "7.10.3",
+    "@babel/core": "7.10.4",
     "@fengshangwuqi/babel-preset": "1.0.9",
     "@rollup/plugin-babel": "5.0.4",
     "@rollup/plugin-commonjs": "13.0.0",
