@@ -3379,7 +3379,12 @@
   resolved "https://registry.yarnpkg.com/@types/pinyin/-/pinyin-2.8.1.tgz#bc1fb2f305a28ed86304e573ea77c5a29275b1ff"
   integrity sha512-4VAEvWbO0LNDChfIXsg6mruwNLviH04smX+0AtXgxpcdBvYajcacl8f6IHLedrKKbfOt8lRBtUwCVK34uad+9g==
 
-"@types/prettier@2.0.1", "@types/prettier@^2.0.0":
+"@types/prettier@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.0.2.tgz#5bb52ee68d0f8efa9cc0099920e56be6cc4e37f3"
+  integrity sha512-IkVfat549ggtkZUthUzEX49562eGikhSYeVGX97SkMFn+sTZrgRewXjQ4tPKFPCykZHkX1Zfd9OoELGqKU2jJA==
+
+"@types/prettier@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.0.1.tgz#b6e98083f13faa1e5231bfa3bdb1b0feff536b6d"
   integrity sha512-boy4xPNEtiw6N3abRhBi/e7hNvy3Tt8E9ZRAQrwAGzoCGZS/1wjo9KY7JHhnfnEsG5wSjDbymCozUM9a3ea7OQ==
