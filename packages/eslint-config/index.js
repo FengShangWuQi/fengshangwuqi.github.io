@@ -28,8 +28,10 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-unsafe-return": 0,
     "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/no-this-alias": 0,
     "@typescript-eslint/no-unsafe-assignment": 1,
     "@typescript-eslint/no-var-requires": 1,
+    "@typescript-eslint/ban-ts-comment": 1,
     "@typescript-eslint/no-floating-promises": [2, { ignoreIIFE: true }],
   },
   settings: {
