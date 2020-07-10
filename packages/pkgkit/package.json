@@ -29,7 +29,7 @@
     "rollup-plugin-dts": "1.4.7",
     "rollup-plugin-node-builtins": "2.1.2",
     "typescript": "3.9.5",
-    "yargs": "15.3.1"
+    "yargs": "15.4.1"
   },
   "devDependencies": {
     "@types/rollup-plugin-node-builtins": "2.1.1",
