@@ -1,0 +1,10 @@
+{
+  "name": "@fengshangwuqi/ts-config",
+  "version": "1.0.0",
+  "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
+  "main": "base.json",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

@@ -1,39 +1,9 @@
 {
+  "extends": "./packages/ts-config/base",
   "compilerOptions": {
-    /* 基本选项 */
-    "target": "es2015",
-    "module": "commonjs",
-    "lib": ["dom", "esnext"],
-    "allowJs": false,
-    "jsx": "react",
-    "declaration": true,
     "rootDir": ".",
     "outDir": "typings",
-    "emitDeclarationOnly": true,
-    "importHelpers": true,
-    "removeComments": true,
-    "diagnostics": true,
-
-    /* 严格的类型检查选项 */
-    "strict": true,
-
-    /* 额外的检查 */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-
-    /* 模块解析选项 */
-    "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["*", "__types__/*"]
-    },
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-
-    /* 其他选项 */
-    "experimentalDecorators": true,
-    "skipLibCheck": true
+    "baseUrl": "."
   },
 
   "exclude": ["node_modules", "typings"]
