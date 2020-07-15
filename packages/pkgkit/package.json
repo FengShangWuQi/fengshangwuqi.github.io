@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/pkgkit",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "bin": {
     "pkgkit": "bin/pkgkit.js"
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@babel/core": "7.10.5",
-    "@fengshangwuqi/babel-preset": "1.0.9",
+    "@fengshangwuqi/babel-preset": "1.0.10",
     "@rollup/plugin-babel": "5.1.0",
     "@rollup/plugin-commonjs": "14.0.0",
     "@rollup/plugin-json": "4.1.0",

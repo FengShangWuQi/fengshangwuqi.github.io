@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/taskbook",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "在终端友好地管理你的 notes 和 tasks",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "bin": {
