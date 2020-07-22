@@ -1,6 +1,6 @@
 {
   "name": "@fengshangwuqi/data-structures",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "fengshangwuqi <fengshangwuqi@gmail.com>",
   "publishConfig": {
     "access": "public"
