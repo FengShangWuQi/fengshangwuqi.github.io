@@ -1,1 +1,2 @@
-export * from "./heap";
+export * from "./Heap";
+export * from "./LinkedList";
