@@ -25,7 +25,7 @@
     "chalk": "4.1.0",
     "cross-spawn": "7.0.3",
     "fs-extra": "9.0.1",
-    "rollup": "2.22.1",
+    "rollup": "2.23.0",
     "rollup-plugin-dts": "1.4.9",
     "rollup-plugin-node-builtins": "2.1.2",
     "typescript": "3.9.7",
