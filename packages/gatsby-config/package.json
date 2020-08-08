@@ -34,7 +34,7 @@
     "gatsby-source-filesystem": "2.3.23",
     "gatsby-transformer-sharp": "2.5.11",
     "netlify-cms-app": "2.12.18",
-    "prismjs": "1.20.0",
+    "prismjs": "1.21.0",
     "react-helmet": "6.1.0"
   },
   "license": "MIT",
