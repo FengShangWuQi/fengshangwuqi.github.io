@@ -11,7 +11,7 @@
     "@typescript-eslint/eslint-plugin": "3.7.0",
     "@typescript-eslint/parser": "3.7.0",
     "eslint": "7.5.0",
-    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-react": "7.20.6",
     "eslint-plugin-react-hooks": "4.0.8"
   },
   "license": "MIT"
