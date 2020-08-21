@@ -18788,10 +18788,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-dts@1.4.9:
-  version "1.4.9"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-dts/-/rollup-plugin-dts-1.4.9.tgz#936e4cc1139d81c5c0ce64dc1e9fe025bb3eccaf"
-  integrity sha512-ikEIpVKDhgNFouGQemmVeXojpxEhgSUCPrfEbiDMWg3YmDWYoNifmbmt5AiBqf3KHnv/6Se5+KSgDE11oVlZYg==
+rollup-plugin-dts@1.4.11:
+  version "1.4.11"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-dts/-/rollup-plugin-dts-1.4.11.tgz#aedf0b7bb91d51e20b755e2c18e840edfc7af7a1"
+  integrity sha512-yiScAMKgwH77b44a/IFGgjLsmwSlNfQhEM+eCb2uMrupQMPE1n/12wrnT431+v1u6wYMF1XuHqldh+v/7mTvYA==
   optionalDependencies:
     "@babel/code-frame" "^7.10.4"
 
