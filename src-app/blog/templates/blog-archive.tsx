@@ -2,7 +2,6 @@ import React from "react";
 import { graphql } from "gatsby";
 import { rgba, position } from "polished";
 
-import { useDesignSystem } from "src-core/ds";
 import { SEO } from "src-core/seo";
 
 import { Layout, Wrapper } from "../common";
@@ -46,8 +45,6 @@ const BlogArchive = ({
     allMdx: { edges: posts },
   },
 }: any) => {
-  const ds = useDesignSystem();
-
   return (
     <Layout>
       <SEO
@@ -62,7 +59,7 @@ const BlogArchive = ({
 
       <Wrapper>
         <div
-          css={{
+          css={ds => ({
             ...position("relative"),
             fontSize: ds.size.sm,
 
@@ -75,7 +72,7 @@ const BlogArchive = ({
               height: "100%",
               background: rgba(ds.color.primary, 0.3),
             },
-          }}>
+          })}>
           {posts.map(({ node }: IArchiveNode) => (
             <ArchiveItem
               key={node.fields.slug}
