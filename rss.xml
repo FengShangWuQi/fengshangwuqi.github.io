@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jul 2020 15:53:24 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#12 @ 2020.04.19]]></title><description><![CDATA[前端动态 1、 了解 CSS min()/max()/clamp() 数学函数 min ()/ max ()/ clamp () 这  3  个数学函数是现代浏览器  201…]]></description><link>https://blog.fengshangwuqi.com/2020-04-19-of-12/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/2020-04-19-of-12/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 19 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Aug 2020 14:32:59 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#12 @ 2020.04.19]]></title><description><![CDATA[前端动态 1、 了解 CSS min()/max()/clamp() 数学函数 min ()/ max ()/ clamp () 这  3  个数学函数是现代浏览器  201…]]></description><link>https://blog.fengshangwuqi.com/2020-04-19-of-12/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/2020-04-19-of-12/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 19 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -12,14 +12,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2020-04-19T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-12.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -498,14 +490,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2020-03-15T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-11.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -1265,14 +1249,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2020-01-12T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-10.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -2010,14 +1986,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2020-01-05T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-09.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -2687,14 +2655,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2019-12-29T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-08.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -3511,14 +3471,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2019-12-22T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-07.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -4225,14 +4177,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2019-12-15T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-06.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -4889,14 +4833,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2019-12-08T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-05.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -5501,14 +5437,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2019-12-01T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-04.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -6236,14 +6164,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2019-11-24T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-03.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -7027,14 +6947,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2019-11-17T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-02.jpg&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -7621,7 +7533,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -7641,7 +7553,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -7705,7 +7617,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -7725,7 +7637,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -7789,7 +7701,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -7809,7 +7721,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -8138,14 +8050,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2019-11-10T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/zhoubao-01.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -9020,7 +8924,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -9064,7 +8968,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -9084,7 +8988,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -9521,14 +9425,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2018-04-04T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-chrome-extensions.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -9819,7 +9715,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -9839,7 +9735,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -9859,7 +9755,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -9879,7 +9775,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -9915,7 +9811,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -9935,7 +9831,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -12401,14 +12297,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2018-02-01T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-react-context.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -14156,14 +14044,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2018-01-19T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-css-crooked.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -14343,7 +14223,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?action=link2_clicked\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?action=link2_clicked\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -14457,7 +14341,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?action=browser_chrome\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?action=browser_chrome\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -14557,7 +14445,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?action=font1\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?action=font1\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -14683,7 +14575,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?duration=00\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?duration=00\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -14723,7 +14619,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?duration=20\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?duration=20\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -14763,7 +14663,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?duration=40\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?duration=40\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -14803,7 +14707,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?duration=60\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?duration=60\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -14843,7 +14751,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?duration=80\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?duration=80\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -14883,7 +14795,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?duration=100\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?duration=100\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -14990,7 +14906,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?duration=-1\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?duration=-1\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -15072,7 +14992,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?action=checkbox\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?action=checkbox\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -15124,7 +15048,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -15144,7 +15068,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -15164,7 +15088,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -15232,7 +15156,11 @@ return function MDXContent(_ref) {
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;(&quot;), &quot;\&quot;track.php?action=text_input\&quot;&quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token string url&quot;
+  }), &quot;\&quot;track.php?action=text_input\&quot;&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
     &quot;className&quot;: &quot;token punctuation&quot;
@@ -15341,14 +15269,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2018-01-18T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-dialog.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -15996,7 +15916,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -16032,7 +15952,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -16084,7 +16004,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -16168,7 +16088,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -16204,7 +16124,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -16224,7 +16144,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -16578,14 +16498,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2017-10-08T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-vim.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -20788,14 +20700,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2017-08-17T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-react-router-4.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -21038,7 +20942,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -21178,7 +21082,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -21298,7 +21202,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -21698,7 +21602,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -21822,7 +21726,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -22147,7 +22051,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -22287,7 +22191,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -22407,7 +22311,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -22555,7 +22459,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -22631,7 +22535,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -23201,7 +23105,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -23265,7 +23169,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -23369,7 +23273,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -23437,7 +23341,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -23617,7 +23521,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -23753,7 +23657,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -23829,7 +23733,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -23901,7 +23805,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -23973,7 +23877,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -24252,7 +24156,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -24364,7 +24268,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -24432,7 +24336,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -24500,7 +24404,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -24564,7 +24468,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -24632,7 +24536,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -24696,7 +24600,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -24851,7 +24755,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -24983,7 +24887,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -25127,7 +25031,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -25259,7 +25163,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -25476,7 +25380,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -25588,7 +25492,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -25656,7 +25560,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -25720,7 +25624,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -25784,7 +25688,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -25953,7 +25857,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -26057,7 +25961,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -26125,7 +26029,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -26193,7 +26097,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -26362,7 +26266,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -26482,7 +26386,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -27003,7 +26907,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -27107,7 +27011,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -28059,7 +27963,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -28179,7 +28083,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -28915,7 +28819,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -28979,7 +28883,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -29464,7 +29368,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -29683,14 +29587,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2017-08-14T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-react-animations.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -30263,7 +30159,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -30303,7 +30199,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -32171,7 +32067,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -33759,7 +33655,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -35226,7 +35122,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -35266,7 +35162,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -35849,14 +35745,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2017-08-12T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-css-loading.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -36013,7 +35901,23 @@ return function MDXContent(_ref) {
     parentName: &quot;code&quot;
   }, {
     &quot;className&quot;: &quot;token doctype&quot;
-  }), &quot;&lt;!DOCTYPE html&gt;&quot;), &quot;\n&quot;, mdx(&quot;span&quot;, _extends({
+  }), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;&lt;!&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token doctype-tag&quot;
+  }), &quot;DOCTYPE&quot;), &quot; &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token name&quot;
+  }), &quot;html&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;span&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;&gt;&quot;)), &quot;\n&quot;, mdx(&quot;span&quot;, _extends({
     parentName: &quot;code&quot;
   }, {
     &quot;className&quot;: &quot;token tag&quot;
@@ -36072,7 +35976,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -36172,7 +36076,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -36353,7 +36257,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -36389,7 +36293,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -36441,7 +36345,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -36493,7 +36397,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -37630,14 +37534,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2017-08-08T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-css-custom-properties.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -38466,7 +38362,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -38486,7 +38382,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -38506,7 +38402,7 @@ return function MDXContent(_ref) {
   }), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
+    &quot;className&quot;: &quot;token punctuation attr-equals&quot;
   }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
     parentName: &quot;span&quot;
   }, {
@@ -38936,14 +38832,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2017-06-22T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-weixin-miniprogram.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -39200,14 +39088,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2017-05-09T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-ubuntu.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
@@ -40802,14 +40682,6 @@ var _frontmatter = {
   &quot;date&quot;: &quot;2017-04-09T00:00:00.000Z&quot;,
   &quot;cover&quot;: &quot;/assets/posts-git.png&quot;
 };
-
-var makeShortcode = function makeShortcode(name) {
-  return function MDXDefaultShortcode(props) {
-    console.warn(&quot;Component &apos;&quot; + name + &quot;&apos; was not imported, exported, or provided by MDXProvider as global scope&quot;);
-    return mdx(&quot;div&quot;, props);
-  };
-};
-
 var layoutProps = {
   _frontmatter: _frontmatter
 };
