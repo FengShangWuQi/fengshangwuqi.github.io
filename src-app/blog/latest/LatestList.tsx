@@ -1,15 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
-import Img, { GatsbyImageProps, FluidObject } from "gatsby-image";
+import Img, { GatsbyImageFluidProps, FluidObject } from "gatsby-image";
 import { ellipsis, margin } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 
 import { PostDate, PostTags } from "../templates/blog-post";
-
-export interface ILatestList {
-  posts: INode[];
-}
 
 interface ILatestItem {
   title: string;
@@ -21,7 +17,7 @@ interface ILatestItem {
   fluid: FluidObject;
 }
 
-interface INode {
+export interface INode {
   node: {
     id: string;
     fields: {
@@ -34,37 +30,13 @@ interface INode {
       tags: string[];
       date: string;
       cover: {
-        childImageSharp: GatsbyImageProps;
+        childImageSharp: GatsbyImageFluidProps;
       };
     };
   };
 }
 
-export const LatestList = ({ posts }: ILatestList) => {
-  return (
-    <div
-      css={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
-        gridGap: 50,
-      }}>
-      {posts.map(({ node }: INode) => (
-        <LatestItem
-          key={node.fields.slug}
-          excerpt={node.excerpt}
-          path={node.fields.slug}
-          title={node.frontmatter.title}
-          original={node.frontmatter.original}
-          tags={node.frontmatter.tags}
-          date={node.frontmatter.date}
-          fluid={node.frontmatter.cover.childImageSharp.fluid! as FluidObject}
-        />
-      ))}
-    </div>
-  );
-};
-
-const LatestItem = ({
+export const LatestItem = ({
   path,
   title,
   tags,

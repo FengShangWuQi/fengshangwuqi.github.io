@@ -2,15 +2,12 @@
   "name": "fswq-blog",
   "private": true,
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
-  "homepage": "https://fengshangwuqi.github.io",
+  "homepage": "https://blog.fengshangwuqi.com/",
   "keywords": [
     "gatsby",
     "react",
     "typescript",
     "emotion"
-  ],
-  "workspaces": [
-    "packages/*"
   ],
   "appkit": {
     "dev": "gatsby develop -o",
@@ -18,18 +15,13 @@
     "release": "gh-pages -d public -b {DEPLOY_BRANCH} && gh-pages-clean"
   },
   "scripts": {
-    "clean": "gatsby clean && rimraf typings",
+    "clean": "gatsby clean",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "test": "jest --coverage",
     "tsc": "tsc",
-    "ncu": "ncu -u && lerna exec -- ncu -u",
-    "pkg:clean": "lerna exec rimraf dist",
-    "pkg:add": "ts-node packages/pkgkit/bin/pkgkit.js add",
-    "pkg:build": "lerna run prepare && lerna exec pkgkit build",
-    "pkg:r": "lerna version patch --no-commit-hooks --yes",
     "generate": "ts-node ./tools/generate/index.ts",
-    "start": "ts-node packages/appkit/bin/appkit.js"
+    "start": "appkit"
   },
   "commitlint": {
     "extends": [
@@ -50,14 +42,18 @@
   },
   "eslintConfig": {
     "extends": [
-      "./packages/eslint-config"
+      "@fengshangwuqi/eslint-config"
     ],
     "ignorePatterns": [
       "node_modules",
       "public",
       ".cache",
       "dist"
-    ]
+    ],
+    "rules": {
+      "@typescript-eslint/interface-name-prefix": 0,
+      "@typescript-eslint/camelcase": 1
+    }
   },
   "prettier": {
     "trailingComma": "all",
@@ -65,45 +61,73 @@
     "arrowParens": "avoid"
   },
   "dependencies": {
+    "@emotion/core": "10.0.35",
+    "@emotion/styled": "10.0.27",
+    "@mdx-js/mdx": "1.6.16",
+    "@mdx-js/react": "1.6.16",
     "@svgr/webpack": "5.4.0",
-    "axios": "0.19.2",
+    "axios": "0.20.0",
     "emotion-theming": "10.0.27",
     "facepaint": "1.2.1",
     "gatsby": "2.24.47",
     "gatsby-image": "2.4.16",
-    "gatsby-plugin-feed": "^2.5.11",
-    "gatsby-plugin-svgr": "^2.0.2",
+    "gatsby-plugin-catch-links": "2.3.11",
+    "gatsby-plugin-emotion": "4.3.10",
+    "gatsby-plugin-feed": "2.5.11",
+    "gatsby-plugin-google-analytics": "2.3.13",
+    "gatsby-plugin-mdx": "1.2.34",
+    "gatsby-plugin-offline": "3.2.23",
+    "gatsby-plugin-react-helmet": "3.3.10",
+    "gatsby-plugin-sharp": "2.6.27",
+    "gatsby-plugin-svgr": "2.0.2",
+    "gatsby-plugin-twitter": "2.3.10",
+    "gatsby-plugin-typescript": "2.4.18",
+    "gatsby-remark-autolink-headers": "2.3.11",
+    "gatsby-remark-copy-linked-files": "2.3.12",
+    "gatsby-remark-emojis": "0.4.3",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-images": "3.3.25",
+    "gatsby-remark-prismjs": "3.5.10",
+    "gatsby-remark-relative-images": "0.3.0",
+    "gatsby-remark-responsive-iframe": "2.4.12",
+    "gatsby-remark-smartypants": "2.3.10",
+    "gatsby-source-filesystem": "2.3.24",
+    "gatsby-transformer-sharp": "2.5.13",
     "immer": "7.0.7",
     "lodash": "4.17.20",
     "polished": "3.6.5",
+    "prismjs": "1.21.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-helmet": "6.1.0",
     "react-spring": "8.0.27",
     "rxjs": "6.6.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "5.11.3",
-    "@testing-library/react": "10.4.8",
+    "@fengshangwuqi/appkit": "1.0.12",
+    "@fengshangwuqi/dev-deps": "1.0.15",
+    "@fengshangwuqi/eslint-config": "1.0.21",
+    "@fengshangwuqi/ts-config": "1.0.2",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "10.4.9",
     "@testing-library/react-hooks": "3.4.1",
-    "@types/cross-spawn": "6.0.2",
     "@types/facepaint": "1.2.1",
     "@types/fs-extra": "9.0.1",
     "@types/globby": "9.1.0",
-    "@types/inquirer": "7.3.0",
-    "@types/jest": "26.0.9",
+    "@types/inquirer": "7.3.1",
+    "@types/jest": "26.0.10",
     "@types/lodash": "4.14.159",
-    "@types/node": "14.0.27",
+    "@types/node": "14.6.0",
     "@types/react": "16.9.46",
     "@types/react-dom": "16.9.8",
+    "@types/react-helmet": "6.1.0",
     "babel-jest": "26.3.0",
     "babel-preset-gatsby": "0.5.5",
     "chalk": "4.1.0",
-    "cross-spawn": "7.0.3",
     "fs-extra": "9.0.1",
     "gh-pages": "3.1.0",
     "globby": "11.0.1",
-    "jest": "26.4.0",
-    "lerna": "3.22.1",
+    "jest": "26.4.2",
     "react-test-renderer": "16.13.1"
   },
   "license": "MIT"

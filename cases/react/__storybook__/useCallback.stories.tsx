@@ -34,9 +34,9 @@ export const UseCallbackDemo = () => {
   );
 };
 
-const Child = React.memo(({ onClick }: { onClick: () => void }) => {
+const Child = React.memo((props: { onClick: () => void }) => {
   console.log("child render");
-  return onClick && null;
+  return props && null;
 });
 
 Child.displayName = "UseCallbackChild";

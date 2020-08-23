@@ -1,5 +1,3 @@
-const { join } = require("path");
-
 const {
   siteMetadata,
   pathPrefix,
@@ -12,9 +10,8 @@ const {
   emotion,
   twitter,
   analytics,
-  netlifyCMS,
   offline,
-} = require(join(__dirname, "../../../packages/gatsby-config"));
+} = require("../../../src-core/gatsby");
 
 const feed = {
   resolve: "gatsby-plugin-feed",
@@ -40,6 +37,7 @@ const feed = {
               date: edge.node.frontmatter.date,
               url: site.siteMetadata.siteUrl + edge.node.fields.slug,
               guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              // eslint-disable-next-line
               custom_elements: [{ "content:encoded": edge.node.body }],
             });
           });
@@ -85,7 +83,6 @@ module.exports = {
     emotion,
     twitter,
     analytics,
-    netlifyCMS,
     feed,
     offline,
   ],

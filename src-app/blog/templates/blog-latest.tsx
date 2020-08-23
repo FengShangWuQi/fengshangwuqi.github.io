@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, navigate } from "gatsby";
+import { FluidObject } from "gatsby-image";
 import { margin, border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
@@ -8,7 +9,7 @@ import { SEO } from "src-core/seo";
 import { Pagination } from "src-components/navigation/Pagination";
 
 import { Layout, Wrapper, Footer } from "../common";
-import { LatestHeader, LatestList } from "../latest/";
+import { LatestHeader, INode, LatestItem } from "../latest";
 
 export const latestQuery = graphql`
   query($size: Int!, $offset: Int!) {
@@ -77,7 +78,25 @@ const BlogLatest = ({
     <Wrapper withShadow>
       <LatestTitle>最近的文章</LatestTitle>
 
-      <LatestList posts={posts} />
+      <div
+        css={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+          gridGap: 50,
+        }}>
+        {posts.map(({ node }: INode) => (
+          <LatestItem
+            key={node.fields.slug}
+            excerpt={node.excerpt}
+            path={node.fields.slug}
+            title={node.frontmatter.title}
+            original={node.frontmatter.original}
+            tags={node.frontmatter.tags}
+            date={node.frontmatter.date}
+            fluid={node.frontmatter.cover.childImageSharp.fluid as FluidObject}
+          />
+        ))}
+      </div>
     </Wrapper>
 
     <Footer>

@@ -1,21 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
-import { rgba, padding, position, border } from "polished";
+import { padding, position, border } from "polished";
 
 import { useHover } from "src-core/hooks";
 import { flex } from "src-core/style";
 import { useDesignSystem } from "src-core/ds";
-
-export interface IArchiveList {
-  posts: IArchiveNode[];
-}
 
 interface IArchiveItem {
   title: string;
   path: string;
 }
 
-interface IArchiveNode {
+export interface IArchiveNode {
   node: {
     id: string;
     fields: {
@@ -29,39 +25,7 @@ interface IArchiveNode {
   };
 }
 
-export const ArchiveList = ({ posts }: IArchiveList) => {
-  const ds = useDesignSystem();
-
-  return (
-    <div
-      css={{
-        ...position("relative"),
-        fontSize: ds.size.sm,
-
-        "&:before": {
-          ...position("absolute"),
-          left: 0,
-          top: 0,
-          content: `""`,
-          width: 2,
-          height: "100%",
-          background: rgba(ds.color.primary, 0.3),
-        },
-      }}>
-      {posts.map(({ node }: IArchiveNode) => {
-        return (
-          <ArchiveItem
-            key={node.fields.slug}
-            title={node.frontmatter.title}
-            path={node.fields.slug}
-          />
-        );
-      })}
-    </div>
-  );
-};
-
-const ArchiveItem = ({ path, title }: IArchiveItem) => {
+export const ArchiveItem = ({ path, title }: IArchiveItem) => {
   const ds = useDesignSystem();
 
   const [hoverRef, isHovered] = useHover();

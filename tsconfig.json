@@ -1,8 +1,7 @@
 {
-  "extends": "./packages/ts-config/base",
+  "extends": "@fengshangwuqi/ts-config/base",
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "typings",
     "baseUrl": "."
   },
 

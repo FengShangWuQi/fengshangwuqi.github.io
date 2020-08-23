@@ -1,5 +1,3 @@
-const { join } = require("path");
-
 const {
   siteMetadata,
   pathPrefix,
@@ -13,7 +11,7 @@ const {
   twitter,
   analytics,
   offline,
-} = require(join(__dirname, "../../../packages/gatsby-config"));
+} = require("../../../src-core/gatsby");
 
 const svgr = {
   resolve: "gatsby-plugin-svgr",
