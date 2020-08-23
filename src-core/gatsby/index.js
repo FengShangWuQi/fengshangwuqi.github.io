@@ -69,14 +69,4 @@ exports.analytics = {
   },
 };
 
-exports.netlifyCMS = process.env.CMS_PATH
-  ? {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        manualInit: true,
-        modulePath: path.join(process.cwd(), process.env.CMS_PATH),
-      },
-    }
-  : {};
-
 exports.offline = "gatsby-plugin-offline";

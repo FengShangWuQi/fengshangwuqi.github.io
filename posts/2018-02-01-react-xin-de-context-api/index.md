@@ -5,7 +5,7 @@ tags:
   - React
   - Context
 date: 2018-02-01
-cover: /assets/posts-react-context.png
+cover: react-context.png
 ---
 
 原文：[React's ⚛️ new Context API](https://blog.kentcdodds.com/reacts-%EF%B8%8F-new-context-api-70c9fe01596b) by kentcdodds
@@ -16,7 +16,7 @@ cover: /assets/posts-react-context.png
 
 **React** 中的 **context API** 相信大家都知道吧，可能跟大伙一样，当看到 **React** 的官方文档是这样时，都不敢直接使用它。
 
-![API](/assets/posts-react-context-API.png)
+![API](react-context-API.png)
 
 第一条搜索结果显示的就是 [为什么不建议使用 context](https://reactjs.org/docs/context.html#why-not-to-use-context)，让大家瞬间产生忧虑，该章节是这么描述 **context** 的：
 

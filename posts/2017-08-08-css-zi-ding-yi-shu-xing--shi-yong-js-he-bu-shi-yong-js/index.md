@@ -4,7 +4,7 @@ original: false
 tags:
   - CSS
 date: 2017-08-08
-cover: /assets/posts-css-custom-properties.png
+cover: css-custom-properties.png
 ---
 
 原文：[CSS Custom Properties—Dynamic Changes With And Without Javascript](http://vanseodesign.com/css/custom-properties-and-javascript/?utm_source=CSS-Weekly&utm_campaign=Issue-276&utm_medium=web) by Steven Bradley

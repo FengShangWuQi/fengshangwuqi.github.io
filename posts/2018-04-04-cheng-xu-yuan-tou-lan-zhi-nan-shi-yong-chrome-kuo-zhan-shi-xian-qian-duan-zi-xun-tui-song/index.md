@@ -4,7 +4,7 @@ original: true
 tags:
   - Chrome Extension
 date: 2018-04-04
-cover: /assets/posts-chrome-extensions.png
+cover: chrome-extensions.png
 ---
 
 > 最近接触了一下 **chrome 扩展**，发现这确实是一个好东西，使用简单的 **HTML**，**CSS** 和 **JavaScript** 就可为浏览器新增我们想要的功能，并且，使用 **chrome 扩展** 开发，不用担心 **跨域** 等消息传递问题，还有讨厌的 **兼容性** 问题，结合操作用户页面 dom，开发的开心度可谓是可观的。下面，我们就一起通过一个实例来看看 **chrome 扩展** 开发。
@@ -269,12 +269,12 @@ export const getCurrContent = (paths, path) => {
 
 **popup** 跟普通页面一样，右键检查，**background** 需要进入扩展程序页面，点击检查视图背景页。
 
-![debug](/assets/posts-chrome-extensions-debug.png)
+![debug](chrome-extensions-debug.png)
 
 ## 总结
 
 就这样，该 **chrome 扩展** 初始版本就没有什么阻塞项了，目前截图如下：
 
-![news](/assets/posts-chrome-extensions-news.png)
+![news](chrome-extensions-news.png)
 
 [扩展](https://chrome.google.com/webstore/detail/front-end-news/dcijaoifeaaafbdglmalaajeedcamogg) 初始版本已发布，点击前面的链接可查看更多，如果有小伙伴感兴趣，[chrome-Daily-Front-End-news](https://github.com/FengShangWuQi/chrome-Daily-Front-End-news) 仓库期待收到你的 PR，[Daily-Front-End-News](https://github.com/FengShangWuQi/Daily-Front-End-News) 同上。

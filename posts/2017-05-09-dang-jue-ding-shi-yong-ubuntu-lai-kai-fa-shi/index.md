@@ -4,7 +4,7 @@ original: true
 tags:
   - Ubuntu
 date: 2017-05-09
-cover: /assets/posts-ubuntu.png
+cover: ubuntu.png
 ---
 
 ## 入门
@@ -241,7 +241,7 @@ $ ln -s 源文件或目录 目标文件或目录  // 软链接
 
 **PS1** 是 **Linux** 终端用户的一个环境变量，用来定义命令行提示符的参数。
 
-![PS1](/assets/posts-ubuntu-PS1.png)
+![PS1](ubuntu-PS1.png)
 
 ```bash
 # 查看默认设置
@@ -265,6 +265,6 @@ $ vim ~/.bashrc
 
 **Tmux** 是 **Linux** 的终端利器，不仅可以拆分窗口，还可以在在 **SSH** 环境下，避免网络不稳定，导致工作现场的丢失，一个窗口，帮你搞定所有。
 
-![tmux](/assets/posts-ubuntu-tmux.png)
+![tmux](ubuntu-tmux.png)
 
 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh)

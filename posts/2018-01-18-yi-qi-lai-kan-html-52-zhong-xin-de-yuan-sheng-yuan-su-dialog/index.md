@@ -5,7 +5,7 @@ tags:
   - HTML 5
   - dialog
 date: 2018-01-18
-cover: /assets/posts-dialog.png
+cover: dialog.png
 ---
 
 原文：[Meet the New Dialog Element](https://keithjgrant.com/posts/2018/meet-the-new-dialog-element) by Keith
@@ -20,7 +20,7 @@ cover: /assets/posts-dialog.png
 
 其中，**open** 属性表示此时 **dialog** 是可见的，如果没有 **open**，**dialog** 将会隐藏，你可以使用 **JavaScript** 将它显现出来，此时，**dialog** 渲染如下：
 
-![dialog](/assets/posts-dialog-dialog.png)
+![dialog](dialog-dialog.png)
 
 它绝对定位于页面之上，就如我们期望的一样，出现在内容的上方，并且水平居中，默认情况下，它和内容一样宽。
 
@@ -48,7 +48,7 @@ modal.close();
 
 目前，只有 **chrome** 支持 **dialog**，**Firefox** 需要在 **about:config** 里允许 **dom.dialog_element.enabled** 才能正常使用，我猜想，**Firefox** 在不久的将来就会支持。
 
-![can i use](/assets/posts-dialog-can-i-use.png)
+![can i use](dialog-can-i-use.png)
 
 上图为 [caniuse.com](http://caniuse.com/#search=dialog) 关于 dialog 特性主流浏览器的兼容情况。
 

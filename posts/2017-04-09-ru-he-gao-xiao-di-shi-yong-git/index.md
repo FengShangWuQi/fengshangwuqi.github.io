@@ -4,7 +4,7 @@ original: true
 tags:
   - Git
 date: 2017-04-09
-cover: /assets/posts-git.png
+cover: git.png
 ---
 
 ## 基本操作
@@ -347,11 +347,11 @@ $ git commit -m "fix: ..., fix #1, #2"
 
 在创建一个仓库时，**Github** 会为你提供一个预置的软件许可证列表。
 
-![add.png](/assets/posts-git-add.png)
+![add.png](git-add.png)
 
 如果此时没有选择，后来可以通过 **web** 界面 **create new file**，输入 **LICENSE**，点击右侧的 **choose a license template** 来添加。
 
-![license.png](/assets/posts-git-license.png)
+![license.png](git-license.png)
 
 ### 一些不错的 github 插件
 
@@ -366,7 +366,7 @@ $ git commit -m "fix: ..., fix #1, #2"
 
 [Git.io](https://git.io/) 是 Github 的 **短网址** 服务。
 
-![io](/assets/posts-git-io.png)
+![io](git-io.png)
 
 你可以通过 **Curl** 命令以普通 **HTTP** 协议使用它：
 
@@ -384,7 +384,7 @@ Location: https://github.com/...
 
 [Gists](https://gist.github.com/) 方便我们管理代码片段，不必使用功能齐全的仓库。
 
-![gists](/assets/posts-git-gists.png)
+![gists](git-gists.png)
 
 **Gist** 可以非常方便地得到便于嵌入到其他网站的 [HTML 代码](https://gist.github.com/FengShangWuQi/f8a3add492f55fca8bb07987438f6615.pibb)。
 
@@ -394,7 +394,7 @@ Location: https://github.com/...
 
 **GitHub** 仓库页面提供了一些 **快捷键** 方便大家快速导航，按 **?** 可以查看当前页面支持的快捷键列表。
 
-![keyboard](/assets/posts-git-keyboard.png)
+![keyboard](git-keyboard.png)
 
 ### 使用表情符
 
