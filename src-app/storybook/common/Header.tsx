@@ -49,7 +49,7 @@ export const Header = ({ groups }: { groups: string[] }) => {
             }}>
             {groups.map(group => (
               <MenuItem key={group}>
-                <Link to={group}>{group.toUpperCase()}</Link>
+                <Link to={`/${group}`}>{group.toUpperCase()}</Link>
               </MenuItem>
             ))}
           </Menu>
