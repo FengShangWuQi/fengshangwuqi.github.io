@@ -22,8 +22,7 @@ jobs:
           META_DECS: 枫上雾棋的 blog
           SITE_URL: https://blog.fengshangwuqi.com
           PATH_PREFIX: /
-          CMS_PATH: src-app/blog/cms/cms.js
-          SOURCES: static/assets,posts,zhoubao
+          SOURCES: posts,zhoubao
           SIZE: 6
           TRACKING_ID: ${{ secrets.TRACKING_ID }}
 
