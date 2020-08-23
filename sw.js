@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-c47ee38170887e990d90.js"
+    "url": "webpack-runtime-56de2bff823daf118471.js"
   },
   {
-    "url": "framework-724a787a77272e848d00.js"
+    "url": "framework-ff28e434b46ad5abbe1a.js"
   },
   {
-    "url": "29107295-ff8b88f4857c4557febc.js"
+    "url": "29107295-551a4ae4bd5972597619.js"
   },
   {
-    "url": "app-438331303cee685824f7.js"
+    "url": "app-c4146c298ae980ef263c.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "fd7949376bb5c7ce4a703a6a361abe8a"
+    "revision": "0476677fe8d3ab6597d912489b63df4d"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-0097d26fbd474b34ff9b.js"
@@ -52,8 +52,7 @@ self.__precacheManifest = [
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, new workbox.strategies.CacheFirst(), 'GET');
-workbox.routing.registerRoute(/^https?:.*\page-data\/.*\/page-data\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/^https?:.*\/page-data\/app-data\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\/page-data\/.*\.json/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
 
@@ -139,7 +138,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-438331303cee685824f7.js`))) {
+  if (!resources || !(await caches.match(`/app-c4146c298ae980ef263c.js`))) {
     return await fetch(event.request)
   }
 
