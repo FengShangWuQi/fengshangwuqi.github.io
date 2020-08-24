@@ -116,7 +116,7 @@
     "@types/globby": "9.1.0",
     "@types/inquirer": "7.3.1",
     "@types/jest": "26.0.10",
-    "@types/lodash": "4.14.159",
+    "@types/lodash": "4.14.160",
     "@types/node": "14.6.0",
     "@types/react": "16.9.46",
     "@types/react-dom": "16.9.8",
