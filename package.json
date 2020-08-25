@@ -106,7 +106,7 @@
   "devDependencies": {
     "@fengshangwuqi/appkit": "1.0.12",
     "@fengshangwuqi/dev-deps": "1.0.15",
-    "@fengshangwuqi/eslint-config": "1.0.21",
+    "@fengshangwuqi/eslint-config": "1.0.23",
     "@fengshangwuqi/ts-config": "1.0.2",
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "10.4.9",
