@@ -104,7 +104,7 @@
     "rxjs": "6.6.2"
   },
   "devDependencies": {
-    "@fengshangwuqi/appkit": "1.0.12",
+    "@fengshangwuqi/appkit": "1.0.14",
     "@fengshangwuqi/dev-deps": "1.0.15",
     "@fengshangwuqi/eslint-config": "1.0.21",
     "@fengshangwuqi/ts-config": "1.0.2",

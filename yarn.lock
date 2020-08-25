@@ -1287,10 +1287,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@fengshangwuqi/appkit@1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@fengshangwuqi/appkit/-/appkit-1.0.12.tgz#07120a13c09591369be3d3627dde632a28fce5a2"
-  integrity sha512-V3DIuvyprwMKaGKB6laC4yhX6uo3Zw7GJf7YuOCpOUXWKogHeEupiZUsKzmA2AoumXW4/Ss1LzMz6giKOvY+TA==
+"@fengshangwuqi/appkit@1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@fengshangwuqi/appkit/-/appkit-1.0.14.tgz#cbb3c90e0c431b7ae98d0aa4385e19de0b335140"
+  integrity sha512-8F2MVM1dhbHSWB6XcTs/kKDJ2YKE611DVjRZbAVuz6+JkI93QlC1GNFADj3xKAZ6ZwCcrxM0GbRrO0V1AcUI8w==
   dependencies:
     chalk "4.1.0"
     cross-spawn "7.0.3"
