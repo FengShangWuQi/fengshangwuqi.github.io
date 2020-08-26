@@ -88,7 +88,7 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-images": "3.3.27",
     "gatsby-remark-prismjs": "3.5.11",
-    "gatsby-remark-relative-images": "0.3.0",
+    "gatsby-remark-relative-images": "1.1.1",
     "gatsby-remark-responsive-iframe": "2.4.12",
     "gatsby-remark-smartypants": "2.3.10",
     "gatsby-source-filesystem": "2.3.26",
