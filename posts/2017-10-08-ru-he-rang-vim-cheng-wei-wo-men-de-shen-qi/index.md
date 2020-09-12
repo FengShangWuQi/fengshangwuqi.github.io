@@ -9,11 +9,11 @@ cover: vim.png
 
 > **Vim** 是一个上古神器，刚刚接触的同学可能很难驾驭，本篇文章主要带领大家快速入门，并持续分享当前流行的一些 **vim-plugin**，有兴趣的同学还可以参考 [to-vim-tmux-zsh](https://github.com/FengShangWuQi/to-vim-tmux-zsh) 仓库继续研究 **Tmux** 和 **Zsh**。
 
-## 安装
+## Vim 的优势
 
-```bash
-brew install mvim // mac
-```
+- Vim 是一个完全 **跨平台** 的编辑器;
+- Vim 是一个高度 **可定制**、**可扩展** 的编辑器;
+- Vim 有着 **良好的生态** 环境;
 
 ## 新手指南
 
@@ -21,40 +21,60 @@ brew install mvim // mac
 $ vimtutor  // vim 教程
 ```
 
+### Vim 模式
+
+- **普通模式**: 默认模式，可用于文本删除、替换，恢复、粘贴等操作;
+- **插入模式**: 输入 **i** 进入插入模式，相当于普通编辑器的编辑模式；
+- **可视模式**: 输入 **v** 进入可视模式，选择文本，进行复制等操作；
+- **命令模式**: 输入 **:** 进入命令模式，可执行执行内部和外部命令；
+
 ### 移动光标
 
-- **hjkl**
-- **2w**：向前移动两个单词
-- **3e**：向前移动到第 3 个单词的末尾
-- **0**：移动到行首
-- **\$**：当前行的末尾
-- **gg**：文件第一行
-- **G**：文件最后一行
-- **行号 + G**：指定行
-- **ctrl + o**：跳转回之前的位置
-- **ctrl + i**：返回跳转之前的位置
+- **hjkl**: 上下左右；
+- **2w**：向前移动两个单词；
+- **3e**：向前移动到第 3 个单词的末尾；
+- **0**：移动到行首；
+- **\$**：当前行的末尾；
+- **H**：光标移动到顶部；
+- **M**：光标移动到中间；
+- **L**：光标移动到底部；
+- **gf**：根据 path 跳转到指定文件；
+- **gg**：第一行；
+- **G**：最后一行；
+- **行号 + G**：指定行；
+- **( )**: 移到上一句和下一句；
+- **{ }**: 移到上一段和下一段；
+- **ctrl + o**：跳转回之前的位置；
+- **ctrl + i**：返回跳转之前的位置；
+- **ctrl + d**：向下移动半页；
+- **ctrl + u**：向上移动半页；
+- **ctrl + f**：向下移动整页；
+- **ctrl + b**：向上移动整页；
 
 ### 退出
 
-- **esc**：进入正常模式
-- **:q!**：不保存退出
-- **:wq**：保存后退出
+- **esc**：进入普通模式；
+- **:q!**：不保存退出；
+- **:wq**：保存后退出；
 
 ### 删除
 
-- **x**：删除当前字符
-- **dw**：删除至当前单词末尾
-- **de**：删除至当前单词末尾，包括当前字符
-- **d\$**：删除至当前行尾
-- **dd**：删除整行
-- **2dd**：删除两行
+- **x**：删除当前字符；
+- **dw**：删除至当前单词末尾；
+- **de**：删除至当前单词末尾，包括当前字符；
+- **d\$**：删除至当前行尾；
+- **dd**：删除整行；
+- **2dd**：删除两行；
 
 ### 修改
 
-- **i**：插入文本
-- **A**：当前行末尾添加
-- **r**：替换当前字符
-- **o** 打开新的一行并进入插入模式
+- **i**：插入文本；
+- **a**：在当前字符后面进入插入模式；
+- **A**：当前行末尾添加；
+- **r**：替换当前字符；
+- **o**: 打开新的一行进入插入模式；
+- **s**：删除一个字符然后进入插入模式；
+- **cc**：修改整行；
 
 ### 撤销
 
@@ -63,7 +83,6 @@ $ vimtutor  // vim 教程
 
 ### 复制粘贴剪切
 
-- **v**：进入可视模式
 - **y**：复制
 - **p**：粘贴
 - **yy**：复制当前行
@@ -79,10 +98,6 @@ $ vimtutor  // vim 教程
 - **/**：正向查找（n：继续查找，N：相反方向继续查找）
 - **？**：逆向查找
 - **%**：查找配对的 {，[，(
-- **:set ic**：忽略大小写
-- **:set noic**：取消忽略大小写
-- **:set hls**：匹配项高亮显示
-- **:set is**：显示部分匹配
 
 ### 替换
 
@@ -90,59 +105,90 @@ $ vimtutor  // vim 教程
 - **:s/old/new/g**：替换全行的匹配串
 - **:%s/old/new/g**：替换整个文件的匹配串
 
-### 折叠
-
-- **zc**：折叠
-- **zC**：折叠所有嵌套
-- **zo**：展开折叠
-- **zO**：展开所有折叠嵌套
-
-### 执行外部命令
-
-- **:!shell** 执行外部命令
-
-### 字体
-
-- **ctrl -**：缩小
-- **ctrl shift +**：放大
-- **ctrl 0**：还原
-
-### 分屏
-
-- **\$ Ctrl+W v**：左右
-- **\$ Ctrl+W s**：上下
-- **\$ Ctrl+W h/j/k/l**：左/上/下/右 - 移动光标
-- **\$ Ctrl+W H/J/K/L**：左/上/下/右 - 移动分屏
-- **\$ Ctrl+W =/+/-**：修改屏幕尺寸
-
 ## 基本配置
 
-**.vimrc** 是 **Vim** 的配置文件，需要我们自己创建
+创建 **Vim** 的配置文件 **.vimrc**
 
 ```bash
-cd
-touch .vimrc
-```
-
-### 取消备份
-
-```vim
-set nobackup
-set noswapfile
+touch ~/.vimrc
 ```
 
 ### 文件编码
 
 ```vim
-set encoding=utf-8
+set enc=utf-8
+```
+
+### 不和 vi 兼容
+
+```vim
+set noswapfile
+```
+
+### 备份和撤销文件
+
+```vim
+set nobackup
+set noswapfile
+
+if has('persistent_undo')
+  set undofile
+  set undodir=~/.vim/undodir
+  if !isdirectory(&undodir)
+    call mkdir(&undodir, 'p', 0700)
+  endif
+endif
+```
+
+### 中文
+
+```vim
+set fileencodings=ucs-bom,utf-8,gb18030,latin1
+```
+
+### 鼠标支持
+
+```vim
+if has('mouse')
+  if has('gui_running') || (&term =~ 'xterm' && !has('mac'))
+    set mouse=a
+  else
+    set mouse=nvi
+  endif
+endif
+
+set clipboard=unnamed
+```
+
+### 设置文本菜单
+
+```vim
+if has('gui_running')
+  let do_syntax_sel_menu = 1
+  let do_no_lazyload_menus = 1
+endif
+
+if !has('gui_running')
+  if has('wildmenu')
+    set wildmenu
+    set cpoptions-=<
+    set wildcharm=<C-Z>
+    nnoremap <F10>      :emenu <C-Z>
+    inoremap <F10> <C-O>:emenu <C-Z>
+  endif
+endif
 ```
 
 ### 查找
 
 ```vim
-set ic
-set hls
-set is
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+
+nnoremap <silent> <F2>      :nohlsearch<CR>
+inoremap <silent> <F2> <C-O>:nohlsearch<CR>
 ```
 
 ### 显示行号
@@ -151,19 +197,11 @@ set is
 set number
 ```
 
-### 显示光标当前位置
-
-```vim
-set ruler
-```
-
 ### 设置缩进
 
 ```vim
-set cindent
-
-set tabstop=2
 set shiftwidth=2
+set tabstop=2
 ```
 
 ### 突出显示当前行
@@ -172,16 +210,9 @@ set shiftwidth=2
 set cursorline
 ```
 
-### 左下角显示当前 vim 模式
+### 启动 vim 时关闭折叠代码
 
 ```vim
-set showmode
-```
-
-### 代码折叠
-
-```vim
-# 启动 vim 时关闭折叠代码
 set nofoldenable
 ```
 
@@ -189,11 +220,15 @@ set nofoldenable
 
 ```vim
 syntax enable
+colorscheme one
 set background=dark
-colorscheme solarized
 ```
 
-[altercation/vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
+### 背景透明
+
+```vim
+hi Normal ctermfg=252 ctermbg=none
+```
 
 ## 插件配置
 
@@ -202,83 +237,67 @@ colorscheme solarized
 ### 树形目录
 
 ```vim
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'scrooloose/nerdtree'                            " https://github.com/preservim/nerdtree
+Plug 'jistr/vim-nerdtree-tabs'                        " https://github.com/jistr/vim-nerdtree-tabs
+Plug 'Xuyuanp/nerdtree-git-plugin'                    " https://github.com/Xuyuanp/nerdtree-git-plugin
+Plug 'ryanoasis/vim-devicons'                         " https://github.com/ryanoasis/vim-devicons
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'        " https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+Plug 'tpope/vim-eunuch'                               " https://github.com/tpope/vim-eunuch
 
-autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden = 1
 
 let g:nerdtree_tabs_open_on_console_startup = 1
-let g:nerdtree_tabs_focus_on_files = 1
 
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
+nnoremap <F5> :UndotreeToggle<cr>
 
-# o 打开关闭文件或目录
-# e 以文件管理的方式打开选中的目录
-# t 在标签页中打开
-# T 在标签页中打开，但光标仍然留在 NERDTree
-# r 刷新光标所在的目录
-# R 刷新当前根路径
-# X 收起所有目录
-# p 小写，跳转到光标所在的上一级路径
-# P 大写，跳转到当前根路径
-# J 到第一个节点
-# K 到最后一个节点
-# I 显示隐藏文件
-# m 显示文件操作菜单
-# C 将根路径设置为光标所在的目录
-# u 设置上级目录为根路径
-# ctrl + w + w 光标自动在左右侧窗口切换
-# ctrl + w + r 移动当前窗口的布局位置
-# :tabc 关闭当前的 tab
-# :tabo   关闭所有其他的 tab
-# :tabp   前一个 tab
-# :tabn   后一个 tab
-# gT      前一个 tab
-# gt      后一个 tab
+" i 在新的水平分割的窗口中打开
+" s 在新的竖直分割的窗口中打开
+" t 在标签页中打开
+" go 预览文件
+" r 刷新光标所在的目录
+" R 刷新当前根路径
+" I 显示隐藏文件
+" m 显示文件操作菜单
+" C 将根路径设置为光标所在的目录
+" u 设置上级目录为根路径
+" gT 前一个 tab
+" gt 后一个 tab
+" <C-W> 加方向键（h、j、k、l、<Left> 等）可以在窗口之间跳转
+" <C-W> + w 跳转到下一个窗口
+" <C-W> + s 和 :split 作用相同，把当前窗口横向一分为二
+" <C-W> + v 和 :vsplit 作用相同，把当前窗口纵向一分为二
+" <C-W> + o 或 :only 只保留当前窗口，关闭其他所有窗口
 ```
 
-[scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
-
-[vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs)
-
-[nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
-
-### 代码，引号，路径补全
+### 标签
 
 ```vim
-Plug 'Valloric/YouCompleteMe'
-Plug 'Raimondi/delimitMate'
+Plug 'majutsushi/tagbar'                         " https://github.com/majutsushi/tagbar
+
+nnoremap <F9>      :TagbarToggle<CR>
+inoremap <F9> <C-O>:TagbarToggle<CR>
 ```
 
-[Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+### 自动补全
 
-[Raimondi/delimitMate](https://github.com/Raimondi/delimitMate)
+```vim
+Plug 'Valloric/YouCompleteMe'                         " https://github.com/ycm-core/YouCompleteMe
+Plug 'Raimondi/delimitMate'                           " https://github.com/Raimondi/delimitMate
 
-[Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
+nnoremap <Leader>fi :YcmCompleter FixIt<CR>
+nnoremap <Leader>gd :YcmCompleter GoToDefinition<CR>
+```
 
 ### 语法高亮，检查
 
 ```vim
-Plug 'sheerun/vim-polyglot'
-Plug 'w0rp/ale'
+Plug 'sheerun/vim-polyglot'                           " https://github.com/sheerun/vim-polyglot
+Plug 'w0rp/ale'                                       " https://github.com/w0rp/ale
 
 let g:ale_fix_on_save = 1
-let g:ale_completion_enabled = 1
 let g:ale_sign_column_always = 1
 let g:ale_sign_error = '●'
 let g:ale_sign_warning = '▶'
@@ -287,224 +306,111 @@ nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 ```
 
-[w0rp/ale](https://github.com/w0rp/ale)
-
-[sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot)
-
-### 文件，代码搜索，打开最近打开的文件
+### 全局搜索，快速打开文件
 
 ```vim
-Plug 'mileszs/ack.vim'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mileszs/ack.vim'                                " https://github.com/mileszs/ack.vim
+Plug 'ctrlpvim/ctrlp.vim'                             " https://github.com/ctrlpvim/ctrlp.vim
 
-let g:ackprg = "ag --vimgrep"
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_regexp = 1
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](node_modules|DS_Store|dist|build|coverage)|(\.(git|hg|svn)$)',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ }
-
-# <c-r>: 切换匹配模式
-# <c-t> or <c-v>, <c-x>：在新的 tab 中打开
+" <c-r>: 切换匹配模式
+" <c-t>：在新的 tab 中打开
 ```
 
-[mileszs/ack.vim](https://github.com/mileszs/ack.vim)
-
-[ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
-
-[ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
-
-### 加强版状态栏
+### 状态条
 
 ```vim
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'                        " https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline-themes'                 " https://github.com/vim-airline/vim-airline-themes
 
-let g:lightline = {
-      \ 'colorscheme': 'powerline',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified'] ],
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ],
-      \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'fugitive#head'
-      \ },
-      \ }
+let g:airline_theme='onedark'
+let g:airline_powerline_fonts = 1
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#nerdtree_statusline = 0
+let g:airline_section_c = ''
 ```
 
-[itchyny/lightline.vim](https://github.com/itchyny/lightline.vim)
-
-### 代码注释
+### 注释
 
 ```vim
-Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'                       " https://github.com/preservim/nerdcommenter
 
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
-let g:NERDCustomDelimiters = {
-			\ 'javascript': { 'left': '//', 'leftAlt': '/**', 'rightAlt': '*/' },
-			\ 'less': { 'left': '/**', 'right': '*/' }
-		\ }
 
-let g:NERDAltDelims_javascript = 1
-let g:NERDDefaultNesting = 0
-
-# <leader>c<space> 注释/取消注释
-# <leader>cc // 注释
-# <leader>cm 只用一组符号注释
-# <leader>cA 在行尾添加注释
-# <leader>c$ /* 注释 */
-# <leader>cs /* 块注释 */
-# <leader>cy 注释并复制
-# <leader>ca 切换　// 和 /* */
-# <leader>cu 取消注释
-
-# default leader key is '\'
+" <leader>c<space> 注释/取消注释
+" <leader>ca 切换　// 和 /* */
+" <leader>cs /* 块注释 */
+" <leader>cm 只用一组符号注释
+" <leader>cA 在行尾添加注释
 ```
-
-[scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 
 ### git
 
 ```vim
+Plug 'airblade/vim-gitgutter'                         " https://github.com/airblade/vim-gitgutter
+Plug 'tpope/vim-fugitive'                             " https://github.com/tpope/vim-fugitive
+Plug 'tpope/vim-rhubarb'                              " https://github.com/tpope/vim-rhubarb
+
 set updatetime=100
+let g:gitgutter_max_signs = -1
 
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
+" jump to next hunk: ]c
+" jump to previous hunk: [c
+" stage the hunk: <Leader>hs
+" undo the hunk: <Leader>hu
+" preview the hunk: <Leader>hp
 
-let g:gitgutter_max_signs = 800
+" :G
+" :Gvdiffsplit
+" :GBrowse
+"
+" s: 加到暂存区中
+" u: 重置加入暂存区的修改
+" =: 切换 diff 显示
+" cc: 提交当前暂存区中的文件
 ```
-
-[airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
-
-[tpope/vim-fugitive](https://github.com/tpope/vim-fugitive)
-
-[tpope/vim-rhubarb](https://github.com/tpope/vim-rhubarb)
 
 ### Markdown
 
 ```vim
-Plug 'suan/vim-instant-markdown'
-Plug 'junegunn/goyo.vim'
-
-let g:instant_markdown_slow = 1
-let g:instant_markdown_autostart = 0
-# :InstantMarkdownPreview
-
-# :Goyo
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }      " https://github.com/iamcco/markdown-preview.nvim
 ```
-
-[suan/vim-instant-markdown](https://github.com/suan/vim-instant-markdown)
-
-[junegunn/goyo.vim](https://github.com/junegunn/goyo.vim)
 
 ### Emmet
 
 ```vim
-Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'                                " https://github.com/mattn/emmet-vim
 
 let g:user_emmet_leader_key='<C-Z>'
-let g:user_emmet_settings = {
- 		\ 'javascript.jsx' : {
-    		\ 'extends' : 'jsx',
-    	\ },
- 		\ }
+
+" <C-Z>,
 ```
-
-[mattn/emmet-vim](https://github.com/mattn/emmet-vim)
-
-### css 3
-
-![css color](vim-css-color.png)
-
-```vim
-Plug 'hail2u/vim-css3-syntax'
-Plug 'ap/vim-css-color'
-
-augroup VimCSS3Syntax
-  autocmd!
-
-  autocmd FileType css setlocal iskeyword+=-
-augroup END
-```
-
-[hail2u/vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax)
-
-[ap/vim-css-color](https://github.com/ap/vim-css-color)
-
-### JavaScript
-
-```vim
-Plug 'pangloss/vim-javascript'
-
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_plugin_ngdoc = 1
-let g:javascript_plugin_flow = 1
-set foldmethod=syntax
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_null                 = "ø"
-let g:javascript_conceal_this                 = "@"
-let g:javascript_conceal_return               = "⇚"
-let g:javascript_conceal_undefined            = "¿"
-let g:javascript_conceal_NaN                  = "ℕ"
-let g:javascript_conceal_prototype            = "¶"
-let g:javascript_conceal_static               = "•"
-let g:javascript_conceal_super                = "Ω"
-let g:javascript_conceal_arrow_function       = "⇒"
-let g:javascript_conceal_noarg_arrow_function = "🞅"
-let g:javascript_conceal_underscore_arrow_function = "🞅"
-set conceallevel=1
-```
-
-[pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
-
-### React
-
-```vim
-Plug 'mxw/vim-jsx'
-```
-
-[mxw/vim-jsx](https://github.com/mxw/vim-jsx)
 
 ### Prettier
 
 ```vim
-Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }     " https://github.com/prettier/vim-prettier
 
-let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
-# :Prettier
+" :PrettierAsync
 ```
 
-[prettier/vim-prettier](https://github.com/prettier/vim-prettier)
-
-### 自动规范化中文排版
+### Wakatime
 
 ```vim
-Plug 'hotoo/pangu.vim'
-
-# :Pangu
+Plug 'wakatime/vim-wakatime'                              " https://github.com/wakatime/vim-wakatime "
 ```
-
-[hotoo/pangu.vim](https://github.com/hotoo/pangu.vim)
-
-### TypeScript
-
-```vim
-Plug 'leafgarland/typescript-vim'
-Plug 'HerringtonDarkholme/yats.vim'
-```
-
-[leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)
-
-[HerringtonDarkholme/yats.vim](https://github.com/HerringtonDarkholme/yats.vim)
 
 ## 总结
 
