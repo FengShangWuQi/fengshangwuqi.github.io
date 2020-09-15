@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Sep 2020 11:26:20 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#12 @ 2020.04.19]]></title><description><![CDATA[前端动态 1、 了解 CSS min()/max()/clamp() 数学函数 min ()/ max ()/ clamp () 这  3  个数学函数是现代浏览器  201…]]></description><link>https://blog.fengshangwuqi.com/2020-04-19-of-12/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/2020-04-19-of-12/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 19 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 15 Sep 2020 10:40:43 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#12 @ 2020.04.19]]></title><description><![CDATA[前端动态 1、 了解 CSS min()/max()/clamp() 数学函数 min ()/ max ()/ clamp () 这  3  个数学函数是现代浏览器  201…]]></description><link>https://blog.fengshangwuqi.com/2020-04-19-of-12/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/2020-04-19-of-12/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 19 Apr 2020 00:00:00 GMT</pubDate><content:encoded>function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i &lt; sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) &gt;= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -19335,11 +19335,67 @@ return function MDXContent(_ref) {
     parentName: &quot;code&quot;
   }, {
     &quot;className&quot;: &quot;token string&quot;
-  }), &quot;&apos;mileszs/ack.vim&apos;&quot;), &quot;                                &quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;&apos;junegunn/fzf&apos;&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;,&quot;), &quot; &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token string&quot;
+  }), &quot;&apos;do&apos;&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token operator&quot;
+  }), &quot;-&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token operator&quot;
+  }), &quot;&gt;&quot;), &quot; fzf#&quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token function&quot;
+  }), &quot;install&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;(&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;)&quot;), &quot; &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;}&quot;), &quot; &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;}&quot;), &quot;   &quot;, mdx(&quot;span&quot;, _extends({
     parentName: &quot;code&quot;
   }, {
     &quot;className&quot;: &quot;token comment&quot;
-  }), &quot;\&quot; https://github.com/mileszs/ack.vim&quot;), &quot;\nPlug &quot;, mdx(&quot;span&quot;, _extends({
+  }), &quot;\&quot; https://github.com/junegunn/fzf&quot;), &quot;\nPlug &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token string&quot;
+  }), &quot;&apos;junegunn/fzf.vim&apos;&quot;), &quot;                               &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token comment&quot;
+  }), &quot;\&quot; https://github.com/junegunn/fzf.vim&quot;), &quot;\nPlug &quot;, mdx(&quot;span&quot;, _extends({
     parentName: &quot;code&quot;
   }, {
     &quot;className&quot;: &quot;token string&quot;
@@ -19348,38 +19404,6 @@ return function MDXContent(_ref) {
   }, {
     &quot;className&quot;: &quot;token comment&quot;
   }), &quot;\&quot; https://github.com/ctrlpvim/ctrlp.vim&quot;), &quot;\n\n&quot;, mdx(&quot;span&quot;, _extends({
-    parentName: &quot;code&quot;
-  }, {
-    &quot;className&quot;: &quot;token keyword&quot;
-  }), &quot;cnoreabbrev&quot;), &quot; Ack Ack&quot;, mdx(&quot;span&quot;, _extends({
-    parentName: &quot;code&quot;
-  }, {
-    &quot;className&quot;: &quot;token operator&quot;
-  }), &quot;!&quot;), &quot;\nnnoremap &quot;, mdx(&quot;span&quot;, _extends({
-    parentName: &quot;code&quot;
-  }, {
-    &quot;className&quot;: &quot;token operator&quot;
-  }), &quot;&lt;&quot;), &quot;Leader&quot;, mdx(&quot;span&quot;, _extends({
-    parentName: &quot;code&quot;
-  }, {
-    &quot;className&quot;: &quot;token operator&quot;
-  }), &quot;&gt;&quot;), &quot;a &quot;, mdx(&quot;span&quot;, _extends({
-    parentName: &quot;code&quot;
-  }, {
-    &quot;className&quot;: &quot;token punctuation&quot;
-  }), &quot;:&quot;), &quot;Ack&quot;, mdx(&quot;span&quot;, _extends({
-    parentName: &quot;code&quot;
-  }, {
-    &quot;className&quot;: &quot;token operator&quot;
-  }), &quot;!&quot;), mdx(&quot;span&quot;, _extends({
-    parentName: &quot;code&quot;
-  }, {
-    &quot;className&quot;: &quot;token operator&quot;
-  }), &quot;&lt;&quot;), &quot;Space&quot;, mdx(&quot;span&quot;, _extends({
-    parentName: &quot;code&quot;
-  }, {
-    &quot;className&quot;: &quot;token operator&quot;
-  }), &quot;&gt;&quot;), &quot;\n\n&quot;, mdx(&quot;span&quot;, _extends({
     parentName: &quot;code&quot;
   }, {
     &quot;className&quot;: &quot;token keyword&quot;
@@ -19435,7 +19459,11 @@ return function MDXContent(_ref) {
     parentName: &quot;code&quot;
   }, {
     &quot;className&quot;: &quot;token comment&quot;
-  }), &quot;\&quot; &lt;c-t&gt;\uFF1A\u5728\u65B0\u7684 tab \u4E2D\u6253\u5F00&quot;)))), mdx(&quot;h3&quot;, {
+  }), &quot;\&quot; &lt;c-t&gt;\uFF1A\u5728\u65B0\u7684 tab \u4E2D\u6253\u5F00&quot;), &quot;\n&quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token comment&quot;
+  }), &quot;\&quot; :Rg&quot;)))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;状态条&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -20295,7 +20323,63 @@ return function MDXContent(_ref) {
     parentName: &quot;code&quot;
   }, {
     &quot;className&quot;: &quot;token string&quot;
-  }), &quot;\&quot; https://github.com/wakatime/vim-wakatime \&quot;&quot;)))), mdx(&quot;h2&quot;, {
+  }), &quot;\&quot; https://github.com/wakatime/vim-wakatime \&quot;&quot;)))), mdx(&quot;h3&quot;, {
+    &quot;id&quot;: &quot;whitespace&quot;,
+    &quot;style&quot;: {
+      &quot;position&quot;: &quot;relative&quot;
+    }
+  }, mdx(&quot;a&quot;, _extends({
+    parentName: &quot;h3&quot;
+  }, {
+    &quot;href&quot;: &quot;#whitespace&quot;,
+    &quot;aria-label&quot;: &quot;whitespace permalink&quot;,
+    &quot;className&quot;: &quot;anchor before&quot;
+  }), mdx(&quot;svg&quot;, _extends({
+    parentName: &quot;a&quot;
+  }, {
+    &quot;aria-hidden&quot;: &quot;true&quot;,
+    &quot;focusable&quot;: &quot;false&quot;,
+    &quot;height&quot;: &quot;16&quot;,
+    &quot;version&quot;: &quot;1.1&quot;,
+    &quot;viewBox&quot;: &quot;0 0 16 16&quot;,
+    &quot;width&quot;: &quot;16&quot;
+  }), mdx(&quot;path&quot;, _extends({
+    parentName: &quot;svg&quot;
+  }, {
+    &quot;fillRule&quot;: &quot;evenodd&quot;,
+    &quot;d&quot;: &quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;
+  })))), &quot;Whitespace&quot;), mdx(&quot;div&quot;, {
+    &quot;className&quot;: &quot;gatsby-highlight&quot;,
+    &quot;data-language&quot;: &quot;vim&quot;
+  }, mdx(&quot;pre&quot;, _extends({
+    parentName: &quot;div&quot;
+  }, {
+    &quot;className&quot;: &quot;language-vim&quot;
+  }), mdx(&quot;code&quot;, _extends({
+    parentName: &quot;pre&quot;
+  }, {
+    &quot;className&quot;: &quot;language-vim&quot;
+  }), &quot;Plug &quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token string&quot;
+  }), &quot;&apos;ntpeters/vim-better-whitespace&apos;&quot;), &quot;\n\n&quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token keyword&quot;
+  }), &quot;let&quot;), &quot; g&quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token punctuation&quot;
+  }), &quot;:&quot;), &quot;better_whitespace_enabled&quot;, mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token operator&quot;
+  }), &quot;=&quot;), mdx(&quot;span&quot;, _extends({
+    parentName: &quot;code&quot;
+  }, {
+    &quot;className&quot;: &quot;token number&quot;
+  }), &quot;1&quot;)))), mdx(&quot;h2&quot;, {
     &quot;id&quot;: &quot;总结&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
