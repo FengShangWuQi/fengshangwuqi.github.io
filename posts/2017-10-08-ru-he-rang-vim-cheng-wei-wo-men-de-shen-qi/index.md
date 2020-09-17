@@ -383,6 +383,9 @@ let g:gitgutter_max_signs = -1
 
 ```vim
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }      " https://github.com/iamcco/markdown-preview.nvim
+
+" :MarkdownPreview
+" :MarkdownPreviewStop
 ```
 
 ### Emmet
