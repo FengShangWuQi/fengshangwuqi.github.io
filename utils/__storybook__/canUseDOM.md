@@ -14,4 +14,4 @@ export const canUseDOM = !!(
 );
 ```
 
-<Source path="utils/dom/canUseDOM.ts" />
+<Source path="utils/index.ts" />

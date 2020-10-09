@@ -3,3 +3,9 @@ export const sleep = async (interval: number) => {
     setTimeout(resolve, interval);
   });
 };
+
+export const canUseDOM = !!(
+  typeof window !== "undefined" &&
+  window.document &&
+  window.document.createElement
+);

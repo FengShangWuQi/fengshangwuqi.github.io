@@ -1,7 +1,7 @@
 import { BehaviorSubject, fromEvent } from "rxjs";
 import { Dictionary } from "lodash";
 
-import { canUseDOM } from "utils/dom";
+import { canUseDOM } from "utils";
 
 import { getLocation, ILocationContext, ILocation } from "./Location";
 
