@@ -11,8 +11,6 @@ export interface ITag {
 }
 
 export const PostTag = ({ tag }: { tag: string }) => {
-  const ds = useDesignSystem();
-
   const getTagProps = (tag: string) => {
     switch (tag) {
       case "React":
