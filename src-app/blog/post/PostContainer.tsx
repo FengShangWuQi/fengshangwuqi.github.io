@@ -14,7 +14,7 @@ export const PostContainer = ({ children }: { children: React.ReactNode }) => {
         h2`]: {
           ...border("bottom", 3, "solid", ds.color.primary),
           paddingBottom: ds.spacing[2],
-          fontWeight: ds.weight.normal,
+          fontWeight: "normal",
         },
         h1: {
           ...fluidType("sm", "xl", 24, 32),

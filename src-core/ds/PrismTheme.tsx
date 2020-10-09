@@ -80,7 +80,7 @@ export const PrismTheme = () => {
         },
         [`.token.important,
         .token.bold`]: {
-          fontWeight: ds.weight.bold,
+          fontWeight: "bold",
         },
         ".token.italic": {
           fontStyle: "italic",

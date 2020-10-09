@@ -1,4 +1,3 @@
-import { CSSObject } from "@emotion/core";
 import { rgba } from "polished";
 
 import { colorPalette } from "./colorPalette";
@@ -71,11 +70,6 @@ const zIndex = {
 const typography = {
   fontFamily: {
     system: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif`,
-  },
-
-  weight: {
-    bold: "bold" as CSSObject["fontWeight"],
-    normal: "normal" as CSSObject["fontWeight"],
   },
 
   size: {

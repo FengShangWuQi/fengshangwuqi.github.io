@@ -38,7 +38,7 @@ export const PostTag = ({ tag }: { tag: string }) => {
     <Tag
       css={{
         marginRight: 4,
-        fontWeight: ds.weight.bold,
+        fontWeight: "bold",
       }}
       color={color}
       bg={bg}>

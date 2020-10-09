@@ -54,7 +54,7 @@ export const LatestItem = ({
           marginTop: 24,
         }}>
         <Link
-          css={{ ...ellipsis(), fontWeight: ds.weight.bold }}
+          css={{ ...ellipsis(), fontWeight: "bold" }}
           to={path}
           title={title}>
           {title}
