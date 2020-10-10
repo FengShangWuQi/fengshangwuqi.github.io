@@ -10,14 +10,10 @@ import { GridDemo } from "./grid.stories";
 
 <GridDemo />
 
-```jsx {2}
-styled.div({
-  ...grid({
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gridTemplateRows: "repeat(3, 1fr)",
-    gridAutoFlow: "row dense",
-    gridGap: `${ds.spacing[5]}`,
-  }),
+```js
+export const grid = (gridOpts: CSSObject): CSSObject => ({
+  display: "grid",
+  ...gridOpts,
 });
 ```
 
