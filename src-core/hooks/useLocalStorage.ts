@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { isFunction } from "lodash";
 
-export const useLocalStorage = <T = undefined>(
+export const useLocalStorage = <T>(
   key: string,
   initialValue?: T,
 ): [T, (value: any) => void] => {

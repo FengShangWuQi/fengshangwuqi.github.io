@@ -11,7 +11,19 @@ import { UseObservableDemo } from "./useObservable.stories";
 <UseObservableDemo />
 
 ```jsx
-const value = useObservable(number$);
+export const useObservable = <T>(ob$: Observable<T>, defaultValue: T): T => {
+  const [value, setValue] = useState < T > defaultValue;
+
+  useEffect(() => {
+    const sub = ob$.subscribe(setValue);
+
+    return () => {
+      sub.unsubscribe();
+    };
+  }, [ob$]);
+
+  return value;
+};
 ```
 
 <Source path="src-core/hooks/useObservable.ts" />

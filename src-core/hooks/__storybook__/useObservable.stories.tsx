@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { BehaviorSubject } from "rxjs";
 
 import { useDesignSystem } from "src-core/ds";
 
 import { useObservable } from "../useObservable";
 
-const counter$ = new BehaviorSubject<number>(0);
-
 export const UseObservableDemo = () => {
   const ds = useDesignSystem();
 
-  const value = useObservable<number>(counter$) as number;
+  const counter$ = useMemo(() => new BehaviorSubject(0), []);
+
+  const value = useObservable(counter$, counter$.value);
 
   return (
     <div>
