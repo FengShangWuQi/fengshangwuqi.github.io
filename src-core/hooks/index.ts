@@ -6,4 +6,3 @@ export * from "./usePrevious";
 export * from "./useRect";
 export * from "./useToggle";
 export * from "./useVisibilitySensor";
-export * from "./useWhyDidYouUpdate";
