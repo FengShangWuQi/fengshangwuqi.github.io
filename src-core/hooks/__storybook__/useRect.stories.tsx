@@ -1,55 +1,55 @@
-import React, { useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
+import { animationFrameScheduler, interval, timer } from "rxjs";
+import { observeOn, takeUntil } from "rxjs/operators";
 
 import { useDesignSystem } from "src-core/ds";
-import { flex } from "src-core/style";
 
 import { useRect } from "../useRect";
 
 export const UseRectDemo = () => {
   const ds = useDesignSystem();
 
-  const ref = useRef(null);
-  const rect = useRect(ref);
+  const ref = useRef<HTMLDivElement>(null);
+  const [rect, refreshRect] = useRect(ref);
+
+  useLayoutEffect(() => {
+    const intervals = interval(10);
+    const numbers = timer(5000);
+
+    const intervalSub = intervals
+      .pipe(observeOn(animationFrameScheduler), takeUntil(numbers))
+      .subscribe(val => {
+        if (ref.current) {
+          ref.current.style.width = `${val}px`;
+        }
+        refreshRect();
+      });
+
+    const numberSub = numbers.subscribe(() => {
+      if (ref.current) {
+        ref.current.style.width = "100%";
+      }
+      refreshRect();
+    });
+
+    return () => {
+      intervalSub.unsubscribe();
+      numberSub.unsubscribe();
+    };
+  }, []);
 
   return (
-    <div
-      css={{
-        ...flex({
-          alignItems: "center",
-        }),
-      }}>
+    <div>
       <div
+        ref={ref}
         css={{
-          ...flex({}),
-        }}>
-        <div
-          css={{
-            marginTop: 16,
-          }}>
-          left: {rect.left}
-        </div>
-        <div>
-          <div>top: {rect.top}</div>
+          height: 50,
+          border: `1px solid ${ds.color.text}`,
+          boxSizing: "border-box",
+        }}
+      />
 
-          <div
-            ref={ref}
-            css={{
-              width: 300,
-              height: 200,
-              border: `1px solid ${ds.color.text}`,
-            }}
-          />
-
-          <div
-            css={{
-              textAlign: "center",
-            }}>
-            width: {rect.width}
-          </div>
-        </div>
-      </div>
-
-      <div>height: {rect.height}</div>
+      <div>width: {rect.width}</div>
     </div>
   );
 };

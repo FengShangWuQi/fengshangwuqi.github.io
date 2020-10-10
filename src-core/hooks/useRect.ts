@@ -1,4 +1,10 @@
-import { useState, useLayoutEffect, RefObject } from "react";
+import {
+  useState,
+  useLayoutEffect,
+  useEffect,
+  useCallback,
+  RefObject,
+} from "react";
 import {
   animationFrameScheduler,
   fromEvent,
@@ -25,7 +31,9 @@ export const getRect = (targetElm: Element, relatedElm: Element): IRect => {
   };
 };
 
-export const useRect = (elmRef: RefObject<Element | null>) => {
+export const useRect = (
+  elmRef: RefObject<Element | null>,
+): [IRect, () => void] => {
   const defaultRect: IRect = {
     left: 0,
     top: 0,
@@ -35,27 +43,28 @@ export const useRect = (elmRef: RefObject<Element | null>) => {
 
   const [rect, setRect] = useState(defaultRect);
 
+  const refreshRect = useCallback(() => {
+    if (elmRef.current) {
+      setRect(getRect(elmRef.current, document.body));
+    }
+  }, []);
+
+  useEffect(() => {
+    refreshRect();
+  }, []);
+
   useLayoutEffect(() => {
-    const refresh = () => {
-      if (elmRef.current) {
-        setRect(getRect(elmRef.current, document.body));
-      }
-    };
-
-    refresh();
-
     const resize$ = fromEvent(globalThis, "resize");
     const orientationchange$ = fromEvent(globalThis, "orientationchange");
 
     const sub = observableMerge(resize$, orientationchange$)
-      .pipe(observeOn(animationFrameScheduler))
-      .pipe(debounceTime(200))
-      .subscribe(refresh);
+      .pipe(observeOn(animationFrameScheduler), debounceTime(200))
+      .subscribe(refreshRect);
 
     return () => {
       sub.unsubscribe();
     };
   }, []);
 
-  return rect;
+  return [rect, refreshRect];
 };

@@ -62,7 +62,7 @@ const Wrapper = ({
   }) => React.ReactNode;
 }) => {
   const ref = useRef(null);
-  const rect = useRect(ref);
+  const [rect] = useRect(ref);
 
   return (
     <div
@@ -143,7 +143,7 @@ const SocialLink = ({
   children: string;
 }) => {
   const ref = useRef(null);
-  const rect = useRect(ref);
+  const [rect] = useRect(ref);
 
   const DEFAULT_WIDTH = 15;
   const [props, setProps] = useSpring(() => ({

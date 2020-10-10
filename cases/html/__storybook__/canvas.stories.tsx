@@ -7,7 +7,7 @@ export const BarrageDemo = () => {
   const ds = useDesignSystem();
 
   const ref = useRef(null);
-  const rect = useRect(ref);
+  const [rect] = useRect(ref);
 
   const data = Array.from({ length: 30 }, (_, i) => `${String(i).repeat(3)}`);
 

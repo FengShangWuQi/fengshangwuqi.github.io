@@ -73,7 +73,7 @@ export const Container = ({
       {...pickElmAttrs(otherProps)}
       css={{
         height: "calc(100vh - 130px)",
-        overflow: "scroll",
+        overflowY: "scroll",
         "&::-webkit-scrollbar": {
           display: "none",
         },
