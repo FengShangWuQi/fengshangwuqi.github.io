@@ -11,7 +11,7 @@ import { UseLocalStorageDemo } from "./useLocalStorage.stories";
 <UseLocalStorageDemo />
 
 ```js
-export const useLocalStorage = <T = undefined>(
+export const useLocalStorage = <T>(
   key: string,
   initialValue?: T,
 ): [T, (value: any) => void] => {

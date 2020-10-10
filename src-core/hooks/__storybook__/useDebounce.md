@@ -10,9 +10,22 @@ import { UseDebounceDemo } from "./useDebounce.stories";
 
 <UseDebounceDemo />
 
-```jsx {2}
-const [count] = useState(0);
-const debounceCount = useDebounce(count, 200);
+```jsx
+export const useDebounce = <T>(value: T, delay: number) => {
+  const [debouncedValue, setDebouncedValue] = useState < T > value;
+
+  useEffect(() => {
+    const timeoutID = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(timeoutID);
+    };
+  }, [value, delay]);
+
+  return debouncedValue;
+};
 ```
 
 <Source path="src-core/hooks/useDebounce.ts" />

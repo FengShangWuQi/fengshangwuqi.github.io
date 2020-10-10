@@ -1,8 +1,8 @@
 import React from "react";
 
-import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
+import { pickElmAttrs } from "utils";
 
 export const AttrDemo = () => {
   const ds = useDesignSystem();

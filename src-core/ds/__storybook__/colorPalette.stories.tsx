@@ -2,9 +2,9 @@ import React from "react";
 import { rgba, border } from "polished";
 import { random, startCase } from "lodash";
 
-import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 import { grid, flex } from "src-core/style";
+import { pickElmAttrs } from "utils";
 
 type multipleColor =
   | "gray"

@@ -1,8 +1,8 @@
 import React from "react";
 import { Dictionary, isString, startsWith } from "lodash";
 
-import { withoutBubble, pickElmAttrs } from "src-core/react";
 import { useLocation, useMatch, toSearchString } from "src-core/router";
+import { withoutBubble, pickElmAttrs } from "utils";
 
 import { segmentize, SearchQuery } from "src-core/router";
 

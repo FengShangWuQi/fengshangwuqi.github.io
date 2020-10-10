@@ -3,7 +3,7 @@ import { size } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
-import { pickElmAttrs } from "src-core/react";
+import { pickElmAttrs } from "utils";
 
 export interface IPaginationProps {
   total: number;

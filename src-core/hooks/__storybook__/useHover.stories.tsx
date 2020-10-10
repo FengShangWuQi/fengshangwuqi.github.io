@@ -8,7 +8,7 @@ import { useHover } from "../useHover";
 export const UseHoverDemo = () => {
   const ds = useDesignSystem();
 
-  const [hoverRef, isHovered] = useHover();
+  const [hoverRef, isHovered] = useHover<HTMLDivElement>();
 
   return (
     <div

@@ -1,9 +1,9 @@
 import React from "react";
 import { clearFix } from "polished";
 
-import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
+import { pickElmAttrs } from "utils";
 
 export const HorizontalTb = () => (
   <div

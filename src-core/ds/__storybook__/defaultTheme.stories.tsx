@@ -1,9 +1,9 @@
 import React from "react";
 import { rgba, border } from "polished";
 
-import { pickElmAttrs } from "src-core/react";
 import { useDesignSystem, colorPalette } from "src-core/ds";
 import { grid } from "src-core/style";
+import { pickElmAttrs } from "utils";
 
 export const DefaultThemeDemo = () => {
   const ds = useDesignSystem();

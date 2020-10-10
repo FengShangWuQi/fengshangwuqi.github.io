@@ -15,7 +15,7 @@ export const useDesignSystem = () => {
   return useContext(ThemeContext as Context<ITheme>);
 };
 
-// APP.tsx
+// app.tsx
 const App = () => {
   const ds = useDesignSystem();
 

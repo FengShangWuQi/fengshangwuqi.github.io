@@ -3,8 +3,9 @@ import { Global } from "@emotion/core";
 import { rgba, border, margin, padding } from "polished";
 import produce from "immer";
 
-import { Bootstrap, pickElmAttrs } from "src-core/react";
+import { Bootstrap } from "src-core/react";
 import { useDesignSystem, defaultTheme, PrismTheme } from "src-core/ds";
+import { pickElmAttrs } from "utils";
 
 export const storybookTheme = produce(defaultTheme, theme => {
   theme.color.primary = "#c2185b";
