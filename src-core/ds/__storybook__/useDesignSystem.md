@@ -6,9 +6,8 @@ title: useDesignSystem
 
 import { Source } from "src-app/storybook/common/Source";
 
-```js {7,12}
+```js {6,11}
 // useDesignSystem.ts
-import { Context, useContext } from "react";
 import { ThemeContext } from "@emotion/core";
 import { ITheme } from "./defaultTheme";
 

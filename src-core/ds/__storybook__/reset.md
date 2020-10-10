@@ -6,12 +6,9 @@ title: reset
 
 import { Source } from "src-app/storybook/common/Source";
 
-```jsx {12}
-import React from "react";
+```jsx {9}
 import { Global } from "@emotion/core";
 import { normalize } from "polished";
-
-import { useDesignSystem } from "src-core/ds";
 
 export const DSReset = () => {
   const ds = useDesignSystem();

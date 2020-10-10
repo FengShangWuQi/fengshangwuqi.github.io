@@ -10,13 +10,29 @@ import { UseVisibilitySensorDemo } from "./useVisibilitySensor.stories";
 
 <UseVisibilitySensorDemo />
 
-```jsx {4}
-const rootRef = useRef(null);
-const footerRef = useRef(null);
+```jsx
+export const useVisibilitySensor = (
+  ref: RefObject<Element>,
+  options: IntersectionObserverInit,
+) => {
+  const [isIntersecting, setIntersecting] = useState(false);
 
-const isVisible = useVisibilitySensor(footerRef, {
-  root: rootRef.current,
-});
+  useEffect(() => {
+    const io = new IntersectionObserver(([entry]) => {
+      setIntersecting(entry.isIntersecting);
+    }, options);
+
+    if (ref.current) {
+      io.observe(ref.current);
+    }
+
+    return () => {
+      io.disconnect();
+    };
+  }, []);
+
+  return isIntersecting;
+};
 ```
 
 <Source path="src-core/hooks/useVisibilitySensor.ts" />
