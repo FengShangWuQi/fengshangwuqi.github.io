@@ -8,7 +8,7 @@ export const UseLocalStorageDemo = () => {
   const ds = useDesignSystem();
 
   const key = "count";
-  const [storedValue, setStoredValue] = useLocalStorage(key, 0);
+  const [storedValue, setStoredValue] = useLocalStorage<number>(key);
 
   return (
     <div>
@@ -21,7 +21,7 @@ export const UseLocalStorageDemo = () => {
           marginTop: ds.spacing[2],
         }}
         onClick={() => {
-          setStoredValue((count: number) => count + 1);
+          setStoredValue((count = 0) => count + 1);
         }}>
         click
       </button>

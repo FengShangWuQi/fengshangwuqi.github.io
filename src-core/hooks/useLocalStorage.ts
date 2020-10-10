@@ -1,27 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { isFunction } from "lodash";
 
-export const useLocalStorage = (key: string, initialValue: any) => {
-  const [storedValue, setStoredValue] = useState(initialValue);
-
-  const setValue = (value: any) => {
+export const useLocalStorage = <T = undefined>(
+  key: string,
+  initialValue?: T,
+): [T, (value: any) => void] => {
+  const [storedValue, setStoredValue] = useState<T>(() => {
     try {
-      const valueToStore = isFunction(value) ? value(storedValue) : value;
-      setStoredValue(valueToStore);
-      window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      const item = globalThis.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
+    } catch (err) {
+      console.error(err);
+      return initialValue;
+    }
+  });
+
+  const updateStoredValue = (value: any) => {
+    try {
+      const newStoredValue = isFunction(value) ? value(storedValue) : value;
+      setStoredValue(newStoredValue);
+      globalThis.localStorage.setItem(key, JSON.stringify(newStoredValue));
     } catch (err) {
       console.error(err);
     }
   };
 
-  useEffect(() => {
-    try {
-      const item = window.localStorage.getItem(key);
-      item && setStoredValue(JSON.parse(item));
-    } catch (err) {
-      console.error(err);
-    }
-  }, []);
-
-  return [storedValue, setValue];
+  return [storedValue, updateStoredValue];
 };
