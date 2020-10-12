@@ -10,7 +10,7 @@ import { MqDemo } from "./mq.stories";
 
 <MqDemo />
 
-```jsx
+```js {22}
 import facepaint from "facepaint";
 
 export enum breakpoint {
@@ -31,6 +31,10 @@ export const mq = (breakpoints: breakpointKey[], style: CSSObject) => {
 
   return dynamicStyle;
 };
+
+styled.div(mq(["lg"], {
+  color: [ds.color.secondary, ds.color.text],
+}))
 ```
 
 <Source path="src-core/style/mq.ts" />
