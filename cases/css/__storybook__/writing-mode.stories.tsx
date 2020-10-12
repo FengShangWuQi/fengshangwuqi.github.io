@@ -2,24 +2,7 @@ import React from "react";
 import { clearFix } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { flex } from "src-core/style";
 import { pickElmAttrs } from "utils";
-
-export const HorizontalTb = () => (
-  <div
-    css={{
-      ...flex({ justifyContent: "center" }),
-    }}>
-    <Poetry
-      css={{
-        textAlign: "center",
-        writingMode: "horizontal-tb",
-      }}
-    />
-  </div>
-);
-
-export const VerticalLr = () => <Poetry css={{ writingMode: "vertical-lr" }} />;
 
 export const VerticalRl = () => (
   <div
