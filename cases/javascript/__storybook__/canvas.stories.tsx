@@ -17,7 +17,7 @@ export const BarrageDemo = () => {
       css={{
         width: "100%",
         height: 300,
-        background: ds.colorPalette.gray[800],
+        background: ds.colorPalette.teal[800],
       }}>
       <Barrage width={rect.width} height={rect.height} data={data} />
     </div>
@@ -33,13 +33,15 @@ const Barrage = ({
   height: number;
   data: string[];
 }) => {
+  const ds = useDesignSystem();
+
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  const barrageArr: (() => void)[] = [];
-  let animationID: number;
-
   useLayoutEffect(() => {
-    const ctx = canvasRef.current!.getContext("2d");
+    const barrageArr: (() => void)[] = [];
+    let animationID: number;
+
+    const ctx = canvasRef.current!.getContext("2d") as CanvasRenderingContext2D;
 
     const barrageDraw = (
       value: string,
@@ -56,15 +58,15 @@ const Barrage = ({
         dx = 1 + Math.random() * 3;
       }
 
-      ctx!.font = "1.5rem Microsoft YaHei";
-      ctx!.fillStyle = "#F2961C";
-      ctx!.fillText(value, x, y);
+      ctx.font = "1.5rem Microsoft YaHei";
+      ctx.fillStyle = ds.colorPalette.white;
+      ctx.fillText(value, x, y);
     };
 
     const barrageAnimate = () => {
       animationID = requestAnimationFrame(barrageAnimate);
 
-      ctx!.clearRect(0, 0, width, height);
+      ctx.clearRect(0, 0, width, height);
 
       for (let i = 0; i < barrageArr.length; i++) {
         const draw = barrageArr[i];
