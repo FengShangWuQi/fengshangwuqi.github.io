@@ -46,7 +46,7 @@ const BackFaceVisibility = ({
           ...size("100%"),
           transition: "all 0.6s cubic-bezier(0.37, 0.74, 0.15, 1.65)",
           transformStyle: "preserve-3d",
-          "& div": {
+          "& > div": {
             ...position("absolute"),
             ...size("100%"),
             borderRadius: 4,

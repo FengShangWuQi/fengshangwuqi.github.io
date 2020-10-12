@@ -15,12 +15,13 @@ import { BackFaceVisibilityDemo } from "./backface-visibility.stories";
   css={{
     ...position("relative"),
     transformStyle: "preserve-3d",
-    "& div": {
+    "& > div": {
       ...position("absolute"),
       backfaceVisibility: hidden ? "hidden" : "visible",
     },
   }}>
-  ...
+  <div css={{ transform: "rotateY(-180deg) translateZ(25px)" }}>backface</div>
+  <div>visible</div>
 </div>
 ```
 
