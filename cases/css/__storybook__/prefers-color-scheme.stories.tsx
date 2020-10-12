@@ -14,11 +14,11 @@ export const PrefersColorSchemeDemo = () => {
         fontSize: ds.size["2xl"],
         "@media (prefers-color-scheme: dark)": {
           color: ds.colorPalette.white,
-          background: ds.colorPalette.teal[800],
+          background: ds.color.secondary,
         },
         "@media (prefers-color-scheme: light)": {
           ...border(1, "solid", ds.colorPalette.black),
-          color: ds.colorPalette.teal[800],
+          color: ds.color.secondary,
           background: ds.colorPalette.white,
         },
       }}>

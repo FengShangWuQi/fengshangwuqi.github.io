@@ -17,7 +17,7 @@ export const BarrageDemo = () => {
       css={{
         width: "100%",
         height: 300,
-        background: ds.colorPalette.teal[800],
+        background: ds.color.secondary,
       }}>
       <Barrage width={rect.width} height={rect.height} data={data} />
     </div>
