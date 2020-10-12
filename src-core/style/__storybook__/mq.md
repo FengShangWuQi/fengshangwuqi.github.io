@@ -1,7 +1,7 @@
 ---
 group: core
 module: style
-name: media-queries
+name: mq
 ---
 
 import { Source } from "src-app/storybook/common/Source";
