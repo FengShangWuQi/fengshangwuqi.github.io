@@ -24,9 +24,7 @@ import { AttrDemo } from "./attr.stories";
         display: "inline",
       },
     }}></Radio>
-  <Label htmlFor="A" data-tip="tip">
-    选我
-  </Label>
+  <Label htmlFor="A" data-tip="tip"></Label>
 </Row>
 ```
 
