@@ -10,7 +10,7 @@ import { PieChart, Checkerboard, Starburst } from "./conic-gradient.stories";
 
 <PieChart />
 
-```jsx {4}
+```js {4}
 // pieChart
 styled.div({
   background:
@@ -21,7 +21,7 @@ styled.div({
 
 <Checkerboard />
 
-```jsx {3}
+```jss {3}
 // checkerboard
 styled.div({
   background: "conic-gradient(white 25%, black 0 50%, white 0 75%, black 0)",
@@ -31,13 +31,14 @@ styled.div({
 
 <Starburst />
 
-```jsx {3}
+```js {3}
 // starburst
 styled.div({
   background: `repeating-conic-gradient(#0ac 0 15deg, ${lighten(
     0.25,
     "#0ac",
   )} 0 30deg)`,
+  borderRadius: "50%",
 });
 ```
 

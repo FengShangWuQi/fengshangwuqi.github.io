@@ -1,5 +1,5 @@
 import React from "react";
-import { border, lighten } from "polished";
+import { size, border, lighten } from "polished";
 
 import { pickElmAttrs } from "utils";
 
@@ -7,8 +7,7 @@ const Block = ({ ...otherProps }) => (
   <div
     {...pickElmAttrs(otherProps)}
     css={{
-      width: 160,
-      height: 160,
+      ...size(160),
     }}></div>
 );
 
@@ -36,11 +35,11 @@ export const Checkerboard = () => (
 export const Starburst = () => (
   <Block
     css={{
-      borderRadius: "50%",
       background: `repeating-conic-gradient(#0ac 0 15deg, ${lighten(
         0.25,
         "#0ac",
       )} 0 30deg)`,
+      borderRadius: "50%",
     }}
   />
 );
