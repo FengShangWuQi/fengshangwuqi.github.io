@@ -1,7 +1,7 @@
 ---
 group: cases
 module: css
-title: BEM
+name: BEM
 ---
 
 import { Source } from "src-app/storybook/common/Source";

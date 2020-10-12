@@ -1,7 +1,7 @@
 ---
 group: cases
 module: css
-title: writing-mode
+name: writing-mode
 ---
 
 import { Source } from "src-app/storybook/common/Source";

@@ -19,7 +19,7 @@ module.exports = async ({ graphql, actions, reporter }) => {
             frontmatter {
               group
               module
-              title
+              name
             }
           }
         }
@@ -34,22 +34,42 @@ module.exports = async ({ graphql, actions, reporter }) => {
   const storybooks = result.data.allMdx.edges;
 
   const storybookMap = storybooks.reduce((prev, { node }) => {
-    const { group, module, title } = node.frontmatter;
+    const { group, module, name } = node.frontmatter;
 
     if (prev.has(group)) {
       const groupValue = prev.get(group);
       prev.set(group, {
         ...groupValue,
-        [module]: groupValue[module] ? [...groupValue[module], title] : [title],
+        [module]: groupValue[module] ? [...groupValue[module], name] : [name],
       });
     } else {
-      prev.set(group, { [module]: [title] });
+      prev.set(group, { [module]: [name] });
     }
 
     return prev;
   }, new Map());
 
   const groups = Array.from(storybookMap.keys());
+
+  storybooks.forEach(sb => {
+    const {
+      node: {
+        fields: { slug },
+      },
+    } = sb;
+
+    const group = slug.slice(0, slug.indexOf("?"));
+
+    createPage({
+      path: slug,
+      component: groupTemplate,
+      context: {
+        group,
+        groups,
+        modules: storybookMap.get(group),
+      },
+    });
+  });
 
   groups.map(group => {
     createPage({

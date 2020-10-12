@@ -1,7 +1,7 @@
 ---
 group: core
 module: hooks
-title: useHover
+name: useHover
 ---
 
 import { Source } from "src-app/storybook/common/Source";

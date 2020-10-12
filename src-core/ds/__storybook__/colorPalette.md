@@ -1,7 +1,7 @@
 ---
 group: core
 module: ds
-title: colorPalette
+name: colorPalette
 ---
 
 import { Source } from "src-app/storybook/common/Source";

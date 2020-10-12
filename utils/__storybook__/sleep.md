@@ -1,7 +1,7 @@
 ---
 group: core
 module: utils
-title: sleep
+name: sleep
 ---
 
 import { Source } from "src-app/storybook/common/Source";

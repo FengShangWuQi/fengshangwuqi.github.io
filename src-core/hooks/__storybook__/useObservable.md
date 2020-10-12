@@ -1,7 +1,7 @@
 ---
 group: core
 module: hooks
-title: useObservable
+name: useObservable
 ---
 
 import { Source } from "src-app/storybook/common/Source";

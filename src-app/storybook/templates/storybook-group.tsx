@@ -26,7 +26,7 @@ export const groupsQuery = graphql`
           frontmatter {
             group
             module
-            title
+            name
           }
         }
       }
@@ -41,25 +41,24 @@ const StorybookGroup = ({
 }: any) => {
   const { title: siteTitle } = site.siteMetadata;
 
-  const { module, title } = parseSearchString(location.search) as {
+  const { module, name } = parseSearchString(location.search) as {
     module?: string;
-    title?: string;
+    name?: string;
   };
 
   const [storybooks, setStorybooks] = useState(allMdx.edges);
 
   useEffect(() => {
-    if (module && title) {
+    if (module && name) {
       const newStorybooks = allMdx.edges.find(
         ({ node }: any) =>
-          node.frontmatter.module === module &&
-          node.frontmatter.title === title,
+          node.frontmatter.module === module && node.frontmatter.name === name,
       );
       setStorybooks([newStorybooks]);
     } else {
       setStorybooks(allMdx.edges);
     }
-  }, [module, title]);
+  }, [module, name]);
 
   return (
     <Layout>
@@ -81,10 +80,10 @@ const StorybookGroup = ({
             gridColumnGap: 40,
           }),
         }}>
-        <SideBar group={group} modules={modules} />
+        <SideBar pathPrefix={location.pathname} modules={modules} />
         <Container>
           {storybooks.map(({ node }: any) => (
-            <Content key={node.id} title={node.frontmatter.title}>
+            <Content key={node.id} title={node.frontmatter.name}>
               <MDXRenderer>{node.body}</MDXRenderer>
             </Content>
           ))}

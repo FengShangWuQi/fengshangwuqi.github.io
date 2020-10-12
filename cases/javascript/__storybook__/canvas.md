@@ -1,7 +1,7 @@
 ---
 group: cases
 module: javascript
-title: canvas
+name: canvas
 ---
 
 import { Source } from "src-app/storybook/common/Source";

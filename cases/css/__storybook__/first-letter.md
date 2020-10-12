@@ -1,7 +1,7 @@
 ---
 group: cases
 module: css
-title: first-letter
+name: first-letter
 ---
 
 import { Source } from "src-app/storybook/common/Source";

@@ -1,7 +1,7 @@
 ---
 group: core
 module: hooks
-title: useLocalStorage
+name: useLocalStorage
 ---
 
 import { Source } from "src-app/storybook/common/Source";

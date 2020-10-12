@@ -1,7 +1,7 @@
 ---
 group: core
 module: ds
-title: useDesignSystem
+name: useDesignSystem
 ---
 
 import { Source } from "src-app/storybook/common/Source";

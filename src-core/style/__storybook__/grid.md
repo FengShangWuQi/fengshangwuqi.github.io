@@ -1,7 +1,7 @@
 ---
 group: core
 module: style
-title: grid
+name: grid
 ---
 
 import { Source } from "src-app/storybook/common/Source";

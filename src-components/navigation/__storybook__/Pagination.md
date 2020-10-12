@@ -1,7 +1,7 @@
 ---
 group: components
 module: navigation
-title: Pagination
+name: Pagination
 ---
 
 import { Source } from "src-app/storybook/common/Source";

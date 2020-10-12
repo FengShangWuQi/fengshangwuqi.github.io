@@ -1,7 +1,7 @@
 ---
 group: core
 module: ds
-title: reset
+name: reset
 ---
 
 import { Source } from "src-app/storybook/common/Source";

@@ -1,7 +1,7 @@
 ---
 group: cases
 module: css
-title: mix-blend-mode
+name: mix-blend-mode
 ---
 
 import { Source } from "src-app/storybook/common/Source";

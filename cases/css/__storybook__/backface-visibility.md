@@ -1,7 +1,7 @@
 ---
 group: cases
 module: css
-title: backface-visibility
+name: backface-visibility
 ---
 
 import { Source } from "src-app/storybook/common/Source";

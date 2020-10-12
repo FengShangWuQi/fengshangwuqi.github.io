@@ -1,7 +1,7 @@
 ---
 group: cases
 module: css
-title: prefers-color-scheme
+name: prefers-color-scheme
 ---
 
 import { Source } from "src-app/storybook/common/Source";

@@ -11,10 +11,10 @@ import { Menu, MenuItem, MenuMode } from "src-components/navigation/Menu";
 import { Container } from "../common/Layout";
 
 export const SideBar = ({
-  group,
+  pathPrefix,
   modules,
 }: {
-  group: string;
+  pathPrefix: string;
   modules: Dictionary<string[]>;
 }) => {
   const ds = useDesignSystem();
@@ -36,15 +36,15 @@ export const SideBar = ({
             {module}
           </div>
           <Menu mode={MenuMode.VERTICAL}>
-            {modules[module].map(title => (
+            {modules[module].map(name => (
               <Link
                 css={{
                   color: ds.color.text,
                   fontSize: ds.size.sm,
                 }}
-                key={title}
-                to={`/${group}${toSearchString({ module, title })}`}>
-                <MenuItem>{title}</MenuItem>
+                key={name}
+                to={`${pathPrefix}${toSearchString({ module, name })}`}>
+                <MenuItem>{name}</MenuItem>
               </Link>
             ))}
           </Menu>

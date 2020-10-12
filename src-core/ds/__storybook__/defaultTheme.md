@@ -1,7 +1,7 @@
 ---
 group: core
 module: ds
-title: defaultTheme
+name: defaultTheme
 ---
 
 import { Source } from "src-app/storybook/common/Source";

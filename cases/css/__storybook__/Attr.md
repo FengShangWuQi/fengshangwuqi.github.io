@@ -1,7 +1,7 @@
 ---
 group: cases
 module: css
-title: attr
+name: attr
 ---
 
 import { Source } from "src-app/storybook/common/Source";

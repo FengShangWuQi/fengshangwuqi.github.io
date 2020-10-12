@@ -1,7 +1,7 @@
 ---
 group: components
 module: basic
-title: Icon
+name: Icon
 ---
 
 import { Source } from "src-app/storybook/common/Source";

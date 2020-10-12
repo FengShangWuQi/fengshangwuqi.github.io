@@ -1,7 +1,7 @@
 ---
 group: core
 module: style
-title: flex
+name: flex
 ---
 
 import { Source } from "src-app/storybook/common/Source";

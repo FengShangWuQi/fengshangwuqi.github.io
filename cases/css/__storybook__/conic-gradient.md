@@ -1,7 +1,7 @@
 ---
 group: cases
 module: css
-title: conic-gradient
+name: conic-gradient
 ---
 
 import { Source } from "src-app/storybook/common/Source";

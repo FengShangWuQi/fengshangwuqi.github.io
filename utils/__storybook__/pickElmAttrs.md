@@ -1,7 +1,7 @@
 ---
 group: core
 module: utils
-title: pickElmAttrs
+name: pickElmAttrs
 ---
 
 import { Source } from "src-app/storybook/common/Source";

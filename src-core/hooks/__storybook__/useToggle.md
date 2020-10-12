@@ -1,7 +1,7 @@
 ---
 group: core
 module: hooks
-title: useToggle
+name: useToggle
 ---
 
 import { Source } from "src-app/storybook/common/Source";

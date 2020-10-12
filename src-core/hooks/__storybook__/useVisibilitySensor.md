@@ -1,7 +1,7 @@
 ---
 group: core
 module: hooks
-title: useVisibilitySensor
+name: useVisibilitySensor
 ---
 
 import { Source } from "src-app/storybook/common/Source";

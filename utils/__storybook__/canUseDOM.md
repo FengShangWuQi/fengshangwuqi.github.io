@@ -1,7 +1,7 @@
 ---
 group: core
 module: utils
-title: canUseDOM
+name: canUseDOM
 ---
 
 import { Source } from "src-app/storybook/common/Source";

@@ -3,12 +3,12 @@ module.exports = ({ node, actions }) => {
 
   switch (node.internal.type) {
     case "Mdx": {
-      const { group, module, title } = node.frontmatter;
+      const { group, module, name } = node.frontmatter;
 
       createNodeField({
         name: "slug",
         node,
-        value: `${group}/${module}/${title}`,
+        value: `${group}?module=${module}&name=${name}`,
       });
       break;
     }

@@ -1,7 +1,7 @@
 ---
 group: core
 module: style
-title: fluid-typography
+name: fluid-typography
 ---
 
 import { Source } from "src-app/storybook/common/Source";

@@ -1,7 +1,7 @@
 ---
 group: core
 module: hooks
-title: useRect
+name: useRect
 ---
 
 import { Source } from "src-app/storybook/common/Source";

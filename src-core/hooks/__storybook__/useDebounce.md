@@ -1,7 +1,7 @@
 ---
 group: core
 module: hooks
-title: useDebounce
+name: useDebounce
 ---
 
 import { Source } from "src-app/storybook/common/Source";
