@@ -8,13 +8,13 @@ import { pickElmAttrs } from "utils";
 export interface IPaginationProps {
   total: number;
   size: number;
-  offset: number;
+  offset?: number;
   onChange?: (page: number) => void;
 }
 
 export const Pagination = ({
   total,
-  offset,
+  offset = 0,
   size,
   onChange,
   ...otherProps

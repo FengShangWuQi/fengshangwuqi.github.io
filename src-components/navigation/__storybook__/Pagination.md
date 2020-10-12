@@ -10,7 +10,7 @@ import { Pagination } from "../Pagination";
 
 <Pagination total={100} size={10} offset={10} />
 
-```jsx
+```js
 <Pagination total={100} size={10} offset={10} />
 ```
 
