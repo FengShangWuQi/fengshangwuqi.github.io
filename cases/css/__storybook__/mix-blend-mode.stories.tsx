@@ -1,7 +1,11 @@
 import React from "react";
 import { position } from "polished";
 
+import { useDesignSystem } from "src-core/ds";
+
 export const MixBlendModeDemo = () => {
+  const ds = useDesignSystem();
+
   return (
     <div
       css={{
@@ -10,7 +14,7 @@ export const MixBlendModeDemo = () => {
         textTransform: "uppercase",
         "& h1": {
           ...position("absolute"),
-          fontSize: 96,
+          fontSize: ds.size["6xl"],
         },
       }}>
       <h1
