@@ -4,6 +4,7 @@ import { border } from "polished";
 import { Dictionary } from "lodash";
 
 import { useDesignSystem } from "src-core/ds";
+import { toSearchString } from "utils";
 
 import { Menu, MenuItem, MenuMode } from "src-components/navigation/Menu";
 
@@ -42,7 +43,7 @@ export const SideBar = ({
                   fontSize: ds.size.sm,
                 }}
                 key={title}
-                to={`/${group}/${module}/${title}`}>
+                to={`/${group}${toSearchString({ module, title })}`}>
                 <MenuItem>{title}</MenuItem>
               </Link>
             ))}

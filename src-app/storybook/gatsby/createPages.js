@@ -6,7 +6,6 @@ module.exports = async ({ graphql, actions, reporter }) => {
   const templatePath = "src-app/storybook/templates";
   const indexTemplate = resolve(`${templatePath}/storybook-index.tsx`);
   const groupTemplate = resolve(`${templatePath}/storybook-group.tsx`);
-  const storybookTemplate = resolve(`${templatePath}/storybook-page.tsx`);
 
   const result = await graphql(`
     query {
@@ -51,18 +50,6 @@ module.exports = async ({ graphql, actions, reporter }) => {
   }, new Map());
 
   const groups = Array.from(storybookMap.keys());
-
-  storybooks.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: storybookTemplate,
-      context: {
-        id: node.id,
-        groups,
-        modules: storybookMap.get(node.frontmatter.group),
-      },
-    });
-  });
 
   groups.map(group => {
     createPage({

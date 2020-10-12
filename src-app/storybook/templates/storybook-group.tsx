@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 
 import { grid } from "src-core/style";
+import { parseSearchString } from "utils";
 
 import { Layout, Center, Container } from "../common/Layout";
 import { Header } from "../common/Header";
@@ -24,6 +25,7 @@ export const groupsQuery = graphql`
           body
           frontmatter {
             group
+            module
             title
           }
         }
@@ -33,11 +35,31 @@ export const groupsQuery = graphql`
 `;
 
 const StorybookGroup = ({
+  location,
   data: { allMdx, site },
   pageContext: { group, groups, modules },
 }: any) => {
   const { title: siteTitle } = site.siteMetadata;
-  const storybooks = allMdx.edges;
+
+  const { module, title } = parseSearchString(location.search) as {
+    module?: string;
+    title?: string;
+  };
+
+  const [storybooks, setStorybooks] = useState(allMdx.edges);
+
+  useEffect(() => {
+    if (module && title) {
+      const newStorybooks = allMdx.edges.find(
+        ({ node }: any) =>
+          node.frontmatter.module === module &&
+          node.frontmatter.title === title,
+      );
+      setStorybooks([newStorybooks]);
+    } else {
+      setStorybooks(allMdx.edges);
+    }
+  }, [module, title]);
 
   return (
     <Layout>
