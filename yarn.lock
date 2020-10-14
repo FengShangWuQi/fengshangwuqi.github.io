@@ -2566,18 +2566,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@*":
+"@types/jest@*", "@types/jest@26.0.14":
   version "26.0.14"
   resolved "https://registry.npm.taobao.org/@types/jest/download/@types/jest-26.0.14.tgz?cache=0&sync_timestamp=1600271373486&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjest%2Fdownload%2F%40types%2Fjest-26.0.14.tgz#078695f8f65cb55c5a98450d65083b2b73e5a3f3"
   integrity sha1-B4aV+PZctVxamEUNZQg7K3Plo/M=
-  dependencies:
-    jest-diff "^25.2.1"
-    pretty-format "^25.2.1"
-
-"@types/jest@26.0.10":
-  version "26.0.10"
-  resolved "https://registry.npm.taobao.org/@types/jest/download/@types/jest-26.0.10.tgz?cache=0&sync_timestamp=1600271373486&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjest%2Fdownload%2F%40types%2Fjest-26.0.10.tgz#8faf7e9756c033c39014ae76a7329efea00ea607"
-  integrity sha1-j69+l1bAM8OQFK52pzKe/qAOpgc=
   dependencies:
     jest-diff "^25.2.1"
     pretty-format "^25.2.1"
