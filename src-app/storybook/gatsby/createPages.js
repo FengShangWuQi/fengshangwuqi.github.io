@@ -13,9 +13,6 @@ module.exports = async ({ graphql, actions, reporter }) => {
         edges {
           node {
             id
-            fields {
-              slug
-            }
             frontmatter {
               group
               module
@@ -50,26 +47,6 @@ module.exports = async ({ graphql, actions, reporter }) => {
   }, new Map());
 
   const groups = Array.from(storybookMap.keys());
-
-  storybooks.forEach(sb => {
-    const {
-      node: {
-        fields: { slug },
-      },
-    } = sb;
-
-    const group = slug.slice(0, slug.indexOf("?"));
-
-    createPage({
-      path: slug,
-      component: groupTemplate,
-      context: {
-        group,
-        groups,
-        modules: storybookMap.get(group),
-      },
-    });
-  });
 
   groups.map(group => {
     createPage({
