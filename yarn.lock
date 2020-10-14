@@ -2599,15 +2599,10 @@
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash@*", "@types/lodash@^4.14.92":
+"@types/lodash@*", "@types/lodash@4.14.162", "@types/lodash@^4.14.92":
   version "4.14.162"
   resolved "https://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.162.tgz?cache=0&sync_timestamp=1602386890452&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Flodash%2Fdownload%2F%40types%2Flodash-4.14.162.tgz#65d78c397e0d883f44afbf1f7ba9867022411470"
   integrity sha1-ZdeMOX4NiD9Er78fe6mGcCJBFHA=
-
-"@types/lodash@4.14.160":
-  version "4.14.160"
-  resolved "https://registry.npm.taobao.org/@types/lodash/download/@types/lodash-4.14.160.tgz?cache=0&sync_timestamp=1602386890452&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Flodash%2Fdownload%2F%40types%2Flodash-4.14.160.tgz#2f1bba6500bc3cb9a732c6d66a083378fb0b0b29"
-  integrity sha1-Lxu6ZQC8PLmnMsbWaggzePsLCyk=
 
 "@types/mdast@^3.0.0":
   version "3.0.3"
