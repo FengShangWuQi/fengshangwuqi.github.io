@@ -1,2 +1,7 @@
 .git/
 node_modules/
+
+.cache/
+public/
+
+.env*

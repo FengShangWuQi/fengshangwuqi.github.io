@@ -1,16 +1,13 @@
 FROM node:latest as builder
 
-ENV APP_DIR=/src-blog
-
 WORKDIR $APP_DIR
 
-COPY package.json $APP_DIR
-COPY *.lock $APP_DIR
-COPY packages $APP_DIR/packages
-RUN yarn && yarn pkg:build 
+COPY package.json ./
+COPY *.lock ./
+RUN yarn
 
-COPY . $APP_DIR
-RUN yarn appkit build blog
+COPY . .
+RUN yarn gatsby build --prefix-paths
 
 FROM nginx:alpine
 
