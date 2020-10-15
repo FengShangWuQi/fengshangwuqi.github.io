@@ -45,8 +45,8 @@ jobs:
           VERSION=latest
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
-          TAGS="${DOCKER_IMAGE}:${VERSION},${DOCKER_IMAGE}:sha-${GITHUB_SHA::8}"
           fi
+          TAGS="${DOCKER_IMAGE}:${VERSION},${DOCKER_IMAGE}:sha-${GITHUB_SHA::8}"
           echo ::set-output name=version::${VERSION}
           echo ::set-output name=tags::${TAGS}
           echo ::set-output name=created::$(date -u +'%Y-%m-%d')
@@ -81,5 +81,6 @@ jobs:
             org.opencontainers.image.created=${{ steps.prep.outputs.created }}
             org.opencontainers.image.revision=${{ github.sha }}
             org.opencontainers.image.licenses=${{ fromJson(steps.repo.outputs.result).license.spdx_id }}
+
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
