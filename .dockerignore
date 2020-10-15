@@ -4,4 +4,9 @@ node_modules/
 .cache/
 public/
 
-.env*
+coverage
+
+.env
+.env.*
+!.env.blog
+!.env.storybook
