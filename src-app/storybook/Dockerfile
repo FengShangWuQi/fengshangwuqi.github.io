@@ -1,6 +1,6 @@
 FROM node:latest as builder
 
-ENV APP_DIR=/src-blog
+ENV APP_DIR=/src-storybook
 
 WORKDIR $APP_DIR
 
@@ -9,10 +9,10 @@ COPY *.lock ./
 RUN yarn
 
 COPY . .
-RUN yarn appkit build blog
+RUN yarn appkit build storybook
 
 FROM nginx:alpine
 
-COPY --from=builder $APP_DIR/public /usr/share/nginx/html
+COPY --from=builder /src-storybook/public /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
