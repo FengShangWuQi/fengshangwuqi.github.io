@@ -113,6 +113,9 @@ typings/
 .env
 .env.*
 
+!.env.blog
+!.env.storybook
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
