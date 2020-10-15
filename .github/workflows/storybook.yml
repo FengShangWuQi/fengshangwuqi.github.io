@@ -70,6 +70,7 @@ jobs:
           context: .
           file: ./src-app/storybook/Dockerfile
           platforms: linux/amd64
+          push: true
           tags: ${{ steps.prep.outputs.tags }}
           labels: |
             maintainer=fengshangwuqi <fengshangwuqi@gmail.com>
