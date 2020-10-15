@@ -1,5 +1,7 @@
 FROM node:latest as builder
 
+ENV APP_DIR=/src-blog
+
 WORKDIR $APP_DIR
 
 COPY package.json ./
