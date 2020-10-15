@@ -12,9 +12,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-
-      - run: yarn
-      - run: yarn gatsby build --prefix-paths
         env:
           APP: blog
           META_AUTHOR: 枫上雾棋
@@ -25,6 +22,9 @@ jobs:
           SOURCES: posts,zhoubao
           SIZE: 6
           TRACKING_ID: UA-114534441-1
+
+      - run: yarn
+      - run: yarn gatsby build --prefix-paths
 
       - uses: peaceiris/actions-gh-pages@v3
         with:
@@ -106,3 +106,14 @@ jobs:
             org.opencontainers.image.created=${{ steps.prep.outputs.created }}
             org.opencontainers.image.revision=${{ github.sha }}
             org.opencontainers.image.licenses=${{ fromJson(steps.repo.outputs.result).license.spdx_id }}
+        env:
+          APP_DIR: /src-blog
+          APP: blog
+          META_AUTHOR: 枫上雾棋
+          META_TITLE: 枫上雾棋的 blog
+          META_DECS: 枫上雾棋的 blog
+          SITE_URL: https://blog.fengshangwuqi.com
+          PATH_PREFIX: /
+          SOURCES: posts,zhoubao
+          SIZE: 6
+          TRACKING_ID: UA-114534441-1
