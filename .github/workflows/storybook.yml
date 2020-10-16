@@ -7,22 +7,22 @@ on:
       - "v*.*.*"
 
 jobs:
-  deploy-site:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
+  # deploy-site:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-node@v1
+  #       with:
+  #         node-version: "12.x"
 
-      - run: yarn
-      - run: yarn appkit build storybook
+  #     - run: yarn
+  #     - run: yarn appkit build storybook
 
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.REPO_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./public
+  #     - uses: peaceiris/actions-gh-pages@v3
+  #       with:
+  #         github_token: ${{ secrets.REPO_TOKEN }}
+  #         publish_branch: gh-pages
+  #         publish_dir: ./public
 
   push-docker-image:
     runs-on: ubuntu-latest
