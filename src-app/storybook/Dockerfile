@@ -1,4 +1,4 @@
-FROM node:latest as builder
+FROM node:lts-alpine as builder
 
 ENV APP_DIR=/src-storybook
 
@@ -11,7 +11,7 @@ RUN yarn
 COPY . .
 RUN yarn appkit build storybook
 
-FROM nginx:alpine
+FROM nginx:stable-alpine
 
 COPY --from=builder /src-storybook/public /usr/share/nginx/html
 
