@@ -1,4 +1,4 @@
-FROM node:alpine as builder
+FROM node:lts-alpine as builder
 
 ENV APP_DIR=/src-storybook
 
