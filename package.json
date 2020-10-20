@@ -92,7 +92,7 @@
     "gatsby-remark-smartypants": "2.3.10",
     "gatsby-source-filesystem": "2.3.26",
     "gatsby-transformer-sharp": "2.5.13",
-    "immer": "7.0.8",
+    "immer": "7.0.14",
     "lodash": "4.17.20",
     "polished": "3.6.5",
     "prismjs": "1.21.0",
