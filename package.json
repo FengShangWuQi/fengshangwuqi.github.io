@@ -65,7 +65,7 @@
     "@mdx-js/mdx": "1.6.16",
     "@mdx-js/react": "1.6.16",
     "@svgr/webpack": "5.4.0",
-    "axios": "0.20.0",
+    "axios": "0.21.0",
     "emotion-theming": "10.0.27",
     "facepaint": "1.2.1",
     "gatsby": "2.24.51",
