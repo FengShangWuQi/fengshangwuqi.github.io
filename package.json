@@ -18,8 +18,7 @@
     "clean": "gatsby clean",
     "format": "prettier --write '**/*.{js,ts,tsx,json,md}'",
     "lint": "eslint '**/*.{js,ts,tsx}'",
-    "test": "jest --coverage",
-    "tsc": "tsc",
+    "test": "jest --coverage && tsc",
     "generate": "ts-node ./tools/generate/index.ts",
     "start": "appkit"
   },
@@ -31,7 +30,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged && pretty-quick --staged",
-      "pre-push": "yarn test && yarn tsc",
+      "pre-push": "yarn test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },

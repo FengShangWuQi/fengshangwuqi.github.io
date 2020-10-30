@@ -3,8 +3,13 @@ on:
   push:
     branches:
       - dev
-    tags:
-      - "v*.*.*"
+    paths:
+      - package.json
+      - yarn.lock
+      - "src-app/storybook/**"
+      - "**/__storybokk__/**"
+    # tags:
+    #   - "v*.*.*"
 
 jobs:
   # deploy-site:
