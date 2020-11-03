@@ -2309,10 +2309,10 @@
   resolved "https://registry.npm.taobao.org/@types/facepaint/download/@types/facepaint-1.2.1.tgz#925f8f0f2ed7766487c58736d37c2ceded6966f8"
   integrity sha1-kl+PDy7XdmSHxYc203ws7e1pZvg=
 
-"@types/fs-extra@9.0.2":
-  version "9.0.2"
-  resolved "https://registry.npm.taobao.org/@types/fs-extra/download/@types/fs-extra-9.0.2.tgz#e1e1b578c48e8d08ae7fc36e552b94c6f4621609"
-  integrity sha1-4eG1eMSOjQiuf8NuVSuUxvRiFgk=
+"@types/fs-extra@9.0.3":
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-9.0.3.tgz#9996e5cce993508c32325380b429f04a1327523e"
+  integrity sha512-NKdGoXLTFTRED3ENcfCsH8+ekV4gbsysanx2OPbstXVV6fZMgUCqTxubs6I9r7pbOJbFgVq1rpFtLURjKCZWUw==
   dependencies:
     "@types/node" "*"
 
