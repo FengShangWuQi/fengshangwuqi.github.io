@@ -1337,10 +1337,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fengshangwuqi/appkit@1.0.24":
-  version "1.0.24"
-  resolved "https://registry.yarnpkg.com/@fengshangwuqi/appkit/-/appkit-1.0.24.tgz#0eae08e30ff7274ff87ec6314badf3cec26010d0"
-  integrity sha512-fffwgEfFfN+B2N+AQGiyn31a49Jkuvsqn3x66DJrSqke990wE69HTF7eyjEVW1yva9QtoYVwM9etN67rOkxGfQ==
+"@fengshangwuqi/appkit@1.0.27":
+  version "1.0.27"
+  resolved "https://registry.yarnpkg.com/@fengshangwuqi/appkit/-/appkit-1.0.27.tgz#e4deb0a28613b292ea84156b01e47397be828e06"
+  integrity sha512-WOYeM6icqOKgBOG/X6PamDxx5YO/AZRfADIHcqR+Fm94a9yNax2bZ40E956nWBswCIUdrObbYIYZZ4T2+F34oA==
   dependencies:
     "@fengshangwuqi/logger" "1.0.3"
     dotenv "8.2.0"
