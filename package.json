@@ -11,7 +11,7 @@
   ],
   "appkit": {
     "dev": "gatsby develop -o",
-    "build": "npm run clean && gatsby build --prefix-paths",
+    "build": "gatsby build --prefix-paths",
     "release": "gh-pages -d public -b {DEPLOY_BRANCH} && gh-pages-clean"
   },
   "scripts": {
