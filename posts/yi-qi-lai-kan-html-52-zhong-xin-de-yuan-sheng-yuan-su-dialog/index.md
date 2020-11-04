@@ -15,7 +15,7 @@ cover: dialog.png
 这是 **diglog** 最基础的示例：
 
 ```html
-<dialog open> Native dialog box! </dialog>
+<dialog open>Native dialog box!</dialog>
 ```
 
 其中，**open** 属性表示此时 **dialog** 是可见的，如果没有 **open**，**dialog** 将会隐藏，你可以使用 **JavaScript** 将它显现出来，此时，**dialog** 渲染如下：
