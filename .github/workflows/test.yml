@@ -13,7 +13,7 @@ jobs:
       - run: yarn
       - run: yarn test
 
-      - uses: codecov/codecov-action@v1
-        with:
-          file: ./coverage/clover.xml
-          fail_ci_if_error: true
+      # - uses: codecov/codecov-action@v1
+      #   with:
+      #     file: ./coverage/clover.xml
+      #     fail_ci_if_error: true
