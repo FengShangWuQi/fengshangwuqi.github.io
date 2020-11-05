@@ -1,7 +1,5 @@
 import React, { useLayoutEffect } from "react";
 
-import { loadScript, removeChild } from "utils/dom";
-
 export const Discussion = ({
   shortname,
   config,
@@ -29,7 +27,10 @@ export const Discussion = ({
         this.page.identifier = identifier;
         this.page.url = url;
       };
-      loadScript(`https://${shortname}.disqus.com/embed.js`, id);
+      loadScript(`https://${shortname}.disqus.com/embed.js`, {
+        id,
+        async: true,
+      });
     }
 
     return () => {
@@ -51,4 +52,35 @@ export const Discussion = ({
   }, [shortname, config]);
 
   return <div id="disqus_thread" />;
+};
+
+const loadScript = (
+  src: string,
+  opts: {
+    type?: string;
+    id?: string;
+    async?: boolean;
+    defer?: boolean;
+  },
+) => {
+  const doc = window.document;
+  const script = doc.createElement("script");
+
+  script.src = src;
+
+  if (opts.id) script.id = opts.id;
+  if (opts.type) script.type = opts.type;
+  if (opts.defer) script.defer = true;
+  if (opts.async) script.async = true;
+
+  (doc.head || doc.body).appendChild(script);
+
+  return script;
+};
+
+const removeChild = (id: string) => {
+  const doc = window.document;
+  const child = doc.getElementById(id);
+
+  if (child) (doc.head || doc.body).removeChild(child);
 };
