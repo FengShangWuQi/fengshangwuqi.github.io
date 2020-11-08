@@ -1338,10 +1338,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fengshangwuqi/appkit@1.0.27":
-  version "1.0.27"
-  resolved "https://registry.npm.taobao.org/@fengshangwuqi/appkit/download/@fengshangwuqi/appkit-1.0.27.tgz#e4deb0a28613b292ea84156b01e47397be828e06"
-  integrity sha1-5N6wooYTspLqhBVrAeRzl76CjgY=
+"@fengshangwuqi/appkit@1.0.28":
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/@fengshangwuqi/appkit/-/appkit-1.0.28.tgz#f0b8e6fc6878011ce3933637175d612749457ec8"
+  integrity sha512-aRJ9s0yDNMViMjBfGnsGdWvGZF34ENase2Cqby0rioVes3rMgExkPxSqrlmL8Hnd6MFHx5irtE+7O7jkiJFY7w==
   dependencies:
     "@fengshangwuqi/logger" "1.0.3"
     dotenv "8.2.0"
