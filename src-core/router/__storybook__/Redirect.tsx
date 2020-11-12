@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useToggle } from "src-core/hooks";
-import { withoutBubble } from "utils";
+import { withoutBubble } from "utils/withoutBubble";
 
 import { Redirect } from "..";
 

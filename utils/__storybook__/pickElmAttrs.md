@@ -28,4 +28,4 @@ const App = ({ ...otherprops }) => {
 };
 ```
 
-<Source path="utils/index.ts" />
+<Source path="utils/pickElmAttrs.ts" />

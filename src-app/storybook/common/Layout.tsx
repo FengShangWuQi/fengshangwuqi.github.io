@@ -5,7 +5,7 @@ import produce from "immer";
 
 import { Bootstrap } from "src-core/react";
 import { useDesignSystem, defaultTheme, PrismTheme } from "src-core/ds";
-import { pickElmAttrs } from "utils";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
 export const storybookTheme = produce(defaultTheme, theme => {
   theme.color.primary = "#c2185b";

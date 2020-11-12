@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 
 import { grid } from "src-core/style";
-import { parseSearchString } from "utils";
+import { parseSearchString } from "utils/search";
 
 import { Layout, Center, Container } from "../common/Layout";
 import { Header } from "../common/Header";

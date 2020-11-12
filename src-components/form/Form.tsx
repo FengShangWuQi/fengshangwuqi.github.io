@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 import { Method, AxiosRequestConfig } from "axios";
 import { Dictionary } from "lodash";
 
-import { withoutBubble } from "utils";
+import { withoutBubble } from "utils/withoutBubble";
 
 import { IFieldState } from "./Field";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { withoutBubble } from "../";
+import { withoutBubble } from "../withoutBubble";
 
 export const WithoutBubbleDemo = () => {
   return (

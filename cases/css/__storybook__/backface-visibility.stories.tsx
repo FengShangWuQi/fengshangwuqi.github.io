@@ -2,7 +2,7 @@ import React from "react";
 import { rgba, position, size } from "polished";
 
 import { flex } from "src-core/style";
-import { pickElmAttrs } from "utils";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
 export const BackFaceVisibilityDemo = () => (
   <div

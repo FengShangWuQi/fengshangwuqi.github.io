@@ -2,7 +2,8 @@ import React from "react";
 import { Dictionary, isString, startsWith } from "lodash";
 
 import { useLocation, useMatch, toSearchString } from "src-core/router";
-import { withoutBubble, pickElmAttrs } from "utils";
+import { withoutBubble } from "utils/withoutBubble";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
 import { segmentize, SearchQuery } from "src-core/router";
 

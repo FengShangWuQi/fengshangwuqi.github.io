@@ -4,7 +4,7 @@ import { random, startCase } from "lodash";
 
 import { useDesignSystem } from "src-core/ds";
 import { grid, flex } from "src-core/style";
-import { pickElmAttrs } from "utils";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
 type multipleColor =
   | "gray"

@@ -3,7 +3,7 @@ import { rgba, border } from "polished";
 
 import { useDesignSystem, colorPalette } from "src-core/ds";
 import { grid } from "src-core/style";
-import { pickElmAttrs } from "utils";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
 export const DefaultThemeDemo = () => {
   const ds = useDesignSystem();

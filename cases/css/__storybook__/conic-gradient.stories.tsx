@@ -1,7 +1,7 @@
 import React from "react";
 import { size, border, lighten } from "polished";
 
-import { pickElmAttrs } from "utils";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
 const Block = ({ ...otherProps }) => (
   <div

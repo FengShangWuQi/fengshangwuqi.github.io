@@ -2,7 +2,7 @@ import React from "react";
 import { margin, padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { pickElmAttrs } from "utils";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
 import { flex } from "src-core/style";
 

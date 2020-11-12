@@ -3,7 +3,7 @@ import { CSSObject } from "@emotion/core";
 import { padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { pickElmAttrs } from "utils";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
 import { MenuMode, useMenu } from "./Menu";
 

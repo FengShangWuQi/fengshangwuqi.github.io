@@ -2,7 +2,7 @@ import React from "react";
 import { clearFix } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { pickElmAttrs } from "utils";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
 export const VerticalRl = () => (
   <div
