@@ -1338,10 +1338,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fengshangwuqi/appkit@1.0.28":
-  version "1.0.28"
-  resolved "https://registry.yarnpkg.com/@fengshangwuqi/appkit/-/appkit-1.0.28.tgz#f0b8e6fc6878011ce3933637175d612749457ec8"
-  integrity sha512-aRJ9s0yDNMViMjBfGnsGdWvGZF34ENase2Cqby0rioVes3rMgExkPxSqrlmL8Hnd6MFHx5irtE+7O7jkiJFY7w==
+"@fengshangwuqi/appkit@1.0.29":
+  version "1.0.29"
+  resolved "https://registry.yarnpkg.com/@fengshangwuqi/appkit/-/appkit-1.0.29.tgz#a6e342bede5311c4c98a9e3070f3489068a3d5a0"
+  integrity sha512-ytIV9FlmEWOSEPt0DhiGxNAClVMkkFgFcH8YjVT644X7fQLIIGXyCBHpQDjLe+SqoMZlAr/PXo78M0MEF29HNA==
   dependencies:
     "@fengshangwuqi/logger" "1.0.3"
     dotenv "8.2.0"
@@ -5503,12 +5503,7 @@ dataloader@^1.4.0:
   resolved "https://registry.npm.taobao.org/dataloader/download/dataloader-1.4.0.tgz#bca11d867f5d3f1b9ed9f737bd15970c65dff5c8"
   integrity sha1-vKEdhn9dPxue2fc3vRWXDGXf9cg=
 
-date-fns@2.16.1:
-  version "2.16.1"
-  resolved "https://registry.npm.taobao.org/date-fns/download/date-fns-2.16.1.tgz#05775792c3f3331da812af253e1a935851d3834b"
-  integrity sha1-BXdXksPzMx2oEq8lPhqTWFHTg0s=
-
-date-fns@^2.14.0:
+date-fns@2.16.1, date-fns@^2.14.0:
   version "2.16.1"
   resolved "https://registry.npm.taobao.org/date-fns/download/date-fns-2.16.1.tgz?cache=0&sync_timestamp=1598884225872&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdate-fns%2Fdownload%2Fdate-fns-2.16.1.tgz#05775792c3f3331da812af253e1a935851d3834b"
   integrity sha1-BXdXksPzMx2oEq8lPhqTWFHTg0s=
