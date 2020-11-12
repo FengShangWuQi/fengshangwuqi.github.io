@@ -60,13 +60,13 @@
     "arrowParens": "avoid"
   },
   "dependencies": {
-    "@emotion/core": "10.0.35",
-    "@emotion/styled": "10.0.27",
+    "@emotion/core": "11.0.0",
+    "@emotion/styled": "11.0.0",
     "@mdx-js/mdx": "1.6.19",
     "@mdx-js/react": "1.6.19",
     "@svgr/webpack": "5.4.0",
     "axios": "0.21.0",
-    "emotion-theming": "10.0.27",
+    "emotion-theming": "11.0.0",
     "facepaint": "1.2.1",
     "gatsby": "2.24.51",
     "gatsby-image": "2.4.16",
