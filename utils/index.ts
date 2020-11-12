@@ -2,6 +2,8 @@ import React from "react";
 import isPropValid from "@emotion/is-prop-valid";
 import { parse, stringify } from "querystring";
 
+export * from "./clearConsole";
+
 export type SearchQuery =
   | Record<string, string | number | boolean | string[] | number[] | boolean[]>
   | undefined;
