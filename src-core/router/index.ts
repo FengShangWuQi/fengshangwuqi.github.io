@@ -1,3 +1,7 @@
+/*
+ * TODO: 适合使用 svelte 进行重构，方便不同框架使用
+ */
+
 export * from "./history";
 
 export * from "./Location";
