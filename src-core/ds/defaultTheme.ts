@@ -96,6 +96,11 @@ const typography = {
   },
 };
 
+/*
+ * TODO: 使用 css 变量替换
+ * https://epicreact.dev/css-variables
+ */
+
 export const defaultTheme = {
   color,
   colorPalette,
