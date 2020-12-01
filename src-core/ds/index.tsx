@@ -1,8 +1,3 @@
-/*
- * TODO: 引入季节性配色方案
- * https://seasonal-css.incoherency.co.uk
- */
-
 export { ThemeProvider } from "emotion-theming";
 export * from "./colorPalette";
 export * from "./defaultTheme";
