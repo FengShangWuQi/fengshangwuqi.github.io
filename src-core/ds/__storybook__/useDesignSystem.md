@@ -8,7 +8,7 @@ import { Source } from "src-app/storybook/common/Source";
 
 ```js {6,11}
 // useDesignSystem.ts
-import { ThemeContext } from "@emotion/core";
+import { ThemeContext } from "@emotion/react";
 import { ITheme } from "./defaultTheme";
 
 export const useDesignSystem = () => {

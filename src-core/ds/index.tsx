@@ -1,4 +1,4 @@
-export { ThemeProvider } from "emotion-theming";
+export { ThemeProvider } from "@emotion/react";
 export * from "./colorPalette";
 export * from "./defaultTheme";
 export * from "./reset";

@@ -26,7 +26,6 @@ exports.mdx = {
   options: {
     extensions: [`.mdx`, `.md`],
     gatsbyRemarkPlugins: [
-      "gatsby-remark-relative-images",
       {
         resolve: "gatsby-remark-images",
         options: {
@@ -56,7 +55,15 @@ exports.sharps = ["gatsby-transformer-sharp", "gatsby-plugin-sharp"];
 
 exports.ts = "gatsby-plugin-typescript";
 
-exports.emotion = "gatsby-plugin-emotion";
+exports.emotion = {
+  resolve: `gatsby-plugin-emotion`,
+  options: {
+    sourceMap: true,
+    autoLabel: "dev-only",
+    labelFormat: `[local]`,
+    cssPropOptimization: true,
+  },
+};
 
 exports.helmet = "gatsby-plugin-react-helmet";
 

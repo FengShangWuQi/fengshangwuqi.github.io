@@ -1,5 +1,5 @@
 import React from "react";
-import { CSSObject } from "@emotion/core";
+import { CSSObject } from "@emotion/react";
 import { padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";

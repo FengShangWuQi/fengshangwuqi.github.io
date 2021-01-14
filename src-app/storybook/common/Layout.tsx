@@ -1,5 +1,5 @@
 import React from "react";
-import { Global } from "@emotion/core";
+import { Global } from "@emotion/react";
 import { rgba, border, margin, padding } from "polished";
 import produce from "immer";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Global } from "@emotion/core";
+import { Global } from "@emotion/react";
 import { normalize } from "polished";
 
 import { useDesignSystem } from "src-core/ds";

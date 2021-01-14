@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from "react";
-import { CSSObject } from "@emotion/core";
+import { CSSObject } from "@emotion/react";
 import { padding } from "polished";
 
 import { pickElmAttrs } from "utils/pickElmAttrs";
