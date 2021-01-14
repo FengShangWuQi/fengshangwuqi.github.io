@@ -105,7 +105,7 @@
   "devDependencies": {
     "@babel/plugin-transform-typescript": "7.12.1",
     "@fengshangwuqi/appkit": "1.0.29",
-    "@fengshangwuqi/dev-deps": "1.0.20",
+    "@fengshangwuqi/dev-deps": "1.0.23",
     "@fengshangwuqi/eslint-config": "1.0.28",
     "@fengshangwuqi/ts-config": "1.0.2",
     "@testing-library/jest-dom": "5.11.9",
