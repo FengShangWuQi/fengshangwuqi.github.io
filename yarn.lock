@@ -1384,10 +1384,10 @@
   dependencies:
     chalk "4.1.0"
 
-"@fengshangwuqi/ts-config@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.npm.taobao.org/@fengshangwuqi/ts-config/download/@fengshangwuqi/ts-config-1.0.2.tgz#972bc0e7aa972f5e264a762d53caa61b06ab3b30"
-  integrity sha1-lyvA56qXL14mSnYtU8qmGwarOzA=
+"@fengshangwuqi/ts-config@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@fengshangwuqi/ts-config/-/ts-config-1.0.4.tgz#dc37730999ee6444912c40c5ddb3b39bca92591d"
+  integrity sha512-CDCPtouaT2UllhIX1Qqnvu0jIBdmeQ+rAXS50elhbBL+ZFcxiwyxfE+N2y9/JZhMTEyQDYYwzuowBtNa4mJnfQ==
 
 "@graphql-tools/schema@^6.0.14":
   version "6.2.4"
