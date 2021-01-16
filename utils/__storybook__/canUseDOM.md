@@ -14,4 +14,4 @@ export const canUseDOM = !!(
 );
 ```
 
-<Source path="utils/index.ts" />
+<Source path="https://github.com/akiran/can-use-dom/blob/master/index.js" />
