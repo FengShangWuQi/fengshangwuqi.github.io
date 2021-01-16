@@ -65,7 +65,6 @@
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
     "@svgr/webpack": "5.5.0",
-    "axios": "0.21.1",
     "facepaint": "1.2.1",
     "gatsby": "2.30.2",
     "gatsby-image": "2.9.0",
