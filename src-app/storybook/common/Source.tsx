@@ -8,6 +8,9 @@ import { IconGithubFill } from "src-components/basic/Icon";
 export const Source = ({ path }: { path: string }) => {
   const ds = useDesignSystem();
 
+  const PATH_PREFIX =
+    "https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev";
+
   return (
     <a
       css={{
@@ -17,7 +20,7 @@ export const Source = ({ path }: { path: string }) => {
         marginTop: ds.spacing[5],
         fontSize: ds.size.xs,
       }}
-      href={`https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/${path}`}
+      href={path.startsWith("http") ? path : `${PATH_PREFIX}/${path}`}
       target="_blank"
       rel="noopener noreferrer">
       <IconGithubFill
