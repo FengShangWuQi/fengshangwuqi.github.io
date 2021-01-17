@@ -1,3 +1,12 @@
+---
+group: core
+module: utils
+name: search
+---
+
+import { Source } from "src-app/storybook/common/Source";
+
+```js
 import { parse, stringify } from "querystring";
 
 type SearchQuery = Record<
@@ -8,7 +17,7 @@ type SearchQuery = Record<
   | ReadonlyArray<string>
   | ReadonlyArray<number>
   | ReadonlyArray<boolean>
-  | null
+  | null,
 >;
 
 export const toSearchString = (query: SearchQuery) => {
@@ -23,3 +32,6 @@ export const parseSearchString = (search: string) => {
 
   return parse(search);
 };
+```
+
+<Source path="utils/search.ts" />
