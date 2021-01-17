@@ -14,4 +14,4 @@ export const sleep = async (interval: number) => {
 };
 ```
 
-<Source path="utils/index.ts" />
+<Source path="utils/sleep.ts" />

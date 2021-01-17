@@ -28,4 +28,4 @@ const App = ({ ...otherprops }) => {
 };
 ```
 
-<Source path="utils/pickElmAttrs.ts" />
+<Source path="https://github.com/emotion-js/emotion/tree/master/packages/is-prop-valid" />
