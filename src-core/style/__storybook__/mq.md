@@ -13,13 +13,13 @@ import { MqDemo } from "./mq.stories";
 ```js {22}
 import facepaint from "facepaint";
 
-export enum breakpoint {
+enum breakpoint {
   sm = 640,
   md = 768,
   lg = 1024,
   xl = 1280,
 }
-export type breakpointKey = keyof typeof breakpoint;
+type breakpointKey = keyof typeof breakpoint;
 
 export const mq = (breakpoints: breakpointKey[], style: CSSObject) => {
   const selectors = breakpoints.map(
@@ -37,4 +37,4 @@ styled.div(mq(["lg"], {
 }))
 ```
 
-<Source path="src-core/style/mq.ts" />
+<Source path="https://github.com/emotion-js/facepaint" />

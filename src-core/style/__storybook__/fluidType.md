@@ -10,7 +10,8 @@ import { FluidTypeDemo } from "./fluidType.stories";
 
 <FluidTypeDemo />
 
-```js {21}
+```js {22}
+// $min-font-size + ($max-font-size - $min-font-size) * (100vw - $min-vw) / ($max-vw - $min-vw)
 export const fluidType = (
   minVw: breakpointKey,
   maxVw: breakpointKey,
