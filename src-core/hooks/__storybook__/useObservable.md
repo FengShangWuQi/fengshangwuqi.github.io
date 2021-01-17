@@ -26,4 +26,4 @@ export const useObservable = <T>(ob$: Observable<T>, defaultValue: T): T => {
 };
 ```
 
-<Source path="src-core/hooks/useObservable.ts" />
+<Source path="https://rxjs-dev.firebaseapp.com/api/index/class/Observable" />

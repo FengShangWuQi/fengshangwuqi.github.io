@@ -55,4 +55,4 @@ export const useRect = (
 };
 ```
 
-<Source path="src-core/hooks/useRect.ts" />
+<Source path="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect" />

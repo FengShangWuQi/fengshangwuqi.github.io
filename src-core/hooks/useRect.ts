@@ -34,14 +34,7 @@ export const getRect = (targetElm: Element, relatedElm: Element): IRect => {
 export const useRect = (
   elmRef: RefObject<Element | null>,
 ): [IRect, () => void] => {
-  const defaultRect: IRect = {
-    left: 0,
-    top: 0,
-    width: 0,
-    height: 0,
-  };
-
-  const [rect, setRect] = useState(defaultRect);
+  const [rect, setRect] = useState({ left: 0, top: 0, width: 0, height: 0 });
 
   const refreshRect = useCallback(() => {
     if (elmRef.current) {

@@ -35,4 +35,4 @@ export const useVisibilitySensor = (
 };
 ```
 
-<Source path="src-core/hooks/useVisibilitySensor.ts" />
+<Source path="https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver" />

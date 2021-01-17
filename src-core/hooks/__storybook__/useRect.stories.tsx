@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef } from "react";
-import { animationFrameScheduler, interval, timer } from "rxjs";
-import { observeOn, takeUntil } from "rxjs/operators";
+import { animationFrameScheduler, interval } from "rxjs";
+import { observeOn, take } from "rxjs/operators";
 
 import { useDesignSystem } from "src-core/ds";
 
@@ -10,14 +10,16 @@ export const UseRectDemo = () => {
   const ds = useDesignSystem();
 
   const ref = useRef<HTMLDivElement>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+
+  const [rootRect] = useRect(rootRef);
   const [rect, refreshRect] = useRect(ref);
 
   useLayoutEffect(() => {
     const intervals = interval(10);
-    const numbers = timer(5000);
 
     const intervalSub = intervals
-      .pipe(observeOn(animationFrameScheduler), takeUntil(numbers))
+      .pipe(observeOn(animationFrameScheduler), take(rootRect.width))
       .subscribe(val => {
         if (ref.current) {
           ref.current.style.width = `${val}px`;
@@ -25,21 +27,13 @@ export const UseRectDemo = () => {
         refreshRect();
       });
 
-    const numberSub = numbers.subscribe(() => {
-      if (ref.current) {
-        ref.current.style.width = "100%";
-      }
-      refreshRect();
-    });
-
     return () => {
       intervalSub.unsubscribe();
-      numberSub.unsubscribe();
     };
-  }, []);
+  }, [rootRect]);
 
   return (
-    <div>
+    <div ref={rootRef}>
       <div
         ref={ref}
         css={{
