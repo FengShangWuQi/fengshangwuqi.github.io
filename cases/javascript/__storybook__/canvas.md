@@ -90,4 +90,4 @@ const Barrage = ({
 };
 ```
 
-<Source path="cases/html/__storybook__/canvas.stories.tsx" />
+<Source path="cases/javascript/__storybook__/canvas.stories.tsx" />

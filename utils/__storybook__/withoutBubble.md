@@ -20,4 +20,4 @@ export const withoutBubble = (cb: () => void) => (e: React.SyntheticEvent) => {
 };
 ```
 
-<Source path="utils/index.ts" />
+<Source path="utils/withoutBubble.ts" />

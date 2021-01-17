@@ -34,4 +34,4 @@ export const parseSearchString = (search: string) => {
 };
 ```
 
-<Source path="utils/search.ts" />
+<Source path="https://nodejs.org/api/querystring.html" />

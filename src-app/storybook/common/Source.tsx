@@ -10,6 +10,7 @@ export const Source = ({ path }: { path: string }) => {
 
   const PATH_PREFIX =
     "https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev";
+  const link = path.startsWith("http") ? path : `${PATH_PREFIX}/${path}`;
 
   return (
     <a
@@ -20,7 +21,8 @@ export const Source = ({ path }: { path: string }) => {
         marginTop: ds.spacing[5],
         fontSize: ds.size.xs,
       }}
-      href={path.startsWith("http") ? path : `${PATH_PREFIX}/${path}`}
+      title={link}
+      href={link}
       target="_blank"
       rel="noopener noreferrer">
       <IconGithubFill

@@ -1,6 +1,6 @@
 ---
-group: core
-module: utils
+group: cases
+module: javascript
 name: sleep
 ---
 
@@ -14,4 +14,4 @@ export const sleep = async (interval: number) => {
 };
 ```
 
-<Source path="utils/sleep.ts" />
+<Source path="cases/javascript/__storybook__/sleep.md" />
