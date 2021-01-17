@@ -1,5 +1,5 @@
 ---
-group: cases
+group: snippets
 module: css
 name: attr
 ---
@@ -28,4 +28,4 @@ import { AttrDemo } from "./attr.stories";
 </Row>
 ```
 
-<Source path="cases/css/__storybook__/attr.stories.tsx" />
+<Source path="https://developer.mozilla.org/zh-CN/docs/Web/CSS/attr()" />

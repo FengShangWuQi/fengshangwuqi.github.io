@@ -1,5 +1,5 @@
 ---
-group: cases
+group: snippets
 module: css
 name: writing-mode
 ---
@@ -16,4 +16,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/writing-mode.stories.tsx" />
+<Source path="https://developer.mozilla.org/zh-CN/docs/Web/CSS/writing-mode" />

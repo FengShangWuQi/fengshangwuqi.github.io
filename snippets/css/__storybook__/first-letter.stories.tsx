@@ -18,7 +18,7 @@ export const FirstLetterDemo = () => {
             paddingRight: 10,
             lineHeight: 1.1,
             fontSize: ds.size["5xl"],
-            color: "#cd5c5c",
+            color: ds.color.secondary,
           },
         },
       }}>

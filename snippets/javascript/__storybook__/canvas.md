@@ -1,5 +1,5 @@
 ---
-group: cases
+group: snippets
 module: javascript
 name: canvas
 ---
@@ -90,4 +90,4 @@ const Barrage = ({
 };
 ```
 
-<Source path="cases/javascript/__storybook__/canvas.stories.tsx" />
+<Source path="snippets/javascript/__storybook__/canvas.stories.tsx" />

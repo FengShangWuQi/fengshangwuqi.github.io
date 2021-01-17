@@ -1,5 +1,5 @@
 ---
-group: cases
+group: snippets
 module: javascript
 name: sleep
 ---
@@ -14,4 +14,4 @@ export const sleep = async (interval: number) => {
 };
 ```
 
-<Source path="cases/javascript/__storybook__/sleep.md" />
+<Source path="snippets/javascript/__storybook__/sleep.md" />

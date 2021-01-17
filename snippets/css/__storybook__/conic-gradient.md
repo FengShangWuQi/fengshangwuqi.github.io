@@ -1,5 +1,5 @@
 ---
-group: cases
+group: snippets
 module: css
 name: conic-gradient
 ---
@@ -42,4 +42,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/conic-gradient.stories.tsx" />
+<Source path="https://developer.mozilla.org/en-US/docs/Web/CSS/conic-gradient()" />

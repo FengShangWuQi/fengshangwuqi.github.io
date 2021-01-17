@@ -1,5 +1,5 @@
 ---
-group: cases
+group: snippets
 module: css
 name: backface-visibility
 ---
@@ -25,4 +25,4 @@ import { BackFaceVisibilityDemo } from "./backface-visibility.stories";
 </div>
 ```
 
-<Source path="cases/css/__storybook__/backface-visibility.stories.tsx" />
+<Source path="https://developer.mozilla.org/zh-CN/docs/Web/CSS/backface-visibility" />

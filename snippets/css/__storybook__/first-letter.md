@@ -1,5 +1,5 @@
 ---
-group: cases
+group: snippets
 module: css
 name: first-letter
 ---
@@ -15,9 +15,9 @@ styled.div({
   "&::first-letter": {
     float: "left",
     fontSize: ds.size["5xl"],
-    color: "#cd5c5c",
+    color: ds.color.secondary,
   },
 });
 ```
 
-<Source path="cases/css/__storybook__/first-letter.stories.tsx" />
+<Source path="https://developer.mozilla.org/zh-CN/docs/Web/CSS/::first-letter" />

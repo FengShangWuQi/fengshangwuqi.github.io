@@ -1,5 +1,5 @@
 ---
-group: cases
+group: snippets
 module: css
 name: mix-blend-mode
 ---
@@ -16,4 +16,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/mix-blend-mode.stories.tsx" />
+<Source path="https://developer.mozilla.org/zh-CN/docs/Web/CSS/mix-blend-mode" />

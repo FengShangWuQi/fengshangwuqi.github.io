@@ -1,5 +1,5 @@
 ---
-group: code
+group: snippets
 module: redux
 name: createStore
 ---
@@ -39,4 +39,4 @@ const createStore = (reducer, preloadedState, enhancer) => {
 };
 ```
 
-<Source path="code/redux/__storybook__/createStore.md" />
+<Source path="https://github.com/reduxjs/redux/blob/master/src/createStore.ts" />

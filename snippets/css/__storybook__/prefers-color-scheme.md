@@ -1,5 +1,5 @@
 ---
-group: cases
+group: snippets
 module: css
 name: prefers-color-scheme
 ---
@@ -17,4 +17,4 @@ styled.div({
 });
 ```
 
-<Source path="cases/css/__storybook__/prefers-color-scheme.stories.tsx" />
+<Source path="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media/prefers-color-scheme" />
