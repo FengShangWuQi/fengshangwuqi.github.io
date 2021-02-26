@@ -90,7 +90,7 @@
     "gatsby-source-filesystem": "2.9.1",
     "gatsby-transformer-sharp": "2.10.1",
     "immer": "8.0.1",
-    "lodash": "4.17.20",
+    "lodash": "4.17.21",
     "polished": "4.0.5",
     "prismjs": "1.23.0",
     "react": "17.0.1",
