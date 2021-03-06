@@ -15,7 +15,7 @@ const getIconName = (name: string) =>
   `Icon${camelCase(name).replace(/^[a-z]/, match => match.toUpperCase())}`;
 
 const iconExport = (name: string) =>
-  `export * as ${getIconName(name)} from "./icons/${name}.svg";`;
+  `export { default as ${getIconName(name)} } from "./icons/${name}.svg";`;
 
 const iconStorybook = (icons: string[]) => `
     import React from "react";

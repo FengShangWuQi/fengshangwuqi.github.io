@@ -1,1 +1,1 @@
-export * as IconGithubFill from "./icons/github-fill.svg";
+export { default as IconGithubFill } from "./icons/github-fill.svg";
