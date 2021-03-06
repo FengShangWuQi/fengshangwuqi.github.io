@@ -26,9 +26,9 @@ const iconStorybook = (icons: string[]) => `
 
     import { useDesignSystem } from "src-core/ds";
     import { grid } from "src-core/style";
-    
+
     import { ${icons.map(name => getIconName(name)).join(",")} } from "../Icon"
-    
+
     export const IconDemo = () => {
         const ds = useDesignSystem();
 
