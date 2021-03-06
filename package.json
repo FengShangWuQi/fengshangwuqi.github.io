@@ -19,7 +19,7 @@
     "format": "prettier --write .",
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "test": "tsc",
-    "generate": "ts-node ./tools/generate/index.ts",
+    "generate": "ts-node ./script/generate.ts",
     "start": "appkit"
   },
   "commitlint": {
@@ -103,6 +103,7 @@
     "@fengshangwuqi/appkit": "1.0.31",
     "@fengshangwuqi/dev-deps": "1.0.23",
     "@fengshangwuqi/eslint-config": "1.0.30",
+    "@fengshangwuqi/logger": "1.0.5",
     "@fengshangwuqi/ts-config": "1.0.4",
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",

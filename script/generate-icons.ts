@@ -2,18 +2,14 @@ import path from "path";
 import fse from "fs-extra";
 import globby from "globby";
 import prettier from "prettier";
-import chalk from "chalk";
-
 import { camelCase } from "lodash";
+import * as logger from "@fengshangwuqi/logger";
 
 const formatCode = (code: string, filePath: string) =>
   prettier.format(code, {
     ...prettier.resolveConfig.sync(filePath),
     parser: "typescript",
   });
-
-const successGenerate = (path: string) =>
-  console.log(chalk.green(`generate file ${path}`));
 
 const getIconName = (name: string) =>
   `Icon${camelCase(name).replace(/^[a-z]/, match => match.toUpperCase())}`;
@@ -85,11 +81,11 @@ export const generateIcons = () => {
     exportPath,
     formatCode(icons.map(name => iconExport(name)).join(""), exportPath),
   );
-  successGenerate(exportPath);
+  logger.success(exportPath);
 
   const sbPath =
     process.cwd() + "/src-components/basic/__storybook__/Icon.stories.tsx";
   fse.ensureFileSync(sbPath);
   fse.writeFileSync(sbPath, formatCode(iconStorybook(icons), sbPath));
-  successGenerate(sbPath);
+  logger.success(sbPath);
 };
