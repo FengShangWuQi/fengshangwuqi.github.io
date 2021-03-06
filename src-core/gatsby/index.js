@@ -76,4 +76,6 @@ exports.analytics = {
   },
 };
 
+exports.reactSvg = "gatsby-plugin-react-svg";
+
 exports.offline = "gatsby-plugin-offline";
