@@ -51,8 +51,7 @@
     ],
     "rules": {
       "@typescript-eslint/interface-name-prefix": 0,
-      "@typescript-eslint/camelcase": 0,
-      "@typescript-eslint/restrict-template-expressions": 1
+      "@typescript-eslint/camelcase": 0
     }
   },
   "prettier": {
@@ -101,10 +100,10 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-typescript": "7.13.0",
-    "@fengshangwuqi/appkit": "1.0.31",
-    "@fengshangwuqi/dev-deps": "1.0.23",
-    "@fengshangwuqi/eslint-config": "1.0.30",
-    "@fengshangwuqi/logger": "1.0.5",
+    "@fengshangwuqi/appkit": "1.0.32",
+    "@fengshangwuqi/dev-deps": "1.0.24",
+    "@fengshangwuqi/eslint-config": "1.0.31",
+    "@fengshangwuqi/logger": "1.0.6",
     "@fengshangwuqi/ts-config": "1.0.4",
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
