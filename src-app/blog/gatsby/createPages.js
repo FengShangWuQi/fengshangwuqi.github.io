@@ -1,12 +1,19 @@
-const { resolve } = require("path");
+/*
+ * Tell plugins to add pages.
+ * This extension point is called only after the initial sourcing and transformation of nodes plus creation of the GraphQL schema are complete so you can query your data in order to create pages.
+ *
+ * https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/#createPages
+ */
 
-module.exports = async ({ graphql, actions, reporter }) => {
+const path = require("path");
+
+module.exports = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const templatePath = "src-app/blog/templates/";
-  const latestTemplate = resolve(`${templatePath}/blog-latest.tsx`);
-  const archiveTemplate = resolve(`${templatePath}/blog-archive.tsx`);
-  const postTemplate = resolve(`${templatePath}/blog-post.tsx`);
+  const templateDir = "src-app/blog/templates";
+  const latestTemplate = path.resolve(templateDir, "blog-latest.tsx");
+  const archiveTemplate = path.resolve(templateDir, "blog-archive.tsx");
+  const postTemplate = path.resolve(templateDir, "blog-post.tsx");
 
   const result = await graphql(`
     query {
@@ -24,7 +31,7 @@ module.exports = async ({ graphql, actions, reporter }) => {
   `);
 
   if (result.errors) {
-    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
+    throw result.errors;
   }
 
   const { edges: posts, totalCount } = result.data.allMdx;

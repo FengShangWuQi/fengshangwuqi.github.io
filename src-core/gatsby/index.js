@@ -34,7 +34,7 @@ const sources = process.env.SOURCES
   ? process.env.SOURCES.split(",").map(source => ({
       resolve: "gatsby-source-filesystem", // https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/?=gatsby-source-filesystem
       options: {
-        path: path.join(process.cwd(), source),
+        path: path.resolve(process.cwd(), source),
         name: source,
       },
     }))

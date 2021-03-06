@@ -1,3 +1,10 @@
+/*
+ * Called when a new node is created.
+ * Plugins wishing to extend or transform nodes created by other plugins should implement this API.
+ *
+ * https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/#onCreateNode
+ */
+
 const { createFilePath } = require("gatsby-source-filesystem");
 
 module.exports = ({ node, actions, getNode }) => {
@@ -5,12 +12,12 @@ module.exports = ({ node, actions, getNode }) => {
 
   switch (node.internal.type) {
     case "Mdx": {
-      const value = createFilePath({ node, getNode });
+      const slug = createFilePath({ node, getNode });
 
       createNodeField({
-        name: "slug",
         node,
-        value,
+        name: "slug",
+        value: slug,
       });
       break;
     }
