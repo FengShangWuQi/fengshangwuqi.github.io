@@ -1,31 +1,18 @@
-const {
-  siteMetadata,
-  pathPrefix,
-  sources,
-  sharps,
-  mdx,
-  catchLinks,
-  helmet,
-  ts,
-  emotion,
-  twitter,
-  analytics,
-  offline,
-} = require("../../../src-core/gatsby");
+const gatsbyConfig = require("../../../src-core/gatsby");
 
 const feed = {
-  resolve: "gatsby-plugin-feed",
+  resolve: "gatsby-plugin-feed", // https://www.gatsbyjs.com/plugins/gatsby-plugin-feed/?=gatsby-plugin-feed
   options: {
-    query: `	
-        {	
-          site {	
-            siteMetadata {	
-              title	
-              author	
-              description	
-              siteUrl	
-            }	
-          }	
+    query: `
+        {
+          site {
+            siteMetadata {
+              title
+              author
+              description
+              siteUrl
+            }
+          }
         }
     `,
     feeds: [
@@ -35,33 +22,32 @@ const feed = {
             return Object.assign({}, edge.node.frontmatter, {
               description: edge.node.excerpt,
               date: edge.node.frontmatter.date,
-              url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-              guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-              // eslint-disable-next-line
+              url: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
+              guid: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
               custom_elements: [{ "content:encoded": edge.node.body }],
             });
           });
         },
-        query: `	
-          {	
+        query: `
+          {
             allMdx(
-              sort: { fields: [frontmatter___date], order: DESC }	
-            ) {	
-              edges {	
-                node {	
-                  excerpt(pruneLength: 95)	
-                  fields { slug }	
-                  body	
-                  frontmatter {	
-                    title	
-                    date(formatString: "YYYY-MM-DD")	
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              edges {
+                node {
+                  excerpt(pruneLength: 95)
+                  fields { slug }
+                  body
+                  frontmatter {
+                    title
+                    date(formatString: "YYYY-MM-DD")
                     tags
                     original
-                  }	
-                }	
-              }	
-            }	
-          }	
+                  }
+                }
+              }
+            }
+          }
         `,
         output: "/rss.xml",
         title: "fengshangwuqi's blog RSS Feed",
@@ -70,20 +56,6 @@ const feed = {
   },
 };
 
-module.exports = {
-  siteMetadata,
-  pathPrefix,
-  plugins: [
-    ...sources,
-    ...sharps,
-    mdx,
-    catchLinks,
-    helmet,
-    ts,
-    emotion,
-    twitter,
-    analytics,
-    feed,
-    offline,
-  ],
-};
+gatsbyConfig.plugins.push(feed);
+
+module.exports = gatsbyConfig;

@@ -51,7 +51,8 @@
     ],
     "rules": {
       "@typescript-eslint/interface-name-prefix": 0,
-      "@typescript-eslint/camelcase": 0
+      "@typescript-eslint/camelcase": 0,
+      "@typescript-eslint/restrict-template-expressions": 1
     }
   },
   "prettier": {

@@ -1,33 +1,7 @@
-const {
-  siteMetadata,
-  pathPrefix,
-  sources,
-  mdx,
-  catchLinks,
-  sharps,
-  helmet,
-  ts,
-  emotion,
-  twitter,
-  analytics,
-  reactSvg,
-  offline,
-} = require("../../../src-core/gatsby");
+const gatsbyConfig = require("../../../src-core/gatsby");
 
-module.exports = {
-  siteMetadata,
-  pathPrefix,
-  plugins: [
-    ...sources,
-    ...sharps,
-    mdx,
-    catchLinks,
-    helmet,
-    ts,
-    emotion,
-    twitter,
-    analytics,
-    reactSvg,
-    offline,
-  ],
-};
+const reactSvg = "gatsby-plugin-react-svg"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-react-svg/?=gatsby-plugin-react-svg
+
+gatsbyConfig.plugins.push(reactSvg);
+
+module.exports = gatsbyConfig;

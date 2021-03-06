@@ -1,6 +1,25 @@
-// https://www.gatsbyjs.org/docs/gatsby-config/
+/*
+ * Gatsby Config API
+ *
+ * https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
+ */
 
 const path = require("path");
+
+/*
+ * Configuration options
+ *
+ * siteMetadata (object)
+ * plugins (array)
+ * flags (object)
+ * pathPrefix (string)
+ * polyfill (boolean)
+ * mapping (object)
+ * proxy (object)
+ * developMiddleware (function)
+ */
+
+// siteMetadata
 
 exports.siteMetadata = {
   author: process.env.META_AUTHOR,
@@ -9,11 +28,11 @@ exports.siteMetadata = {
   siteUrl: process.env.SITE_URL,
 };
 
-exports.pathPrefix = process.env.PATH_PREFIX;
+// plugins
 
-exports.sources = process.env.SOURCES
+const sources = process.env.SOURCES
   ? process.env.SOURCES.split(",").map(source => ({
-      resolve: "gatsby-source-filesystem",
+      resolve: "gatsby-source-filesystem", // https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/?=gatsby-source-filesystem
       options: {
         path: path.join(process.cwd(), source),
         name: source,
@@ -21,61 +40,76 @@ exports.sources = process.env.SOURCES
     }))
   : [];
 
-exports.mdx = {
-  resolve: `gatsby-plugin-mdx`,
+const sharps = [
+  "gatsby-plugin-sharp", // https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/?=%22gatsby-transformer-sharp
+  "gatsby-transformer-sharp", // https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp/?=gatsby-plugin-sharp
+];
+
+const mdx = {
+  resolve: "gatsby-plugin-mdx", // https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/?=gatsby-plugin-mdx
   options: {
-    extensions: [`.mdx`, `.md`],
+    extensions: [".mdx", ".md"],
     gatsbyRemarkPlugins: [
       {
-        resolve: "gatsby-remark-images",
+        resolve: "gatsby-remark-images", // https://www.gatsbyjs.com/plugins/gatsby-remark-images/?=gatsby-remark-images
         options: {
           maxWidth: 600,
         },
       },
       {
-        resolve: "gatsby-remark-external-links",
+        resolve: "gatsby-remark-external-links", // https://www.gatsbyjs.com/plugins/gatsby-remark-external-links/?=gatsby-remark-external-links
         options: {
           target: "_blank",
           rel: "noopener noreferrer",
         },
       },
-      "gatsby-remark-emojis",
-      "gatsby-remark-responsive-iframe",
-      "gatsby-remark-copy-linked-files",
-      "gatsby-remark-autolink-headers",
-      "gatsby-remark-prismjs",
-      "gatsby-remark-smartypants",
+      "gatsby-remark-emojis", // https://www.gatsbyjs.com/plugins/gatsby-remark-emojis/?=gatsby-remark-emojis
+      "gatsby-remark-responsive-iframe", // https://www.gatsbyjs.com/plugins/gatsby-remark-responsive-iframe/?=gatsby-remark-responsive-iframe
+      "gatsby-remark-copy-linked-files", // https://www.gatsbyjs.com/plugins/gatsby-remark-copy-linked-files/?=gatsby-remark-copy-linked-files
+      "gatsby-remark-autolink-headers", // https://www.gatsbyjs.com/plugins/gatsby-remark-autolink-headers/?=gatsby-remark-autolink-headers
+      "gatsby-remark-prismjs", // https://www.gatsbyjs.com/plugins/gatsby-remark-autolink-headers/?=gatsby-remark-prismjs
+      "gatsby-remark-smartypants", // https://www.gatsbyjs.com/plugins/gatsby-remark-smartypants/?=gatsby-remark-smartypants
     ],
   },
 };
 
-exports.catchLinks = "gatsby-plugin-catch-links";
+const ts = "gatsby-plugin-typescript"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-typescript/?=gatsby-plugin-typescript
 
-exports.sharps = ["gatsby-transformer-sharp", "gatsby-plugin-sharp"];
-
-exports.ts = "gatsby-plugin-typescript";
-
-exports.emotion = {
-  resolve: `gatsby-plugin-emotion`,
+const emotion = {
+  resolve: "gatsby-plugin-emotion", // https://www.gatsbyjs.com/plugins/gatsby-plugin-emotion/?=gatsby-plugin-emotion
   options: {
     sourceMap: true,
     autoLabel: "dev-only",
-    labelFormat: `[local]`,
+    labelFormat: "[local]",
     cssPropOptimization: true,
   },
 };
 
-exports.helmet = "gatsby-plugin-react-helmet";
+const helmet = "gatsby-plugin-react-helmet"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet
 
-exports.twitter = "gatsby-plugin-twitter";
+const twitter = "gatsby-plugin-twitter"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-twitter/?=gatsby-plugin-twitter
 
-exports.analytics = {
-  resolve: "gatsby-plugin-google-analytics",
+const analytics = {
+  resolve: "gatsby-plugin-google-analytics", // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/
   options: {
     trackingId: process.env.TRACKING_ID,
   },
 };
 
-exports.reactSvg = "gatsby-plugin-react-svg";
+const offline = "gatsby-plugin-offline"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-offline/?=gatsby-plugin-offline
 
-exports.offline = "gatsby-plugin-offline";
+exports.plugins = [
+  ...sources,
+  ...sharps,
+  mdx,
+  ts,
+  emotion,
+  helmet,
+  twitter,
+  analytics,
+  offline,
+];
+
+// pathPrefix
+
+exports.pathPrefix = process.env.PATH_PREFIX;
