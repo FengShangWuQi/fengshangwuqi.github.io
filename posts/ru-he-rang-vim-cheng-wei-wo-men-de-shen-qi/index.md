@@ -411,7 +411,7 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 ### Wakatime
 
 ```vim
-Plug 'wakatime/vim-wakatime'                              " https://github.com/wakatime/vim-wakatime "
+Plug 'wakatime/vim-wakatime'                              " https://github.com/wakatime/vim-wakatime
 ```
 
 ### Whitespace
