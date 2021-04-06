@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 import { Observable } from "rxjs";
 
-export const useObservable = <T>(ob$: Observable<T>, defaultValue: T): T => {
-  const [value, setValue] = useState<T>(defaultValue);
+type ObservableValueType<T> = T extends Observable<infer U> ? U : never;
+
+export const useObservable = <T extends Observable<any>>(ob$: T) => {
+  const [value, setValue] = useState<ObservableValueType<T>>(
+    (ob$ as any).value,
+  );
 
   useEffect(() => {
     const sub = ob$.subscribe(setValue);

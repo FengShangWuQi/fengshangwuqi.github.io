@@ -18,7 +18,7 @@
     "clean": "gatsby clean",
     "format": "prettier --write .",
     "lint": "eslint '**/*.{js,ts,tsx}'",
-    "test": "tsc",
+    "test": "jest --coverage && tsc",
     "generate": "ts-node ./script/generate.ts",
     "start": "appkit"
   },

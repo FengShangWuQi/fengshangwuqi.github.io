@@ -10,7 +10,7 @@ export const UseObservableDemo = () => {
 
   const counter$ = useMemo(() => new BehaviorSubject(0), []);
 
-  const value = useObservable(counter$, counter$.value);
+  const value = useObservable(counter$);
 
   return (
     <div>
