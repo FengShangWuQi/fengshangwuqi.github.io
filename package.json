@@ -20,7 +20,8 @@
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "test": "jest --coverage && tsc",
     "generate": "ts-node ./script/generate.ts",
-    "start": "appkit"
+    "start": "appkit",
+    "debug": "appkit dev blog"
   },
   "commitlint": {
     "extends": [
