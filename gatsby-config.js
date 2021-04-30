@@ -19,4 +19,14 @@ const gatsbyConfig = require(path.resolve(targetDir, "config"));
 module.exports = {
   //configuration object
   ...gatsbyConfig,
+
+  // https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/utils/flags.ts
+  flags: {
+    FAST_DEV: true,
+    DEV_SSR: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    PARALLEL_SOURCING: true,
+    FUNCTIONS: true,
+  },
 };
