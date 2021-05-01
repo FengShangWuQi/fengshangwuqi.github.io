@@ -2543,6 +2543,11 @@
   resolved "https://registry.npm.taobao.org/@types/facepaint/download/@types/facepaint-1.2.1.tgz#925f8f0f2ed7766487c58736d37c2ceded6966f8"
   integrity sha1-kl+PDy7XdmSHxYc203ws7e1pZvg=
 
+"@types/figlet@1.5.1":
+  version "1.5.1"
+  resolved "https://registry.nlark.com/@types/figlet/download/@types/figlet-1.5.1.tgz#a9f06317b8900b7d3ad8d8bb577ec26225ac16a8"
+  integrity sha1-qfBjF7iQC3062Ni7V37CYiWsFqg=
+
 "@types/fs-extra@9.0.11":
   version "9.0.11"
   resolved "https://registry.npm.taobao.org/@types/fs-extra/download/@types/fs-extra-9.0.11.tgz?cache=0&sync_timestamp=1618216398055&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Ffs-extra%2Fdownload%2F%40types%2Ffs-extra-9.0.11.tgz#8cc99e103499eab9f347dbc6ca4e99fb8d2c2b87"
@@ -6938,6 +6943,11 @@ fd@~0.0.2:
   version "0.0.3"
   resolved "https://registry.npm.taobao.org/fd/download/fd-0.0.3.tgz#b3240de86dbf5a345baae7382a07d4713566ff0c"
   integrity sha1-syQN6G2/WjRbquc4KgfUcTVm/ww=
+
+figlet@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.npm.taobao.org/figlet/download/figlet-1.5.0.tgz#2db4d00a584e5155a96080632db919213c3e003c"
+  integrity sha1-LbTQClhOUVWpYIBjLbkZITw+ADw=
 
 figures@^1.3.5:
   version "1.7.0"

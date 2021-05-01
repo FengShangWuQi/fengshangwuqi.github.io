@@ -23,10 +23,35 @@ exports.onCreateNode = require(path.resolve(targetDir, "onCreateNode"));
  * https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/#onCreateWebpackConfig
  */
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+const processEnv = () => {
+  const gatsbyVarObject = {
+    __APP__: process.env.APP,
+    __AUTHOR__: process.env.META_AUTHOR,
+  };
+
+  return Object.keys(gatsbyVarObject).reduce(
+    (acc, key) => {
+      acc[`process.env.${key}`] = JSON.stringify(gatsbyVarObject[key]);
+      return acc;
+    },
+    {
+      "process.env": `({})`,
+    },
+  );
+};
+
+exports.onCreateWebpackConfig = ({ actions, plugins }) => {
   actions.setWebpackConfig({
     resolve: {
       modules: [path.resolve(__dirname), "node_modules"],
     },
+    plugins: [
+      /*
+       * Defining Environment Variables in Client-side JavaScript
+       */
+      plugins.define({
+        ...processEnv(),
+      }),
+    ],
   });
 };
