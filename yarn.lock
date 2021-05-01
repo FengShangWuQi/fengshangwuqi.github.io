@@ -14247,12 +14247,12 @@ rx@4.1.0:
   resolved "https://registry.npm.taobao.org/rx/download/rx-4.1.0.tgz#a5f13ff79ef3b740fe30aa803fb09f98805d4782"
   integrity sha1-pfE/957zt0D+MKqAP7CfmIBdR4I=
 
-rxjs@6.6.7:
-  version "6.6.7"
-  resolved "https://registry.npm.taobao.org/rxjs/download/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
-  integrity sha1-kKwBisq/SRv2UEQjXVhjxNq4BMk=
+rxjs@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.nlark.com/rxjs/download/rxjs-7.0.0.tgz#c55d67c52aee8804d32ab60965e335bd41e2dc2d"
+  integrity sha1-xV1nxSruiATTKrYJZeM1vUHi3C0=
   dependencies:
-    tslib "^1.9.0"
+    tslib "~2.1.0"
 
 rxjs@^6.4.0, rxjs@^6.6.0, rxjs@^6.6.6:
   version "6.6.6"
