@@ -8,12 +8,12 @@
 const figlet = require("figlet");
 
 figlet.parseFont(
-  "Script",
-  require("figlet/importable-fonts/Script.js").default,
+  "Standard",
+  require("figlet/importable-fonts/Standard.js").default,
 );
 
 exports.onInitialClientRender = () => {
-  figlet.text(process.env.__APP__, "Script", function (_, data) {
+  figlet.text(process.env.__APP__, "Standard", function (_, data) {
     console.log(data, "\n", `by ${process.env.__AUTHOR__ || ""}`);
   });
 };
