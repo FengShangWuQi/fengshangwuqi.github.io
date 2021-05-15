@@ -1,7 +1,7 @@
-import * as logger from "@fengshangwuqi/logger";
+import { logger } from "@fengshangwuqi/logger";
 
 import { generateIcons } from "./generate-icons";
 
-logger.info("icon");
-
 generateIcons();
+
+logger("generate icon").withLevel("SUCCESS");

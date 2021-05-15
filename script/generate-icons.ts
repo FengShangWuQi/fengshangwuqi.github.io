@@ -3,7 +3,6 @@ import fse from "fs-extra";
 import globby from "globby";
 import prettier from "prettier";
 import { camelCase } from "lodash";
-import * as logger from "@fengshangwuqi/logger";
 
 const formatCode = (code: string, filePath: string) =>
   prettier.format(code, {
@@ -75,17 +74,15 @@ export const generateIcons = () => {
       return base;
     });
 
-  const exportPath = process.cwd() + "/src-components/basic/Icon.tsx";
-  fse.ensureFileSync(exportPath);
+  const iconPath = process.cwd() + "/src-components/basic/Icon.tsx";
+  fse.ensureFileSync(iconPath);
   fse.writeFileSync(
-    exportPath,
-    formatCode(icons.map(name => iconExport(name)).join(""), exportPath),
+    iconPath,
+    formatCode(icons.map(name => iconExport(name)).join(""), iconPath),
   );
-  logger.success(exportPath);
 
   const sbPath =
     process.cwd() + "/src-components/basic/__storybook__/Icon.stories.tsx";
   fse.ensureFileSync(sbPath);
   fse.writeFileSync(sbPath, formatCode(iconStorybook(icons), sbPath));
-  logger.success(sbPath);
 };
