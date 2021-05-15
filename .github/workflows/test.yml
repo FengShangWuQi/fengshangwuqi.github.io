@@ -1,19 +1,24 @@
 name: Test
-on: [push, pull_request]
+on:
+  pull_request:
+    branches:
+      - dev
+  schedule:
+    - cron: "0 0 * * 0" # weekly
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2-beta
+      - uses: actions/setup-node@v2
         with:
-          node-version: "15"
+          node-version: "14"
 
       - run: yarn
       - run: yarn test
 
-      # - uses: codecov/codecov-action@v1
-      #   with:
-      #     file: ./coverage/clover.xml
-      #     fail_ci_if_error: true
+      - uses: codecov/codecov-action@v1
+        with:
+          file: ./coverage/clover.xml
+          fail_ci_if_error: true
