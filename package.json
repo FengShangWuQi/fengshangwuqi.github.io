@@ -15,25 +15,21 @@
     "release": "gh-pages -d public -b {DEPLOY_BRANCH} && gh-pages-clean"
   },
   "scripts": {
+    "prepare": "husky install",
     "clean": "gatsby clean",
     "format": "prettier --write .",
     "lint": "eslint '**/*.{js,ts,tsx}'",
-    "test": "jest --coverage && tsc",
+    "pretest": "tsc",
+    "test": "jest --coverage",
     "generate": "ts-node ./script/generate.ts",
     "start": "appkit",
-    "debug": "appkit dev blog"
+    "debug:blog": "appkit dev blog",
+    "debug:storybook": "appkit dev storybook"
   },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && pretty-quick --staged",
-      "pre-push": "yarn test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
@@ -102,9 +98,10 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-typescript": "7.13.0",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
     "@fengshangwuqi/appkit": "1.0.32",
-    "@fengshangwuqi/dev-deps": "1.0.24",
-    "@fengshangwuqi/eslint-config": "1.0.31",
+    "@fengshangwuqi/eslint-config": "1.0.33",
     "@fengshangwuqi/logger": "1.0.6",
     "@fengshangwuqi/ts-config": "1.0.4",
     "@testing-library/jest-dom": "5.12.0",
@@ -128,8 +125,14 @@
     "fs-extra": "9.1.0",
     "gh-pages": "3.1.0",
     "globby": "11.0.3",
+    "husky": "6.0.0",
     "jest": "26.6.3",
-    "react-test-renderer": "17.0.2"
+    "lint-staged": "11.0.0",
+    "prettier": "2.3.0",
+    "pretty-quick": "3.1.0",
+    "react-test-renderer": "17.0.2",
+    "ts-node": "9.1.1",
+    "typescript": "4.2.4"
   },
   "license": "MIT"
 }
