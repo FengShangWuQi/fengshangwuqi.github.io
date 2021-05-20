@@ -1,15 +1,16 @@
-FROM node as builder
+FROM node:lts as builder
 
 ENV APP_DIR=/src-storybook
 
 WORKDIR $APP_DIR
 
 COPY package.json ./
-COPY *.lock ./
-RUN yarn
+COPY pnpm-lock.yaml ./
+RUN curl -f https://get.pnpm.io/v6.js | node - add --global pnpm \
+		&& pnpm install
 
 COPY . .
-RUN yarn appkit build storybook
+RUN pnpm appkit build storybook
 
 FROM nginx:alpine
 

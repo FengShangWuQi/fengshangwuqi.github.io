@@ -30,6 +30,8 @@ exports.siteMetadata = {
 
 // plugins
 
+const pnpm = "gatsby-plugin-pnpm";
+
 const sources = process.env.SOURCES
   ? process.env.SOURCES.split(",").map(source => ({
       resolve: "gatsby-source-filesystem", // https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/?=gatsby-source-filesystem
@@ -101,6 +103,7 @@ const offline = "gatsby-plugin-offline"; // https://www.gatsbyjs.com/plugins/gat
 exports.plugins = [
   ...sources,
   ...sharps,
+  pnpm,
   mdx,
   ts,
   emotion,

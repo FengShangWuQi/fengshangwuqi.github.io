@@ -15,8 +15,9 @@ jobs:
         with:
           node-version: "14"
 
-      - run: yarn
-      - run: yarn test
+      - run: curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
+      - run: pnpm install
+      - run: pnpm test
 
       - uses: codecov/codecov-action@v1
         with:

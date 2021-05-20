@@ -16,6 +16,7 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm",
     "clean": "gatsby clean",
     "format": "prettier --write .",
     "lint": "eslint '**/*.{js,ts,tsx}'",
@@ -71,6 +72,7 @@
     "gatsby-plugin-google-analytics": "3.5.0",
     "gatsby-plugin-mdx": "2.5.0",
     "gatsby-plugin-offline": "4.5.0",
+    "gatsby-plugin-pnpm": "1.2.6",
     "gatsby-plugin-react-helmet": "4.5.0",
     "gatsby-plugin-react-svg": "3.0.1",
     "gatsby-plugin-sharp": "3.5.0",
@@ -133,6 +135,10 @@
     "react-test-renderer": "17.0.2",
     "ts-node": "9.1.1",
     "typescript": "4.2.4"
+  },
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=6"
   },
   "license": "MIT"
 }
