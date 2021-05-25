@@ -6,6 +6,7 @@ WORKDIR $APP_DIR
 
 COPY package.json ./
 COPY pnpm-lock.yaml ./
+COPY .npmrc ./
 
 RUN apt update \
 		&& apt -y upgrade \
