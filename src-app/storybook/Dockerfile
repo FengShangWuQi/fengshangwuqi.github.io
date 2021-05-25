@@ -6,7 +6,11 @@ WORKDIR $APP_DIR
 
 COPY package.json ./
 COPY pnpm-lock.yaml ./
-RUN curl -f https://get.pnpm.io/v6.js | node - add --global pnpm \
+
+RUN apt update \
+		&& apt -y upgrade \
+		&& apt install -y libpng-dev autoconf libpng-dev pkg-config nasm \
+		&& curl -f https://get.pnpm.io/v6.js | node - add --global pnpm \
 		&& pnpm install
 
 COPY . .
