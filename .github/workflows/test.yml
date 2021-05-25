@@ -1,5 +1,8 @@
 name: Test
 on:
+  push:
+    branches:
+      - dev
   pull_request:
     branches:
       - dev
@@ -10,13 +13,18 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt update
+      - run: sudo apt -y upgrade
+      - run: sudo apt install -y libpng-dev autoconf libpng-dev pkg-config nasm
+
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: "14"
 
-      - run: yarn install
-      - run: yarn test
+      - run: curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
+      - run: pnpm install
+      - run: pnpm test
 
       - uses: codecov/codecov-action@v1
         with:
