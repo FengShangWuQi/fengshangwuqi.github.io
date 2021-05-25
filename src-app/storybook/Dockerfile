@@ -15,7 +15,7 @@ RUN apt update \
 		&& pnpm install
 
 COPY . .
-RUN pnpm appkit build storybook
+RUN pnpx appkit build storybook
 
 FROM nginx:alpine
 

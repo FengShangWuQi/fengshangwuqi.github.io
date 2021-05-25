@@ -15,7 +15,7 @@ RUN apt update \
 		&& pnpm install
 
 COPY . .
-RUN pnpm appkit build blog
+RUN pnpx appkit build blog
 
 FROM nginx:alpine
 
