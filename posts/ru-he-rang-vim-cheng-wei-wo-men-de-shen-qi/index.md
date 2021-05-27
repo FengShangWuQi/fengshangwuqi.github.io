@@ -238,47 +238,35 @@ hi Normal ctermfg=252 ctermbg=none
 
 ```vim
 Plug 'scrooloose/nerdtree'                            " https://github.com/preservim/nerdtree
-Plug 'jistr/vim-nerdtree-tabs'                        " https://github.com/jistr/vim-nerdtree-tabs
 Plug 'Xuyuanp/nerdtree-git-plugin'                    " https://github.com/Xuyuanp/nerdtree-git-plugin
 Plug 'ryanoasis/vim-devicons'                         " https://github.com/ryanoasis/vim-devicons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'        " https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
-Plug 'tpope/vim-eunuch'                               " https://github.com/tpope/vim-eunuch
 
-map <C-n> :NERDTreeToggle<CR>
-
+nnoremap dt :tabclose<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden = 1
+" Start NERDTree. If a file is specified, move the cursor to its window.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+  \ quit | endif
+" Open the existing NERDTree on each new tab.
+autocmd BufWinEnter * silent NERDTreeMirror
 
-let g:nerdtree_tabs_open_on_console_startup = 1
-
-nnoremap <F5> :UndotreeToggle<cr>
-
-" i 在新的水平分割的窗口中打开
-" s 在新的竖直分割的窗口中打开
-" t 在标签页中打开
-" go 预览文件
-" r 刷新光标所在的目录
-" R 刷新当前根路径
-" I 显示隐藏文件
-" m 显示文件操作菜单
-" C 将根路径设置为光标所在的目录
-" u 设置上级目录为根路径
-" gT 前一个 tab
-" gt 后一个 tab
-" <C-W> 加方向键（h、j、k、l、<Left> 等）可以在窗口之间跳转
-" <C-W> + w 跳转到下一个窗口
-" <C-W> + s 和 :split 作用相同，把当前窗口横向一分为二
-" <C-W> + v 和 :vsplit 作用相同，把当前窗口纵向一分为二
-" <C-W> + o 或 :only 只保留当前窗口，关闭其他所有窗口
-```
-
-### 标签
-
-```vim
-Plug 'majutsushi/tagbar'                         " https://github.com/majutsushi/tagbar
-
-nnoremap <F9>      :TagbarToggle<CR>
-inoremap <F9> <C-O>:TagbarToggle<CR>
+" i Open selected file in a split window
+" s Open selected file in a new vsplit
+" t Open selected node/bookmark in a new tab
+" J Jump down inside directories at the current tree depth
+" K Jump up inside directories at the current tree depth
+" r Recursively refresh the current directory
+" R Recursively refresh the current roo
+" m Display the NERDTree menu
+" C Change the tree root to the selected directory
+" u Move the tree root up one directory
+" A Zoom (maximize/minimize) the NERDTree window
+" I Toggle whether hidden files displayed
 ```
 
 ### 自动补全
@@ -287,8 +275,8 @@ inoremap <F9> <C-O>:TagbarToggle<CR>
 Plug 'Valloric/YouCompleteMe'                         " https://github.com/ycm-core/YouCompleteMe
 Plug 'Raimondi/delimitMate'                           " https://github.com/Raimondi/delimitMate
 
-nnoremap <Leader>fi :YcmCompleter FixIt<CR>
-nnoremap <Leader>gd :YcmCompleter GoToDefinition<CR>
+set completeopt=longest,menuone
+nnoremap <Leader>jd :YcmCompleter GoToDefinition<CR>
 ```
 
 ### 语法高亮，检查
@@ -301,7 +289,6 @@ let g:ale_fix_on_save = 1
 let g:ale_sign_column_always = 1
 let g:ale_sign_error = '●'
 let g:ale_sign_warning = '▶'
-
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 ```
@@ -309,16 +296,14 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 ### 全局搜索，快速打开文件
 
 ```vim
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }   " https://github.com/junegunn/fzf
-Plug 'junegunn/fzf.vim'                               " https://github.com/junegunn/fzf.vim
 Plug 'ctrlpvim/ctrlp.vim'                             " https://github.com/ctrlpvim/ctrlp.vim
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_regexp = 1
 
-" <c-r>: 切换匹配模式
-" <c-t>：在新的 tab 中打开
-" :Rg
+" <c-r>: switch to regexp mode.
+" <c-t>：open the selected entry in a new tab.
+" <c-v>、<c-x>：open the selected entry in a new split.
 ```
 
 ### 状态条
@@ -329,13 +314,14 @@ Plug 'vim-airline/vim-airline-themes'                 " https://github.com/vim-a
 
 let g:airline_theme='onedark'
 let g:airline_powerline_fonts = 1
-
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#ale#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#nerdtree_statusline = 0
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline_section_c = ''
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#nerdtree_statusline = 0
+let g:airline_extensions = ['tabline', 'hunks', 'branch', "ctrlp"]
+let g:airline_highlighting_cache = 1
 ```
 
 ### 注释
@@ -346,11 +332,11 @@ Plug 'scrooloose/nerdcommenter'                       " https://github.com/prese
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 
-" <leader>c<space> 注释/取消注释
-" <leader>ca 切换　// 和 /* */
-" <leader>cs /* 块注释 */
-" <leader>cm 只用一组符号注释
-" <leader>cA 在行尾添加注释
+" <leader>c<space>: toggles the comment state of the selected line(s).
+" <leader>ca: Switches to the alternative set of delimiters.
+" <leader>cs: Comments out the selected lines ``sexily''
+" <leader>cm: Comments the given lines using only one set of multipart delimiters.
+" <leader>cA: Adds comment delimiters to the end of line and goes into insert mode between them.
 ```
 
 ### git
@@ -370,13 +356,17 @@ let g:gitgutter_max_signs = -1
 " preview the hunk: <Leader>hp
 
 " :G
-" :Gvdiffsplit
+" :Gdiffsplit
 " :GBrowse
 "
-" s: 加到暂存区中
-" u: 重置加入暂存区的修改
-" =: 切换 diff 显示
-" cc: 提交当前暂存区中的文件
+" s: stage (add) the file or hunk under the cursor.
+" u: unstage (reset) the file or hunk under the cursor.
+" X: discard the change under the cursor.
+" dd: perform a |:Gdiffsplit| on the file under the cursor.
+" cc: create a commit.
+" ca: amend the last commit and edit the message.
+" ce: amend the last commit without editing the message.
+" =: toggle an inline diff of the file under the cursor.]"
 ```
 
 ### Markdown
@@ -385,7 +375,6 @@ let g:gitgutter_max_signs = -1
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }      " https://github.com/iamcco/markdown-preview.nvim
 
 " :MarkdownPreview
-" :MarkdownPreviewStop
 ```
 
 ### Emmet
@@ -403,9 +392,7 @@ let g:user_emmet_leader_key='<C-Z>'
 ```vim
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }     " https://github.com/prettier/vim-prettier
 
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
-
-" :PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync"
 ```
 
 ### Wakatime
