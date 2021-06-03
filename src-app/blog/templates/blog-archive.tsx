@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { rgba, position } from "polished";
 
+import { ITheme } from "src-core/ds";
 import { SEO } from "src-core/seo";
 
 import { Layout, Wrapper } from "../common";
@@ -59,7 +60,7 @@ const BlogArchive = ({
 
       <Wrapper>
         <div
-          css={ds => ({
+          css={(ds: ITheme) => ({
             ...position("relative"),
             fontSize: ds.size.sm,
 
