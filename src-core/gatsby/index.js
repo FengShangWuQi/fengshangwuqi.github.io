@@ -91,13 +91,6 @@ const helmet = "gatsby-plugin-react-helmet"; // https://www.gatsbyjs.com/plugins
 
 const twitter = "gatsby-plugin-twitter"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-twitter/?=gatsby-plugin-twitter
 
-const analytics = {
-  resolve: "gatsby-plugin-google-analytics", // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-analytics/
-  options: {
-    trackingId: process.env.TRACKING_ID,
-  },
-};
-
 const sentry = {
   resolve: "@sentry/gatsby", // https://www.gatsbyjs.com/plugins/@sentry/gatsby/
   options: {
@@ -118,7 +111,6 @@ exports.plugins = [
   emotion,
   helmet,
   twitter,
-  analytics,
   sentry,
   offline,
 ];
