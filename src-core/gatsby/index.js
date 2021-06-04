@@ -98,6 +98,15 @@ const analytics = {
   },
 };
 
+const sentry = {
+  resolve: "@sentry/gatsby", // https://www.gatsbyjs.com/plugins/@sentry/gatsby/
+  options: {
+    dsn: process.env.SENTRY_DSN,
+    tracesSampleRate: 1,
+    release: process.env.VERCEL_GIT_COMMIT_SHA,
+  },
+};
+
 const offline = "gatsby-plugin-offline"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-offline/?=gatsby-plugin-offline
 
 exports.plugins = [
@@ -110,6 +119,7 @@ exports.plugins = [
   helmet,
   twitter,
   analytics,
+  sentry,
   offline,
 ];
 

@@ -13,6 +13,7 @@ specifiers:
   "@fengshangwuqi/ts-config": 1.1.5
   "@mdx-js/mdx": 1.6.22
   "@mdx-js/react": 1.6.22
+  "@sentry/gatsby": 6.5.1
   "@testing-library/jest-dom": 5.12.0
   "@testing-library/react": 11.2.7
   "@testing-library/react-hooks": 7.0.0
@@ -84,6 +85,7 @@ dependencies:
   "@emotion/styled": registry.nlark.com/@emotion/styled/11.3.0_6f0ce87f34be3f2ac5679d2a0b02a09d
   "@mdx-js/mdx": registry.nlark.com/@mdx-js/mdx/1.6.22
   "@mdx-js/react": registry.nlark.com/@mdx-js/react/1.6.22_react@17.0.2
+  "@sentry/gatsby": registry.nlark.com/@sentry/gatsby/6.5.1_gatsby@3.6.2+react@17.0.2
   facepaint: registry.nlark.com/facepaint/1.2.1
   figlet: registry.nlark.com/figlet/1.5.0
   gatsby: registry.nlark.com/gatsby/3.6.2_e6abd5ee450381d093bd5d78db55a622
@@ -325,6 +327,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-validator-identifier": registry.nlark.com/@babel/helper-validator-identifier/7.14.0
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@babel/plugin-transform-modules-systemjs/7.13.8_@babel+core@7.14.3:
@@ -342,6 +346,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-validator-identifier": registry.nlark.com/@babel/helper-validator-identifier/7.14.0
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /@hapi/joi/15.1.1:
@@ -1813,6 +1819,7 @@ packages:
         tarball: fsevents/download/fsevents-1.2.13.tgz,
       }
     engines: { node: ">= 4.0" }
+    os: [darwin]
     deprecated: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
     requiresBuild: true
     dependencies:
@@ -1828,6 +1835,7 @@ packages:
         tarball: fsevents/download/fsevents-2.3.2.tgz,
       }
     engines: { node: ^8.16.0 || ^10.6.0 || >=11.0.0 }
+    os: [darwin]
     optional: true
 
   /functional-red-black-tree/1.0.1:
@@ -4445,6 +4453,8 @@ packages:
       resolve: registry.nlark.com/resolve/1.20.0
       semver: registry.nlark.com/semver/5.7.1
       source-map: registry.nlark.com/source-map/0.5.7
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/core/7.12.9:
@@ -4474,6 +4484,8 @@ packages:
       resolve: registry.nlark.com/resolve/1.20.0
       semver: registry.nlark.com/semver/5.7.1
       source-map: registry.nlark.com/source-map/0.5.7
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/core/7.14.3:
@@ -4621,6 +4633,8 @@ packages:
       "@babel/helper-optimise-call-expression": registry.nlark.com/@babel/helper-optimise-call-expression/7.12.13
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
       "@babel/helper-split-export-declaration": registry.nlark.com/@babel/helper-split-export-declaration/7.12.13
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
@@ -4643,6 +4657,8 @@ packages:
       "@babel/helper-optimise-call-expression": registry.nlark.com/@babel/helper-optimise-call-expression/7.12.13
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
       "@babel/helper-split-export-declaration": registry.nlark.com/@babel/helper-split-export-declaration/7.12.13
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/helper-create-regexp-features-plugin/7.14.3:
@@ -4779,6 +4795,8 @@ packages:
     dependencies:
       "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/helper-module-transforms/7.14.2:
     resolution:
@@ -4798,6 +4816,8 @@ packages:
       "@babel/template": registry.nlark.com/@babel/template/7.12.13
       "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/helper-optimise-call-expression/7.12.13:
     resolution:
@@ -4845,6 +4865,8 @@ packages:
       "@babel/helper-annotate-as-pure": registry.nlark.com/@babel/helper-annotate-as-pure/7.12.13
       "@babel/helper-wrap-function": registry.nlark.com/@babel/helper-wrap-function/7.13.0
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/helper-replace-supers/7.14.4:
     resolution:
@@ -4860,6 +4882,8 @@ packages:
       "@babel/helper-optimise-call-expression": registry.nlark.com/@babel/helper-optimise-call-expression/7.12.13
       "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/helper-skip-transparent-expression-wrappers/7.12.1:
     resolution:
@@ -4919,6 +4943,8 @@ packages:
       "@babel/template": registry.nlark.com/@babel/template/7.12.13
       "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/helpers/7.14.0:
     resolution:
@@ -4933,6 +4959,8 @@ packages:
       "@babel/template": registry.nlark.com/@babel/template/7.12.13
       "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/highlight/7.14.0:
     resolution:
@@ -5011,6 +5039,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-remap-async-to-generator": registry.nlark.com/@babel/helper-remap-async-to-generator/7.13.0
       "@babel/plugin-syntax-async-generators": registry.nlark.com/@babel/plugin-syntax-async-generators/7.8.4
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-proposal-async-generator-functions/7.14.2_@babel+core@7.14.3
@@ -5030,6 +5060,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-remap-async-to-generator": registry.nlark.com/@babel/helper-remap-async-to-generator/7.13.0
       "@babel/plugin-syntax-async-generators": registry.nlark.com/@babel/plugin-syntax-async-generators/7.8.4_@babel+core@7.14.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-class-properties/7.13.0:
@@ -5046,6 +5078,8 @@ packages:
     dependencies:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-proposal-class-properties/7.13.0_@babel+core@7.14.3
@@ -5064,6 +5098,8 @@ packages:
       "@babel/core": registry.nlark.com/@babel/core/7.14.3
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-class-static-block/7.14.3:
@@ -5081,6 +5117,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-class-static-block": registry.nlark.com/@babel/plugin-syntax-class-static-block/7.12.13
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-proposal-class-static-block/7.14.3_@babel+core@7.14.3
@@ -5100,6 +5138,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-class-static-block": registry.nlark.com/@babel/plugin-syntax-class-static-block/7.12.13_@babel+core@7.14.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-dynamic-import/7.14.2:
@@ -5468,6 +5508,8 @@ packages:
     dependencies:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-proposal-private-methods/7.13.0_@babel+core@7.14.3
@@ -5486,6 +5528,8 @@ packages:
       "@babel/core": registry.nlark.com/@babel/core/7.14.3
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-private-property-in-object/7.14.0:
@@ -5504,6 +5548,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-private-property-in-object": registry.nlark.com/@babel/plugin-syntax-private-property-in-object/7.14.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-proposal-private-property-in-object/7.14.0_@babel+core@7.14.3
@@ -5524,6 +5570,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-private-property-in-object": registry.nlark.com/@babel/plugin-syntax-private-property-in-object/7.14.0_@babel+core@7.14.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-syntax-async-generators/7.8.4:
@@ -6081,6 +6129,8 @@ packages:
       "@babel/helper-module-imports": 7.13.12
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-remap-async-to-generator": registry.nlark.com/@babel/helper-remap-async-to-generator/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-transform-async-to-generator/7.13.0_@babel+core@7.14.3
@@ -6100,6 +6150,8 @@ packages:
       "@babel/helper-module-imports": 7.13.12
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-remap-async-to-generator": registry.nlark.com/@babel/helper-remap-async-to-generator/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-block-scoped-functions/7.12.13:
@@ -6185,6 +6237,8 @@ packages:
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
       "@babel/helper-split-export-declaration": registry.nlark.com/@babel/helper-split-export-declaration/7.12.13
       globals: registry.nlark.com/globals/11.12.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-transform-classes/7.14.4_@babel+core@7.14.3:
@@ -6208,6 +6262,8 @@ packages:
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
       "@babel/helper-split-export-declaration": registry.nlark.com/@babel/helper-split-export-declaration/7.12.13
       globals: registry.nlark.com/globals/11.12.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-computed-properties/7.13.0:
@@ -6519,6 +6575,8 @@ packages:
       "@babel/helper-module-transforms": registry.nlark.com/@babel/helper-module-transforms/7.14.2
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-transform-modules-amd/7.14.2_@babel+core@7.14.3
@@ -6538,6 +6596,8 @@ packages:
       "@babel/helper-module-transforms": registry.nlark.com/@babel/helper-module-transforms/7.14.2
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-modules-commonjs/7.14.0:
@@ -6556,6 +6616,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-simple-access": 7.13.12
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-transform-modules-commonjs/7.14.0_@babel+core@7.14.3
@@ -6576,6 +6638,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-simple-access": 7.13.12
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-modules-umd/7.14.0:
@@ -6592,6 +6656,8 @@ packages:
     dependencies:
       "@babel/helper-module-transforms": registry.nlark.com/@babel/helper-module-transforms/7.14.2
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-transform-modules-umd/7.14.0_@babel+core@7.14.3
@@ -6610,6 +6676,8 @@ packages:
       "@babel/core": registry.nlark.com/@babel/core/7.14.3
       "@babel/helper-module-transforms": registry.nlark.com/@babel/helper-module-transforms/7.14.2
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   ? registry.nlark.com/@babel/plugin-transform-named-capturing-groups-regex/7.12.13
@@ -6690,6 +6758,8 @@ packages:
     dependencies:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-transform-object-super/7.12.13_@babel+core@7.14.3
@@ -6708,6 +6778,8 @@ packages:
       "@babel/core": registry.nlark.com/@babel/core/7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-parameters/7.14.2:
@@ -7232,6 +7304,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-typescript": registry.nlark.com/@babel/plugin-syntax-typescript/7.12.13
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   ? registry.nlark.com/@babel/plugin-transform-typescript/7.14.4_@babel+core@7.14.3
@@ -7251,6 +7325,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-typescript": registry.nlark.com/@babel/plugin-syntax-typescript/7.12.13_@babel+core@7.14.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-unicode-escapes/7.12.13:
@@ -7598,6 +7674,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-validator-option": registry.nlark.com/@babel/helper-validator-option/7.12.17
       "@babel/plugin-transform-typescript": registry.nlark.com/@babel/plugin-transform-typescript/7.14.4_@babel+core@7.14.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/runtime-corejs3/7.14.0:
@@ -7668,6 +7746,8 @@ packages:
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
       debug: registry.nlark.com/debug/4.3.1
       globals: registry.nlark.com/globals/11.12.0
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/types/7.14.4:
     resolution:
@@ -8220,6 +8300,8 @@ packages:
       js-yaml: registry.nlark.com/js-yaml/3.14.1
       minimatch: 3.0.4
       strip-json-comments: registry.nlark.com/strip-json-comments/3.1.1
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@fengshangwuqi/appkit/1.1.45:
     resolution:
@@ -8814,6 +8896,8 @@ packages:
       string-length: registry.nlark.com/string-length/4.0.2
       terminal-link: registry.nlark.com/terminal-link/2.1.1
       v8-to-istanbul: registry.nlark.com/v8-to-istanbul/7.1.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@jest/source-map/27.0.1:
@@ -8864,6 +8948,8 @@ packages:
       graceful-fs: registry.nlark.com/graceful-fs/4.2.6
       jest-haste-map: registry.nlark.com/jest-haste-map/27.0.2
       jest-runtime: registry.nlark.com/jest-runtime/27.0.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@jest/transform/27.0.2:
@@ -8892,6 +8978,8 @@ packages:
       slash: registry.nlark.com/slash/3.0.0
       source-map: registry.nlark.com/source-map/0.6.1
       write-file-atomic: registry.nlark.com/write-file-atomic/3.0.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@jest/types/25.5.0:
@@ -9596,6 +9684,8 @@ packages:
       unified: registry.nlark.com/unified/9.2.0
       unist-builder: registry.nlark.com/unist-builder/2.0.3
       unist-util-visit: registry.nlark.com/unist-util-visit/2.0.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@mdx-js/react/1.6.22_react@17.0.2:
@@ -9893,6 +9983,162 @@ packages:
       "@react-spring/types": registry.nlark.com/@react-spring/types/9.2.1
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  registry.nlark.com/@sentry/browser/6.5.1:
+    resolution:
+      {
+        integrity: sha1-mm7VYHs7D06D84cg4+ICkG+MW9s=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/@sentry/browser/download/@sentry/browser-6.5.1.tgz,
+      }
+    name: "@sentry/browser"
+    version: 6.5.1
+    engines: { node: ">=6" }
+    dependencies:
+      "@sentry/core": registry.nlark.com/@sentry/core/6.5.1
+      "@sentry/types": registry.nlark.com/@sentry/types/6.5.1
+      "@sentry/utils": registry.nlark.com/@sentry/utils/6.5.1
+      tslib: 1.14.1
+    dev: false
+
+  registry.nlark.com/@sentry/core/6.5.1:
+    resolution:
+      {
+        integrity: sha1-yLbD7YbtB7GTyV1ZnBuaShYeUA4=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/@sentry/core/download/@sentry/core-6.5.1.tgz,
+      }
+    name: "@sentry/core"
+    version: 6.5.1
+    engines: { node: ">=6" }
+    dependencies:
+      "@sentry/hub": registry.nlark.com/@sentry/hub/6.5.1
+      "@sentry/minimal": registry.nlark.com/@sentry/minimal/6.5.1
+      "@sentry/types": registry.nlark.com/@sentry/types/6.5.1
+      "@sentry/utils": registry.nlark.com/@sentry/utils/6.5.1
+      tslib: 1.14.1
+    dev: false
+
+  registry.nlark.com/@sentry/gatsby/6.5.1_gatsby@3.6.2+react@17.0.2:
+    resolution:
+      {
+        integrity: sha1-81QORKikcXqISXHFWO5q0ECVNus=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/@sentry/gatsby/download/@sentry/gatsby-6.5.1.tgz,
+      }
+    id: registry.nlark.com/@sentry/gatsby/6.5.1
+    name: "@sentry/gatsby"
+    version: 6.5.1
+    engines: { node: ">=6" }
+    peerDependencies:
+      gatsby: ^2.0.0 || ^3.0.0
+    dependencies:
+      "@sentry/react": registry.nlark.com/@sentry/react/6.5.1_react@17.0.2
+      "@sentry/tracing": registry.nlark.com/@sentry/tracing/6.5.1
+      gatsby: registry.nlark.com/gatsby/3.6.2_e6abd5ee450381d093bd5d78db55a622
+    transitivePeerDependencies:
+      - react
+    dev: false
+
+  registry.nlark.com/@sentry/hub/6.5.1:
+    resolution:
+      {
+        integrity: sha1-E17wnQfTLoelP2ZMCuj8xPWWNRk=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/@sentry/hub/download/@sentry/hub-6.5.1.tgz,
+      }
+    name: "@sentry/hub"
+    version: 6.5.1
+    engines: { node: ">=6" }
+    dependencies:
+      "@sentry/types": registry.nlark.com/@sentry/types/6.5.1
+      "@sentry/utils": registry.nlark.com/@sentry/utils/6.5.1
+      tslib: 1.14.1
+    dev: false
+
+  registry.nlark.com/@sentry/minimal/6.5.1:
+    resolution:
+      {
+        integrity: sha1-uMGzgsLqeI7sPTLSA+UIGwDraDg=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/@sentry/minimal/download/@sentry/minimal-6.5.1.tgz,
+      }
+    name: "@sentry/minimal"
+    version: 6.5.1
+    engines: { node: ">=6" }
+    dependencies:
+      "@sentry/hub": registry.nlark.com/@sentry/hub/6.5.1
+      "@sentry/types": registry.nlark.com/@sentry/types/6.5.1
+      tslib: 1.14.1
+    dev: false
+
+  registry.nlark.com/@sentry/react/6.5.1_react@17.0.2:
+    resolution:
+      {
+        integrity: sha1-HHAZ/D2LEWjBq4k2y2WXGzFNBg0=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/@sentry/react/download/@sentry/react-6.5.1.tgz,
+      }
+    id: registry.nlark.com/@sentry/react/6.5.1
+    name: "@sentry/react"
+    version: 6.5.1
+    engines: { node: ">=6" }
+    peerDependencies:
+      react: 15.x || 16.x || 17.x
+    dependencies:
+      "@sentry/browser": registry.nlark.com/@sentry/browser/6.5.1
+      "@sentry/minimal": registry.nlark.com/@sentry/minimal/6.5.1
+      "@sentry/types": registry.nlark.com/@sentry/types/6.5.1
+      "@sentry/utils": registry.nlark.com/@sentry/utils/6.5.1
+      hoist-non-react-statics: 3.3.2
+      react: registry.nlark.com/react/17.0.2
+      tslib: 1.14.1
+    dev: false
+
+  registry.nlark.com/@sentry/tracing/6.5.1:
+    resolution:
+      {
+        integrity: sha1-pfPkl9Tx8xnzZHXfBQ4TXPZa91A=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/@sentry/tracing/download/@sentry/tracing-6.5.1.tgz,
+      }
+    name: "@sentry/tracing"
+    version: 6.5.1
+    engines: { node: ">=6" }
+    dependencies:
+      "@sentry/hub": registry.nlark.com/@sentry/hub/6.5.1
+      "@sentry/minimal": registry.nlark.com/@sentry/minimal/6.5.1
+      "@sentry/types": registry.nlark.com/@sentry/types/6.5.1
+      "@sentry/utils": registry.nlark.com/@sentry/utils/6.5.1
+      tslib: 1.14.1
+    dev: false
+
+  registry.nlark.com/@sentry/types/6.5.1:
+    resolution:
+      {
+        integrity: sha1-CjTs/RrpJ1pBahBWQOtL7UWkah0=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/@sentry/types/download/@sentry/types-6.5.1.tgz,
+      }
+    name: "@sentry/types"
+    version: 6.5.1
+    engines: { node: ">=6" }
+    dev: false
+
+  registry.nlark.com/@sentry/utils/6.5.1:
+    resolution:
+      {
+        integrity: sha1-BGuvfRplZNbVVUN602dNupvAgGo=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/@sentry/utils/download/@sentry/utils-6.5.1.tgz,
+      }
+    name: "@sentry/utils"
+    version: 6.5.1
+    engines: { node: ">=6" }
+    dependencies:
+      "@sentry/types": registry.nlark.com/@sentry/types/6.5.1
+      tslib: 1.14.1
     dev: false
 
   registry.nlark.com/@sideway/address/4.1.2:
@@ -11443,6 +11689,8 @@ packages:
     engines: { node: ">= 6.0.0" }
     dependencies:
       debug: registry.nlark.com/debug/4.3.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/ajv-errors/1.0.1_ajv@6.12.6:
@@ -12121,17 +12369,36 @@ packages:
     engines: { node: ">=4" }
     dev: false
 
-  registry.nlark.com/axios/0.21.1:
+  registry.nlark.com/axios/0.21.1_debug@3.2.7:
     resolution:
       {
         integrity: sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.nlark.com/axios/download/axios-0.21.1.tgz,
       }
+    id: registry.nlark.com/axios/0.21.1
     name: axios
     version: 0.21.1
     dependencies:
-      follow-redirects: registry.nlark.com/follow-redirects/1.14.1
+      follow-redirects: registry.nlark.com/follow-redirects/1.14.1_debug@3.2.7
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  registry.nlark.com/axios/0.21.1_debug@4.3.1:
+    resolution:
+      {
+        integrity: sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/axios/download/axios-0.21.1.tgz,
+      }
+    id: registry.nlark.com/axios/0.21.1
+    name: axios
+    version: 0.21.1
+    dependencies:
+      follow-redirects: registry.nlark.com/follow-redirects/1.14.1_debug@4.3.1
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   registry.nlark.com/axobject-query/2.2.0:
@@ -12180,6 +12447,8 @@ packages:
       chalk: registry.nlark.com/chalk/4.1.1
       graceful-fs: registry.nlark.com/graceful-fs/4.2.6
       slash: registry.nlark.com/slash/3.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/babel-jest/27.0.2_@babel+core@7.14.3:
@@ -12205,6 +12474,8 @@ packages:
       chalk: registry.nlark.com/chalk/4.1.1
       graceful-fs: registry.nlark.com/graceful-fs/4.2.6
       slash: registry.nlark.com/slash/3.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/babel-plugin-add-module-exports/1.0.4:
@@ -12277,6 +12548,8 @@ packages:
       "@istanbuljs/schema": registry.nlark.com/@istanbuljs/schema/0.1.3
       istanbul-lib-instrument: registry.nlark.com/istanbul-lib-instrument/4.0.3
       test-exclude: registry.nlark.com/test-exclude/6.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/babel-plugin-jest-hoist/27.0.1:
@@ -14058,23 +14331,26 @@ packages:
       upper-case: registry.nlark.com/upper-case/1.1.3
     dev: false
 
-  registry.nlark.com/contentful-management/7.22.4:
+  registry.nlark.com/contentful-management/7.22.4_debug@4.3.1:
     resolution:
       {
         integrity: sha1-oHkTJ2eTH9AH3Mc7ljuyuav7YH8=,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.nlark.com/contentful-management/download/contentful-management-7.22.4.tgz,
       }
+    id: registry.nlark.com/contentful-management/7.22.4
     name: contentful-management
     version: 7.22.4
     engines: { node: ">=6" }
     dependencies:
       "@types/json-patch": registry.nlark.com/@types/json-patch/0.0.30
-      axios: registry.nlark.com/axios/0.21.1
+      axios: registry.nlark.com/axios/0.21.1_debug@4.3.1
       contentful-sdk-core: registry.nlark.com/contentful-sdk-core/6.8.0
       fast-copy: registry.nlark.com/fast-copy/2.1.1
       lodash.isplainobject: registry.nlark.com/lodash.isplainobject/4.0.6
       type-fest: registry.nlark.com/type-fest/0.20.2
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   registry.nlark.com/contentful-sdk-core/6.8.0:
@@ -15037,6 +15313,7 @@ packages:
       supports-color:
         optional: true
     dependencies:
+      ms: registry.nlark.com/ms/2.1.2
       supports-color: registry.nlark.com/supports-color/6.1.0
     dev: false
 
@@ -16481,6 +16758,8 @@ packages:
       table: registry.nlark.com/table/6.7.1
       text-table: registry.nlark.com/text-table/0.2.0
       v8-compile-cache: registry.nlark.com/v8-compile-cache/2.3.0
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/espree/7.3.1:
     resolution:
@@ -17396,16 +17675,44 @@ packages:
       flatted: 3.1.1
       rimraf: 3.0.2
 
-  registry.nlark.com/follow-redirects/1.14.1:
+  registry.nlark.com/follow-redirects/1.14.1_debug@3.2.7:
     resolution:
       {
         integrity: sha1-2RFN7Qoc/dM04WTmZirQK/2R/0M=,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.1.tgz,
       }
+    id: registry.nlark.com/follow-redirects/1.14.1
     name: follow-redirects
     version: 1.14.1
     engines: { node: ">=4.0" }
+    peerDependencies:
+      debug: "*"
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dependencies:
+      debug: registry.nlark.com/debug/3.2.7
+    dev: false
+
+  registry.nlark.com/follow-redirects/1.14.1_debug@4.3.1:
+    resolution:
+      {
+        integrity: sha1-2RFN7Qoc/dM04WTmZirQK/2R/0M=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.1.tgz,
+      }
+    id: registry.nlark.com/follow-redirects/1.14.1
+    name: follow-redirects
+    version: 1.14.1
+    engines: { node: ">=4.0" }
+    peerDependencies:
+      debug: "*"
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dependencies:
+      debug: registry.nlark.com/debug/4.3.1_supports-color@6.1.0
     dev: false
 
   registry.nlark.com/for-each/0.3.3:
@@ -18007,6 +18314,8 @@ packages:
       gatsby-telemetry: registry.nlark.com/gatsby-telemetry/2.6.0
       globby: 11.0.3
       lodash: registry.nlark.com/lodash/4.17.21
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/gatsby-plugin-pnpm/1.2.6_gatsby@3.6.2:
@@ -18208,7 +18517,7 @@ packages:
       "@hapi/joi": 15.1.1
       better-queue: registry.nlark.com/better-queue/3.8.10
       chokidar: 3.5.1
-      contentful-management: registry.nlark.com/contentful-management/7.22.4
+      contentful-management: registry.nlark.com/contentful-management/7.22.4_debug@4.3.1
       cors: registry.nlark.com/cors/2.8.5
       debug: registry.nlark.com/debug/4.3.1
       detect-port: registry.nlark.com/detect-port/1.3.0
@@ -18551,7 +18860,7 @@ packages:
       address: registry.nlark.com/address/1.1.2
       anser: registry.nlark.com/anser/2.0.1
       autoprefixer: registry.nlark.com/autoprefixer/10.2.6_postcss@8.2.6
-      axios: registry.nlark.com/axios/0.21.1
+      axios: registry.nlark.com/axios/0.21.1_debug@3.2.7
       babel-loader: 8.2.2_56c0991c8a79bd1374c11f7f6fc4baef
       babel-plugin-add-module-exports: registry.nlark.com/babel-plugin-add-module-exports/1.0.4
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
@@ -18615,7 +18924,7 @@ packages:
       graphql-compose: registry.nlark.com/graphql-compose/7.25.1_graphql@15.5.0
       graphql-playground-middleware-express: registry.nlark.com/graphql-playground-middleware-express/1.7.22_express@4.17.1
       hasha: registry.nlark.com/hasha/5.2.2
-      http-proxy: registry.nlark.com/http-proxy/1.18.1
+      http-proxy: registry.nlark.com/http-proxy/1.18.1_debug@3.2.7
       invariant: registry.nlark.com/invariant/2.2.4
       is-relative: registry.nlark.com/is-relative/1.0.0
       is-relative-url: registry.nlark.com/is-relative-url/3.0.0
@@ -18644,7 +18953,7 @@ packages:
       path-to-regexp: 0.1.7
       physical-cpu-count: registry.nlark.com/physical-cpu-count/2.0.0
       platform: registry.nlark.com/platform/1.3.6
-      pnp-webpack-plugin: registry.nlark.com/pnp-webpack-plugin/1.6.4
+      pnp-webpack-plugin: registry.nlark.com/pnp-webpack-plugin/1.6.4_typescript@4.3.2
       postcss: registry.nlark.com/postcss/8.2.6
       postcss-flexbugs-fixes: registry.nlark.com/postcss-flexbugs-fixes/5.0.2_postcss@8.2.6
       postcss-loader: registry.nlark.com/postcss-loader/5.3.0_postcss@8.2.6+webpack@5.38.1
@@ -19795,39 +20104,66 @@ packages:
       "@tootallnate/once": registry.nlark.com/@tootallnate/once/1.1.2
       agent-base: registry.nlark.com/agent-base/6.0.2
       debug: registry.nlark.com/debug/4.3.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
-  registry.nlark.com/http-proxy-middleware/0.19.1:
+  registry.nlark.com/http-proxy-middleware/0.19.1_debug@4.3.1:
     resolution:
       {
         integrity: sha1-GDx9xKoUeRUDBkmMIQza+WCApDo=,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.nlark.com/http-proxy-middleware/download/http-proxy-middleware-0.19.1.tgz,
       }
+    id: registry.nlark.com/http-proxy-middleware/0.19.1
     name: http-proxy-middleware
     version: 0.19.1
     engines: { node: ">=4.0.0" }
     dependencies:
-      http-proxy: registry.nlark.com/http-proxy/1.18.1
+      http-proxy: registry.nlark.com/http-proxy/1.18.1_debug@4.3.1
       is-glob: registry.nlark.com/is-glob/4.0.1
       lodash: registry.nlark.com/lodash/4.17.21
       micromatch: registry.nlark.com/micromatch/3.1.10
+    transitivePeerDependencies:
+      - debug
     dev: false
 
-  registry.nlark.com/http-proxy/1.18.1:
+  registry.nlark.com/http-proxy/1.18.1_debug@3.2.7:
     resolution:
       {
         integrity: sha1-QBVB8FNIhLv5UmAzTnL4juOXZUk=,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.nlark.com/http-proxy/download/http-proxy-1.18.1.tgz,
       }
+    id: registry.nlark.com/http-proxy/1.18.1
     name: http-proxy
     version: 1.18.1
     engines: { node: ">=8.0.0" }
     dependencies:
       eventemitter3: registry.nlark.com/eventemitter3/4.0.7
-      follow-redirects: registry.nlark.com/follow-redirects/1.14.1
+      follow-redirects: registry.nlark.com/follow-redirects/1.14.1_debug@3.2.7
       requires-port: 1.0.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  registry.nlark.com/http-proxy/1.18.1_debug@4.3.1:
+    resolution:
+      {
+        integrity: sha1-QBVB8FNIhLv5UmAzTnL4juOXZUk=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/http-proxy/download/http-proxy-1.18.1.tgz,
+      }
+    id: registry.nlark.com/http-proxy/1.18.1
+    name: http-proxy
+    version: 1.18.1
+    engines: { node: ">=8.0.0" }
+    dependencies:
+      eventemitter3: registry.nlark.com/eventemitter3/4.0.7
+      follow-redirects: registry.nlark.com/follow-redirects/1.14.1_debug@4.3.1
+      requires-port: 1.0.0
+    transitivePeerDependencies:
+      - debug
     dev: false
 
   registry.nlark.com/https-proxy-agent/5.0.0:
@@ -19843,6 +20179,8 @@ packages:
     dependencies:
       agent-base: registry.nlark.com/agent-base/6.0.2
       debug: registry.nlark.com/debug/4.3.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/human-signals/1.1.1:
@@ -21110,6 +21448,8 @@ packages:
       "@istanbuljs/schema": registry.nlark.com/@istanbuljs/schema/0.1.3
       istanbul-lib-coverage: registry.nlark.com/istanbul-lib-coverage/3.0.0
       semver: registry.nlark.com/semver/6.3.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/istanbul-lib-report/3.0.0:
@@ -21142,6 +21482,8 @@ packages:
       debug: registry.nlark.com/debug/4.3.1
       istanbul-lib-coverage: registry.nlark.com/istanbul-lib-coverage/3.0.0
       source-map: registry.nlark.com/source-map/0.6.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/istanbul-reports/3.0.2:
@@ -21216,6 +21558,8 @@ packages:
       slash: registry.nlark.com/slash/3.0.0
       stack-utils: registry.nlark.com/stack-utils/2.0.3
       throat: registry.nlark.com/throat/6.0.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/jest-cli/27.0.3_ts-node@10.0.0:
@@ -21406,6 +21750,7 @@ packages:
     transitivePeerDependencies:
       - bufferutil
       - canvas
+      - supports-color
       - utf-8-validate
     dev: true
 
@@ -21520,6 +21865,8 @@ packages:
       jest-util: registry.nlark.com/jest-util/27.0.2
       pretty-format: registry.nlark.com/pretty-format/27.0.2
       throat: registry.nlark.com/throat/6.0.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/jest-leak-detector/27.0.2:
@@ -21637,6 +21984,8 @@ packages:
       "@jest/types": registry.nlark.com/@jest/types/27.0.2
       jest-regex-util: registry.nlark.com/jest-regex-util/27.0.1
       jest-snapshot: registry.nlark.com/jest-snapshot/27.0.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/jest-resolve/27.0.2:
@@ -21692,6 +22041,8 @@ packages:
       jest-worker: registry.nlark.com/jest-worker/27.0.2
       source-map-support: registry.nlark.com/source-map-support/0.5.19
       throat: registry.nlark.com/throat/6.0.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/jest-runtime/27.0.3:
@@ -21731,6 +22082,8 @@ packages:
       slash: registry.nlark.com/slash/3.0.0
       strip-bom: registry.nlark.com/strip-bom/4.0.0
       yargs: registry.nlark.com/yargs/16.2.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/jest-serializer/27.0.1:
@@ -22034,6 +22387,7 @@ packages:
       xml-name-validator: registry.nlark.com/xml-name-validator/3.0.0
     transitivePeerDependencies:
       - bufferutil
+      - supports-color
       - utf-8-validate
     dev: true
 
@@ -23542,6 +23896,8 @@ packages:
     dependencies:
       micromark: registry.nlark.com/micromark/2.11.4
       vfile-message: registry.nlark.com/vfile-message/2.0.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/micromark-extension-mdx-jsx/0.3.3:
@@ -23558,6 +23914,8 @@ packages:
       micromark: registry.nlark.com/micromark/2.11.4
       micromark-extension-mdx-expression: registry.nlark.com/micromark-extension-mdx-expression/0.3.2
       vfile-message: registry.nlark.com/vfile-message/2.0.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/micromark-extension-mdx-md/0.1.1:
@@ -23585,6 +23943,8 @@ packages:
       micromark-extension-mdx-expression: registry.nlark.com/micromark-extension-mdx-expression/0.3.2
       micromark-extension-mdx-jsx: registry.nlark.com/micromark-extension-mdx-jsx/0.3.3
       micromark-extension-mdx-md: registry.nlark.com/micromark-extension-mdx-md/0.1.1
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/micromark-extension-mdxjs-esm/0.3.1:
@@ -23600,6 +23960,8 @@ packages:
       micromark: registry.nlark.com/micromark/2.11.4
       micromark-extension-mdx-expression: registry.nlark.com/micromark-extension-mdx-expression/0.3.2
       vfile-message: registry.nlark.com/vfile-message/2.0.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/micromark-extension-mdxjs/0.3.0:
@@ -23619,6 +23981,8 @@ packages:
       micromark-extension-mdx-jsx: registry.nlark.com/micromark-extension-mdx-jsx/0.3.3
       micromark-extension-mdx-md: registry.nlark.com/micromark-extension-mdx-md/0.1.1
       micromark-extension-mdxjs-esm: registry.nlark.com/micromark-extension-mdxjs-esm/0.3.1
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/micromark/2.11.4:
@@ -23633,6 +23997,8 @@ packages:
     dependencies:
       debug: registry.nlark.com/debug/4.3.1
       parse-entities: registry.nlark.com/parse-entities/2.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/micromatch/3.1.10:
@@ -25769,18 +26135,21 @@ packages:
       logalot: registry.nlark.com/logalot/2.1.0
     dev: false
 
-  registry.nlark.com/pnp-webpack-plugin/1.6.4:
+  registry.nlark.com/pnp-webpack-plugin/1.6.4_typescript@4.3.2:
     resolution:
       {
         integrity: sha1-yXEaxNxIpoXauvyG+Lbdn434QUk=,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.nlark.com/pnp-webpack-plugin/download/pnp-webpack-plugin-1.6.4.tgz,
       }
+    id: registry.nlark.com/pnp-webpack-plugin/1.6.4
     name: pnp-webpack-plugin
     version: 1.6.4
     engines: { node: ">=6" }
     dependencies:
-      ts-pnp: registry.nlark.com/ts-pnp/1.2.0
+      ts-pnp: registry.nlark.com/ts-pnp/1.2.0_typescript@4.3.2
+    transitivePeerDependencies:
+      - typescript
     dev: false
 
   registry.nlark.com/polished/4.1.3:
@@ -27644,6 +28013,8 @@ packages:
       is-alphabetical: registry.nlark.com/is-alphabetical/1.0.4
       remark-parse: registry.nlark.com/remark-parse/8.0.3
       unified: registry.nlark.com/unified/9.2.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/remark-mdx/2.0.0-next.9:
@@ -27659,6 +28030,8 @@ packages:
       mdast-util-mdx: registry.nlark.com/mdast-util-mdx/0.1.1
       micromark-extension-mdx: registry.nlark.com/micromark-extension-mdx/0.2.1
       micromark-extension-mdxjs: registry.nlark.com/micromark-extension-mdxjs/0.3.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/remark-mdxjs/2.0.0-next.8:
@@ -27676,6 +28049,8 @@ packages:
       "@babel/plugin-proposal-object-rest-spread": registry.nlark.com/@babel/plugin-proposal-object-rest-spread/7.10.4_@babel+core@7.10.5
       "@babel/plugin-syntax-jsx": registry.nlark.com/@babel/plugin-syntax-jsx/7.10.4_@babel+core@7.10.5
       "@mdx-js/util": registry.nlark.com/@mdx-js/util/2.0.0-next.8
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/remark-parse/6.0.3:
@@ -28742,6 +29117,8 @@ packages:
       "@types/component-emitter": registry.nlark.com/@types/component-emitter/1.2.10
       component-emitter: registry.nlark.com/component-emitter/1.3.0
       debug: registry.nlark.com/debug/4.3.1
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/socket.io/3.1.1:
@@ -28931,40 +29308,46 @@ packages:
     name: spdx-license-ids
     version: 3.0.9
 
-  registry.nlark.com/spdy-transport/3.0.0:
+  registry.nlark.com/spdy-transport/3.0.0_supports-color@6.1.0:
     resolution:
       {
         integrity: sha1-ANSGOmQArXXfkzYaFghgXl3NzzE=,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.nlark.com/spdy-transport/download/spdy-transport-3.0.0.tgz,
       }
+    id: registry.nlark.com/spdy-transport/3.0.0
     name: spdy-transport
     version: 3.0.0
     dependencies:
-      debug: registry.nlark.com/debug/4.3.1
+      debug: registry.nlark.com/debug/4.3.1_supports-color@6.1.0
       detect-node: registry.nlark.com/detect-node/2.1.0
       hpack.js: registry.nlark.com/hpack.js/2.1.6
       obuf: registry.nlark.com/obuf/1.1.2
       readable-stream: registry.nlark.com/readable-stream/3.6.0
       wbuf: registry.nlark.com/wbuf/1.7.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
-  registry.nlark.com/spdy/4.0.2:
+  registry.nlark.com/spdy/4.0.2_supports-color@6.1.0:
     resolution:
       {
         integrity: sha1-t09GYgOj7aRSwCSSuR+56EonZ3s=,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.nlark.com/spdy/download/spdy-4.0.2.tgz,
       }
+    id: registry.nlark.com/spdy/4.0.2
     name: spdy
     version: 4.0.2
     engines: { node: ">=6.0.0" }
     dependencies:
-      debug: registry.nlark.com/debug/4.3.1
+      debug: registry.nlark.com/debug/4.3.1_supports-color@6.1.0
       handle-thing: registry.nlark.com/handle-thing/2.0.1
       http-deceiver: registry.nlark.com/http-deceiver/1.2.7
       select-hose: registry.nlark.com/select-hose/2.0.0
-      spdy-transport: registry.nlark.com/spdy-transport/3.0.0
+      spdy-transport: registry.nlark.com/spdy-transport/3.0.0_supports-color@6.1.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/split-on-first/1.1.0:
@@ -30473,16 +30856,24 @@ packages:
       yn: 3.1.1
     dev: false
 
-  registry.nlark.com/ts-pnp/1.2.0:
+  registry.nlark.com/ts-pnp/1.2.0_typescript@4.3.2:
     resolution:
       {
         integrity: sha1-pQCtCEsHmPHDBxrzkeZZEshrypI=,
         registry: https://registry.npm.taobao.org/,
         tarball: https://registry.nlark.com/ts-pnp/download/ts-pnp-1.2.0.tgz,
       }
+    id: registry.nlark.com/ts-pnp/1.2.0
     name: ts-pnp
     version: 1.2.0
     engines: { node: ">=6" }
+    peerDependencies:
+      typescript: "*"
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      typescript: registry.nlark.com/typescript/4.3.2
     dev: false
 
   registry.nlark.com/tsconfig-paths/3.9.0:
@@ -31835,7 +32226,7 @@ packages:
       del: registry.nlark.com/del/4.1.1
       express: 4.17.1
       html-entities: registry.nlark.com/html-entities/1.4.0
-      http-proxy-middleware: registry.nlark.com/http-proxy-middleware/0.19.1
+      http-proxy-middleware: registry.nlark.com/http-proxy-middleware/0.19.1_debug@4.3.1
       import-local: registry.nlark.com/import-local/2.0.0
       internal-ip: registry.nlark.com/internal-ip/4.3.0
       ip: registry.nlark.com/ip/1.1.5
@@ -31851,7 +32242,7 @@ packages:
       serve-index: 1.9.1
       sockjs: registry.nlark.com/sockjs/0.3.21
       sockjs-client: 1.5.1
-      spdy: registry.nlark.com/spdy/4.0.2
+      spdy: registry.nlark.com/spdy/4.0.2_supports-color@6.1.0
       strip-ansi: registry.nlark.com/strip-ansi/3.0.1
       supports-color: registry.nlark.com/supports-color/6.1.0
       url: registry.nlark.com/url/0.11.0
