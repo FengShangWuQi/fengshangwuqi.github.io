@@ -16,7 +16,6 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "preinstall": "npx only-allow pnpm",
     "clean": "gatsby clean",
     "format": "prettier --write .",
     "lint": "eslint '**/*.{js,ts,tsx}'",
