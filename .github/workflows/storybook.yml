@@ -7,12 +7,12 @@ on:
       - "src-app/storybook/**"
       - "**/__storybook__/**"
   schedule:
-    - cron: "0 0 * * FRI" # every-friday
+    - cron: "0 4 * * SUN" # SUN-noon
 
 jobs:
   push-docker-image:
     runs-on: ubuntu-latest
-    if: "contains(github.event.head_commit.message, 'docs(r)') || contains(github.event.schedule, '0 0 * * FRI')"
+    if: "contains(github.event.head_commit.message, 'docs(r)') || contains(github.event.schedule, '0 4 * * SUN')"
     steps:
       - name: Checkout
         uses: actions/checkout@v2
