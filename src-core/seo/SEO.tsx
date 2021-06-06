@@ -2,26 +2,28 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 import { OpenGraph } from "./OpenGraph";
-import { TwitterCard, ITwitterCardProps } from "./TwitterCard";
+import { TwitterCard } from "./TwitterCard";
 import { SchemaOrg, ISchemaOrgProps } from "./SchemaOrg";
 
 export interface IBaseSEO {
   title: string;
   description: string;
-  imageSrc: string;
+  image: string;
 }
 
-export interface ISEOProps extends ISchemaOrgProps, ITwitterCardProps {
+export interface ISEOProps extends Omit<ISchemaOrgProps, "type"> {
   keywords: string[];
+  type?: string;
+  creator?: string;
 }
 
 export const SEO = ({
   keywords,
-  twitter,
-  isBlogPost,
+  type = "website",
   url,
   author,
   datePublished,
+  creator = "@fengshangwuqi",
   ...baseProps
 }: ISEOProps) => {
   return (
@@ -52,14 +54,16 @@ export const SEO = ({
             : [],
         )}
       />
-      <OpenGraph {...baseProps} url={url} isBlogPost={isBlogPost} />
-      <TwitterCard {...baseProps} twitter={twitter} />
+      <OpenGraph {...baseProps} {...{ url, type }} />
+      <TwitterCard {...baseProps} creator={creator} />
       <SchemaOrg
         {...baseProps}
-        url={url}
-        author={author}
-        datePublished={datePublished}
-        isBlogPost={isBlogPost}
+        {...{
+          url,
+          author,
+          datePublished,
+          type,
+        }}
       />
     </>
   );

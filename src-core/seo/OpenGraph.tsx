@@ -5,15 +5,15 @@ import { IBaseSEO } from "./SEO";
 
 export interface IOpenGraphProps extends IBaseSEO {
   url: string;
-  isBlogPost?: boolean;
+  type: string;
 }
 
 export const OpenGraph = ({
   title,
   description,
-  imageSrc,
+  image,
   url,
-  isBlogPost,
+  type,
 }: IOpenGraphProps) => {
   return (
     <Helmet
@@ -28,7 +28,7 @@ export const OpenGraph = ({
         },
         {
           name: "og:type",
-          content: isBlogPost ? "article" : "website",
+          content: type,
         },
         {
           name: "og:url",
@@ -36,7 +36,7 @@ export const OpenGraph = ({
         },
         {
           name: "og:image",
-          content: imageSrc,
+          content: image,
         },
       ]}
     />

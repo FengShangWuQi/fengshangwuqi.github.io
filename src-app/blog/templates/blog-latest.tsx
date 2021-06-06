@@ -67,13 +67,10 @@ const BlogLatest = ({
       <SEO
         title={title}
         description={description}
-        imageSrc={`${siteUrl}${pathPrefix}${
-          require("static/cover.png").default
-        }`}
+        image={`${siteUrl}${pathPrefix}${require("static/cover.png").default}`}
         keywords={[title, author]}
         url={`${siteUrl}${pathPrefix}`}
         author={author}
-        twitter="@fengshangwuqi"
       />
 
       <LatestHeader />

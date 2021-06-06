@@ -72,13 +72,12 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
       <SEO
         title={`${postTitle} - ${siteTitle}`}
         description={excerpt}
-        imageSrc={`${siteUrl}${pathPrefix}${fluid.src}`}
+        image={`${siteUrl}${pathPrefix}${fluid.src}`}
         keywords={[postTitle, siteTitle, author, ...tags]}
         url={`${siteUrl}${pathPrefix}${slug}`}
         author={author}
-        twitter="@fengshangwuqi"
         datePublished={date}
-        isBlogPost
+        type="article"
       />
       <PrismTheme />
 

@@ -4,15 +4,15 @@ import { Helmet } from "react-helmet";
 import { IOpenGraphProps } from "./OpenGraph";
 
 export interface ISchemaOrgProps extends IOpenGraphProps {
-  author: string;
+  author?: string;
   datePublished?: string;
 }
 
 export const SchemaOrg = ({
   title,
-  imageSrc,
+  image,
   description,
-  isBlogPost,
+  type,
   url,
   author,
   datePublished,
@@ -33,7 +33,7 @@ export const SchemaOrg = ({
       url,
       name: title,
       headline: title,
-      image: imageSrc,
+      image,
       description,
       author: {
         "@type": "Person",
@@ -46,7 +46,7 @@ export const SchemaOrg = ({
       datePublished,
     },
   ];
-  const schema = isBlogPost ? postSchema : baseSchema;
+  const schema = type === "website" ? baseSchema : postSchema;
 
   return (
     <Helmet
