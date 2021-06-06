@@ -13,7 +13,7 @@ import { Layout, Wrapper } from "../common";
 import { Discussion, PostHeader, PostTag, PostContainer } from "../post";
 
 export const postQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     site {
       siteMetadata {
         title

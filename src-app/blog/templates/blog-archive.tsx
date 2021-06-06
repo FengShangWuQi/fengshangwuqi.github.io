@@ -51,7 +51,9 @@ const BlogArchive = ({
       <SEO
         title={title}
         description={`归档 - ${description}`}
-        imageSrc={`${siteUrl}${pathPrefix}${require("static/cover.png")}`}
+        imageSrc={`${siteUrl}${pathPrefix}${
+          require("static/cover.png").default
+        }`}
         keywords={["归档", title, author]}
         url={`${siteUrl}${pathPrefix}/archive`}
         author={author}
