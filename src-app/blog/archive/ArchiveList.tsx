@@ -43,7 +43,7 @@ export const ArchiveItem = ({ path, title }: IArchiveItem) => {
         <div
           style={{
             ...border(1, "solid", ds.color.primary),
-            marginLeft: -3,
+            marginLeft: -4,
             width: 8,
             height: 8,
             borderRadius: ds.radius.default,
