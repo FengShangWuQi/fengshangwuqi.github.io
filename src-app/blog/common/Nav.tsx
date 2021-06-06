@@ -3,8 +3,10 @@ import { Link } from "gatsby";
 
 import { Menu, MenuItem } from "src-components/navigation/Menu";
 
-export const Nav = () => (
-  <Menu right>
+import { pickElmAttrs } from "utils/pickElmAttrs";
+
+export const Nav = ({ ...props }) => (
+  <Menu right {...pickElmAttrs(props)}>
     {[
       { value: "/rss.xml", label: "rss" },
       { value: "/", label: "最新" },

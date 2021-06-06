@@ -8,7 +8,7 @@ import { SEO } from "src-core/seo";
 
 import { Pagination } from "src-components/navigation/Pagination";
 
-import { Layout, Wrapper, Footer } from "../common";
+import { Layout, Nav, Wrapper, Footer } from "../common";
 import { LatestHeader, INode, LatestItem } from "../latest";
 
 export const latestQuery = graphql`
@@ -73,6 +73,7 @@ const BlogLatest = ({
         author={author}
       />
 
+      <Nav />
       <LatestHeader />
 
       <Wrapper withShadow>

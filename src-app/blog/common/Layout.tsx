@@ -7,7 +7,7 @@ import { Bootstrap } from "src-core/react";
 import { defaultTheme, useDesignSystem } from "src-core/ds";
 import { mq } from "src-core/style";
 
-import { Loadingbar, Nav } from ".";
+import { Loadingbar } from ".";
 
 const blogTheme = produce(defaultTheme, theme => {
   theme.color.primary = "#3c2584";
@@ -47,9 +47,6 @@ export const Layout = ({ children }: { children: React.ReactNode }) => (
     <BlogGlobal />
 
     <Loadingbar />
-    <Container>
-      <Nav />
-      {children}
-    </Container>
+    <Container>{children}</Container>
   </Bootstrap>
 );

@@ -2,6 +2,8 @@ import React, { createContext, useContext } from "react";
 import { CSSObject } from "@emotion/react";
 import { padding } from "polished";
 
+import { mq } from "src-core/style";
+
 import { pickElmAttrs } from "utils/pickElmAttrs";
 
 export enum MenuMode {
@@ -24,18 +26,20 @@ export const MenuProvider = MenuContext.Provider;
 
 export const useMenu = () => useContext(MenuContext);
 
-const menuModeStyle = (mode: MenuMode = MenuMode.HORIZONTAL): CSSObject => {
+const menuModeStyle = (mode: MenuMode = MenuMode.HORIZONTAL): CSSObject[] => {
   switch (mode) {
     case MenuMode.HORIZONTAL:
-      return {
-        height: 80,
-        lineHeight: "80px",
-      };
+      return mq(["lg"], {
+        height: [60, 80],
+        lineHeight: ["60px", "80px"],
+      });
     case MenuMode.VERTICAL:
-      return {
-        ...padding(10, 0),
-        width: 200,
-      };
+      return [
+        {
+          ...padding(10, 0),
+          width: 200,
+        },
+      ];
   }
 };
 
@@ -48,7 +52,7 @@ export const Menu = ({
   <ul
     {...pickElmAttrs(otherProps)}
     css={[
-      { ...menuModeStyle(mode) },
+      ...menuModeStyle(mode),
       {
         listStyle: "none",
         overflow: "hidden",

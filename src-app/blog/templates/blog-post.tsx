@@ -9,7 +9,7 @@ import { useDesignSystem, PrismTheme } from "src-core/ds";
 import { mq } from "src-core/style";
 import { SEO } from "src-core/seo";
 
-import { Layout, Wrapper } from "../common";
+import { Layout, Wrapper, Nav } from "../common";
 import { Discussion, PostHeader, PostTag, PostContainer } from "../post";
 
 export const postQuery = graphql`
@@ -81,6 +81,7 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
       />
       <PrismTheme />
 
+      <Nav />
       <PostHeader>
         <Img
           css={{

@@ -1,11 +1,12 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import { rgba, position } from "polished";
 
 import { ITheme } from "src-core/ds";
+import { mq, flex } from "src-core/style";
 import { SEO } from "src-core/seo";
 
-import { Layout, Wrapper } from "../common";
+import { Layout, Wrapper, Nav } from "../common";
 import { IArchiveNode, ArchiveItem } from "../archive";
 
 export const archiveQuery = graphql`
@@ -56,6 +57,31 @@ const BlogArchive = ({
         url={`${siteUrl}${pathPrefix}/archive`}
         author={author}
       />
+
+      <div
+        css={{
+          ...flex({
+            justifyContent: "space-between",
+            alignItems: "center",
+          }),
+        }}>
+        <Link
+          to="/"
+          css={(ds: ITheme) =>
+            mq(["lg"], {
+              paddingLeft: [ds.spacing[4], ds.spacing[6]],
+              fontSize: [ds.size["2xl"], ds.size["3xl"]],
+            })
+          }>
+          枫上雾棋的日志
+        </Link>
+
+        <Nav
+          css={mq(["sm"], {
+            visibility: ["hidden", "visible"],
+          })}
+        />
+      </div>
 
       <Wrapper>
         <div
