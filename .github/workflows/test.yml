@@ -9,6 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, 'test') || contains(github.event.schedule, '0 4 * * SUN')"
     steps:
       - run: sudo apt update
       - run: sudo apt -y upgrade
@@ -25,5 +26,5 @@ jobs:
 
       - uses: codecov/codecov-action@v1
         with:
-          file: ./coverage/clover.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
