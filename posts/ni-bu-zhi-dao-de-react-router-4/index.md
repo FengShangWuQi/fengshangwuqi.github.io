@@ -3,7 +3,7 @@ title: 你不知道的 React Router 4
 original: false
 tags:
   - React
-  - React Router
+  - React-Router
 date: 2017-08-17
 cover: react-router-4.png
 ---
