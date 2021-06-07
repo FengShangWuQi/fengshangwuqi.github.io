@@ -46,8 +46,9 @@ export const ArchiveItem = ({ path, title }: IArchiveItem) => {
             marginLeft: -4,
             width: 8,
             height: 8,
-            borderRadius: ds.radius.default,
+            borderRadius: ds.radius.full,
             background: isHovered ? ds.color.primary : ds.colorPalette.white,
+            transition: "background 0.2s",
           }}
         />
 

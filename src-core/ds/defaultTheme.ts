@@ -50,10 +50,10 @@ const spacing = {
 
 const radius = {
   none: "0",
-  sm: "0.125rem",
-  default: "0.25rem",
-  lg: "0.5rem",
-  full: "9999px",
+  sm: "2px",
+  default: "4px",
+  lg: "8px",
+  full: "50%",
 };
 
 const zIndex = {
