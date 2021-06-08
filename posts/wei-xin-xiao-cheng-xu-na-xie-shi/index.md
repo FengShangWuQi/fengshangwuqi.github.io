@@ -1,6 +1,5 @@
 ---
 title: 微信小程序那些事
-original: true
 tags:
   - Mini-Program
 date: 2017-06-22

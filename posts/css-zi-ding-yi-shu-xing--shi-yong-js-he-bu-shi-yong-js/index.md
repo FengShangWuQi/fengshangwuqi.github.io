@@ -1,6 +1,5 @@
 ---
 title: CSS 自定义属性 -- 使用 JS 和不使用 JS
-original: false
 tags:
   - CSS
 date: 2017-08-08

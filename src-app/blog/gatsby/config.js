@@ -42,7 +42,6 @@ const feed = {
                     title
                     date(formatString: "YYYY-MM-DD")
                     tags
-                    original
                   }
                 }
               }

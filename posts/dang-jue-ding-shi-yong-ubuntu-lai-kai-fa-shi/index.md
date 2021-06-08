@@ -1,6 +1,5 @@
 ---
 title: 当决定使用 Ubuntu 来开发时
-original: true
 tags:
   - Ubuntu
 date: 2017-05-09

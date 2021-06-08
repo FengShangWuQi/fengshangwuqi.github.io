@@ -1,6 +1,5 @@
 ---
 title: 如何让 vim 成为我们的神器
-original: true
 tags:
   - Vim
 date: 2017-10-08

@@ -9,7 +9,6 @@ import { PostDate, PostTags } from "../templates/blog-post";
 
 interface ILatestItem {
   title: string;
-  original: boolean;
   path: string;
   tags: string[];
   excerpt: string;

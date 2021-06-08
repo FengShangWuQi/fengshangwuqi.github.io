@@ -1,6 +1,5 @@
 ---
 title: 一起来看 HTML 5.2 中新的原生元素 <dialog>
-original: false
 tags:
   - HTML
   - dialog

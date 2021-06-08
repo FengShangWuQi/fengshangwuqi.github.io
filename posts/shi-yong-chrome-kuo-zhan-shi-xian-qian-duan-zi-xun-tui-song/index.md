@@ -1,6 +1,5 @@
 ---
 title: 程序员偷懒指南 -- 使用 chrome 扩展实现前端资讯推送
-original: true
 tags:
   - Extension
 date: 2018-04-04

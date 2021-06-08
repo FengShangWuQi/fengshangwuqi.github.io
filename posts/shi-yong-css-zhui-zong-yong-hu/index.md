@@ -1,6 +1,5 @@
 ---
 title: 使用 CSS 追踪用户
-original: false
 tags:
   - CSS
 date: 2018-01-19

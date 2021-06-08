@@ -1,6 +1,5 @@
 ---
 title: 如何只用 CSS 完成漂亮的加载
-original: false
 tags:
   - CSS
   - Animation

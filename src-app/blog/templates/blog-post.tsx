@@ -35,7 +35,6 @@ export const postQuery = graphql`
         title
         tags
         date(formatString: "YYYY-MM-DD")
-        original
         cover {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)

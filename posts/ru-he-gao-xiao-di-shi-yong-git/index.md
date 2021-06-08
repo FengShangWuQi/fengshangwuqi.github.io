@@ -1,6 +1,5 @@
 ---
 title: 如何高效地使用 Git
-original: true
 tags:
   - Git
 date: 2017-04-09

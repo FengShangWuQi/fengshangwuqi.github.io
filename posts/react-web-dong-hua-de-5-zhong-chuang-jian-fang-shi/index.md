@@ -1,6 +1,5 @@
 ---
 title: React Web 动画的 5 种创建方式，每一种都不简单
-original: false
 tags:
   - React
   - CSS

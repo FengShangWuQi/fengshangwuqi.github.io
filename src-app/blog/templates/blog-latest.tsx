@@ -37,7 +37,6 @@ export const latestQuery = graphql`
             title
             tags
             date(formatString: "YYYY-MM-DD")
-            original
             cover {
               childImageSharp {
                 gatsbyImageData(layout: FULL_WIDTH)
@@ -89,7 +88,6 @@ const BlogLatest = ({
               excerpt={node.excerpt}
               path={node.fields.slug}
               title={node.frontmatter.title}
-              original={node.frontmatter.original}
               tags={node.frontmatter.tags}
               date={node.frontmatter.date}
               image={getImage(node.frontmatter.cover)!}
