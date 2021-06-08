@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { animationFrameScheduler, interval } from "rxjs";
 import { observeOn, take } from "rxjs/operators";
 
@@ -15,7 +15,7 @@ export const UseRectDemo = () => {
   const [rootRect] = useRect(rootRef);
   const [rect, refreshRect] = useRect(ref);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const intervals = interval(10);
 
     const intervalSub = intervals

@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 export const Stars = ({ width, height }: { width: number; height: number }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -21,26 +21,21 @@ export const Stars = ({ width, height }: { width: number; height: number }) => {
   const STAR_RADIUS = 0.5;
   const STAR_INCREMENT = 1.3;
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const ctx = canvasRef.current!.getContext("2d");
 
-    const starsDraw = (
-      x: number,
-      y: number,
-      dx: number,
-      dy: number,
-      fill: string,
-    ) => () => {
-      if (x + STAR_RADIUS > width || x - STAR_RADIUS < 0) dx = -dx;
-      if (y + STAR_RADIUS > height || y - STAR_RADIUS < 0) dy = -dy;
-      x += dx;
-      y += dy;
+    const starsDraw =
+      (x: number, y: number, dx: number, dy: number, fill: string) => () => {
+        if (x + STAR_RADIUS > width || x - STAR_RADIUS < 0) dx = -dx;
+        if (y + STAR_RADIUS > height || y - STAR_RADIUS < 0) dy = -dy;
+        x += dx;
+        y += dy;
 
-      ctx!.beginPath();
-      ctx!.arc(x, y, STAR_RADIUS, 0, Math.PI * 2);
-      ctx!.fillStyle = fill;
-      ctx!.fill();
-    };
+        ctx!.beginPath();
+        ctx!.arc(x, y, STAR_RADIUS, 0, Math.PI * 2);
+        ctx!.fillStyle = fill;
+        ctx!.fill();
+      };
 
     const starsAnimate = () => {
       starsAnimationID = requestAnimationFrame(starsAnimate);

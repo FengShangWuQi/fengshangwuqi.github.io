@@ -24,7 +24,7 @@ const Barrage = ({
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const barrageArr: (() => void)[] = [];
     let animationID: number;
 

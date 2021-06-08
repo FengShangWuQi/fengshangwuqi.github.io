@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from "react";
+import React, { useEffect } from "react";
 
 export const Discussion = ({
   shortname,
@@ -9,7 +9,7 @@ export const Discussion = ({
 }) => {
   const { identifier, url } = config;
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const doc = window.document;
     const id = "dsq-discuss-scr";
 

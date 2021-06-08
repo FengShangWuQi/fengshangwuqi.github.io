@@ -38,7 +38,7 @@ export const useRect = (
     refreshRect();
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const resize$ = fromEvent(globalThis, "resize");
     const orientationchange$ = fromEvent(globalThis, "orientationchange");
 
