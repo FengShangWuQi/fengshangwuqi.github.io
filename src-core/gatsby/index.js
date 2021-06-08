@@ -44,7 +44,14 @@ const sources = process.env.SOURCES
 
 const image = [
   "gatsby-plugin-image", // https://www.gatsbyjs.com/plugins/gatsby-plugin-image/?=gatsby-plugin-image
-  "gatsby-plugin-sharp", // https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/?=%22gatsby-transformer-sharp
+  {
+    resolve: "gatsby-plugin-sharp", // https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/?=%22gatsby-transformer-sharp
+    options: {
+      defaults: {
+        placeholder: "blurred",
+      },
+    },
+  },
   // Needed for dynamic images
   "gatsby-transformer-sharp", // https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp/?=gatsby-plugin-sharp
 ];
