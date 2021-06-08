@@ -74,4 +74,9 @@ module.exports = async ({ graphql, actions }) => {
       groups,
     },
   });
+
+  createPage({
+    path: "/404.html",
+    component: path.resolve("pages", "404.ts"),
+  });
 };

@@ -47,7 +47,8 @@
     ],
     "rules": {
       "@typescript-eslint/interface-name-prefix": 0,
-      "@typescript-eslint/camelcase": 0
+      "@typescript-eslint/camelcase": 0,
+      "@typescript-eslint/no-floating-promises": 1
     }
   },
   "prettier": {
