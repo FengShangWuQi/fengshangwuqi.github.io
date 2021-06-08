@@ -39,7 +39,7 @@ export const latestQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             cover {
               childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
+                gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.78)
               }
             }
           }
