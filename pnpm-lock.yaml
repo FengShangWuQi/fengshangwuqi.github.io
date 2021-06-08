@@ -27,7 +27,6 @@ specifiers:
   "@types/node": 15.12.1
   "@types/react": 17.0.9
   "@types/react-dom": 17.0.6
-  "@types/react-helmet": 6.1.1
   babel-jest: 27.0.2
   babel-preset-gatsby: 1.6.0
   chalk: 4.1.1
@@ -44,7 +43,7 @@ specifiers:
   gatsby-plugin-mdx: 2.6.0
   gatsby-plugin-offline: 4.6.0
   gatsby-plugin-pnpm: 1.2.6
-  gatsby-plugin-react-helmet: 4.6.0
+  gatsby-plugin-react-helmet-async: 1.2.0
   gatsby-plugin-react-svg: 3.0.1
   gatsby-plugin-sharp: 3.6.0
   gatsby-plugin-twitter: 3.6.0
@@ -72,7 +71,7 @@ specifiers:
   prismjs: 1.23.0
   react: 17.0.2
   react-dom: 17.0.2
-  react-helmet: 6.1.0
+  react-helmet-async: 1.0.9
   react-spring: 9.2.1
   react-test-renderer: 17.0.2
   rxjs: 7.1.0
@@ -98,7 +97,7 @@ dependencies:
   gatsby-plugin-mdx: registry.nlark.com/gatsby-plugin-mdx/2.6.0_73e8d0148a4c5c71ceb6a02bbce55c80
   gatsby-plugin-offline: registry.nlark.com/gatsby-plugin-offline/4.6.0_3bc1a78a92807bcd38c810f3fdf5a9f1
   gatsby-plugin-pnpm: registry.nlark.com/gatsby-plugin-pnpm/1.2.6_gatsby@3.6.2
-  gatsby-plugin-react-helmet: registry.nlark.com/gatsby-plugin-react-helmet/4.6.0_gatsby@3.6.2+react-helmet@6.1.0
+  gatsby-plugin-react-helmet-async: registry.nlark.com/gatsby-plugin-react-helmet-async/1.2.0_b0ff60d14fd7bee5e3caeaece2683e7d
   gatsby-plugin-react-svg: registry.nlark.com/gatsby-plugin-react-svg/3.0.1_gatsby@3.6.2
   gatsby-plugin-sharp: registry.nlark.com/gatsby-plugin-sharp/3.6.0_gatsby@3.6.2
   gatsby-plugin-twitter: registry.nlark.com/gatsby-plugin-twitter/3.6.0_gatsby@3.6.2
@@ -119,7 +118,7 @@ dependencies:
   prismjs: registry.nlark.com/prismjs/1.23.0
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
-  react-helmet: registry.nlark.com/react-helmet/6.1.0_react@17.0.2
+  react-helmet-async: registry.nlark.com/react-helmet-async/1.0.9_react-dom@17.0.2+react@17.0.2
   react-spring: registry.nlark.com/react-spring/9.2.1_react-dom@17.0.2+react@17.0.2
   rxjs: registry.nlark.com/rxjs/7.1.0
 
@@ -144,7 +143,6 @@ devDependencies:
   "@types/node": registry.nlark.com/@types/node/15.12.1
   "@types/react": registry.nlark.com/@types/react/17.0.9
   "@types/react-dom": registry.nlark.com/@types/react-dom/17.0.6
-  "@types/react-helmet": registry.nlark.com/@types/react-helmet/6.1.1
   babel-jest: registry.nlark.com/babel-jest/27.0.2
   babel-preset-gatsby: registry.nlark.com/babel-preset-gatsby/1.6.0
   chalk: registry.nlark.com/chalk/4.1.1
@@ -329,6 +327,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-validator-identifier": registry.nlark.com/@babel/helper-validator-identifier/7.14.0
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@babel/plugin-transform-modules-systemjs/7.13.8_@babel+core@7.14.3:
@@ -346,6 +346,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-validator-identifier": registry.nlark.com/@babel/helper-validator-identifier/7.14.0
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /@hapi/joi/15.1.1:
@@ -4630,6 +4632,8 @@ packages:
       "@babel/helper-optimise-call-expression": registry.nlark.com/@babel/helper-optimise-call-expression/7.12.13
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
       "@babel/helper-split-export-declaration": registry.nlark.com/@babel/helper-split-export-declaration/7.12.13
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3:
@@ -4652,6 +4656,8 @@ packages:
       "@babel/helper-optimise-call-expression": registry.nlark.com/@babel/helper-optimise-call-expression/7.12.13
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
       "@babel/helper-split-export-declaration": registry.nlark.com/@babel/helper-split-export-declaration/7.12.13
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/helper-create-regexp-features-plugin/7.14.3:
@@ -4788,6 +4794,8 @@ packages:
     dependencies:
       "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/helper-module-transforms/7.14.2:
     resolution:
@@ -4807,6 +4815,8 @@ packages:
       "@babel/template": registry.nlark.com/@babel/template/7.12.13
       "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/helper-optimise-call-expression/7.12.13:
     resolution:
@@ -4869,6 +4879,8 @@ packages:
       "@babel/helper-optimise-call-expression": registry.nlark.com/@babel/helper-optimise-call-expression/7.12.13
       "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/helper-skip-transparent-expression-wrappers/7.12.1:
     resolution:
@@ -4942,6 +4954,8 @@ packages:
       "@babel/template": registry.nlark.com/@babel/template/7.12.13
       "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
       "@babel/types": registry.nlark.com/@babel/types/7.14.4
+    transitivePeerDependencies:
+      - supports-color
 
   registry.nlark.com/@babel/highlight/7.14.0:
     resolution:
@@ -5055,6 +5069,8 @@ packages:
     dependencies:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-proposal-class-properties/7.13.0_@babel+core@7.14.3:
@@ -5073,6 +5089,8 @@ packages:
       "@babel/core": registry.nlark.com/@babel/core/7.14.3
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-class-static-block/7.14.3:
@@ -5090,6 +5108,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-class-static-block": registry.nlark.com/@babel/plugin-syntax-class-static-block/7.12.13
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-proposal-class-static-block/7.14.3_@babel+core@7.14.3:
@@ -5109,6 +5129,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-class-static-block": registry.nlark.com/@babel/plugin-syntax-class-static-block/7.12.13_@babel+core@7.14.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-dynamic-import/7.14.2:
@@ -5477,6 +5499,8 @@ packages:
     dependencies:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-proposal-private-methods/7.13.0_@babel+core@7.14.3:
@@ -5495,6 +5519,8 @@ packages:
       "@babel/core": registry.nlark.com/@babel/core/7.14.3
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-private-property-in-object/7.14.0:
@@ -5513,6 +5539,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-private-property-in-object": registry.nlark.com/@babel/plugin-syntax-private-property-in-object/7.14.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-proposal-private-property-in-object/7.14.0_@babel+core@7.14.3:
@@ -5533,6 +5561,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-private-property-in-object": registry.nlark.com/@babel/plugin-syntax-private-property-in-object/7.14.0_@babel+core@7.14.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-syntax-async-generators/7.8.4:
@@ -6194,6 +6224,8 @@ packages:
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
       "@babel/helper-split-export-declaration": registry.nlark.com/@babel/helper-split-export-declaration/7.12.13
       globals: registry.nlark.com/globals/11.12.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-transform-classes/7.14.4_@babel+core@7.14.3:
@@ -6217,6 +6249,8 @@ packages:
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
       "@babel/helper-split-export-declaration": registry.nlark.com/@babel/helper-split-export-declaration/7.12.13
       globals: registry.nlark.com/globals/11.12.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-computed-properties/7.13.0:
@@ -6528,6 +6562,8 @@ packages:
       "@babel/helper-module-transforms": registry.nlark.com/@babel/helper-module-transforms/7.14.2
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-transform-modules-amd/7.14.2_@babel+core@7.14.3:
@@ -6547,6 +6583,8 @@ packages:
       "@babel/helper-module-transforms": registry.nlark.com/@babel/helper-module-transforms/7.14.2
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-modules-commonjs/7.14.0:
@@ -6565,6 +6603,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-simple-access": 7.13.12
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-transform-modules-commonjs/7.14.0_@babel+core@7.14.3:
@@ -6585,6 +6625,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-simple-access": 7.13.12
       babel-plugin-dynamic-import-node: registry.nlark.com/babel-plugin-dynamic-import-node/2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-modules-umd/7.14.0:
@@ -6601,6 +6643,8 @@ packages:
     dependencies:
       "@babel/helper-module-transforms": registry.nlark.com/@babel/helper-module-transforms/7.14.2
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-transform-modules-umd/7.14.0_@babel+core@7.14.3:
@@ -6619,6 +6663,8 @@ packages:
       "@babel/core": registry.nlark.com/@babel/core/7.14.3
       "@babel/helper-module-transforms": registry.nlark.com/@babel/helper-module-transforms/7.14.2
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-named-capturing-groups-regex/7.12.13:
@@ -6699,6 +6745,8 @@ packages:
     dependencies:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-transform-object-super/7.12.13_@babel+core@7.14.3:
@@ -6717,6 +6765,8 @@ packages:
       "@babel/core": registry.nlark.com/@babel/core/7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-replace-supers": registry.nlark.com/@babel/helper-replace-supers/7.14.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-parameters/7.14.2:
@@ -7241,6 +7291,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-typescript": registry.nlark.com/@babel/plugin-syntax-typescript/7.12.13
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-transform-typescript/7.14.4_@babel+core@7.14.3:
@@ -7260,6 +7312,8 @@ packages:
       "@babel/helper-create-class-features-plugin": registry.nlark.com/@babel/helper-create-class-features-plugin/7.14.4_@babel+core@7.14.3
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/plugin-syntax-typescript": registry.nlark.com/@babel/plugin-syntax-typescript/7.12.13_@babel+core@7.14.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-unicode-escapes/7.12.13:
@@ -7607,6 +7661,8 @@ packages:
       "@babel/helper-plugin-utils": registry.nlark.com/@babel/helper-plugin-utils/7.13.0
       "@babel/helper-validator-option": registry.nlark.com/@babel/helper-validator-option/7.12.17
       "@babel/plugin-transform-typescript": registry.nlark.com/@babel/plugin-transform-typescript/7.14.4_@babel+core@7.14.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/runtime-corejs3/7.14.0:
@@ -8890,6 +8946,8 @@ packages:
       graceful-fs: registry.nlark.com/graceful-fs/4.2.6
       jest-haste-map: registry.nlark.com/jest-haste-map/27.0.2
       jest-runtime: registry.nlark.com/jest-runtime/27.0.4
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/@jest/transform/27.0.2:
@@ -11090,19 +11148,6 @@ packages:
       "@types/react": registry.nlark.com/@types/react/17.0.9
     dev: true
 
-  registry.nlark.com/@types/react-helmet/6.1.1:
-    resolution:
-      {
-        integrity: sha1-T94iy8qhtGFkLh1xnMYWLZWssRA=,
-        registry: https://registry.npm.taobao.org/,
-        tarball: https://registry.nlark.com/@types/react-helmet/download/@types/react-helmet-6.1.1.tgz,
-      }
-    name: "@types/react-helmet"
-    version: 6.1.1
-    dependencies:
-      "@types/react": registry.nlark.com/@types/react/17.0.9
-    dev: true
-
   registry.nlark.com/@types/react-test-renderer/17.0.1:
     resolution:
       {
@@ -12509,6 +12554,8 @@ packages:
       "@istanbuljs/schema": registry.nlark.com/@istanbuljs/schema/0.1.3
       istanbul-lib-instrument: registry.nlark.com/istanbul-lib-instrument/4.0.3
       test-exclude: registry.nlark.com/test-exclude/6.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   registry.nlark.com/babel-plugin-jest-hoist/27.0.1:
@@ -18294,24 +18341,26 @@ packages:
       lodash.uniq: registry.nlark.com/lodash.uniq/4.5.0
     dev: false
 
-  registry.nlark.com/gatsby-plugin-react-helmet/4.6.0_gatsby@3.6.2+react-helmet@6.1.0:
+  registry.nlark.com/gatsby-plugin-react-helmet-async/1.2.0_b0ff60d14fd7bee5e3caeaece2683e7d:
     resolution:
       {
-        integrity: sha1-cdgOORbDTPKs2kY5gT4IpUNSso8=,
+        integrity: sha1-Q+BFdYYTjst88jICcIp+Dj6tjcs=,
         registry: https://registry.npm.taobao.org/,
-        tarball: https://registry.nlark.com/gatsby-plugin-react-helmet/download/gatsby-plugin-react-helmet-4.6.0.tgz,
+        tarball: https://registry.nlark.com/gatsby-plugin-react-helmet-async/download/gatsby-plugin-react-helmet-async-1.2.0.tgz,
       }
-    id: registry.nlark.com/gatsby-plugin-react-helmet/4.6.0
-    name: gatsby-plugin-react-helmet
-    version: 4.6.0
-    engines: { node: ">=12.13.0" }
+    id: registry.nlark.com/gatsby-plugin-react-helmet-async/1.2.0
+    name: gatsby-plugin-react-helmet-async
+    version: 1.2.0
     peerDependencies:
-      gatsby: ^3.0.0-next.0
-      react-helmet: ^5.1.3 || ^6.0.0
+      gatsby: 2.x || 3.x
+      react: ^16.6.0 || 17.x
+      react-dom: ^16.6.0 || 17.x
+      react-helmet-async: 1.x
     dependencies:
-      "@babel/runtime": registry.nlark.com/@babel/runtime/7.14.0
       gatsby: registry.nlark.com/gatsby/3.6.2_f9181cbf1ec7c6227fb79b1dccec1e3c
-      react-helmet: registry.nlark.com/react-helmet/6.1.0_react@17.0.2
+      react: registry.nlark.com/react/17.0.2
+      react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
+      react-helmet-async: registry.nlark.com/react-helmet-async/1.0.9_react-dom@17.0.2+react@17.0.2
     dev: false
 
   registry.nlark.com/gatsby-plugin-react-svg/3.0.1_gatsby@3.6.2:
@@ -27411,24 +27460,27 @@ packages:
     version: 3.2.0
     dev: false
 
-  registry.nlark.com/react-helmet/6.1.0_react@17.0.2:
+  registry.nlark.com/react-helmet-async/1.0.9_react-dom@17.0.2+react@17.0.2:
     resolution:
       {
-        integrity: sha1-p1DVFlyxPPIT5EdHUCZS55RGhyY=,
+        integrity: sha1-W57SBZ3mtKq0f3aVMvn7y84Wxco=,
         registry: https://registry.npm.taobao.org/,
-        tarball: https://registry.nlark.com/react-helmet/download/react-helmet-6.1.0.tgz,
+        tarball: https://registry.nlark.com/react-helmet-async/download/react-helmet-async-1.0.9.tgz,
       }
-    id: registry.nlark.com/react-helmet/6.1.0
-    name: react-helmet
-    version: 6.1.0
+    id: registry.nlark.com/react-helmet-async/1.0.9
+    name: react-helmet-async
+    version: 1.0.9
     peerDependencies:
-      react: ">=16.3.0"
+      react: ^16.6.0 || ^17.0.0
+      react-dom: ^16.6.0 || ^17.0.0
     dependencies:
-      object-assign: registry.nlark.com/object-assign/4.1.1
+      "@babel/runtime": registry.nlark.com/@babel/runtime/7.14.0
+      invariant: registry.nlark.com/invariant/2.2.4
       prop-types: registry.nlark.com/prop-types/15.7.2
       react: registry.nlark.com/react/17.0.2
+      react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
       react-fast-compare: registry.nlark.com/react-fast-compare/3.2.0
-      react-side-effect: registry.nlark.com/react-side-effect/2.1.1_react@17.0.2
+      shallowequal: registry.nlark.com/shallowequal/1.1.0
     dev: false
 
   registry.nlark.com/react-is/16.13.1:
@@ -27492,22 +27544,6 @@ packages:
       react: registry.nlark.com/react/17.0.2
       react-is: registry.nlark.com/react-is/17.0.2
     dev: true
-
-  registry.nlark.com/react-side-effect/2.1.1_react@17.0.2:
-    resolution:
-      {
-        integrity: sha1-ZsVwHD51YKtIIqTuJ0Le4hXXLrM=,
-        registry: https://registry.npm.taobao.org/,
-        tarball: https://registry.nlark.com/react-side-effect/download/react-side-effect-2.1.1.tgz,
-      }
-    id: registry.nlark.com/react-side-effect/2.1.1
-    name: react-side-effect
-    version: 2.1.1
-    peerDependencies:
-      react: ^16.3.0 || ^17.0.0
-    dependencies:
-      react: registry.nlark.com/react/17.0.2
-    dev: false
 
   registry.nlark.com/react-spring/9.2.1_react-dom@17.0.2+react@17.0.2:
     resolution:
@@ -28805,6 +28841,17 @@ packages:
       }
     name: shallow-compare
     version: 1.2.2
+    dev: false
+
+  registry.nlark.com/shallowequal/1.1.0:
+    resolution:
+      {
+        integrity: sha1-GI1SHelbkIdAT9TctosT3wrk5/g=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/shallowequal/download/shallowequal-1.1.0.tgz,
+      }
+    name: shallowequal
+    version: 1.1.0
     dev: false
 
   registry.nlark.com/sharp/0.28.3:

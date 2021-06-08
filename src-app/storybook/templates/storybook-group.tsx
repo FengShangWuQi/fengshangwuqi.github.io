@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 import { grid } from "src-core/style";
 import { parseSearchString } from "utils/search";
@@ -12,7 +12,7 @@ import { SideBar } from "../common/SideBar";
 import { Content } from "../common/Content";
 
 export const groupsQuery = graphql`
-  query($group: String) {
+  query ($group: String) {
     site {
       siteMetadata {
         title

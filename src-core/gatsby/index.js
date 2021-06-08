@@ -87,7 +87,7 @@ const emotion = {
   },
 };
 
-const helmet = "gatsby-plugin-react-helmet"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/?=gatsby-plugin-react-helmet
+const helmet = "gatsby-plugin-react-helmet-async"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet-async/
 
 const twitter = "gatsby-plugin-twitter"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-twitter/?=gatsby-plugin-twitter
 
