@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, navigate } from "gatsby";
-import { FluidObject } from "gatsby-image";
+import { getImage } from "gatsby-plugin-image";
 import { margin, border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
@@ -9,7 +9,7 @@ import { SEO } from "src-core/seo";
 import { Pagination } from "src-components/navigation/Pagination";
 
 import { Layout, Nav, Wrapper, Footer } from "../common";
-import { LatestHeader, INode, LatestItem } from "../latest";
+import { LatestHeader, LatestItem } from "../latest";
 
 export const latestQuery = graphql`
   query ($size: Int!, $offset: Int!) {
@@ -40,9 +40,7 @@ export const latestQuery = graphql`
             original
             cover {
               childImageSharp {
-                fluid(maxWidth: 350, maxHeight: 196) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -85,7 +83,7 @@ const BlogLatest = ({
             gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
             gridGap: 50,
           }}>
-          {posts.map(({ node }: INode) => (
+          {posts.map(({ node }: any) => (
             <LatestItem
               key={node.fields.slug}
               excerpt={node.excerpt}
@@ -94,9 +92,7 @@ const BlogLatest = ({
               original={node.frontmatter.original}
               tags={node.frontmatter.tags}
               date={node.frontmatter.date}
-              fluid={
-                node.frontmatter.cover.childImageSharp.fluid as FluidObject
-              }
+              image={getImage(node.frontmatter.cover)!}
             />
           ))}
         </div>

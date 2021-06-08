@@ -42,8 +42,10 @@ const sources = process.env.SOURCES
     }))
   : [];
 
-const sharps = [
+const image = [
+  "gatsby-plugin-image", // https://www.gatsbyjs.com/plugins/gatsby-plugin-image/?=gatsby-plugin-image
   "gatsby-plugin-sharp", // https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/?=%22gatsby-transformer-sharp
+  // Needed for dynamic images
   "gatsby-transformer-sharp", // https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp/?=gatsby-plugin-sharp
 ];
 
@@ -87,12 +89,12 @@ const emotion = {
   },
 };
 
-const helmet = "gatsby-plugin-react-helmet-async"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet-async/
+const helmet = "gatsby-plugin-react-helmet-async"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet-async/?=gatsby-plugin-react-helmet-async
 
 const twitter = "gatsby-plugin-twitter"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-twitter/?=gatsby-plugin-twitter
 
 const sentry = {
-  resolve: "@sentry/gatsby", // https://www.gatsbyjs.com/plugins/@sentry/gatsby/
+  resolve: "@sentry/gatsby", // https://www.gatsbyjs.com/plugins/@sentry/gatsby/?=%40sentry%2Fgatsby
   options: {
     dsn: process.env.SENTRY_DSN,
     tracesSampleRate: 1,
@@ -104,7 +106,7 @@ const offline = "gatsby-plugin-offline"; // https://www.gatsbyjs.com/plugins/gat
 
 exports.plugins = [
   ...sources,
-  ...sharps,
+  ...image,
   pnpm,
   mdx,
   ts,

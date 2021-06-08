@@ -1,7 +1,7 @@
 import React from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import { CSSObject } from "@emotion/react";
 import { margin } from "polished";
 
@@ -38,9 +38,7 @@ export const postQuery = graphql`
         original
         cover {
           childImageSharp {
-            fluid(maxWidth: 1200, maxHeight: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
@@ -57,14 +55,7 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
     body,
     fields: { slug },
     excerpt,
-    frontmatter: {
-      title: postTitle,
-      date,
-      tags,
-      cover: {
-        childImageSharp: { fluid },
-      },
-    },
+    frontmatter: { title: postTitle, date, tags, cover },
   } = mdx;
 
   return (
@@ -72,7 +63,7 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
       <SEO
         title={`${postTitle} - ${siteTitle}`}
         description={excerpt}
-        image={`${siteUrl}${pathPrefix}${fluid.src}`}
+        image={`${siteUrl}${pathPrefix}${getSrc(cover)}`}
         keywords={[postTitle, siteTitle, author, ...tags]}
         url={`${siteUrl}${pathPrefix}${slug}`}
         author={author}
@@ -83,11 +74,12 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
 
       <Nav />
       <PostHeader>
-        <Img
+        <GatsbyImage
           css={{
             height: "100%",
           }}
-          fluid={fluid}
+          image={getImage(cover)!}
+          alt={postTitle}
         />
       </PostHeader>
 

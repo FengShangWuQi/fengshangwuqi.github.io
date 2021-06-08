@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Img, { GatsbyImageFluidProps, FluidObject } from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { ellipsis, margin } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
@@ -14,33 +14,14 @@ interface ILatestItem {
   tags: string[];
   excerpt: string;
   date: string;
-  fluid: FluidObject;
-}
-
-export interface INode {
-  node: {
-    id: string;
-    fields: {
-      slug: string;
-    };
-    excerpt: string;
-    frontmatter: {
-      title: string;
-      original: boolean;
-      tags: string[];
-      date: string;
-      cover: {
-        childImageSharp: GatsbyImageFluidProps;
-      };
-    };
-  };
+  image: IGatsbyImageData;
 }
 
 export const LatestItem = ({
   path,
   title,
   tags,
-  fluid,
+  image,
   date,
   excerpt,
 }: ILatestItem) => {
@@ -48,7 +29,8 @@ export const LatestItem = ({
 
   return (
     <div>
-      <Img fluid={fluid} />
+      <GatsbyImage image={image} alt={title} />
+
       <div
         css={{
           marginTop: 24,

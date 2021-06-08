@@ -35,11 +35,11 @@ specifiers:
   figlet: 1.5.0
   fs-extra: 10.0.0
   gatsby: 3.6.2
-  gatsby-image: 3.6.0
   gatsby-plugin-catch-links: 3.6.0
   gatsby-plugin-emotion: 6.6.0
   gatsby-plugin-feed: 3.6.0
   gatsby-plugin-google-analytics: 3.6.0
+  gatsby-plugin-image: 1.6.0
   gatsby-plugin-mdx: 2.6.0
   gatsby-plugin-offline: 4.6.0
   gatsby-plugin-pnpm: 1.2.6
@@ -89,11 +89,11 @@ dependencies:
   facepaint: registry.nlark.com/facepaint/1.2.1
   figlet: registry.nlark.com/figlet/1.5.0
   gatsby: registry.nlark.com/gatsby/3.6.2_f9181cbf1ec7c6227fb79b1dccec1e3c
-  gatsby-image: registry.nlark.com/gatsby-image/3.6.0
   gatsby-plugin-catch-links: registry.nlark.com/gatsby-plugin-catch-links/3.6.0_gatsby@3.6.2
   gatsby-plugin-emotion: registry.nlark.com/gatsby-plugin-emotion/6.6.0_007ccc582a7e29c04308e0aa6875e2ec
   gatsby-plugin-feed: registry.nlark.com/gatsby-plugin-feed/3.6.0_3bc1a78a92807bcd38c810f3fdf5a9f1
   gatsby-plugin-google-analytics: registry.nlark.com/gatsby-plugin-google-analytics/3.6.0_3bc1a78a92807bcd38c810f3fdf5a9f1
+  gatsby-plugin-image: registry.nlark.com/gatsby-plugin-image/1.6.0_e17edfbac08ce5b6ce91616570c37bce
   gatsby-plugin-mdx: registry.nlark.com/gatsby-plugin-mdx/2.6.0_73e8d0148a4c5c71ceb6a02bbce55c80
   gatsby-plugin-offline: registry.nlark.com/gatsby-plugin-offline/4.6.0_3bc1a78a92807bcd38c810f3fdf5a9f1
   gatsby-plugin-pnpm: registry.nlark.com/gatsby-plugin-pnpm/1.2.6_gatsby@3.6.2
@@ -12484,6 +12484,17 @@ packages:
       - supports-color
     dev: true
 
+  registry.nlark.com/babel-jsx-utils/1.1.0:
+    resolution:
+      {
+        integrity: sha1-MEzk/ODIbL7uhJVRpF607RA2OBo=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/babel-jsx-utils/download/babel-jsx-utils-1.1.0.tgz,
+      }
+    name: babel-jsx-utils
+    version: 1.1.0
+    dev: false
+
   registry.nlark.com/babel-plugin-add-module-exports/1.0.4:
     resolution:
       {
@@ -12736,6 +12747,24 @@ packages:
       gatsby: ^3.0.0-next.0
     dependencies:
       "@babel/core": registry.nlark.com/@babel/core/7.14.3
+      gatsby: registry.nlark.com/gatsby/3.6.2_f9181cbf1ec7c6227fb79b1dccec1e3c
+    dev: false
+
+  registry.nlark.com/babel-plugin-remove-graphql-queries/3.6.0_gatsby@3.6.2:
+    resolution:
+      {
+        integrity: sha1-ILgJSuMZkg+5JbFgToN+X2qYfi8=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/babel-plugin-remove-graphql-queries/download/babel-plugin-remove-graphql-queries-3.6.0.tgz,
+      }
+    id: registry.nlark.com/babel-plugin-remove-graphql-queries/3.6.0
+    name: babel-plugin-remove-graphql-queries
+    version: 3.6.0
+    engines: { node: ">=12.13.0" }
+    peerDependencies:
+      "@babel/core": ^7.0.0
+      gatsby: ^3.0.0-next.0
+    dependencies:
       gatsby: registry.nlark.com/gatsby/3.6.2_f9181cbf1ec7c6227fb79b1dccec1e3c
     dev: false
 
@@ -18043,22 +18072,6 @@ packages:
       "@babel/runtime": registry.nlark.com/@babel/runtime/7.14.0
     dev: false
 
-  registry.nlark.com/gatsby-image/3.6.0:
-    resolution:
-      {
-        integrity: sha1-i8qawMYSkMChrPkOtv6TV25FNos=,
-        registry: https://registry.npm.taobao.org/,
-        tarball: https://registry.nlark.com/gatsby-image/download/gatsby-image-3.6.0.tgz,
-      }
-    name: gatsby-image
-    version: 3.6.0
-    engines: { node: ">=12.13.0" }
-    dependencies:
-      "@babel/runtime": registry.nlark.com/@babel/runtime/7.14.0
-      object-fit-images: registry.nlark.com/object-fit-images/3.2.4
-      prop-types: registry.nlark.com/prop-types/15.7.2
-    dev: false
-
   registry.nlark.com/gatsby-legacy-polyfills/1.6.0:
     resolution:
       {
@@ -18206,6 +18219,45 @@ packages:
       minimatch: 3.0.4
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
+    dev: false
+
+  registry.nlark.com/gatsby-plugin-image/1.6.0_e17edfbac08ce5b6ce91616570c37bce:
+    resolution:
+      {
+        integrity: sha1-prLtWBeUddL5LDdK8vlG2fCup4Q=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/gatsby-plugin-image/download/gatsby-plugin-image-1.6.0.tgz,
+      }
+    id: registry.nlark.com/gatsby-plugin-image/1.6.0
+    name: gatsby-plugin-image
+    version: 1.6.0
+    peerDependencies:
+      "@babel/core": ^7.12.3
+      gatsby: ^3.0.0-next.0
+      gatsby-plugin-sharp: ^3.0.0-next.0
+      gatsby-source-filesystem: ^3.0.0-next.0
+      react: ^16.9.0 || ^17.0.0
+      react-dom: ^16.9.0 || ^17.0.0
+    dependencies:
+      "@babel/code-frame": registry.nlark.com/@babel/code-frame/7.12.13
+      "@babel/parser": registry.nlark.com/@babel/parser/7.14.4
+      "@babel/traverse": registry.nlark.com/@babel/traverse/7.14.2
+      babel-jsx-utils: registry.nlark.com/babel-jsx-utils/1.1.0
+      babel-plugin-remove-graphql-queries: registry.nlark.com/babel-plugin-remove-graphql-queries/3.6.0_gatsby@3.6.2
+      camelcase: registry.nlark.com/camelcase/5.3.1
+      chokidar: 3.5.1
+      common-tags: registry.nlark.com/common-tags/1.8.0
+      fs-extra: registry.nlark.com/fs-extra/8.1.0
+      gatsby: registry.nlark.com/gatsby/3.6.2_f9181cbf1ec7c6227fb79b1dccec1e3c
+      gatsby-core-utils: registry.nlark.com/gatsby-core-utils/2.6.0
+      gatsby-plugin-sharp: registry.nlark.com/gatsby-plugin-sharp/3.6.0_gatsby@3.6.2
+      gatsby-source-filesystem: registry.nlark.com/gatsby-source-filesystem/3.6.0_gatsby@3.6.2
+      objectFitPolyfill: registry.nlark.com/objectFitPolyfill/2.3.5
+      prop-types: registry.nlark.com/prop-types/15.7.2
+      react: registry.nlark.com/react/17.0.2
+      react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/gatsby-plugin-mdx/2.6.0_73e8d0148a4c5c71ceb6a02bbce55c80:
@@ -24902,17 +24954,6 @@ packages:
       kind-of: registry.nlark.com/kind-of/3.2.2
     dev: false
 
-  registry.nlark.com/object-fit-images/3.2.4:
-    resolution:
-      {
-        integrity: sha1-bCmdOP3yB3RuXS1Gwod/byXRW1I=,
-        registry: https://registry.npm.taobao.org/,
-        tarball: https://registry.nlark.com/object-fit-images/download/object-fit-images-3.2.4.tgz,
-      }
-    name: object-fit-images
-    version: 3.2.4
-    dev: false
-
   registry.nlark.com/object-inspect/1.10.3:
     resolution:
       {
@@ -25024,6 +25065,17 @@ packages:
       call-bind: registry.nlark.com/call-bind/1.0.2
       define-properties: registry.nlark.com/define-properties/1.1.3
       es-abstract: registry.nlark.com/es-abstract/1.18.3
+
+  registry.nlark.com/objectFitPolyfill/2.3.5:
+    resolution:
+      {
+        integrity: sha1-voyDBkqr+k6IeA93bCATxIzh90U=,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.nlark.com/objectFitPolyfill/download/objectFitPolyfill-2.3.5.tgz,
+      }
+    name: objectFitPolyfill
+    version: 2.3.5
+    dev: false
 
   registry.nlark.com/obuf/1.1.2:
     resolution:
@@ -27488,7 +27540,7 @@ packages:
       {
         integrity: sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=,
         registry: https://registry.npm.taobao.org/,
-        tarball: https://registry.nlark.com/react-is/download/react-is-16.13.1.tgz?cache=0&sync_timestamp=1622864573201&other_urls=https%3A%2F%2Fregistry.nlark.com%2Freact-is%2Fdownload%2Freact-is-16.13.1.tgz,
+        tarball: https://registry.nlark.com/react-is/download/react-is-16.13.1.tgz?cache=0&sync_timestamp=1623121648587&other_urls=https%3A%2F%2Fregistry.nlark.com%2Freact-is%2Fdownload%2Freact-is-16.13.1.tgz,
       }
     name: react-is
     version: 16.13.1
