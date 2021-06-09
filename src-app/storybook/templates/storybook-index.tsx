@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { Layout, Center } from "../common/Layout";
 import { Header } from "../common/Header";
 
-export const useSiteMetadata = () => {
+const useSiteMetadata = () => {
   const { site } = useStaticQuery(
     graphql`
       query SiteMetaData {
