@@ -12,8 +12,8 @@ import { SEO } from "src-core/seo";
 import { Layout, Wrapper, Nav } from "../common";
 import { Discussion, PostHeader, PostTag, PostContainer } from "../post";
 
-export const postQuery = graphql`
-  query ($slug: String!) {
+export const query = graphql`
+  query PostPageQuery($slug: String!) {
     site {
       siteMetadata {
         title

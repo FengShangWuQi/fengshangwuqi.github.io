@@ -7,8 +7,8 @@ import { Layout, Wrapper } from "../common";
 import { ArchiveHeader } from "../archive/ArchiveHeader";
 import { ArchiveList } from "../archive/ArchiveList";
 
-export const archiveQuery = graphql`
-  {
+export const query = graphql`
+  query ArchivePageQuery {
     site {
       siteMetadata {
         title

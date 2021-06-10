@@ -11,8 +11,8 @@ import { Header } from "../common/Header";
 import { SideBar } from "../common/SideBar";
 import { Content } from "../common/Content";
 
-export const groupsQuery = graphql`
-  query ($group: String) {
+export const query = graphql`
+  query GroupPageQuery($group: String) {
     site {
       siteMetadata {
         title

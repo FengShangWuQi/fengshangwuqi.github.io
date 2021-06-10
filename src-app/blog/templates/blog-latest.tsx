@@ -11,8 +11,8 @@ import { Pagination } from "src-components/navigation/Pagination";
 import { Layout, Nav, Wrapper, Footer } from "../common";
 import { LatestHeader, LatestItem } from "../latest";
 
-export const latestQuery = graphql`
-  query ($size: Int!, $offset: Int!) {
+export const query = graphql`
+  query LatestPageQuery($size: Int!, $offset: Int!) {
     site {
       siteMetadata {
         title

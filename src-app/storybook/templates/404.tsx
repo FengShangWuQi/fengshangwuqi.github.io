@@ -1,25 +1,18 @@
 import React from "react";
-import { graphql } from "gatsby";
 import { Helmet } from "react-helmet-async";
 
 import { Layout, Center } from "../common/Layout";
 import { Header } from "../common/Header";
 
-export const notFoundQuery = graphql`
-  {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
+import { useSiteMetadata } from "./storybook-index";
 
-const NotFound = ({ data: { site }, pageContext: { groups } }: any) => {
+const NotFound = ({ pageContext: { groups } }: any) => {
+  const { title } = useSiteMetadata();
+
   return (
     <Layout>
       <Helmet
-        title={site.title}
+        title={title}
         meta={[
           {
             name: "viewport",
