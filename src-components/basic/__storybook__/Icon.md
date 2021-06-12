@@ -10,4 +10,4 @@ import { IconDemo } from "./Icon.stories";
 
 <IconDemo />
 
-<Source path="src-components/basic/Icon.tsx" />
+<Source path="https://github.com/FengShangWuQi/fengshangwuqi.github.io/tree/dev/src-components/basic/icons" />

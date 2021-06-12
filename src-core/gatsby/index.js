@@ -30,8 +30,6 @@ exports.siteMetadata = {
 
 // plugins
 
-const pnpm = "gatsby-plugin-pnpm";
-
 const sources = process.env.SOURCES
   ? process.env.SOURCES.split(",").map(source => ({
       resolve: "gatsby-source-filesystem", // https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/?=gatsby-source-filesystem
@@ -96,9 +94,26 @@ const emotion = {
   },
 };
 
+const reactSvg = {
+  resolve: "gatsby-plugin-react-svg", // https://www.gatsbyjs.com/plugins/gatsby-plugin-react-svg/?=gatsby-plugin-react-svg
+  options: {
+    rule: {
+      include: /icons\/.*\.svg/,
+      options: {
+        props: {
+          width: "1em",
+          height: "1em",
+        },
+      },
+    },
+  },
+};
+
 const helmet = "gatsby-plugin-react-helmet-async"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet-async/?=gatsby-plugin-react-helmet-async
 
 const twitter = "gatsby-plugin-twitter"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-twitter/?=gatsby-plugin-twitter
+
+const pnpm = "gatsby-plugin-pnpm";
 
 const sentry = {
   resolve: "@sentry/gatsby", // https://www.gatsbyjs.com/plugins/@sentry/gatsby/?=%40sentry%2Fgatsby
@@ -114,12 +129,13 @@ const offline = "gatsby-plugin-offline"; // https://www.gatsbyjs.com/plugins/gat
 exports.plugins = [
   ...sources,
   ...image,
-  pnpm,
   mdx,
   ts,
   emotion,
+  reactSvg,
   helmet,
   twitter,
+  pnpm,
   sentry,
   offline,
 ];

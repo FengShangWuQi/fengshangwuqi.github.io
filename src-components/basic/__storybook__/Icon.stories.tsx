@@ -3,7 +3,7 @@ import React from "react";
 import { useDesignSystem } from "src-core/ds";
 import { grid } from "src-core/style";
 
-import { IconGithubFill } from "../Icon";
+import { IconClose, IconGithubFill, IconSearch } from "../Icon";
 
 export const IconDemo = () => {
   const ds = useDesignSystem();
@@ -28,6 +28,25 @@ export const IconDemo = () => {
             justifySelf: "center",
             fontSize: ds.size["4xl"],
           }}>
+          <IconClose />
+        </span>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size.sm,
+          }}>
+          IconClose
+        </span>
+      </div>
+      <div
+        css={{
+          ...grid({}),
+        }}>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size["4xl"],
+          }}>
           <IconGithubFill />
         </span>
         <span
@@ -36,6 +55,25 @@ export const IconDemo = () => {
             fontSize: ds.size.sm,
           }}>
           IconGithubFill
+        </span>
+      </div>
+      <div
+        css={{
+          ...grid({}),
+        }}>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size["4xl"],
+          }}>
+          <IconSearch />
+        </span>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size.sm,
+          }}>
+          IconSearch
         </span>
       </div>
     </div>

@@ -55,7 +55,7 @@ const iconStorybook = (icons: string[]) => `
 									justifySelf: "center",
                   fontSize: ds.size.sm,
 								}}>
-								IconGithubFill
+                ${getIconName(name)}
 							</span>
             </div>`,
                 )
