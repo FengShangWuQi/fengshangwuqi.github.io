@@ -3,7 +3,7 @@ import React from "react";
 import { useDesignSystem } from "src-core/ds";
 import { grid } from "src-core/style";
 
-import { IconClose, IconGithubFill, IconSearch } from "../Icon";
+import { IconCornerDownLeft, IconGithubFill, IconSearch } from "../Icon";
 
 export const IconDemo = () => {
   const ds = useDesignSystem();
@@ -16,8 +16,7 @@ export const IconDemo = () => {
           gridColumnGap: ds.spacing[3],
           gridRowGap: ds.spacing[3],
         }),
-        color: ds.color.textLight,
-        fill: ds.color.textLight,
+        color: ds.color.secondary,
       }}>
       <div
         css={{
@@ -28,14 +27,14 @@ export const IconDemo = () => {
             justifySelf: "center",
             fontSize: ds.size["4xl"],
           }}>
-          <IconClose />
+          <IconCornerDownLeft />
         </span>
         <span
           css={{
             justifySelf: "center",
             fontSize: ds.size.sm,
           }}>
-          IconClose
+          IconCornerDownLeft
         </span>
       </div>
       <div

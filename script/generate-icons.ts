@@ -34,8 +34,7 @@ const iconStorybook = (icons: string[]) => `
 								gridColumnGap: ds.spacing[3],
 								gridRowGap: ds.spacing[3],
 							}),
-              color: ds.color.textLight,
-              fill: ds.color.textLight,
+              color: ds.color.secondary,
             }}>
               ${icons
                 .map(
