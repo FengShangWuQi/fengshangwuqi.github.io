@@ -2,7 +2,7 @@ import React from "react";
 import { CSSObject } from "@emotion/react";
 
 import { useDesignSystem } from "src-core/ds";
-import { mq } from "src-core/style";
+import { mq, flex } from "src-core/style";
 
 import { pickElmAttrs } from "utils/pickElmAttrs";
 
@@ -15,14 +15,12 @@ const menuItemModeStyle = (mode: MenuMode, right: boolean): CSSObject[] => {
 
   switch (mode) {
     case MenuMode.HORIZONTAL:
-      return mq(["sm", "lg"], {
-        height: [60, 60, 80],
-        lineHeight: ["60px", "60px", "80px"],
-        padding: [
-          `0 ${ds.spacing[2]}`,
-          `0 ${ds.spacing[4]}`,
-          `0 ${ds.spacing[4]}`,
-        ],
+      return mq(["sm"], {
+        ...flex({
+          alignItems: "center",
+        }),
+        height: "100%",
+        padding: [`0 ${ds.spacing[2]}`, `0 ${ds.spacing[4]}`],
         float: right ? "right" : "left",
       });
     case MenuMode.VERTICAL:
@@ -47,7 +45,7 @@ export const MenuItem = ({
   return (
     <li
       {...pickElmAttrs(otherProps)}
-      css={[...menuItemModeStyle(mode!, right!), { ...menuItemStyle }]}>
+      css={[...menuItemModeStyle(mode!, right!), { ...menuItemStyle }, {}]}>
       {children}
     </li>
   );

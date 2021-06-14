@@ -29,9 +29,8 @@ export const useMenu = () => useContext(MenuContext);
 const menuModeStyle = (mode: MenuMode = MenuMode.HORIZONTAL): CSSObject[] => {
   switch (mode) {
     case MenuMode.HORIZONTAL:
-      return mq(["lg"], {
+      return mq(["sm"], {
         height: [60, 80],
-        lineHeight: ["60px", "80px"],
       });
     case MenuMode.VERTICAL:
       return [
