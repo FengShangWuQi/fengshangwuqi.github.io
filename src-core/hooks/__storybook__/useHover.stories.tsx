@@ -2,6 +2,9 @@ import React from "react";
 import { border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
+import { flex } from "src-core/style";
+
+import { Button } from "src-components/basic/Button";
 
 import { useHover } from "../useHover";
 
@@ -12,27 +15,18 @@ export const UseHoverDemo = () => {
 
   return (
     <div
-      ref={hoverRef}
       css={{
-        ...border(1, "solid", "transparent"),
-        display: "inline-block",
-        marginLeft: 10,
-        padding: "0.75em 2em",
-        fontSize: ds.size.xs,
-        textTransform: "uppercase",
-        color: ds.color.bg,
-        background: ds.color.primary,
-        boxShadow: `2px 4px 10px ${ds.colorPalette.gray[700]}`,
-        borderRadius: ds.radius.default,
-        cursor: "pointer",
-        transition: "all 280ms ease-out",
-        ...(isHovered && {
-          ...border(1, "solid", ds.color.primary),
-          color: ds.color.primary,
-          background: ds.color.bg,
+        ...flex({
+          alignItems: "center",
         }),
       }}>
-      hover
+      <span ref={hoverRef}>
+        <Button>hover</Button>
+      </span>
+
+      <div css={{ marginLeft: ds.spacing[2] }}>
+        {isHovered ? "hover" : "not hover"}
+      </div>
     </div>
   );
 };
