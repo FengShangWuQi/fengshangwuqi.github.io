@@ -47,7 +47,9 @@
     ],
     "rules": {
       "@typescript-eslint/interface-name-prefix": 0,
-      "@typescript-eslint/camelcase": 0
+      "@typescript-eslint/camelcase": 0,
+      "@typescript-eslint/no-floating-promises": 1,
+      "react/no-unescaped-entities": 1
     }
   },
   "prettier": {
@@ -62,9 +64,11 @@
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
     "@sentry/gatsby": "6.5.1",
+    "algoliasearch": "4.9.2",
     "facepaint": "1.2.1",
     "figlet": "1.5.0",
     "gatsby": "3.6.2",
+    "gatsby-plugin-algolia": "0.20.1",
     "gatsby-plugin-catch-links": "3.6.0",
     "gatsby-plugin-emotion": "6.6.0",
     "gatsby-plugin-feed": "3.6.0",
@@ -95,6 +99,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet-async": "1.0.9",
+    "react-instantsearch-dom": "6.11.1",
     "react-spring": "9.2.1",
     "rxjs": "7.1.0"
   },
@@ -102,7 +107,7 @@
     "@babel/plugin-transform-typescript": "7.14.4",
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-conventional": "12.1.4",
-    "@fengshangwuqi/appkit": "1.1.46",
+    "@fengshangwuqi/appkit": "1.1.47",
     "@fengshangwuqi/eslint-config": "1.1.37",
     "@fengshangwuqi/logger": "1.1.17",
     "@fengshangwuqi/ts-config": "1.1.6",
@@ -119,6 +124,7 @@
     "@types/node": "15.12.1",
     "@types/react": "17.0.9",
     "@types/react-dom": "17.0.6",
+    "@types/react-instantsearch-dom": "6.10.0",
     "babel-jest": "27.0.2",
     "babel-preset-gatsby": "1.6.0",
     "chalk": "4.1.1",

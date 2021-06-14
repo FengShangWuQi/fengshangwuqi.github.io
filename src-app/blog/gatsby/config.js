@@ -1,5 +1,14 @@
 const gatsbyConfig = require("../../../src-core/gatsby");
 
+const algolia = {
+  resolve: `gatsby-plugin-algolia`, // https://www.gatsbyjs.com/docs/adding-search-with-algolia/
+  options: {
+    appId: process.env.GATSBY_ALGOLIA_APP_ID,
+    apiKey: process.env.ALGOLIA_ADMIN_KEY,
+    queries: require("../search/algolia-queries"),
+  },
+};
+
 const feed = {
   resolve: "gatsby-plugin-feed", // https://www.gatsbyjs.com/plugins/gatsby-plugin-feed/?=gatsby-plugin-feed
   options: {
@@ -55,6 +64,6 @@ const feed = {
   },
 };
 
-gatsbyConfig.plugins.push(feed);
+gatsbyConfig.plugins.push(algolia, feed);
 
 module.exports = gatsbyConfig;
