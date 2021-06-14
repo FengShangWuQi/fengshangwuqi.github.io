@@ -58,6 +58,7 @@ const BlogLatest = ({
     allMdx: { edges: posts },
   },
   pageContext: { total, size, offset },
+  location: { pathname },
 }: any) => {
   return (
     <Layout>
@@ -70,7 +71,7 @@ const BlogLatest = ({
         author={author}
       />
 
-      <Nav />
+      <Nav pathname={pathname} />
       <LatestHeader />
 
       <Wrapper withShadow>

@@ -45,7 +45,7 @@ export const query = graphql`
   }
 `;
 
-const BlogPost = ({ data: { site, mdx } }: any) => {
+const BlogPost = ({ data: { site, mdx }, location: { pathname } }: any) => {
   const {
     siteMetadata: { title: siteTitle, siteUrl, author },
     pathPrefix,
@@ -71,7 +71,7 @@ const BlogPost = ({ data: { site, mdx } }: any) => {
       />
       <PrismTheme />
 
-      <Nav />
+      <Nav pathname={pathname} />
       <PostHeader>
         <GatsbyImage
           css={{

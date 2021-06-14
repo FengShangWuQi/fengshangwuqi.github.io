@@ -3,8 +3,7 @@ import { graphql } from "gatsby";
 
 import { SEO } from "src-core/seo";
 
-import { Layout, Wrapper } from "../common";
-import { ArchiveHeader } from "../archive/ArchiveHeader";
+import { Layout, Wrapper, Nav } from "../common";
 import { ArchiveList } from "../archive/ArchiveList";
 
 export const query = graphql`
@@ -44,6 +43,7 @@ const BlogArchive = ({
     },
     allMdx: { edges: posts },
   },
+  location: { pathname },
 }: any) => {
   return (
     <Layout>
@@ -56,7 +56,7 @@ const BlogArchive = ({
         author={author}
       />
 
-      <ArchiveHeader />
+      <Nav pathname={pathname} />
 
       <Wrapper>
         <ArchiveList posts={posts} />
