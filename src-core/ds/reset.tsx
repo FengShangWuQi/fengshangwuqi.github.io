@@ -1,6 +1,6 @@
 import React from "react";
 import { Global } from "@emotion/react";
-import { normalize } from "polished";
+import { rgba, normalize } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 
@@ -32,6 +32,27 @@ export const DSReset = () => {
           "ul, li": {
             margin: 0,
             padding: 0,
+          },
+
+          dialog: {
+            padding: 0,
+            width: "100%",
+            maxWidth: "47.375rem",
+            borderRadius: 16,
+            border: 0,
+            overflow: "hidden",
+            "&::backdrop": {
+              backgroundColor: rgba("#000", 0.25),
+            },
+          },
+
+          "input::placeholder": {
+            color: ds.colorPalette.gray[400],
+          },
+
+          svg: {
+            fill: ds.color.primary,
+            verticalAlign: "middle",
           },
         }}
       />
