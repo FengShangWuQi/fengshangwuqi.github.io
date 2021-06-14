@@ -1,5 +1,4 @@
 import React from "react";
-import { border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
