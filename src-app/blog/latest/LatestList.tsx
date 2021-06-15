@@ -6,7 +6,7 @@ import { ellipsis, margin } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { PostDate, PostTags } from "../templates/blog-post";
+import { PostDate, PostTag } from "../post";
 
 interface ILatestItem {
   title: string;
@@ -67,7 +67,15 @@ const LatestItem = ({
       </div>
 
       <PostDate date={date} />
-      <PostTags tags={tags} />
+
+      <div
+        css={{
+          marginTop: 5,
+        }}>
+        {tags.map((tag: string) => (
+          <PostTag key={tag} tag={tag} />
+        ))}
+      </div>
 
       <p
         css={{

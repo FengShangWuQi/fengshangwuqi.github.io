@@ -2,10 +2,9 @@ import React from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
-import { CSSObject } from "@emotion/react";
 import { margin } from "polished";
 
-import { useDesignSystem, PrismTheme } from "src-core/ds";
+import { ITheme, PrismTheme } from "src-core/ds";
 import { mq } from "src-core/style";
 import { SEO } from "src-core/seo";
 
@@ -86,70 +85,36 @@ const BlogPost = ({ data: { site, mdx }, location: { pathname } }: any) => {
         <PostContainer>
           <h1>{postTitle}</h1>
 
-          <PostDate style={{ marginTop: 5 }} date={date} />
-          <PostTags tags={tags} />
+          <div
+            css={{
+              marginTop: 5,
+            }}>
+            {tags.map((tag: string) => (
+              <PostTag key={tag} tag={tag} />
+            ))}
+          </div>
 
           <MDXRenderer>{body}</MDXRenderer>
         </PostContainer>
       </Wrapper>
 
-      <PostDiscussion url={`${siteUrl}${pathPrefix}${slug}`} slug={slug} />
+      <div
+        css={(ds: ITheme) =>
+          mq(["sm"], {
+            ...margin(ds.spacing[12], "auto", 0),
+            padding: [`0 ${ds.spacing[4]}`, 0],
+            maxWidth: 700,
+          })
+        }>
+        <Discussion
+          shortname="feng-shang-wu-qi-de-ri-zhi"
+          config={{
+            identifier: slug,
+            url: `${siteUrl}${pathPrefix}${slug}`,
+          }}
+        />
+      </div>
     </Layout>
-  );
-};
-
-export const PostDate = ({
-  date,
-  style,
-}: {
-  date: string;
-  style?: CSSObject;
-}) => {
-  const ds = useDesignSystem();
-
-  return (
-    <div
-      css={[
-        {
-          color: ds.color.textLight,
-          fontSize: 12,
-        },
-        { ...style },
-      ]}>
-      <time>{date}</time>
-    </div>
-  );
-};
-
-export const PostTags = ({ tags }: { tags: string[] }) => (
-  <div
-    css={{
-      marginTop: 5,
-    }}>
-    {tags.map((tag: string) => (
-      <PostTag key={tag} tag={tag} />
-    ))}
-  </div>
-);
-
-const PostDiscussion = ({ url, slug }: { url: string; slug: string }) => {
-  const ds = useDesignSystem();
-
-  return (
-    <div
-      css={mq(["sm"], {
-        ...margin(ds.spacing[12], "auto", 0),
-        padding: [`0 ${ds.spacing[4]}`, 0],
-        maxWidth: 700,
-      })}>
-      <Discussion
-        shortname="feng-shang-wu-qi-de-ri-zhi"
-        config={{
-          identifier: slug,
-          url,
-        }}
-      />
-    </div>
   );
 };
 
