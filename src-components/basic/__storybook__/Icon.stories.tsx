@@ -3,7 +3,17 @@ import React from "react";
 import { useDesignSystem } from "src-core/ds";
 import { grid } from "src-core/style";
 
-import { IconCornerDownLeft, IconGithubFill, IconSearch } from "../Icon";
+import {
+  IconCornerDownLeft,
+  IconCss,
+  IconGit,
+  IconGithub,
+  IconHash,
+  IconHtml,
+  IconReactjs,
+  IconSearch,
+  IconUbuntu,
+} from "../Icon";
 
 export const IconDemo = () => {
   const ds = useDesignSystem();
@@ -46,14 +56,109 @@ export const IconDemo = () => {
             justifySelf: "center",
             fontSize: ds.size["4xl"],
           }}>
-          <IconGithubFill />
+          <IconCss />
         </span>
         <span
           css={{
             justifySelf: "center",
             fontSize: ds.size.sm,
           }}>
-          IconGithubFill
+          IconCss
+        </span>
+      </div>
+      <div
+        css={{
+          ...grid({}),
+        }}>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size["4xl"],
+          }}>
+          <IconGit />
+        </span>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size.sm,
+          }}>
+          IconGit
+        </span>
+      </div>
+      <div
+        css={{
+          ...grid({}),
+        }}>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size["4xl"],
+          }}>
+          <IconGithub />
+        </span>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size.sm,
+          }}>
+          IconGithub
+        </span>
+      </div>
+      <div
+        css={{
+          ...grid({}),
+        }}>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size["4xl"],
+          }}>
+          <IconHash />
+        </span>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size.sm,
+          }}>
+          IconHash
+        </span>
+      </div>
+      <div
+        css={{
+          ...grid({}),
+        }}>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size["4xl"],
+          }}>
+          <IconHtml />
+        </span>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size.sm,
+          }}>
+          IconHtml
+        </span>
+      </div>
+      <div
+        css={{
+          ...grid({}),
+        }}>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size["4xl"],
+          }}>
+          <IconReactjs />
+        </span>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size.sm,
+          }}>
+          IconReactjs
         </span>
       </div>
       <div
@@ -73,6 +178,25 @@ export const IconDemo = () => {
             fontSize: ds.size.sm,
           }}>
           IconSearch
+        </span>
+      </div>
+      <div
+        css={{
+          ...grid({}),
+        }}>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size["4xl"],
+          }}>
+          <IconUbuntu />
+        </span>
+        <span
+          css={{
+            justifySelf: "center",
+            fontSize: ds.size.sm,
+          }}>
+          IconUbuntu
         </span>
       </div>
     </div>

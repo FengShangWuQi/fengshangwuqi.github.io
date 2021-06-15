@@ -3,7 +3,7 @@ import React from "react";
 import { useDesignSystem } from "src-core/ds";
 import { inlineFlex } from "src-core/style";
 
-import { IconGithubFill } from "src-components/basic/Icon";
+import { IconGithub } from "src-components/basic/Icon";
 
 export const Source = ({ path }: { path: string }) => {
   const ds = useDesignSystem();
@@ -25,7 +25,7 @@ export const Source = ({ path }: { path: string }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer">
-      <IconGithubFill
+      <IconGithub
         css={{
           marginRight: ds.spacing[2],
           fill: ds.color.primary,
