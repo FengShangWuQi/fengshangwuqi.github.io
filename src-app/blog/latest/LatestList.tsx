@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { ellipsis, margin } from "polished";
 
@@ -16,7 +17,30 @@ interface ILatestItem {
   image: IGatsbyImageData;
 }
 
-export const LatestItem = ({
+export const LatestList = ({ posts }: { posts: ILatestItem[] }) => {
+  return (
+    <div
+      css={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+        gridGap: 50,
+      }}>
+      {posts.map(({ node }: any) => (
+        <LatestItem
+          key={node.fields.slug}
+          excerpt={node.excerpt}
+          path={node.fields.slug}
+          title={node.frontmatter.title}
+          tags={node.frontmatter.tags}
+          date={node.frontmatter.date}
+          image={getImage(node.frontmatter.cover)!}
+        />
+      ))}
+    </div>
+  );
+};
+
+const LatestItem = ({
   path,
   title,
   tags,
