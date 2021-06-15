@@ -1,9 +1,10 @@
-import React, { useState, useMemo } from "react";
+import React, { useMemo } from "react";
 import algoliasearch from "algoliasearch/lite";
 import { InstantSearch } from "react-instantsearch-dom";
 import { border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
+import { useToggle } from "src-core/hooks";
 
 import { IconSearch } from "src-components/basic/Icon";
 import { Dialog, supportDialog } from "src-components/notice/Dialog";
@@ -14,7 +15,7 @@ import { SearchResult } from "./SearchResult";
 export const Search = ({ indices }: { indices: { name: string }[] }) => {
   const ds = useDesignSystem();
 
-  const [open, setOpen] = useState(false);
+  const [isOpen, { show, hide }] = useToggle();
 
   const searchClient = useMemo(
     () =>
@@ -37,14 +38,14 @@ export const Search = ({ indices }: { indices: { name: string }[] }) => {
           fontSize: ds.size.lg,
         }}
         onClick={() => {
-          setOpen(true);
+          show();
         }}
       />
 
       <Dialog
-        open={open}
+        open={isOpen}
         onClose={() => {
-          setOpen(false);
+          hide();
         }}>
         <InstantSearch searchClient={searchClient} indexName={indices[0].name}>
           <header

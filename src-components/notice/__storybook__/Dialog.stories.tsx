@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
+import { useToggle } from "src-core/hooks";
 
 import { Button } from "src-components/basic/Button";
 
 import { Dialog, useDialog, supportDialog } from "../Dialog";
 
 export const DialogDemo = () => {
-  const [open, setOpen] = useState(false);
+  const [isOpen, { show, hide }] = useToggle();
 
   if (!supportDialog) {
     return null;
@@ -19,15 +20,15 @@ export const DialogDemo = () => {
     <div>
       <Button
         onClick={() => {
-          setOpen(true);
+          show();
         }}>
         dialog
       </Button>
       <Dialog
-        open={open}
+        open={isOpen}
         onClose={val => {
           console.log(val);
-          setOpen(false);
+          hide();
         }}>
         <header
           css={{
