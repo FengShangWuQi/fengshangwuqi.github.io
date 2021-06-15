@@ -6,7 +6,7 @@ import { border } from "polished";
 import { useDesignSystem } from "src-core/ds";
 
 import { IconSearch } from "src-components/basic/Icon";
-import { Dialog } from "src-components/notice/Dialog";
+import { Dialog, supportDialog } from "src-components/notice/Dialog";
 
 import SearchBox from "./SearchBox";
 import { SearchResult } from "./SearchResult";
@@ -24,6 +24,10 @@ export const Search = ({ indices }: { indices: { name: string }[] }) => {
       ),
     [],
   );
+
+  if (!supportDialog) {
+    return null;
+  }
 
   return (
     <div>

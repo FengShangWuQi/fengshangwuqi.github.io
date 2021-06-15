@@ -7,6 +7,8 @@ interface IDialogContext {
   close: (val?: any) => void;
 }
 
+export const supportDialog = typeof HTMLDialogElement === "function";
+
 const DialogThemeContext = createContext({} as IDialogContext);
 const DialogThemeProvider = DialogThemeContext.Provider;
 export const useDialog = () => useContext(DialogThemeContext);
