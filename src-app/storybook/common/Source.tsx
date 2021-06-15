@@ -27,8 +27,9 @@ export const Source = ({ path }: { path: string }) => {
       rel="noopener noreferrer">
       <IconGithub
         css={{
-          marginRight: ds.spacing[2],
+          marginRight: ds.spacing[1],
           fill: ds.color.primary,
+          fontSize: ds.size.lg,
         }}
       />
       <span>Source</span>
