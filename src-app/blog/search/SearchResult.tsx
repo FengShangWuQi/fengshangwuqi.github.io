@@ -15,6 +15,8 @@ import { grid, flex } from "src-core/style";
 import { useDialog } from "src-components/notice/Dialog";
 import { IconCornerDownLeft } from "src-components/basic/Icon";
 
+import { TagIcon } from "../post/PostTag";
+
 const Hits = connectHits(({ hits }: any) => {
   const ds = useDesignSystem();
   const ref = useRef(null);
@@ -73,9 +75,27 @@ const Hits = connectHits(({ hits }: any) => {
             "&[aria-selected=true]": {
               color: ds.colorPalette.white,
               background: ds.color.primary,
+              "& svg": {
+                fill: ds.colorPalette.white,
+              },
             },
           }}>
-          <Highlight attribute="title" hit={hit} tagName="mark" />
+          <div
+            css={{
+              ...flex({
+                alignItems: "center",
+              }),
+            }}>
+            <TagIcon
+              css={{
+                marginRight: ds.spacing[3],
+                fontSize: ds.size["xl"],
+                fill: "#969faf",
+              }}
+              tags={hit.tags}
+            />
+            <Highlight attribute="title" hit={hit} tagName="mark" />
+          </div>
           <IconCornerDownLeft
             css={{
               visibility: selectedItem === hit.slug ? "visible" : "hidden",

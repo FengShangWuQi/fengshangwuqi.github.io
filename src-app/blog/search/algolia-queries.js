@@ -7,6 +7,7 @@ const pageQuery = `{
         id
         frontmatter {
           title
+          tags
         }
         fields {
           slug
