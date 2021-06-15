@@ -6,10 +6,14 @@ import { flex } from "src-core/style";
 
 import { Button } from "src-components/basic/Button";
 
-import { Dialog, useDialog } from "../Dialog";
+import { Dialog, useDialog, supportDialog } from "../Dialog";
 
 export const DialogDemo = () => {
   const [open, setOpen] = useState(false);
+
+  if (!supportDialog) {
+    return null;
+  }
 
   return (
     <div>
