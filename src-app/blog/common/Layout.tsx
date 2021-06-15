@@ -1,13 +1,11 @@
 import React from "react";
 import { Global } from "@emotion/react";
-import { position } from "polished";
+import { border, position } from "polished";
 import produce from "immer";
 
 import { Bootstrap } from "src-core/react";
 import { defaultTheme, useDesignSystem } from "src-core/ds";
 import { mq } from "src-core/style";
-
-import { Loadingbar } from ".";
 
 const blogTheme = produce(defaultTheme, theme => {
   theme.color.primary = "#3c2584";
@@ -22,6 +20,18 @@ const BlogGlobal = () => {
         html: {
           fontSize: ds.size.base,
         },
+      }}
+    />
+  );
+};
+
+const Loadingbar = () => {
+  const ds = useDesignSystem();
+
+  return (
+    <div
+      css={{
+        ...border("top", 8, "solid", ds.color.primary),
       }}
     />
   );
