@@ -1,14 +1,14 @@
 import React from "react";
 import { graphql, navigate } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
-import { margin, border } from "polished";
+import { clearFix, margin, border } from "polished";
 
-import { useDesignSystem } from "src-core/ds";
+import { ITheme, useDesignSystem } from "src-core/ds";
 import { SEO } from "src-core/seo";
 
 import { Pagination } from "src-components/navigation/Pagination";
 
-import { Layout, Nav, Wrapper, Footer } from "../common";
+import { Layout, Nav, Wrapper } from "../common";
 import { LatestHeader, LatestItem } from "../latest";
 
 export const query = graphql`
@@ -97,7 +97,11 @@ const BlogLatest = ({
         </div>
       </Wrapper>
 
-      <Footer>
+      <div
+        css={(ds: ITheme) => ({
+          ...clearFix(),
+          margin: ds.spacing[4],
+        })}>
         <Pagination
           css={{
             float: "right",
@@ -107,7 +111,7 @@ const BlogLatest = ({
           offset={offset}
           onChange={page => navigate(page === 1 ? `/` : `/latest/${page}`)}
         />
-      </Footer>
+      </div>
     </Layout>
   );
 };
