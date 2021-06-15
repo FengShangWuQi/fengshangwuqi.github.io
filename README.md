@@ -10,4 +10,4 @@
 
 我的微信，添加请备注来源
 
-![wechat](https://github.com/FengShangWuQi/fengshangwuqi.github.io/blob/dev/static/contact.jpeg?raw=true)
+![wechat](https://res.cloudinary.com/fengshangwuqi/image/upload/v1623768737/contact.jpg)
