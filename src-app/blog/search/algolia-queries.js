@@ -1,13 +1,12 @@
 const pageQuery = `{
-  pages: allMdx(
-    sort: { fields: [frontmatter___date], order: DESC }
-  ) {
+  pages: allMdx {
     edges {
       node {
         id
         frontmatter {
           title
           tags
+          date(formatString: "YYYY-MM-DD")
         }
         fields {
           slug
