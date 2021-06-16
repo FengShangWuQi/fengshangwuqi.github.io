@@ -118,7 +118,7 @@ const pnpm = "gatsby-plugin-pnpm";
 const sentry = {
   resolve: "@sentry/gatsby", // https://www.gatsbyjs.com/plugins/@sentry/gatsby/?=%40sentry%2Fgatsby
   options: {
-    dsn: process.env.SENTRY_DSN,
+    dsn: process.env.SENTRY_DSN || "",
     tracesSampleRate: 1,
     release: process.env.VERCEL_GIT_COMMIT_SHA,
   },

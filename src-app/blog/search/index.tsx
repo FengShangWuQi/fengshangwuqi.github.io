@@ -20,8 +20,8 @@ export const Search = ({ indices }: { indices: { name: string }[] }) => {
   const searchClient = useMemo(
     () =>
       algoliasearch(
-        process.env.GATSBY_ALGOLIA_APP_ID!,
-        process.env.GATSBY_ALGOLIA_SEARCH_KEY!,
+        process.env.GATSBY_ALGOLIA_APP_ID || "",
+        process.env.GATSBY_ALGOLIA_SEARCH_KEY || "",
       ),
     [],
   );
