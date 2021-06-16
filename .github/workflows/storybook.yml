@@ -25,6 +25,7 @@ jobs:
 
       - run: curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
       - run: pnpm install
+      - run: pnpm appkit build storybook
       - run: pnpm appkit release storybook
 
   push-docker-image:
