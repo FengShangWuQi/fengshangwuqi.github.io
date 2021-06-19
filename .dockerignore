@@ -1,12 +1,15 @@
-.git/
 node_modules/
+
+.git/
+.github/
 
 .cache/
 public/
 
+.vscode/*
 coverage
 
 .env
 .env.*
-!.env.blog
-!.env.storybook
+
+*.log
