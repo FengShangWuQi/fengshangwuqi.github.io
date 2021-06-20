@@ -1,0 +1,14 @@
+{
+  "extends": ["config:base", ":automergePr", ":automergeMinor"],
+  "baseBranches": ["dev"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^gatsby"],
+      "automerge": false
+    },
+    {
+      "matchPackagePatterns": ["^react$", "^react-dom$"],
+      "automerge": false
+    }
+  ]
+}
