@@ -27,6 +27,6 @@ module.exports = {
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PRESERVE_WEBPACK_CACHE: true,
     PARALLEL_SOURCING: true,
-    FUNCTIONS: true,
+    LMDB_STORE: true,
   },
 };
