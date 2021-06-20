@@ -26,4 +26,9 @@ jobs:
       - run: curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
       - run: pnpm install
       - run: pnpm appkit build storybook
-      - run: pnpm appkit release storybook
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: sb-pages
