@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
@@ -10,7 +10,10 @@ import { Button } from "src-components/basic/Button";
 import { Dialog, useDialog, supportDialog } from "../Dialog";
 
 export const DialogDemo = () => {
+  const ds = useDesignSystem();
+
   const [isOpen, { show, hide }] = useToggle();
+  const [returnValue, setReturnValue] = useState("");
 
   if (!supportDialog) {
     return null;
@@ -18,16 +21,19 @@ export const DialogDemo = () => {
 
   return (
     <div>
-      <Button
-        onClick={() => {
-          show();
-        }}>
-        dialog
-      </Button>
+      <div css={{ ...flex({ alignItem: "center" }) }}>
+        <Button
+          onClick={() => {
+            show();
+          }}>
+          dialog
+        </Button>
+        <div css={{ marginLeft: ds.spacing[2] }}>{returnValue}</div>
+      </div>
       <Dialog
         open={isOpen}
         onClose={val => {
-          console.log(val);
+          setReturnValue(val);
           hide();
         }}>
         <header
