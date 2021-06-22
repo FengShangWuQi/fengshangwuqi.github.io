@@ -1,4 +1,5 @@
 export * from "./useHover";
+export * from "./useClickOutside";
 export * from "./useToggle";
 export * from "./useObservable";
 export * from "./useRect";
