@@ -21,7 +21,7 @@ export const DialogDemo = () => {
 
   return (
     <div>
-      <div css={{ ...flex({ alignItem: "center" }) }}>
+      <div css={{ ...flex({ alignItems: "center" }) }}>
         <Button
           onClick={() => {
             show();
