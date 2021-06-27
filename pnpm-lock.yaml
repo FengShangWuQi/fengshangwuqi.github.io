@@ -68,7 +68,7 @@ specifiers:
   polished: 4.1.3
   prettier: 2.3.2
   pretty-quick: 3.1.1
-  prismjs: 1.23.0
+  prismjs: 1.24.0
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet-async: 1.0.9
@@ -109,7 +109,7 @@ dependencies:
   gatsby-remark-emojis: registry.nlark.com/gatsby-remark-emojis/0.4.3
   gatsby-remark-external-links: registry.nlark.com/gatsby-remark-external-links/0.0.4
   gatsby-remark-images: registry.nlark.com/gatsby-remark-images/5.4.1_fc40cfa8198c77fbc169608b9e10bec9
-  gatsby-remark-prismjs: registry.nlark.com/gatsby-remark-prismjs/5.4.1_gatsby@3.7.2+prismjs@1.23.0
+  gatsby-remark-prismjs: registry.nlark.com/gatsby-remark-prismjs/5.4.1_gatsby@3.7.2+prismjs@1.24.0
   gatsby-remark-responsive-iframe: registry.nlark.com/gatsby-remark-responsive-iframe/4.4.1_gatsby@3.7.2
   gatsby-remark-smartypants: registry.nlark.com/gatsby-remark-smartypants/4.4.1_gatsby@3.7.2
   gatsby-source-filesystem: registry.nlark.com/gatsby-source-filesystem/3.7.1_gatsby@3.7.2
@@ -118,7 +118,7 @@ dependencies:
   lmdb-store: registry.nlark.com/lmdb-store/1.5.5
   lodash: 4.17.21
   polished: registry.nlark.com/polished/4.1.3
-  prismjs: registry.nlark.com/prismjs/1.23.0
+  prismjs: registry.nlark.com/prismjs/1.24.0
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.nlark.com/react-helmet-async/1.0.9_react-dom@17.0.2+react@17.0.2
@@ -10680,17 +10680,6 @@ packages:
     engines: {node: '>= 10'}
     dev: false
 
-  registry.nlark.com/clipboard/2.0.8:
-    resolution: {integrity: sha1-/8bBA90pZ6gwBfP2GXaqRlWkzbo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/clipboard/download/clipboard-2.0.8.tgz}
-    name: clipboard
-    version: 2.0.8
-    dependencies:
-      good-listener: registry.nlark.com/good-listener/1.2.2
-      select: registry.nlark.com/select/1.1.2
-      tiny-emitter: registry.nlark.com/tiny-emitter/2.1.0
-    dev: false
-    optional: true
-
   registry.nlark.com/clipboardy/2.3.0:
     resolution: {integrity: sha1-PCkDZQxo5GqRs4iYW8J3QofbopA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/clipboardy/download/clipboardy-2.3.0.tgz?cache=0&sync_timestamp=1621255837371&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fclipboardy%2Fdownload%2Fclipboardy-2.3.0.tgz}
     name: clipboardy
@@ -11780,13 +11769,6 @@ packages:
       rimraf: registry.nlark.com/rimraf/3.0.2
       slash: registry.nlark.com/slash/3.0.0
     dev: false
-
-  registry.nlark.com/delegate/3.2.0:
-    resolution: {integrity: sha1-tmtxwxWFIuirV0T3INjKDCr1kWY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/delegate/download/delegate-3.2.0.tgz}
-    name: delegate
-    version: 3.2.0
-    dev: false
-    optional: true
 
   registry.nlark.com/delegates/1.0.0:
     resolution: {integrity: sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/delegates/download/delegates-1.0.0.tgz}
@@ -14161,7 +14143,7 @@ packages:
       unist-util-visit-parents: registry.nlark.com/unist-util-visit-parents/3.1.1
     dev: false
 
-  registry.nlark.com/gatsby-remark-prismjs/5.4.1_gatsby@3.7.2+prismjs@1.23.0:
+  registry.nlark.com/gatsby-remark-prismjs/5.4.1_gatsby@3.7.2+prismjs@1.24.0:
     resolution: {integrity: sha1-ZfDuEjEp6z9ZMCL5wIJw3DFkwn4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/gatsby-remark-prismjs/download/gatsby-remark-prismjs-5.4.1.tgz}
     id: registry.nlark.com/gatsby-remark-prismjs/5.4.1
     name: gatsby-remark-prismjs
@@ -14174,7 +14156,7 @@ packages:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.6
       gatsby: registry.nlark.com/gatsby/3.7.2_0b9dab06942cdfae799eee404b3b74fd
       parse-numeric-range: registry.nlark.com/parse-numeric-range/1.2.0
-      prismjs: registry.nlark.com/prismjs/1.23.0
+      prismjs: registry.nlark.com/prismjs/1.24.0
       unist-util-visit: registry.nlark.com/unist-util-visit/2.0.3
     dev: false
 
@@ -14771,15 +14753,6 @@ packages:
       object-assign: 4.1.1
       pify: 2.3.0
       pinkie-promise: 2.0.1
-
-  registry.nlark.com/good-listener/1.2.2:
-    resolution: {integrity: sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/good-listener/download/good-listener-1.2.2.tgz}
-    name: good-listener
-    version: 1.2.2
-    dependencies:
-      delegate: registry.nlark.com/delegate/3.2.0
-    dev: false
-    optional: true
 
   registry.nlark.com/graceful-fs/4.2.6:
     resolution: {integrity: sha1-/wQLKwhTsjw9MQJ1I3BvGIXXa+4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/graceful-fs/download/graceful-fs-4.2.6.tgz}
@@ -19789,12 +19762,10 @@ packages:
       prettier: registry.nlark.com/prettier/2.3.2
     dev: true
 
-  registry.nlark.com/prismjs/1.23.0:
-    resolution: {integrity: sha1-07OWf31yRAaQSXZSqdQP8EYGfzM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/prismjs/download/prismjs-1.23.0.tgz}
+  registry.nlark.com/prismjs/1.24.0:
+    resolution: {integrity: sha1-BAnDAGimxSyJ738QibPKTeVr4qw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/prismjs/download/prismjs-1.24.0.tgz}
     name: prismjs
-    version: 1.23.0
-    optionalDependencies:
-      clipboard: registry.nlark.com/clipboard/2.0.8
+    version: 1.24.0
     dev: false
 
   registry.nlark.com/probe-image-size/6.0.0:
@@ -21014,13 +20985,6 @@ packages:
     name: select-hose
     version: 2.0.0
     dev: false
-
-  registry.nlark.com/select/1.1.2:
-    resolution: {integrity: sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/select/download/select-1.1.2.tgz}
-    name: select
-    version: 1.1.2
-    dev: false
-    optional: true
 
   registry.nlark.com/selfsigned/1.10.11:
     resolution: {integrity: sha1-JJKc2Qb+D0S20B+yOZmnOVN6y+k=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/selfsigned/download/selfsigned-1.10.11.tgz}
@@ -22278,13 +22242,6 @@ packages:
     name: timsort
     version: 0.3.0
     dev: false
-
-  registry.nlark.com/tiny-emitter/2.1.0:
-    resolution: {integrity: sha1-HRpW7fxRxD6GPLtTgqcjMONVVCM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/tiny-emitter/download/tiny-emitter-2.1.0.tgz}
-    name: tiny-emitter
-    version: 2.1.0
-    dev: false
-    optional: true
 
   registry.nlark.com/tinycolor2/1.4.2:
     resolution: {integrity: sha1-P2pNEHGtB2dtf6Ry4frECnGdiAM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/tinycolor2/download/tinycolor2-1.4.2.tgz}
