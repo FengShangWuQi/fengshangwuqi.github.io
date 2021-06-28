@@ -2,7 +2,7 @@
 
 echo "VERCEL_GIT_COMMIT_REF: $VERCEL_GIT_COMMIT_REF"
 
-if [[ "$VERCEL_GIT_COMMIT_REF" == "gh-pages" || "$VERCEL_GIT_COMMIT_REF" == "sb-pages"  ]] ; then
+if [[ "$VERCEL_GIT_COMMIT_REF" == "gh-pages" || "$VERCEL_GIT_COMMIT_REF" == "post"  ]] ; then
   # Don't build
   echo "🛑 - Build cancelled"
   exit 0;
