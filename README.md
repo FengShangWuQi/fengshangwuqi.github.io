@@ -7,7 +7,3 @@
 
 - [blog](https://blog.fengshangwuqi.com)
 - [storybook](https://storybook.fengshangwuqi.com/)
-
-我的微信，添加请备注来源
-
-![wechat](https://res.cloudinary.com/fengshangwuqi/image/upload/v1623768737/contact.jpg)
