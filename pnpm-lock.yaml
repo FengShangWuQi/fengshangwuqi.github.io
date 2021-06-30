@@ -15,7 +15,7 @@ specifiers:
   '@mdx-js/react': 1.6.22
   '@sentry/gatsby': 6.8.0
   '@testing-library/jest-dom': 5.14.1
-  '@testing-library/react': 11.2.7
+  '@testing-library/react': 12.0.0
   '@testing-library/react-hooks': 7.0.1
   '@types/facepaint': 1.2.1
   '@types/figlet': 1.5.1
@@ -135,7 +135,7 @@ devDependencies:
   '@fengshangwuqi/logger': registry.nlark.com/@fengshangwuqi/logger/1.1.19
   '@fengshangwuqi/ts-config': registry.nlark.com/@fengshangwuqi/ts-config/1.1.6
   '@testing-library/jest-dom': registry.nlark.com/@testing-library/jest-dom/5.14.1
-  '@testing-library/react': registry.nlark.com/@testing-library/react/11.2.7_react-dom@17.0.2+react@17.0.2
+  '@testing-library/react': registry.nlark.com/@testing-library/react/12.0.0_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': registry.nlark.com/@testing-library/react-hooks/7.0.1_fc2bb8a5b006d3f25c5f84ea777e678d
   '@types/facepaint': registry.nlark.com/@types/facepaint/1.2.1
   '@types/figlet': registry.nlark.com/@types/figlet/1.5.1
@@ -570,6 +570,14 @@ packages:
     resolution: {integrity: sha1-vNZ5HqWuCXJeF+WtmIE0zUCz2RE=, tarball: argparse/download/argparse-1.0.10.tgz}
     dependencies:
       sprintf-js: 1.0.3
+    dev: true
+
+  /aria-query/4.2.2:
+    resolution: {integrity: sha1-DSymyazrVriXfp/tau1+FbvS+Ds=, tarball: aria-query/download/aria-query-4.2.2.tgz}
+    engines: {node: '>=6.0'}
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.6
+      '@babel/runtime-corejs3': registry.nlark.com/@babel/runtime-corejs3/7.14.6
     dev: true
 
   /arr-diff/4.0.0:
@@ -2136,6 +2144,11 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+
+  /lz-string/1.4.4:
+    resolution: {integrity: sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=, tarball: lz-string/download/lz-string-1.4.4.tgz}
+    hasBin: true
+    dev: true
 
   /make-dir/1.3.0:
     resolution: {integrity: sha1-ecEDO4BRW9bSTsmTPoYMp17ifww=, tarball: make-dir/download/make-dir-1.3.0.tgz}
@@ -8084,20 +8097,20 @@ packages:
       defer-to-connect: registry.nlark.com/defer-to-connect/2.0.1
     dev: false
 
-  registry.nlark.com/@testing-library/dom/7.31.2:
-    resolution: {integrity: sha1-3zYds49SEriFVQaKuBGfXYQajEo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@testing-library/dom/download/@testing-library/dom-7.31.2.tgz}
+  registry.nlark.com/@testing-library/dom/8.0.0:
+    resolution: {integrity: sha1-K7mUOTxWaq4CHbht0mO6Bui3Gzg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@testing-library/dom/download/@testing-library/dom-8.0.0.tgz?cache=0&sync_timestamp=1624431090912&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40testing-library%2Fdom%2Fdownload%2F%40testing-library%2Fdom-8.0.0.tgz}
     name: '@testing-library/dom'
-    version: 7.31.2
-    engines: {node: '>=10'}
+    version: 8.0.0
+    engines: {node: '>=12'}
     dependencies:
       '@babel/code-frame': registry.nlark.com/@babel/code-frame/7.14.5
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.6
       '@types/aria-query': registry.nlark.com/@types/aria-query/4.2.1
-      aria-query: registry.nlark.com/aria-query/4.2.2
+      aria-query: 4.2.2
       chalk: registry.nlark.com/chalk/4.1.1
       dom-accessibility-api: registry.nlark.com/dom-accessibility-api/0.5.6
-      lz-string: registry.nlark.com/lz-string/1.4.4
-      pretty-format: registry.nlark.com/pretty-format/26.6.2
+      lz-string: 1.4.4
+      pretty-format: registry.nlark.com/pretty-format/27.0.6
     dev: true
 
   registry.nlark.com/@testing-library/jest-dom/5.14.1:
@@ -8127,6 +8140,11 @@ packages:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
       react-test-renderer: '>=16.9.0'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-test-renderer:
+        optional: true
     dependencies:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.6
       '@types/react': registry.nlark.com/@types/react/17.0.11
@@ -8138,18 +8156,18 @@ packages:
       react-test-renderer: registry.nlark.com/react-test-renderer/17.0.2_react@17.0.2
     dev: true
 
-  registry.nlark.com/@testing-library/react/11.2.7_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha1-sp4ulcZ2XIFXhsC8HVrtnLK/eBg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@testing-library/react/download/@testing-library/react-11.2.7.tgz}
-    id: registry.nlark.com/@testing-library/react/11.2.7
+  registry.nlark.com/@testing-library/react/12.0.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-musiZFIVIqubaPUZ6vFRNhSPFko=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@testing-library/react/download/@testing-library/react-12.0.0.tgz}
+    id: registry.nlark.com/@testing-library/react/12.0.0
     name: '@testing-library/react'
-    version: 11.2.7
-    engines: {node: '>=10'}
+    version: 12.0.0
+    engines: {node: '>=12'}
     peerDependencies:
       react: '*'
       react-dom: '*'
     dependencies:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.6
-      '@testing-library/dom': registry.nlark.com/@testing-library/dom/7.31.2
+      '@testing-library/dom': registry.nlark.com/@testing-library/dom/8.0.0
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
     dev: true
@@ -17336,13 +17354,6 @@ packages:
     dependencies:
       es5-ext: registry.nlark.com/es5-ext/0.10.53
     dev: false
-
-  registry.nlark.com/lz-string/1.4.4:
-    resolution: {integrity: sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/lz-string/download/lz-string-1.4.4.tgz}
-    name: lz-string
-    version: 1.4.4
-    hasBin: true
-    dev: true
 
   registry.nlark.com/make-dir/3.1.0:
     resolution: {integrity: sha1-QV6WcEazp/HRhSd9hKpYIDcmoT8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/make-dir/download/make-dir-3.1.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fmake-dir%2Fdownload%2Fmake-dir-3.1.0.tgz}
