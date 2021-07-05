@@ -75,7 +75,7 @@ specifiers:
   react-instantsearch-dom: 6.11.2
   react-spring: 9.2.3
   react-test-renderer: 17.0.2
-  rxjs: 7.1.0
+  rxjs: 7.2.0
   ts-node: 10.0.0
   tslib: 2.3.0
   typescript: 4.3.5
@@ -124,7 +124,7 @@ dependencies:
   react-helmet-async: registry.nlark.com/react-helmet-async/1.0.9_react-dom@17.0.2+react@17.0.2
   react-instantsearch-dom: registry.nlark.com/react-instantsearch-dom/6.11.2_183d5bb33a781e378a94ae4c13e76371
   react-spring: registry.nlark.com/react-spring/9.2.3_react-dom@17.0.2+react@17.0.2
-  rxjs: registry.nlark.com/rxjs/7.1.0
+  rxjs: registry.nlark.com/rxjs/7.2.0
 
 devDependencies:
   '@babel/plugin-transform-typescript': registry.nlark.com/@babel/plugin-transform-typescript/7.14.6
@@ -21061,10 +21061,10 @@ packages:
     dependencies:
       tslib: registry.nlark.com/tslib/1.14.1
 
-  registry.nlark.com/rxjs/7.1.0:
-    resolution: {integrity: sha1-lCAtJ7GTBe97Gk8zAneyBl33A54=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/rxjs/download/rxjs-7.1.0.tgz}
+  registry.nlark.com/rxjs/7.2.0:
+    resolution: {integrity: sha1-XNEkCWOelRSnHJ9fkZKyxK6U3jE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/rxjs/download/rxjs-7.2.0.tgz}
     name: rxjs
-    version: 7.1.0
+    version: 7.2.0
     dependencies:
       tslib: registry.nlark.com/tslib/2.1.0
     dev: false
