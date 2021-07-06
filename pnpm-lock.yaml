@@ -22,7 +22,7 @@ specifiers:
   '@types/fs-extra': 9.0.12
   '@types/gh-pages': 3.0.0
   '@types/jest': 26.0.24
-  '@types/lodash': 4.14.170
+  '@types/lodash': 4.14.171
   '@types/node': 15.12.4
   '@types/react': 17.0.13
   '@types/react-dom': 17.0.8
@@ -142,7 +142,7 @@ devDependencies:
   '@types/fs-extra': registry.nlark.com/@types/fs-extra/9.0.12
   '@types/gh-pages': registry.nlark.com/@types/gh-pages/3.0.0
   '@types/jest': registry.nlark.com/@types/jest/26.0.24
-  '@types/lodash': registry.nlark.com/@types/lodash/4.14.170
+  '@types/lodash': registry.nlark.com/@types/lodash/4.14.171
   '@types/node': registry.nlark.com/@types/node/15.12.4
   '@types/react': registry.nlark.com/@types/react/17.0.13
   '@types/react-dom': registry.nlark.com/@types/react-dom/17.0.8
@@ -8640,6 +8640,13 @@ packages:
     resolution: {integrity: sha1-DWdxHUv39MpRR+kJG4R0ebh5JdY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/lodash/download/@types/lodash-4.14.170.tgz}
     name: '@types/lodash'
     version: 4.14.170
+    dev: false
+
+  registry.nlark.com/@types/lodash/4.14.171:
+    resolution: {integrity: sha1-8Bs6X+NJnjS2IsNipGpgn9sjVzs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/lodash/download/@types/lodash-4.14.171.tgz}
+    name: '@types/lodash'
+    version: 4.14.171
+    dev: true
 
   registry.nlark.com/@types/mdast/3.0.3:
     resolution: {integrity: sha1-LX1nGxzR6j3rMG6nUDbCoEB9Les=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/mdast/download/@types/mdast-3.0.3.tgz}
