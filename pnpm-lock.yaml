@@ -19,7 +19,7 @@ specifiers:
   '@testing-library/react-hooks': 7.0.1
   '@types/facepaint': 1.2.1
   '@types/figlet': 1.5.2
-  '@types/fs-extra': 9.0.11
+  '@types/fs-extra': 9.0.12
   '@types/gh-pages': 3.0.0
   '@types/jest': 26.0.23
   '@types/lodash': 4.14.170
@@ -139,7 +139,7 @@ devDependencies:
   '@testing-library/react-hooks': registry.nlark.com/@testing-library/react-hooks/7.0.1_fc2bb8a5b006d3f25c5f84ea777e678d
   '@types/facepaint': registry.nlark.com/@types/facepaint/1.2.1
   '@types/figlet': registry.nlark.com/@types/figlet/1.5.2
-  '@types/fs-extra': registry.nlark.com/@types/fs-extra/9.0.11
+  '@types/fs-extra': registry.nlark.com/@types/fs-extra/9.0.12
   '@types/gh-pages': registry.nlark.com/@types/gh-pages/3.0.0
   '@types/jest': registry.nlark.com/@types/jest/26.0.23
   '@types/lodash': registry.nlark.com/@types/lodash/4.14.170
@@ -8495,12 +8495,12 @@ packages:
     version: 1.5.2
     dev: true
 
-  registry.nlark.com/@types/fs-extra/9.0.11:
-    resolution: {integrity: sha1-jMmeEDSZ6rnzR9vGyk6Z+40sK4c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/fs-extra/download/@types/fs-extra-9.0.11.tgz?cache=0&sync_timestamp=1621407057239&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Ffs-extra%2Fdownload%2F%40types%2Ffs-extra-9.0.11.tgz}
+  registry.nlark.com/@types/fs-extra/9.0.12:
+    resolution: {integrity: sha1-m48nlz34p6OSDoRhUX6/in1P368=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/fs-extra/download/@types/fs-extra-9.0.12.tgz}
     name: '@types/fs-extra'
-    version: 9.0.11
+    version: 9.0.12
     dependencies:
-      '@types/node': registry.nlark.com/@types/node/15.12.1
+      '@types/node': registry.nlark.com/@types/node/15.12.4
     dev: true
 
   registry.nlark.com/@types/get-port/3.2.0:
