@@ -115,7 +115,7 @@
     "@types/figlet": "1.5.2",
     "@types/fs-extra": "9.0.12",
     "@types/gh-pages": "3.0.0",
-    "@types/jest": "26.0.23",
+    "@types/jest": "26.0.24",
     "@types/lodash": "4.14.170",
     "@types/node": "15.12.4",
     "@types/react": "17.0.13",
