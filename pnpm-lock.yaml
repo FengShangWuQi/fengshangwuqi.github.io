@@ -25,7 +25,7 @@ specifiers:
   '@types/lodash': 4.14.171
   '@types/node': 15.12.4
   '@types/react': 17.0.14
-  '@types/react-dom': 17.0.8
+  '@types/react-dom': 17.0.9
   '@types/react-instantsearch-dom': 6.10.2
   algoliasearch: 4.10.3
   babel-jest: 27.0.6
@@ -145,7 +145,7 @@ devDependencies:
   '@types/lodash': registry.nlark.com/@types/lodash/4.14.171
   '@types/node': registry.nlark.com/@types/node/15.12.4
   '@types/react': registry.nlark.com/@types/react/17.0.14
-  '@types/react-dom': registry.nlark.com/@types/react-dom/17.0.8
+  '@types/react-dom': registry.nlark.com/@types/react-dom/17.0.9
   '@types/react-instantsearch-dom': registry.nlark.com/@types/react-instantsearch-dom/6.10.2
   babel-jest: registry.nlark.com/babel-jest/27.0.6
   babel-preset-gatsby: registry.nlark.com/babel-preset-gatsby/1.7.1
@@ -8622,6 +8622,14 @@ packages:
     version: 17.0.8
     dependencies:
       '@types/react': registry.nlark.com/@types/react/17.0.11
+    dev: true
+
+  registry.nlark.com/@types/react-dom/17.0.9:
+    resolution: {integrity: sha1-RBqYHanXvhFwQuGm/T2sSzD1Wt0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/react-dom/download/@types/react-dom-17.0.9.tgz?cache=0&sync_timestamp=1625683035670&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Freact-dom%2Fdownload%2F%40types%2Freact-dom-17.0.9.tgz}
+    name: '@types/react-dom'
+    version: 17.0.9
+    dependencies:
+      '@types/react': registry.nlark.com/@types/react/17.0.14
     dev: true
 
   registry.nlark.com/@types/react-instantsearch-core/6.10.2:
