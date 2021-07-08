@@ -20,7 +20,7 @@ specifiers:
   '@types/facepaint': 1.2.2
   '@types/figlet': 1.5.2
   '@types/fs-extra': 9.0.12
-  '@types/gh-pages': 3.0.0
+  '@types/gh-pages': 3.0.1
   '@types/jest': 26.0.24
   '@types/lodash': 4.14.171
   '@types/node': 15.12.4
@@ -140,7 +140,7 @@ devDependencies:
   '@types/facepaint': registry.nlark.com/@types/facepaint/1.2.2
   '@types/figlet': registry.nlark.com/@types/figlet/1.5.2
   '@types/fs-extra': registry.nlark.com/@types/fs-extra/9.0.12
-  '@types/gh-pages': registry.nlark.com/@types/gh-pages/3.0.0
+  '@types/gh-pages': registry.nlark.com/@types/gh-pages/3.0.1
   '@types/jest': registry.nlark.com/@types/jest/26.0.24
   '@types/lodash': registry.nlark.com/@types/lodash/4.14.171
   '@types/node': registry.nlark.com/@types/node/15.12.4
@@ -8381,10 +8381,10 @@ packages:
     version: 3.2.0
     dev: false
 
-  registry.nlark.com/@types/gh-pages/3.0.0:
-    resolution: {integrity: sha1-N1sN3UPS0uaWiAwgu0N2n9r4iSk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/gh-pages/download/@types/gh-pages-3.0.0.tgz}
+  registry.nlark.com/@types/gh-pages/3.0.1:
+    resolution: {integrity: sha1-NxCKOopcmCfKgJTB7I794J5VZRg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/gh-pages/download/@types/gh-pages-3.0.1.tgz}
     name: '@types/gh-pages'
-    version: 3.0.0
+    version: 3.0.1
     dev: true
 
   registry.nlark.com/@types/glob/5.0.36:
