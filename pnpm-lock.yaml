@@ -34,7 +34,7 @@ specifiers:
   figlet: 1.5.0
   fs-extra: 10.0.0
   gatsby: 3.7.2
-  gatsby-plugin-algolia: 0.20.1
+  gatsby-plugin-algolia: 0.21.0
   gatsby-plugin-catch-links: 3.7.1
   gatsby-plugin-emotion: 6.7.1
   gatsby-plugin-feed: 3.7.1
@@ -91,7 +91,7 @@ dependencies:
   facepaint: registry.nlark.com/facepaint/1.2.1
   figlet: registry.nlark.com/figlet/1.5.0
   gatsby: registry.nlark.com/gatsby/3.7.2_053d23ae710b7144060330851792f404
-  gatsby-plugin-algolia: registry.nlark.com/gatsby-plugin-algolia/0.20.1_gatsby@3.7.2
+  gatsby-plugin-algolia: registry.nlark.com/gatsby-plugin-algolia/0.21.0_gatsby@3.7.2
   gatsby-plugin-catch-links: registry.nlark.com/gatsby-plugin-catch-links/3.7.1_gatsby@3.7.2
   gatsby-plugin-emotion: registry.nlark.com/gatsby-plugin-emotion/6.7.1_324e26588b53ff663f714e50413257a8
   gatsby-plugin-feed: registry.nlark.com/gatsby-plugin-feed/3.7.1_df7fde5f97832d26f6d7ac75fc9d7266
@@ -1005,19 +1005,19 @@ packages:
   /deep-equal/2.0.5:
     resolution: {integrity: sha1-Vc0v4ybYP5y/cmHvDgYLP3JMXLk=, tarball: deep-equal/download/deep-equal-2.0.5.tgz}
     dependencies:
-      call-bind: registry.nlark.com/call-bind/1.0.2
+      call-bind: 1.0.2
       es-get-iterator: registry.nlark.com/es-get-iterator/1.1.2
-      get-intrinsic: registry.nlark.com/get-intrinsic/1.1.1
-      is-arguments: registry.nlark.com/is-arguments/1.1.0
+      get-intrinsic: 1.1.1
+      is-arguments: 1.1.0
       is-date-object: registry.nlark.com/is-date-object/1.0.4
       is-regex: registry.nlark.com/is-regex/1.1.3
       isarray: 2.0.5
-      object-is: registry.nlark.com/object-is/1.1.5
-      object-keys: registry.nlark.com/object-keys/1.1.1
-      object.assign: registry.nlark.com/object.assign/4.1.2
-      regexp.prototype.flags: registry.nlark.com/regexp.prototype.flags/1.3.1
-      side-channel: registry.nlark.com/side-channel/1.0.4
-      which-boxed-primitive: registry.nlark.com/which-boxed-primitive/1.0.2
+      object-is: 1.1.5
+      object-keys: 1.1.1
+      object.assign: 4.1.2
+      regexp.prototype.flags: 1.3.1
+      side-channel: 1.0.4
+      which-boxed-primitive: 1.0.2
       which-collection: registry.nlark.com/which-collection/1.0.1
       which-typed-array: registry.nlark.com/which-typed-array/1.1.4
     dev: false
@@ -1135,6 +1135,14 @@ packages:
     resolution: {integrity: sha1-tKxAZIEH/c3PriQvQovqihTU8b8=, tarball: error-ex/download/error-ex-1.3.2.tgz}
     dependencies:
       is-arrayish: 0.2.1
+
+  /es-to-primitive/1.2.1:
+    resolution: {integrity: sha1-5VzUyc3BiLzvsDs2bHNjI/xciYo=, tarball: es-to-primitive/download/es-to-primitive-1.2.1.tgz}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      is-callable: 1.2.3
+      is-date-object: registry.nlark.com/is-date-object/1.0.4
+      is-symbol: registry.nlark.com/is-symbol/1.0.4
 
   /escalade/3.1.1:
     resolution: {integrity: sha1-2M/ccACWXFoBdLSoLqpcBVJ0LkA=, tarball: escalade/download/escalade-3.1.1.tgz}
@@ -1505,6 +1513,9 @@ packages:
       pify: 4.0.1
     dev: false
 
+  /has-bigints/1.0.1:
+    resolution: {integrity: sha1-ZP5qywIGc+O3jbA1pa9pqp0HsRM=, tarball: has-bigints/download/has-bigints-1.0.1.tgz}
+
   /has-cors/1.1.0:
     resolution: {integrity: sha1-XkdHk/fqmEPRu5nCPu9J/xJv/zk=, tarball: has-cors/download/has-cors-1.1.0.tgz}
     dev: false
@@ -1714,6 +1725,13 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
+  /is-arguments/1.1.0:
+    resolution: {integrity: sha1-YjUwMd++4HzrNGVqa95Z7+yujdk=, tarball: is-arguments/download/is-arguments-1.1.0.tgz}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.2
+    dev: false
+
   /is-arrayish/0.2.1:
     resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=, tarball: is-arrayish/download/is-arrayish-0.2.1.tgz}
 
@@ -1807,6 +1825,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-extglob: 2.1.1
+
+  /is-negative-zero/2.0.1:
+    resolution: {integrity: sha1-PedGwY3aIxkkGlNnWQjY92bxHCQ=, tarball: is-negative-zero/download/is-negative-zero-2.0.1.tgz}
+    engines: {node: '>= 0.4'}
 
   /is-number/7.0.0:
     resolution: {integrity: sha1-dTU0W4lnNNX4DE0GxQlVUnoU8Ss=, tarball: is-number/download/is-number-7.0.0.tgz}
@@ -2335,6 +2357,14 @@ packages:
     resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=, tarball: object-assign/download/object-assign-4.1.1.tgz}
     engines: {node: '>=0.10.0'}
 
+  /object-is/1.1.5:
+    resolution: {integrity: sha1-ud7qpfx/GEag+uzc7sE45XePU6w=, tarball: object-is/download/object-is-1.1.5.tgz}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.2
+      define-properties: 1.1.3
+    dev: false
+
   /object-keys/1.1.1:
     resolution: {integrity: sha1-HEfyct8nfzsdrwYWd9nILiMixg4=, tarball: object-keys/download/object-keys-1.1.1.tgz}
     engines: {node: '>= 0.4'}
@@ -2343,6 +2373,15 @@ packages:
     resolution: {integrity: sha1-1OPPGWAaUUClWhatcSAZqcULV3o=, tarball: object-path/download/object-path-0.11.5.tgz}
     engines: {node: '>= 10.12.0'}
     dev: false
+
+  /object.assign/4.1.2:
+    resolution: {integrity: sha1-DtVKNC7Os3s4/3brgxoOeIy2OUA=, tarball: object.assign/download/object.assign-4.1.2.tgz}
+    engines: {node: '>= 0.4'}
+    dependencies:
+      call-bind: 1.0.2
+      define-properties: 1.1.3
+      has-symbols: 1.0.2
+      object-keys: 1.1.1
 
   /object.getownpropertydescriptors/2.1.2:
     resolution: {integrity: sha1-G9Y66s8NXS0vMbXjk7A6fGAaI/c=, tarball: object.getownpropertydescriptors/download/object.getownpropertydescriptors-2.1.2.tgz}
@@ -2704,7 +2743,7 @@ packages:
     resolution: {integrity: sha1-ysLazIoepnX+qrrriugziYrkb1U=, tarball: regenerator-runtime/download/regenerator-runtime-0.13.7.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fregenerator-runtime%2Fdownload%2Fregenerator-runtime-0.13.7.tgz}
 
   /regexp.prototype.flags/1.3.1:
-    resolution: {integrity: sha1-fvNSro0VnnWMDq3Kb4/LTu8HviY=, tarball: regexp.prototype.flags/download/regexp.prototype.flags-1.3.1.tgz}
+    resolution: {integrity: sha1-fvNSro0VnnWMDq3Kb4/LTu8HviY=, tarball: regexp.prototype.flags/download/regexp.prototype.flags-1.3.1.tgz?cache=0&sync_timestamp=1610729383183&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fregexp.prototype.flags%2Fdownload%2Fregexp.prototype.flags-1.3.1.tgz}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
@@ -2896,6 +2935,14 @@ packages:
     resolution: {integrity: sha1-Z6fQLHbJ2iT5nSCAj8re0ODgS+I=, tarball: shell-quote/download/shell-quote-1.7.2.tgz}
     dev: false
 
+  /side-channel/1.0.4:
+    resolution: {integrity: sha1-785cj9wQTudRslxY1CkAEfpeos8=, tarball: side-channel/download/side-channel-1.0.4.tgz}
+    dependencies:
+      call-bind: 1.0.2
+      get-intrinsic: 1.1.1
+      object-inspect: registry.nlark.com/object-inspect/1.10.3
+    dev: false
+
   /signal-exit/3.0.3:
     resolution: {integrity: sha1-oUEMLt2PB3sItOJTyOrPyvBXRhw=, tarball: signal-exit/download/signal-exit-3.0.3.tgz}
 
@@ -3016,6 +3063,18 @@ packages:
       is-fullwidth-code-point: 3.0.0
       strip-ansi: registry.nlark.com/strip-ansi/6.0.0
 
+  /string.prototype.trimend/1.0.4:
+    resolution: {integrity: sha1-51rpDClCxjUEaGwYsoe0oLGkX4A=, tarball: string.prototype.trimend/download/string.prototype.trimend-1.0.4.tgz}
+    dependencies:
+      call-bind: 1.0.2
+      define-properties: 1.1.3
+
+  /string.prototype.trimstart/1.0.4:
+    resolution: {integrity: sha1-s2OZr0qymZtMnGSL16P7K7Jv7u0=, tarball: string.prototype.trimstart/download/string.prototype.trimstart-1.0.4.tgz}
+    dependencies:
+      call-bind: 1.0.2
+      define-properties: 1.1.3
+
   /string_decoder/1.1.1:
     resolution: {integrity: sha1-nPFhG6YmhdcDCunkujQUnDrwP8g=, tarball: string_decoder/download/string_decoder-1.1.1.tgz}
     dependencies:
@@ -3120,6 +3179,14 @@ packages:
     dependencies:
       is-typedarray: 1.0.0
 
+  /unbox-primitive/1.0.1:
+    resolution: {integrity: sha1-CF4hViXsMWJXTciFmr7nilmxRHE=, tarball: unbox-primitive/download/unbox-primitive-1.0.1.tgz}
+    dependencies:
+      function-bind: 1.1.1
+      has-bigints: 1.0.1
+      has-symbols: 1.0.2
+      which-boxed-primitive: 1.0.2
+
   /universalify/0.1.2:
     resolution: {integrity: sha1-tkb2m+OULavOzJ1mOcgNwQXvqmY=, tarball: universalify/download/universalify-0.1.2.tgz}
     engines: {node: '>= 4.0.0'}
@@ -3209,6 +3276,15 @@ packages:
   /whatwg-mimetype/2.3.0:
     resolution: {integrity: sha1-PUseAxLSB5h5+Cav8Y2+7KWWD78=, tarball: whatwg-mimetype/download/whatwg-mimetype-2.3.0.tgz}
     dev: true
+
+  /which-boxed-primitive/1.0.2:
+    resolution: {integrity: sha1-E3V7yJsgmwSf5dhkMOIc9AqJqOY=, tarball: which-boxed-primitive/download/which-boxed-primitive-1.0.2.tgz}
+    dependencies:
+      is-bigint: registry.nlark.com/is-bigint/1.0.2
+      is-boolean-object: registry.nlark.com/is-boolean-object/1.1.1
+      is-number-object: registry.nlark.com/is-number-object/1.0.5
+      is-string: registry.nlark.com/is-string/1.0.6
+      is-symbol: registry.nlark.com/is-symbol/1.0.4
 
   /which/1.3.1:
     resolution: {integrity: sha1-pFBD1U9YBTFtqNYvn1CRjT2nCwo=, tarball: which/download/which-1.3.1.tgz}
@@ -3304,24 +3380,10 @@ packages:
     dependencies:
       '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.3
 
-  registry.nlark.com/@algolia/cache-browser-local-storage/4.9.2:
-    resolution: {integrity: sha1-xhjIvIMwYQZJrlhgoYVC+C/FjFc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-browser-local-storage/download/@algolia/cache-browser-local-storage-4.9.2.tgz}
-    name: '@algolia/cache-browser-local-storage'
-    version: 4.9.2
-    dependencies:
-      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.9.2
-    dev: false
-
   registry.nlark.com/@algolia/cache-common/4.10.3:
     resolution: {integrity: sha1-MRsrWuBtVTAPQjCUTJm8Oa0VhH0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-common/download/@algolia/cache-common-4.10.3.tgz?cache=0&sync_timestamp=1625470557210&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fcache-common%2Fdownload%2F%40algolia%2Fcache-common-4.10.3.tgz}
     name: '@algolia/cache-common'
     version: 4.10.3
-
-  registry.nlark.com/@algolia/cache-common/4.9.2:
-    resolution: {integrity: sha1-AO3fgA1CwDszlGX9zbf75JowVKo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-common/download/@algolia/cache-common-4.9.2.tgz}
-    name: '@algolia/cache-common'
-    version: 4.9.2
-    dev: false
 
   registry.nlark.com/@algolia/cache-in-memory/4.10.3:
     resolution: {integrity: sha1-aX5JlFOEJicuopzPKzK0bqTEiGI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-in-memory/download/@algolia/cache-in-memory-4.10.3.tgz?cache=0&sync_timestamp=1625470557703&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fcache-in-memory%2Fdownload%2F%40algolia%2Fcache-in-memory-4.10.3.tgz}
@@ -3329,14 +3391,6 @@ packages:
     version: 4.10.3
     dependencies:
       '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.3
-
-  registry.nlark.com/@algolia/cache-in-memory/4.9.2:
-    resolution: {integrity: sha1-kYHek+MApYci7mwpvDMmHEEfmwM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-in-memory/download/@algolia/cache-in-memory-4.9.2.tgz}
-    name: '@algolia/cache-in-memory'
-    version: 4.9.2
-    dependencies:
-      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.9.2
-    dev: false
 
   registry.nlark.com/@algolia/client-account/4.10.3:
     resolution: {integrity: sha1-8svvsavOdMNBEVYH1q8ZnfGwVq4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-account/download/@algolia/client-account-4.10.3.tgz?cache=0&sync_timestamp=1625470558060&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fclient-account%2Fdownload%2F%40algolia%2Fclient-account-4.10.3.tgz}
@@ -3346,16 +3400,6 @@ packages:
       '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.3
       '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
-
-  registry.nlark.com/@algolia/client-account/4.9.2:
-    resolution: {integrity: sha1-qayU+VGyMXYPFhXlrJQJ0ffHuJo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-account/download/@algolia/client-account-4.9.2.tgz}
-    name: '@algolia/client-account'
-    version: 4.9.2
-    dependencies:
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.9.2
-      '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.9.2
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.9.2
-    dev: false
 
   registry.nlark.com/@algolia/client-analytics/4.10.3:
     resolution: {integrity: sha1-Q9k0743wz1UceOay6fJFLn+yfZM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-analytics/download/@algolia/client-analytics-4.10.3.tgz?cache=0&sync_timestamp=1625470558392&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fclient-analytics%2Fdownload%2F%40algolia%2Fclient-analytics-4.10.3.tgz}
@@ -3367,17 +3411,6 @@ packages:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/@algolia/client-analytics/4.9.2:
-    resolution: {integrity: sha1-2FTe+/1eFkDSsKv0u20tzXr8CeE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-analytics/download/@algolia/client-analytics-4.9.2.tgz}
-    name: '@algolia/client-analytics'
-    version: 4.9.2
-    dependencies:
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.9.2
-      '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.9.2
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.9.2
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.9.2
-    dev: false
-
   registry.nlark.com/@algolia/client-common/4.10.3:
     resolution: {integrity: sha1-xCV91cV8XI7EvUinsYl1c+Ny1AM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-common/download/@algolia/client-common-4.10.3.tgz?cache=0&sync_timestamp=1625470558753&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fclient-common%2Fdownload%2F%40algolia%2Fclient-common-4.10.3.tgz}
     name: '@algolia/client-common'
@@ -3385,15 +3418,6 @@ packages:
     dependencies:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
-
-  registry.nlark.com/@algolia/client-common/4.9.2:
-    resolution: {integrity: sha1-x1rczclF6iHEhL0QI1TA3VFm95U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-common/download/@algolia/client-common-4.9.2.tgz}
-    name: '@algolia/client-common'
-    version: 4.9.2
-    dependencies:
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.9.2
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.9.2
-    dev: false
 
   registry.nlark.com/@algolia/client-personalization/4.10.3:
     resolution: {integrity: sha1-WMgA+Qq4q0qimr3ympfonmvaQZ4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-personalization/download/@algolia/client-personalization-4.10.3.tgz?cache=0&sync_timestamp=1625470559098&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fclient-personalization%2Fdownload%2F%40algolia%2Fclient-personalization-4.10.3.tgz}
@@ -3404,16 +3428,6 @@ packages:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/@algolia/client-recommendation/4.9.2:
-    resolution: {integrity: sha1-t94Xjh2BRtpSVa/jzL0P9pvWh9c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-recommendation/download/@algolia/client-recommendation-4.9.2.tgz}
-    name: '@algolia/client-recommendation'
-    version: 4.9.2
-    dependencies:
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.9.2
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.9.2
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.9.2
-    dev: false
-
   registry.nlark.com/@algolia/client-search/4.10.3:
     resolution: {integrity: sha1-qmsCwtUoyyZIMPJ2c5t/aLWJiO8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-search/download/@algolia/client-search-4.10.3.tgz?cache=0&sync_timestamp=1625470559469&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fclient-search%2Fdownload%2F%40algolia%2Fclient-search-4.10.3.tgz}
     name: '@algolia/client-search'
@@ -3423,26 +3437,10 @@ packages:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/@algolia/client-search/4.9.2:
-    resolution: {integrity: sha1-IlPdrLdedokZ7DpslppAny29oqo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-search/download/@algolia/client-search-4.9.2.tgz}
-    name: '@algolia/client-search'
-    version: 4.9.2
-    dependencies:
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.9.2
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.9.2
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.9.2
-    dev: false
-
   registry.nlark.com/@algolia/logger-common/4.10.3:
     resolution: {integrity: sha1-Z3PS44WBv5rFfi3aAvDE8bxyzpQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/logger-common/download/@algolia/logger-common-4.10.3.tgz}
     name: '@algolia/logger-common'
     version: 4.10.3
-
-  registry.nlark.com/@algolia/logger-common/4.9.2:
-    resolution: {integrity: sha1-il18Bgv31RS78Yb7xbrhalmsuPE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/logger-common/download/@algolia/logger-common-4.9.2.tgz}
-    name: '@algolia/logger-common'
-    version: 4.9.2
-    dev: false
 
   registry.nlark.com/@algolia/logger-console/4.10.3:
     resolution: {integrity: sha1-vYvcH526ids3viXWc6wfLmjeeRM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/logger-console/download/@algolia/logger-console-4.10.3.tgz?cache=0&sync_timestamp=1625470560373&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Flogger-console%2Fdownload%2F%40algolia%2Flogger-console-4.10.3.tgz}
@@ -3451,14 +3449,6 @@ packages:
     dependencies:
       '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.3
 
-  registry.nlark.com/@algolia/logger-console/4.9.2:
-    resolution: {integrity: sha1-2jgjCTUOHBFOKgyPySs6EMQIwYk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/logger-console/download/@algolia/logger-console-4.9.2.tgz}
-    name: '@algolia/logger-console'
-    version: 4.9.2
-    dependencies:
-      '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.9.2
-    dev: false
-
   registry.nlark.com/@algolia/requester-browser-xhr/4.10.3:
     resolution: {integrity: sha1-ga6PbK9WKij5YQLwPaf0sZu6Vow=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-browser-xhr/download/@algolia/requester-browser-xhr-4.10.3.tgz?cache=0&sync_timestamp=1625470514839&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Frequester-browser-xhr%2Fdownload%2F%40algolia%2Frequester-browser-xhr-4.10.3.tgz}
     name: '@algolia/requester-browser-xhr'
@@ -3466,24 +3456,10 @@ packages:
     dependencies:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
 
-  registry.nlark.com/@algolia/requester-browser-xhr/4.9.2:
-    resolution: {integrity: sha1-In5TDCwgpqHbPKaL927EMAHQ3s0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-browser-xhr/download/@algolia/requester-browser-xhr-4.9.2.tgz}
-    name: '@algolia/requester-browser-xhr'
-    version: 4.9.2
-    dependencies:
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.9.2
-    dev: false
-
   registry.nlark.com/@algolia/requester-common/4.10.3:
     resolution: {integrity: sha1-wxEjk8/5e+eYY7wo3nb5xpsvWpU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-common/download/@algolia/requester-common-4.10.3.tgz?cache=0&sync_timestamp=1625471427045&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Frequester-common%2Fdownload%2F%40algolia%2Frequester-common-4.10.3.tgz}
     name: '@algolia/requester-common'
     version: 4.10.3
-
-  registry.nlark.com/@algolia/requester-common/4.9.2:
-    resolution: {integrity: sha1-8o7fAhzh8CxvrX8gXYbXRY/wYgo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-common/download/@algolia/requester-common-4.9.2.tgz}
-    name: '@algolia/requester-common'
-    version: 4.9.2
-    dev: false
 
   registry.nlark.com/@algolia/requester-node-http/4.10.3:
     resolution: {integrity: sha1-dep4BawLoloRJJidhjLvOcMUQcE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-node-http/download/@algolia/requester-node-http-4.10.3.tgz?cache=0&sync_timestamp=1625470514447&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Frequester-node-http%2Fdownload%2F%40algolia%2Frequester-node-http-4.10.3.tgz}
@@ -3491,14 +3467,6 @@ packages:
     version: 4.10.3
     dependencies:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
-
-  registry.nlark.com/@algolia/requester-node-http/4.9.2:
-    resolution: {integrity: sha1-OtYA1lP/TENC5HEDA+9GcmkWbEU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-node-http/download/@algolia/requester-node-http-4.9.2.tgz}
-    name: '@algolia/requester-node-http'
-    version: 4.9.2
-    dependencies:
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.9.2
-    dev: false
 
   registry.nlark.com/@algolia/transporter/4.10.3:
     resolution: {integrity: sha1-Cu7nUpI5V8/+Y+TPHHoiykjZbd4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/transporter/download/@algolia/transporter-4.10.3.tgz?cache=0&sync_timestamp=1625470514207&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Ftransporter%2Fdownload%2F%40algolia%2Ftransporter-4.10.3.tgz}
@@ -3508,16 +3476,6 @@ packages:
       '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.3
       '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.3
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
-
-  registry.nlark.com/@algolia/transporter/4.9.2:
-    resolution: {integrity: sha1-4wFrIRxv3fMtUQyujjg7o3jszrA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/transporter/download/@algolia/transporter-4.9.2.tgz}
-    name: '@algolia/transporter'
-    version: 4.9.2
-    dependencies:
-      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.9.2
-      '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.9.2
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.9.2
-    dev: false
 
   registry.nlark.com/@ardatan/aggregate-error/0.0.6:
     resolution: {integrity: sha1-/mkkdx6kD8mNx6cEXC6HLchSdgk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@ardatan/aggregate-error/download/@ardatan/aggregate-error-0.0.6.tgz}
@@ -9070,27 +9028,6 @@ packages:
       '@algolia/requester-node-http': registry.nlark.com/@algolia/requester-node-http/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/algoliasearch/4.9.2:
-    resolution: {integrity: sha1-SqGBBzb/Z7DjsufkR/yE2FGb+Hc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/algoliasearch/download/algoliasearch-4.9.2.tgz}
-    name: algoliasearch
-    version: 4.9.2
-    dependencies:
-      '@algolia/cache-browser-local-storage': registry.nlark.com/@algolia/cache-browser-local-storage/4.9.2
-      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.9.2
-      '@algolia/cache-in-memory': registry.nlark.com/@algolia/cache-in-memory/4.9.2
-      '@algolia/client-account': registry.nlark.com/@algolia/client-account/4.9.2
-      '@algolia/client-analytics': registry.nlark.com/@algolia/client-analytics/4.9.2
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.9.2
-      '@algolia/client-recommendation': registry.nlark.com/@algolia/client-recommendation/4.9.2
-      '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.9.2
-      '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.9.2
-      '@algolia/logger-console': registry.nlark.com/@algolia/logger-console/4.9.2
-      '@algolia/requester-browser-xhr': registry.nlark.com/@algolia/requester-browser-xhr/4.9.2
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.9.2
-      '@algolia/requester-node-http': registry.nlark.com/@algolia/requester-node-http/4.9.2
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.9.2
-    dev: false
-
   registry.nlark.com/alphanum-sort/1.0.2:
     resolution: {integrity: sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/alphanum-sort/download/alphanum-sort-1.0.2.tgz}
     name: alphanum-sort
@@ -12272,32 +12209,32 @@ packages:
     version: 1.18.3
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: registry.nlark.com/call-bind/1.0.2
-      es-to-primitive: registry.nlark.com/es-to-primitive/1.2.1
-      function-bind: registry.nlark.com/function-bind/1.1.1
-      get-intrinsic: registry.nlark.com/get-intrinsic/1.1.1
-      has: registry.nlark.com/has/1.0.3
-      has-symbols: registry.nlark.com/has-symbols/1.0.2
+      call-bind: 1.0.2
+      es-to-primitive: 1.2.1
+      function-bind: 1.1.1
+      get-intrinsic: 1.1.1
+      has: 1.0.3
+      has-symbols: 1.0.2
       is-callable: 1.2.3
-      is-negative-zero: registry.nlark.com/is-negative-zero/2.0.1
+      is-negative-zero: 2.0.1
       is-regex: registry.nlark.com/is-regex/1.1.3
       is-string: registry.nlark.com/is-string/1.0.6
       object-inspect: registry.nlark.com/object-inspect/1.10.3
-      object-keys: registry.nlark.com/object-keys/1.1.1
-      object.assign: registry.nlark.com/object.assign/4.1.2
-      string.prototype.trimend: registry.nlark.com/string.prototype.trimend/1.0.4
-      string.prototype.trimstart: registry.nlark.com/string.prototype.trimstart/1.0.4
-      unbox-primitive: registry.nlark.com/unbox-primitive/1.0.1
+      object-keys: 1.1.1
+      object.assign: 4.1.2
+      string.prototype.trimend: 1.0.4
+      string.prototype.trimstart: 1.0.4
+      unbox-primitive: 1.0.1
 
   registry.nlark.com/es-get-iterator/1.1.2:
     resolution: {integrity: sha1-kjTFSrpxNIbX694CIIZK9eKyg/c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/es-get-iterator/download/es-get-iterator-1.1.2.tgz}
     name: es-get-iterator
     version: 1.1.2
     dependencies:
-      call-bind: registry.nlark.com/call-bind/1.0.2
-      get-intrinsic: registry.nlark.com/get-intrinsic/1.1.1
-      has-symbols: registry.nlark.com/has-symbols/1.0.2
-      is-arguments: registry.nlark.com/is-arguments/1.1.0
+      call-bind: 1.0.2
+      get-intrinsic: 1.1.1
+      has-symbols: 1.0.2
+      is-arguments: 1.1.0
       is-map: registry.nlark.com/is-map/2.0.2
       is-set: registry.nlark.com/is-set/2.0.2
       is-string: registry.nlark.com/is-string/1.0.6
@@ -12309,16 +12246,6 @@ packages:
     name: es-module-lexer
     version: 0.4.1
     dev: false
-
-  registry.nlark.com/es-to-primitive/1.2.1:
-    resolution: {integrity: sha1-5VzUyc3BiLzvsDs2bHNjI/xciYo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/es-to-primitive/download/es-to-primitive-1.2.1.tgz}
-    name: es-to-primitive
-    version: 1.2.1
-    engines: {node: '>= 0.4'}
-    dependencies:
-      is-callable: 1.2.3
-      is-date-object: registry.nlark.com/is-date-object/1.0.4
-      is-symbol: registry.nlark.com/is-symbol/1.0.4
 
   registry.nlark.com/es5-ext/0.10.53:
     resolution: {integrity: sha1-k8WjrP2+8nUiCtcmRK0C7hg2jeE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/es5-ext/download/es5-ext-0.10.53.tgz}
@@ -13658,16 +13585,16 @@ packages:
       micromatch: registry.nlark.com/micromatch/4.0.4
     dev: false
 
-  registry.nlark.com/gatsby-plugin-algolia/0.20.1_gatsby@3.7.2:
-    resolution: {integrity: sha1-RARg6PxY0hic4XXKpiKDChMU4EU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/gatsby-plugin-algolia/download/gatsby-plugin-algolia-0.20.1.tgz}
-    id: registry.nlark.com/gatsby-plugin-algolia/0.20.1
+  registry.nlark.com/gatsby-plugin-algolia/0.21.0_gatsby@3.7.2:
+    resolution: {integrity: sha1-jNG4BvrJuuOfwyu8ayTkKvdruSg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/gatsby-plugin-algolia/download/gatsby-plugin-algolia-0.21.0.tgz}
+    id: registry.nlark.com/gatsby-plugin-algolia/0.21.0
     name: gatsby-plugin-algolia
-    version: 0.20.1
+    version: 0.21.0
     engines: {node: '>=12.13.0'}
     peerDependencies:
       gatsby: ^2.0.0 || ^3.0.0
     dependencies:
-      algoliasearch: registry.nlark.com/algoliasearch/4.9.2
+      algoliasearch: registry.nlark.com/algoliasearch/4.10.3
       deep-equal: 2.0.5
       gatsby: registry.nlark.com/gatsby/3.7.2_053d23ae710b7144060330851792f404
       lodash.chunk: registry.nlark.com/lodash.chunk/4.2.0
@@ -14904,11 +14831,6 @@ packages:
       ansi-regex: 2.1.1
     dev: false
 
-  registry.nlark.com/has-bigints/1.0.1:
-    resolution: {integrity: sha1-ZP5qywIGc+O3jbA1pa9pqp0HsRM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/has-bigints/download/has-bigints-1.0.1.tgz}
-    name: has-bigints
-    version: 1.0.1
-
   registry.nlark.com/has-symbols/1.0.2:
     resolution: {integrity: sha1-Fl0wcMADCXUqEjakeTMeOsVvFCM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/has-symbols/download/has-symbols-1.0.2.tgz}
     name: has-symbols
@@ -15558,7 +15480,7 @@ packages:
     version: 1.1.1
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: registry.nlark.com/call-bind/1.0.2
+      call-bind: 1.0.2
 
   registry.nlark.com/is-ci/2.0.0:
     resolution: {integrity: sha1-a8YzQYGBDgS1wis9WJ/cpVAmQEw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-ci/download/is-ci-2.0.0.tgz}
@@ -15754,12 +15676,6 @@ packages:
     version: 4.0.1
     dev: false
 
-  registry.nlark.com/is-negative-zero/2.0.1:
-    resolution: {integrity: sha1-PedGwY3aIxkkGlNnWQjY92bxHCQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-negative-zero/download/is-negative-zero-2.0.1.tgz}
-    name: is-negative-zero
-    version: 2.0.1
-    engines: {node: '>= 0.4'}
-
   registry.nlark.com/is-npm/5.0.0:
     resolution: {integrity: sha1-Q+jWXMVuG2f41HJiz2ZwmRk/Rag=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-npm/download/is-npm-5.0.0.tgz}
     name: is-npm
@@ -15876,8 +15792,8 @@ packages:
     version: 1.1.3
     engines: {node: '>= 0.4'}
     dependencies:
-      call-bind: registry.nlark.com/call-bind/1.0.2
-      has-symbols: registry.nlark.com/has-symbols/1.0.2
+      call-bind: 1.0.2
+      has-symbols: 1.0.2
 
   registry.nlark.com/is-regexp/1.0.0:
     resolution: {integrity: sha1-/S2INUXEa6xaYz57mgnof6LLUGk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-regexp/download/is-regexp-1.0.0.tgz}
@@ -15951,7 +15867,7 @@ packages:
     version: 1.0.4
     engines: {node: '>= 0.4'}
     dependencies:
-      has-symbols: registry.nlark.com/has-symbols/1.0.2
+      has-symbols: 1.0.2
 
   registry.nlark.com/is-text-path/1.0.1:
     resolution: {integrity: sha1-Thqg+1G/vLPpJogAE5cgLBd1tm4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-text-path/download/is-text-path-1.0.1.tgz}
@@ -15969,10 +15885,10 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       available-typed-arrays: registry.nlark.com/available-typed-arrays/1.0.4
-      call-bind: registry.nlark.com/call-bind/1.0.2
+      call-bind: 1.0.2
       es-abstract: registry.nlark.com/es-abstract/1.18.3
       foreach: registry.nlark.com/foreach/2.0.5
-      has-symbols: registry.nlark.com/has-symbols/1.0.2
+      has-symbols: 1.0.2
     dev: false
 
   registry.nlark.com/is-unc-path/1.0.0:
@@ -21667,22 +21583,6 @@ packages:
       regexp.prototype.flags: 1.3.1
       side-channel: registry.nlark.com/side-channel/1.0.4
 
-  registry.nlark.com/string.prototype.trimend/1.0.4:
-    resolution: {integrity: sha1-51rpDClCxjUEaGwYsoe0oLGkX4A=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/string.prototype.trimend/download/string.prototype.trimend-1.0.4.tgz}
-    name: string.prototype.trimend
-    version: 1.0.4
-    dependencies:
-      call-bind: registry.nlark.com/call-bind/1.0.2
-      define-properties: registry.nlark.com/define-properties/1.1.3
-
-  registry.nlark.com/string.prototype.trimstart/1.0.4:
-    resolution: {integrity: sha1-s2OZr0qymZtMnGSL16P7K7Jv7u0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/string.prototype.trimstart/download/string.prototype.trimstart-1.0.4.tgz}
-    name: string.prototype.trimstart
-    version: 1.0.4
-    dependencies:
-      call-bind: registry.nlark.com/call-bind/1.0.2
-      define-properties: registry.nlark.com/define-properties/1.1.3
-
   registry.nlark.com/string_decoder/0.10.31:
     resolution: {integrity: sha1-YuIDvEF2bGwoyfyEMB2rHFMQ+pQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/string_decoder/download/string_decoder-0.10.31.tgz}
     name: string_decoder
@@ -22626,16 +22526,6 @@ packages:
     hasBin: true
     dev: true
 
-  registry.nlark.com/unbox-primitive/1.0.1:
-    resolution: {integrity: sha1-CF4hViXsMWJXTciFmr7nilmxRHE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/unbox-primitive/download/unbox-primitive-1.0.1.tgz}
-    name: unbox-primitive
-    version: 1.0.1
-    dependencies:
-      function-bind: registry.nlark.com/function-bind/1.1.1
-      has-bigints: registry.nlark.com/has-bigints/1.0.1
-      has-symbols: registry.nlark.com/has-symbols/1.0.2
-      which-boxed-primitive: registry.nlark.com/which-boxed-primitive/1.0.2
-
   registry.nlark.com/unbzip2-stream/1.4.3:
     resolution: {integrity: sha1-sNoExDcTEd93HNwhXofyEwmRrOc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/unbzip2-stream/download/unbzip2-stream-1.4.3.tgz}
     name: unbzip2-stream
@@ -23505,17 +23395,6 @@ packages:
       webidl-conversions: 6.1.0
     dev: true
 
-  registry.nlark.com/which-boxed-primitive/1.0.2:
-    resolution: {integrity: sha1-E3V7yJsgmwSf5dhkMOIc9AqJqOY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/which-boxed-primitive/download/which-boxed-primitive-1.0.2.tgz}
-    name: which-boxed-primitive
-    version: 1.0.2
-    dependencies:
-      is-bigint: registry.nlark.com/is-bigint/1.0.2
-      is-boolean-object: registry.nlark.com/is-boolean-object/1.1.1
-      is-number-object: registry.nlark.com/is-number-object/1.0.5
-      is-string: registry.nlark.com/is-string/1.0.6
-      is-symbol: registry.nlark.com/is-symbol/1.0.4
-
   registry.nlark.com/which-collection/1.0.1:
     resolution: {integrity: sha1-cOq3Hru9Ku+vMvkXCC/GLNy3CQY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/which-collection/download/which-collection-1.0.1.tgz}
     name: which-collection
@@ -23540,11 +23419,11 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       available-typed-arrays: registry.nlark.com/available-typed-arrays/1.0.4
-      call-bind: registry.nlark.com/call-bind/1.0.2
+      call-bind: 1.0.2
       es-abstract: registry.nlark.com/es-abstract/1.18.3
       foreach: registry.nlark.com/foreach/2.0.5
-      function-bind: registry.nlark.com/function-bind/1.1.1
-      has-symbols: registry.nlark.com/has-symbols/1.0.2
+      function-bind: 1.1.1
+      has-symbols: 1.0.2
       is-typed-array: registry.nlark.com/is-typed-array/1.1.5
     dev: false
 
