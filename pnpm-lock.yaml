@@ -17,7 +17,7 @@ specifiers:
   '@testing-library/jest-dom': 5.14.1
   '@testing-library/react': 11.2.7
   '@testing-library/react-hooks': 7.0.1
-  '@types/facepaint': 1.2.1
+  '@types/facepaint': 1.2.2
   '@types/figlet': 1.5.2
   '@types/fs-extra': 9.0.12
   '@types/gh-pages': 3.0.0
@@ -137,7 +137,7 @@ devDependencies:
   '@testing-library/jest-dom': registry.nlark.com/@testing-library/jest-dom/5.14.1
   '@testing-library/react': registry.nlark.com/@testing-library/react/11.2.7_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': registry.nlark.com/@testing-library/react-hooks/7.0.1_fc2bb8a5b006d3f25c5f84ea777e678d
-  '@types/facepaint': registry.nlark.com/@types/facepaint/1.2.1
+  '@types/facepaint': registry.nlark.com/@types/facepaint/1.2.2
   '@types/figlet': registry.nlark.com/@types/figlet/1.5.2
   '@types/fs-extra': registry.nlark.com/@types/fs-extra/9.0.12
   '@types/gh-pages': registry.nlark.com/@types/gh-pages/3.0.0
@@ -8351,10 +8351,10 @@ packages:
     version: 3.0.0
     dev: false
 
-  registry.nlark.com/@types/facepaint/1.2.1:
-    resolution: {integrity: sha1-kl+PDy7XdmSHxYc203ws7e1pZvg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/facepaint/download/@types/facepaint-1.2.1.tgz}
+  registry.nlark.com/@types/facepaint/1.2.2:
+    resolution: {integrity: sha1-FDKssbCWliFoYaRXoDcYav65U0Y=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/facepaint/download/@types/facepaint-1.2.2.tgz?cache=0&sync_timestamp=1625748261103&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Ffacepaint%2Fdownload%2F%40types%2Ffacepaint-1.2.2.tgz}
     name: '@types/facepaint'
-    version: 1.2.1
+    version: 1.2.2
     dev: true
 
   registry.nlark.com/@types/figlet/1.5.2:
