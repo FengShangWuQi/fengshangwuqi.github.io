@@ -13,7 +13,7 @@ specifiers:
   '@fengshangwuqi/ts-config': 1.1.6
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22
-  '@sentry/gatsby': 6.8.0
+  '@sentry/gatsby': 6.9.0
   '@testing-library/jest-dom': 5.14.1
   '@testing-library/react': 11.2.7
   '@testing-library/react-hooks': 7.0.1
@@ -86,7 +86,7 @@ dependencies:
   '@emotion/styled': registry.nlark.com/@emotion/styled/11.3.0_da675241f78bb54d4f9123e607fbb27c
   '@mdx-js/mdx': registry.nlark.com/@mdx-js/mdx/1.6.22
   '@mdx-js/react': registry.nlark.com/@mdx-js/react/1.6.22_react@17.0.2
-  '@sentry/gatsby': registry.nlark.com/@sentry/gatsby/6.8.0_gatsby@3.7.2+react@17.0.2
+  '@sentry/gatsby': registry.nlark.com/@sentry/gatsby/6.9.0_gatsby@3.7.2+react@17.0.2
   algoliasearch: registry.nlark.com/algoliasearch/4.10.3
   facepaint: registry.nlark.com/facepaint/1.2.1
   figlet: registry.nlark.com/figlet/1.5.0
@@ -7882,114 +7882,114 @@ packages:
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
     dev: false
 
-  registry.nlark.com/@sentry/browser/6.8.0:
-    resolution: {integrity: sha1-AjcHzSMC9oGAFOmn4SSFay0GQXg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/browser/download/@sentry/browser-6.8.0.tgz}
+  registry.nlark.com/@sentry/browser/6.9.0:
+    resolution: {integrity: sha1-t1rBpv+P5g1FGxSuqU1m+dzVVw8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/browser/download/@sentry/browser-6.9.0.tgz}
     name: '@sentry/browser'
-    version: 6.8.0
+    version: 6.9.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/core': registry.nlark.com/@sentry/core/6.8.0
-      '@sentry/types': registry.nlark.com/@sentry/types/6.8.0
-      '@sentry/utils': registry.nlark.com/@sentry/utils/6.8.0
+      '@sentry/core': registry.nlark.com/@sentry/core/6.9.0
+      '@sentry/types': registry.nlark.com/@sentry/types/6.9.0
+      '@sentry/utils': registry.nlark.com/@sentry/utils/6.9.0
       tslib: registry.nlark.com/tslib/1.14.1
     dev: false
 
-  registry.nlark.com/@sentry/core/6.8.0:
-    resolution: {integrity: sha1-v6x2hE3u6RJkYMGNxhZgFZku/cM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/core/download/@sentry/core-6.8.0.tgz}
+  registry.nlark.com/@sentry/core/6.9.0:
+    resolution: {integrity: sha1-Q7JSkPOx6ywj9mXhwPy63QbQYBI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/core/download/@sentry/core-6.9.0.tgz}
     name: '@sentry/core'
-    version: 6.8.0
+    version: 6.9.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/hub': registry.nlark.com/@sentry/hub/6.8.0
-      '@sentry/minimal': registry.nlark.com/@sentry/minimal/6.8.0
-      '@sentry/types': registry.nlark.com/@sentry/types/6.8.0
-      '@sentry/utils': registry.nlark.com/@sentry/utils/6.8.0
+      '@sentry/hub': registry.nlark.com/@sentry/hub/6.9.0
+      '@sentry/minimal': registry.nlark.com/@sentry/minimal/6.9.0
+      '@sentry/types': registry.nlark.com/@sentry/types/6.9.0
+      '@sentry/utils': registry.nlark.com/@sentry/utils/6.9.0
       tslib: registry.nlark.com/tslib/1.14.1
     dev: false
 
-  registry.nlark.com/@sentry/gatsby/6.8.0_gatsby@3.7.2+react@17.0.2:
-    resolution: {integrity: sha1-0nqydiqxN3hGHBHOx8pZaN6Guhk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/gatsby/download/@sentry/gatsby-6.8.0.tgz}
-    id: registry.nlark.com/@sentry/gatsby/6.8.0
+  registry.nlark.com/@sentry/gatsby/6.9.0_gatsby@3.7.2+react@17.0.2:
+    resolution: {integrity: sha1-Qi4tFXg+s2KmRfhkwjlYif/FkRA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/gatsby/download/@sentry/gatsby-6.9.0.tgz}
+    id: registry.nlark.com/@sentry/gatsby/6.9.0
     name: '@sentry/gatsby'
-    version: 6.8.0
+    version: 6.9.0
     engines: {node: '>=6'}
     peerDependencies:
       gatsby: ^2.0.0 || ^3.0.0
     dependencies:
-      '@sentry/react': registry.nlark.com/@sentry/react/6.8.0_react@17.0.2
-      '@sentry/tracing': registry.nlark.com/@sentry/tracing/6.8.0
+      '@sentry/react': registry.nlark.com/@sentry/react/6.9.0_react@17.0.2
+      '@sentry/tracing': registry.nlark.com/@sentry/tracing/6.9.0
       gatsby: registry.nlark.com/gatsby/3.7.2_053d23ae710b7144060330851792f404
     transitivePeerDependencies:
       - react
     dev: false
 
-  registry.nlark.com/@sentry/hub/6.8.0:
-    resolution: {integrity: sha1-yw+FCQk5Ge08HvmO+M9j3BAqZSQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/hub/download/@sentry/hub-6.8.0.tgz}
+  registry.nlark.com/@sentry/hub/6.9.0:
+    resolution: {integrity: sha1-IQaOEnacx0WCXo0SLH6BhY9glwg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/hub/download/@sentry/hub-6.9.0.tgz}
     name: '@sentry/hub'
-    version: 6.8.0
+    version: 6.9.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/types': registry.nlark.com/@sentry/types/6.8.0
-      '@sentry/utils': registry.nlark.com/@sentry/utils/6.8.0
+      '@sentry/types': registry.nlark.com/@sentry/types/6.9.0
+      '@sentry/utils': registry.nlark.com/@sentry/utils/6.9.0
       tslib: registry.nlark.com/tslib/1.14.1
     dev: false
 
-  registry.nlark.com/@sentry/minimal/6.8.0:
-    resolution: {integrity: sha1-1sPkyW8jE2eusrioeoO1PSjnxts=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/minimal/download/@sentry/minimal-6.8.0.tgz}
+  registry.nlark.com/@sentry/minimal/6.9.0:
+    resolution: {integrity: sha1-5iAesjd1OZS+g+wzhm4/2umnm/M=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/minimal/download/@sentry/minimal-6.9.0.tgz}
     name: '@sentry/minimal'
-    version: 6.8.0
+    version: 6.9.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/hub': registry.nlark.com/@sentry/hub/6.8.0
-      '@sentry/types': registry.nlark.com/@sentry/types/6.8.0
+      '@sentry/hub': registry.nlark.com/@sentry/hub/6.9.0
+      '@sentry/types': registry.nlark.com/@sentry/types/6.9.0
       tslib: registry.nlark.com/tslib/1.14.1
     dev: false
 
-  registry.nlark.com/@sentry/react/6.8.0_react@17.0.2:
-    resolution: {integrity: sha1-PPSi4e8ELuIng24mjnAunLO2fkE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/react/download/@sentry/react-6.8.0.tgz}
-    id: registry.nlark.com/@sentry/react/6.8.0
+  registry.nlark.com/@sentry/react/6.9.0_react@17.0.2:
+    resolution: {integrity: sha1-LbAt5ISB82gOIeUqCCH9KOkPg0c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/react/download/@sentry/react-6.9.0.tgz}
+    id: registry.nlark.com/@sentry/react/6.9.0
     name: '@sentry/react'
-    version: 6.8.0
+    version: 6.9.0
     engines: {node: '>=6'}
     peerDependencies:
       react: 15.x || 16.x || 17.x
     dependencies:
-      '@sentry/browser': registry.nlark.com/@sentry/browser/6.8.0
-      '@sentry/minimal': registry.nlark.com/@sentry/minimal/6.8.0
-      '@sentry/types': registry.nlark.com/@sentry/types/6.8.0
-      '@sentry/utils': registry.nlark.com/@sentry/utils/6.8.0
+      '@sentry/browser': registry.nlark.com/@sentry/browser/6.9.0
+      '@sentry/minimal': registry.nlark.com/@sentry/minimal/6.9.0
+      '@sentry/types': registry.nlark.com/@sentry/types/6.9.0
+      '@sentry/utils': registry.nlark.com/@sentry/utils/6.9.0
       hoist-non-react-statics: 3.3.2
       react: registry.nlark.com/react/17.0.2
       tslib: registry.nlark.com/tslib/1.14.1
     dev: false
 
-  registry.nlark.com/@sentry/tracing/6.8.0:
-    resolution: {integrity: sha1-W6pPLmbNLmhRwhMhMBeFD2fmX0s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/tracing/download/@sentry/tracing-6.8.0.tgz}
+  registry.nlark.com/@sentry/tracing/6.9.0:
+    resolution: {integrity: sha1-Xf+ZOvJT7jHmLF+EqyGwCN99CEE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/tracing/download/@sentry/tracing-6.9.0.tgz}
     name: '@sentry/tracing'
-    version: 6.8.0
+    version: 6.9.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/hub': registry.nlark.com/@sentry/hub/6.8.0
-      '@sentry/minimal': registry.nlark.com/@sentry/minimal/6.8.0
-      '@sentry/types': registry.nlark.com/@sentry/types/6.8.0
-      '@sentry/utils': registry.nlark.com/@sentry/utils/6.8.0
+      '@sentry/hub': registry.nlark.com/@sentry/hub/6.9.0
+      '@sentry/minimal': registry.nlark.com/@sentry/minimal/6.9.0
+      '@sentry/types': registry.nlark.com/@sentry/types/6.9.0
+      '@sentry/utils': registry.nlark.com/@sentry/utils/6.9.0
       tslib: registry.nlark.com/tslib/1.14.1
     dev: false
 
-  registry.nlark.com/@sentry/types/6.8.0:
-    resolution: {integrity: sha1-l/1TGg7R515ltKJLJlCft8Fet7g=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/types/download/@sentry/types-6.8.0.tgz}
+  registry.nlark.com/@sentry/types/6.9.0:
+    resolution: {integrity: sha1-7xpUHEJA32p8b18x183d19ksFfE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/types/download/@sentry/types-6.9.0.tgz}
     name: '@sentry/types'
-    version: 6.8.0
+    version: 6.9.0
     engines: {node: '>=6'}
     dev: false
 
-  registry.nlark.com/@sentry/utils/6.8.0:
-    resolution: {integrity: sha1-D/r6W2n+DN6rrVxKbMaKQm6qazc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/utils/download/@sentry/utils-6.8.0.tgz}
+  registry.nlark.com/@sentry/utils/6.9.0:
+    resolution: {integrity: sha1-a/C/KQptN6JweLfBMxoG2KfjE8U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sentry/utils/download/@sentry/utils-6.9.0.tgz}
     name: '@sentry/utils'
-    version: 6.8.0
+    version: 6.9.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/types': registry.nlark.com/@sentry/types/6.8.0
+      '@sentry/types': registry.nlark.com/@sentry/types/6.9.0
       tslib: registry.nlark.com/tslib/1.14.1
     dev: false
 
