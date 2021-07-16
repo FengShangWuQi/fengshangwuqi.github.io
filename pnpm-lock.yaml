@@ -26,7 +26,7 @@ specifiers:
   '@types/node': 15.12.4
   '@types/react': 17.0.14
   '@types/react-dom': 17.0.9
-  '@types/react-instantsearch-dom': 6.10.2
+  '@types/react-instantsearch-dom': 6.12.0
   algoliasearch: 4.10.3
   babel-jest: 27.0.6
   babel-preset-gatsby: 1.7.1
@@ -146,7 +146,7 @@ devDependencies:
   '@types/node': registry.nlark.com/@types/node/15.12.4
   '@types/react': registry.nlark.com/@types/react/17.0.14
   '@types/react-dom': registry.nlark.com/@types/react-dom/17.0.9
-  '@types/react-instantsearch-dom': registry.nlark.com/@types/react-instantsearch-dom/6.10.2
+  '@types/react-instantsearch-dom': registry.nlark.com/@types/react-instantsearch-dom/6.12.0
   babel-jest: registry.nlark.com/babel-jest/27.0.6
   babel-preset-gatsby: registry.nlark.com/babel-preset-gatsby/1.7.1
   fs-extra: registry.nlark.com/fs-extra/10.0.0
@@ -8797,10 +8797,10 @@ packages:
       algoliasearch-helper: registry.nlark.com/algoliasearch-helper/3.5.3_algoliasearch@4.10.3
     dev: true
 
-  registry.nlark.com/@types/react-instantsearch-dom/6.10.2:
-    resolution: {integrity: sha1-Q3o/TKQEyg4/nCH16AZ2oPKz+kI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/react-instantsearch-dom/download/@types/react-instantsearch-dom-6.10.2.tgz}
+  registry.nlark.com/@types/react-instantsearch-dom/6.12.0:
+    resolution: {integrity: sha1-cWvhtIGTu7ZScSBam9ESpl2KJmE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/react-instantsearch-dom/download/@types/react-instantsearch-dom-6.12.0.tgz}
     name: '@types/react-instantsearch-dom'
-    version: 6.10.2
+    version: 6.12.0
     dependencies:
       '@types/react': registry.nlark.com/@types/react/17.0.14
       '@types/react-instantsearch-core': registry.nlark.com/@types/react-instantsearch-core/6.10.2
