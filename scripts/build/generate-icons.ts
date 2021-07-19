@@ -3,6 +3,7 @@ import fse from "fs-extra";
 import globby from "globby";
 import prettier from "prettier";
 import { camelCase } from "lodash";
+import { logger } from "@fengshangwuqi/logger";
 
 const formatCode = (code: string, filePath: string) =>
   prettier.format(code, {
@@ -63,7 +64,7 @@ const iconStorybook = (icons: string[]) => `
         )
   }`;
 
-export const generateIcons = () => {
+const generateIcons = () => {
   const icons = globby
     .sync(process.cwd() + "/src-components/basic/icons/*.svg")
     .map(filePath => {
@@ -85,3 +86,9 @@ export const generateIcons = () => {
   fse.ensureFileSync(sbPath);
   fse.writeFileSync(sbPath, formatCode(iconStorybook(icons), sbPath));
 };
+
+(() => {
+  generateIcons();
+
+  logger("generate icon").withLevel("SUCCESS");
+})();
