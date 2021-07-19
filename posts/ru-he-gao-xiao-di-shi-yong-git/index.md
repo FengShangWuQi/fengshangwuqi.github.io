@@ -10,16 +10,19 @@ cover: git.png
 
 ### 初始化设置
 
-设置用户名和邮箱：
+设置用户名和邮箱，或者更改默认分支
 
 ```bash
 $ git config --global user.name "用户名"
 $ git config --global user.email "邮箱"
+
+# default branch name, to be compatible with GitHub
+$ git config --global init.defaultbranch main
 ```
 
 其中，`--global` 是全局设置，如果想对特定项目使用不同配置，可取消该参数。
 
-**git config** 还可以设置其他选项，因为平时不怎么用，所以详细可以参考 **git config --help**。
+**git config** 还可以设置其他选项，详细可以参考 **git config --help**。
 
 查看配置：
 
@@ -138,6 +141,11 @@ $ git checkout -- 文件
 
 # 覆盖上次提交
 $ git commit --amend [-m "本次提交说明"]
+
+# 删除 untracked files 以及目录
+git clean -df
+# 删除前确认
+git clean -ndf
 ```
 
 ### 版本回退
@@ -273,44 +281,7 @@ $ git pull --rebase = git fetch + git rebase
 
 ### 忽略特殊文件
 
-对于操作系统自动生成的文件，编译生成的中间文件，以及带有敏感信息的配置文件等，我们不想追踪，也不想放进我们的远程仓库中，这时，我们创建一个 **.gitignore** 文件来忽略上述文件，下面是一个前端工程忽略的文件参考。
-
-```
-# Logs
-logs
-*.log
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.DS_Store
-
-# testing
-coverage
-
-# Dependency directory
-node_modules
-
-# Bower
-bower_components/
-dist
-
-# WebStorm文件
-*.idea/
-
-# vscode文件
-.vscode/
-
-# Emacs
-.tern-port
-.#*
-*#
-*~
-
-# 敏感信息
-default.yml
-```
+对于操作系统自动生成的文件，编译生成的中间文件，以及带有敏感信息的配置文件等，我们不想追踪，也不想放进我们的远程仓库中，这时，我们需要创建一个 **.gitignore** 文件来忽略上述文件，推荐使用 [gitignore.io](https://www.toptal.com/developers/gitignore) 这种工具来干这种事情。
 
 ### Commit message 指南
 
@@ -328,7 +299,7 @@ default.yml
 - **chore**：构建过程或辅助工具的变动
 - **revert**：回滚到上一个版本
 
-除此之外，有兴趣的同学还可以添加 [gitmoji](https://gitmoji.carloscuesta.me/) 和 [validate-commit-msg](https://github.com/conventional-changelog-archived-repos/validate-commit-msg) 等更多内容。
+推荐使用 [commitlint](https://commitlint.js.org/#/) 这种工具来检测自己的 commit message。
 
 [使用 Commit 信息关闭 Issue](https://help.github.com/articles/closing-issues-using-keywords/)
 
@@ -420,4 +391,3 @@ Location: https://github.com/...
 ### 推荐教程
 
 - [Git 教程- 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/896043488029600)
-- [Learn Git Branching](https://learngitbranching.js.org/)
