@@ -3,8 +3,8 @@ const gatsbyConfig = require("../../../src-core/gatsby");
 const algolia = {
   resolve: `gatsby-plugin-algolia`, // https://www.gatsbyjs.com/docs/adding-search-with-algolia/
   options: {
-    appId: process.env.GATSBY_ALGOLIA_APP_ID || "",
-    apiKey: process.env.ALGOLIA_ADMIN_KEY || "",
+    appId: process.env.GATSBY_ALGOLIA_APP_ID,
+    apiKey: process.env.ALGOLIA_ADMIN_KEY,
     queries: require("../search/algolia-queries"),
   },
 };
@@ -64,6 +64,8 @@ const feed = {
   },
 };
 
-gatsbyConfig.plugins.push(algolia, feed);
+if (process.env.GATSBY_ALGOLIA_APP_ID) {
+  gatsbyConfig.plugins.push(algolia, feed);
+}
 
 module.exports = gatsbyConfig;

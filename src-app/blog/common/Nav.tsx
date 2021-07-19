@@ -47,13 +47,15 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
             : {}
         }
         {...pickElmAttrs(props)}>
-        <MenuItem
-          key="search"
-          css={mq(["lg"], {
-            display: ["none", "flex"],
-          })}>
-          <Search indices={[{ name: "blog" }]} />
-        </MenuItem>
+        {process.env.GATSBY_ALGOLIA_APP_ID && (
+          <MenuItem
+            key="search"
+            css={mq(["lg"], {
+              display: ["none", "flex"],
+            })}>
+            <Search indices={[{ name: "blog" }]} />
+          </MenuItem>
+        )}
 
         {[
           { value: "/archive", label: "归档" },
