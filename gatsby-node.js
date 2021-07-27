@@ -24,6 +24,7 @@ exports.onCreateNode = require(path.resolve(targetDir, "onCreateNode"));
  */
 
 const processEnv = () => {
+  // Defining Environment Variables in Client-side JavaScript
   const gatsbyVarObject = {
     __APP__: process.env.APP,
     __AUTHOR__: process.env.META_AUTHOR,
@@ -40,18 +41,24 @@ const processEnv = () => {
   );
 };
 
-exports.onCreateWebpackConfig = ({ actions, plugins }) => {
-  actions.setWebpackConfig({
-    resolve: {
-      modules: [path.resolve(__dirname), "node_modules"],
-    },
-    plugins: [
-      /*
-       * Defining Environment Variables in Client-side JavaScript
-       */
-      plugins.define({
-        ...processEnv(),
-      }),
-    ],
-  });
+const mergeResolve = config => {
+  // Absolute imports
+  config.resolve.modules.push(path.resolve(__dirname));
+};
+
+const mergePlugins = (config, plugins) => {
+  config.plugins.push(
+    plugins.define({
+      ...processEnv(),
+    }),
+  );
+};
+
+exports.onCreateWebpackConfig = ({ actions, plugins, getConfig }) => {
+  const config = getConfig();
+
+  mergeResolve(config);
+  mergePlugins(config, plugins);
+
+  actions.replaceWebpackConfig(config);
 };
