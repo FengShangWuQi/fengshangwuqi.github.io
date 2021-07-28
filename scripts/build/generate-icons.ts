@@ -1,5 +1,5 @@
 import path from "path";
-import fse from "fs-extra";
+import { ensureFile, writeFile } from "fs-extra";
 import globby from "globby";
 import prettier from "prettier";
 import { camelCase } from "lodash";
@@ -64,31 +64,44 @@ const iconStorybook = (icons: string[]) => `
         )
   }`;
 
-const generateIcons = () => {
-  const icons = globby
-    .sync(process.cwd() + "/src-components/basic/icons/*.svg")
-    .map(filePath => {
-      const ext = path.extname(filePath);
-      const base = path.basename(filePath, ext);
+(async () => {
+  const svgPath = await globby(
+    path.join(process.cwd(), "src-components", "basic", "icons"),
+    {
+      expandDirectories: {
+        extensions: ["svg"],
+      },
+      gitignore: true,
+    },
+  );
 
-      return base;
-    });
+  const icons = svgPath.map(filePath => {
+    const ext = path.extname(filePath);
+    const base = path.basename(filePath, ext);
 
-  const iconPath = process.cwd() + "/src-components/basic/Icon.tsx";
-  fse.ensureFileSync(iconPath);
-  fse.writeFileSync(
+    return base;
+  });
+  const iconPath = path.join(
+    process.cwd(),
+    "src-components",
+    "basic",
+    "Icon.tsx",
+  );
+
+  await ensureFile(iconPath);
+  await writeFile(
     iconPath,
     formatCode(icons.map(name => iconExport(name)).join(""), iconPath),
   );
 
-  const sbPath =
-    process.cwd() + "/src-components/basic/__storybook__/Icon.stories.tsx";
-  fse.ensureFileSync(sbPath);
-  fse.writeFileSync(sbPath, formatCode(iconStorybook(icons), sbPath));
-};
-
-(() => {
-  generateIcons();
+  const sbPath = path.join(
+    process.cwd() + "src-components",
+    "basic",
+    "__storybook__",
+    "Icon.stories.tsx",
+  );
+  await ensureFile(sbPath);
+  await writeFile(sbPath, formatCode(iconStorybook(icons), sbPath));
 
   logger("generate icon").withLevel("SUCCESS");
 })();
