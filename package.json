@@ -21,9 +21,7 @@
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "test": "pnpm tsc && jest --coverage",
     "build::icons": "ts-node ./scripts/build/generate-icons.ts",
-    "start": "appkit",
-    "debug:blog": "appkit dev blog",
-    "debug:storybook": "appkit dev storybook"
+    "start": "ts-node scripts/start.ts"
   },
   "commitlint": {
     "extends": [
