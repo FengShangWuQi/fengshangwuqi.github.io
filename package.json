@@ -32,6 +32,9 @@
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
       "eslint --fix"
+    ],
+    "**/*.{png,jpg,webp}": [
+      "pnpm run build:assets"
     ]
   },
   "eslintConfig": {
