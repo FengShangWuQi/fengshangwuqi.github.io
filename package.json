@@ -21,6 +21,7 @@
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "test": "pnpm tsc && jest --coverage",
     "build::icons": "ts-node ./scripts/build/generate-icons.ts",
+    "build::assets": "ts-node ./scripts/build/build-assets.ts",
     "start": "ts-node scripts/start.ts"
   },
   "commitlint": {
@@ -106,6 +107,7 @@
     "@fengshangwuqi/eslint-config": "1.1.39",
     "@fengshangwuqi/logger": "1.1.19",
     "@fengshangwuqi/ts-config": "1.1.6",
+    "@squoosh/lib": "0.4.0",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "11.2.7",
     "@testing-library/react-hooks": "7.0.1",
