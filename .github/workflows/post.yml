@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - post
+    paths:
+      - "posts/**"
+      - "zhoubao/**"
+  schedule:
+    - cron: "0 4 * * SUN" # SUN-noon
+
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, 'docs(r)') || contains(github.event.schedule, '0 4 * * SUN')"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: everlytic/branch-merge@1.1.2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_ref: "post"
+          target_branch: "dev"
