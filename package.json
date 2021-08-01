@@ -34,7 +34,7 @@
       "eslint --fix"
     ],
     "**/*.{png,jpg,webp}": [
-      "pnpm run build:assets"
+      "pnpm run build::assets"
     ]
   },
   "eslintConfig": {
