@@ -62,7 +62,7 @@ specifiers:
   gatsby-source-filesystem: 3.7.1
   gatsby-transformer-sharp: 3.7.1
   gh-pages: 3.2.3
-  globby: 11.0.4
+  globby: 12.0.0
   husky: 7.0.1
   immer: 9.0.5
   jest: 27.0.6
@@ -159,7 +159,7 @@ devDependencies:
   execa: registry.nlark.com/execa/5.1.1
   fs-extra: registry.nlark.com/fs-extra/10.0.0
   gh-pages: registry.nlark.com/gh-pages/3.2.3
-  globby: registry.nlark.com/globby/11.0.4
+  globby: registry.nlark.com/globby/12.0.0
   husky: registry.nlark.com/husky/7.0.1
   jest: registry.nlark.com/jest/27.0.6_ts-node@10.0.0
   lint-staged: registry.nlark.com/lint-staged/11.1.1
@@ -622,6 +622,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       array-uniq: registry.nlark.com/array-uniq/1.0.3
+
+  /array-union/3.0.1:
+    resolution: {integrity: sha1-2lJjDTJ/i4jPv7V3KOKvXNm2uXU=, tarball: array-union/download/array-union-3.0.1.tgz}
+    engines: {node: '>=12'}
+    dev: true
 
   /astral-regex/2.0.0:
     resolution: {integrity: sha1-SDFDxWeu7UeFdZwIZXhtx319LjE=, tarball: astral-regex/download/astral-regex-2.0.0.tgz}
@@ -1161,6 +1166,13 @@ packages:
   /diff/4.0.2:
     resolution: {integrity: sha1-YPOuy4nV+uUgwRqhnvwruYKq3n0=, tarball: diff/download/diff-4.0.2.tgz}
     engines: {node: '>=0.3.1'}
+    dev: true
+
+  /dir-glob/3.0.1:
+    resolution: {integrity: sha1-Vtv3PZkqSpO6FYT0U0Bj/S5BcX8=, tarball: dir-glob/download/dir-glob-3.0.1.tgz}
+    engines: {node: '>=8'}
+    dependencies:
+      path-type: 4.0.0
     dev: true
 
   /dns-txt/2.0.2:
@@ -1818,6 +1830,11 @@ packages:
       postcss: registry.nlark.com/postcss/8.3.4
     dev: false
 
+  /ignore/5.1.8:
+    resolution: {integrity: sha1-8VCotQo0KJsz4i9YiavU2AFvDlc=, tarball: ignore/download/ignore-5.1.8.tgz}
+    engines: {node: '>= 4'}
+    dev: true
+
   /import-fresh/3.3.0:
     resolution: {integrity: sha1-NxYsJfy566oublPVtNiM4X2eDCs=, tarball: import-fresh/download/import-fresh-3.3.0.tgz}
     engines: {node: '>=6'}
@@ -1936,7 +1953,7 @@ packages:
     dev: false
 
   /is-extglob/2.1.1:
-    resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=, tarball: is-extglob/download/is-extglob-2.1.1.tgz}
+    resolution: {integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=, tarball: is-extglob/download/is-extglob-2.1.1.tgz?cache=0&sync_timestamp=1560326171699&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fis-extglob%2Fdownload%2Fis-extglob-2.1.1.tgz}
     engines: {node: '>=0.10.0'}
 
   /is-fullwidth-code-point/2.0.0:
@@ -2396,6 +2413,11 @@ packages:
 
   /merge-stream/2.0.0:
     resolution: {integrity: sha1-UoI2KaFN0AyXcPtq1H3GMQ8sH2A=, tarball: merge-stream/download/merge-stream-2.0.0.tgz}
+
+  /merge2/1.4.1:
+    resolution: {integrity: sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=, tarball: merge2/download/merge2-1.4.1.tgz?cache=0&sync_timestamp=1591552871801&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmerge2%2Fdownload%2Fmerge2-1.4.1.tgz}
+    engines: {node: '>= 8'}
+    dev: true
 
   /micromatch/4.0.4:
     resolution: {integrity: sha1-iW1Rnf6dsl/OlM63pQCRm/iB6/k=, tarball: micromatch/download/micromatch-4.0.4.tgz}
@@ -2889,6 +2911,9 @@ packages:
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
     dev: true
 
+  /queue-microtask/1.2.3:
+    resolution: {integrity: sha1-SSkii7xyTfrEPg77BYyve2z7YkM=, tarball: queue-microtask/download/queue-microtask-1.2.3.tgz}
+
   /quick-lru/4.0.1:
     resolution: {integrity: sha1-W4h48ROlgheEjGSCAmxz4bpXcn8=, tarball: quick-lru/download/quick-lru-4.0.1.tgz}
     engines: {node: '>=8'}
@@ -3064,6 +3089,11 @@ packages:
     engines: {node: '>=0.12.0'}
     dev: false
 
+  /run-parallel/1.2.0:
+    resolution: {integrity: sha1-ZtE2jae9+SHrnZW9GpIp5/IaQ+4=, tarball: run-parallel/download/run-parallel-1.2.0.tgz}
+    dependencies:
+      queue-microtask: 1.2.3
+
   /rx/4.1.0:
     resolution: {integrity: sha1-pfE/957zt0D+MKqAP7CfmIBdR4I=, tarball: rx/download/rx-4.1.0.tgz}
     dev: false
@@ -3183,6 +3213,11 @@ packages:
   /slash/3.0.0:
     resolution: {integrity: sha1-ZTm+hwwWWtvVJAIg2+Nh8bxNRjQ=, tarball: slash/download/slash-3.0.0.tgz}
     engines: {node: '>=8'}
+    dev: true
+
+  /slash/4.0.0:
+    resolution: {integrity: sha1-JCI3IXbExsWt214q2oha+YSzlqc=, tarball: slash/download/slash-4.0.0.tgz}
+    engines: {node: '>=12'}
     dev: true
 
   /slice-ansi/3.0.0:
@@ -8134,22 +8169,22 @@ packages:
     dev: false
 
   registry.nlark.com/@nodelib/fs.scandir/2.1.5:
-    resolution: {integrity: sha1-dhnC6yGyVIP20WdUi0z9WnSIw9U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz?cache=0&sync_timestamp=1622795044184&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40nodelib%2Ffs.scandir%2Fdownload%2F%40nodelib%2Ffs.scandir-2.1.5.tgz}
+    resolution: {integrity: sha1-dhnC6yGyVIP20WdUi0z9WnSIw9U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz}
     name: '@nodelib/fs.scandir'
     version: 2.1.5
     engines: {node: '>= 8'}
     dependencies:
       '@nodelib/fs.stat': registry.nlark.com/@nodelib/fs.stat/2.0.5
-      run-parallel: registry.nlark.com/run-parallel/1.2.0
+      run-parallel: 1.2.0
 
   registry.nlark.com/@nodelib/fs.stat/2.0.5:
-    resolution: {integrity: sha1-W9Jir5Tp0lvR5xsF3u1Eh2oiLos=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@nodelib/fs.stat/download/@nodelib/fs.stat-2.0.5.tgz?cache=0&sync_timestamp=1622795043845&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40nodelib%2Ffs.stat%2Fdownload%2F%40nodelib%2Ffs.stat-2.0.5.tgz}
+    resolution: {integrity: sha1-W9Jir5Tp0lvR5xsF3u1Eh2oiLos=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@nodelib/fs.stat/download/@nodelib/fs.stat-2.0.5.tgz}
     name: '@nodelib/fs.stat'
     version: 2.0.5
     engines: {node: '>= 8'}
 
   registry.nlark.com/@nodelib/fs.walk/1.2.7:
-    resolution: {integrity: sha1-lMI9sY7kZT4Smr0m+wb4cKyeHuI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@nodelib/fs.walk/download/@nodelib/fs.walk-1.2.7.tgz?cache=0&sync_timestamp=1622795045542&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40nodelib%2Ffs.walk%2Fdownload%2F%40nodelib%2Ffs.walk-1.2.7.tgz}
+    resolution: {integrity: sha1-lMI9sY7kZT4Smr0m+wb4cKyeHuI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@nodelib/fs.walk/download/@nodelib/fs.walk-1.2.7.tgz?cache=0&sync_timestamp=1625858351876&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40nodelib%2Ffs.walk%2Fdownload%2F%40nodelib%2Ffs.walk-1.2.7.tgz}
     name: '@nodelib/fs.walk'
     version: 1.2.7
     engines: {node: '>= 8'}
@@ -13513,6 +13548,19 @@ packages:
       micromatch: registry.nlark.com/micromatch/4.0.4
       picomatch: registry.nlark.com/picomatch/2.3.0
 
+  registry.nlark.com/fast-glob/3.2.7:
+    resolution: {integrity: sha1-/Wy3otfpqnp4RhEehaGW1rL3ZqE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/fast-glob/download/fast-glob-3.2.7.tgz}
+    name: fast-glob
+    version: 3.2.7
+    engines: {node: '>=8'}
+    dependencies:
+      '@nodelib/fs.stat': registry.nlark.com/@nodelib/fs.stat/2.0.5
+      '@nodelib/fs.walk': registry.nlark.com/@nodelib/fs.walk/1.2.7
+      glob-parent: registry.nlark.com/glob-parent/5.1.2
+      merge2: 1.4.1
+      micromatch: 4.0.4
+    dev: true
+
   registry.nlark.com/fast-json-stable-stringify/2.1.0:
     resolution: {integrity: sha1-h0v2nG9ATCtdmcSBNBOZ/VWJJjM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/fast-json-stable-stringify/download/fast-json-stable-stringify-2.1.0.tgz}
     name: fast-json-stable-stringify
@@ -15029,7 +15077,7 @@ packages:
     version: 5.1.2
     engines: {node: '>= 6'}
     dependencies:
-      is-glob: registry.nlark.com/is-glob/4.0.1
+      is-glob: 4.0.1
 
   registry.nlark.com/glob-to-regexp/0.4.1:
     resolution: {integrity: sha1-x1KXCHyFG5pXi9IX3VmpL1n+VG4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/glob-to-regexp/download/glob-to-regexp-0.4.1.tgz}
@@ -15147,6 +15195,21 @@ packages:
       ignore: registry.nlark.com/ignore/5.1.8
       merge2: registry.nlark.com/merge2/1.4.1
       slash: registry.nlark.com/slash/3.0.0
+    dev: false
+
+  registry.nlark.com/globby/12.0.0:
+    resolution: {integrity: sha1-uLu46dSPijyav1YkAw8fnhz74+0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/globby/download/globby-12.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fglobby%2Fdownload%2Fglobby-12.0.0.tgz}
+    name: globby
+    version: 12.0.0
+    engines: {node: '>=12.20'}
+    dependencies:
+      array-union: 3.0.1
+      dir-glob: 3.0.1
+      fast-glob: registry.nlark.com/fast-glob/3.2.7
+      ignore: 5.1.8
+      merge2: 1.4.1
+      slash: 4.0.0
+    dev: true
 
   registry.nlark.com/globby/6.1.0:
     resolution: {integrity: sha1-9abXDoOV4hyFj7BInWTfAkJNUGw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/globby/download/globby-6.1.0.tgz}
@@ -16053,6 +16116,7 @@ packages:
     name: is-extglob
     version: 2.1.1
     engines: {node: '>=0.10.0'}
+    dev: false
 
   registry.nlark.com/is-finite/1.1.0:
     resolution: {integrity: sha1-kEE1x3+0LAZB1qobzbxNqo2ggvM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-finite/download/is-finite-1.1.0.tgz}
@@ -16107,6 +16171,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-extglob: registry.nlark.com/is-extglob/2.1.1
+    dev: false
 
   registry.nlark.com/is-hexadecimal/1.0.4:
     resolution: {integrity: sha1-zDXJdYjaS9Saju3WvECC1E3LI6c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-hexadecimal/download/is-hexadecimal-1.0.4.tgz}
@@ -19419,7 +19484,7 @@ packages:
     dev: false
 
   registry.nlark.com/picomatch/2.3.0:
-    resolution: {integrity: sha1-8fBh3o9qS/AiiS4tEoI0+5gwKXI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/picomatch/download/picomatch-2.3.0.tgz?cache=0&sync_timestamp=1621648246651&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpicomatch%2Fdownload%2Fpicomatch-2.3.0.tgz}
+    resolution: {integrity: sha1-8fBh3o9qS/AiiS4tEoI0+5gwKXI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/picomatch/download/picomatch-2.3.0.tgz?cache=0&sync_timestamp=1621651377884&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpicomatch%2Fdownload%2Fpicomatch-2.3.0.tgz}
     name: picomatch
     version: 2.3.0
     engines: {node: '>=8.6'}
@@ -20330,11 +20395,6 @@ packages:
     version: 2.2.0
     dev: false
 
-  registry.nlark.com/queue-microtask/1.2.3:
-    resolution: {integrity: sha1-SSkii7xyTfrEPg77BYyve2z7YkM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/queue-microtask/download/queue-microtask-1.2.3.tgz}
-    name: queue-microtask
-    version: 1.2.3
-
   registry.nlark.com/randombytes/2.1.0:
     resolution: {integrity: sha1-32+ENy8CcNxlzfYpE0mrekc9Tyo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/randombytes/download/randombytes-2.1.0.tgz}
     name: randombytes
@@ -21237,13 +21297,6 @@ packages:
       mime-types: registry.nlark.com/mime-types/2.1.13
       xml: 1.0.1
     dev: false
-
-  registry.nlark.com/run-parallel/1.2.0:
-    resolution: {integrity: sha1-ZtE2jae9+SHrnZW9GpIp5/IaQ+4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/run-parallel/download/run-parallel-1.2.0.tgz}
-    name: run-parallel
-    version: 1.2.0
-    dependencies:
-      queue-microtask: registry.nlark.com/queue-microtask/1.2.3
 
   registry.nlark.com/rxjs/6.6.7:
     resolution: {integrity: sha1-kKwBisq/SRv2UEQjXVhjxNq4BMk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/rxjs/download/rxjs-6.6.7.tgz}
