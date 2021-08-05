@@ -1,3 +1,4 @@
+.vercel
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,vim,visualstudiocode,macos,linux
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,vim,visualstudiocode,macos,linux
@@ -24,7 +25,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
