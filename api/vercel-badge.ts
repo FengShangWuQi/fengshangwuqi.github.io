@@ -1,4 +1,5 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
+import axios from "axios";
 
 import { fetchState } from "../server/fetchers/state-fetcher";
 import { generateBadgeUrl } from "../utils/badge";
@@ -13,6 +14,8 @@ export default async (req: VercelRequest, res: VercelResponse) => {
     style: "flat",
     logo: "vercel",
   });
+  const { data } = await axios.get(badgeUrl);
 
-  res.json(badgeUrl);
+  res.setHeader("Content-Type", "image/svg+xml");
+  res.send(data);
 };
