@@ -7,7 +7,8 @@
     "gatsby",
     "react",
     "typescript",
-    "emotion"
+    "emotion",
+    "pnpm"
   ],
   "appkit": {
     "dev": "gatsby develop -o",
