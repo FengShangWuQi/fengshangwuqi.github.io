@@ -16,4 +16,5 @@ module.exports = {
   testURL: "http://localhost",
   setupFiles: ["<rootDir>/jest/loadershim.js"],
   setupFilesAfterEnv: ["<rootDir>/jest/setup-test-env.ts"],
+  collectCoverage: true,
 };

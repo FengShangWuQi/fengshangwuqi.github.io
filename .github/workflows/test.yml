@@ -16,6 +16,7 @@ jobs:
 
       - run: curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
       - run: pnpm install
+      - run: pnpm pretest
       - run: pnpm test
 
       - uses: codecov/codecov-action@v1

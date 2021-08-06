@@ -20,7 +20,8 @@
     "clean": "gatsby clean",
     "format": "prettier --write .",
     "lint": "eslint '**/*.{js,ts,tsx}'",
-    "test": "pnpm tsc && jest --coverage",
+    "pretest": "pnpm tsc",
+    "test": "jest",
     "build::icons": "ts-node ./scripts/build/generate-icons.ts",
     "build::assets": "ts-node ./scripts/build/build-assets.ts",
     "start": "ts-node scripts/start.ts"
