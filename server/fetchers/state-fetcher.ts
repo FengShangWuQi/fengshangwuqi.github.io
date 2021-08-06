@@ -1,5 +1,13 @@
 import { github } from "./client";
 
+export enum DeployState {
+  SUCCESS = "SUCCESS",
+  PENDING = "PENDING",
+  FAILURE = "FAILURE",
+}
+
+export type IDeployState = keyof typeof DeployState;
+
 const blogQuery = `
 query getDeployments($login: String!, $repo: String!) {
   repository(owner: $login, name: $repo) {
@@ -75,7 +83,7 @@ export const fetchState = async (
   userName: string,
   repoName: string,
   project: string,
-) => {
+): Promise<IDeployState> => {
   const res = await fetcher(
     {
       login: userName,
