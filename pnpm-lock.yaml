@@ -66,7 +66,7 @@ specifiers:
   husky: 7.0.1
   immer: 9.0.5
   jest: 27.0.6
-  lint-staged: 11.1.1
+  lint-staged: 11.1.2
   lmdb-store: 1.6.5
   lodash: 4.17.21
   polished: 4.1.3
@@ -162,7 +162,7 @@ devDependencies:
   globby: registry.nlark.com/globby/11.0.4
   husky: registry.nlark.com/husky/7.0.1
   jest: registry.nlark.com/jest/27.0.6_ts-node@10.0.0
-  lint-staged: registry.nlark.com/lint-staged/11.1.1
+  lint-staged: registry.nlark.com/lint-staged/11.1.2
   prettier: registry.nlark.com/prettier/2.3.2
   pretty-quick: registry.nlark.com/pretty-quick/3.1.1_prettier@2.3.2
   react-test-renderer: registry.nlark.com/react-test-renderer/17.0.2_react@17.0.2
@@ -4132,8 +4132,6 @@ packages:
       '@babel/helper-optimise-call-expression': registry.nlark.com/@babel/helper-optimise-call-expression/7.14.5
       '@babel/helper-replace-supers': registry.nlark.com/@babel/helper-replace-supers/7.15.0
       '@babel/helper-split-export-declaration': registry.nlark.com/@babel/helper-split-export-declaration/7.14.5
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   registry.nlark.com/@babel/helper-create-regexp-features-plugin/7.14.5:
@@ -4333,8 +4331,6 @@ packages:
       '@babel/helper-optimise-call-expression': registry.nlark.com/@babel/helper-optimise-call-expression/7.14.5
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.0
       '@babel/types': registry.nlark.com/@babel/types/7.15.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   registry.nlark.com/@babel/helper-simple-access/7.14.5:
@@ -6309,8 +6305,6 @@ packages:
       '@babel/helper-create-class-features-plugin': registry.nlark.com/@babel/helper-create-class-features-plugin/7.15.0
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
       '@babel/plugin-syntax-typescript': registry.nlark.com/@babel/plugin-syntax-typescript/7.14.5
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   registry.nlark.com/@babel/plugin-transform-unicode-escapes/7.14.5:
@@ -6653,8 +6647,6 @@ packages:
       '@babel/types': registry.nlark.com/@babel/types/7.15.0
       debug: registry.nlark.com/debug/4.3.1
       globals: registry.nlark.com/globals/11.12.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   registry.nlark.com/@babel/types/7.14.5:
@@ -11982,29 +11974,8 @@ packages:
     name: debug
     version: 4.3.1
     engines: {node: '>=6.0'}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
     dependencies:
       ms: 2.1.2
-
-  registry.nlark.com/debug/4.3.1_supports-color@6.1.0:
-    resolution: {integrity: sha1-8NIpxQXgxtjEmsVT0bE9wYP2su4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/debug/download/debug-4.3.1.tgz}
-    id: registry.nlark.com/debug/4.3.1
-    name: debug
-    version: 4.3.1
-    engines: {node: '>=6.0'}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-    dependencies:
-      ms: 2.1.2
-      supports-color: registry.nlark.com/supports-color/6.1.0
-    dev: false
 
   registry.nlark.com/decamelize/1.2.0:
     resolution: {integrity: sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/decamelize/download/decamelize-1.2.0.tgz}
@@ -12601,7 +12572,6 @@ packages:
       yeast: 0.1.2
     transitivePeerDependencies:
       - bufferutil
-      - supports-color
       - utf-8-validate
     dev: false
 
@@ -12629,7 +12599,6 @@ packages:
       ws: registry.nlark.com/ws/7.4.6
     transitivePeerDependencies:
       - bufferutil
-      - supports-color
       - utf-8-validate
     dev: false
 
@@ -13799,7 +13768,7 @@ packages:
       debug:
         optional: true
     dependencies:
-      debug: registry.nlark.com/debug/4.3.1_supports-color@6.1.0
+      debug: registry.nlark.com/debug/4.3.1
     dev: false
 
   registry.nlark.com/for-each/0.3.3:
@@ -17359,10 +17328,10 @@ packages:
     version: 1.1.6
     dev: false
 
-  registry.nlark.com/lint-staged/11.1.1:
-    resolution: {integrity: sha1-nCAYuHJlTPgLKx/1oQtrdK724wA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/lint-staged/download/lint-staged-11.1.1.tgz?cache=0&sync_timestamp=1627125514633&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flint-staged%2Fdownload%2Flint-staged-11.1.1.tgz}
+  registry.nlark.com/lint-staged/11.1.2:
+    resolution: {integrity: sha1-TdeHgq5D7m6/KWnK2a9npGszzZA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/lint-staged/download/lint-staged-11.1.2.tgz}
     name: lint-staged
-    version: 11.1.1
+    version: 11.1.2
     hasBin: true
     dependencies:
       chalk: registry.nlark.com/chalk/4.1.1
@@ -17370,7 +17339,6 @@ packages:
       commander: registry.nlark.com/commander/7.2.0
       cosmiconfig: 7.0.0
       debug: registry.nlark.com/debug/4.3.1
-      dedent: 0.7.0
       enquirer: 2.3.6
       execa: registry.nlark.com/execa/5.1.1
       listr2: registry.nlark.com/listr2/3.10.0_enquirer@2.3.6
@@ -17380,8 +17348,6 @@ packages:
       please-upgrade-node: 3.2.0
       string-argv: 0.3.1
       stringify-object: 3.3.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   registry.nlark.com/listr2/3.10.0_enquirer@2.3.6:
@@ -18103,8 +18069,6 @@ packages:
     dependencies:
       micromark: registry.nlark.com/micromark/2.11.4
       vfile-message: registry.nlark.com/vfile-message/2.0.4
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   registry.nlark.com/micromark-extension-mdx-jsx/0.3.3:
@@ -18116,8 +18080,6 @@ packages:
       micromark: registry.nlark.com/micromark/2.11.4
       micromark-extension-mdx-expression: registry.nlark.com/micromark-extension-mdx-expression/0.3.2
       vfile-message: registry.nlark.com/vfile-message/2.0.4
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   registry.nlark.com/micromark-extension-mdx-md/0.1.1:
@@ -18135,8 +18097,6 @@ packages:
       micromark-extension-mdx-expression: registry.nlark.com/micromark-extension-mdx-expression/0.3.2
       micromark-extension-mdx-jsx: registry.nlark.com/micromark-extension-mdx-jsx/0.3.3
       micromark-extension-mdx-md: registry.nlark.com/micromark-extension-mdx-md/0.1.1
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   registry.nlark.com/micromark-extension-mdxjs-esm/0.3.1:
@@ -18147,8 +18107,6 @@ packages:
       micromark: registry.nlark.com/micromark/2.11.4
       micromark-extension-mdx-expression: registry.nlark.com/micromark-extension-mdx-expression/0.3.2
       vfile-message: registry.nlark.com/vfile-message/2.0.4
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   registry.nlark.com/micromark-extension-mdxjs/0.3.0:
@@ -18163,8 +18121,6 @@ packages:
       micromark-extension-mdx-jsx: registry.nlark.com/micromark-extension-mdx-jsx/0.3.3
       micromark-extension-mdx-md: registry.nlark.com/micromark-extension-mdx-md/0.1.1
       micromark-extension-mdxjs-esm: registry.nlark.com/micromark-extension-mdxjs-esm/0.3.1
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   registry.nlark.com/micromark/2.11.4:
@@ -18174,8 +18130,6 @@ packages:
     dependencies:
       debug: registry.nlark.com/debug/4.3.1
       parse-entities: registry.nlark.com/parse-entities/2.0.0
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   registry.nlark.com/micromatch/3.1.10:
@@ -20878,8 +20832,6 @@ packages:
       mdast-util-mdx: registry.nlark.com/mdast-util-mdx/0.1.1
       micromark-extension-mdx: registry.nlark.com/micromark-extension-mdx/0.2.1
       micromark-extension-mdxjs: registry.nlark.com/micromark-extension-mdxjs/0.3.0
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   registry.nlark.com/remark-mdxjs/2.0.0-next.8:
@@ -21647,7 +21599,6 @@ packages:
       socket.io-parser: registry.nlark.com/socket.io-parser/4.0.4
     transitivePeerDependencies:
       - bufferutil
-      - supports-color
       - utf-8-validate
     dev: false
 
@@ -21660,8 +21611,6 @@ packages:
       '@types/component-emitter': registry.nlark.com/@types/component-emitter/1.2.10
       component-emitter: registry.nlark.com/component-emitter/1.3.0
       debug: registry.nlark.com/debug/4.3.1
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
   registry.nlark.com/socket.io/3.1.1:
@@ -21681,7 +21630,6 @@ packages:
       socket.io-parser: registry.nlark.com/socket.io-parser/4.0.4
     transitivePeerDependencies:
       - bufferutil
-      - supports-color
       - utf-8-validate
     dev: false
 
@@ -21794,36 +21742,30 @@ packages:
     name: spdx-license-ids
     version: 3.0.9
 
-  registry.nlark.com/spdy-transport/3.0.0_supports-color@6.1.0:
+  registry.nlark.com/spdy-transport/3.0.0:
     resolution: {integrity: sha1-ANSGOmQArXXfkzYaFghgXl3NzzE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/spdy-transport/download/spdy-transport-3.0.0.tgz}
-    id: registry.nlark.com/spdy-transport/3.0.0
     name: spdy-transport
     version: 3.0.0
     dependencies:
-      debug: registry.nlark.com/debug/4.3.1_supports-color@6.1.0
+      debug: registry.nlark.com/debug/4.3.1
       detect-node: registry.nlark.com/detect-node/2.1.0
       hpack.js: registry.nlark.com/hpack.js/2.1.6
       obuf: registry.nlark.com/obuf/1.1.2
       readable-stream: registry.nlark.com/readable-stream/3.6.0
       wbuf: registry.nlark.com/wbuf/1.7.3
-    transitivePeerDependencies:
-      - supports-color
     dev: false
 
-  registry.nlark.com/spdy/4.0.2_supports-color@6.1.0:
+  registry.nlark.com/spdy/4.0.2:
     resolution: {integrity: sha1-t09GYgOj7aRSwCSSuR+56EonZ3s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/spdy/download/spdy-4.0.2.tgz}
-    id: registry.nlark.com/spdy/4.0.2
     name: spdy
     version: 4.0.2
     engines: {node: '>=6.0.0'}
     dependencies:
-      debug: registry.nlark.com/debug/4.3.1_supports-color@6.1.0
+      debug: registry.nlark.com/debug/4.3.1
       handle-thing: registry.nlark.com/handle-thing/2.0.1
       http-deceiver: registry.nlark.com/http-deceiver/1.2.7
       select-hose: registry.nlark.com/select-hose/2.0.0
-      spdy-transport: registry.nlark.com/spdy-transport/3.0.0_supports-color@6.1.0
-    transitivePeerDependencies:
-      - supports-color
+      spdy-transport: registry.nlark.com/spdy-transport/3.0.0
     dev: false
 
   registry.nlark.com/split-on-first/1.1.0:
@@ -23703,7 +23645,7 @@ packages:
       chokidar: registry.nlark.com/chokidar/2.1.8
       compression: 1.7.4
       connect-history-api-fallback: registry.nlark.com/connect-history-api-fallback/1.6.0
-      debug: registry.nlark.com/debug/4.3.1_supports-color@6.1.0
+      debug: registry.nlark.com/debug/4.3.1
       del: registry.nlark.com/del/4.1.1
       express: registry.nlark.com/express/4.17.1
       html-entities: registry.nlark.com/html-entities/1.4.0
@@ -23723,7 +23665,7 @@ packages:
       serve-index: registry.nlark.com/serve-index/1.9.1
       sockjs: registry.nlark.com/sockjs/0.3.21
       sockjs-client: 1.5.1
-      spdy: registry.nlark.com/spdy/4.0.2_supports-color@6.1.0
+      spdy: registry.nlark.com/spdy/4.0.2
       strip-ansi: registry.nlark.com/strip-ansi/3.0.1
       supports-color: registry.nlark.com/supports-color/6.1.0
       url: registry.nlark.com/url/0.11.0
