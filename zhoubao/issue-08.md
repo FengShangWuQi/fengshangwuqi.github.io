@@ -1,9 +1,9 @@
 ---
-title: 周报#08 @ 2019.12.29
+title: 周报#08 @ 前端权限控制、GitHub Action、browser detector
 tags:
   - Front-End
 date: 2019-12-29
-cover: images/zhoubao-08.jpg
+cover: images/issue-08.jpg
 ---
 
 ## 前端动态

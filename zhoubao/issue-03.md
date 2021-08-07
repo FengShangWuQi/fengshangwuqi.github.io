@@ -1,9 +1,9 @@
 ---
-title: 周报#03 @ 2019.11.24
+title: 周报#03 @ React Conf 2019、函数式组件优化、cssdb
 tags:
   - Front-End
 date: 2019-11-24
-cover: images/zhoubao-03.jpg
+cover: images/issue-03.jpg
 ---
 
 ## 前端动态

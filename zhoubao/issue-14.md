@@ -1,9 +1,9 @@
 ---
-title: 周报#14 @ 2021.08.01
+title: 周报#14 @ 手写 React、Web NFC、zustand
 tags:
   - Front-End
 date: 2021-08-01
-cover: images/zhoubao-14.jpg
+cover: images/issue-14.jpg
 ---
 
 ## 前端动态

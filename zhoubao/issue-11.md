@@ -1,9 +1,9 @@
 ---
-title: 周报#11 @ 2020.03.15
+title: 周报#11 @ ES2020、Ant Design 4.0、esbuild
 tags:
   - Front-End
 date: 2020-03-15
-cover: images/zhoubao-11.jpg
+cover: images/issue-11.jpg
 ---
 
 ## 前端动态

@@ -1,9 +1,9 @@
 ---
-title: 周报#10 @ 2020.01.12
+title: 周报#10 @ Flutter、CSS 架构、wakatime
 tags:
   - Front-End
 date: 2020-01-12
-cover: images/zhoubao-10.jpg
+cover: images/issue-10.jpg
 ---
 
 ## 前端动态

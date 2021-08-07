@@ -1,9 +1,9 @@
 ---
-title: 周报#13 @ 2021.07.25
+title: 周报#13 @ ES12、petite-vue、nativefier
 tags:
   - Front-End
 date: 2021-07-25
-cover: images/zhoubao-13.jpg
+cover: images/issue-13.jpg
 ---
 
 ## 前端动态

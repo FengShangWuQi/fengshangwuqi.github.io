@@ -1,9 +1,9 @@
 ---
-title: 周报#07 @ 2019.12.22
+title: 周报#07 @ state of css and js 2019、WebAssembly、wenyan-lang
 tags:
   - Front-End
 date: 2019-12-22
-cover: images/zhoubao-07.jpg
+cover: images/issue-07.jpg
 ---
 
 ## 前端动态

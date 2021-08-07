@@ -1,9 +1,9 @@
 ---
-title: 周报#09 @ 2020.01.05
+title: 周报#09 @ llhttp、prefers-color-scheme、figlet.js
 tags:
   - Front-End
 date: 2020-01-05
-cover: images/zhoubao-09.jpg
+cover: images/issue-09.jpg
 ---
 
 ## 前端动态
@@ -75,5 +75,3 @@ cover: images/zhoubao-09.jpg
 ## 最后一提
 
 1、[1Password](https://1password.com/zh-cn/) 是个好东西。
-
-2、**年会抽奖** 要开始了，突然不知道咋写 **bug** 了。

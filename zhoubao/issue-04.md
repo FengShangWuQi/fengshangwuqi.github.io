@@ -1,9 +1,9 @@
 ---
-title: 周报#04 @ 2019.12.01
+title: 周报#04 @ 框架设计、业务中台、Serverless 前后端一体化
 tags:
   - Front-End
 date: 2019-12-01
-cover: images/zhoubao-04.jpg
+cover: images/issue-04.jpg
 ---
 
 ## 前端动态
@@ -16,35 +16,31 @@ cover: images/zhoubao-04.jpg
 
 流行的 **JavaScript 状态调查** 又开始了，今年是该项调查的第四年，将一如既往地通过整理收集反馈的方式来帮助开发者决策接下来的 JavaScript 学习方向和技术选型。
 
-### 3、[九大模块，逐行剖析 Vue.js 源码](https://nlrx-wjc.github.io/Learn-Vue-Source-Code/)
-
-作者利用工作之余时间逐行剖析 Vue.js 源码，将 Vue.js 源码分为 **变化侦测**，**虚拟 DOM**，**模板编译**，**实例方法**，**全局 API**，**生命周期**，**指令**，**过滤器**，**内置组件** 九大模块，逐个击破，希望能帮助到更多的 Vue 初学者。目前已完成了前三部分，后续持续更新中。
-
-### 4、[尤雨溪：在框架设计中寻求平衡](https://juejin.im/post/5d45be46f265da03cf7a70d7)
+### 3、[尤雨溪：在框架设计中寻求平衡](https://juejin.im/post/5d45be46f265da03cf7a70d7)
 
 通过本文，我们可以了解在当前框架三足鼎立的局势下，如何直接透过框架本身了解到更多有关框架设计中的的权衡，以及 **Vue** 是如何进行取舍的。
 
-### 5、[深入浅出 SWR 原理](https://zhuanlan.zhihu.com/p/93824106)
+### 4、[深入浅出 SWR 原理](https://zhuanlan.zhihu.com/p/93824106)
 
 本文主要是基于 **SWR** 源码对其原理进行分析，但并没有直接从源码开始，而是从实际需求场景一步一步推导进而实现 **SWR** 的功能。最终结论是 **useSWR** 除了提供常见的请求功能外，间接的还提供了一种 **状态管理** 的方案。
 
-### 6、[为什么 Vue3.0 不再使用 defineProperty 实现数据监听](https://www.infoq.cn/article/sPCMAcrdAZQfmLbGJeGr)
+### 5、[为什么 Vue3.0 不再使用 defineProperty 实现数据监听](https://www.infoq.cn/article/sPCMAcrdAZQfmLbGJeGr)
 
 Vue 3.0 中，响应式数据部分弃用了 **Object.defineProperty**，使用 **Proxy** 来代替它。本文将主要通过以下方面来分析为什么 Vue 选择弃用 Object.defineProperty。
 
-### 7、[前端领域的 Docker 与 Kubernetes](https://juejin.im/post/5dddd15b6fb9a071576dbd7a)
+### 6、[前端领域的 Docker 与 Kubernetes](https://juejin.im/post/5dddd15b6fb9a071576dbd7a)
 
 **Docker** 和传统部署方式最大的不同在于，它将不会限制我们使用任何工具，任何语言，任何版本的 runtime，Docker 将我们的应用看成一个只提供网络服务的盒子(也即容器)，**Kubernetes** 则是对这些盒子进行更多自动化的操作，自动创建，自动重启，自动扩容，自动调度，这个过程称之为容器编排。通过本文，读者可以了解到 Docker 的基本原理，Kubernetes 是怎么工作的， 对于前端 Kubernetes 有哪些优势与玩法。
 
-### 8、[阿里巴巴架构师：十问业务中台和我的答案](https://www.infoq.cn/article/PpmvT3eDLxzhHVEVqbmO)
+### 7、[阿里巴巴架构师：十问业务中台和我的答案](https://www.infoq.cn/article/PpmvT3eDLxzhHVEVqbmO)
 
 **中台** 概念这几年非常火，特别是阿里、腾讯、百度、京东等互联网公司最近频繁的基于中台调整组织架构，把中台的热度又上升到另一个高度，甚至有这样的声音，90 年代不做 ERP 会死，现在不做中台也会定企业生死。本文是“阿里巴巴业务中台”专题的第一篇，作者希望通过自己在阿里业务中台方法体系建设及项目中的一些经验，为企业在业务中台建设过程提供一些帮助。
 
-### 9、[解读 2019 之架构领域全年盘点](https://www.infoq.cn/article/U3Lr4dtChbximocaSqK5)
+### 8、[解读 2019 之架构领域全年盘点](https://www.infoq.cn/article/U3Lr4dtChbximocaSqK5)
 
 2019 年，整个 IT 领域发生了许多深刻而又复杂的变化，InfoQ 策划了 **解读 2019** 年终技术盘点系列文章，希望能够给读者清晰地梳理出 IT 领域技术这一年的发展变化，回顾过去，继续前行。本文是 **架构篇** 年终盘点。
 
-### 10、[浅析基于 Serverless 的前后端一体化框架](https://segmentfault.com/a/1190000019639519)
+### 9、[浅析基于 Serverless 的前后端一体化框架](https://segmentfault.com/a/1190000019639519)
 
 Serverless 是一种 **无服务器架构** 模式，它无需关心程序运行环境、资源及数量，只需要将精力聚焦到业务逻辑上的技术。基于 Serverless 开发 web 应用，架构师总是试图把传统的解决方案移植到 Serverless 上，虽然可以做到既拥有 Serverless 新技术带来的红利，又能维持住传统开发模式的开发体验。但是，Serverless 技术带来的改变可能不止这些，可能是颠覆整个传统 web 应用开发模式的革命性技术。
 

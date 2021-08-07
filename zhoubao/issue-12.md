@@ -1,9 +1,9 @@
 ---
-title: 周报#12 @ 2020.04.19
+title: 周报#12 @ webpack 治理、GitHub 核心功能免费、browser-2020
 tags:
   - Front-End
 date: 2020-04-19
-cover: images/zhoubao-12.jpg
+cover: images/issue-12.jpg
 ---
 
 ## 前端动态

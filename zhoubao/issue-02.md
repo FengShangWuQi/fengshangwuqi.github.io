@@ -1,9 +1,9 @@
 ---
-title: 周报#02 @ 2019.11.17
+title: 周报#02 @ React 数据请求、Portals、react-adaptive-hooks
 tags:
   - Front-End
 date: 2019-11-17
-cover: images/zhoubao-02.jpg
+cover: images/issue-02.jpg
 ---
 
 ## 前端动态
@@ -44,7 +44,7 @@ Chrome 的目标是让用户告别加载延迟，未来，Chrome 可能会在在
 
 ### 1、[react-interactive-paycard](https://github.com/jasminmif/react-interactive-paycard)
 
-![react-interactive-paycard](images/zhoubao-02-react-interactive-paycard.jpg)
+![react-interactive-paycard](images/issue-02-react-interactive-paycard.jpg)
 
 有人看到 [JavaScript Weekly](https://javascriptweekly.com/issues/461) 最近展示的 [vue-interactive-paycard](https://github.com/muhammederdem/vue-interactive-paycard)，认为我们也需要 React 版本。
 

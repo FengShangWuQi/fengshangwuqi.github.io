@@ -1,9 +1,9 @@
 ---
-title: 周报#05 @ 2019.12.08
+title: 周报#05 @ 微前端、热更新、creepyface
 tags:
   - Front-End
 date: 2019-12-08
-cover: images/zhoubao-05.jpg
+cover: images/issue-05.jpg
 ---
 
 ## 前端动态

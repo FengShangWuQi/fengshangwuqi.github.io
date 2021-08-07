@@ -1,9 +1,9 @@
 ---
-title: 周报#06 @ 2019.12.15
+title: 周报#06 @ 防御性编程、部署史、javascript-algorithms
 tags:
   - Front-End
 date: 2019-12-15
-cover: images/zhoubao-06.jpg
+cover: images/issue-06.jpg
 ---
 
 ## 前端动态
@@ -36,7 +36,7 @@ Node.js 生态目前已很成熟，在每个领域都提供了较多具有吸引
 
 回顾 **2019** 年前端和 Web 开发的主要事件，新闻和趋势。
 
-### 8、[前端部署发展史](https://juejin.im/post/5dc4ae67f265da4cfa7bbb9a)
+### 8、[前端部署的发展历程](https://shanyue.tech/frontend-engineering/deploy.html)
 
 前端以前是刀耕火种，那前端应用部署在以前也是刀耕火种。那前端应用部署的发展得益于什么，随前端工程化带来的副产品？这只是一部分，而更重要的原因是 **devops** 的崛起。
 

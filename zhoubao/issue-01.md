@@ -1,9 +1,9 @@
 ---
-title: 周报#01 @ 2019.11.10
+title: 周报#01 @ TypeScript 3.7、响应式编程、Svelte
 tags:
   - Front-End
 date: 2019-11-10
-cover: images/zhoubao-01.png
+cover: images/issue-01.png
 ---
 
 ## 前端动态
