@@ -1,11 +1,8 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import axios from "axios";
 
-import {
-  fetchState,
-  IDeployState,
-  DeployState,
-} from "../server/fetchers/state-fetcher";
+import { IDeployState, DeployState } from "../src-api/client/github";
+import { fetchState, IProject } from "../src-api/fetchers/state-fetcher";
 import { generateBadgeUrl } from "../utils/badge";
 
 const getBadgeColor = (state: IDeployState) => {
@@ -26,7 +23,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
   const { query } = req;
   const { login, repo, project } = query as Record<string, string>;
 
-  const state = await fetchState(login, repo, project);
+  const state = await fetchState(login, repo, project as IProject);
   const badgeUrl = generateBadgeUrl(project, state.toLowerCase(), {
     color: getBadgeColor(state),
     logo: "vercel",
