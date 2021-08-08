@@ -35,7 +35,7 @@ cover: images/issue-13.jpg
 
 ### 4、[尤大大新活 petite-vue 尝鲜](https://juejin.cn/post/6983328034443132935)
 
-petite-vue 是一个 mini 版的 Vue，大小只有 5.8kb，针对渐进式增强进行了优化，它提供了与标准 Vue 相同的模板语法和响应式模型。
+**petite-vue** 是一个 mini 版的 Vue，大小只有 5.8kb，针对渐进式增强进行了优化，它提供了与标准 Vue 相同的模板语法和响应式模型。
 
 ### 5、[迈入现代 Web 开发（GMTC 2021 演讲《字节跳动的现代 Web 开发实践》全文）](https://zhuanlan.zhihu.com/p/386607009)
 
@@ -47,7 +47,7 @@ petite-vue 是一个 mini 版的 Vue，大小只有 5.8kb，针对渐进式增�
 
 ### 7、[SolidJS 硬气的说：我比 React 还 react](https://segmentfault.com/a/1190000040275257)
 
-本文会比较 SolidJS 与 React 的异同，阐述它的独特优势。
+本文会比较 **SolidJS** 与 React 的异同，阐述它的独特优势。
 
 ### 8、[尤雨溪：做技术哪有什么两全之策，都是取舍和平衡](https://mp.weixin.qq.com/s/_q_SnCbGyXrNnXA876tXbA)
 
@@ -67,4 +67,4 @@ petite-vue 是一个 mini 版的 Vue，大小只有 5.8kb，针对渐进式增�
 
 ### 1、[程序员的酒后真言](https://www.ruanyifeng.com/blog/2021/06/drunk-post-of-a-programmer.html)
 
-一个程序员说自己喝醉了，软件工程师已经当了 10 年，心里有好多话想说，我可能会后悔今天说了这些话。
+一个程序员说自己喝醉了，软件工程师已经当了 **10** 年，心里有好多话想说，我可能会后悔今天说了这些话。
