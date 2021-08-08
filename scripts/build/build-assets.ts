@@ -9,6 +9,7 @@ import { prettySize } from "../../utils/prettySize";
 enum Encoder {
   ".png" = "oxipng",
   ".jpg" = "mozjpeg",
+  ".jpeg" = "mozjpeg",
   ".webp" = "webp",
 }
 
@@ -74,7 +75,7 @@ const compressImage = async (imgPath: string) => {
 (async () => {
   const imagePath = await globby(process.cwd(), {
     expandDirectories: {
-      extensions: ["png", "jpg", "webp"],
+      extensions: ["png", "jpg", "jpeg", "webp"],
     },
     gitignore: true,
   });

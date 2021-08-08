@@ -10,11 +10,11 @@ cover: images/issue-14.jpg
 
 ### 1、[Sequence of Gatsby's bootstrap lifecycle with links to source code as of v2.0.0](https://gist.github.com/sw-yx/09306ec03df7b4cd8e7469bb74c078fb)
 
-Gatsby 生命周期。
+**Gatsby** 生命周期。
 
 ### 2、[vscode 是怎么跑起来的](https://juejin.cn/post/6987420993568374797)
 
-vscode 是基于 electron 做窗口的创建和进程通信的，应用启动的时候会跑主进程，从 src/main 开始执行，然后创建 CodeMain 对象。
+vscode 是基于 electron 做窗口的创建和进程通信的，应用启动的时候会跑主进程，从 src/main 开始执行，然后创建 **CodeMain** 对象。
 
 ### 3、[腾讯课堂小程序性能极致优化——网络请求优化篇](https://mp.weixin.qq.com/s/g2mLpWhGsrMEud-i8xD6YQ)
 
@@ -30,23 +30,23 @@ vscode 是基于 electron 做窗口的创建和进程通信的，应用启动的
 
 ### 6、[2021 年 Web 应用程序的最佳图像格式](https://mp.weixin.qq.com/s/KQgp_4l0h3F9X5qDUHkkrQ)
 
-本文将介绍 4 种最新的图像类型，以帮助您为下一个项目选择最佳的图像类型。
+本文将介绍 **4** 种最新的图像类型，以帮助您为下一个项目选择最佳的图像类型。
 
 ### 7、[47 张图带你走进浏览器的世界](https://king-hcj.github.io/2021/07/11/web-browser/)
 
-本文用 47 张图带你了解浏览器的发展史、浏览器的架构、浏览器的基本原理等。
+本文用 **47** 张图带你了解浏览器的发展史、浏览器的架构、浏览器的基本原理等。
 
 ### 8、[Pinia 与 Vuex 的对比：Pinia 是 Vuex 的良好替代品吗](https://segmentfault.com/a/1190000040368602)
 
-Pinia 是 Vue.js 的轻量级状态管理库，最近很受欢迎，它使用 Vue 3 中的新反应系统来构建一个直观且完全类型化的状态管理库。
+**Pinia** 是 Vue.js 的轻量级状态管理库，最近很受欢迎，它使用 Vue 3 中的新反应系统来构建一个直观且完全类型化的状态管理库。
 
 ### 9、[拖拽竟然还能这样玩](https://juejin.cn/post/6984587700951056414)
 
-本文介绍了谷歌 transmat 开源项目的应用场景、使用方式及相关源码。
+本文介绍了谷歌 **transmat** 开源项目的应用场景、使用方式及相关源码。
 
 ### 10、[NFC comes to the web](https://cxlabs.sap.com/2021/07/27/nfc-comes-to-the-web/)
 
-目前，Web NFC 已可以通过 Chrome 浏览器在 Android 手机上使用。
+目前，**Web NFC** 已可以通过 Chrome 浏览器在 Android 手机上使用。
 
 ## 明星项目
 
