@@ -2,7 +2,7 @@ import {
   blogDeployStateQuery,
   storybookDeployStateQuery,
   IDeployState,
-} from "../client/github";
+} from "../src-client/github";
 import { githubFetcher } from "./";
 
 export type IProject = "blog" | "storybook";
@@ -18,7 +18,7 @@ const getQuery = (project: IProject) => {
   }
 };
 
-export const fetchState = async (
+export const fetchDeployState = async (
   userName: string,
   repoName: string,
   project: IProject,
