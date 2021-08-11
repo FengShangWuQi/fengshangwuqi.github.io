@@ -3,7 +3,7 @@ import {
   storybookDeployStateQuery,
   IDeployState,
 } from "../src-client/github";
-import { githubFetcher } from "./";
+import { github } from "../src-core/request/github";
 
 export type IProject = "blog" | "storybook";
 
@@ -19,13 +19,13 @@ const getQuery = (project: IProject) => {
 };
 
 export const fetchDeployState = async (
-  userName: string,
-  repoName: string,
+  owner: string,
+  repo: string,
   project: IProject,
 ): Promise<IDeployState> => {
-  const res = await githubFetcher(getQuery(project), {
-    login: userName,
-    repo: repoName,
+  const res = await github.graphql(getQuery(project), {
+    owner,
+    repo,
   });
 
   const {

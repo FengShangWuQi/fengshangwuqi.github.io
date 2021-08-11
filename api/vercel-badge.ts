@@ -21,9 +21,9 @@ const getBadgeColor = (state: IDeployState) => {
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   const { query } = req;
-  const { login, repo, project } = query as Record<string, string>;
+  const { owner, repo, project } = query as Record<string, string>;
 
-  const deployState = await fetchDeployState(login, repo, project as IProject);
+  const deployState = await fetchDeployState(owner, repo, project as IProject);
   const badgeUrl = generateBadgeUrl(project, deployState.toLowerCase(), {
     color: getBadgeColor(deployState),
     logo: "vercel",
