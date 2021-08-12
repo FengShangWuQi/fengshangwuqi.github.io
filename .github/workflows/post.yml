@@ -13,9 +13,23 @@ jobs:
     runs-on: ubuntu-latest
     if: "contains(github.event.head_commit.message, 'docs(r)') || contains(github.event.schedule, '0 4 * * SUN')"
     steps:
+      - run: sudo apt update
+      - run: sudo apt -y upgrade
+      - run: sudo apt install -y libpng-dev autoconf libpng-dev pkg-config nasm
+
       - uses: actions/checkout@v2
       - uses: everlytic/branch-merge@1.1.2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.RELEASE_TOKEN }}
           source_ref: "post"
           target_branch: "dev"
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+
+      - run: curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
+      - run: pnpm install
+      - run: pnpm run r::create
