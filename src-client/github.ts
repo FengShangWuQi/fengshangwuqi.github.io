@@ -11,7 +11,16 @@ export interface Endpoints {
    * Create a release
    * https://docs.github.com/en/rest/reference/repos#create-a-release
    */
-  "POST /repos/{owner}/{repo}/releases": Record<"owner" | "repo", string>;
+  "POST /repos/{owner}/{repo}/releases": Record<
+    | "owner"
+    | "repo"
+    | "target_commitish"
+    | "tag_name"
+    | "name"
+    | "body"
+    | "discussion_category_name",
+    string
+  >;
 }
 
 /*

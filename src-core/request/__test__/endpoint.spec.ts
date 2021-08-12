@@ -5,29 +5,23 @@ describe("endpoint #endpoint", () => {
     const opts = endpoint("POST /repos/{owner}/{repo}/releases", {
       owner: "fengshangwuqi",
       repo: "fengshangwuqi.github.io",
+      target_commitish: "dev",
+      tag_name: "issue-01",
+      name: "#01",
+      body: "content",
+      discussion_category_name: "zhoubao",
     });
 
     expect(opts).toEqual({
       method: "POST",
       url: "/repos/fengshangwuqi/fengshangwuqi.github.io/releases",
-    });
-  });
-
-  it("POST /repos/{owner}/{repo}/releases -- with headers", () => {
-    const opts = endpoint("POST /repos/{owner}/{repo}/releases", {
-      headers: {
-        authorization: `token 0000000000000000000000000000000000000001`,
+      data: {
+        target_commitish: "dev",
+        tag_name: "issue-01",
+        name: "#01",
+        body: "content",
+        discussion_category_name: "zhoubao",
       },
-      owner: "fengshangwuqi",
-      repo: "fengshangwuqi.github.io",
-    });
-
-    expect(opts).toEqual({
-      headers: {
-        authorization: `token 0000000000000000000000000000000000000001`,
-      },
-      method: "POST",
-      url: "/repos/fengshangwuqi/fengshangwuqi.github.io/releases",
     });
   });
 });

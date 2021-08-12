@@ -1,7 +1,10 @@
+import dotenv from "dotenv";
 import axios, { AxiosRequestConfig, AxiosInstance } from "axios";
 
 import { Endpoints } from "../../src-client/github";
 import { endpoint, Route } from "./endpoint";
+
+dotenv.config();
 
 export class GitHub {
   client: AxiosInstance;
@@ -39,7 +42,12 @@ export class GitHub {
   ) {
     const opts = endpoint(route, parameters);
 
-    return this.client(opts);
+    return this.client({
+      headers: {
+        accept: "application/vnd.github.v3+json",
+      },
+      ...opts,
+    });
   }
 }
 

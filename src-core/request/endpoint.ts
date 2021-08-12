@@ -34,13 +34,17 @@ export const endpoint: IEndpoint = (route, parameters) => {
 
   const urlVariableNames = extractUrlVariableNames(url);
 
-  if (urlVariableNames.length === 0) {
-    return opts;
+  if (urlVariableNames.length !== 0) {
+    opts.url = url.replace(/\{([^{}]+)\}|([^{}]+)/g, (_, p1, p2) =>
+      p1 ? opts[p1] : p2,
+    );
   }
 
-  opts.url = url.replace(/\{([^{}]+)\}|([^{}]+)/g, (_, p1, p2) =>
-    p1 ? opts[p1] : p2,
-  );
+  if (method === "POST") {
+    opts.data = omit(opts, ["method", "url", ...urlVariableNames]);
+
+    return omit(opts, [...urlVariableNames, ...Object.keys(opts.data)]);
+  }
 
   return omit(opts, urlVariableNames);
 };
