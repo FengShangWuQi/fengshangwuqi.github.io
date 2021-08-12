@@ -35,7 +35,7 @@ specifiers:
   babel-preset-gatsby: 1.7.1
   execa: 5.1.1
   facepaint: 1.2.1
-  figlet: 1.5.0
+  figlet: 1.5.2
   fs-extra: 10.0.0
   gatsby: 3.7.2
   gatsby-plugin-algolia: 0.20.1
@@ -93,7 +93,7 @@ dependencies:
   '@sentry/gatsby': registry.nlark.com/@sentry/gatsby/6.11.0_gatsby@3.7.2+react@17.0.2
   algoliasearch: registry.nlark.com/algoliasearch/4.10.3
   facepaint: registry.nlark.com/facepaint/1.2.1
-  figlet: registry.nlark.com/figlet/1.5.0
+  figlet: registry.nlark.com/figlet/1.5.2
   gatsby: registry.nlark.com/gatsby/3.7.2_053d23ae710b7144060330851792f404
   gatsby-plugin-algolia: registry.nlark.com/gatsby-plugin-algolia/0.20.1_gatsby@3.7.2
   gatsby-plugin-catch-links: registry.nlark.com/gatsby-plugin-catch-links/3.7.1_gatsby@3.7.2
@@ -13594,10 +13594,10 @@ packages:
     version: 0.0.3
     dev: false
 
-  registry.nlark.com/figlet/1.5.0:
-    resolution: {integrity: sha1-LbTQClhOUVWpYIBjLbkZITw+ADw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/figlet/download/figlet-1.5.0.tgz}
+  registry.nlark.com/figlet/1.5.2:
+    resolution: {integrity: sha1-3aNP8jPJpI42/P9nQa61uv5JtjQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/figlet/download/figlet-1.5.2.tgz?cache=0&sync_timestamp=1628740454739&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ffiglet%2Fdownload%2Ffiglet-1.5.2.tgz}
     name: figlet
-    version: 1.5.0
+    version: 1.5.2
     engines: {node: '>= 0.4.0'}
     dev: false
 
