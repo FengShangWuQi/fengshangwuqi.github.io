@@ -70,7 +70,7 @@
     "facepaint": "1.2.1",
     "figlet": "1.5.2",
     "gatsby": "3.7.2",
-    "gatsby-plugin-algolia": "0.20.1",
+    "gatsby-plugin-algolia": "0.22.0",
     "gatsby-plugin-catch-links": "3.7.1",
     "gatsby-plugin-emotion": "6.7.1",
     "gatsby-plugin-feed": "3.7.1",
