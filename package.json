@@ -36,7 +36,7 @@
     "**/*.{js,ts,tsx}": [
       "eslint --fix"
     ],
-    "**/*.{png,jpg,webp}": [
+    "**/*.{png,jpg,jpeg,webp}": [
       "pnpm run build::assets"
     ]
   },
