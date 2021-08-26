@@ -29,7 +29,7 @@ specifiers:
   '@types/react-dom': 17.0.9
   '@types/react-instantsearch-dom': 6.12.0
   '@vercel/node': 1.12.1
-  algoliasearch: 4.10.4
+  algoliasearch: 4.10.5
   axios: 0.21.1
   babel-jest: 27.0.6
   babel-preset-gatsby: 1.7.1
@@ -93,7 +93,7 @@ dependencies:
   '@mdx-js/mdx': registry.nlark.com/@mdx-js/mdx/1.6.22
   '@mdx-js/react': registry.nlark.com/@mdx-js/react/1.6.22_react@17.0.2
   '@sentry/gatsby': registry.nlark.com/@sentry/gatsby/6.11.0_gatsby@3.7.2+react@17.0.2
-  algoliasearch: registry.nlark.com/algoliasearch/4.10.4
+  algoliasearch: registry.nlark.com/algoliasearch/4.10.5
   facepaint: registry.nlark.com/facepaint/1.2.1
   figlet: registry.nlark.com/figlet/1.5.2
   gatsby: registry.nlark.com/gatsby/3.7.2_053d23ae710b7144060330851792f404
@@ -128,7 +128,7 @@ dependencies:
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.nlark.com/react-helmet-async/1.1.2_react-dom@17.0.2+react@17.0.2
-  react-instantsearch-dom: registry.nlark.com/react-instantsearch-dom/6.12.1_6c6ff28fde4af31d1435ef8cf828ce9d
+  react-instantsearch-dom: registry.nlark.com/react-instantsearch-dom/6.12.1_7f770dea5663f3612b40f53110f92d57
   react-spring: registry.nlark.com/react-spring/9.2.4_react-dom@17.0.2+react@17.0.2
   rxjs: registry.nlark.com/rxjs/7.3.0
 
@@ -244,12 +244,12 @@ packages:
     dependencies:
       '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.3
 
-  registry.nlark.com/@algolia/cache-browser-local-storage/4.10.4:
-    resolution: {integrity: sha1-1nmf7w8QesjpmpkahGuFHvew+K0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-browser-local-storage/download/@algolia/cache-browser-local-storage-4.10.4.tgz}
+  registry.nlark.com/@algolia/cache-browser-local-storage/4.10.5:
+    resolution: {integrity: sha1-lhzwfPWZVd4XrxO9dPeAa9IRlVM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-browser-local-storage/download/@algolia/cache-browser-local-storage-4.10.5.tgz?cache=0&sync_timestamp=1629981112983&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fcache-browser-local-storage%2Fdownload%2F%40algolia%2Fcache-browser-local-storage-4.10.5.tgz}
     name: '@algolia/cache-browser-local-storage'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.4
+      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/cache-common/4.10.3:
@@ -257,10 +257,10 @@ packages:
     name: '@algolia/cache-common'
     version: 4.10.3
 
-  registry.nlark.com/@algolia/cache-common/4.10.4:
-    resolution: {integrity: sha1-xJdiVr0Tc+hJyvMQ3SvD18QT8D4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-common/download/@algolia/cache-common-4.10.4.tgz}
+  registry.nlark.com/@algolia/cache-common/4.10.5:
+    resolution: {integrity: sha1-lRBBnp37bYgUWCxrIGFRlvITqdY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-common/download/@algolia/cache-common-4.10.5.tgz?cache=0&sync_timestamp=1629981110619&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fcache-common%2Fdownload%2F%40algolia%2Fcache-common-4.10.5.tgz}
     name: '@algolia/cache-common'
-    version: 4.10.4
+    version: 4.10.5
     dev: false
 
   registry.nlark.com/@algolia/cache-in-memory/4.10.3:
@@ -270,12 +270,12 @@ packages:
     dependencies:
       '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.3
 
-  registry.nlark.com/@algolia/cache-in-memory/4.10.4:
-    resolution: {integrity: sha1-6srf7irYlhyE0/yb+U2zQanyRQQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-in-memory/download/@algolia/cache-in-memory-4.10.4.tgz}
+  registry.nlark.com/@algolia/cache-in-memory/4.10.5:
+    resolution: {integrity: sha1-3pMxy4ZzS/f3YkBjzapjnkNQm+E=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/cache-in-memory/download/@algolia/cache-in-memory-4.10.5.tgz?cache=0&sync_timestamp=1629981102941&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fcache-in-memory%2Fdownload%2F%40algolia%2Fcache-in-memory-4.10.5.tgz}
     name: '@algolia/cache-in-memory'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.4
+      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/client-account/4.10.3:
@@ -287,14 +287,14 @@ packages:
       '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/@algolia/client-account/4.10.4:
-    resolution: {integrity: sha1-uXMKLAZzgEGfWyPQt3tsTi0IHMo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-account/download/@algolia/client-account-4.10.4.tgz}
+  registry.nlark.com/@algolia/client-account/4.10.5:
+    resolution: {integrity: sha1-gvfDMPxfBiW1tVmv6caxqmcits8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-account/download/@algolia/client-account-4.10.5.tgz}
     name: '@algolia/client-account'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.4
-      '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.10.4
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.4
+      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.5
+      '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.10.5
+      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/client-analytics/4.10.3:
@@ -307,15 +307,15 @@ packages:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/@algolia/client-analytics/4.10.4:
-    resolution: {integrity: sha1-gw4X+H6HiGMpTkOGkMZOTCUgk48=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-analytics/download/@algolia/client-analytics-4.10.4.tgz}
+  registry.nlark.com/@algolia/client-analytics/4.10.5:
+    resolution: {integrity: sha1-Jp5Hyd5+U+ngXkotPDgGB8PSYx8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-analytics/download/@algolia/client-analytics-4.10.5.tgz}
     name: '@algolia/client-analytics'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.4
-      '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.10.4
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.4
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.4
+      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.5
+      '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.10.5
+      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.5
+      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/client-common/4.10.3:
@@ -326,13 +326,13 @@ packages:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/@algolia/client-common/4.10.4:
-    resolution: {integrity: sha1-o7aHTUhzJJwQ5MoQ46KkU7Nt964=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-common/download/@algolia/client-common-4.10.4.tgz}
+  registry.nlark.com/@algolia/client-common/4.10.5:
+    resolution: {integrity: sha1-p9CDN5apotpovha+drbcOWK/Lxg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-common/download/@algolia/client-common-4.10.5.tgz?cache=0&sync_timestamp=1629981110427&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fclient-common%2Fdownload%2F%40algolia%2Fclient-common-4.10.5.tgz}
     name: '@algolia/client-common'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.4
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.4
+      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.5
+      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/client-personalization/4.10.3:
@@ -344,14 +344,14 @@ packages:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/@algolia/client-personalization/4.10.4:
-    resolution: {integrity: sha1-BHkJxiYmaAPd0LHAgDP0Qpwe+1U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-personalization/download/@algolia/client-personalization-4.10.4.tgz}
+  registry.nlark.com/@algolia/client-personalization/4.10.5:
+    resolution: {integrity: sha1-eKj7gWG9vqpmtACzKDZA72ieFVs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-personalization/download/@algolia/client-personalization-4.10.5.tgz?cache=0&sync_timestamp=1629981113134&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fclient-personalization%2Fdownload%2F%40algolia%2Fclient-personalization-4.10.5.tgz}
     name: '@algolia/client-personalization'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.4
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.4
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.4
+      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.5
+      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.5
+      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/client-search/4.10.3:
@@ -363,14 +363,14 @@ packages:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/@algolia/client-search/4.10.4:
-    resolution: {integrity: sha1-0U+d7TUM8rWAdWHhAQXTd/hiI7U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-search/download/@algolia/client-search-4.10.4.tgz}
+  registry.nlark.com/@algolia/client-search/4.10.5:
+    resolution: {integrity: sha1-R5ByMqPk7PKqRFm43hckKv2IFHw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/client-search/download/@algolia/client-search-4.10.5.tgz?cache=0&sync_timestamp=1629981114060&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Fclient-search%2Fdownload%2F%40algolia%2Fclient-search-4.10.5.tgz}
     name: '@algolia/client-search'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.4
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.4
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.4
+      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.5
+      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.5
+      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/logger-common/4.10.3:
@@ -378,10 +378,10 @@ packages:
     name: '@algolia/logger-common'
     version: 4.10.3
 
-  registry.nlark.com/@algolia/logger-common/4.10.4:
-    resolution: {integrity: sha1-csQqK0pDNeAEkQhIH6Dpuf2Ez6I=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/logger-common/download/@algolia/logger-common-4.10.4.tgz}
+  registry.nlark.com/@algolia/logger-common/4.10.5:
+    resolution: {integrity: sha1-z4BxB+dVrUpyxa/Hh+lo/xGW8cw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/logger-common/download/@algolia/logger-common-4.10.5.tgz?cache=0&sync_timestamp=1629981114402&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Flogger-common%2Fdownload%2F%40algolia%2Flogger-common-4.10.5.tgz}
     name: '@algolia/logger-common'
-    version: 4.10.4
+    version: 4.10.5
     dev: false
 
   registry.nlark.com/@algolia/logger-console/4.10.3:
@@ -391,12 +391,12 @@ packages:
     dependencies:
       '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.3
 
-  registry.nlark.com/@algolia/logger-console/4.10.4:
-    resolution: {integrity: sha1-YVZcpeyj/5eNFl54BU3VNAwMKi0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/logger-console/download/@algolia/logger-console-4.10.4.tgz}
+  registry.nlark.com/@algolia/logger-console/4.10.5:
+    resolution: {integrity: sha1-+WGnp8ZxjD84QvubUi1HsDud+K0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/logger-console/download/@algolia/logger-console-4.10.5.tgz?cache=0&sync_timestamp=1629981114990&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Flogger-console%2Fdownload%2F%40algolia%2Flogger-console-4.10.5.tgz}
     name: '@algolia/logger-console'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.4
+      '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/requester-browser-xhr/4.10.3:
@@ -406,12 +406,12 @@ packages:
     dependencies:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
 
-  registry.nlark.com/@algolia/requester-browser-xhr/4.10.4:
-    resolution: {integrity: sha1-5oc7NU4VyORnbjCG4rjuyV2XP38=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-browser-xhr/download/@algolia/requester-browser-xhr-4.10.4.tgz}
+  registry.nlark.com/@algolia/requester-browser-xhr/4.10.5:
+    resolution: {integrity: sha1-cGPjvG2ccrxTXheUNS7d9HRZ3+Y=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-browser-xhr/download/@algolia/requester-browser-xhr-4.10.5.tgz?cache=0&sync_timestamp=1629981115612&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40algolia%2Frequester-browser-xhr%2Fdownload%2F%40algolia%2Frequester-browser-xhr-4.10.5.tgz}
     name: '@algolia/requester-browser-xhr'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.4
+      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/requester-common/4.10.3:
@@ -419,10 +419,10 @@ packages:
     name: '@algolia/requester-common'
     version: 4.10.3
 
-  registry.nlark.com/@algolia/requester-common/4.10.4:
-    resolution: {integrity: sha1-k8BC0gEoexYj2z1tSw6R37ZKWXE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-common/download/@algolia/requester-common-4.10.4.tgz}
+  registry.nlark.com/@algolia/requester-common/4.10.5:
+    resolution: {integrity: sha1-Uqv78Qt0PSav084g9idxvDk/9PA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-common/download/@algolia/requester-common-4.10.5.tgz}
     name: '@algolia/requester-common'
-    version: 4.10.4
+    version: 4.10.5
     dev: false
 
   registry.nlark.com/@algolia/requester-node-http/4.10.3:
@@ -432,12 +432,12 @@ packages:
     dependencies:
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
 
-  registry.nlark.com/@algolia/requester-node-http/4.10.4:
-    resolution: {integrity: sha1-QTcB0kuHIg94ZFrnyq3EKa+Kghc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-node-http/download/@algolia/requester-node-http-4.10.4.tgz}
+  registry.nlark.com/@algolia/requester-node-http/4.10.5:
+    resolution: {integrity: sha1-236ezh/aG3GijI5iNmaqoJYyC1w=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/requester-node-http/download/@algolia/requester-node-http-4.10.5.tgz}
     name: '@algolia/requester-node-http'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.4
+      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.5
     dev: false
 
   registry.nlark.com/@algolia/transporter/4.10.3:
@@ -449,14 +449,14 @@ packages:
       '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.3
       '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.3
 
-  registry.nlark.com/@algolia/transporter/4.10.4:
-    resolution: {integrity: sha1-rsO7O4dWnO7DMYYf4sbKZpikjRk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/transporter/download/@algolia/transporter-4.10.4.tgz}
+  registry.nlark.com/@algolia/transporter/4.10.5:
+    resolution: {integrity: sha1-k1SYnxKvPizn0xCalPUZ1GepYOA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@algolia/transporter/download/@algolia/transporter-4.10.5.tgz}
     name: '@algolia/transporter'
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.4
-      '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.4
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.4
+      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.5
+      '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.5
+      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.5
     dev: false
 
   registry.nlark.com/@ardatan/aggregate-error/0.0.6:
@@ -6401,7 +6401,7 @@ packages:
       events: registry.nlark.com/events/1.1.1
     dev: true
 
-  registry.nlark.com/algoliasearch-helper/3.5.5_algoliasearch@4.10.4:
+  registry.nlark.com/algoliasearch-helper/3.5.5_algoliasearch@4.10.5:
     resolution: {integrity: sha1-BSY4adPIpykieNfkljD1JSDyBNc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/algoliasearch-helper/download/algoliasearch-helper-3.5.5.tgz}
     id: registry.nlark.com/algoliasearch-helper/3.5.5
     name: algoliasearch-helper
@@ -6409,7 +6409,7 @@ packages:
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
     dependencies:
-      algoliasearch: registry.nlark.com/algoliasearch/4.10.4
+      algoliasearch: registry.nlark.com/algoliasearch/4.10.5
       events: registry.nlark.com/events/1.1.1
     dev: false
 
@@ -6433,25 +6433,25 @@ packages:
       '@algolia/requester-node-http': registry.nlark.com/@algolia/requester-node-http/4.10.3
       '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.3
 
-  registry.nlark.com/algoliasearch/4.10.4:
-    resolution: {integrity: sha1-UA5m22aLC3zts26RNaT6cZ8jblk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/algoliasearch/download/algoliasearch-4.10.4.tgz}
+  registry.nlark.com/algoliasearch/4.10.5:
+    resolution: {integrity: sha1-H680o65aw77ycoLrFBJRxwx/XbI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/algoliasearch/download/algoliasearch-4.10.5.tgz?cache=0&sync_timestamp=1629981101936&other_urls=https%3A%2F%2Fregistry.nlark.com%2Falgoliasearch%2Fdownload%2Falgoliasearch-4.10.5.tgz}
     name: algoliasearch
-    version: 4.10.4
+    version: 4.10.5
     dependencies:
-      '@algolia/cache-browser-local-storage': registry.nlark.com/@algolia/cache-browser-local-storage/4.10.4
-      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.4
-      '@algolia/cache-in-memory': registry.nlark.com/@algolia/cache-in-memory/4.10.4
-      '@algolia/client-account': registry.nlark.com/@algolia/client-account/4.10.4
-      '@algolia/client-analytics': registry.nlark.com/@algolia/client-analytics/4.10.4
-      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.4
-      '@algolia/client-personalization': registry.nlark.com/@algolia/client-personalization/4.10.4
-      '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.10.4
-      '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.4
-      '@algolia/logger-console': registry.nlark.com/@algolia/logger-console/4.10.4
-      '@algolia/requester-browser-xhr': registry.nlark.com/@algolia/requester-browser-xhr/4.10.4
-      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.4
-      '@algolia/requester-node-http': registry.nlark.com/@algolia/requester-node-http/4.10.4
-      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.4
+      '@algolia/cache-browser-local-storage': registry.nlark.com/@algolia/cache-browser-local-storage/4.10.5
+      '@algolia/cache-common': registry.nlark.com/@algolia/cache-common/4.10.5
+      '@algolia/cache-in-memory': registry.nlark.com/@algolia/cache-in-memory/4.10.5
+      '@algolia/client-account': registry.nlark.com/@algolia/client-account/4.10.5
+      '@algolia/client-analytics': registry.nlark.com/@algolia/client-analytics/4.10.5
+      '@algolia/client-common': registry.nlark.com/@algolia/client-common/4.10.5
+      '@algolia/client-personalization': registry.nlark.com/@algolia/client-personalization/4.10.5
+      '@algolia/client-search': registry.nlark.com/@algolia/client-search/4.10.5
+      '@algolia/logger-common': registry.nlark.com/@algolia/logger-common/4.10.5
+      '@algolia/logger-console': registry.nlark.com/@algolia/logger-console/4.10.5
+      '@algolia/requester-browser-xhr': registry.nlark.com/@algolia/requester-browser-xhr/4.10.5
+      '@algolia/requester-common': registry.nlark.com/@algolia/requester-common/4.10.5
+      '@algolia/requester-node-http': registry.nlark.com/@algolia/requester-node-http/4.10.5
+      '@algolia/transporter': registry.nlark.com/@algolia/transporter/4.10.5
     dev: false
 
   registry.nlark.com/alphanum-sort/1.0.2:
@@ -19469,7 +19469,7 @@ packages:
       shallowequal: 1.1.0
     dev: false
 
-  registry.nlark.com/react-instantsearch-core/6.12.1_b4426add49174a29fafdf75dfef77d0f:
+  registry.nlark.com/react-instantsearch-core/6.12.1_bdc42e7c8af415d3d7b8c54bad5b9087:
     resolution: {integrity: sha1-MUtCDUIFsldF20uB+kXPFFS9S/E=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/react-instantsearch-core/download/react-instantsearch-core-6.12.1.tgz}
     id: registry.nlark.com/react-instantsearch-core/6.12.1
     name: react-instantsearch-core
@@ -19479,14 +19479,14 @@ packages:
       react: '>= 16.3.0 < 18'
     dependencies:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.3
-      algoliasearch: registry.nlark.com/algoliasearch/4.10.4
-      algoliasearch-helper: registry.nlark.com/algoliasearch-helper/3.5.5_algoliasearch@4.10.4
+      algoliasearch: registry.nlark.com/algoliasearch/4.10.5
+      algoliasearch-helper: registry.nlark.com/algoliasearch-helper/3.5.5_algoliasearch@4.10.5
       prop-types: registry.nlark.com/prop-types/15.7.2
       react: registry.nlark.com/react/17.0.2
       react-fast-compare: registry.nlark.com/react-fast-compare/3.2.0
     dev: false
 
-  registry.nlark.com/react-instantsearch-dom/6.12.1_6c6ff28fde4af31d1435ef8cf828ce9d:
+  registry.nlark.com/react-instantsearch-dom/6.12.1_7f770dea5663f3612b40f53110f92d57:
     resolution: {integrity: sha1-m/uPOgt+2ESXryrXtl82TkxwCbM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/react-instantsearch-dom/download/react-instantsearch-dom-6.12.1.tgz}
     id: registry.nlark.com/react-instantsearch-dom/6.12.1
     name: react-instantsearch-dom
@@ -19496,13 +19496,13 @@ packages:
       react-dom: '>= 16.3.0 < 18'
     dependencies:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.3
-      algoliasearch-helper: registry.nlark.com/algoliasearch-helper/3.5.5_algoliasearch@4.10.4
+      algoliasearch-helper: registry.nlark.com/algoliasearch-helper/3.5.5_algoliasearch@4.10.5
       classnames: registry.nlark.com/classnames/2.3.1
       prop-types: registry.nlark.com/prop-types/15.7.2
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
       react-fast-compare: registry.nlark.com/react-fast-compare/3.2.0
-      react-instantsearch-core: registry.nlark.com/react-instantsearch-core/6.12.1_b4426add49174a29fafdf75dfef77d0f
+      react-instantsearch-core: registry.nlark.com/react-instantsearch-core/6.12.1_bdc42e7c8af415d3d7b8c54bad5b9087
     transitivePeerDependencies:
       - algoliasearch
     dev: false
