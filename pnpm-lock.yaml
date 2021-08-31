@@ -17,7 +17,7 @@ specifiers:
   '@squoosh/lib': 0.4.0
   '@testing-library/jest-dom': 5.14.1
   '@testing-library/react': 11.2.7
-  '@testing-library/react-hooks': 7.0.1
+  '@testing-library/react-hooks': 7.0.2
   '@types/facepaint': 1.2.2
   '@types/figlet': 1.5.4
   '@types/fs-extra': 9.0.12
@@ -143,7 +143,7 @@ devDependencies:
   '@squoosh/lib': registry.nlark.com/@squoosh/lib/0.4.0
   '@testing-library/jest-dom': registry.nlark.com/@testing-library/jest-dom/5.14.1
   '@testing-library/react': registry.nlark.com/@testing-library/react/11.2.7_react-dom@17.0.2+react@17.0.2
-  '@testing-library/react-hooks': registry.nlark.com/@testing-library/react-hooks/7.0.1_fc2bb8a5b006d3f25c5f84ea777e678d
+  '@testing-library/react-hooks': registry.nlark.com/@testing-library/react-hooks/7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
   '@types/facepaint': registry.nlark.com/@types/facepaint/1.2.2
   '@types/figlet': registry.nlark.com/@types/figlet/1.5.4
   '@types/fs-extra': registry.nlark.com/@types/fs-extra/9.0.12
@@ -818,6 +818,9 @@ packages:
     engines: {node: '>=6'}
     peerDependencies:
       jest-resolve: '*'
+    peerDependenciesMeta:
+      jest-resolve:
+        optional: true
     dependencies:
       jest-resolve: registry.nlark.com/jest-resolve/27.1.0
     dev: true
@@ -4940,6 +4943,9 @@ packages:
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
+    peerDependenciesMeta:
+      node-notifier:
+        optional: true
     dependencies:
       '@jest/console': registry.nlark.com/@jest/console/27.1.0
       '@jest/reporters': registry.nlark.com/@jest/reporters/27.1.0
@@ -5022,6 +5028,9 @@ packages:
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
+    peerDependenciesMeta:
+      node-notifier:
+        optional: true
     dependencies:
       '@bcoe/v8-coverage': 0.2.3
       '@jest/console': registry.nlark.com/@jest/console/27.1.0
@@ -6131,24 +6140,19 @@ packages:
       redent: registry.nlark.com/redent/3.0.0
     dev: true
 
-  registry.nlark.com/@testing-library/react-hooks/7.0.1_fc2bb8a5b006d3f25c5f84ea777e678d:
-    resolution: {integrity: sha1-hCnYv1W/6C5Ia9WC3QZFfCRkkAo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@testing-library/react-hooks/download/@testing-library/react-hooks-7.0.1.tgz}
-    id: registry.nlark.com/@testing-library/react-hooks/7.0.1
+  registry.nlark.com/@testing-library/react-hooks/7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d:
+    resolution: {integrity: sha1-M4jQf1YtkefyQxpKIbUYYGLs/uA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@testing-library/react-hooks/download/@testing-library/react-hooks-7.0.2.tgz}
+    id: registry.nlark.com/@testing-library/react-hooks/7.0.2
     name: '@testing-library/react-hooks'
-    version: 7.0.1
+    version: 7.0.2
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
       react-test-renderer: '>=16.9.0'
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
-      react-test-renderer:
-        optional: true
     dependencies:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.3
-      '@types/react': registry.nlark.com/@types/react/17.0.17
+      '@types/react': registry.nlark.com/@types/react/17.0.19
       '@types/react-dom': registry.nlark.com/@types/react-dom/17.0.9
       '@types/react-test-renderer': registry.nlark.com/@types/react-test-renderer/17.0.1
       react: registry.nlark.com/react/17.0.2
@@ -6617,7 +6621,7 @@ packages:
     name: '@types/react-test-renderer'
     version: 17.0.1
     dependencies:
-      '@types/react': registry.nlark.com/@types/react/17.0.17
+      '@types/react': registry.nlark.com/@types/react/17.0.19
     dev: true
 
   registry.nlark.com/@types/react/17.0.17:
@@ -15479,6 +15483,9 @@ packages:
     hasBin: true
     peerDependencies:
       node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
+    peerDependenciesMeta:
+      node-notifier:
+        optional: true
     dependencies:
       '@jest/core': registry.nlark.com/@jest/core/27.1.0_ts-node@10.2.1
       '@jest/test-result': registry.nlark.com/@jest/test-result/27.1.0
@@ -15508,6 +15515,9 @@ packages:
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       ts-node: '>=9.0.0'
+    peerDependenciesMeta:
+      ts-node:
+        optional: true
     dependencies:
       '@babel/core': registry.nlark.com/@babel/core/7.15.0
       '@jest/test-sequencer': registry.nlark.com/@jest/test-sequencer/27.1.0
@@ -15999,6 +16009,9 @@ packages:
     hasBin: true
     peerDependencies:
       node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
+    peerDependenciesMeta:
+      node-notifier:
+        optional: true
     dependencies:
       '@jest/core': registry.nlark.com/@jest/core/27.1.0_ts-node@10.2.1
       import-local: 3.0.2
@@ -16062,6 +16075,9 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       canvas: ^2.5.0
+    peerDependenciesMeta:
+      canvas:
+        optional: true
     dependencies:
       abab: 2.0.5
       acorn: registry.nlark.com/acorn/8.4.1
@@ -24168,6 +24184,11 @@ packages:
     peerDependencies:
       bufferutil: ^4.0.1
       utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
 
   registry.nlark.com/x-is-string/0.1.0:
     resolution: {integrity: sha1-R0tQhlrzpJqcRlfwWs0UVFj3fYI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/x-is-string/download/x-is-string-0.1.0.tgz}
