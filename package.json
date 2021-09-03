@@ -106,7 +106,7 @@
     "rxjs": "7.3.0"
   },
   "devDependencies": {
-    "@babel/plugin-transform-typescript": "7.15.0",
+    "@babel/plugin-transform-typescript": "7.15.4",
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
     "@fengshangwuqi/appkit": "1.1.48",
