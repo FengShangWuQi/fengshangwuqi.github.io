@@ -30,7 +30,7 @@ specifiers:
   '@types/react-instantsearch-dom': 6.12.0
   '@vercel/node': 1.12.1
   algoliasearch: 4.10.5
-  axios: 0.21.2
+  axios: 0.21.3
   babel-jest: 27.1.0
   babel-preset-gatsby: 1.7.1
   dotenv: 10.0.0
@@ -155,7 +155,7 @@ devDependencies:
   '@types/react-dom': registry.nlark.com/@types/react-dom/17.0.9
   '@types/react-instantsearch-dom': registry.nlark.com/@types/react-instantsearch-dom/6.12.0
   '@vercel/node': registry.nlark.com/@vercel/node/1.12.1
-  axios: registry.nlark.com/axios/0.21.2
+  axios: registry.nlark.com/axios/0.21.3
   babel-jest: registry.nlark.com/babel-jest/27.1.0
   babel-preset-gatsby: registry.nlark.com/babel-preset-gatsby/1.7.1
   dotenv: registry.nlark.com/dotenv/10.0.0
@@ -7997,10 +7997,10 @@ packages:
       follow-redirects: registry.nlark.com/follow-redirects/1.14.1
     dev: false
 
-  registry.nlark.com/axios/0.21.2:
-    resolution: {integrity: sha1-ISl9UISyrutCL104575Pu4IjkBc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/axios/download/axios-0.21.2.tgz?cache=0&sync_timestamp=1630750911408&other_urls=https%3A%2F%2Fregistry.nlark.com%2Faxios%2Fdownload%2Faxios-0.21.2.tgz}
+  registry.nlark.com/axios/0.21.3:
+    resolution: {integrity: sha1-+F2bdH+bZtWcpGNgXO3xhEhyuC4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/axios/download/axios-0.21.3.tgz?cache=0&sync_timestamp=1630782981835&other_urls=https%3A%2F%2Fregistry.nlark.com%2Faxios%2Fdownload%2Faxios-0.21.3.tgz}
     name: axios
-    version: 0.21.2
+    version: 0.21.3
     dependencies:
       follow-redirects: registry.nlark.com/follow-redirects/1.14.1
     dev: true
