@@ -74,7 +74,7 @@
     "gatsby-plugin-catch-links": "3.7.1",
     "gatsby-plugin-emotion": "6.7.1",
     "gatsby-plugin-feed": "3.7.1",
-    "gatsby-plugin-image": "1.7.1",
+    "gatsby-plugin-image": "1.11.0",
     "gatsby-plugin-mdx": "2.7.1",
     "gatsby-plugin-offline": "4.7.1",
     "gatsby-plugin-pnpm": "1.2.8",
