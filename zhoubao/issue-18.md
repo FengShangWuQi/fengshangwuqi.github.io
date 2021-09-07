@@ -8,7 +8,7 @@ cover: images/issue-18.png
 
 ## 前端动态
 
-### 1、[TypeScript 4.4](https://devblogs.microsoft.com/typescript/announcing-typescript-4-4://devblogs.microsoft.com/typescript/announcing-typescript-4-4/)
+### 1、[TypeScript 4.4](https://devblogs.microsoft.com/typescript/announcing-typescript-4-4)
 
 - [Control flow analysis of aliased conditional expressions and discriminants](https://github.com/microsoft/TypeScript/pull/44730)
 - [Index signatures for symbols and template literal strings](https://github.com/microsoft/TypeScript/pull/44512)
