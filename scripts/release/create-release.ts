@@ -4,6 +4,7 @@ import globby from "globby";
 import matter from "gray-matter";
 import { last } from "lodash";
 import { logger } from "@fengshangwuqi/logger";
+import axios from "axios";
 
 import { github } from "../../src-core/request/github";
 
@@ -40,7 +41,9 @@ import { github } from "../../src-core/request/github";
 
     logger(`release ${issueName}`).withLevel("SUCCESS");
   } catch (err) {
-    console.log(err.response.data);
-    logger(err.message).withLevel("ERROR");
+    if (axios.isAxiosError(err)) {
+      console.log(err.response?.data);
+      logger(err.message).withLevel("ERROR");
+    }
   }
 })();
