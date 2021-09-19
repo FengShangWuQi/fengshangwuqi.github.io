@@ -57,8 +57,8 @@
   },
   "prettier": {
     "trailingComma": "all",
-    "jsxBracketSameLine": true,
-    "arrowParens": "avoid"
+    "arrowParens": "avoid",
+    "bracketSameLine": true
   },
   "dependencies": {
     "@emotion/is-prop-valid": "1.1.0",
