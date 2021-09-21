@@ -40,7 +40,7 @@ specifiers:
   figlet: 1.5.2
   fs-extra: 10.0.0
   gatsby: 3.13.0
-  gatsby-plugin-algolia: 0.22.1
+  gatsby-plugin-algolia: 0.22.2
   gatsby-plugin-catch-links: 3.13.0
   gatsby-plugin-emotion: 6.13.0
   gatsby-plugin-feed: 3.13.0
@@ -98,7 +98,7 @@ dependencies:
   facepaint: registry.nlark.com/facepaint/1.2.1
   figlet: registry.nlark.com/figlet/1.5.2
   gatsby: registry.nlark.com/gatsby/3.13.0_3e9ad9e315c322ea4db679b0d7581b89
-  gatsby-plugin-algolia: registry.nlark.com/gatsby-plugin-algolia/0.22.1_gatsby@3.13.0
+  gatsby-plugin-algolia: registry.nlark.com/gatsby-plugin-algolia/0.22.2_gatsby@3.13.0
   gatsby-plugin-catch-links: registry.nlark.com/gatsby-plugin-catch-links/3.13.0_gatsby@3.13.0
   gatsby-plugin-emotion: registry.nlark.com/gatsby-plugin-emotion/6.13.0_4bca365635add0735ba93ef44416be22
   gatsby-plugin-feed: registry.nlark.com/gatsby-plugin-feed/3.13.0_51a40359d32ce07244710772c602390b
@@ -11302,11 +11302,11 @@ packages:
       micromatch: registry.nlark.com/micromatch/4.0.4
     dev: false
 
-  registry.nlark.com/gatsby-plugin-algolia/0.22.1_gatsby@3.13.0:
-    resolution: {integrity: sha1-ngeMCU6RwRBL59h31pVb9LYdkI8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/gatsby-plugin-algolia/download/gatsby-plugin-algolia-0.22.1.tgz}
-    id: registry.nlark.com/gatsby-plugin-algolia/0.22.1
+  registry.nlark.com/gatsby-plugin-algolia/0.22.2_gatsby@3.13.0:
+    resolution: {integrity: sha1-6rUqGtqCC9pRDD3HaOsydiOHlcQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/gatsby-plugin-algolia/download/gatsby-plugin-algolia-0.22.2.tgz}
+    id: registry.nlark.com/gatsby-plugin-algolia/0.22.2
     name: gatsby-plugin-algolia
-    version: 0.22.1
+    version: 0.22.2
     engines: {node: '>=12.13.0'}
     peerDependencies:
       gatsby: ^2.0.0 || ^3.0.0
