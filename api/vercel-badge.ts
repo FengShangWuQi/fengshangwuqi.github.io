@@ -16,6 +16,9 @@ const getBadgeColor = (state: IDeployState) => {
     case DeployState.FAILURE: {
       return "red";
     }
+    case DeployState.INACTIVE: {
+      return "lightgrey";
+    }
   }
 };
 
