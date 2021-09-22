@@ -112,7 +112,7 @@
     "@commitlint/config-conventional": "13.1.0",
     "@fengshangwuqi/appkit": "1.1.50",
     "@fengshangwuqi/eslint-config": "1.1.42",
-    "@fengshangwuqi/logger": "1.1.19",
+    "@fengshangwuqi/logger": "1.1.21",
     "@fengshangwuqi/ts-config": "1.1.6",
     "@squoosh/lib": "0.4.0",
     "@testing-library/jest-dom": "5.14.1",
