@@ -9,6 +9,9 @@
     {
       "matchPackagePatterns": ["^react$", "^react-dom$"],
       "automerge": false
+    },
+    {
+      "excludePackageNames": ["gatsby-plugin-image"]
     }
   ]
 }
