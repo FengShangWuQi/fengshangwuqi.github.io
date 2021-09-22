@@ -11,7 +11,7 @@
       "automerge": false
     },
     {
-      "excludePackageNames": ["gatsby-plugin-image"]
+      "excludePackageNames": ["gatsby-plugin-image", "globby"]
     }
   ]
 }
