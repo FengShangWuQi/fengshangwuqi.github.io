@@ -113,7 +113,7 @@
     "@fengshangwuqi/appkit": "1.1.50",
     "@fengshangwuqi/eslint-config": "1.1.42",
     "@fengshangwuqi/logger": "1.1.21",
-    "@fengshangwuqi/ts-config": "1.1.6",
+    "@fengshangwuqi/ts-config": "1.1.7",
     "@squoosh/lib": "0.4.0",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.1.0",
