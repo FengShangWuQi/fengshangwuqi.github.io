@@ -31,7 +31,7 @@ specifiers:
   '@vercel/node': 1.12.1
   algoliasearch: 4.10.5
   axios: 0.21.4
-  babel-jest: 27.2.3
+  babel-jest: 27.2.4
   babel-preset-gatsby: 1.14.0
   date-fns: 2.24.0
   dotenv: 10.0.0
@@ -68,7 +68,7 @@ specifiers:
   gray-matter: 4.0.3
   husky: 7.0.2
   immer: 9.0.6
-  jest: 27.2.3
+  jest: 27.2.4
   lint-staged: 11.1.2
   lmdb-store: 1.6.8
   lodash: 4.17.21
@@ -157,7 +157,7 @@ devDependencies:
   '@types/react-instantsearch-dom': registry.nlark.com/@types/react-instantsearch-dom/6.12.0
   '@vercel/node': registry.nlark.com/@vercel/node/1.12.1
   axios: registry.nlark.com/axios/0.21.4
-  babel-jest: registry.npmmirror.com/babel-jest/27.2.3
+  babel-jest: registry.npmmirror.com/babel-jest/27.2.4
   babel-preset-gatsby: registry.nlark.com/babel-preset-gatsby/1.14.0
   date-fns: registry.nlark.com/date-fns/2.24.0
   dotenv: registry.nlark.com/dotenv/10.0.0
@@ -167,7 +167,7 @@ devDependencies:
   globby: registry.nlark.com/globby/11.0.4
   gray-matter: registry.nlark.com/gray-matter/4.0.3
   husky: registry.nlark.com/husky/7.0.2
-  jest: registry.npmmirror.com/jest/27.2.3_ts-node@10.2.1
+  jest: registry.npmmirror.com/jest/27.2.4_ts-node@10.2.1
   lint-staged: registry.nlark.com/lint-staged/11.1.2
   prettier: registry.nlark.com/prettier/2.4.1
   pretty-quick: registry.nlark.com/pretty-quick/3.1.1_prettier@2.4.1
@@ -11808,7 +11808,7 @@ packages:
     dev: true
 
   registry.nlark.com/iconv-lite/0.4.24:
-    resolution: {integrity: sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/iconv-lite/download/iconv-lite-0.4.24.tgz?cache=0&sync_timestamp=1621828340415&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ficonv-lite%2Fdownload%2Ficonv-lite-0.4.24.tgz}
+    resolution: {integrity: sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/iconv-lite/download/iconv-lite-0.4.24.tgz}
     name: iconv-lite
     version: 0.4.24
     engines: {node: '>=0.10.0'}
@@ -12800,7 +12800,7 @@ packages:
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dev: true
 
-  registry.nlark.com/jest-pnp-resolver/1.2.2_jest-resolve@27.2.3:
+  registry.nlark.com/jest-pnp-resolver/1.2.2_jest-resolve@27.2.4:
     resolution: {integrity: sha1-twSsCuAoqJEIpNBAs/kZ393I4zw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/jest-pnp-resolver/download/jest-pnp-resolver-1.2.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fjest-pnp-resolver%2Fdownload%2Fjest-pnp-resolver-1.2.2.tgz}
     id: registry.nlark.com/jest-pnp-resolver/1.2.2
     name: jest-pnp-resolver
@@ -12809,7 +12809,7 @@ packages:
     peerDependencies:
       jest-resolve: '*'
     dependencies:
-      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.3
+      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.4
     dev: true
 
   registry.nlark.com/jest-regex-util/27.0.6:
@@ -14910,13 +14910,6 @@ packages:
     version: 3.0.0
     engines: {node: '>=8'}
     dev: false
-
-  registry.nlark.com/p-each-series/2.2.0:
-    resolution: {integrity: sha1-EFqwNXznKyAqiouUkzZyZXteKpo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/p-each-series/download/p-each-series-2.2.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fp-each-series%2Fdownload%2Fp-each-series-2.2.0.tgz}
-    name: p-each-series
-    version: 2.2.0
-    engines: {node: '>=8'}
-    dev: true
 
   registry.nlark.com/p-finally/1.0.0:
     resolution: {integrity: sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/p-finally/download/p-finally-1.0.0.tgz}
@@ -20581,25 +20574,25 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  registry.npmmirror.com/@jest/console/27.2.3:
-    resolution: {integrity: sha1-yH/kg5fcdREIm+cdqT+0GGm3W34=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/console/download/@jest/console-27.2.3.tgz}
+  registry.npmmirror.com/@jest/console/27.2.4:
+    resolution: {integrity: sha1-LxpL+CuZQAZdSBj6wnHe+Z7FXl4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/console/download/@jest/console-27.2.4.tgz}
     name: '@jest/console'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
       chalk: registry.nlark.com/chalk/4.1.2
-      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
+      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
       slash: registry.nlark.com/slash/3.0.0
     dev: true
 
-  registry.npmmirror.com/@jest/core/27.2.3_ts-node@10.2.1:
-    resolution: {integrity: sha1-sho/+2m+8BfEVi0naJu3mMAZRQE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/core/download/@jest/core-27.2.3.tgz}
-    id: registry.npmmirror.com/@jest/core/27.2.3
+  registry.npmmirror.com/@jest/core/27.2.4_ts-node@10.2.1:
+    resolution: {integrity: sha1-C5Mtp4fWSEjqtyDbuI5bej+G5Tk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/core/download/@jest/core-27.2.4.tgz?cache=0&sync_timestamp=1632928127478&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40jest%2Fcore%2Fdownload%2F%40jest%2Fcore-27.2.4.tgz}
+    id: registry.npmmirror.com/@jest/core/27.2.4
     name: '@jest/core'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
@@ -20607,32 +20600,31 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/console': registry.npmmirror.com/@jest/console/27.2.3
-      '@jest/reporters': registry.npmmirror.com/@jest/reporters/27.2.3
-      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.3
-      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/console': registry.npmmirror.com/@jest/console/27.2.4
+      '@jest/reporters': registry.npmmirror.com/@jest/reporters/27.2.4
+      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.4
+      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
       ansi-escapes: registry.nlark.com/ansi-escapes/4.3.2
       chalk: registry.nlark.com/chalk/4.1.2
       emittery: registry.nlark.com/emittery/0.8.1
       exit: registry.nlark.com/exit/0.1.2
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
-      jest-changed-files: registry.npmmirror.com/jest-changed-files/27.2.3
-      jest-config: registry.npmmirror.com/jest-config/27.2.3_ts-node@10.2.1
-      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.3
-      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.3
+      jest-changed-files: registry.npmmirror.com/jest-changed-files/27.2.4
+      jest-config: registry.npmmirror.com/jest-config/27.2.4_ts-node@10.2.1
+      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.4
+      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.4
       jest-regex-util: registry.nlark.com/jest-regex-util/27.0.6
-      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.3
-      jest-resolve-dependencies: registry.npmmirror.com/jest-resolve-dependencies/27.2.3
-      jest-runner: registry.npmmirror.com/jest-runner/27.2.3
-      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.3
-      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      jest-validate: registry.npmmirror.com/jest-validate/27.2.3
-      jest-watcher: registry.npmmirror.com/jest-watcher/27.2.3
+      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.4
+      jest-resolve-dependencies: registry.npmmirror.com/jest-resolve-dependencies/27.2.4
+      jest-runner: registry.npmmirror.com/jest-runner/27.2.4
+      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.4
+      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      jest-validate: registry.npmmirror.com/jest-validate/27.2.4
+      jest-watcher: registry.npmmirror.com/jest-watcher/27.2.4
       micromatch: registry.nlark.com/micromatch/4.0.4
-      p-each-series: registry.nlark.com/p-each-series/2.2.0
       rimraf: registry.nlark.com/rimraf/3.0.2
       slash: registry.nlark.com/slash/3.0.0
       strip-ansi: registry.npmmirror.com/strip-ansi/6.0.0
@@ -20644,47 +20636,47 @@ packages:
       - utf-8-validate
     dev: true
 
-  registry.npmmirror.com/@jest/environment/27.2.3:
-    resolution: {integrity: sha1-OuMo13imfgJ7rSdUHRwJ7ZQxJgk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/environment/download/@jest/environment-27.2.3.tgz}
+  registry.npmmirror.com/@jest/environment/27.2.4:
+    resolution: {integrity: sha1-2z5g990wq5UPbOLW1yk+2aa3y80=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/environment/download/@jest/environment-27.2.4.tgz}
     name: '@jest/environment'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/fake-timers': registry.npmmirror.com/@jest/fake-timers/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/fake-timers': registry.npmmirror.com/@jest/fake-timers/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
-      jest-mock: registry.npmmirror.com/jest-mock/27.2.3
+      jest-mock: registry.npmmirror.com/jest-mock/27.2.4
     dev: true
 
-  registry.npmmirror.com/@jest/fake-timers/27.2.3:
-    resolution: {integrity: sha1-Ic3vnLnt0wyAAmoBduulj1+8qmc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/fake-timers/download/@jest/fake-timers-27.2.3.tgz}
+  registry.npmmirror.com/@jest/fake-timers/27.2.4:
+    resolution: {integrity: sha1-AN8IvWAzK9WVA8tbbbIeSQN4X4Y=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/fake-timers/download/@jest/fake-timers-27.2.4.tgz}
     name: '@jest/fake-timers'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@sinonjs/fake-timers': registry.npmmirror.com/@sinonjs/fake-timers/8.0.1
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
-      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.3
-      jest-mock: registry.npmmirror.com/jest-mock/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
+      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.4
+      jest-mock: registry.npmmirror.com/jest-mock/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
     dev: true
 
-  registry.npmmirror.com/@jest/globals/27.2.3:
-    resolution: {integrity: sha1-a41lIIPXhwmyQ9lXFFcFjxxsX+o=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/globals/download/@jest/globals-27.2.3.tgz}
+  registry.npmmirror.com/@jest/globals/27.2.4:
+    resolution: {integrity: sha1-CusisBH4yMS4/ztNvR7gOS/g3Yo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/globals/download/@jest/globals-27.2.4.tgz}
     name: '@jest/globals'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
-      expect: registry.npmmirror.com/expect/27.2.3
+      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
+      expect: registry.npmmirror.com/expect/27.2.4
     dev: true
 
-  registry.npmmirror.com/@jest/reporters/27.2.3:
-    resolution: {integrity: sha1-R8J758PiBpBCtvuhLB+PYvkTAts=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/reporters/download/@jest/reporters-27.2.3.tgz}
+  registry.npmmirror.com/@jest/reporters/27.2.4:
+    resolution: {integrity: sha1-FIL/AH8ukZ2FxUsVY6u4suotUZg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/reporters/download/@jest/reporters-27.2.4.tgz?cache=0&sync_timestamp=1632927726374&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40jest%2Freporters%2Fdownload%2F%40jest%2Freporters-27.2.4.tgz}
     name: '@jest/reporters'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
@@ -20693,10 +20685,10 @@ packages:
         optional: true
     dependencies:
       '@bcoe/v8-coverage': registry.nlark.com/@bcoe/v8-coverage/0.2.3
-      '@jest/console': registry.npmmirror.com/@jest/console/27.2.3
-      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.3
-      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/console': registry.npmmirror.com/@jest/console/27.2.4
+      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.4
+      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       chalk: registry.nlark.com/chalk/4.1.2
       collect-v8-coverage: registry.nlark.com/collect-v8-coverage/1.0.1
       exit: registry.nlark.com/exit/0.1.2
@@ -20707,10 +20699,10 @@ packages:
       istanbul-lib-report: registry.nlark.com/istanbul-lib-report/3.0.0
       istanbul-lib-source-maps: registry.nlark.com/istanbul-lib-source-maps/4.0.0
       istanbul-reports: registry.nlark.com/istanbul-reports/3.0.2
-      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.3
-      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      jest-worker: registry.npmmirror.com/jest-worker/27.2.3
+      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.4
+      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      jest-worker: registry.npmmirror.com/jest-worker/27.2.4
       slash: registry.nlark.com/slash/3.0.0
       source-map: registry.nlark.com/source-map/0.6.1
       string-length: registry.nlark.com/string-length/4.0.2
@@ -20720,48 +20712,48 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/@jest/test-result/27.2.3:
-    resolution: {integrity: sha1-fY95AYbH7HYA7cHYeBZWJo8DglU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/test-result/download/@jest/test-result-27.2.3.tgz}
+  registry.npmmirror.com/@jest/test-result/27.2.4:
+    resolution: {integrity: sha1-0cqCmNFo8bC+g0v7VDsawClMBdc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/test-result/download/@jest/test-result-27.2.4.tgz?cache=0&sync_timestamp=1632927726579&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40jest%2Ftest-result%2Fdownload%2F%40jest%2Ftest-result-27.2.4.tgz}
     name: '@jest/test-result'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/console': registry.npmmirror.com/@jest/console/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/console': registry.npmmirror.com/@jest/console/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/istanbul-lib-coverage': registry.nlark.com/@types/istanbul-lib-coverage/2.0.3
       collect-v8-coverage: registry.nlark.com/collect-v8-coverage/1.0.1
     dev: true
 
-  registry.npmmirror.com/@jest/test-sequencer/27.2.3:
-    resolution: {integrity: sha1-qeN2uRpkxvWrN/BenTBDQGCRJdc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/test-sequencer/download/@jest/test-sequencer-27.2.3.tgz}
+  registry.npmmirror.com/@jest/test-sequencer/27.2.4:
+    resolution: {integrity: sha1-32ZCKj6edEDOi3SY4lX6a1LAvAM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/test-sequencer/download/@jest/test-sequencer-27.2.4.tgz}
     name: '@jest/test-sequencer'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.3
+      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.4
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
-      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.3
-      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.3
+      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.4
+      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/@jest/transform/27.2.3:
-    resolution: {integrity: sha1-HfN9v+W8KcAPInrK4RNIQ3p2t34=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/transform/download/@jest/transform-27.2.3.tgz}
+  registry.npmmirror.com/@jest/transform/27.2.4:
+    resolution: {integrity: sha1-L+W2g2iV96G4vexELFHoOUPGJzM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/transform/download/@jest/transform-27.2.4.tgz}
     name: '@jest/transform'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@babel/core': registry.nlark.com/@babel/core/7.15.5
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       babel-plugin-istanbul: registry.nlark.com/babel-plugin-istanbul/6.0.0
       chalk: registry.nlark.com/chalk/4.1.2
       convert-source-map: registry.nlark.com/convert-source-map/1.8.0
       fast-json-stable-stringify: registry.nlark.com/fast-json-stable-stringify/2.1.0
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
-      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.3
+      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.4
       jest-regex-util: registry.nlark.com/jest-regex-util/27.0.6
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
       micromatch: registry.nlark.com/micromatch/4.0.4
       pirates: registry.nlark.com/pirates/4.0.1
       slash: registry.nlark.com/slash/3.0.0
@@ -20771,10 +20763,10 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/@jest/types/27.2.3:
-    resolution: {integrity: sha1-4CQlRfRCJCwlOGVtlHoUdEPu6PI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/types/download/@jest/types-27.2.3.tgz}
+  registry.npmmirror.com/@jest/types/27.2.4:
+    resolution: {integrity: sha1-JDAEKmbgDcWxQMNjb0R01GTCHug=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@jest/types/download/@jest/types-27.2.4.tgz}
     name: '@jest/types'
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@types/istanbul-lib-coverage': registry.nlark.com/@types/istanbul-lib-coverage/2.0.3
@@ -20940,16 +20932,16 @@ packages:
       eslint-visitor-keys: registry.nlark.com/eslint-visitor-keys/2.1.0
     dev: true
 
-  registry.npmmirror.com/babel-jest/27.2.3:
-    resolution: {integrity: sha1-9IWZpQfNM8EPWAWBSesweRmNDtc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-jest/download/babel-jest-27.2.3.tgz}
+  registry.npmmirror.com/babel-jest/27.2.4:
+    resolution: {integrity: sha1-Ie1nKdUb3XVHC7vzyLCNhiCfsNw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-jest/download/babel-jest-27.2.4.tgz}
     name: babel-jest
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       '@babel/core': ^7.8.0
     dependencies:
-      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/babel__core': registry.nlark.com/@types/babel__core/7.1.16
       babel-plugin-istanbul: registry.nlark.com/babel-plugin-istanbul/6.0.0
       babel-preset-jest: registry.nlark.com/babel-preset-jest/27.2.0
@@ -20960,18 +20952,18 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/babel-jest/27.2.3_@babel+core@7.15.5:
-    resolution: {integrity: sha1-9IWZpQfNM8EPWAWBSesweRmNDtc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-jest/download/babel-jest-27.2.3.tgz}
-    id: registry.npmmirror.com/babel-jest/27.2.3
+  registry.npmmirror.com/babel-jest/27.2.4_@babel+core@7.15.5:
+    resolution: {integrity: sha1-Ie1nKdUb3XVHC7vzyLCNhiCfsNw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-jest/download/babel-jest-27.2.4.tgz}
+    id: registry.npmmirror.com/babel-jest/27.2.4
     name: babel-jest
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       '@babel/core': ^7.8.0
     dependencies:
       '@babel/core': registry.nlark.com/@babel/core/7.15.5
-      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/babel__core': registry.nlark.com/@types/babel__core/7.1.16
       babel-plugin-istanbul: registry.nlark.com/babel-plugin-istanbul/6.0.0
       babel-preset-jest: registry.nlark.com/babel-preset-jest/27.2.0_@babel+core@7.15.5
@@ -20993,17 +20985,17 @@ packages:
       q: registry.nlark.com/q/1.5.1
     dev: true
 
-  registry.npmmirror.com/expect/27.2.3:
-    resolution: {integrity: sha1-nOdmtQxqXyLt0HylUQhFrIvLCxA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/expect/download/expect-27.2.3.tgz}
+  registry.npmmirror.com/expect/27.2.4:
+    resolution: {integrity: sha1-Tev1RgULza2JFKjJX+x2YuAr9nw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/expect/download/expect-27.2.4.tgz}
     name: expect
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       ansi-styles: registry.nlark.com/ansi-styles/5.2.0
       jest-get-type: registry.nlark.com/jest-get-type/27.0.6
-      jest-matcher-utils: registry.npmmirror.com/jest-matcher-utils/27.2.3
-      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.3
+      jest-matcher-utils: registry.npmmirror.com/jest-matcher-utils/27.2.4
+      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.4
       jest-regex-util: registry.nlark.com/jest-regex-util/27.0.6
     dev: true
 
@@ -21065,39 +21057,39 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  registry.npmmirror.com/jest-changed-files/27.2.3:
-    resolution: {integrity: sha1-g8Qhcdh8JtWnLoRkQSzE4jnAHdo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-changed-files/download/jest-changed-files-27.2.3.tgz}
+  registry.npmmirror.com/jest-changed-files/27.2.4:
+    resolution: {integrity: sha1-195G6Q5aWZxH4mB2D1q1NRboNeY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-changed-files/download/jest-changed-files-27.2.4.tgz}
     name: jest-changed-files
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       execa: registry.nlark.com/execa/5.1.1
       throat: registry.nlark.com/throat/6.0.1
     dev: true
 
-  registry.npmmirror.com/jest-circus/27.2.3:
-    resolution: {integrity: sha1-5G7VZ7MWMj8LfBLccs0S/kZlY1Y=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-circus/download/jest-circus-27.2.3.tgz}
+  registry.npmmirror.com/jest-circus/27.2.4:
+    resolution: {integrity: sha1-O9iYop3K9qUG8/G3gN/19nyoPCM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-circus/download/jest-circus-27.2.4.tgz}
     name: jest-circus
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.3
-      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.4
+      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
       chalk: registry.nlark.com/chalk/4.1.2
       co: registry.nlark.com/co/4.6.0
       dedent: registry.nlark.com/dedent/0.7.0
-      expect: registry.npmmirror.com/expect/27.2.3
+      expect: registry.npmmirror.com/expect/27.2.4
       is-generator-fn: registry.nlark.com/is-generator-fn/2.1.0
-      jest-each: registry.npmmirror.com/jest-each/27.2.3
-      jest-matcher-utils: registry.npmmirror.com/jest-matcher-utils/27.2.3
-      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.3
-      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.3
-      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      jest-each: registry.npmmirror.com/jest-each/27.2.4
+      jest-matcher-utils: registry.npmmirror.com/jest-matcher-utils/27.2.4
+      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.4
+      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.4
+      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
       slash: registry.nlark.com/slash/3.0.0
       stack-utils: registry.nlark.com/stack-utils/2.0.3
       throat: registry.nlark.com/throat/6.0.1
@@ -21105,11 +21097,11 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/jest-cli/27.2.3_ts-node@10.2.1:
-    resolution: {integrity: sha1-aK3VsWJr1VAt9sekpNV06/eXIho=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-cli/download/jest-cli-27.2.3.tgz}
-    id: registry.npmmirror.com/jest-cli/27.2.3
+  registry.npmmirror.com/jest-cli/27.2.4_ts-node@10.2.1:
+    resolution: {integrity: sha1-rNp/Nnqm5nRyP8GnM04K4XmUSNI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-cli/download/jest-cli-27.2.4.tgz?cache=0&sync_timestamp=1632928132417&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fjest-cli%2Fdownload%2Fjest-cli-27.2.4.tgz}
+    id: registry.npmmirror.com/jest-cli/27.2.4
     name: jest-cli
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
     peerDependencies:
@@ -21118,16 +21110,16 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': registry.npmmirror.com/@jest/core/27.2.3_ts-node@10.2.1
-      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/core': registry.npmmirror.com/@jest/core/27.2.4_ts-node@10.2.1
+      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       chalk: registry.nlark.com/chalk/4.1.2
       exit: registry.nlark.com/exit/0.1.2
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
       import-local: registry.nlark.com/import-local/3.0.2
-      jest-config: registry.npmmirror.com/jest-config/27.2.3_ts-node@10.2.1
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      jest-validate: registry.npmmirror.com/jest-validate/27.2.3
+      jest-config: registry.npmmirror.com/jest-config/27.2.4_ts-node@10.2.1
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      jest-validate: registry.npmmirror.com/jest-validate/27.2.4
       prompts: registry.nlark.com/prompts/2.4.1
       yargs: registry.npmmirror.com/yargs/16.2.0
     transitivePeerDependencies:
@@ -21138,11 +21130,11 @@ packages:
       - utf-8-validate
     dev: true
 
-  registry.npmmirror.com/jest-config/27.2.3_ts-node@10.2.1:
-    resolution: {integrity: sha1-ZGBs0fGU+5Uny7w+T/I7MkZTuZI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-config/download/jest-config-27.2.3.tgz}
-    id: registry.npmmirror.com/jest-config/27.2.3
+  registry.npmmirror.com/jest-config/27.2.4_ts-node@10.2.1:
+    resolution: {integrity: sha1-AgSWn1ri5RkNR74sFMBNYxt4NuI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-config/download/jest-config-27.2.4.tgz?cache=0&sync_timestamp=1632927726800&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fjest-config%2Fdownload%2Fjest-config-27.2.4.tgz}
+    id: registry.npmmirror.com/jest-config/27.2.4
     name: jest-config
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       ts-node: '>=9.0.0'
@@ -21151,26 +21143,26 @@ packages:
         optional: true
     dependencies:
       '@babel/core': registry.nlark.com/@babel/core/7.15.5
-      '@jest/test-sequencer': registry.npmmirror.com/@jest/test-sequencer/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
-      babel-jest: registry.npmmirror.com/babel-jest/27.2.3_@babel+core@7.15.5
+      '@jest/test-sequencer': registry.npmmirror.com/@jest/test-sequencer/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
+      babel-jest: registry.npmmirror.com/babel-jest/27.2.4_@babel+core@7.15.5
       chalk: registry.nlark.com/chalk/4.1.2
       deepmerge: registry.nlark.com/deepmerge/4.2.2
       glob: registry.npmmirror.com/glob/7.1.7
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
       is-ci: registry.nlark.com/is-ci/3.0.0
-      jest-circus: registry.npmmirror.com/jest-circus/27.2.3
-      jest-environment-jsdom: registry.npmmirror.com/jest-environment-jsdom/27.2.3
-      jest-environment-node: registry.npmmirror.com/jest-environment-node/27.2.3
+      jest-circus: registry.npmmirror.com/jest-circus/27.2.4
+      jest-environment-jsdom: registry.npmmirror.com/jest-environment-jsdom/27.2.4
+      jest-environment-node: registry.npmmirror.com/jest-environment-node/27.2.4
       jest-get-type: registry.nlark.com/jest-get-type/27.0.6
-      jest-jasmine2: registry.npmmirror.com/jest-jasmine2/27.2.3
+      jest-jasmine2: registry.npmmirror.com/jest-jasmine2/27.2.4
       jest-regex-util: registry.nlark.com/jest-regex-util/27.0.6
-      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.3
-      jest-runner: registry.npmmirror.com/jest-runner/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      jest-validate: registry.npmmirror.com/jest-validate/27.2.3
+      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.4
+      jest-runner: registry.npmmirror.com/jest-runner/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      jest-validate: registry.npmmirror.com/jest-validate/27.2.4
       micromatch: registry.nlark.com/micromatch/4.0.4
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
       ts-node: registry.nlark.com/ts-node/10.2.1_e0bf20b7c5ed5b194f21284475beb32f
     transitivePeerDependencies:
       - bufferutil
@@ -21179,43 +21171,43 @@ packages:
       - utf-8-validate
     dev: true
 
-  registry.npmmirror.com/jest-diff/27.2.3:
-    resolution: {integrity: sha1-QpjsxT90dlcdBiXo/aOt4TYHqGQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-diff/download/jest-diff-27.2.3.tgz}
+  registry.npmmirror.com/jest-diff/27.2.4:
+    resolution: {integrity: sha1-FxxR09LBBcRXEA/ubnv3zuUcjYw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-diff/download/jest-diff-27.2.4.tgz}
     name: jest-diff
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       chalk: registry.nlark.com/chalk/4.1.2
       diff-sequences: registry.nlark.com/diff-sequences/27.0.6
       jest-get-type: registry.nlark.com/jest-get-type/27.0.6
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
     dev: true
 
-  registry.npmmirror.com/jest-each/27.2.3:
-    resolution: {integrity: sha1-fq98ezYgGfI8WnmYtX2C545vZnI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-each/download/jest-each-27.2.3.tgz}
+  registry.npmmirror.com/jest-each/27.2.4:
+    resolution: {integrity: sha1-tPKAqv1jEpuoLjRfDnTFoQIAru8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-each/download/jest-each-27.2.4.tgz}
     name: jest-each
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       chalk: registry.nlark.com/chalk/4.1.2
       jest-get-type: registry.nlark.com/jest-get-type/27.0.6
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
     dev: true
 
-  registry.npmmirror.com/jest-environment-jsdom/27.2.3:
-    resolution: {integrity: sha1-Nq1nP5PxlI3V2qbcscmxrQnWAWU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-environment-jsdom/download/jest-environment-jsdom-27.2.3.tgz}
+  registry.npmmirror.com/jest-environment-jsdom/27.2.4:
+    resolution: {integrity: sha1-Oa6Au7hnUwa/rwRAvh5fh3VUU5o=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-environment-jsdom/download/jest-environment-jsdom-27.2.4.tgz}
     name: jest-environment-jsdom
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.3
-      '@jest/fake-timers': registry.npmmirror.com/@jest/fake-timers/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.4
+      '@jest/fake-timers': registry.npmmirror.com/@jest/fake-timers/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
-      jest-mock: registry.npmmirror.com/jest-mock/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
+      jest-mock: registry.npmmirror.com/jest-mock/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
       jsdom: registry.nlark.com/jsdom/16.7.0
     transitivePeerDependencies:
       - bufferutil
@@ -21224,27 +21216,27 @@ packages:
       - utf-8-validate
     dev: true
 
-  registry.npmmirror.com/jest-environment-node/27.2.3:
-    resolution: {integrity: sha1-ZRsV9SMQsSZgpf1TgSuLLmlu6bk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-environment-node/download/jest-environment-node-27.2.3.tgz}
+  registry.npmmirror.com/jest-environment-node/27.2.4:
+    resolution: {integrity: sha1-t5+YyzbgyREarIWcnJnwTrL3T/Y=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-environment-node/download/jest-environment-node-27.2.4.tgz?cache=0&sync_timestamp=1632927753333&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fjest-environment-node%2Fdownload%2Fjest-environment-node-27.2.4.tgz}
     name: jest-environment-node
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.3
-      '@jest/fake-timers': registry.npmmirror.com/@jest/fake-timers/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.4
+      '@jest/fake-timers': registry.npmmirror.com/@jest/fake-timers/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
-      jest-mock: registry.npmmirror.com/jest-mock/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
+      jest-mock: registry.npmmirror.com/jest-mock/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
     dev: true
 
-  registry.npmmirror.com/jest-haste-map/27.2.3:
-    resolution: {integrity: sha1-zsgHxZwxKHLw6kzBtrXKe0YTFwU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-haste-map/download/jest-haste-map-27.2.3.tgz}
+  registry.npmmirror.com/jest-haste-map/27.2.4:
+    resolution: {integrity: sha1-+JdIB77fBzSMqf0k5YYat8jmGro=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-haste-map/download/jest-haste-map-27.2.4.tgz}
     name: jest-haste-map
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/graceful-fs': registry.nlark.com/@types/graceful-fs/4.1.5
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
       anymatch: registry.nlark.com/anymatch/3.1.2
@@ -21252,148 +21244,148 @@ packages:
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
       jest-regex-util: registry.nlark.com/jest-regex-util/27.0.6
       jest-serializer: registry.nlark.com/jest-serializer/27.0.6
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      jest-worker: registry.npmmirror.com/jest-worker/27.2.3
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      jest-worker: registry.npmmirror.com/jest-worker/27.2.4
       micromatch: registry.nlark.com/micromatch/4.0.4
       walker: registry.nlark.com/walker/1.0.7
     optionalDependencies:
       fsevents: registry.nlark.com/fsevents/2.3.2
     dev: true
 
-  registry.npmmirror.com/jest-jasmine2/27.2.3:
-    resolution: {integrity: sha1-Gf5Um36GEozX0NFmjr9Dd905gfk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-jasmine2/download/jest-jasmine2-27.2.3.tgz}
+  registry.npmmirror.com/jest-jasmine2/27.2.4:
+    resolution: {integrity: sha1-ShYIEz29tNaLWSm/14VQPtnJulE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-jasmine2/download/jest-jasmine2-27.2.4.tgz}
     name: jest-jasmine2
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
-      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.3
+      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.4
       '@jest/source-map': registry.nlark.com/@jest/source-map/27.0.6
-      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
       chalk: registry.nlark.com/chalk/4.1.2
       co: registry.nlark.com/co/4.6.0
-      expect: registry.npmmirror.com/expect/27.2.3
+      expect: registry.npmmirror.com/expect/27.2.4
       is-generator-fn: registry.nlark.com/is-generator-fn/2.1.0
-      jest-each: registry.npmmirror.com/jest-each/27.2.3
-      jest-matcher-utils: registry.npmmirror.com/jest-matcher-utils/27.2.3
-      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.3
-      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.3
-      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      jest-each: registry.npmmirror.com/jest-each/27.2.4
+      jest-matcher-utils: registry.npmmirror.com/jest-matcher-utils/27.2.4
+      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.4
+      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.4
+      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
       throat: registry.nlark.com/throat/6.0.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/jest-leak-detector/27.2.3:
-    resolution: {integrity: sha1-bGCnlf6bB0QsYEFANzVxVZ1NRn0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-leak-detector/download/jest-leak-detector-27.2.3.tgz}
+  registry.npmmirror.com/jest-leak-detector/27.2.4:
+    resolution: {integrity: sha1-m7fqsmpzuygOkpi+jYDziSiOyPE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-leak-detector/download/jest-leak-detector-27.2.4.tgz}
     name: jest-leak-detector
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       jest-get-type: registry.nlark.com/jest-get-type/27.0.6
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
     dev: true
 
-  registry.npmmirror.com/jest-matcher-utils/27.2.3:
-    resolution: {integrity: sha1-23+ZLzkh9QBPTeNqr6DAPyVlEio=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-matcher-utils/download/jest-matcher-utils-27.2.3.tgz}
+  registry.npmmirror.com/jest-matcher-utils/27.2.4:
+    resolution: {integrity: sha1-AI//AYFRQVrRts/Ag/1w/h4BJSU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-matcher-utils/download/jest-matcher-utils-27.2.4.tgz}
     name: jest-matcher-utils
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       chalk: registry.nlark.com/chalk/4.1.2
-      jest-diff: registry.npmmirror.com/jest-diff/27.2.3
+      jest-diff: registry.npmmirror.com/jest-diff/27.2.4
       jest-get-type: registry.nlark.com/jest-get-type/27.0.6
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
     dev: true
 
-  registry.npmmirror.com/jest-message-util/27.2.3:
-    resolution: {integrity: sha1-zRCRo/Dz/5GXVrFc/MwLpD7u7/A=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-message-util/download/jest-message-util-27.2.3.tgz}
+  registry.npmmirror.com/jest-message-util/27.2.4:
+    resolution: {integrity: sha1-Zn6MDyuXMVbRusc5in9ndwXK+so=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-message-util/download/jest-message-util-27.2.4.tgz}
     name: jest-message-util
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@babel/code-frame': registry.nlark.com/@babel/code-frame/7.14.5
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/stack-utils': registry.nlark.com/@types/stack-utils/2.0.1
       chalk: registry.nlark.com/chalk/4.1.2
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
       micromatch: registry.nlark.com/micromatch/4.0.4
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
       slash: registry.nlark.com/slash/3.0.0
       stack-utils: registry.nlark.com/stack-utils/2.0.3
     dev: true
 
-  registry.npmmirror.com/jest-mock/27.2.3:
-    resolution: {integrity: sha1-9TLSyMFY6LiZ8qClvTB3rzdhnCk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-mock/download/jest-mock-27.2.3.tgz}
+  registry.npmmirror.com/jest-mock/27.2.4:
+    resolution: {integrity: sha1-yPDvM/c9j/U+P2CxbVnxEo9Acq4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-mock/download/jest-mock-27.2.4.tgz}
     name: jest-mock
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
     dev: true
 
-  registry.npmmirror.com/jest-resolve-dependencies/27.2.3:
-    resolution: {integrity: sha1-/LYgaEEI/noJkYUFJDTSbxfemOY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-resolve-dependencies/download/jest-resolve-dependencies-27.2.3.tgz}
+  registry.npmmirror.com/jest-resolve-dependencies/27.2.4:
+    resolution: {integrity: sha1-IMQcwCtmqkUWmygjVuxzsTMBMIk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-resolve-dependencies/download/jest-resolve-dependencies-27.2.4.tgz}
     name: jest-resolve-dependencies
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       jest-regex-util: registry.nlark.com/jest-regex-util/27.0.6
-      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.3
+      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/jest-resolve/27.2.3:
-    resolution: {integrity: sha1-hokRz3BcU39DO+/Pxl5t3HDJ1/k=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-resolve/download/jest-resolve-27.2.3.tgz}
+  registry.npmmirror.com/jest-resolve/27.2.4:
+    resolution: {integrity: sha1-07mZ8HP/hKiuEJzpn/fzIjBIcBo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-resolve/download/jest-resolve-27.2.4.tgz?cache=0&sync_timestamp=1632927726119&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fjest-resolve%2Fdownload%2Fjest-resolve-27.2.4.tgz}
     name: jest-resolve
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       chalk: registry.nlark.com/chalk/4.1.2
       escalade: registry.nlark.com/escalade/3.1.1
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
-      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.3
-      jest-pnp-resolver: registry.nlark.com/jest-pnp-resolver/1.2.2_jest-resolve@27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      jest-validate: registry.npmmirror.com/jest-validate/27.2.3
+      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.4
+      jest-pnp-resolver: registry.nlark.com/jest-pnp-resolver/1.2.2_jest-resolve@27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      jest-validate: registry.npmmirror.com/jest-validate/27.2.4
       resolve: registry.nlark.com/resolve/1.20.0
       slash: registry.nlark.com/slash/3.0.0
     dev: true
 
-  registry.npmmirror.com/jest-runner/27.2.3:
-    resolution: {integrity: sha1-Ivbve9QUD+x0zsGO7ynCTQfLatU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-runner/download/jest-runner-27.2.3.tgz}
+  registry.npmmirror.com/jest-runner/27.2.4:
+    resolution: {integrity: sha1-2Bb0y0rwTzy6cDr89aNaM1t3ytQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-runner/download/jest-runner-27.2.4.tgz}
     name: jest-runner
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/console': registry.npmmirror.com/@jest/console/27.2.3
-      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.3
-      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.3
-      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/console': registry.npmmirror.com/@jest/console/27.2.4
+      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.4
+      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.4
+      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
       chalk: registry.nlark.com/chalk/4.1.2
       emittery: registry.nlark.com/emittery/0.8.1
       exit: registry.nlark.com/exit/0.1.2
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
       jest-docblock: registry.nlark.com/jest-docblock/27.0.6
-      jest-environment-jsdom: registry.npmmirror.com/jest-environment-jsdom/27.2.3
-      jest-environment-node: registry.npmmirror.com/jest-environment-node/27.2.3
-      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.3
-      jest-leak-detector: registry.npmmirror.com/jest-leak-detector/27.2.3
-      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.3
-      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.3
-      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      jest-worker: registry.npmmirror.com/jest-worker/27.2.3
+      jest-environment-jsdom: registry.npmmirror.com/jest-environment-jsdom/27.2.4
+      jest-environment-node: registry.npmmirror.com/jest-environment-node/27.2.4
+      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.4
+      jest-leak-detector: registry.npmmirror.com/jest-leak-detector/27.2.4
+      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.4
+      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.4
+      jest-runtime: registry.npmmirror.com/jest-runtime/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      jest-worker: registry.npmmirror.com/jest-worker/27.2.4
       source-map-support: registry.nlark.com/source-map-support/0.5.19
       throat: registry.nlark.com/throat/6.0.1
     transitivePeerDependencies:
@@ -21403,20 +21395,20 @@ packages:
       - utf-8-validate
     dev: true
 
-  registry.npmmirror.com/jest-runtime/27.2.3:
-    resolution: {integrity: sha1-5vwlu7xjsZ+uUMOZQGDvsbKSK34=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-runtime/download/jest-runtime-27.2.3.tgz}
+  registry.npmmirror.com/jest-runtime/27.2.4:
+    resolution: {integrity: sha1-FwBEBB5dMGJauNdTUWu+UD8hOlw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-runtime/download/jest-runtime-27.2.4.tgz}
     name: jest-runtime
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/console': registry.npmmirror.com/@jest/console/27.2.3
-      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.3
-      '@jest/fake-timers': registry.npmmirror.com/@jest/fake-timers/27.2.3
-      '@jest/globals': registry.npmmirror.com/@jest/globals/27.2.3
+      '@jest/console': registry.npmmirror.com/@jest/console/27.2.4
+      '@jest/environment': registry.npmmirror.com/@jest/environment/27.2.4
+      '@jest/fake-timers': registry.npmmirror.com/@jest/fake-timers/27.2.4
+      '@jest/globals': registry.npmmirror.com/@jest/globals/27.2.4
       '@jest/source-map': registry.nlark.com/@jest/source-map/27.0.6
-      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.3
-      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.4
+      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/yargs': registry.nlark.com/@types/yargs/16.0.4
       chalk: registry.nlark.com/chalk/4.1.2
       cjs-module-lexer: registry.nlark.com/cjs-module-lexer/1.2.2
@@ -21425,14 +21417,14 @@ packages:
       exit: registry.nlark.com/exit/0.1.2
       glob: registry.npmmirror.com/glob/7.1.7
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
-      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.3
-      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.3
-      jest-mock: registry.npmmirror.com/jest-mock/27.2.3
+      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.4
+      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.4
+      jest-mock: registry.npmmirror.com/jest-mock/27.2.4
       jest-regex-util: registry.nlark.com/jest-regex-util/27.0.6
-      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.3
-      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
-      jest-validate: registry.npmmirror.com/jest-validate/27.2.3
+      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.4
+      jest-snapshot: registry.npmmirror.com/jest-snapshot/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
+      jest-validate: registry.npmmirror.com/jest-validate/27.2.4
       slash: registry.nlark.com/slash/3.0.0
       strip-bom: registry.nlark.com/strip-bom/4.0.0
       yargs: registry.npmmirror.com/yargs/16.2.0
@@ -21440,10 +21432,10 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/jest-snapshot/27.2.3:
-    resolution: {integrity: sha1-4/OeFwik2T36EpfnO10v7sRPbQw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-snapshot/download/jest-snapshot-27.2.3.tgz}
+  registry.npmmirror.com/jest-snapshot/27.2.4:
+    resolution: {integrity: sha1-J3siaUN+P/y5HZWnOyS+zzPFqHE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-snapshot/download/jest-snapshot-27.2.4.tgz}
     name: jest-snapshot
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@babel/core': registry.nlark.com/@babel/core/7.15.5
@@ -21452,35 +21444,35 @@ packages:
       '@babel/plugin-syntax-typescript': registry.nlark.com/@babel/plugin-syntax-typescript/7.14.5_@babel+core@7.15.5
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.4
-      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/transform': registry.npmmirror.com/@jest/transform/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/babel__traverse': registry.nlark.com/@types/babel__traverse/7.14.2
       '@types/prettier': registry.npmmirror.com/@types/prettier/2.3.2
       babel-preset-current-node-syntax: registry.nlark.com/babel-preset-current-node-syntax/1.0.1_@babel+core@7.15.5
       chalk: registry.nlark.com/chalk/4.1.2
-      expect: registry.npmmirror.com/expect/27.2.3
+      expect: registry.npmmirror.com/expect/27.2.4
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
-      jest-diff: registry.npmmirror.com/jest-diff/27.2.3
+      jest-diff: registry.npmmirror.com/jest-diff/27.2.4
       jest-get-type: registry.nlark.com/jest-get-type/27.0.6
-      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.3
-      jest-matcher-utils: registry.npmmirror.com/jest-matcher-utils/27.2.3
-      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.3
-      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.3
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
+      jest-haste-map: registry.npmmirror.com/jest-haste-map/27.2.4
+      jest-matcher-utils: registry.npmmirror.com/jest-matcher-utils/27.2.4
+      jest-message-util: registry.npmmirror.com/jest-message-util/27.2.4
+      jest-resolve: registry.npmmirror.com/jest-resolve/27.2.4
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
       natural-compare: registry.nlark.com/natural-compare/1.4.0
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
       semver: registry.nlark.com/semver/7.3.5
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/jest-util/27.2.3:
-    resolution: {integrity: sha1-92Y1S3xInB+eqIzR2W0ET70rXU0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-util/download/jest-util-27.2.3.tgz}
+  registry.npmmirror.com/jest-util/27.2.4:
+    resolution: {integrity: sha1-PXzggbLn9M/gFWRSrAHzy0VsxlY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-util/download/jest-util-27.2.4.tgz?cache=0&sync_timestamp=1632927727161&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fjest-util%2Fdownload%2Fjest-util-27.2.4.tgz}
     name: jest-util
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
       chalk: registry.nlark.com/chalk/4.1.2
       graceful-fs: registry.nlark.com/graceful-fs/4.2.8
@@ -21488,39 +21480,39 @@ packages:
       picomatch: registry.nlark.com/picomatch/2.3.0
     dev: true
 
-  registry.npmmirror.com/jest-validate/27.2.3:
-    resolution: {integrity: sha1-T8xJ5YHxP74mCnfnEagPAlYTino=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-validate/download/jest-validate-27.2.3.tgz}
+  registry.npmmirror.com/jest-validate/27.2.4:
+    resolution: {integrity: sha1-tm1GKy+5PX4WpH0aqHY9VgC/LPo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-validate/download/jest-validate-27.2.4.tgz}
     name: jest-validate
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       camelcase: registry.nlark.com/camelcase/6.2.0
       chalk: registry.nlark.com/chalk/4.1.2
       jest-get-type: registry.nlark.com/jest-get-type/27.0.6
       leven: registry.nlark.com/leven/3.1.0
-      pretty-format: registry.npmmirror.com/pretty-format/27.2.3
+      pretty-format: registry.npmmirror.com/pretty-format/27.2.4
     dev: true
 
-  registry.npmmirror.com/jest-watcher/27.2.3:
-    resolution: {integrity: sha1-KYkii90FE4CU9+wZojy7JmXy77c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-watcher/download/jest-watcher-27.2.3.tgz}
+  registry.npmmirror.com/jest-watcher/27.2.4:
+    resolution: {integrity: sha1-sdXDmrlPWfTzX2bMlvd2GhDgz8Q=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-watcher/download/jest-watcher-27.2.4.tgz}
     name: jest-watcher
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.3
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/test-result': registry.npmmirror.com/@jest/test-result/27.2.4
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
       ansi-escapes: registry.nlark.com/ansi-escapes/4.3.2
       chalk: registry.nlark.com/chalk/4.1.2
-      jest-util: registry.npmmirror.com/jest-util/27.2.3
+      jest-util: registry.npmmirror.com/jest-util/27.2.4
       string-length: registry.nlark.com/string-length/4.0.2
     dev: true
 
-  registry.npmmirror.com/jest-worker/27.2.3:
-    resolution: {integrity: sha1-OW6D0EyldSMKm8slXCtmrsB8uTE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-worker/download/jest-worker-27.2.3.tgz}
+  registry.npmmirror.com/jest-worker/27.2.4:
+    resolution: {integrity: sha1-iBRV33XiLncmpT9DcDq3TWs2+C0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest-worker/download/jest-worker-27.2.4.tgz}
     name: jest-worker
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: '>= 10.13.0'}
     dependencies:
       '@types/node': registry.npmmirror.com/@types/node/16.10.1
@@ -21528,11 +21520,11 @@ packages:
       supports-color: registry.nlark.com/supports-color/8.1.1
     dev: true
 
-  registry.npmmirror.com/jest/27.2.3_ts-node@10.2.1:
-    resolution: {integrity: sha1-nCr5zodKPrIC+D2S+8HMYczHMkg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest/download/jest-27.2.3.tgz?cache=0&sync_timestamp=1632827511529&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fjest%2Fdownload%2Fjest-27.2.3.tgz}
-    id: registry.npmmirror.com/jest/27.2.3
+  registry.npmmirror.com/jest/27.2.4_ts-node@10.2.1:
+    resolution: {integrity: sha1-cOJ774cxOK/BI6pHafcSTFCtPvs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jest/download/jest-27.2.4.tgz?cache=0&sync_timestamp=1632927688188&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fjest%2Fdownload%2Fjest-27.2.4.tgz}
+    id: registry.npmmirror.com/jest/27.2.4
     name: jest
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
     peerDependencies:
@@ -21541,9 +21533,9 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': registry.npmmirror.com/@jest/core/27.2.3_ts-node@10.2.1
+      '@jest/core': registry.npmmirror.com/@jest/core/27.2.4_ts-node@10.2.1
       import-local: registry.nlark.com/import-local/3.0.2
-      jest-cli: registry.npmmirror.com/jest-cli/27.2.3_ts-node@10.2.1
+      jest-cli: registry.npmmirror.com/jest-cli/27.2.4_ts-node@10.2.1
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -21562,20 +21554,20 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/pretty-format/27.2.3:
-    resolution: {integrity: sha1-x2cQ3m69ixtBKlZous9KbC8hoCk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pretty-format/download/pretty-format-27.2.3.tgz?cache=0&sync_timestamp=1632827631190&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fpretty-format%2Fdownload%2Fpretty-format-27.2.3.tgz}
+  registry.npmmirror.com/pretty-format/27.2.4:
+    resolution: {integrity: sha1-COo5xeq0GwgoUtcJMFmgkfbdx0g=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pretty-format/download/pretty-format-27.2.4.tgz}
     name: pretty-format
-    version: 27.2.3
+    version: 27.2.4
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
-      '@jest/types': registry.npmmirror.com/@jest/types/27.2.3
+      '@jest/types': registry.npmmirror.com/@jest/types/27.2.4
       ansi-regex: registry.nlark.com/ansi-regex/5.0.1
       ansi-styles: registry.nlark.com/ansi-styles/5.2.0
       react-is: registry.npmmirror.com/react-is/17.0.2
     dev: true
 
   registry.npmmirror.com/react-is/17.0.2:
-    resolution: {integrity: sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-is/download/react-is-17.0.2.tgz?cache=0&sync_timestamp=1632801049404&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Freact-is%2Fdownload%2Freact-is-17.0.2.tgz}
+    resolution: {integrity: sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-is/download/react-is-17.0.2.tgz?cache=0&sync_timestamp=1632927770657&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Freact-is%2Fdownload%2Freact-is-17.0.2.tgz}
     name: react-is
     version: 17.0.2
     dev: true
