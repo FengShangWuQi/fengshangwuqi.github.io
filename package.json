@@ -104,7 +104,7 @@
     "react-helmet-async": "1.1.2",
     "react-instantsearch-dom": "6.12.1",
     "react-spring": "9.2.4",
-    "rxjs": "7.3.0"
+    "rxjs": "7.3.1"
   },
   "devDependencies": {
     "@babel/plugin-transform-typescript": "7.15.4",
