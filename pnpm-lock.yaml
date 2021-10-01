@@ -30,7 +30,7 @@ specifiers:
   '@types/react-instantsearch-dom': 6.12.0
   '@vercel/node': 1.12.1
   algoliasearch: 4.10.5
-  axios: 0.21.4
+  axios: 0.22.0
   babel-jest: 27.2.4
   babel-preset-gatsby: 1.14.0
   date-fns: 2.24.0
@@ -156,7 +156,7 @@ devDependencies:
   '@types/react-dom': registry.nlark.com/@types/react-dom/17.0.9
   '@types/react-instantsearch-dom': registry.nlark.com/@types/react-instantsearch-dom/6.12.0
   '@vercel/node': registry.nlark.com/@vercel/node/1.12.1
-  axios: registry.nlark.com/axios/0.21.4
+  axios: registry.npmmirror.com/axios/0.22.0
   babel-jest: registry.npmmirror.com/babel-jest/27.2.4
   babel-preset-gatsby: registry.nlark.com/babel-preset-gatsby/1.14.0
   date-fns: registry.nlark.com/date-fns/2.24.0
@@ -6091,16 +6091,6 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  registry.nlark.com/axios/0.21.4:
-    resolution: {integrity: sha1-xnuQ3AVo5cHPKwuFjEO6KOLtpXU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/axios/download/axios-0.21.4.tgz}
-    name: axios
-    version: 0.21.4
-    dependencies:
-      follow-redirects: registry.nlark.com/follow-redirects/1.14.3_debug@3.2.7
-    transitivePeerDependencies:
-      - debug
-    dev: true
-
   registry.nlark.com/axios/0.21.4_debug@3.2.7:
     resolution: {integrity: sha1-xnuQ3AVo5cHPKwuFjEO6KOLtpXU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/axios/download/axios-0.21.4.tgz}
     id: registry.nlark.com/axios/0.21.4
@@ -9831,6 +9821,7 @@ packages:
         optional: true
     dependencies:
       debug: registry.nlark.com/debug/3.2.7
+    dev: false
 
   registry.nlark.com/follow-redirects/1.14.3_debug@4.3.2:
     resolution: {integrity: sha1-atp4EY2NJMruWVWVrM3ArGq9Ai4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.3.tgz}
@@ -9846,6 +9837,13 @@ packages:
     dependencies:
       debug: registry.nlark.com/debug/4.3.2
     dev: false
+
+  registry.nlark.com/follow-redirects/1.14.4:
+    resolution: {integrity: sha1-g4/fSKi73XnlLuUfsclOPtmLk3k=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.4.tgz}
+    name: follow-redirects
+    version: 1.14.4
+    engines: {node: '>=4.0'}
+    dev: true
 
   registry.nlark.com/for-in/1.0.2:
     resolution: {integrity: sha1-gQaNKVqBQuwKxybG4iAMMPttXoA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/for-in/download/for-in-1.0.2.tgz}
@@ -20952,6 +20950,14 @@ packages:
     dependencies:
       '@typescript-eslint/types': registry.npmmirror.com/@typescript-eslint/types/4.31.2
       eslint-visitor-keys: registry.nlark.com/eslint-visitor-keys/2.1.0
+    dev: true
+
+  registry.npmmirror.com/axios/0.22.0:
+    resolution: {integrity: sha1-v3AsQftQ+8pFOVidg5oHcRe3myU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/axios/download/axios-0.22.0.tgz}
+    name: axios
+    version: 0.22.0
+    dependencies:
+      follow-redirects: registry.nlark.com/follow-redirects/1.14.4
     dev: true
 
   registry.npmmirror.com/babel-jest/27.2.4:
