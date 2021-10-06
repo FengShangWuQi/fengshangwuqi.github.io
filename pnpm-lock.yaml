@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/plugin-transform-typescript': 7.15.4
+  '@babel/plugin-transform-typescript': 7.15.8
   '@commitlint/cli': 13.2.0
   '@commitlint/config-conventional': 13.2.0
   '@emotion/is-prop-valid': 1.1.0
@@ -134,7 +134,7 @@ dependencies:
   rxjs: registry.npmmirror.com/rxjs/7.3.1
 
 devDependencies:
-  '@babel/plugin-transform-typescript': registry.nlark.com/@babel/plugin-transform-typescript/7.15.4
+  '@babel/plugin-transform-typescript': registry.npmmirror.com/@babel/plugin-transform-typescript/7.15.8
   '@commitlint/cli': registry.npmmirror.com/@commitlint/cli/13.2.0_typescript@4.4.3
   '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/13.2.0
   '@fengshangwuqi/appkit': registry.npmmirror.com/@fengshangwuqi/appkit/1.1.50_e0bf20b7c5ed5b194f21284475beb32f
@@ -1670,7 +1670,7 @@ packages:
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
 
   registry.nlark.com/@babel/plugin-syntax-typescript/7.14.5:
-    resolution: {integrity: sha1-uCxs5HGxZbXOQgz5KRTW+0YiVxY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/plugin-syntax-typescript/download/@babel/plugin-syntax-typescript-7.14.5.tgz}
+    resolution: {integrity: sha1-uCxs5HGxZbXOQgz5KRTW+0YiVxY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/plugin-syntax-typescript/download/@babel/plugin-syntax-typescript-7.14.5.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fplugin-syntax-typescript%2Fdownload%2F%40babel%2Fplugin-syntax-typescript-7.14.5.tgz}
     name: '@babel/plugin-syntax-typescript'
     version: 7.14.5
     engines: {node: '>=6.9.0'}
@@ -1681,7 +1681,7 @@ packages:
     dev: true
 
   registry.nlark.com/@babel/plugin-syntax-typescript/7.14.5_@babel+core@7.15.5:
-    resolution: {integrity: sha1-uCxs5HGxZbXOQgz5KRTW+0YiVxY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/plugin-syntax-typescript/download/@babel/plugin-syntax-typescript-7.14.5.tgz}
+    resolution: {integrity: sha1-uCxs5HGxZbXOQgz5KRTW+0YiVxY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/plugin-syntax-typescript/download/@babel/plugin-syntax-typescript-7.14.5.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fplugin-syntax-typescript%2Fdownload%2F%40babel%2Fplugin-syntax-typescript-7.14.5.tgz}
     id: registry.nlark.com/@babel/plugin-syntax-typescript/7.14.5
     name: '@babel/plugin-syntax-typescript'
     version: 7.14.5
@@ -2654,21 +2654,6 @@ packages:
       '@babel/core': registry.nlark.com/@babel/core/7.15.5
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
     dev: false
-
-  registry.nlark.com/@babel/plugin-transform-typescript/7.15.4:
-    resolution: {integrity: sha1-23oGLc+L5fwJa8DutAoT+/ofolE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/plugin-transform-typescript/download/@babel/plugin-transform-typescript-7.15.4.tgz}
-    name: '@babel/plugin-transform-typescript'
-    version: 7.15.4
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/helper-create-class-features-plugin': registry.nlark.com/@babel/helper-create-class-features-plugin/7.15.4
-      '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
-      '@babel/plugin-syntax-typescript': registry.nlark.com/@babel/plugin-syntax-typescript/7.14.5
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
 
   registry.nlark.com/@babel/plugin-transform-typescript/7.15.4_@babel+core@7.15.5:
     resolution: {integrity: sha1-23oGLc+L5fwJa8DutAoT+/ofolE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/plugin-transform-typescript/download/@babel/plugin-transform-typescript-7.15.4.tgz}
@@ -20028,6 +20013,21 @@ packages:
     name: zwitch
     version: 1.0.5
     dev: false
+
+  registry.npmmirror.com/@babel/plugin-transform-typescript/7.15.8:
+    resolution: {integrity: sha1-/w5qR96bLVhlISOrWoebL/IGZdg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-typescript/download/@babel/plugin-transform-typescript-7.15.8.tgz?cache=0&sync_timestamp=1633554659390&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fplugin-transform-typescript%2Fdownload%2F%40babel%2Fplugin-transform-typescript-7.15.8.tgz}
+    name: '@babel/plugin-transform-typescript'
+    version: 7.15.8
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/helper-create-class-features-plugin': registry.nlark.com/@babel/helper-create-class-features-plugin/7.15.4
+      '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
+      '@babel/plugin-syntax-typescript': registry.nlark.com/@babel/plugin-syntax-typescript/7.14.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   registry.npmmirror.com/@commitlint/cli/13.2.0_typescript@4.4.3:
     resolution: {integrity: sha1-noV1aw0O4Gw0tWNdfvQtemxyvW8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@commitlint/cli/download/@commitlint/cli-13.2.0.tgz}
