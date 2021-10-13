@@ -22,6 +22,7 @@
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "pretest": "pnpm tsc",
     "test": "jest",
+    "clean::branch": "ts-node scripts/clean/clean-branch.ts",
     "build::icons": "ts-node ./scripts/build/generate-icons.ts",
     "build::zhoubao": "ts-node ./scripts/build/generate-zhoubao.ts",
     "build::assets": "ts-node ./scripts/build/build-assets.ts",
