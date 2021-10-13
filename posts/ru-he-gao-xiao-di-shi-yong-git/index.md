@@ -82,6 +82,7 @@ $ git merge --no-ff 分支名
 # 拉取更新
 $ git fetch 主机名 分支名	// 不合并
 $ git pull 主机名 分支名	// 合并
+$ git pull -p           // 不拉取已经删除的分支
 
 # 推送
 $ git push 主机名 分支名
