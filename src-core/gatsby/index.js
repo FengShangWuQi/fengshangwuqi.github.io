@@ -124,6 +124,13 @@ const sentry = {
   },
 };
 
+const gtag = {
+  resolve: "gatsby-plugin-google-gtag",
+  options: {
+    trackingIds: [process.env.GA_TRACKING_ID],
+  },
+};
+
 const offline = "gatsby-plugin-offline"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-offline/?=gatsby-plugin-offline
 
 exports.plugins = [
@@ -137,6 +144,7 @@ exports.plugins = [
   twitter,
   pnpm,
   sentry,
+  gtag,
   offline,
 ];
 

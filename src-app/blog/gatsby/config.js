@@ -65,7 +65,9 @@ const feed = {
 };
 
 if (process.env.GATSBY_ALGOLIA_APP_ID) {
-  gatsbyConfig.plugins.push(algolia, feed);
+  gatsbyConfig.plugins.push(algolia);
 }
+
+gatsbyConfig.plugins.push(feed);
 
 module.exports = gatsbyConfig;
