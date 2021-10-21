@@ -16,7 +16,7 @@ specifiers:
   '@sentry/gatsby': 6.13.3
   '@squoosh/lib': 0.4.0
   '@testing-library/jest-dom': 5.14.1
-  '@testing-library/react': 12.1.0
+  '@testing-library/react': 12.1.2
   '@testing-library/react-hooks': 7.0.2
   '@types/facepaint': 1.2.2
   '@types/figlet': 1.5.4
@@ -145,7 +145,7 @@ devDependencies:
   '@fengshangwuqi/ts-config': registry.npmmirror.com/@fengshangwuqi/ts-config/1.1.7
   '@squoosh/lib': registry.nlark.com/@squoosh/lib/0.4.0
   '@testing-library/jest-dom': registry.nlark.com/@testing-library/jest-dom/5.14.1
-  '@testing-library/react': registry.nlark.com/@testing-library/react/12.1.0_react-dom@17.0.2+react@17.0.2
+  '@testing-library/react': registry.npmmirror.com/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': registry.nlark.com/@testing-library/react-hooks/7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
   '@types/facepaint': registry.nlark.com/@types/facepaint/1.2.2
   '@types/figlet': registry.nlark.com/@types/figlet/1.5.4
@@ -180,11 +180,6 @@ devDependencies:
 
 packages:
 
-  /lz-string/1.4.4:
-    resolution: {integrity: sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=, tarball: lz-string/download/lz-string-1.4.4.tgz}
-    hasBin: true
-    dev: true
-
   registry.nlark.com/@ardatan/aggregate-error/0.0.6:
     resolution: {integrity: sha1-/mkkdx6kD8mNx6cEXC6HLchSdgk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@ardatan/aggregate-error/download/@ardatan/aggregate-error-0.0.6.tgz}
     name: '@ardatan/aggregate-error'
@@ -208,6 +203,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/highlight': registry.nlark.com/@babel/highlight/7.14.5
+    dev: false
 
   registry.nlark.com/@babel/compat-data/7.15.0:
     resolution: {integrity: sha1-Lbr4uFM0eWyvuw9Xk6kKL8AQsXY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/compat-data/download/@babel/compat-data-7.15.0.tgz}
@@ -4059,22 +4055,6 @@ packages:
     dependencies:
       defer-to-connect: registry.nlark.com/defer-to-connect/2.0.1
 
-  registry.nlark.com/@testing-library/dom/8.2.0:
-    resolution: {integrity: sha1-rEahudfIHw00GuOPtUJLZMJ9FR4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@testing-library/dom/download/@testing-library/dom-8.2.0.tgz}
-    name: '@testing-library/dom'
-    version: 8.2.0
-    engines: {node: '>=12'}
-    dependencies:
-      '@babel/code-frame': registry.nlark.com/@babel/code-frame/7.14.5
-      '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
-      '@types/aria-query': registry.nlark.com/@types/aria-query/4.2.2
-      aria-query: registry.nlark.com/aria-query/4.2.2
-      chalk: registry.nlark.com/chalk/4.1.2
-      dom-accessibility-api: registry.nlark.com/dom-accessibility-api/0.5.7
-      lz-string: 1.4.4
-      pretty-format: registry.nlark.com/pretty-format/27.1.1
-    dev: true
-
   registry.nlark.com/@testing-library/jest-dom/5.14.1:
     resolution: {integrity: sha1-hQHhbx5VpV1nX+c+7O4yza3bl2Y=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@testing-library/jest-dom/download/@testing-library/jest-dom-5.14.1.tgz}
     name: '@testing-library/jest-dom'
@@ -4116,22 +4096,6 @@ packages:
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
       react-error-boundary: registry.nlark.com/react-error-boundary/3.1.3_react@17.0.2
       react-test-renderer: registry.nlark.com/react-test-renderer/17.0.2_react@17.0.2
-    dev: true
-
-  registry.nlark.com/@testing-library/react/12.1.0_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha1-PppAArC4+YanOKL4j8RYta8xnzU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@testing-library/react/download/@testing-library/react-12.1.0.tgz}
-    id: registry.nlark.com/@testing-library/react/12.1.0
-    name: '@testing-library/react'
-    version: 12.1.0
-    engines: {node: '>=12'}
-    peerDependencies:
-      react: '*'
-      react-dom: '*'
-    dependencies:
-      '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
-      '@testing-library/dom': registry.nlark.com/@testing-library/dom/8.2.0
-      react: registry.nlark.com/react/17.0.2
-      react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
     dev: true
 
   registry.nlark.com/@tokenizer/token/0.3.0:
@@ -4187,12 +4151,6 @@ packages:
     name: '@turist/time'
     version: 0.0.2
     dev: false
-
-  registry.nlark.com/@types/aria-query/4.2.2:
-    resolution: {integrity: sha1-7U4K2SMGpwT5+xMqDPz3dIbb4rw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/aria-query/download/@types/aria-query-4.2.2.tgz}
-    name: '@types/aria-query'
-    version: 4.2.2
-    dev: true
 
   registry.nlark.com/@types/babel__core/7.1.16:
     resolution: {integrity: sha1-vBLHS31l6C0ph2tdC69cYlrFhwI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/babel__core/download/@types/babel__core-7.1.16.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fbabel__core%2Fdownload%2F%40types%2Fbabel__core-7.1.16.tgz}
@@ -5263,6 +5221,7 @@ packages:
     dependencies:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
       '@babel/runtime-corejs3': registry.nlark.com/@babel/runtime-corejs3/7.15.4
+    dev: true
 
   registry.nlark.com/arr-diff/4.0.0:
     resolution: {integrity: sha1-1kYQdP6/7HHn4VI1dhoyml3HxSA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/arr-diff/download/arr-diff-4.0.0.tgz}
@@ -8361,7 +8320,7 @@ packages:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7
     dependencies:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
-      aria-query: registry.nlark.com/aria-query/4.2.2
+      aria-query: registry.npmmirror.com/aria-query/4.2.2
       array-includes: registry.nlark.com/array-includes/3.1.3
       ast-types-flow: registry.nlark.com/ast-types-flow/0.0.7
       axe-core: registry.nlark.com/axe-core/4.3.3
@@ -12690,6 +12649,13 @@ packages:
       es5-ext: registry.nlark.com/es5-ext/0.10.53
     dev: false
 
+  registry.nlark.com/lz-string/1.4.4:
+    resolution: {integrity: sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/lz-string/download/lz-string-1.4.4.tgz}
+    name: lz-string
+    version: 1.4.4
+    hasBin: true
+    dev: true
+
   registry.nlark.com/make-dir/3.1.0:
     resolution: {integrity: sha1-QV6WcEazp/HRhSd9hKpYIDcmoT8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/make-dir/download/make-dir-3.1.0.tgz}
     name: make-dir
@@ -13323,17 +13289,6 @@ packages:
     version: 1.1.6
     engines: {node: '>=4'}
     dev: true
-
-  registry.nlark.com/msgpackr-extract/1.0.14:
-    resolution: {integrity: sha1-h9P+gl0ibn89n+E2N1CRE3+VhWE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/msgpackr-extract/download/msgpackr-extract-1.0.14.tgz}
-    name: msgpackr-extract
-    version: 1.0.14
-    requiresBuild: true
-    dependencies:
-      nan: registry.nlark.com/nan/2.15.0
-      node-gyp-build: registry.nlark.com/node-gyp-build/4.2.3
-    dev: false
-    optional: true
 
   registry.nlark.com/multer/1.4.3:
     resolution: {integrity: sha1-TbNS1pkuAorA6s975Fxu/QJkKXs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/multer/download/multer-1.4.3.tgz}
@@ -20081,11 +20036,49 @@ packages:
       '@sinonjs/commons': registry.nlark.com/@sinonjs/commons/1.8.3
     dev: true
 
+  registry.npmmirror.com/@testing-library/dom/8.2.0:
+    resolution: {integrity: sha1-rEahudfIHw00GuOPtUJLZMJ9FR4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@testing-library/dom/download/@testing-library/dom-8.2.0.tgz}
+    name: '@testing-library/dom'
+    version: 8.2.0
+    engines: {node: '>=12'}
+    dependencies:
+      '@babel/code-frame': registry.npmmirror.com/@babel/code-frame/7.14.5
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
+      '@types/aria-query': registry.npmmirror.com/@types/aria-query/4.2.2
+      aria-query: registry.npmmirror.com/aria-query/4.2.2
+      chalk: registry.nlark.com/chalk/4.1.2
+      dom-accessibility-api: registry.npmmirror.com/dom-accessibility-api/0.5.7
+      lz-string: registry.nlark.com/lz-string/1.4.4
+      pretty-format: registry.npmmirror.com/pretty-format/27.3.1
+    dev: true
+
+  registry.npmmirror.com/@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha1-8byaRZQ0YfoqWYu0WX3xrgRM/HY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@testing-library/react/download/@testing-library/react-12.1.2.tgz?cache=0&sync_timestamp=1633269914607&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40testing-library%2Freact%2Fdownload%2F%40testing-library%2Freact-12.1.2.tgz}
+    id: registry.npmmirror.com/@testing-library/react/12.1.2
+    name: '@testing-library/react'
+    version: 12.1.2
+    engines: {node: '>=12'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
+      '@testing-library/dom': registry.npmmirror.com/@testing-library/dom/8.2.0
+      react: registry.nlark.com/react/17.0.2
+      react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
+    dev: true
+
   registry.npmmirror.com/@tootallnate/once/1.1.2:
     resolution: {integrity: sha1-zLkURTYBeaBOf+av94wA/8Hur4I=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tootallnate/once/download/@tootallnate/once-1.1.2.tgz}
     name: '@tootallnate/once'
     version: 1.1.2
     engines: {node: '>= 6'}
+    dev: true
+
+  registry.npmmirror.com/@types/aria-query/4.2.2:
+    resolution: {integrity: sha1-7U4K2SMGpwT5+xMqDPz3dIbb4rw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/aria-query/download/@types/aria-query-4.2.2.tgz}
+    name: '@types/aria-query'
+    version: 4.2.2
     dev: true
 
   registry.npmmirror.com/@types/lodash/4.14.176:
@@ -20303,6 +20296,15 @@ packages:
       '@algolia/requester-node-http': registry.npmmirror.com/@algolia/requester-node-http/4.11.0
       '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.11.0
 
+  registry.npmmirror.com/aria-query/4.2.2:
+    resolution: {integrity: sha1-DSymyazrVriXfp/tau1+FbvS+Ds=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/aria-query/download/aria-query-4.2.2.tgz?cache=0&sync_timestamp=1633354743074&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Faria-query%2Fdownload%2Faria-query-4.2.2.tgz}
+    name: aria-query
+    version: 4.2.2
+    engines: {node: '>=6.0'}
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
+      '@babel/runtime-corejs3': registry.nlark.com/@babel/runtime-corejs3/7.15.4
+
   registry.npmmirror.com/axios/0.22.0:
     resolution: {integrity: sha1-v3AsQftQ+8pFOVidg5oHcRe3myU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/axios/download/axios-0.22.0.tgz}
     name: axios
@@ -20479,6 +20481,12 @@ packages:
     name: detect-newline
     version: 3.1.0
     engines: {node: '>=8'}
+    dev: true
+
+  registry.npmmirror.com/dom-accessibility-api/0.5.7:
+    resolution: {integrity: sha1-jCqmMllo8pMxYKC327OAiT3fPn0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dom-accessibility-api/download/dom-accessibility-api-0.5.7.tgz}
+    name: dom-accessibility-api
+    version: 0.5.7
     dev: true
 
   registry.npmmirror.com/domexception/2.0.1:
@@ -21337,13 +21345,24 @@ packages:
     version: 2.1.3
     dev: false
 
+  registry.npmmirror.com/msgpackr-extract/1.0.14:
+    resolution: {integrity: sha1-h9P+gl0ibn89n+E2N1CRE3+VhWE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/msgpackr-extract/download/msgpackr-extract-1.0.14.tgz}
+    name: msgpackr-extract
+    version: 1.0.14
+    requiresBuild: true
+    dependencies:
+      nan: registry.nlark.com/nan/2.15.0
+      node-gyp-build: registry.nlark.com/node-gyp-build/4.2.3
+    dev: false
+    optional: true
+
   registry.npmmirror.com/msgpackr/1.4.7:
     resolution: {integrity: sha1-2AKt6EHn0uhzAAtJHN2mV0o9V0g=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/msgpackr/download/msgpackr-1.4.7.tgz}
     name: msgpackr
     version: 1.4.7
     requiresBuild: true
     optionalDependencies:
-      msgpackr-extract: registry.nlark.com/msgpackr-extract/1.0.14
+      msgpackr-extract: registry.npmmirror.com/msgpackr-extract/1.0.14
     dev: false
     optional: true
 
