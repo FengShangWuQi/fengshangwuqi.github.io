@@ -25,7 +25,7 @@ specifiers:
   '@types/jest': 27.0.2
   '@types/lodash': 4.14.176
   '@types/node': 16.10.1
-  '@types/react': 17.0.31
+  '@types/react': 17.0.32
   '@types/react-dom': 17.0.10
   '@types/react-instantsearch-dom': 6.12.0
   '@vercel/node': 1.12.1
@@ -90,8 +90,8 @@ specifiers:
 
 dependencies:
   '@emotion/is-prop-valid': registry.nlark.com/@emotion/is-prop-valid/1.1.0
-  '@emotion/react': registry.npmmirror.com/@emotion/react/11.5.0_6d27d6abd5fcfff70e832fae7f4b0d02
-  '@emotion/styled': registry.nlark.com/@emotion/styled/11.3.0_6c78da50cc6d8809f5c488fc50e3578b
+  '@emotion/react': registry.npmmirror.com/@emotion/react/11.5.0_fdf648e80cd72b304aa4ab0697f7348b
+  '@emotion/styled': registry.nlark.com/@emotion/styled/11.3.0_6ea0bcf7dfc306ab9dc83577eac84cb0
   '@mdx-js/mdx': registry.nlark.com/@mdx-js/mdx/1.6.22
   '@mdx-js/react': registry.nlark.com/@mdx-js/react/1.6.22_react@17.0.2
   '@sentry/gatsby': registry.npmmirror.com/@sentry/gatsby/6.13.3_gatsby@3.14.0+react@17.0.2
@@ -154,7 +154,7 @@ devDependencies:
   '@types/jest': registry.nlark.com/@types/jest/27.0.2
   '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.176
   '@types/node': registry.npmmirror.com/@types/node/16.10.1
-  '@types/react': registry.npmmirror.com/@types/react/17.0.31
+  '@types/react': registry.npmmirror.com/@types/react/17.0.32
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.10
   '@types/react-instantsearch-dom': registry.nlark.com/@types/react-instantsearch-dom/6.12.0
   '@vercel/node': registry.nlark.com/@vercel/node/1.12.1
@@ -2980,7 +2980,7 @@ packages:
       csstype: registry.nlark.com/csstype/3.0.8
     dev: false
 
-  registry.nlark.com/@emotion/styled/11.3.0_6c78da50cc6d8809f5c488fc50e3578b:
+  registry.nlark.com/@emotion/styled/11.3.0_6ea0bcf7dfc306ab9dc83577eac84cb0:
     resolution: {integrity: sha1-1j7gBTfftv9hLjGw6RXFz5klogc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@emotion/styled/download/@emotion/styled-11.3.0.tgz}
     id: registry.nlark.com/@emotion/styled/11.3.0
     name: '@emotion/styled'
@@ -2999,10 +2999,10 @@ packages:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
       '@emotion/babel-plugin': registry.nlark.com/@emotion/babel-plugin/11.3.0
       '@emotion/is-prop-valid': registry.nlark.com/@emotion/is-prop-valid/1.1.0
-      '@emotion/react': registry.npmmirror.com/@emotion/react/11.5.0_6d27d6abd5fcfff70e832fae7f4b0d02
+      '@emotion/react': registry.npmmirror.com/@emotion/react/11.5.0_fdf648e80cd72b304aa4ab0697f7348b
       '@emotion/serialize': registry.nlark.com/@emotion/serialize/1.0.2
       '@emotion/utils': registry.nlark.com/@emotion/utils/1.0.0
-      '@types/react': registry.npmmirror.com/@types/react/17.0.31
+      '@types/react': registry.npmmirror.com/@types/react/17.0.32
       react: registry.nlark.com/react/17.0.2
     dev: false
 
@@ -4089,7 +4089,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
-      '@types/react': registry.npmmirror.com/@types/react/17.0.31
+      '@types/react': registry.npmmirror.com/@types/react/17.0.32
       '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.10
       '@types/react-test-renderer': registry.nlark.com/@types/react-test-renderer/17.0.1
       react: registry.nlark.com/react/17.0.2
@@ -4490,7 +4490,7 @@ packages:
     name: '@types/reach__router'
     version: 1.3.9
     dependencies:
-      '@types/react': registry.npmmirror.com/@types/react/17.0.31
+      '@types/react': registry.npmmirror.com/@types/react/17.0.32
     dev: false
 
   registry.nlark.com/@types/react-instantsearch-core/6.10.4:
@@ -4498,7 +4498,7 @@ packages:
     name: '@types/react-instantsearch-core'
     version: 6.10.4
     dependencies:
-      '@types/react': registry.npmmirror.com/@types/react/17.0.31
+      '@types/react': registry.npmmirror.com/@types/react/17.0.32
       algoliasearch: registry.npmmirror.com/algoliasearch/4.11.0
       algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.5.5_algoliasearch@4.11.0
     dev: true
@@ -4508,7 +4508,7 @@ packages:
     name: '@types/react-instantsearch-dom'
     version: 6.12.0
     dependencies:
-      '@types/react': registry.npmmirror.com/@types/react/17.0.31
+      '@types/react': registry.npmmirror.com/@types/react/17.0.32
       '@types/react-instantsearch-core': registry.nlark.com/@types/react-instantsearch-core/6.10.4
     dev: true
 
@@ -4517,7 +4517,7 @@ packages:
     name: '@types/react-test-renderer'
     version: 17.0.1
     dependencies:
-      '@types/react': registry.npmmirror.com/@types/react/17.0.31
+      '@types/react': registry.npmmirror.com/@types/react/17.0.32
     dev: true
 
   registry.nlark.com/@types/responselike/1.0.0:
@@ -9417,7 +9417,7 @@ packages:
     dependencies:
       '@babel/runtime': registry.nlark.com/@babel/runtime/7.15.4
       '@emotion/babel-preset-css-prop': registry.nlark.com/@emotion/babel-preset-css-prop/11.2.0
-      '@emotion/react': registry.npmmirror.com/@emotion/react/11.5.0_6d27d6abd5fcfff70e832fae7f4b0d02
+      '@emotion/react': registry.npmmirror.com/@emotion/react/11.5.0_fdf648e80cd72b304aa4ab0697f7348b
       gatsby: registry.nlark.com/gatsby/3.14.0_caf59f16a7c82b183940c94c83b9bcec
     dev: false
 
@@ -19380,7 +19380,7 @@ packages:
       stylis: registry.nlark.com/stylis/4.0.10
     dev: false
 
-  registry.npmmirror.com/@emotion/react/11.5.0_6d27d6abd5fcfff70e832fae7f4b0d02:
+  registry.npmmirror.com/@emotion/react/11.5.0_fdf648e80cd72b304aa4ab0697f7348b:
     resolution: {integrity: sha1-GbV3G7+9pehRfpSKLZBkgQ8AIr0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@emotion/react/download/@emotion/react-11.5.0.tgz}
     id: registry.npmmirror.com/@emotion/react/11.5.0
     name: '@emotion/react'
@@ -19401,7 +19401,7 @@ packages:
       '@emotion/sheet': registry.npmmirror.com/@emotion/sheet/1.0.3
       '@emotion/utils': registry.nlark.com/@emotion/utils/1.0.0
       '@emotion/weak-memoize': registry.nlark.com/@emotion/weak-memoize/0.2.5
-      '@types/react': registry.npmmirror.com/@types/react/17.0.31
+      '@types/react': registry.npmmirror.com/@types/react/17.0.32
       hoist-non-react-statics: registry.nlark.com/hoist-non-react-statics/3.3.2
       react: registry.nlark.com/react/17.0.2
     dev: false
@@ -20035,13 +20035,13 @@ packages:
     name: '@types/react-dom'
     version: 17.0.10
     dependencies:
-      '@types/react': registry.npmmirror.com/@types/react/17.0.31
+      '@types/react': registry.npmmirror.com/@types/react/17.0.32
     dev: true
 
-  registry.npmmirror.com/@types/react/17.0.31:
-    resolution: {integrity: sha1-/gXr+R/zrjW7axP2wbRh24CJ3/g=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react/download/@types/react-17.0.31.tgz}
+  registry.npmmirror.com/@types/react/17.0.32:
+    resolution: {integrity: sha1-iaFhKGu+IyXU1RZCCic2SjJJCfQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react/download/@types/react-17.0.32.tgz}
     name: '@types/react'
-    version: 17.0.31
+    version: 17.0.32
     dependencies:
       '@types/prop-types': registry.nlark.com/@types/prop-types/15.7.4
       '@types/scheduler': registry.nlark.com/@types/scheduler/0.16.2
