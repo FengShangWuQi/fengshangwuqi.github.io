@@ -11,11 +11,7 @@
       "automerge": false
     },
     {
-      "excludePackageNames": [
-        "gatsby-plugin-image",
-        "globby",
-        "@babel/plugin-transform-typescript"
-      ]
+      "excludePackageNames": ["gatsby-plugin-image", "globby"]
     }
   ]
 }
