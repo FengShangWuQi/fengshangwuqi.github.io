@@ -23,7 +23,7 @@ specifiers:
   '@types/fs-extra': 9.0.13
   '@types/gh-pages': 3.2.0
   '@types/jest': 27.0.2
-  '@types/lodash': 4.14.176
+  '@types/lodash': 4.14.177
   '@types/node': 16.11.7
   '@types/react': 17.0.35
   '@types/react-dom': 17.0.11
@@ -152,7 +152,7 @@ devDependencies:
   '@types/fs-extra': registry.nlark.com/@types/fs-extra/9.0.13
   '@types/gh-pages': registry.nlark.com/@types/gh-pages/3.2.0
   '@types/jest': registry.npmmirror.com/@types/jest/27.0.2
-  '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.176
+  '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.177
   '@types/node': registry.npmmirror.com/@types/node/16.11.7
   '@types/react': registry.npmmirror.com/@types/react/17.0.35
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.11
@@ -14895,10 +14895,10 @@ packages:
       pretty-format: registry.npmmirror.com/pretty-format/27.3.1
     dev: true
 
-  registry.npmmirror.com/@types/lodash/4.14.176:
-    resolution: {integrity: sha1-ZBFQ/BzaNvv6Mp3mA7uxddfuIMA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash/download/@types/lodash-4.14.176.tgz}
+  registry.npmmirror.com/@types/lodash/4.14.177:
+    resolution: {integrity: sha512-0fDwydE2clKe9MNfvXHBHF9WEahRuj+msTuQqOmAApNORFvhMYZKNGGJdCzuhheVjMps/ti0Ak/iJPACMaevvw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash/download/@types/lodash-4.14.177.tgz?cache=0&sync_timestamp=1636998363400&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Flodash%2Fdownload%2F%40types%2Flodash-4.14.177.tgz}
     name: '@types/lodash'
-    version: 4.14.176
+    version: 4.14.177
 
   registry.npmmirror.com/@types/mdast/3.0.10:
     resolution: {integrity: sha1-RyQkSoKkWYiEy76bz9c9/5J+6K8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/mdast/download/@types/mdast-3.0.10.tgz}
@@ -16494,7 +16494,7 @@ packages:
       '@types/debug': registry.npmmirror.com/@types/debug/0.0.30
       '@types/get-port': registry.npmmirror.com/@types/get-port/3.2.0
       '@types/glob': registry.npmmirror.com/@types/glob/5.0.37
-      '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.176
+      '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.177
       '@types/mkdirp': registry.npmmirror.com/@types/mkdirp/0.5.2
       '@types/node': registry.npmmirror.com/@types/node/8.10.66
       '@types/rimraf': registry.npmmirror.com/@types/rimraf/2.0.5
