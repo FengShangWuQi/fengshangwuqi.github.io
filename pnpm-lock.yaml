@@ -80,7 +80,7 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet-async: 1.1.2
-  react-instantsearch-dom: 6.13.0
+  react-instantsearch-dom: 6.15.0
   react-spring: 9.3.1
   react-test-renderer: 17.0.2
   rxjs: 7.4.0
@@ -131,7 +131,7 @@ dependencies:
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.nlark.com/react-helmet-async/1.1.2_react-dom@17.0.2+react@17.0.2
-  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.13.0_9c61a37bce6c0496634c2178214848ce
+  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.15.0_9c61a37bce6c0496634c2178214848ce
   react-spring: registry.npmmirror.com/react-spring/9.3.1_react-dom@17.0.2+react@17.0.2
   rxjs: registry.npmmirror.com/rxjs/7.4.0
 
@@ -3667,19 +3667,6 @@ packages:
     version: 4.0.7
     dev: false
 
-  registry.nlark.com/events/1.1.1:
-    resolution: {integrity: sha1-nr23Y1rQmccNzEwqH1AEKI6L2SQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/events/download/events-1.1.1.tgz?cache=0&sync_timestamp=1631586858677&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fevents%2Fdownload%2Fevents-1.1.1.tgz}
-    name: events
-    version: 1.1.1
-    engines: {node: '>=0.4.x'}
-
-  registry.nlark.com/events/3.3.0:
-    resolution: {integrity: sha1-Mala0Kkk4tLEGagTrrLE6HjqdAA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/events/download/events-3.3.0.tgz?cache=0&sync_timestamp=1631586858677&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fevents%2Fdownload%2Fevents-3.3.0.tgz}
-    name: events
-    version: 3.3.0
-    engines: {node: '>=0.8.x'}
-    dev: false
-
   registry.nlark.com/execa/1.0.0:
     resolution: {integrity: sha1-xiNqW7TfbW8V6I5/AXeYIWdJ3dg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/execa/download/execa-1.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fexeca%2Fdownload%2Fexeca-1.0.0.tgz}
     name: execa
@@ -5652,6 +5639,11 @@ packages:
     name: jpeg-js
     version: 0.4.3
     dev: false
+
+  registry.nlark.com/js-tokens/4.0.0:
+    resolution: {integrity: sha1-GSA/tZmR35jjoocFDUZHzerzJJk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/js-tokens/download/js-tokens-4.0.0.tgz}
+    name: js-tokens
+    version: 4.0.0
 
   registry.nlark.com/js-yaml/3.14.1:
     resolution: {integrity: sha1-2ugS/bOCX6MGYJqHFzg8UMNqBTc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/js-yaml/download/js-yaml-3.14.1.tgz?cache=0&sync_timestamp=1631586960611&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fjs-yaml%2Fdownload%2Fjs-yaml-3.14.1.tgz}
@@ -7907,6 +7899,12 @@ packages:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.0
       react: registry.nlark.com/react/17.0.2
     dev: true
+
+  registry.nlark.com/react-fast-compare/3.2.0:
+    resolution: {integrity: sha1-ZBqdqBtqYyDycOiXJPtFoLOeQ7s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/react-fast-compare/download/react-fast-compare-3.2.0.tgz}
+    name: react-fast-compare
+    version: 3.2.0
+    dev: false
 
   registry.nlark.com/react-helmet-async/1.1.2_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha1-ZTt+a7/dI5xdzWuN8oEcejY7gzQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/react-helmet-async/download/react-helmet-async-1.1.2.tgz}
@@ -11016,7 +11014,7 @@ packages:
     dependencies:
       '@babel/helper-validator-identifier': registry.nlark.com/@babel/helper-validator-identifier/7.15.7
       chalk: registry.nlark.com/chalk/2.4.2
-      js-tokens: registry.npmmirror.com/js-tokens/4.0.0
+      js-tokens: registry.nlark.com/js-tokens/4.0.0
 
   registry.npmmirror.com/@babel/parser/7.16.0:
     resolution: {integrity: sha1-zxR9etoKNlXnm/SwjuhG8AoAopU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/parser/download/@babel/parser-7.16.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40babel%2Fparser%2Fdownload%2F%40babel%2Fparser-7.16.0.tgz}
@@ -15344,7 +15342,7 @@ packages:
       algoliasearch: '>= 3.1 < 5'
     dependencies:
       algoliasearch: registry.npmmirror.com/algoliasearch/4.11.0
-      events: registry.nlark.com/events/1.1.1
+      events: registry.npmmirror.com/events/1.1.1
 
   registry.npmmirror.com/algoliasearch/4.11.0:
     resolution: {integrity: sha1-I0vvs6w1XAlAd/Dt83dyQLHuATw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/algoliasearch/download/algoliasearch-4.11.0.tgz}
@@ -17033,6 +17031,19 @@ packages:
     name: event-target-shim
     version: 5.0.1
     engines: {node: '>=6'}
+    dev: false
+
+  registry.npmmirror.com/events/1.1.1:
+    resolution: {integrity: sha1-nr23Y1rQmccNzEwqH1AEKI6L2SQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/events/download/events-1.1.1.tgz}
+    name: events
+    version: 1.1.1
+    engines: {node: '>=0.4.x'}
+
+  registry.npmmirror.com/events/3.3.0:
+    resolution: {integrity: sha1-Mala0Kkk4tLEGagTrrLE6HjqdAA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/events/download/events-3.3.0.tgz}
+    name: events
+    version: 3.3.0
+    engines: {node: '>=0.8.x'}
     dev: false
 
   registry.npmmirror.com/expect/27.3.1:
@@ -19186,11 +19197,6 @@ packages:
       regenerator-runtime: registry.nlark.com/regenerator-runtime/0.13.9
     dev: false
 
-  registry.npmmirror.com/js-tokens/4.0.0:
-    resolution: {integrity: sha1-GSA/tZmR35jjoocFDUZHzerzJJk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/js-tokens/download/js-tokens-4.0.0.tgz}
-    name: js-tokens
-    version: 4.0.0
-
   registry.npmmirror.com/jsdom/16.7.0:
     resolution: {integrity: sha1-kYrnGWVCSxl8gZ+Bg6dU4Yl3txA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jsdom/download/jsdom-16.7.0.tgz}
     name: jsdom
@@ -19453,12 +19459,12 @@ packages:
     dev: true
 
   registry.npmmirror.com/loose-envify/1.4.0:
-    resolution: {integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/loose-envify/download/loose-envify-1.4.0.tgz?cache=0&sync_timestamp=1632577280612&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Floose-envify%2Fdownload%2Floose-envify-1.4.0.tgz}
+    resolution: {integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/loose-envify/download/loose-envify-1.4.0.tgz}
     name: loose-envify
     version: 1.4.0
     hasBin: true
     dependencies:
-      js-tokens: registry.npmmirror.com/js-tokens/4.0.0
+      js-tokens: registry.nlark.com/js-tokens/4.0.0
 
   registry.npmmirror.com/lower-case/1.1.4:
     resolution: {integrity: sha1-miyr0bno4K6ZOkv31YdcOcQujqw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lower-case/download/lower-case-1.1.4.tgz}
@@ -20775,11 +20781,11 @@ packages:
     version: 3.2.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-core/6.13.0_7ce4838e463d1525dea7855d64eb110e:
-    resolution: {integrity: sha1-+/+p2WigcVqAr21hAmlBk15Y2KI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/download/react-instantsearch-core-6.13.0.tgz}
-    id: registry.npmmirror.com/react-instantsearch-core/6.13.0
+  registry.npmmirror.com/react-instantsearch-core/6.15.0_7ce4838e463d1525dea7855d64eb110e:
+    resolution: {integrity: sha1-wHoqBTupr77szTY8l7tnbMBJiYU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/download/react-instantsearch-core-6.15.0.tgz}
+    id: registry.npmmirror.com/react-instantsearch-core/6.15.0
     name: react-instantsearch-core
-    version: 6.13.0
+    version: 6.15.0
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
       react: '>= 16.3.0 < 18'
@@ -20789,14 +20795,14 @@ packages:
       algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.6.2_algoliasearch@4.11.0
       prop-types: registry.nlark.com/prop-types/15.7.2
       react: registry.nlark.com/react/17.0.2
-      react-fast-compare: registry.npmmirror.com/react-fast-compare/3.2.0
+      react-fast-compare: registry.nlark.com/react-fast-compare/3.2.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-dom/6.13.0_9c61a37bce6c0496634c2178214848ce:
-    resolution: {integrity: sha1-SM2V2zCUYTij/YhLyEhtZf1W+aU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/download/react-instantsearch-dom-6.13.0.tgz}
-    id: registry.npmmirror.com/react-instantsearch-dom/6.13.0
+  registry.npmmirror.com/react-instantsearch-dom/6.15.0_9c61a37bce6c0496634c2178214848ce:
+    resolution: {integrity: sha512-BGqlDNd9H4CsjA7lhEkK8pH5pXVjdWMCdIkqqWbS++zBmIJnR+F6h/z1g7x1B/q77EsVUU7LDbdpKayEEftFDA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/download/react-instantsearch-dom-6.15.0.tgz}
+    id: registry.npmmirror.com/react-instantsearch-dom/6.15.0
     name: react-instantsearch-dom
-    version: 6.13.0
+    version: 6.15.0
     peerDependencies:
       react: '>= 16.3.0 < 18'
       react-dom: '>= 16.3.0 < 18'
@@ -20807,8 +20813,8 @@ packages:
       prop-types: registry.nlark.com/prop-types/15.7.2
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
-      react-fast-compare: registry.npmmirror.com/react-fast-compare/3.2.0
-      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.13.0_7ce4838e463d1525dea7855d64eb110e
+      react-fast-compare: registry.nlark.com/react-fast-compare/3.2.0
+      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.15.0_7ce4838e463d1525dea7855d64eb110e
     transitivePeerDependencies:
       - algoliasearch
     dev: false
@@ -22125,7 +22131,7 @@ packages:
       enhanced-resolve: registry.nlark.com/enhanced-resolve/5.8.3
       es-module-lexer: registry.npmmirror.com/es-module-lexer/0.9.3
       eslint-scope: registry.nlark.com/eslint-scope/5.1.1
-      events: registry.nlark.com/events/3.3.0
+      events: registry.npmmirror.com/events/3.3.0
       glob-to-regexp: registry.nlark.com/glob-to-regexp/0.4.1
       graceful-fs: registry.npmmirror.com/graceful-fs/4.2.8
       json-parse-better-errors: registry.nlark.com/json-parse-better-errors/1.0.2
