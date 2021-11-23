@@ -81,7 +81,7 @@ specifiers:
   react-dom: 17.0.2
   react-helmet-async: 1.1.2
   react-instantsearch-dom: 6.16.0
-  react-spring: 9.3.1
+  react-spring: 9.3.2
   react-test-renderer: 17.0.2
   rxjs: 7.4.0
   ts-node: 10.4.0
@@ -132,7 +132,7 @@ dependencies:
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.nlark.com/react-helmet-async/1.1.2_react-dom@17.0.2+react@17.0.2
   react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.16.0_9c61a37bce6c0496634c2178214848ce
-  react-spring: registry.npmmirror.com/react-spring/9.3.1_react-dom@17.0.2+react@17.0.2
+  react-spring: registry.npmmirror.com/react-spring/9.3.2_react-dom@17.0.2+react@17.0.2
   rxjs: registry.npmmirror.com/rxjs/7.4.0
 
 devDependencies:
@@ -20802,11 +20802,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  registry.npmmirror.com/react-spring/9.3.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-YbWcG+LiiyMi4RnBrMudVj2Rqnt2yEozeISkW5Hm2SOss+uDS4CpVjLuwdFAwczw99FSPrRfyAlGjEx3HvOWiw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-spring/download/react-spring-9.3.1.tgz}
-    id: registry.npmmirror.com/react-spring/9.3.1
+  registry.npmmirror.com/react-spring/9.3.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-LMFgjvTJVg2ltthzgJcZ7siOdRig7L8wJZIHrc7p6ss4AaJ446xHzm9L2ZQha1ZC9QVY8/e6XfLhMTFAG6dtjw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-spring/download/react-spring-9.3.2.tgz}
+    id: registry.npmmirror.com/react-spring/9.3.2
     name: react-spring
-    version: 9.3.1
+    version: 9.3.2
     dependencies:
       '@react-spring/core': registry.npmmirror.com/@react-spring/core/9.3.0_react@17.0.2
       '@react-spring/konva': registry.npmmirror.com/@react-spring/konva/9.3.0_react@17.0.2
