@@ -27,7 +27,7 @@ specifiers:
   '@types/node': 16.11.11
   '@types/react': 17.0.37
   '@types/react-dom': 17.0.11
-  '@types/react-instantsearch-dom': 6.12.0
+  '@types/react-instantsearch-dom': 6.12.1
   '@vercel/node': 1.12.1
   algoliasearch: 4.11.0
   axios: 0.24.0
@@ -156,7 +156,7 @@ devDependencies:
   '@types/node': registry.npmmirror.com/@types/node/16.11.11
   '@types/react': registry.npmmirror.com/@types/react/17.0.37
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.11
-  '@types/react-instantsearch-dom': registry.nlark.com/@types/react-instantsearch-dom/6.12.0
+  '@types/react-instantsearch-dom': registry.npmmirror.com/@types/react-instantsearch-dom/6.12.1
   '@vercel/node': registry.nlark.com/@vercel/node/1.12.1
   axios: registry.npmmirror.com/axios/0.24.0
   babel-jest: registry.npmmirror.com/babel-jest/27.4.2
@@ -1070,15 +1070,6 @@ packages:
     name: '@types/q'
     version: 1.5.5
     dev: false
-
-  registry.nlark.com/@types/react-instantsearch-dom/6.12.0:
-    resolution: {integrity: sha1-cWvhtIGTu7ZScSBam9ESpl2KJmE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/react-instantsearch-dom/download/@types/react-instantsearch-dom-6.12.0.tgz}
-    name: '@types/react-instantsearch-dom'
-    version: 6.12.0
-    dependencies:
-      '@types/react': registry.npmmirror.com/@types/react/17.0.37
-      '@types/react-instantsearch-core': registry.npmmirror.com/@types/react-instantsearch-core/6.10.5
-    dev: true
 
   registry.nlark.com/@types/react-test-renderer/17.0.1:
     resolution: {integrity: sha1-MSD30cFX+6nfARja4gywKX7g4Gs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/react-test-renderer/download/@types/react-test-renderer-17.0.1.tgz}
@@ -14658,6 +14649,15 @@ packages:
       '@types/react': registry.npmmirror.com/@types/react/17.0.37
       algoliasearch: registry.npmmirror.com/algoliasearch/4.11.0
       algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.6.2_algoliasearch@4.11.0
+    dev: true
+
+  registry.npmmirror.com/@types/react-instantsearch-dom/6.12.1:
+    resolution: {integrity: sha512-0crWjo6w6SHPZY5XWVUVkH3exVRGjyNJXtVYXRD7s6u8CiSIhONO82cCsxSCsdyGeK2yenPZNxFuZ1KXnoWKOg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-instantsearch-dom/download/@types/react-instantsearch-dom-6.12.1.tgz}
+    name: '@types/react-instantsearch-dom'
+    version: 6.12.1
+    dependencies:
+      '@types/react': registry.npmmirror.com/@types/react/17.0.37
+      '@types/react-instantsearch-core': registry.npmmirror.com/@types/react-instantsearch-core/6.10.5
     dev: true
 
   registry.npmmirror.com/@types/react/17.0.37:
