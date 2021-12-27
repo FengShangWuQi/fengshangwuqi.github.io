@@ -83,7 +83,7 @@ specifiers:
   react-instantsearch-dom: 6.18.0
   react-spring: 9.3.2
   react-test-renderer: 17.0.2
-  rxjs: 7.4.0
+  rxjs: 7.5.0
   ts-node: 10.4.0
   tslib: 2.3.1
   typescript: 4.5.4
@@ -133,7 +133,7 @@ dependencies:
   react-helmet-async: registry.npmmirror.com/react-helmet-async/1.2.2_react-dom@17.0.2+react@17.0.2
   react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.18.0_9c61a37bce6c0496634c2178214848ce
   react-spring: registry.npmmirror.com/react-spring/9.3.2_react-dom@17.0.2+react@17.0.2
-  rxjs: registry.npmmirror.com/rxjs/7.4.0
+  rxjs: registry.npmmirror.com/rxjs/7.5.0
 
 devDependencies:
   '@babel/plugin-transform-typescript': registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.1
@@ -8846,6 +8846,7 @@ packages:
     resolution: {integrity: sha1-2mCGDxwuyqVwOrfTm8Bba/mIuXo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/tslib/download/tslib-2.1.0.tgz}
     name: tslib
     version: 2.1.0
+    dev: false
 
   registry.nlark.com/tslib/2.2.0:
     resolution: {integrity: sha1-+yxHWXfjXiQTEe3iaTzuHsZpj1w=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/tslib/download/tslib-2.2.0.tgz}
@@ -19193,7 +19194,7 @@ packages:
       log-update: registry.npmmirror.com/log-update/4.0.0
       p-map: registry.npmmirror.com/p-map/4.0.0
       rfdc: registry.npmmirror.com/rfdc/1.3.0
-      rxjs: registry.npmmirror.com/rxjs/7.4.0
+      rxjs: registry.npmmirror.com/rxjs/7.5.0
       through: registry.nlark.com/through/2.3.8
       wrap-ansi: registry.nlark.com/wrap-ansi/7.0.0
     dev: true
@@ -21138,12 +21139,12 @@ packages:
       tslib: registry.nlark.com/tslib/1.14.1
     dev: false
 
-  registry.npmmirror.com/rxjs/7.4.0:
-    resolution: {integrity: sha1-oSpE1+6/AW9f8kQbh/KMmlHOvGg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rxjs/download/rxjs-7.4.0.tgz}
+  registry.npmmirror.com/rxjs/7.5.0:
+    resolution: {integrity: sha512-fuCKAfFawVYX0pyFlETtYnXI+5iiY9Dftgk+VdgeOq+Qyi9ZDWckHZRDaXRt5WCNbbLkmAheoSGDiceyCIKNZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/rxjs/download/rxjs-7.5.0.tgz}
     name: rxjs
-    version: 7.4.0
+    version: 7.5.0
     dependencies:
-      tslib: registry.nlark.com/tslib/2.1.0
+      tslib: registry.nlark.com/tslib/2.3.1
 
   registry.npmmirror.com/saxes/5.0.1:
     resolution: {integrity: sha1-7rq5U/o7dgjb6U5drbFciI+maW0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/saxes/download/saxes-5.0.1.tgz?cache=0&sync_timestamp=1636312916951&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsaxes%2Fdownload%2Fsaxes-5.0.1.tgz}
