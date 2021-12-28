@@ -75,7 +75,7 @@ specifiers:
   lodash: 4.17.21
   polished: 4.1.3
   prettier: 2.5.1
-  pretty-quick: 3.1.2
+  pretty-quick: 3.1.3
   prismjs: 1.25.0
   react: 17.0.2
   react-dom: 17.0.2
@@ -172,7 +172,7 @@ devDependencies:
   jest: registry.npmmirror.com/jest/27.4.5_ts-node@10.4.0
   lint-staged: registry.npmmirror.com/lint-staged/12.1.4
   prettier: registry.npmmirror.com/prettier/2.5.1
-  pretty-quick: registry.npmmirror.com/pretty-quick/3.1.2_prettier@2.5.1
+  pretty-quick: registry.npmmirror.com/pretty-quick/3.1.3_prettier@2.5.1
   react-test-renderer: registry.nlark.com/react-test-renderer/17.0.2_react@17.0.2
   ts-node: registry.npmmirror.com/ts-node/10.4.0_00264fd83560919cd06c986889baae0a
   tslib: registry.nlark.com/tslib/2.3.1
@@ -1022,11 +1022,6 @@ packages:
     dependencies:
       '@types/node': registry.npmmirror.com/@types/node/16.11.17
 
-  registry.nlark.com/@types/minimatch/3.0.5:
-    resolution: {integrity: sha1-EAHMXmo3BLg8I2An538vWOoBD0A=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/minimatch/download/@types/minimatch-3.0.5.tgz}
-    name: '@types/minimatch'
-    version: 3.0.5
-
   registry.nlark.com/@types/ms/0.7.31:
     resolution: {integrity: sha1-MbfKZAcSij0rvCf+LSGzRTl/YZc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@types/ms/download/@types/ms-0.7.31.tgz}
     name: '@types/ms'
@@ -1450,7 +1445,7 @@ packages:
     version: 3.2.1
     engines: {node: '>=4'}
     dependencies:
-      color-convert: registry.nlark.com/color-convert/1.9.3
+      color-convert: registry.npmmirror.com/color-convert/1.9.3
 
   registry.nlark.com/ansi-styles/4.3.0:
     resolution: {integrity: sha1-7dgDYornHATIWuegkG7a00tkiTc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ansi-styles/download/ansi-styles-4.3.0.tgz}
@@ -1458,7 +1453,7 @@ packages:
     version: 4.3.0
     engines: {node: '>=8'}
     dependencies:
-      color-convert: registry.nlark.com/color-convert/2.0.1
+      color-convert: registry.npmmirror.com/color-convert/2.0.1
 
   registry.nlark.com/ansi-styles/5.2.0:
     resolution: {integrity: sha1-B0SWkK1Fd30ZJKwquy/IiV26g2s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ansi-styles/download/ansi-styles-5.2.0.tgz}
@@ -1996,16 +1991,6 @@ packages:
     version: 1.1.0
     dev: false
 
-  registry.nlark.com/chalk/3.0.0:
-    resolution: {integrity: sha1-P3PCv1JlkfV0zEksUeJFY0n4ROQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/chalk/download/chalk-3.0.0.tgz}
-    name: chalk
-    version: 3.0.0
-    engines: {node: '>=8'}
-    dependencies:
-      ansi-styles: registry.npmmirror.com/ansi-styles/4.3.0
-      supports-color: registry.npmmirror.com/supports-color/7.2.0
-    dev: true
-
   registry.nlark.com/chalk/4.1.2:
     resolution: {integrity: sha1-qsTit3NKdAhnrrFr8CqtVWoeegE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/chalk/download/chalk-4.1.2.tgz?cache=0&sync_timestamp=1631504518461&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fchalk%2Fdownload%2Fchalk-4.1.2.tgz}
     name: chalk
@@ -2240,13 +2225,6 @@ packages:
       map-visit: registry.nlark.com/map-visit/1.0.0
       object-visit: registry.nlark.com/object-visit/1.0.1
     dev: false
-
-  registry.nlark.com/color-convert/1.9.3:
-    resolution: {integrity: sha1-u3GFBpDh8TZWfeYp0tVHHe2kweg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/color-convert/download/color-convert-1.9.3.tgz}
-    name: color-convert
-    version: 1.9.3
-    dependencies:
-      color-name: registry.nlark.com/color-name/1.1.3
 
   registry.nlark.com/color-convert/2.0.1:
     resolution: {integrity: sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/color-convert/download/color-convert-2.0.1.tgz}
@@ -3386,23 +3364,6 @@ packages:
     name: eventemitter3
     version: 4.0.7
     dev: false
-
-  registry.nlark.com/execa/4.1.0:
-    resolution: {integrity: sha1-TlSRrRVy8vF6d9OIxshXE1sihHo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/execa/download/execa-4.1.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fexeca%2Fdownload%2Fexeca-4.1.0.tgz}
-    name: execa
-    version: 4.1.0
-    engines: {node: '>=10'}
-    dependencies:
-      cross-spawn: registry.nlark.com/cross-spawn/7.0.3
-      get-stream: registry.nlark.com/get-stream/5.2.0
-      human-signals: registry.nlark.com/human-signals/1.1.1
-      is-stream: registry.nlark.com/is-stream/2.0.1
-      merge-stream: registry.nlark.com/merge-stream/2.0.0
-      npm-run-path: registry.npmmirror.com/npm-run-path/4.0.1
-      onetime: registry.nlark.com/onetime/5.1.2
-      signal-exit: registry.npmmirror.com/signal-exit/3.0.5
-      strip-final-newline: registry.nlark.com/strip-final-newline/2.0.0
-    dev: true
 
   registry.nlark.com/execa/5.1.1:
     resolution: {integrity: sha1-+ArZy/Qpj3vR1MlVXCHpN0HEEd0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/execa/download/execa-5.1.1.tgz}
@@ -5439,23 +5400,23 @@ packages:
     dev: false
 
   registry.nlark.com/locate-path/2.0.0:
-    resolution: {integrity: sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/locate-path/download/locate-path-2.0.0.tgz}
+    resolution: {integrity: sha1-K1aLJl7slExtnA3pw9u7ygNUzY4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/locate-path/download/locate-path-2.0.0.tgz?cache=0&sync_timestamp=1631544439519&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flocate-path%2Fdownload%2Flocate-path-2.0.0.tgz}
     name: locate-path
     version: 2.0.0
     engines: {node: '>=4'}
     dependencies:
       p-locate: registry.nlark.com/p-locate/2.0.0
-      path-exists: registry.nlark.com/path-exists/3.0.0
+      path-exists: registry.npmmirror.com/path-exists/3.0.0
     dev: false
 
   registry.nlark.com/locate-path/3.0.0:
-    resolution: {integrity: sha1-2+w7OrdZdYBxtY/ln8QYca8hQA4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/locate-path/download/locate-path-3.0.0.tgz}
+    resolution: {integrity: sha1-2+w7OrdZdYBxtY/ln8QYca8hQA4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/locate-path/download/locate-path-3.0.0.tgz?cache=0&sync_timestamp=1631544439519&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flocate-path%2Fdownload%2Flocate-path-3.0.0.tgz}
     name: locate-path
     version: 3.0.0
     engines: {node: '>=6'}
     dependencies:
       p-locate: registry.nlark.com/p-locate/3.0.0
-      path-exists: registry.nlark.com/path-exists/3.0.0
+      path-exists: registry.npmmirror.com/path-exists/3.0.0
     dev: false
 
   registry.nlark.com/locate-path/5.0.0:
@@ -5467,7 +5428,7 @@ packages:
       p-locate: registry.nlark.com/p-locate/4.1.0
 
   registry.nlark.com/locate-path/6.0.0:
-    resolution: {integrity: sha1-VTIeswn+u8WcSAHZMackUqaB0oY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/locate-path/download/locate-path-6.0.0.tgz}
+    resolution: {integrity: sha1-VTIeswn+u8WcSAHZMackUqaB0oY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/locate-path/download/locate-path-6.0.0.tgz?cache=0&sync_timestamp=1631544439519&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flocate-path%2Fdownload%2Flocate-path-6.0.0.tgz}
     name: locate-path
     version: 6.0.0
     engines: {node: '>=10'}
@@ -6536,19 +6497,6 @@ packages:
     dependencies:
       no-case: registry.nlark.com/no-case/2.3.2
     dev: false
-
-  registry.nlark.com/path-exists/3.0.0:
-    resolution: {integrity: sha1-zg6+ql94yxiSXqfYENe1mwEP1RU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/path-exists/download/path-exists-3.0.0.tgz}
-    name: path-exists
-    version: 3.0.0
-    engines: {node: '>=4'}
-    dev: false
-
-  registry.nlark.com/path-exists/4.0.0:
-    resolution: {integrity: sha1-UTvb4tO5XXdi6METfvoZXGxhtbM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/path-exists/download/path-exists-4.0.0.tgz}
-    name: path-exists
-    version: 4.0.0
-    engines: {node: '>=8'}
 
   registry.nlark.com/path-is-absolute/1.0.1:
     resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/path-is-absolute/download/path-is-absolute-1.0.1.tgz}
@@ -14228,7 +14176,7 @@ packages:
     name: '@types/glob'
     version: 5.0.37
     dependencies:
-      '@types/minimatch': registry.nlark.com/@types/minimatch/3.0.5
+      '@types/minimatch': registry.npmmirror.com/@types/minimatch/3.0.5
       '@types/node': registry.npmmirror.com/@types/node/16.11.17
     dev: false
 
@@ -14237,7 +14185,7 @@ packages:
     name: '@types/glob'
     version: 7.2.0
     dependencies:
-      '@types/minimatch': registry.nlark.com/@types/minimatch/3.0.5
+      '@types/minimatch': registry.npmmirror.com/@types/minimatch/3.0.5
       '@types/node': registry.npmmirror.com/@types/node/16.11.17
     dev: false
 
@@ -14307,6 +14255,11 @@ packages:
     dependencies:
       '@types/unist': registry.npmmirror.com/@types/unist/2.0.6
     dev: false
+
+  registry.npmmirror.com/@types/minimatch/3.0.5:
+    resolution: {integrity: sha1-EAHMXmo3BLg8I2An538vWOoBD0A=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/minimatch/download/@types/minimatch-3.0.5.tgz}
+    name: '@types/minimatch'
+    version: 3.0.5
 
   registry.npmmirror.com/@types/minimist/1.2.2:
     resolution: {integrity: sha1-7nceK6Sz3Fs3KTXVSf2WF780W4w=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/minimist/download/@types/minimist-1.2.2.tgz}
@@ -14825,13 +14778,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       color-convert: registry.nlark.com/color-convert/2.0.1
-
-  registry.npmmirror.com/ansi-styles/5.2.0:
-    resolution: {integrity: sha1-B0SWkK1Fd30ZJKwquy/IiV26g2s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ansi-styles/download/ansi-styles-5.2.0.tgz}
-    name: ansi-styles
-    version: 5.2.0
-    engines: {node: '>=10'}
-    dev: true
 
   registry.npmmirror.com/application-config-path/0.1.0:
     resolution: {integrity: sha1-GTxfCoZUGkxm+6Hi3DhYM2LqXo8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/application-config-path/download/application-config-path-0.1.0.tgz}
@@ -15685,6 +15631,21 @@ packages:
     version: 1.1.0
     engines: {node: '>=0.10.0'}
     dev: false
+
+  registry.npmmirror.com/color-convert/1.9.3:
+    resolution: {integrity: sha1-u3GFBpDh8TZWfeYp0tVHHe2kweg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/color-convert/download/color-convert-1.9.3.tgz}
+    name: color-convert
+    version: 1.9.3
+    dependencies:
+      color-name: registry.nlark.com/color-name/1.1.3
+
+  registry.npmmirror.com/color-convert/2.0.1:
+    resolution: {integrity: sha1-ctOmjVmMm9s68q0ehPIdiWq9TeM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/color-convert/download/color-convert-2.0.1.tgz}
+    name: color-convert
+    version: 2.0.1
+    engines: {node: '>=7.0.0'}
+    dependencies:
+      color-name: registry.nlark.com/color-name/1.1.4
 
   registry.npmmirror.com/colord/2.9.1:
     resolution: {integrity: sha1-yWHqDv61fJ8PSDRFjybLnMSj+Q4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/colord/download/colord-2.9.1.tgz}
@@ -16744,6 +16705,23 @@ packages:
       strip-eof: registry.nlark.com/strip-eof/1.0.0
     dev: false
 
+  registry.npmmirror.com/execa/4.1.0:
+    resolution: {integrity: sha1-TlSRrRVy8vF6d9OIxshXE1sihHo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/execa/download/execa-4.1.0.tgz?cache=0&sync_timestamp=1637147746966&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fexeca%2Fdownload%2Fexeca-4.1.0.tgz}
+    name: execa
+    version: 4.1.0
+    engines: {node: '>=10'}
+    dependencies:
+      cross-spawn: registry.nlark.com/cross-spawn/7.0.3
+      get-stream: registry.nlark.com/get-stream/5.2.0
+      human-signals: registry.nlark.com/human-signals/1.1.1
+      is-stream: registry.nlark.com/is-stream/2.0.1
+      merge-stream: registry.nlark.com/merge-stream/2.0.0
+      npm-run-path: registry.npmmirror.com/npm-run-path/4.0.1
+      onetime: registry.nlark.com/onetime/5.1.2
+      signal-exit: registry.npmmirror.com/signal-exit/3.0.5
+      strip-final-newline: registry.nlark.com/strip-final-newline/2.0.0
+    dev: true
+
   registry.npmmirror.com/execa/5.1.1:
     resolution: {integrity: sha1-+ArZy/Qpj3vR1MlVXCHpN0HEEd0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/execa/download/execa-5.1.1.tgz?cache=0&sync_timestamp=1637147746966&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fexeca%2Fdownload%2Fexeca-5.1.1.tgz}
     name: execa
@@ -16889,16 +16867,16 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       locate-path: registry.nlark.com/locate-path/5.0.0
-      path-exists: registry.nlark.com/path-exists/4.0.0
+      path-exists: registry.npmmirror.com/path-exists/4.0.0
 
   registry.npmmirror.com/find-up/5.0.0:
-    resolution: {integrity: sha1-TJKBnstwg1YeT0okCoa+UZj1Nvw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/find-up/download/find-up-5.0.0.tgz?cache=0&sync_timestamp=1633655000997&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ffind-up%2Fdownload%2Ffind-up-5.0.0.tgz}
+    resolution: {integrity: sha1-TJKBnstwg1YeT0okCoa+UZj1Nvw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/find-up/download/find-up-5.0.0.tgz?cache=0&sync_timestamp=1633681678430&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ffind-up%2Fdownload%2Ffind-up-5.0.0.tgz}
     name: find-up
     version: 5.0.0
     engines: {node: '>=10'}
     dependencies:
       locate-path: registry.nlark.com/locate-path/6.0.0
-      path-exists: registry.nlark.com/path-exists/4.0.0
+      path-exists: registry.npmmirror.com/path-exists/4.0.0
     dev: true
 
   registry.npmmirror.com/fs-constants/1.0.0:
@@ -20003,7 +19981,7 @@ packages:
     version: 4.0.0
     engines: {node: '>=8'}
     dependencies:
-      '@types/minimatch': registry.nlark.com/@types/minimatch/3.0.5
+      '@types/minimatch': registry.npmmirror.com/@types/minimatch/3.0.5
       array-differ: registry.nlark.com/array-differ/3.0.0
       array-union: registry.nlark.com/array-union/2.1.0
       arrify: registry.nlark.com/arrify/2.0.1
@@ -20438,6 +20416,19 @@ packages:
       cross-spawn: registry.nlark.com/cross-spawn/6.0.5
     dev: false
 
+  registry.npmmirror.com/path-exists/3.0.0:
+    resolution: {integrity: sha1-zg6+ql94yxiSXqfYENe1mwEP1RU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/path-exists/download/path-exists-3.0.0.tgz}
+    name: path-exists
+    version: 3.0.0
+    engines: {node: '>=4'}
+    dev: false
+
+  registry.npmmirror.com/path-exists/4.0.0:
+    resolution: {integrity: sha1-UTvb4tO5XXdi6METfvoZXGxhtbM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/path-exists/download/path-exists-4.0.0.tgz}
+    name: path-exists
+    version: 4.0.0
+    engines: {node: '>=8'}
+
   registry.npmmirror.com/physical-cpu-count/2.0.0:
     resolution: {integrity: sha1-GN4vl+S/epVRrXURlCtUlverpmA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/physical-cpu-count/download/physical-cpu-count-2.0.0.tgz}
     name: physical-cpu-count
@@ -20597,22 +20588,22 @@ packages:
     dependencies:
       '@jest/types': registry.npmmirror.com/@jest/types/27.4.2
       ansi-regex: registry.npmmirror.com/ansi-regex/5.0.1
-      ansi-styles: registry.npmmirror.com/ansi-styles/5.2.0
+      ansi-styles: registry.nlark.com/ansi-styles/5.2.0
       react-is: registry.npmmirror.com/react-is/17.0.2
     dev: true
 
-  registry.npmmirror.com/pretty-quick/3.1.2_prettier@2.5.1:
-    resolution: {integrity: sha512-T+fpTJrDjTzewql4p3lKrRA7z3MrNyjBK1MKeaBm5PpKwATgVm885TpY7TgY8KFt5Q1Qn3QDseRQcyX9AKTKkA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pretty-quick/download/pretty-quick-3.1.2.tgz}
-    id: registry.npmmirror.com/pretty-quick/3.1.2
+  registry.npmmirror.com/pretty-quick/3.1.3_prettier@2.5.1:
+    resolution: {integrity: sha512-kOCi2FJabvuh1as9enxYmrnBC6tVMoVOenMaBqRfsvBHB0cbpYHjdQEpSglpASDFEXVwplpcGR4CLEaisYAFcA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pretty-quick/download/pretty-quick-3.1.3.tgz}
+    id: registry.npmmirror.com/pretty-quick/3.1.3
     name: pretty-quick
-    version: 3.1.2
+    version: 3.1.3
     engines: {node: '>=10.13'}
     hasBin: true
     peerDependencies:
       prettier: '>=2.0.0'
     dependencies:
-      chalk: registry.nlark.com/chalk/3.0.0
-      execa: registry.nlark.com/execa/4.1.0
+      chalk: registry.npmmirror.com/chalk/3.0.0
+      execa: registry.npmmirror.com/execa/4.1.0
       find-up: registry.npmmirror.com/find-up/4.1.0
       ignore: registry.npmmirror.com/ignore/5.1.8
       mri: registry.nlark.com/mri/1.2.0
