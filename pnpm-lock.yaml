@@ -33,7 +33,7 @@ specifiers:
   axios: 0.24.0
   babel-jest: 27.4.5
   babel-preset-gatsby: 1.14.0
-  date-fns: 2.27.0
+  date-fns: 2.28.0
   dotenv: 10.0.0
   execa: 5.1.1
   facepaint: 1.2.1
@@ -161,7 +161,7 @@ devDependencies:
   axios: registry.npmmirror.com/axios/0.24.0
   babel-jest: registry.npmmirror.com/babel-jest/27.4.5
   babel-preset-gatsby: registry.npmmirror.com/babel-preset-gatsby/1.14.0
-  date-fns: registry.npmmirror.com/date-fns/2.27.0
+  date-fns: registry.npmmirror.com/date-fns/2.28.0
   dotenv: registry.nlark.com/dotenv/10.0.0
   execa: registry.nlark.com/execa/5.1.1
   fs-extra: registry.nlark.com/fs-extra/10.0.0
@@ -16009,10 +16009,10 @@ packages:
     version: 2.0.0
     dev: false
 
-  registry.npmmirror.com/date-fns/2.27.0:
-    resolution: {integrity: sha512-sj+J0Mo2p2X1e306MHq282WS4/A8Pz/95GIFcsPNMPMZVI3EUrAdSv90al1k+p74WGLCruMXk23bfEDZa71X9Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/date-fns/download/date-fns-2.27.0.tgz}
+  registry.npmmirror.com/date-fns/2.28.0:
+    resolution: {integrity: sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/date-fns/download/date-fns-2.28.0.tgz}
     name: date-fns
-    version: 2.27.0
+    version: 2.28.0
     engines: {node: '>=0.11'}
 
   registry.npmmirror.com/debug/2.6.9:
@@ -17682,7 +17682,7 @@ packages:
       css-loader: registry.npmmirror.com/css-loader/5.2.7_webpack@5.61.0
       css-minimizer-webpack-plugin: registry.npmmirror.com/css-minimizer-webpack-plugin/2.0.0_webpack@5.61.0
       css.escape: registry.nlark.com/css.escape/1.5.1
-      date-fns: registry.npmmirror.com/date-fns/2.27.0
+      date-fns: registry.npmmirror.com/date-fns/2.28.0
       debug: registry.nlark.com/debug/3.2.7
       deepmerge: registry.nlark.com/deepmerge/4.2.2
       del: registry.nlark.com/del/5.1.0
