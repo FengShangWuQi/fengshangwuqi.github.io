@@ -124,7 +124,7 @@
     "@types/figlet": "1.5.4",
     "@types/fs-extra": "9.0.13",
     "@types/gh-pages": "3.2.0",
-    "@types/jest": "27.0.3",
+    "@types/jest": "27.4.0",
     "@types/lodash": "4.14.178",
     "@types/node": "16.11.19",
     "@types/react": "17.0.38",
