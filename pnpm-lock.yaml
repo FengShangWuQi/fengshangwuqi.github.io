@@ -76,7 +76,7 @@ specifiers:
   polished: 4.1.3
   prettier: 2.5.1
   pretty-quick: 3.1.3
-  prismjs: 1.25.0
+  prismjs: 1.26.0
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet-async: 1.2.2
@@ -118,7 +118,7 @@ dependencies:
   gatsby-remark-emojis: registry.nlark.com/gatsby-remark-emojis/0.4.3
   gatsby-remark-external-links: registry.nlark.com/gatsby-remark-external-links/0.0.4
   gatsby-remark-images: registry.npmmirror.com/gatsby-remark-images/5.11.0_bcc3bff25565a1f31464c0adbf6ead25
-  gatsby-remark-prismjs: registry.npmmirror.com/gatsby-remark-prismjs/5.11.0_gatsby@3.14.0+prismjs@1.25.0
+  gatsby-remark-prismjs: registry.npmmirror.com/gatsby-remark-prismjs/5.11.0_gatsby@3.14.0+prismjs@1.26.0
   gatsby-remark-responsive-iframe: registry.npmmirror.com/gatsby-remark-responsive-iframe/4.11.0_gatsby@3.14.0
   gatsby-remark-smartypants: registry.npmmirror.com/gatsby-remark-smartypants/4.11.0_gatsby@3.14.0
   gatsby-source-filesystem: registry.npmmirror.com/gatsby-source-filesystem/3.14.0_gatsby@3.14.0
@@ -127,7 +127,7 @@ dependencies:
   lmdb-store: registry.npmmirror.com/lmdb-store/1.6.14
   lodash: registry.nlark.com/lodash/4.17.21
   polished: registry.nlark.com/polished/4.1.3
-  prismjs: registry.nlark.com/prismjs/1.25.0
+  prismjs: registry.npmmirror.com/prismjs/1.26.0
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.npmmirror.com/react-helmet-async/1.2.2_react-dom@17.0.2+react@17.0.2
@@ -7251,12 +7251,6 @@ packages:
     name: pretty-bytes
     version: 5.6.0
     engines: {node: '>=6'}
-    dev: false
-
-  registry.nlark.com/prismjs/1.25.0:
-    resolution: {integrity: sha1-b4It8b2tllc0sxCzFaIzFc+Zl1Y=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/prismjs/download/prismjs-1.25.0.tgz}
-    name: prismjs
-    version: 1.25.0
     dev: false
 
   registry.nlark.com/progress/2.0.3:
@@ -17652,7 +17646,7 @@ packages:
       unist-util-visit-parents: registry.nlark.com/unist-util-visit-parents/3.1.1
     dev: false
 
-  registry.npmmirror.com/gatsby-remark-prismjs/5.11.0_gatsby@3.14.0+prismjs@1.25.0:
+  registry.npmmirror.com/gatsby-remark-prismjs/5.11.0_gatsby@3.14.0+prismjs@1.26.0:
     resolution: {integrity: sha1-yoI7e13vBqW00z6Nji4RJkUfaz8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/gatsby-remark-prismjs/download/gatsby-remark-prismjs-5.11.0.tgz}
     id: registry.npmmirror.com/gatsby-remark-prismjs/5.11.0
     name: gatsby-remark-prismjs
@@ -17665,7 +17659,7 @@ packages:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.0
       gatsby: registry.npmmirror.com/gatsby/3.14.0_b97d23c57ad98e15bbe9b8bfb079883e
       parse-numeric-range: registry.npmmirror.com/parse-numeric-range/1.3.0
-      prismjs: registry.nlark.com/prismjs/1.25.0
+      prismjs: registry.npmmirror.com/prismjs/1.26.0
       unist-util-visit: registry.npmmirror.com/unist-util-visit/2.0.3
     dev: false
 
@@ -20696,6 +20690,13 @@ packages:
       multimatch: registry.npmmirror.com/multimatch/4.0.0
       prettier: registry.npmmirror.com/prettier/2.5.1
     dev: true
+
+  registry.npmmirror.com/prismjs/1.26.0:
+    resolution: {integrity: sha512-HUoH9C5Z3jKkl3UunCyiD5jwk0+Hz0fIgQ2nbwU2Oo/ceuTAQAg+pPVnfdt2TJWRVLcxKh9iuoYDUSc8clb5UQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prismjs/download/prismjs-1.26.0.tgz}
+    name: prismjs
+    version: 1.26.0
+    engines: {node: '>=6'}
+    dev: false
 
   registry.npmmirror.com/probe-image-size/6.0.0:
     resolution: {integrity: sha1-SoWxnVr04pqN59U6mqA29v0C9fQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/probe-image-size/download/probe-image-size-6.0.0.tgz}
