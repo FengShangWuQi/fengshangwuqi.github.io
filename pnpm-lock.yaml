@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/plugin-transform-typescript': 7.16.7
+  '@babel/plugin-transform-typescript': 7.16.8
   '@commitlint/cli': 15.0.0
   '@commitlint/config-conventional': 15.0.0
   '@emotion/is-prop-valid': 1.1.1
@@ -136,7 +136,7 @@ dependencies:
   rxjs: registry.npmmirror.com/rxjs/7.5.1
 
 devDependencies:
-  '@babel/plugin-transform-typescript': registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.7
+  '@babel/plugin-transform-typescript': registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.8
   '@commitlint/cli': registry.npmmirror.com/@commitlint/cli/15.0.0
   '@commitlint/config-conventional': registry.npmmirror.com/@commitlint/config-conventional/15.0.0
   '@fengshangwuqi/appkit': registry.npmmirror.com/@fengshangwuqi/appkit/1.1.50_c0a8ca172db2ce87bc71f1a1cb132fc8
@@ -12003,10 +12003,10 @@ packages:
       '@babel/helper-plugin-utils': registry.npmmirror.com/@babel/helper-plugin-utils/7.16.7
     dev: false
 
-  registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.7:
-    resolution: {integrity: sha512-Hzx1lvBtOCWuCEwMmYOfpQpO7joFeXLgoPuzZZBtTxXqSqUGUubvFGZv2ygo1tB5Bp9q6PXV3H0E/kf7KM0RLA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-typescript/download/@babel/plugin-transform-typescript-7.16.7.tgz}
+  registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.8:
+    resolution: {integrity: sha512-bHdQ9k7YpBDO2d0NVfkj51DpQcvwIzIusJ7mEUaMlbZq3Kt/U47j24inXZHQ5MDiYpCs+oZiwnXyKedE8+q7AQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-typescript/download/@babel/plugin-transform-typescript-7.16.8.tgz}
     name: '@babel/plugin-transform-typescript'
-    version: 7.16.7
+    version: 7.16.8
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -12018,11 +12018,11 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.7_@babel+core@7.16.0:
-    resolution: {integrity: sha512-Hzx1lvBtOCWuCEwMmYOfpQpO7joFeXLgoPuzZZBtTxXqSqUGUubvFGZv2ygo1tB5Bp9q6PXV3H0E/kf7KM0RLA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-typescript/download/@babel/plugin-transform-typescript-7.16.7.tgz}
-    id: registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.7
+  registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.8_@babel+core@7.16.0:
+    resolution: {integrity: sha512-bHdQ9k7YpBDO2d0NVfkj51DpQcvwIzIusJ7mEUaMlbZq3Kt/U47j24inXZHQ5MDiYpCs+oZiwnXyKedE8+q7AQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-typescript/download/@babel/plugin-transform-typescript-7.16.8.tgz}
+    id: registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.8
     name: '@babel/plugin-transform-typescript'
-    version: 7.16.7
+    version: 7.16.8
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -12335,7 +12335,7 @@ packages:
       '@babel/core': registry.npmmirror.com/@babel/core/7.16.0
       '@babel/helper-plugin-utils': registry.npmmirror.com/@babel/helper-plugin-utils/7.16.7
       '@babel/helper-validator-option': registry.npmmirror.com/@babel/helper-validator-option/7.14.5
-      '@babel/plugin-transform-typescript': registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.7_@babel+core@7.16.0
+      '@babel/plugin-transform-typescript': registry.npmmirror.com/@babel/plugin-transform-typescript/7.16.8_@babel+core@7.16.0
     transitivePeerDependencies:
       - supports-color
     dev: false
