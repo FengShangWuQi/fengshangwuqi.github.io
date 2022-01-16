@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Jan 2022 04:26:15 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#19 @ Modern.js、Gatsby v4、Meta]]></title><description><![CDATA[前端动态 1、 深度解读字节跳动 Web Infra 发起的 Modern.js 开源项⽬ 10  ⽉  27-28  ⽇举办的稀⼟开发者⼤会 上，字节跳动  Web Infra…]]></description><link>https://blog.fengshangwuqi.com/issue-19/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/issue-19/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 31 Oct 2021 00:00:00 GMT</pubDate><content:encoded>var _excluded = [&quot;components&quot;];
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 Jan 2022 04:25:32 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#19 @ Modern.js、Gatsby v4、Meta]]></title><description><![CDATA[前端动态 1、 深度解读字节跳动 Web Infra 发起的 Modern.js 开源项⽬ 10  ⽉  27-28  ⽇举办的稀⼟开发者⼤会 上，字节跳动  Web Infra…]]></description><link>https://blog.fengshangwuqi.com/issue-19/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/issue-19/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 31 Oct 2021 00:00:00 GMT</pubDate><content:encoded>var _excluded = [&quot;components&quot;];
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -9582,7 +9582,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;n&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -9612,7 +9615,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;n&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -10534,7 +10540,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;n&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -10558,7 +10567,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;n&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -11118,7 +11130,10 @@ return function MDXContent(_ref) {
   }, &quot;,&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; name&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;name&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -11127,7 +11142,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;Michel Weststrate\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot; country&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;country&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -11211,7 +11229,10 @@ return function MDXContent(_ref) {
   }, &quot;const&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; data&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;data&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; user &quot;, mdx(&quot;span&quot;, {
@@ -11241,7 +11262,10 @@ return function MDXContent(_ref) {
   }, &quot;const&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; data&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;data&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; projects &quot;, mdx(&quot;span&quot;, {
@@ -11849,7 +11873,10 @@ return function MDXContent(_ref) {
   }, &quot;,&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;)), &quot;  method&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;)), &quot;  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;method&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -11858,7 +11885,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;POST\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  body&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;body&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -12409,7 +12439,10 @@ return function MDXContent(_ref) {
   }, &quot;{&quot;), &quot;\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;gatsby-highlight-code-line&quot;
-  }, &quot;    action&quot;, mdx(&quot;span&quot;, {
+  }, &quot;    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;span&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;action&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -13246,7 +13279,10 @@ return function MDXContent(_ref) {
   }, &quot;,&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;)), &quot;      method&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;)), &quot;      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;method&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -13255,7 +13291,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;POST\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n      body&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;body&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -13444,7 +13483,10 @@ return function MDXContent(_ref) {
   }, &quot;,&quot;)), &quot;      &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n        method&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n        &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;method&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -13663,7 +13705,10 @@ return function MDXContent(_ref) {
   }, &quot;(&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n      action&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;action&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -13672,7 +13717,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;getCurrContent\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n      payload&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;payload&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -13753,7 +13801,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n        current&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n        &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;current&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; paths&quot;, mdx(&quot;span&quot;, {
@@ -13777,7 +13828,10 @@ return function MDXContent(_ref) {
   }, &quot;1&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n        total&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n        &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;total&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; paths&quot;, mdx(&quot;span&quot;, {
@@ -14406,7 +14460,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; theme&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;theme&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -27018,7 +27075,10 @@ return function MDXContent(_ref) {
   }, &quot;const&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; component&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;component&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; Component&quot;, mdx(&quot;span&quot;, {
@@ -27282,7 +27342,10 @@ return function MDXContent(_ref) {
   }, &quot;(&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n  pending&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;pending&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; loggedUserState&quot;, mdx(&quot;span&quot;, {
@@ -27291,7 +27354,10 @@ return function MDXContent(_ref) {
   }, &quot;.&quot;), &quot;pending&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  logged&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;logged&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; loggedUserState&quot;, mdx(&quot;span&quot;, {
@@ -27638,7 +27704,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    focused&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;focused&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -27776,7 +27845,10 @@ return function MDXContent(_ref) {
   }, &quot;(&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n      focused&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;focused&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28154,7 +28226,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    disabled&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;disabled&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28235,7 +28310,10 @@ return function MDXContent(_ref) {
   }, &quot;(&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; disabled&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;disabled&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28274,7 +28352,10 @@ return function MDXContent(_ref) {
   }, &quot;(&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; disabled&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;disabled&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28595,13 +28676,19 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n  App&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;App&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    display&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;display&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28610,7 +28697,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;flex\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    justifyContent&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;justifyContent&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28625,13 +28715,19 @@ return function MDXContent(_ref) {
   }, &quot;}&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  input&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;input&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    marginRight&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;marginRight&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28640,7 +28736,10 @@ return function MDXContent(_ref) {
   }, &quot;10&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    padding&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;padding&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28649,7 +28748,10 @@ return function MDXContent(_ref) {
   }, &quot;10&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    width&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;width&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28658,7 +28760,10 @@ return function MDXContent(_ref) {
   }, &quot;190&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    fontSize&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;fontSize&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28667,7 +28772,10 @@ return function MDXContent(_ref) {
   }, &quot;20&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    border&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;border&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28676,7 +28784,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;none\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    backgroundColor&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;backgroundColor&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28685,7 +28796,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;#ddd\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    outline&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;outline&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28700,13 +28814,19 @@ return function MDXContent(_ref) {
   }, &quot;}&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  button&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;button&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    width&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;width&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28715,7 +28835,10 @@ return function MDXContent(_ref) {
   }, &quot;90&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    height&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;height&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28724,7 +28847,10 @@ return function MDXContent(_ref) {
   }, &quot;43&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    fontSize&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;fontSize&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28733,7 +28859,10 @@ return function MDXContent(_ref) {
   }, &quot;17&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    border&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;border&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28742,7 +28871,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;none\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    borderRadius&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;borderRadius&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28751,7 +28883,10 @@ return function MDXContent(_ref) {
   }, &quot;4&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    transition&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;transition&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28760,7 +28895,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;.25s all\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    cursor&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;cursor&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28775,13 +28913,19 @@ return function MDXContent(_ref) {
   }, &quot;}&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  buttonEnabled&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;buttonEnabled&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    width&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;width&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28790,7 +28934,10 @@ return function MDXContent(_ref) {
   }, &quot;120&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    backgroundColor&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;backgroundColor&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28910,7 +29057,10 @@ return function MDXContent(_ref) {
   }, &quot;{&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; x&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;span&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;x&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -28988,7 +29138,10 @@ return function MDXContent(_ref) {
   }, &quot;{&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; transform&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;span&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;transform&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29180,7 +29333,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    height&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;height&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29237,7 +29393,10 @@ return function MDXContent(_ref) {
   }, &quot;(&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; height&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;height&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; state&quot;, mdx(&quot;span&quot;, {
@@ -29423,7 +29582,10 @@ return function MDXContent(_ref) {
   }, &quot;{&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; height&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;span&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;height&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29903,13 +30065,19 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n  menu&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;menu&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    marginTop&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;marginTop&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29918,7 +30086,10 @@ return function MDXContent(_ref) {
   }, &quot;20&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    width&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;width&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29927,7 +30098,10 @@ return function MDXContent(_ref) {
   }, &quot;300&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    border&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;border&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29936,7 +30110,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;2px solid #ddd\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    overflow&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;overflow&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29951,13 +30128,19 @@ return function MDXContent(_ref) {
   }, &quot;}&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  button&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;button&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    display&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;display&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29966,7 +30149,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;flex\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    width&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;width&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29975,7 +30161,10 @@ return function MDXContent(_ref) {
   }, &quot;200&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    height&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;height&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29984,7 +30173,10 @@ return function MDXContent(_ref) {
   }, &quot;45&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    justifyContent&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;justifyContent&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -29993,7 +30185,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;center\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    alignItems&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;alignItems&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30002,7 +30197,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;center\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    border&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;border&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30011,7 +30209,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;none\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    borderRadius&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;borderRadius&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30020,7 +30221,10 @@ return function MDXContent(_ref) {
   }, &quot;4&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    backgroundColor&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;backgroundColor&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30029,7 +30233,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;#ffc107\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    cursor&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;cursor&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30044,13 +30251,19 @@ return function MDXContent(_ref) {
   }, &quot;}&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  selection&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;selection&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    margin&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;margin&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30059,7 +30272,10 @@ return function MDXContent(_ref) {
   }, &quot;0&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    padding&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;padding&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30068,7 +30284,10 @@ return function MDXContent(_ref) {
   }, &quot;10&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    borderBottom&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;borderBottom&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30346,7 +30565,10 @@ return function MDXContent(_ref) {
   }, &quot;,&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n      toValue&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;toValue&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30355,7 +30577,10 @@ return function MDXContent(_ref) {
   }, &quot;1&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n      duration&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;duration&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30364,7 +30589,10 @@ return function MDXContent(_ref) {
   }, &quot;1000&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n      easing&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;easing&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; Easing&quot;, mdx(&quot;span&quot;, {
@@ -30448,7 +30676,10 @@ return function MDXContent(_ref) {
   }, &quot;(&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n      inputRange&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;inputRange&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30469,7 +30700,10 @@ return function MDXContent(_ref) {
   }, &quot;]&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n      outputRange&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n      &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;outputRange&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30655,7 +30889,10 @@ return function MDXContent(_ref) {
   }, &quot;,&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n            opacity&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n            &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;span&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;opacity&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30763,13 +31000,19 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n  button&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;button&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    display&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;display&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30778,7 +31021,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;flex\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    width&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;width&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30787,7 +31033,10 @@ return function MDXContent(_ref) {
   }, &quot;125&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    height&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;height&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30796,7 +31045,10 @@ return function MDXContent(_ref) {
   }, &quot;50&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    justifyContent&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;justifyContent&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30805,7 +31057,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;center\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    alignItems&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;alignItems&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30814,7 +31069,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;center\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    border&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;border&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30823,7 +31081,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;none\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    borderRadius&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;borderRadius&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30832,7 +31093,10 @@ return function MDXContent(_ref) {
   }, &quot;4&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    backgroundColor&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;backgroundColor&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30841,7 +31105,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;#ffc107\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    cursor&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;cursor&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30856,13 +31123,19 @@ return function MDXContent(_ref) {
   }, &quot;}&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  box&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;box&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    display&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;display&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30871,7 +31144,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;inline-block\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    marginTop&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;marginTop&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30880,7 +31156,10 @@ return function MDXContent(_ref) {
   }, &quot;10&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    padding&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;padding&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30889,7 +31168,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;0.6rem 2rem\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    fontSize&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;fontSize&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30898,7 +31180,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;0.8rem\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    border&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;border&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30907,7 +31192,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;1px #eee solid\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    borderRadius&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;borderRadius&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -30916,7 +31204,10 @@ return function MDXContent(_ref) {
   }, &quot;4&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    boxShadow&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;boxShadow&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31085,7 +31376,10 @@ return function MDXContent(_ref) {
   }, &quot;{&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; opacity&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;span&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;opacity&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31282,7 +31576,10 @@ return function MDXContent(_ref) {
   }, &quot;{&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; opacity&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;span&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;opacity&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31291,7 +31588,10 @@ return function MDXContent(_ref) {
   }, &quot;1&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot; marginTop&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;span&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;marginTop&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;span&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31420,7 +31720,10 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    letters&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;letters&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31594,7 +31897,10 @@ return function MDXContent(_ref) {
   }, &quot;(&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot; letters&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;letters&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; arr &quot;, mdx(&quot;span&quot;, {
@@ -31852,13 +32158,19 @@ return function MDXContent(_ref) {
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n  input&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;input&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    marginBottom&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;marginBottom&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31867,7 +32179,10 @@ return function MDXContent(_ref) {
   }, &quot;20&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    padding&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;padding&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31876,7 +32191,10 @@ return function MDXContent(_ref) {
   }, &quot;8&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    width&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;width&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31885,7 +32203,10 @@ return function MDXContent(_ref) {
   }, &quot;200&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    height&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;height&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31894,7 +32215,10 @@ return function MDXContent(_ref) {
   }, &quot;40&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    fontSize&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;fontSize&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31903,7 +32227,10 @@ return function MDXContent(_ref) {
   }, &quot;22&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    backgroundColor&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;backgroundColor&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31912,7 +32239,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;#ddd\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    border&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;border&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31921,7 +32251,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;none\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    outline&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;outline&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31936,13 +32269,19 @@ return function MDXContent(_ref) {
   }, &quot;}&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  letters&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;letters&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    display&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;display&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31951,7 +32290,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;flex\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    height&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;height&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31966,13 +32308,19 @@ return function MDXContent(_ref) {
   }, &quot;}&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n  letter&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n  &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;letter&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;{&quot;), &quot;\n    marginTop&quot;, mdx(&quot;span&quot;, {
+  }, &quot;{&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;marginTop&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31981,7 +32329,10 @@ return function MDXContent(_ref) {
   }, &quot;100&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    fontSize&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;fontSize&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31990,7 +32341,10 @@ return function MDXContent(_ref) {
   }, &quot;22&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    whiteSpace&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;whiteSpace&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -31999,7 +32353,10 @@ return function MDXContent(_ref) {
   }, &quot;\&quot;pre\&quot;&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
-  }, &quot;,&quot;), &quot;\n    opacity&quot;, mdx(&quot;span&quot;, {
+  }, &quot;,&quot;), &quot;\n    &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token literal-property property&quot;
+  }, &quot;opacity&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;:&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
