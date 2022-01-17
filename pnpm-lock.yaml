@@ -65,7 +65,7 @@ specifiers:
   gatsby-source-filesystem: 3.14.0
   gatsby-transformer-sharp: 3.14.0
   gh-pages: 3.2.3
-  globby: 11.1.0
+  globby: 12.2.0
   gray-matter: 4.0.3
   husky: 7.0.4
   immer: 9.0.12
@@ -166,7 +166,7 @@ devDependencies:
   execa: registry.nlark.com/execa/5.1.1
   fs-extra: registry.nlark.com/fs-extra/10.0.0
   gh-pages: registry.nlark.com/gh-pages/3.2.3
-  globby: registry.npmmirror.com/globby/11.1.0
+  globby: registry.npmmirror.com/globby/12.2.0
   gray-matter: registry.npmmirror.com/gray-matter/4.0.3
   husky: registry.npmmirror.com/husky/7.0.4
   jest: registry.npmmirror.com/jest/27.4.7_ts-node@10.4.0
@@ -1568,6 +1568,13 @@ packages:
     name: array-union
     version: 2.1.0
     engines: {node: '>=8'}
+
+  registry.nlark.com/array-union/3.0.1:
+    resolution: {integrity: sha1-2lJjDTJ/i4jPv7V3KOKvXNm2uXU=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/array-union/download/array-union-3.0.1.tgz}
+    name: array-union
+    version: 3.0.1
+    engines: {node: '>=12'}
+    dev: true
 
   registry.nlark.com/array-uniq/1.0.3:
     resolution: {integrity: sha1-r2rId6Jcx/dOBYiUdThY39sk/bY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/array-uniq/download/array-uniq-1.0.3.tgz}
@@ -7984,6 +7991,7 @@ packages:
     name: slash
     version: 3.0.0
     engines: {node: '>=8'}
+    dev: true
 
   registry.nlark.com/slice-ansi/3.0.0:
     resolution: {integrity: sha1-Md3BCTCht+C2ewjJbC9Jt3p4l4c=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/slice-ansi/download/slice-ansi-3.0.0.tgz}
@@ -17941,7 +17949,7 @@ packages:
       fast-glob: registry.npmmirror.com/fast-glob/3.2.9
       ignore: registry.npmmirror.com/ignore/5.2.0
       merge2: registry.nlark.com/merge2/1.4.1
-      slash: registry.nlark.com/slash/3.0.0
+      slash: registry.npmmirror.com/slash/3.0.0
     dev: false
 
   registry.npmmirror.com/globby/11.0.3:
@@ -17955,7 +17963,7 @@ packages:
       fast-glob: registry.npmmirror.com/fast-glob/3.2.9
       ignore: registry.npmmirror.com/ignore/5.2.0
       merge2: registry.nlark.com/merge2/1.4.1
-      slash: registry.nlark.com/slash/3.0.0
+      slash: registry.npmmirror.com/slash/3.0.0
     dev: false
 
   registry.npmmirror.com/globby/11.1.0:
@@ -17970,6 +17978,20 @@ packages:
       ignore: registry.npmmirror.com/ignore/5.2.0
       merge2: registry.nlark.com/merge2/1.4.1
       slash: registry.npmmirror.com/slash/3.0.0
+
+  registry.npmmirror.com/globby/12.2.0:
+    resolution: {integrity: sha512-wiSuFQLZ+urS9x2gGPl1H5drc5twabmm4m2gTR27XDFyjUHJUNsS8o/2aKyIF6IoBaR630atdher0XJ5g6OMmA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/globby/download/globby-12.2.0.tgz}
+    name: globby
+    version: 12.2.0
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      array-union: registry.nlark.com/array-union/3.0.1
+      dir-glob: registry.nlark.com/dir-glob/3.0.1
+      fast-glob: registry.npmmirror.com/fast-glob/3.2.9
+      ignore: registry.npmmirror.com/ignore/5.2.0
+      merge2: registry.nlark.com/merge2/1.4.1
+      slash: registry.npmmirror.com/slash/4.0.0
+    dev: true
 
   registry.npmmirror.com/globby/6.1.0:
     resolution: {integrity: sha1-9abXDoOV4hyFj7BInWTfAkJNUGw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/globby/download/globby-6.1.0.tgz}
@@ -18378,7 +18400,7 @@ packages:
     dev: false
 
   registry.npmmirror.com/is-glob/4.0.3:
-    resolution: {integrity: sha1-ZPYeQsu7LuwgcanawLKLoeZdUIQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-glob/download/is-glob-4.0.3.tgz}
+    resolution: {integrity: sha1-ZPYeQsu7LuwgcanawLKLoeZdUIQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-glob/download/is-glob-4.0.3.tgz?cache=0&sync_timestamp=1632935092433&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fis-glob%2Fdownload%2Fis-glob-4.0.3.tgz}
     name: is-glob
     version: 4.0.3
     engines: {node: '>=0.10.0'}
@@ -21364,6 +21386,13 @@ packages:
     name: slash
     version: 3.0.0
     engines: {node: '>=8'}
+
+  registry.npmmirror.com/slash/4.0.0:
+    resolution: {integrity: sha1-JCI3IXbExsWt214q2oha+YSzlqc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/slash/download/slash-4.0.0.tgz}
+    name: slash
+    version: 4.0.0
+    engines: {node: '>=12'}
+    dev: true
 
   registry.npmmirror.com/slugify/1.6.1:
     resolution: {integrity: sha1-pfyu8p9OV8bpMs5wRLb/2c+BtkE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/slugify/download/slugify-1.6.1.tgz}
