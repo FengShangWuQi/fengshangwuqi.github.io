@@ -80,7 +80,7 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet-async: 1.2.2
-  react-instantsearch-dom: 6.19.0
+  react-instantsearch-dom: 6.20.0
   react-spring: 9.4.2
   react-test-renderer: 17.0.2
   rxjs: 7.5.2
@@ -131,7 +131,7 @@ dependencies:
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.npmmirror.com/react-helmet-async/1.2.2_react-dom@17.0.2+react@17.0.2
-  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.19.0_d4554d5e62644df6deccb9ead77cbf79
+  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.20.0_d4554d5e62644df6deccb9ead77cbf79
   react-spring: registry.npmmirror.com/react-spring/9.4.2_react-dom@17.0.2+react@17.0.2
   rxjs: registry.npmmirror.com/rxjs/7.5.2
 
@@ -7442,6 +7442,7 @@ packages:
     resolution: {integrity: sha1-iSV0Kpj/2QgUmI11Zq0wyjsmO1I=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/regenerator-runtime/download/regenerator-runtime-0.13.9.tgz}
     name: regenerator-runtime
     version: 0.13.9
+    dev: false
 
   registry.nlark.com/regenerator-transform/0.14.5:
     resolution: {integrity: sha1-yY2hVGg2ccnE3LFuznNlF+G3/rQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/regenerator-transform/download/regenerator-transform-0.14.5.tgz}
@@ -12296,7 +12297,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       core-js-pure: registry.npmmirror.com/core-js-pure/3.19.0
-      regenerator-runtime: registry.nlark.com/regenerator-runtime/0.13.9
+      regenerator-runtime: registry.npmmirror.com/regenerator-runtime/0.13.9
     dev: false
 
   registry.npmmirror.com/@babel/runtime/7.16.0:
@@ -12305,7 +12306,7 @@ packages:
     version: 7.16.0
     engines: {node: '>=6.9.0'}
     dependencies:
-      regenerator-runtime: registry.nlark.com/regenerator-runtime/0.13.9
+      regenerator-runtime: registry.npmmirror.com/regenerator-runtime/0.13.9
 
   registry.npmmirror.com/@babel/standalone/7.15.8:
     resolution: {integrity: sha1-PLQLgYkqcCloo+C7or3REV8DSHY=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/standalone/download/@babel/standalone-7.15.8.tgz}
@@ -13703,7 +13704,7 @@ packages:
     version: 0.14.0
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.0
-      regenerator-runtime: registry.nlark.com/regenerator-runtime/0.13.9
+      regenerator-runtime: registry.npmmirror.com/regenerator-runtime/0.13.9
     dev: false
 
   registry.npmmirror.com/@mdx-js/util/1.6.22:
@@ -20863,11 +20864,11 @@ packages:
       shallowequal: registry.npmmirror.com/shallowequal/1.1.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-core/6.19.0_d4960d1f3e52942b9f95a72aa4190058:
-    resolution: {integrity: sha512-uGJvmQDqAphvkSavigNNRUsNim+6+zNvOREas620NDdA9jm4EOvwgpuyj1XhqEpOKr5wpP8Oas31W7PAnSwaNw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/download/react-instantsearch-core-6.19.0.tgz}
-    id: registry.npmmirror.com/react-instantsearch-core/6.19.0
+  registry.npmmirror.com/react-instantsearch-core/6.20.0_d4960d1f3e52942b9f95a72aa4190058:
+    resolution: {integrity: sha512-f6W1/NQuCdymCud16dCj9f3c9GL1pULHyQe9hy/HW4cBcS4TmwTHteEk6ReJOvwpM+x596j7781kOWwLDmMy+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/download/react-instantsearch-core-6.20.0.tgz}
+    id: registry.npmmirror.com/react-instantsearch-core/6.20.0
     name: react-instantsearch-core
-    version: 6.19.0
+    version: 6.20.0
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
       react: '>= 16.3.0 < 18'
@@ -20880,11 +20881,11 @@ packages:
       react-fast-compare: registry.nlark.com/react-fast-compare/3.2.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-dom/6.19.0_d4554d5e62644df6deccb9ead77cbf79:
-    resolution: {integrity: sha512-mFSYyvXZG0etqervMdayewslJ6uA2atumL6yBnQZs7resIumFMVrpcKGdD/S7FeiRTlKn0o5Dy2651ZOlAyX1Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/download/react-instantsearch-dom-6.19.0.tgz}
-    id: registry.npmmirror.com/react-instantsearch-dom/6.19.0
+  registry.npmmirror.com/react-instantsearch-dom/6.20.0_d4554d5e62644df6deccb9ead77cbf79:
+    resolution: {integrity: sha512-xM/eG7+QF64F7ucArEwuWKIcX3DxqKVRmwOfHCSt9EPsdOkJhbGg8MBUjX9+Sk2Z8DjAbpoAKVP0mnz2rB04Gw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/download/react-instantsearch-dom-6.20.0.tgz}
+    id: registry.npmmirror.com/react-instantsearch-dom/6.20.0
     name: react-instantsearch-dom
-    version: 6.19.0
+    version: 6.20.0
     peerDependencies:
       react: '>= 16.3.0 < 18'
       react-dom: '>= 16.3.0 < 18'
@@ -20896,7 +20897,7 @@ packages:
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
       react-fast-compare: registry.nlark.com/react-fast-compare/3.2.0
-      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.19.0_d4960d1f3e52942b9f95a72aa4190058
+      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.20.0_d4960d1f3e52942b9f95a72aa4190058
     transitivePeerDependencies:
       - algoliasearch
     dev: false
@@ -20980,6 +20981,11 @@ packages:
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.0
     dev: false
+
+  registry.npmmirror.com/regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/regenerator-runtime/download/regenerator-runtime-0.13.9.tgz}
+    name: regenerator-runtime
+    version: 0.13.9
 
   registry.npmmirror.com/registry-auth-token/4.2.1:
     resolution: {integrity: sha1-bXtABkQZGJcszV/tzUHcMix5slA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/registry-auth-token/download/registry-auth-token-4.2.1.tgz}
