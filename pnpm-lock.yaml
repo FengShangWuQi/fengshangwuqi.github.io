@@ -70,7 +70,7 @@ specifiers:
   husky: 7.0.4
   immer: 9.0.12
   jest: 27.4.7
-  lint-staged: 12.3.0
+  lint-staged: 12.3.1
   lmdb-store: 1.6.14
   lodash: 4.17.21
   polished: 4.1.4
@@ -170,7 +170,7 @@ devDependencies:
   gray-matter: registry.npmmirror.com/gray-matter/4.0.3
   husky: registry.npmmirror.com/husky/7.0.4
   jest: registry.npmmirror.com/jest/27.4.7_ts-node@10.4.0
-  lint-staged: registry.npmmirror.com/lint-staged/12.3.0
+  lint-staged: registry.npmmirror.com/lint-staged/12.3.1
   prettier: registry.npmmirror.com/prettier/2.5.1
   pretty-quick: registry.npmmirror.com/pretty-quick/3.1.3_prettier@2.5.1
   react-test-renderer: registry.nlark.com/react-test-renderer/17.0.2_react@17.0.2
@@ -19222,10 +19222,10 @@ packages:
     name: lines-and-columns
     version: 1.1.6
 
-  registry.npmmirror.com/lint-staged/12.3.0:
-    resolution: {integrity: sha512-bk+jvy5H+12Srg8MGlSmBt78B9GEbMtd4BETHdHS1mMmbgt3Gw18d8KwrJXCcJmICMGQTCiKBUMZSZ3NlfQ8PQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/download/lint-staged-12.3.0.tgz}
+  registry.npmmirror.com/lint-staged/12.3.1:
+    resolution: {integrity: sha512-Ocht/eT+4/siWOZDJpNUKcKX2UeWW/pDbohJ4gRsrafAjBi79JK8kiNVk2ciIVNKdw0Q4ABptl2nr6uQAlRImw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/download/lint-staged-12.3.1.tgz}
     name: lint-staged
-    version: 12.3.0
+    version: 12.3.1
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -19235,7 +19235,7 @@ packages:
       debug: registry.npmmirror.com/debug/4.3.3_supports-color@9.2.1
       execa: registry.npmmirror.com/execa/5.1.1
       lilconfig: registry.npmmirror.com/lilconfig/2.0.4
-      listr2: registry.npmmirror.com/listr2/3.13.5
+      listr2: registry.npmmirror.com/listr2/4.0.1
       micromatch: registry.nlark.com/micromatch/4.0.4
       normalize-path: registry.nlark.com/normalize-path/3.0.0
       object-inspect: registry.npmmirror.com/object-inspect/1.12.0
@@ -19246,11 +19246,11 @@ packages:
       - enquirer
     dev: true
 
-  registry.npmmirror.com/listr2/3.13.5:
-    resolution: {integrity: sha512-3n8heFQDSk+NcwBn3CgxEibZGaRzx+pC64n3YjpMD1qguV4nWus3Al+Oo3KooqFKTQEJ1v7MmnbnyyNspgx3NA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/listr2/download/listr2-3.13.5.tgz}
+  registry.npmmirror.com/listr2/4.0.1:
+    resolution: {integrity: sha512-D65Nl+zyYHL2jQBGmxtH/pU8koPZo5C8iCNE8EoB04RwPgQG1wuaKwVbeZv9LJpiH4Nxs0FCp+nNcG8OqpniiA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/listr2/download/listr2-4.0.1.tgz}
     name: listr2
-    version: 3.13.5
-    engines: {node: '>=10.0.0'}
+    version: 4.0.1
+    engines: {node: '>=12'}
     peerDependencies:
       enquirer: '>= 2.3.0 < 3'
     peerDependenciesMeta:
