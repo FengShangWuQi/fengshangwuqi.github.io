@@ -70,7 +70,7 @@ specifiers:
   husky: 7.0.4
   immer: 9.0.12
   jest: 27.4.7
-  lint-staged: 12.2.2
+  lint-staged: 12.3.0
   lmdb-store: 1.6.14
   lodash: 4.17.21
   polished: 4.1.4
@@ -170,7 +170,7 @@ devDependencies:
   gray-matter: registry.npmmirror.com/gray-matter/4.0.3
   husky: registry.npmmirror.com/husky/7.0.4
   jest: registry.npmmirror.com/jest/27.4.7_ts-node@10.4.0
-  lint-staged: registry.npmmirror.com/lint-staged/12.2.2
+  lint-staged: registry.npmmirror.com/lint-staged/12.3.0
   prettier: registry.npmmirror.com/prettier/2.5.1
   pretty-quick: registry.npmmirror.com/pretty-quick/3.1.3_prettier@2.5.1
   react-test-renderer: registry.nlark.com/react-test-renderer/17.0.2_react@17.0.2
@@ -1342,7 +1342,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       clean-stack: registry.nlark.com/clean-stack/2.2.0
-      indent-string: registry.npmmirror.com/indent-string/4.0.0
+      indent-string: registry.nlark.com/indent-string/4.0.0
 
   registry.nlark.com/ajv-keywords/3.5.2_ajv@6.12.6:
     resolution: {integrity: sha1-MfKdpatuANHC0yms97WSlhTVAU0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ajv-keywords/download/ajv-keywords-3.5.2.tgz}
@@ -4449,6 +4449,12 @@ packages:
     name: imurmurhash
     version: 0.1.4
     engines: {node: '>=0.8.19'}
+
+  registry.nlark.com/indent-string/4.0.0:
+    resolution: {integrity: sha1-Yk+PRJfWGbLZdoUx1Y9BIoVNclE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/indent-string/download/indent-string-4.0.0.tgz}
+    name: indent-string
+    version: 4.0.0
+    engines: {node: '>=8'}
 
   registry.nlark.com/inflight/1.0.6:
     resolution: {integrity: sha1-Sb1jMdfQLQwJvJEKEHW6gWW1bfk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/inflight/download/inflight-1.0.6.tgz}
@@ -18315,6 +18321,7 @@ packages:
     name: indent-string
     version: 4.0.0
     engines: {node: '>=8'}
+    dev: true
 
   registry.npmmirror.com/inquirer/7.3.3:
     resolution: {integrity: sha1-BNF2sq8Er8FXqD/XwQDpjuCq0AM=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/inquirer/download/inquirer-7.3.3.tgz}
@@ -19215,10 +19222,10 @@ packages:
     name: lines-and-columns
     version: 1.1.6
 
-  registry.npmmirror.com/lint-staged/12.2.2:
-    resolution: {integrity: sha512-bcHEoM1M/f+K1BYdHcEuIn8K+zMOSJR3mkny6PAuQiTgcSUcRbUWaUD6porAYypxF4k1vYZZ2HutZt1p94Z1jQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/download/lint-staged-12.2.2.tgz}
+  registry.npmmirror.com/lint-staged/12.3.0:
+    resolution: {integrity: sha512-bk+jvy5H+12Srg8MGlSmBt78B9GEbMtd4BETHdHS1mMmbgt3Gw18d8KwrJXCcJmICMGQTCiKBUMZSZ3NlfQ8PQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/download/lint-staged-12.3.0.tgz}
     name: lint-staged
-    version: 12.2.2
+    version: 12.3.0
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
