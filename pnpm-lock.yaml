@@ -80,7 +80,7 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet-async: 1.2.2
-  react-instantsearch-dom: 6.21.0
+  react-instantsearch-dom: 6.21.1
   react-spring: 9.4.2
   react-test-renderer: 17.0.2
   rxjs: 7.5.2
@@ -131,7 +131,7 @@ dependencies:
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.npmmirror.com/react-helmet-async/1.2.2_react-dom@17.0.2+react@17.0.2
-  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.21.0_d4554d5e62644df6deccb9ead77cbf79
+  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.21.1_d4554d5e62644df6deccb9ead77cbf79
   react-spring: registry.npmmirror.com/react-spring/9.4.2_react-dom@17.0.2+react@17.0.2
   rxjs: registry.npmmirror.com/rxjs/7.5.2
 
@@ -5545,14 +5545,6 @@ packages:
     version: 3.0.0
     dev: false
 
-  registry.nlark.com/loose-envify/1.4.0:
-    resolution: {integrity: sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/loose-envify/download/loose-envify-1.4.0.tgz}
-    name: loose-envify
-    version: 1.4.0
-    hasBin: true
-    dependencies:
-      js-tokens: registry.nlark.com/js-tokens/4.0.0
-
   registry.nlark.com/lower-case-first/1.0.2:
     resolution: {integrity: sha1-5dp8JvKacHO+AtUrrJmA5ZIq36E=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/lower-case-first/download/lower-case-first-1.0.2.tgz}
     name: lower-case-first
@@ -7099,7 +7091,7 @@ packages:
     name: prop-types
     version: 15.7.2
     dependencies:
-      loose-envify: registry.nlark.com/loose-envify/1.4.0
+      loose-envify: registry.npmmirror.com/loose-envify/1.4.0
       object-assign: registry.nlark.com/object-assign/4.1.1
       react-is: registry.npmmirror.com/react-is/16.13.1
     dev: false
@@ -20801,7 +20793,7 @@ packages:
     name: prop-types
     version: 15.7.2
     dependencies:
-      loose-envify: registry.nlark.com/loose-envify/1.4.0
+      loose-envify: registry.npmmirror.com/loose-envify/1.4.0
       object-assign: registry.nlark.com/object-assign/4.1.1
       react-is: registry.npmmirror.com/react-is/16.13.1
 
@@ -20916,11 +20908,11 @@ packages:
       shallowequal: registry.npmmirror.com/shallowequal/1.1.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-core/6.21.0_d4960d1f3e52942b9f95a72aa4190058:
-    resolution: {integrity: sha512-2wCSNQHEgi6c/iMdem/1I6LCaU6873wd5gsQiTWuPO8XlbF0RX9cqrLmomlZjhPYAGPXM7Pa+MCKFXhPofrzJA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/download/react-instantsearch-core-6.21.0.tgz}
-    id: registry.npmmirror.com/react-instantsearch-core/6.21.0
+  registry.npmmirror.com/react-instantsearch-core/6.21.1_d4960d1f3e52942b9f95a72aa4190058:
+    resolution: {integrity: sha512-be4+J9sOA2cR+uYi4vGvZGC4u19Rs379UtOzv0JBNSUD8hDSxewhxqovqhJRhMH6y5RKw7EFYQUYp9bHxj01rw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/download/react-instantsearch-core-6.21.1.tgz}
+    id: registry.npmmirror.com/react-instantsearch-core/6.21.1
     name: react-instantsearch-core
-    version: 6.21.0
+    version: 6.21.1
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
       react: '>= 16.3.0 < 18'
@@ -20933,11 +20925,11 @@ packages:
       react-fast-compare: registry.nlark.com/react-fast-compare/3.2.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-dom/6.21.0_d4554d5e62644df6deccb9ead77cbf79:
-    resolution: {integrity: sha512-/8nuuqsqLBwBgvfYH/uIIiJFNKwJCTGbn1PjHOtJwZSAgDOyziMy8Se2g1nEpj9YQ1ZlONqx33H8bCdIyIwAVg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/download/react-instantsearch-dom-6.21.0.tgz}
-    id: registry.npmmirror.com/react-instantsearch-dom/6.21.0
+  registry.npmmirror.com/react-instantsearch-dom/6.21.1_d4554d5e62644df6deccb9ead77cbf79:
+    resolution: {integrity: sha512-3f7VrKW4L1jnah51UbRitDMcfFIl6FoLSc2JmCF9qND2nbDh/NlZvcT45BPxbCYnK4qNc2HJFx0ipe+zoGbNtA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/download/react-instantsearch-dom-6.21.1.tgz}
+    id: registry.npmmirror.com/react-instantsearch-dom/6.21.1
     name: react-instantsearch-dom
-    version: 6.21.0
+    version: 6.21.1
     peerDependencies:
       react: '>= 16.3.0 < 18'
       react-dom: '>= 16.3.0 < 18'
@@ -20949,7 +20941,7 @@ packages:
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
       react-fast-compare: registry.nlark.com/react-fast-compare/3.2.0
-      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.21.0_d4960d1f3e52942b9f95a72aa4190058
+      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.21.1_d4960d1f3e52942b9f95a72aa4190058
     transitivePeerDependencies:
       - algoliasearch
     dev: false
