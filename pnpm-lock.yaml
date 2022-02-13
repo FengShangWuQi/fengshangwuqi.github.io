@@ -70,7 +70,7 @@ specifiers:
   husky: 7.0.4
   immer: 9.0.12
   jest: 27.5.1
-  lint-staged: 12.3.3
+  lint-staged: 12.3.4
   lmdb-store: 1.6.14
   lodash: 4.17.21
   polished: 4.1.4
@@ -170,7 +170,7 @@ devDependencies:
   gray-matter: registry.npmmirror.com/gray-matter/4.0.3
   husky: registry.npmmirror.com/husky/7.0.4
   jest: registry.npmmirror.com/jest/27.5.1_ts-node@10.5.0
-  lint-staged: registry.npmmirror.com/lint-staged/12.3.3
+  lint-staged: registry.npmmirror.com/lint-staged/12.3.4
   prettier: registry.npmmirror.com/prettier/2.5.1
   pretty-quick: registry.npmmirror.com/pretty-quick/3.1.3_prettier@2.5.1
   react-test-renderer: registry.nlark.com/react-test-renderer/17.0.2_react@17.0.2
@@ -1053,13 +1053,6 @@ packages:
     hasBin: true
     dev: false
 
-  registry.nlark.com/ansi-regex/5.0.1:
-    resolution: {integrity: sha1-CCyyyJyf6GWaMRpTvWpNxTAdswQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ansi-regex/download/ansi-regex-5.0.1.tgz}
-    name: ansi-regex
-    version: 5.0.1
-    engines: {node: '>=8'}
-    dev: true
-
   registry.nlark.com/ansi-styles/4.3.0:
     resolution: {integrity: sha1-7dgDYornHATIWuegkG7a00tkiTc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ansi-styles/download/ansi-styles-4.3.0.tgz}
     name: ansi-styles
@@ -1067,13 +1060,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       color-convert: registry.npmmirror.com/color-convert/2.0.1
-
-  registry.nlark.com/ansi-styles/5.2.0:
-    resolution: {integrity: sha1-B0SWkK1Fd30ZJKwquy/IiV26g2s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ansi-styles/download/ansi-styles-5.2.0.tgz}
-    name: ansi-styles
-    version: 5.2.0
-    engines: {node: '>=10'}
-    dev: true
 
   registry.nlark.com/any-base/1.1.0:
     resolution: {integrity: sha1-rhAaYrwIpZe0yatbcInUVmMFSf4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/any-base/download/any-base-1.1.0.tgz}
@@ -1384,7 +1370,7 @@ packages:
     version: 3.0.2
     engines: {node: '>=8'}
     dependencies:
-      fill-range: registry.nlark.com/fill-range/7.0.1
+      fill-range: registry.npmmirror.com/fill-range/7.0.1
     dev: false
 
   registry.nlark.com/buffer-equal/0.0.1:
@@ -2916,15 +2902,6 @@ packages:
     engines: {node: '>= 0.4.0'}
     dev: false
 
-  registry.nlark.com/fill-range/7.0.1:
-    resolution: {integrity: sha1-GRmmp8df44ssfHflGYU12prN2kA=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/fill-range/download/fill-range-7.0.1.tgz}
-    name: fill-range
-    version: 7.0.1
-    engines: {node: '>=8'}
-    dependencies:
-      to-regex-range: registry.nlark.com/to-regex-range/5.0.1
-    dev: false
-
   registry.nlark.com/filter-obj/1.1.0:
     resolution: {integrity: sha1-mzERErxsYSehbgFsbF1/GeCAXFs=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/filter-obj/download/filter-obj-1.1.0.tgz}
     name: filter-obj
@@ -3918,13 +3895,6 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       has-tostringtag: registry.nlark.com/has-tostringtag/1.0.0
-
-  registry.nlark.com/is-number/7.0.0:
-    resolution: {integrity: sha1-dTU0W4lnNNX4DE0GxQlVUnoU8Ss=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-number/download/is-number-7.0.0.tgz}
-    name: is-number
-    version: 7.0.0
-    engines: {node: '>=0.12.0'}
-    dev: false
 
   registry.nlark.com/is-obj/1.0.1:
     resolution: {integrity: sha1-PkcprB9f3gJc19g6iW2rn09n2w8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/is-obj/download/is-obj-1.0.1.tgz}
@@ -7099,15 +7069,6 @@ packages:
     name: to-readable-stream
     version: 1.0.0
     engines: {node: '>=6'}
-    dev: false
-
-  registry.nlark.com/to-regex-range/5.0.1:
-    resolution: {integrity: sha1-FkjESq58jZiKMmAY7XL1tN0DkuQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/to-regex-range/download/to-regex-range-5.0.1.tgz}
-    name: to-regex-range
-    version: 5.0.1
-    engines: {node: '>=8.0'}
-    dependencies:
-      is-number: registry.nlark.com/is-number/7.0.0
     dev: false
 
   registry.nlark.com/to-regex/3.0.2:
@@ -18636,10 +18597,10 @@ packages:
     name: lines-and-columns
     version: 1.1.6
 
-  registry.npmmirror.com/lint-staged/12.3.3:
-    resolution: {integrity: sha512-OqcLsqcPOqzvsfkxjeBpZylgJ3SRG1RYqc9LxC6tkt6tNsq1bNVkAixBwX09f6CobcHswzqVOCBpFR1Fck0+ag==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/-/lint-staged-12.3.3.tgz}
+  registry.npmmirror.com/lint-staged/12.3.4:
+    resolution: {integrity: sha512-yv/iK4WwZ7/v0GtVkNb3R82pdL9M+ScpIbJLJNyCXkJ1FGaXvRCOg/SeL59SZtPpqZhE7BD6kPKFLIDUhDx2/w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/-/lint-staged-12.3.4.tgz}
     name: lint-staged
-    version: 12.3.3
+    version: 12.3.4
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -20359,8 +20320,8 @@ packages:
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@jest/types': registry.npmmirror.com/@jest/types/27.5.1
-      ansi-regex: registry.nlark.com/ansi-regex/5.0.1
-      ansi-styles: registry.nlark.com/ansi-styles/5.2.0
+      ansi-regex: registry.npmmirror.com/ansi-regex/5.0.1
+      ansi-styles: registry.npmmirror.com/ansi-styles/5.2.0
       react-is: registry.npmmirror.com/react-is/17.0.2
     dev: true
 
