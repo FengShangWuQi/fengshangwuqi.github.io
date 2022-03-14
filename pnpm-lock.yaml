@@ -29,7 +29,7 @@ specifiers:
   '@types/react-dom': 17.0.13
   '@types/react-instantsearch-dom': 6.12.2
   '@vercel/node': 1.13.0
-  algoliasearch: 4.12.2
+  algoliasearch: 4.13.0
   axios: 0.26.1
   babel-jest: 27.5.1
   babel-preset-gatsby: 1.14.0
@@ -95,7 +95,7 @@ dependencies:
   '@mdx-js/mdx': registry.nlark.com/@mdx-js/mdx/1.6.22
   '@mdx-js/react': registry.nlark.com/@mdx-js/react/1.6.22_react@17.0.2
   '@sentry/gatsby': registry.npmmirror.com/@sentry/gatsby/6.18.2_gatsby@3.14.0+react@17.0.2
-  algoliasearch: registry.npmmirror.com/algoliasearch/4.12.2
+  algoliasearch: registry.npmmirror.com/algoliasearch/4.13.0
   facepaint: registry.nlark.com/facepaint/1.2.1
   figlet: registry.nlark.com/figlet/1.5.2
   gatsby: registry.npmmirror.com/gatsby/3.14.0_cad5377062f308ea526983a664636c00
@@ -131,7 +131,7 @@ dependencies:
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.npmmirror.com/react-helmet-async/1.2.3_react-dom@17.0.2+react@17.0.2
-  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.22.0_732d5a2cc5bb5eb9d2529448aa9fbdb0
+  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.22.0_9b8e18b5cb5fb389e8f0dd6018a41c59
   react-spring: registry.npmmirror.com/react-spring/9.4.4_react-dom@17.0.2+react@17.0.2
   rxjs: registry.npmmirror.com/rxjs/7.5.5
 
@@ -7777,114 +7777,114 @@ packages:
     version: 2.0.2
     dev: false
 
-  registry.npmmirror.com/@algolia/cache-browser-local-storage/4.12.2:
-    resolution: {integrity: sha512-z8LjFsQc0B6h6LEE3pkUGM4ErVktn6bkFbhnYbTccjmFVQ+wXFJd/D63e0WtaC+hwRB1xq8uKhkz9oojEKEsGA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/cache-browser-local-storage/-/cache-browser-local-storage-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/cache-browser-local-storage/4.13.0:
+    resolution: {integrity: sha512-nj1vHRZauTqP/bluwkRIgEADEimqojJgoTRCel5f6q8WCa9Y8QeI4bpDQP28FoeKnDRYa3J5CauDlN466jqRhg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/cache-browser-local-storage/-/cache-browser-local-storage-4.13.0.tgz}
     name: '@algolia/cache-browser-local-storage'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common/4.12.2
+      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common/4.13.0
 
-  registry.npmmirror.com/@algolia/cache-common/4.12.2:
-    resolution: {integrity: sha512-r//r7MF0Na0HxD2BHnjWsDKuI72Z5UEf/Rb/8MC08XKBsjCwBihGxWxycjRcNGjNEIxJBsvRMIEOipcd9qD54g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/cache-common/-/cache-common-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/cache-common/4.13.0:
+    resolution: {integrity: sha512-f9mdZjskCui/dA/fA/5a+6hZ7xnHaaZI5tM/Rw9X8rRB39SUlF/+o3P47onZ33n/AwkpSbi5QOyhs16wHd55kA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/cache-common/-/cache-common-4.13.0.tgz}
     name: '@algolia/cache-common'
-    version: 4.12.2
+    version: 4.13.0
 
-  registry.npmmirror.com/@algolia/cache-in-memory/4.12.2:
-    resolution: {integrity: sha512-opWpbBUloP1fcTG3wBDnAfcoyNXW5GFDgGtLXrSANdfnelPKkr3O8j01ZTkRlPIuBDR0izGZG8MVWMDlTf71Bw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/cache-in-memory/-/cache-in-memory-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/cache-in-memory/4.13.0:
+    resolution: {integrity: sha512-hHdc+ahPiMM92CQMljmObE75laYzNFYLrNOu0Q3/eyvubZZRtY2SUsEEgyUEyzXruNdzrkcDxFYa7YpWBJYHAg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/cache-in-memory/-/cache-in-memory-4.13.0.tgz}
     name: '@algolia/cache-in-memory'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common/4.12.2
+      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common/4.13.0
 
-  registry.npmmirror.com/@algolia/client-account/4.12.2:
-    resolution: {integrity: sha512-HZqEyeVVjzOlfoSUyc+7+ueEJmRgqSuC+hqQOGECYa5JVno4d8eRVuDAMOb87I2LOdg/WoFMcAtaaRq2gpfV/w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-account/-/client-account-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/client-account/4.13.0:
+    resolution: {integrity: sha512-FzFqFt9b0g/LKszBDoEsW+dVBuUe1K3scp2Yf7q6pgHWM1WqyqUlARwVpLxqyc+LoyJkTxQftOKjyFUqddnPKA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-account/-/client-account-4.13.0.tgz}
     name: '@algolia/client-account'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.12.2
-      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search/4.12.2
-      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.12.2
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.13.0
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search/4.13.0
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.13.0
 
-  registry.npmmirror.com/@algolia/client-analytics/4.12.2:
-    resolution: {integrity: sha512-7ktimzesu+vk3l+eG9w/nQh6/9AoIieCKmoiRIguKh6okGsaSBrcTHvUwIQEIiliqPuAFBk2M8eXYFqOZzwCZw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-analytics/-/client-analytics-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/client-analytics/4.13.0:
+    resolution: {integrity: sha512-klmnoq2FIiiMHImkzOm+cGxqRLLu9CMHqFhbgSy9wtXZrqb8BBUIUE2VyBe7azzv1wKcxZV2RUyNOMpFqmnRZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-analytics/-/client-analytics-4.13.0.tgz}
     name: '@algolia/client-analytics'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.12.2
-      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search/4.12.2
-      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.12.2
-      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.12.2
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.13.0
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search/4.13.0
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.13.0
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.13.0
 
-  registry.npmmirror.com/@algolia/client-common/4.12.2:
-    resolution: {integrity: sha512-+dTicT1lklwOpeoiDspUoRSQYHhrr2IzllrX89/WuTPEBm2eww1xurqrSTQYC0MuVeX1s9/i4k34Q0ZnspypWg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-common/-/client-common-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/client-common/4.13.0:
+    resolution: {integrity: sha512-GoXfTp0kVcbgfSXOjfrxx+slSipMqGO9WnNWgeMmru5Ra09MDjrcdunsiiuzF0wua6INbIpBQFTC2Mi5lUNqGA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-common/-/client-common-4.13.0.tgz}
     name: '@algolia/client-common'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.12.2
-      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.12.2
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.13.0
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.13.0
 
-  registry.npmmirror.com/@algolia/client-personalization/4.12.2:
-    resolution: {integrity: sha512-JBW3vYFGIm5sAAy3cLUdmUCpmSAdreo5S1fERg7xgF6KyxGrwyy5BViTNWrOKG+av2yusk1wKydOYJ1Fbpbaxw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-personalization/-/client-personalization-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/client-personalization/4.13.0:
+    resolution: {integrity: sha512-KneLz2WaehJmNfdr5yt2HQETpLaCYagRdWwIwkTqRVFCv4DxRQ2ChPVW9jeTj4YfAAhfzE6F8hn7wkQ/Jfj6ZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-personalization/-/client-personalization-4.13.0.tgz}
     name: '@algolia/client-personalization'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.12.2
-      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.12.2
-      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.12.2
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.13.0
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.13.0
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.13.0
 
-  registry.npmmirror.com/@algolia/client-search/4.12.2:
-    resolution: {integrity: sha512-JIqi14TgfEqAooNbSPBC1ZCk3Pnviqlaz9KofAqWBxSRTpPUFnU/XQCU5ihR0PC68SFVDnU/Y9cak/XotXPUeg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-search/-/client-search-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/client-search/4.13.0:
+    resolution: {integrity: sha512-blgCKYbZh1NgJWzeGf+caKE32mo3j54NprOf0LZVCubQb3Kx37tk1Hc8SDs9bCAE8hUvf3cazMPIg7wscSxspA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/client-search/-/client-search-4.13.0.tgz}
     name: '@algolia/client-search'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.12.2
-      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.12.2
-      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.12.2
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.13.0
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.13.0
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.13.0
 
   registry.npmmirror.com/@algolia/events/4.0.1:
     resolution: {integrity: sha512-FQzvOCgoFXAbf5Y6mYozw2aj5KCJoA3m4heImceldzPSMbdyS4atVjJzXKMsfX3wnZTFYwkkt8/z8UesLHlSBQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/events/-/events-4.0.1.tgz}
     name: '@algolia/events'
     version: 4.0.1
 
-  registry.npmmirror.com/@algolia/logger-common/4.12.2:
-    resolution: {integrity: sha512-iOiJAymLjq137G7+8EQuUEkrgta0cZGMg6scp8s4hJ+X6k+6By4nyptdkCWYwKLsW/Xy927QcIhGlkWV78vQIQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/logger-common/-/logger-common-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/logger-common/4.13.0:
+    resolution: {integrity: sha512-8yqXk7rMtmQJ9wZiHOt/6d4/JDEg5VCk83gJ39I+X/pwUPzIsbKy9QiK4uJ3aJELKyoIiDT1hpYVt+5ia+94IA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/logger-common/-/logger-common-4.13.0.tgz}
     name: '@algolia/logger-common'
-    version: 4.12.2
+    version: 4.13.0
 
-  registry.npmmirror.com/@algolia/logger-console/4.12.2:
-    resolution: {integrity: sha512-veuQZyTSqHoHJtr9mLMnYeal9Mee6hCie4eqY+645VbeOrgT9p/kCMbKg5GLJGoLPlXGu7C0XpHyUj5k7/NQyw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/logger-console/-/logger-console-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/logger-console/4.13.0:
+    resolution: {integrity: sha512-YepRg7w2/87L0vSXRfMND6VJ5d6699sFJBRWzZPOlek2p5fLxxK7O0VncYuc/IbVHEgeApvgXx0WgCEa38GVuQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/logger-console/-/logger-console-4.13.0.tgz}
     name: '@algolia/logger-console'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/logger-common': registry.npmmirror.com/@algolia/logger-common/4.12.2
+      '@algolia/logger-common': registry.npmmirror.com/@algolia/logger-common/4.13.0
 
-  registry.npmmirror.com/@algolia/requester-browser-xhr/4.12.2:
-    resolution: {integrity: sha512-FpFdHNd81tS3zj6Glqd+lt+RV0ljPExKtx+QB+gani6HWZ9YlSCM+Zl82T4ibxN+hmkrMeAyT+TMzS0jiGhGyQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/requester-browser-xhr/-/requester-browser-xhr-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/requester-browser-xhr/4.13.0:
+    resolution: {integrity: sha512-Dj+bnoWR5MotrnjblzGKZ2kCdQi2cK/VzPURPnE616NU/il7Ypy6U6DLGZ/ZYz+tnwPa0yypNf21uqt84fOgrg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/requester-browser-xhr/-/requester-browser-xhr-4.13.0.tgz}
     name: '@algolia/requester-browser-xhr'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.12.2
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.13.0
 
-  registry.npmmirror.com/@algolia/requester-common/4.12.2:
-    resolution: {integrity: sha512-4szj/lvDQf/u8EyyRBBRZD1ZkKDyLBbckLj7meQDlnbfwnW1UpLwpB2l3XJ9wDmDSftGxUCeTl5oMFe4z9OEvQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/requester-common/-/requester-common-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/requester-common/4.13.0:
+    resolution: {integrity: sha512-BRTDj53ecK+gn7ugukDWOOcBRul59C4NblCHqj4Zm5msd5UnHFjd/sGX+RLOEoFMhetILAnmg6wMrRrQVac9vw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/requester-common/-/requester-common-4.13.0.tgz}
     name: '@algolia/requester-common'
-    version: 4.12.2
+    version: 4.13.0
 
-  registry.npmmirror.com/@algolia/requester-node-http/4.12.2:
-    resolution: {integrity: sha512-UXfJNZt2KMwjBjiOa3cJ/PyoXWZa/F1vy6rdyG4xQeZDcLbqKP3O2b+bOJcGPmFbmdwBhtAyMVLt+hvAvAVfOw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/requester-node-http/-/requester-node-http-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/requester-node-http/4.13.0:
+    resolution: {integrity: sha512-9b+3O4QFU4azLhGMrZAr/uZPydvzOR4aEZfSL8ZrpLZ7fbbqTO0S/5EVko+QIgglRAtVwxvf8UJ1wzTD2jvKxQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/requester-node-http/-/requester-node-http-4.13.0.tgz}
     name: '@algolia/requester-node-http'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.12.2
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.13.0
 
-  registry.npmmirror.com/@algolia/transporter/4.12.2:
-    resolution: {integrity: sha512-PUq79if4CukXsm27ymTQ3eD3juSvMcyJmt6mxCkSFE0zQRL4ert61HBlNH6S9y/quUVe3g7oggfHq3d5pdpqZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/transporter/-/transporter-4.12.2.tgz}
+  registry.npmmirror.com/@algolia/transporter/4.13.0:
+    resolution: {integrity: sha512-8tSQYE+ykQENAdeZdofvtkOr5uJ9VcQSWgRhQ9h01AehtBIPAczk/b2CLrMsw5yQZziLs5cZ3pJ3478yI+urhA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@algolia/transporter/-/transporter-4.13.0.tgz}
     name: '@algolia/transporter'
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common/4.12.2
-      '@algolia/logger-common': registry.npmmirror.com/@algolia/logger-common/4.12.2
-      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.12.2
+      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common/4.13.0
+      '@algolia/logger-common': registry.npmmirror.com/@algolia/logger-common/4.13.0
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.13.0
 
   registry.npmmirror.com/@babel/code-frame/7.10.4:
     resolution: {integrity: sha512-vG6SvB6oYEhvgisZNFRmRCUkLz11c7rp+tbNTynGqc6mS1d5ATd/sGyV6W0KZZnXRKMTzZDRgQT3Ou9jhpAfUg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/code-frame/-/code-frame-7.10.4.tgz}
@@ -12851,8 +12851,8 @@ packages:
     version: 6.10.5
     dependencies:
       '@types/react': registry.npmmirror.com/@types/react/17.0.40
-      algoliasearch: registry.npmmirror.com/algoliasearch/4.12.2
-      algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.7.0_algoliasearch@4.12.2
+      algoliasearch: registry.npmmirror.com/algoliasearch/4.13.0
+      algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.7.0_algoliasearch@4.13.0
     dev: true
 
   registry.npmmirror.com/@types/react-instantsearch-dom/6.12.2:
@@ -13270,7 +13270,7 @@ packages:
       clean-stack: registry.npmmirror.com/clean-stack/2.2.0
       indent-string: registry.npmmirror.com/indent-string/4.0.0
 
-  registry.npmmirror.com/algoliasearch-helper/3.7.0_algoliasearch@4.12.2:
+  registry.npmmirror.com/algoliasearch-helper/3.7.0_algoliasearch@4.13.0:
     resolution: {integrity: sha512-XJ3QfERBLfeVCyTVx80gon7r3/rgm/CE8Ha1H7cbablRe/X7SfYQ14g/eO+MhjVKIQp+gy9oC6G5ilmLwS1k6w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/algoliasearch-helper/-/algoliasearch-helper-3.7.0.tgz}
     id: registry.npmmirror.com/algoliasearch-helper/3.7.0
     name: algoliasearch-helper
@@ -13279,27 +13279,27 @@ packages:
       algoliasearch: '>= 3.1 < 5'
     dependencies:
       '@algolia/events': registry.npmmirror.com/@algolia/events/4.0.1
-      algoliasearch: registry.npmmirror.com/algoliasearch/4.12.2
+      algoliasearch: registry.npmmirror.com/algoliasearch/4.13.0
 
-  registry.npmmirror.com/algoliasearch/4.12.2:
-    resolution: {integrity: sha512-bn1P9+V415zeDQJtXn+1SwuwedEAv9/LJAxt8XwR6ygH/sMwaHSm2hpkz8wIbCBt/tKQ43TL672Kyxzv5PwGgQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/algoliasearch/-/algoliasearch-4.12.2.tgz}
+  registry.npmmirror.com/algoliasearch/4.13.0:
+    resolution: {integrity: sha512-oHv4faI1Vl2s+YC0YquwkK/TsaJs79g2JFg5FDm2rKN12VItPTAeQ7hyJMHarOPPYuCnNC5kixbtcqvb21wchw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/algoliasearch/-/algoliasearch-4.13.0.tgz}
     name: algoliasearch
-    version: 4.12.2
+    version: 4.13.0
     dependencies:
-      '@algolia/cache-browser-local-storage': registry.npmmirror.com/@algolia/cache-browser-local-storage/4.12.2
-      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common/4.12.2
-      '@algolia/cache-in-memory': registry.npmmirror.com/@algolia/cache-in-memory/4.12.2
-      '@algolia/client-account': registry.npmmirror.com/@algolia/client-account/4.12.2
-      '@algolia/client-analytics': registry.npmmirror.com/@algolia/client-analytics/4.12.2
-      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.12.2
-      '@algolia/client-personalization': registry.npmmirror.com/@algolia/client-personalization/4.12.2
-      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search/4.12.2
-      '@algolia/logger-common': registry.npmmirror.com/@algolia/logger-common/4.12.2
-      '@algolia/logger-console': registry.npmmirror.com/@algolia/logger-console/4.12.2
-      '@algolia/requester-browser-xhr': registry.npmmirror.com/@algolia/requester-browser-xhr/4.12.2
-      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.12.2
-      '@algolia/requester-node-http': registry.npmmirror.com/@algolia/requester-node-http/4.12.2
-      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.12.2
+      '@algolia/cache-browser-local-storage': registry.npmmirror.com/@algolia/cache-browser-local-storage/4.13.0
+      '@algolia/cache-common': registry.npmmirror.com/@algolia/cache-common/4.13.0
+      '@algolia/cache-in-memory': registry.npmmirror.com/@algolia/cache-in-memory/4.13.0
+      '@algolia/client-account': registry.npmmirror.com/@algolia/client-account/4.13.0
+      '@algolia/client-analytics': registry.npmmirror.com/@algolia/client-analytics/4.13.0
+      '@algolia/client-common': registry.npmmirror.com/@algolia/client-common/4.13.0
+      '@algolia/client-personalization': registry.npmmirror.com/@algolia/client-personalization/4.13.0
+      '@algolia/client-search': registry.npmmirror.com/@algolia/client-search/4.13.0
+      '@algolia/logger-common': registry.npmmirror.com/@algolia/logger-common/4.13.0
+      '@algolia/logger-console': registry.npmmirror.com/@algolia/logger-console/4.13.0
+      '@algolia/requester-browser-xhr': registry.npmmirror.com/@algolia/requester-browser-xhr/4.13.0
+      '@algolia/requester-common': registry.npmmirror.com/@algolia/requester-common/4.13.0
+      '@algolia/requester-node-http': registry.npmmirror.com/@algolia/requester-node-http/4.13.0
+      '@algolia/transporter': registry.npmmirror.com/@algolia/transporter/4.13.0
 
   registry.npmmirror.com/anser/2.1.0:
     resolution: {integrity: sha1-pzCcnymIbxmvVsswx5/GDqSDlE4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/anser/download/anser-2.1.0.tgz}
@@ -16087,7 +16087,7 @@ packages:
     peerDependencies:
       gatsby: ^2.0.0 || ^3.0.0 || ^4.0.0
     dependencies:
-      algoliasearch: registry.npmmirror.com/algoliasearch/4.12.2
+      algoliasearch: registry.npmmirror.com/algoliasearch/4.13.0
       deep-equal: registry.nlark.com/deep-equal/2.0.5
       gatsby: registry.npmmirror.com/gatsby/3.14.0_cad5377062f308ea526983a664636c00
       lodash.chunk: registry.npmmirror.com/lodash.chunk/4.2.0
@@ -20446,7 +20446,7 @@ packages:
       shallowequal: registry.npmmirror.com/shallowequal/1.1.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-core/6.22.0_2150b7ff895518fdc3c37e1d2fe81a09:
+  registry.npmmirror.com/react-instantsearch-core/6.22.0_24a9da51e62336c335e8233e10af21bd:
     resolution: {integrity: sha512-K4GpydrStAGmUFYaV86eU65cvy0ZM97jKtNCF63sznhgYS1mJ3IaKO8HJV56/NP8dPKbr+HbdoD2GOnD1OaLlQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/-/react-instantsearch-core-6.22.0.tgz}
     id: registry.npmmirror.com/react-instantsearch-core/6.22.0
     name: react-instantsearch-core
@@ -20456,14 +20456,14 @@ packages:
       react: '>= 16.3.0 < 18'
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.7
-      algoliasearch: registry.npmmirror.com/algoliasearch/4.12.2
-      algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.7.0_algoliasearch@4.12.2
+      algoliasearch: registry.npmmirror.com/algoliasearch/4.13.0
+      algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.7.0_algoliasearch@4.13.0
       prop-types: registry.npmmirror.com/prop-types/15.7.2
       react: registry.nlark.com/react/17.0.2
       react-fast-compare: registry.npmmirror.com/react-fast-compare/3.2.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-dom/6.22.0_732d5a2cc5bb5eb9d2529448aa9fbdb0:
+  registry.npmmirror.com/react-instantsearch-dom/6.22.0_9b8e18b5cb5fb389e8f0dd6018a41c59:
     resolution: {integrity: sha512-geXYTQqGsLggbf7MMuSPgXjuZ3yWtWjjPRWEbXmAHZ4oodbdYiKIuieTDoadYM+m+Y90WXpwn+hMi0EDTffeRA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/-/react-instantsearch-dom-6.22.0.tgz}
     id: registry.npmmirror.com/react-instantsearch-dom/6.22.0
     name: react-instantsearch-dom
@@ -20473,13 +20473,13 @@ packages:
       react-dom: '>= 16.3.0 < 18'
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.7
-      algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.7.0_algoliasearch@4.12.2
+      algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.7.0_algoliasearch@4.13.0
       classnames: registry.npmmirror.com/classnames/2.3.1
       prop-types: registry.npmmirror.com/prop-types/15.7.2
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
       react-fast-compare: registry.npmmirror.com/react-fast-compare/3.2.0
-      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.22.0_2150b7ff895518fdc3c37e1d2fe81a09
+      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.22.0_24a9da51e62336c335e8233e10af21bd
     transitivePeerDependencies:
       - algoliasearch
     dev: false
