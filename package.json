@@ -128,7 +128,7 @@
     "@types/lodash": "4.14.180",
     "@types/node": "16.11.26",
     "@types/react": "17.0.41",
-    "@types/react-dom": "17.0.13",
+    "@types/react-dom": "17.0.14",
     "@types/react-instantsearch-dom": "6.12.2",
     "@vercel/node": "1.13.0",
     "axios": "0.26.1",
