@@ -26,7 +26,7 @@ specifiers:
   '@types/lodash': 4.14.180
   '@types/node': 16.11.26
   '@types/react': 17.0.41
-  '@types/react-dom': 17.0.13
+  '@types/react-dom': 17.0.14
   '@types/react-instantsearch-dom': 6.12.2
   '@vercel/node': 1.13.0
   algoliasearch: 4.13.0
@@ -155,7 +155,7 @@ devDependencies:
   '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.180
   '@types/node': registry.npmmirror.com/@types/node/16.11.26
   '@types/react': registry.npmmirror.com/@types/react/17.0.41
-  '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.13
+  '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.14
   '@types/react-instantsearch-dom': registry.npmmirror.com/@types/react-instantsearch-dom/6.12.2
   '@vercel/node': registry.npmmirror.com/@vercel/node/1.13.0
   axios: registry.npmmirror.com/axios/0.26.1
@@ -549,7 +549,7 @@ packages:
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.0
       '@types/react': registry.npmmirror.com/@types/react/17.0.41
-      '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.13
+      '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.14
       '@types/react-test-renderer': registry.nlark.com/@types/react-test-renderer/17.0.1
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
@@ -12491,7 +12491,7 @@ packages:
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.7
       '@testing-library/dom': registry.npmmirror.com/@testing-library/dom/8.10.1
-      '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.13
+      '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.14
       react: registry.nlark.com/react/17.0.2
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
     dev: true
@@ -12832,10 +12832,10 @@ packages:
       '@types/react': registry.npmmirror.com/@types/react/17.0.41
     dev: false
 
-  registry.npmmirror.com/@types/react-dom/17.0.13:
-    resolution: {integrity: sha512-wEP+B8hzvy6ORDv1QBhcQia4j6ea4SFIBttHYpXKPFZRviBvknq0FRh3VrIxeXUmsPkwuXVZrVGG7KUVONmXCQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-dom/-/react-dom-17.0.13.tgz}
+  registry.npmmirror.com/@types/react-dom/17.0.14:
+    resolution: {integrity: sha512-H03xwEP1oXmSfl3iobtmQ/2dHF5aBHr8aUMwyGZya6OW45G+xtdzmq6HkncefiBt5JU8DVyaWl/nWZbjZCnzAQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-dom/-/react-dom-17.0.14.tgz}
     name: '@types/react-dom'
-    version: 17.0.13
+    version: 17.0.14
     dependencies:
       '@types/react': registry.npmmirror.com/@types/react/17.0.41
     dev: true
