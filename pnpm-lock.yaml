@@ -70,7 +70,7 @@ specifiers:
   husky: 7.0.4
   immer: 9.0.12
   jest: 27.5.1
-  lint-staged: 12.3.6
+  lint-staged: 12.3.7
   lmdb-store: 1.6.14
   lodash: 4.17.21
   polished: 4.1.4
@@ -170,7 +170,7 @@ devDependencies:
   gray-matter: registry.npmmirror.com/gray-matter/4.0.3
   husky: registry.npmmirror.com/husky/7.0.4
   jest: registry.npmmirror.com/jest/27.5.1_ts-node@10.7.0
-  lint-staged: registry.npmmirror.com/lint-staged/12.3.6
+  lint-staged: registry.npmmirror.com/lint-staged/12.3.7
   prettier: registry.npmmirror.com/prettier/2.6.0
   pretty-quick: registry.npmmirror.com/pretty-quick/3.1.3_prettier@2.6.0
   react-test-renderer: registry.nlark.com/react-test-renderer/17.0.2_react@17.0.2
@@ -18483,10 +18483,10 @@ packages:
     name: lines-and-columns
     version: 1.1.6
 
-  registry.npmmirror.com/lint-staged/12.3.6:
-    resolution: {integrity: sha512-tVNyl/HsAnplKh4oaoRNzyZLm0PE/6VaBUXvd/gA9zhYCC/+ivZwiwpoT6jOxcLzuIOjP19wW+mfOi7/Bw4c1A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/-/lint-staged-12.3.6.tgz}
+  registry.npmmirror.com/lint-staged/12.3.7:
+    resolution: {integrity: sha512-/S4D726e2GIsDVWIk1XGvheCaDm1SJRQp8efamZFWJxQMVEbOwSysp7xb49Oo73KYCdy97mIWinhlxcoNqIfIQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/-/lint-staged-12.3.7.tgz}
     name: lint-staged
-    version: 12.3.6
+    version: 12.3.7
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
