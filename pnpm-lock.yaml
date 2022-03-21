@@ -13,7 +13,7 @@ specifiers:
   '@fengshangwuqi/ts-config': 1.1.7
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22
-  '@sentry/gatsby': 6.18.2
+  '@sentry/gatsby': 6.19.0
   '@squoosh/lib': 0.4.1
   '@testing-library/jest-dom': 5.16.2
   '@testing-library/react': 12.1.4
@@ -94,7 +94,7 @@ dependencies:
   '@emotion/styled': registry.npmmirror.com/@emotion/styled/11.8.1_537045bdcc746405d2b406789b97b6c7
   '@mdx-js/mdx': registry.nlark.com/@mdx-js/mdx/1.6.22
   '@mdx-js/react': registry.nlark.com/@mdx-js/react/1.6.22_react@17.0.2
-  '@sentry/gatsby': registry.npmmirror.com/@sentry/gatsby/6.18.2_gatsby@3.14.0+react@17.0.2
+  '@sentry/gatsby': registry.npmmirror.com/@sentry/gatsby/6.19.0_gatsby@3.14.0+react@17.0.2
   algoliasearch: registry.npmmirror.com/algoliasearch/4.13.0
   facepaint: registry.nlark.com/facepaint/1.2.1
   figlet: registry.nlark.com/figlet/1.5.2
@@ -12254,15 +12254,15 @@ packages:
       react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
     dev: false
 
-  registry.npmmirror.com/@sentry/browser/6.18.2:
-    resolution: {integrity: sha512-EsqKSNboi2gOiMuEwQranLucxrARi00y2vgUnaPXcqTKTlVlHDetoWHvq8/r29idA1JHGka5tDrwrmWccWIkrg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/browser/-/browser-6.18.2.tgz}
+  registry.npmmirror.com/@sentry/browser/6.19.0:
+    resolution: {integrity: sha512-YwahDZxMUxWraFd11dZ+qeflzo91ZYOnW1qdbBe0kRyaWhJQuIsBzLN5onsZBHOADU4EIS3C/np8KxL6420Z/Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/browser/-/browser-6.19.0.tgz}
     name: '@sentry/browser'
-    version: 6.18.2
+    version: 6.19.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/core': registry.npmmirror.com/@sentry/core/6.18.2
-      '@sentry/types': registry.npmmirror.com/@sentry/types/6.18.2
-      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.18.2
+      '@sentry/core': registry.npmmirror.com/@sentry/core/6.19.0
+      '@sentry/types': registry.npmmirror.com/@sentry/types/6.19.0
+      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.19.0
       tslib: registry.npmmirror.com/tslib/1.14.1
     dev: false
 
@@ -12285,31 +12285,31 @@ packages:
       - supports-color
     dev: false
 
-  registry.npmmirror.com/@sentry/core/6.18.2:
-    resolution: {integrity: sha512-r5ad/gq5S/JHc9sd5CUhZQT9ojQ+f+thk/AoGeGawX/8HURZYAgIqD565d6FK0VsZEDkdRMl58z1Qon20h3y1g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/core/-/core-6.18.2.tgz}
+  registry.npmmirror.com/@sentry/core/6.19.0:
+    resolution: {integrity: sha512-/Csh4Skm5EA7p5SpT5vWY2s0CRiDkCrRCduA1XzrC7yu8H51HRyddXk5IBIrh/rB0Uv8MswpxP9qgucycj4v1Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/core/-/core-6.19.0.tgz}
     name: '@sentry/core'
-    version: 6.18.2
+    version: 6.19.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/hub': registry.npmmirror.com/@sentry/hub/6.18.2
-      '@sentry/minimal': registry.npmmirror.com/@sentry/minimal/6.18.2
-      '@sentry/types': registry.npmmirror.com/@sentry/types/6.18.2
-      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.18.2
+      '@sentry/hub': registry.npmmirror.com/@sentry/hub/6.19.0
+      '@sentry/minimal': registry.npmmirror.com/@sentry/minimal/6.19.0
+      '@sentry/types': registry.npmmirror.com/@sentry/types/6.19.0
+      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.19.0
       tslib: registry.npmmirror.com/tslib/1.14.1
     dev: false
 
-  registry.npmmirror.com/@sentry/gatsby/6.18.2_gatsby@3.14.0+react@17.0.2:
-    resolution: {integrity: sha512-vu8/T4B2fLC+uhysC0id57UvjrUQpYG4nbNt9LwWPTLB6gjJgoKUCl9y0s2x6W8ILxQpdK6xJ9QtrU1mHRMknQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/gatsby/-/gatsby-6.18.2.tgz}
-    id: registry.npmmirror.com/@sentry/gatsby/6.18.2
+  registry.npmmirror.com/@sentry/gatsby/6.19.0_gatsby@3.14.0+react@17.0.2:
+    resolution: {integrity: sha512-+R2nbbe7U/APXy8cegz1M0RN7l+t9qp3DAlkg+zgp7JD5QPY82fgGmAfYi/jhunQaRaHuDBPZenIjBfIE4l+rw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/gatsby/-/gatsby-6.19.0.tgz}
+    id: registry.npmmirror.com/@sentry/gatsby/6.19.0
     name: '@sentry/gatsby'
-    version: 6.18.2
+    version: 6.19.0
     engines: {node: '>=6'}
     peerDependencies:
       gatsby: ^2.0.0 || ^3.0.0 || ^4.0.0
       react: 15.x || 16.x || 17.x
     dependencies:
-      '@sentry/react': registry.npmmirror.com/@sentry/react/6.18.2_react@17.0.2
-      '@sentry/tracing': registry.npmmirror.com/@sentry/tracing/6.18.2
+      '@sentry/react': registry.npmmirror.com/@sentry/react/6.19.0_react@17.0.2
+      '@sentry/tracing': registry.npmmirror.com/@sentry/tracing/6.19.0
       '@sentry/webpack-plugin': registry.npmmirror.com/@sentry/webpack-plugin/1.18.8
       gatsby: registry.npmmirror.com/gatsby/3.14.0_cad5377062f308ea526983a664636c00
       react: registry.nlark.com/react/17.0.2
@@ -12318,73 +12318,73 @@ packages:
       - supports-color
     dev: false
 
-  registry.npmmirror.com/@sentry/hub/6.18.2:
-    resolution: {integrity: sha512-d0AugekMkbnN12b4EXMjseJxtLPc9S20DGobCPUb4oAQT6S2oDQEj1jwP6PQ5vtgyy+GMYWxBMgqAQ4pjVYISQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/hub/-/hub-6.18.2.tgz}
+  registry.npmmirror.com/@sentry/hub/6.19.0:
+    resolution: {integrity: sha512-ZSu4CrWOd7xwZtx8mdbs3GG2TaRCGy3vwu2KjaXYCOIRryyw8xN/B/T8Ucpc7xtJRoYaqzNPuOL9NMcpFFb/+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/hub/-/hub-6.19.0.tgz}
     name: '@sentry/hub'
-    version: 6.18.2
+    version: 6.19.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/types': registry.npmmirror.com/@sentry/types/6.18.2
-      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.18.2
+      '@sentry/types': registry.npmmirror.com/@sentry/types/6.19.0
+      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.19.0
       tslib: registry.npmmirror.com/tslib/1.14.1
     dev: false
 
-  registry.npmmirror.com/@sentry/minimal/6.18.2:
-    resolution: {integrity: sha512-n7KYuo34W2LxE+3dnZ47of7XHuORINCnXq66XH72eoj67tf0XeWbIhEJrYGmoLRyRfoCYYrBLWiDl/uTjLzrzQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/minimal/-/minimal-6.18.2.tgz}
+  registry.npmmirror.com/@sentry/minimal/6.19.0:
+    resolution: {integrity: sha512-Sfw0KOX63nb+11F0ZcXcGBbctBBw6NZZfqvVtZXNhdBfu1cFjYdkMWi9DLuCulHR0BRq88RE+SuOqq1lgLSJEQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/minimal/-/minimal-6.19.0.tgz}
     name: '@sentry/minimal'
-    version: 6.18.2
+    version: 6.19.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/hub': registry.npmmirror.com/@sentry/hub/6.18.2
-      '@sentry/types': registry.npmmirror.com/@sentry/types/6.18.2
+      '@sentry/hub': registry.npmmirror.com/@sentry/hub/6.19.0
+      '@sentry/types': registry.npmmirror.com/@sentry/types/6.19.0
       tslib: registry.npmmirror.com/tslib/1.14.1
     dev: false
 
-  registry.npmmirror.com/@sentry/react/6.18.2_react@17.0.2:
-    resolution: {integrity: sha512-TgCgoiduaPLq/YDh1urF+ZckIGiIzhMFPHs9tlMaqFkEwPOOENJTiPiwTs56x39/2B0tn3XNfY8Un8kG5hsINQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/react/-/react-6.18.2.tgz}
-    id: registry.npmmirror.com/@sentry/react/6.18.2
+  registry.npmmirror.com/@sentry/react/6.19.0_react@17.0.2:
+    resolution: {integrity: sha512-lHceYSvyDwEYv/kIu+xtttZG1INClW6eLiXhMFbJBVRnmnCRqItWvputA1nc+aVlbqX8TRhGrusKFA+6ks7F1Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/react/-/react-6.19.0.tgz}
+    id: registry.npmmirror.com/@sentry/react/6.19.0
     name: '@sentry/react'
-    version: 6.18.2
+    version: 6.19.0
     engines: {node: '>=6'}
     peerDependencies:
       react: 15.x || 16.x || 17.x
     dependencies:
-      '@sentry/browser': registry.npmmirror.com/@sentry/browser/6.18.2
-      '@sentry/minimal': registry.npmmirror.com/@sentry/minimal/6.18.2
-      '@sentry/types': registry.npmmirror.com/@sentry/types/6.18.2
-      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.18.2
+      '@sentry/browser': registry.npmmirror.com/@sentry/browser/6.19.0
+      '@sentry/minimal': registry.npmmirror.com/@sentry/minimal/6.19.0
+      '@sentry/types': registry.npmmirror.com/@sentry/types/6.19.0
+      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.19.0
       hoist-non-react-statics: registry.npmmirror.com/hoist-non-react-statics/3.3.2
       react: registry.nlark.com/react/17.0.2
       tslib: registry.npmmirror.com/tslib/1.14.1
     dev: false
 
-  registry.npmmirror.com/@sentry/tracing/6.18.2:
-    resolution: {integrity: sha512-hg6NLqrqJ5sUPTyWEQ2RqdnhQVnyLtx8II0IyWxQLDWD8UCe3Mu6G7mroDtakPWcP+lWz6OnKfMEfuhMcxR8fw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/tracing/-/tracing-6.18.2.tgz}
+  registry.npmmirror.com/@sentry/tracing/6.19.0:
+    resolution: {integrity: sha512-/4v/6JocClWIukCz+7jZV1xZbLKJQ3ooRUWv5xFzq/RYKAsQoWLcg9iuegUR1RVuLIWLBDQGNvSwEf+Rwz3Sxg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/tracing/-/tracing-6.19.0.tgz}
     name: '@sentry/tracing'
-    version: 6.18.2
+    version: 6.19.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/hub': registry.npmmirror.com/@sentry/hub/6.18.2
-      '@sentry/minimal': registry.npmmirror.com/@sentry/minimal/6.18.2
-      '@sentry/types': registry.npmmirror.com/@sentry/types/6.18.2
-      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.18.2
+      '@sentry/hub': registry.npmmirror.com/@sentry/hub/6.19.0
+      '@sentry/minimal': registry.npmmirror.com/@sentry/minimal/6.19.0
+      '@sentry/types': registry.npmmirror.com/@sentry/types/6.19.0
+      '@sentry/utils': registry.npmmirror.com/@sentry/utils/6.19.0
       tslib: registry.npmmirror.com/tslib/1.14.1
     dev: false
 
-  registry.npmmirror.com/@sentry/types/6.18.2:
-    resolution: {integrity: sha512-WzpJf/Q5aORTzrSwer/As1NlO90dBAQpaHV2ikDDKqOyMWEgjKb5/4gh59p9gH8JMMnLetP1AvQel0fOj5UnUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/types/-/types-6.18.2.tgz}
+  registry.npmmirror.com/@sentry/types/6.19.0:
+    resolution: {integrity: sha512-jxxinvue2PzAeEewDwYJlk7tqp1SEnkaQISBSZZsRUvdk1aRWTDR5MgGejzlnaBSihwKVvFhcukd2PKm8EY9AA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/types/-/types-6.19.0.tgz}
     name: '@sentry/types'
-    version: 6.18.2
+    version: 6.19.0
     engines: {node: '>=6'}
     dev: false
 
-  registry.npmmirror.com/@sentry/utils/6.18.2:
-    resolution: {integrity: sha512-EC619jesknyu4xpwud5WC/5odYLz6JUy7OSFy5405PpdGeh/m8XUvuJAx4zDx0Iz/Mlk0S1Md+ZcQwqkv39dkw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/utils/-/utils-6.18.2.tgz}
+  registry.npmmirror.com/@sentry/utils/6.19.0:
+    resolution: {integrity: sha512-Q0RT9nuMe/v9VSGs4PMIBJVLZCoUpOcVPsCtKnZNsTDzjs6+4xqDPA1dj3fXDM0A9UiJiiHeXCl66ayzbbAfNA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@sentry/utils/-/utils-6.19.0.tgz}
     name: '@sentry/utils'
-    version: 6.18.2
+    version: 6.19.0
     engines: {node: '>=6'}
     dependencies:
-      '@sentry/types': registry.npmmirror.com/@sentry/types/6.18.2
+      '@sentry/types': registry.npmmirror.com/@sentry/types/6.19.0
       tslib: registry.npmmirror.com/tslib/1.14.1
     dev: false
 
