@@ -15,7 +15,7 @@ specifiers:
   '@mdx-js/react': 1.6.22
   '@sentry/gatsby': 6.19.4
   '@squoosh/lib': 0.4.1
-  '@testing-library/jest-dom': 5.16.3
+  '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 12.1.4
   '@testing-library/react-hooks': 7.0.2
   '@types/facepaint': 1.2.2
@@ -144,7 +144,7 @@ devDependencies:
   '@fengshangwuqi/logger': registry.npmmirror.com/@fengshangwuqi/logger/1.1.21
   '@fengshangwuqi/ts-config': registry.npmmirror.com/@fengshangwuqi/ts-config/1.1.7
   '@squoosh/lib': registry.npmmirror.com/@squoosh/lib/0.4.1
-  '@testing-library/jest-dom': registry.npmmirror.com/@testing-library/jest-dom/5.16.3
+  '@testing-library/jest-dom': registry.npmmirror.com/@testing-library/jest-dom/5.16.4
   '@testing-library/react': registry.npmmirror.com/@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': registry.nlark.com/@testing-library/react-hooks/7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
   '@types/facepaint': registry.nlark.com/@types/facepaint/1.2.2
@@ -12458,13 +12458,13 @@ packages:
       pretty-format: registry.npmmirror.com/pretty-format/27.5.1
     dev: true
 
-  registry.npmmirror.com/@testing-library/jest-dom/5.16.3:
-    resolution: {integrity: sha512-u5DfKj4wfSt6akfndfu1eG06jsdyA/IUrlX2n3pyq5UXgXMhXY+NJb8eNK/7pqPWAhCKsCGWDdDO0zKMKAYkEA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@testing-library/jest-dom/-/jest-dom-5.16.3.tgz}
+  registry.npmmirror.com/@testing-library/jest-dom/5.16.4:
+    resolution: {integrity: sha512-Gy+IoFutbMQcky0k+bqqumXZ1cTGswLsFqmNLzNdSKkU9KGV2u9oXhukCbbJ9/LRPKiqwxEE8VpV/+YZlfkPUA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@testing-library/jest-dom/-/jest-dom-5.16.4.tgz}
     name: '@testing-library/jest-dom'
-    version: 5.16.3
+    version: 5.16.4
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.7
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.17.8
       '@types/testing-library__jest-dom': registry.npmmirror.com/@types/testing-library__jest-dom/5.14.1
       aria-query: registry.npmmirror.com/aria-query/5.0.0
       chalk: registry.npmmirror.com/chalk/3.0.0
