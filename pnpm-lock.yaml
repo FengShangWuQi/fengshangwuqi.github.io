@@ -70,7 +70,7 @@ specifiers:
   husky: 7.0.4
   immer: 9.0.12
   jest: 27.5.1
-  lint-staged: 12.3.7
+  lint-staged: 12.3.8
   lmdb-store: 1.6.14
   lodash: 4.17.21
   polished: 4.2.2
@@ -170,7 +170,7 @@ devDependencies:
   gray-matter: registry.npmmirror.com/gray-matter/4.0.3
   husky: registry.npmmirror.com/husky/7.0.4
   jest: registry.npmmirror.com/jest/27.5.1_ts-node@10.7.0
-  lint-staged: registry.npmmirror.com/lint-staged/12.3.7
+  lint-staged: registry.npmmirror.com/lint-staged/12.3.8
   prettier: registry.npmmirror.com/prettier/2.6.2
   pretty-quick: registry.npmmirror.com/pretty-quick/3.1.3_prettier@2.6.2
   react-test-renderer: registry.nlark.com/react-test-renderer/17.0.2_react@17.0.2
@@ -18499,10 +18499,10 @@ packages:
     name: lines-and-columns
     version: 1.1.6
 
-  registry.npmmirror.com/lint-staged/12.3.7:
-    resolution: {integrity: sha512-/S4D726e2GIsDVWIk1XGvheCaDm1SJRQp8efamZFWJxQMVEbOwSysp7xb49Oo73KYCdy97mIWinhlxcoNqIfIQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/-/lint-staged-12.3.7.tgz}
+  registry.npmmirror.com/lint-staged/12.3.8:
+    resolution: {integrity: sha512-0+UpNaqIwKRSGAFOCcpuYNIv/j5QGVC+xUVvmSdxHO+IfIGoHbFLo3XcPmV/LLnsVj5EAncNHVtlITSoY5qWGQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/-/lint-staged-12.3.8.tgz}
     name: lint-staged
-    version: 12.3.7
+    version: 12.3.8
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -21554,7 +21554,7 @@ packages:
       has-flag: registry.npmmirror.com/has-flag/3.0.0
 
   registry.npmmirror.com/supports-color/7.2.0:
-    resolution: {integrity: sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/supports-color/download/supports-color-7.2.0.tgz}
+    resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/supports-color/-/supports-color-7.2.0.tgz}
     name: supports-color
     version: 7.2.0
     engines: {node: '>=8'}
