@@ -28,7 +28,7 @@ specifiers:
   '@types/react': 17.0.44
   '@types/react-dom': 17.0.15
   '@types/react-instantsearch-dom': 6.12.2
-  '@vercel/node': 1.14.0
+  '@vercel/node': 1.14.1
   algoliasearch: 4.13.0
   axios: 0.26.1
   babel-jest: 27.5.1
@@ -157,7 +157,7 @@ devDependencies:
   '@types/react': registry.npmmirror.com/@types/react/17.0.44
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.15
   '@types/react-instantsearch-dom': registry.npmmirror.com/@types/react-instantsearch-dom/6.12.2
-  '@vercel/node': registry.npmmirror.com/@vercel/node/1.14.0
+  '@vercel/node': registry.npmmirror.com/@vercel/node/1.14.1
   axios: registry.npmmirror.com/axios/0.26.1
   babel-jest: registry.npmmirror.com/babel-jest/27.5.1
   babel-preset-gatsby: registry.npmmirror.com/babel-preset-gatsby/1.14.0
@@ -13191,10 +13191,10 @@ packages:
     version: 2.2.0
     dev: true
 
-  registry.npmmirror.com/@vercel/node/1.14.0:
-    resolution: {integrity: sha512-UAb1qQMeTkSXz95yljJpz0MyTzcj++B/1XR0vKFZOs2CEfSkBO1DjzX6BkaKriaihBdbGM/X9UoMJfWfUBBn8Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/node/-/node-1.14.0.tgz}
+  registry.npmmirror.com/@vercel/node/1.14.1:
+    resolution: {integrity: sha512-/R1tERotQMTBoB4gw390B8wJAOS9IO4iejing9jqLFSISdW7uVU6kgkUbLM8OtuN0DGwi1qYQ6DcdxySX2qYzw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/node/-/node-1.14.1.tgz}
     name: '@vercel/node'
-    version: 1.14.0
+    version: 1.14.1
     dependencies:
       '@types/node': registry.npmmirror.com/@types/node/16.11.27
       '@vercel/node-bridge': registry.npmmirror.com/@vercel/node-bridge/2.2.0
