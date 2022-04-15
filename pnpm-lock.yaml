@@ -16,7 +16,7 @@ specifiers:
   '@sentry/gatsby': 6.19.6
   '@squoosh/lib': 0.4.1
   '@testing-library/jest-dom': 5.16.4
-  '@testing-library/react': 12.1.4
+  '@testing-library/react': 12.1.5
   '@testing-library/react-hooks': 7.0.2
   '@types/facepaint': 1.2.2
   '@types/figlet': 1.5.4
@@ -145,7 +145,7 @@ devDependencies:
   '@fengshangwuqi/ts-config': registry.npmmirror.com/@fengshangwuqi/ts-config/1.1.7
   '@squoosh/lib': registry.npmmirror.com/@squoosh/lib/0.4.1
   '@testing-library/jest-dom': registry.npmmirror.com/@testing-library/jest-dom/5.16.4
-  '@testing-library/react': registry.npmmirror.com/@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2
+  '@testing-library/react': registry.npmmirror.com/@testing-library/react/12.1.5_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': registry.nlark.com/@testing-library/react-hooks/7.0.2_fc2bb8a5b006d3f25c5f84ea777e678d
   '@types/facepaint': registry.nlark.com/@types/facepaint/1.2.2
   '@types/figlet': registry.nlark.com/@types/figlet/1.5.4
@@ -10569,6 +10569,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: registry.npmmirror.com/regenerator-runtime/0.13.9
+    dev: false
 
   registry.npmmirror.com/@babel/runtime/7.17.8:
     resolution: {integrity: sha512-dQpEpK0O9o6lj6oPu0gRDbbnk+4LeHlNcBpspf6Olzt3GIX4P1lWF1gS+pHLDFlaJvbR6q7jCfQ08zA4QJBnmA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/runtime/-/runtime-7.17.8.tgz}
@@ -12487,17 +12488,17 @@ packages:
       redent: registry.npmmirror.com/redent/3.0.0
     dev: true
 
-  registry.npmmirror.com/@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@testing-library/react/-/react-12.1.4.tgz}
-    id: registry.npmmirror.com/@testing-library/react/12.1.4
+  registry.npmmirror.com/@testing-library/react/12.1.5_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-OfTXCJUFgjd/digLUuPxa0+/3ZxsQmE7ub9kcbW/wi96Bh3o/p5vrETcBGfP17NWPGqeYYl5LTRpwyGoMC4ysg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@testing-library/react/-/react-12.1.5.tgz}
+    id: registry.npmmirror.com/@testing-library/react/12.1.5
     name: '@testing-library/react'
-    version: 12.1.4
+    version: 12.1.5
     engines: {node: '>=12'}
     peerDependencies:
-      react: '*'
-      react-dom: '*'
+      react: <18.0.0
+      react-dom: <18.0.0
     dependencies:
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.7
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.17.8
       '@testing-library/dom': registry.npmmirror.com/@testing-library/dom/8.10.1
       '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.15
       react: registry.nlark.com/react/17.0.2
