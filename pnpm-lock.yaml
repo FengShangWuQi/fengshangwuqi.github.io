@@ -38,7 +38,7 @@ specifiers:
   execa: 5.1.1
   facepaint: 1.2.1
   figlet: 1.5.2
-  fs-extra: 10.0.1
+  fs-extra: 10.1.0
   gatsby: 3.14.0
   gatsby-plugin-algolia: 0.23.1
   gatsby-plugin-catch-links: 3.14.0
@@ -164,7 +164,7 @@ devDependencies:
   date-fns: registry.npmmirror.com/date-fns/2.28.0
   dotenv: registry.nlark.com/dotenv/10.0.0
   execa: registry.nlark.com/execa/5.1.1
-  fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+  fs-extra: registry.npmmirror.com/fs-extra/10.1.0
   gh-pages: registry.nlark.com/gh-pages/3.2.3
   globby: registry.npmmirror.com/globby/11.1.0
   gray-matter: registry.npmmirror.com/gray-matter/4.0.3
@@ -10778,7 +10778,7 @@ packages:
     dependencies:
       '@commitlint/top-level': registry.npmmirror.com/@commitlint/top-level/15.0.0
       '@commitlint/types': registry.npmmirror.com/@commitlint/types/15.0.0
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       git-raw-commits: registry.nlark.com/git-raw-commits/2.0.10
     dev: true
 
@@ -15921,10 +15921,10 @@ packages:
       universalify: registry.npmmirror.com/universalify/2.0.0
     dev: true
 
-  registry.npmmirror.com/fs-extra/10.0.1:
-    resolution: {integrity: sha512-NbdoVMZso2Lsrn/QwLXOy6rm0ufY2zEOKCDzJR/0kBsb0E6qed0P3iYK+Ath3BfvXEeu4JhEtXLgILx5psUfag==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fs-extra/-/fs-extra-10.0.1.tgz}
+  registry.npmmirror.com/fs-extra/10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fs-extra/-/fs-extra-10.1.0.tgz}
     name: fs-extra
-    version: 10.0.1
+    version: 10.1.0
     engines: {node: '>=12'}
     dependencies:
       graceful-fs: registry.npmmirror.com/graceful-fs/4.2.9
@@ -15986,7 +15986,7 @@ packages:
       envinfo: registry.npmmirror.com/envinfo/7.8.1
       execa: registry.npmmirror.com/execa/5.1.1
       fs-exists-cached: registry.nlark.com/fs-exists-cached/1.0.0
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby-core-utils: registry.npmmirror.com/gatsby-core-utils/2.14.0
       gatsby-recipes: registry.npmmirror.com/gatsby-recipes/0.25.0
       gatsby-telemetry: registry.npmmirror.com/gatsby-telemetry/2.14.0
@@ -16029,7 +16029,7 @@ packages:
       ci-info: registry.npmmirror.com/ci-info/2.0.0
       configstore: registry.nlark.com/configstore/5.0.1
       file-type: registry.npmmirror.com/file-type/16.5.3
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       got: registry.nlark.com/got/11.8.2
       node-object-hash: registry.nlark.com/node-object-hash/2.3.10
       proper-lockfile: registry.nlark.com/proper-lockfile/4.1.2
@@ -16148,7 +16148,7 @@ packages:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.0
       '@hapi/joi': registry.nlark.com/@hapi/joi/15.1.1
       common-tags: registry.nlark.com/common-tags/1.8.0
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby: registry.npmmirror.com/gatsby/3.14.0_7df6671bb6ce2188e8de9d2bbd0950b2
       gatsby-plugin-utils: registry.npmmirror.com/gatsby-plugin-utils/1.14.0_gatsby@3.14.0
       lodash.merge: registry.nlark.com/lodash.merge/4.6.2
@@ -16237,7 +16237,7 @@ packages:
       debug: registry.nlark.com/debug/4.3.2
       escape-string-regexp: registry.nlark.com/escape-string-regexp/1.0.5
       eval: registry.npmmirror.com/eval/0.1.6
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby-core-utils: registry.npmmirror.com/gatsby-core-utils/2.14.0
       gray-matter: registry.npmmirror.com/gray-matter/4.0.3
       json5: registry.nlark.com/json5/2.2.0
@@ -16352,7 +16352,7 @@ packages:
       async: registry.npmmirror.com/async/3.2.2
       bluebird: registry.nlark.com/bluebird/3.7.2
       filenamify: registry.npmmirror.com/filenamify/4.3.0
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby: registry.npmmirror.com/gatsby/3.14.0_7df6671bb6ce2188e8de9d2bbd0950b2
       gatsby-core-utils: registry.npmmirror.com/gatsby-core-utils/2.14.0
       gatsby-plugin-utils: registry.npmmirror.com/gatsby-plugin-utils/1.14.0_gatsby@3.14.0
@@ -16464,7 +16464,7 @@ packages:
       execa: registry.npmmirror.com/execa/5.1.1
       express: registry.nlark.com/express/4.17.1
       express-graphql: registry.nlark.com/express-graphql/0.12.0_graphql@15.7.2
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby-core-utils: registry.npmmirror.com/gatsby-core-utils/2.14.0
       gatsby-telemetry: registry.npmmirror.com/gatsby-telemetry/2.14.0
       glob: registry.npmmirror.com/glob/7.2.0
@@ -16539,7 +16539,7 @@ packages:
     dependencies:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.0
       cheerio: registry.npmmirror.com/cheerio/1.0.0-rc.10
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby: registry.npmmirror.com/gatsby/3.14.0_7df6671bb6ce2188e8de9d2bbd0950b2
       is-relative-url: registry.npmmirror.com/is-relative-url/3.0.0
       lodash: registry.nlark.com/lodash/4.17.21
@@ -16636,7 +16636,7 @@ packages:
       chokidar: registry.nlark.com/chokidar/3.5.2
       fastq: registry.nlark.com/fastq/1.13.0
       file-type: registry.npmmirror.com/file-type/16.5.3
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby: registry.npmmirror.com/gatsby/3.14.0_7df6671bb6ce2188e8de9d2bbd0950b2
       gatsby-core-utils: registry.npmmirror.com/gatsby-core-utils/2.14.0
       got: registry.nlark.com/got/9.6.0
@@ -16662,7 +16662,7 @@ packages:
       async-retry-ng: registry.npmmirror.com/async-retry-ng/2.0.1
       boxen: registry.npmmirror.com/boxen/4.2.0
       configstore: registry.nlark.com/configstore/5.0.1
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby-core-utils: registry.npmmirror.com/gatsby-core-utils/2.14.0
       git-up: registry.nlark.com/git-up/4.0.5
       is-docker: registry.nlark.com/is-docker/2.2.1
@@ -16686,7 +16686,7 @@ packages:
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.0
       bluebird: registry.nlark.com/bluebird/3.7.2
       common-tags: registry.nlark.com/common-tags/1.8.0
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby: registry.npmmirror.com/gatsby/3.14.0_7df6671bb6ce2188e8de9d2bbd0950b2
       gatsby-plugin-sharp: registry.npmmirror.com/gatsby-plugin-sharp/3.14.0_gatsby@3.14.0
       potrace: registry.npmmirror.com/potrace/2.1.8
@@ -16785,7 +16785,7 @@ packages:
       file-loader: registry.npmmirror.com/file-loader/6.2.0_webpack@5.61.0
       find-cache-dir: registry.npmmirror.com/find-cache-dir/3.3.2
       fs-exists-cached: registry.nlark.com/fs-exists-cached/1.0.0
-      fs-extra: registry.npmmirror.com/fs-extra/10.0.1
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       gatsby-cli: registry.npmmirror.com/gatsby-cli/3.14.2
       gatsby-core-utils: registry.npmmirror.com/gatsby-core-utils/2.14.0
       gatsby-graphiql-explorer: registry.npmmirror.com/gatsby-graphiql-explorer/1.14.0
