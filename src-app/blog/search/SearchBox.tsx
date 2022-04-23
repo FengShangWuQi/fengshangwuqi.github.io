@@ -9,7 +9,7 @@ import { flex } from "src-core/style";
 import { useDialog } from "src-components/notice/Dialog";
 import { IconSearch } from "src-components/basic/Icon";
 
-const SearchBox = ({ refine, currentRefinement }: any) => {
+const SearchBox = ({ refine, currentRefinement, onFocus }: any) => {
   const ref = useRef(null);
 
   const ds = useDesignSystem();
@@ -70,8 +70,9 @@ const SearchBox = ({ refine, currentRefinement }: any) => {
         type="search"
         placeholder="Search Posts"
         aria-label="Search"
-        onChange={e => refine(e.target.value)}
         value={currentRefinement}
+        onChange={e => refine(e.target.value)}
+        onFocus={onFocus}
       />
     </form>
   );
