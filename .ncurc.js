@@ -15,5 +15,6 @@ module.exports = {
     "react-test-renderer",
 
     "execa",
+    "globby",
   ],
 };

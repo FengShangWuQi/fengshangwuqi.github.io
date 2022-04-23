@@ -28,7 +28,8 @@
         "@testing-library/react-hooks",
         "react-test-renderer",
 
-        "execa"
+        "execa",
+        "globby"
       ]
     }
   ]
