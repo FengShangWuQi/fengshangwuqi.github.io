@@ -4,8 +4,6 @@ module: ds
 name: colorPalette
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { ColorPaletteDemo } from "./colorPalette.stories";
 
 ```js

@@ -4,8 +4,6 @@ module: style
 name: flex
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { FlexDemo } from "./flex.stories";
 
 <FlexDemo />

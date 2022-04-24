@@ -4,8 +4,6 @@ module: notice
 name: Dialog
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { DialogDemo } from "./Dialog.stories";
 
 <DialogDemo />

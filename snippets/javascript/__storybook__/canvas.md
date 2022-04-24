@@ -4,8 +4,6 @@ module: javascript
 name: canvas
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { BarrageDemo } from "./canvas.stories";
 
 <BarrageDemo  />

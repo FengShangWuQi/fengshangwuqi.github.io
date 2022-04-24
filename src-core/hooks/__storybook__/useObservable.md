@@ -4,8 +4,6 @@ module: hooks
 name: useObservable
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { UseObservableDemo } from "./useObservable.stories";
 
 <UseObservableDemo />

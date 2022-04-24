@@ -4,8 +4,6 @@ module: style
 name: mq
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { MqDemo } from "./mq.stories";
 
 <MqDemo />

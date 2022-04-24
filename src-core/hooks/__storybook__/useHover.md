@@ -4,8 +4,6 @@ module: hooks
 name: useHover
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { UseHoverDemo } from "./useHover.stories";
 
 <UseHoverDemo />

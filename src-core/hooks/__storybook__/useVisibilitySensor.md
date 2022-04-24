@@ -4,8 +4,6 @@ module: hooks
 name: useVisibilitySensor
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { UseVisibilitySensorDemo } from "./useVisibilitySensor.stories";
 
 <UseVisibilitySensorDemo />

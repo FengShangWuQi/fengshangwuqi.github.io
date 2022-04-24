@@ -4,8 +4,6 @@ module: style
 name: fluidType
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { FluidTypeDemo } from "./fluidType.stories";
 
 <FluidTypeDemo />

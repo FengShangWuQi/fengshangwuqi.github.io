@@ -4,8 +4,6 @@ module: css
 name: backface-visibility
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { BackFaceVisibilityDemo } from "./backface-visibility.stories";
 
 <BackFaceVisibilityDemo />

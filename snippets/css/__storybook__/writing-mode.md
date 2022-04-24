@@ -4,8 +4,6 @@ module: css
 name: writing-mode
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { VerticalRl } from "./writing-mode.stories"
 
 <VerticalRl />

@@ -4,8 +4,6 @@ module: hooks
 name: useIsomorphicLayoutEffect
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 ```ts
 /*
  * use useIsomorphicLayoutEffect in place of useLayoutEffect to avoid SSR warning

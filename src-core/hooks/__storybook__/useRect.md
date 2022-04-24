@@ -4,8 +4,6 @@ module: hooks
 name: useRect
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { UseRectDemo } from "./useRect.stories";
 
 <UseRectDemo />

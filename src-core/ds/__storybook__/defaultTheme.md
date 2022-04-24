@@ -4,8 +4,6 @@ module: ds
 name: defaultTheme
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { DefaultThemeDemo } from "./defaultTheme.stories";
 
 ```jsx {7}

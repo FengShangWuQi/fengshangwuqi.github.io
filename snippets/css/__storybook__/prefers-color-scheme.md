@@ -4,8 +4,6 @@ module: css
 name: prefers-color-scheme
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { PrefersColorSchemeDemo } from "./prefers-color-scheme.stories"
 
 <PrefersColorSchemeDemo />

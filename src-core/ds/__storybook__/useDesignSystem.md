@@ -4,8 +4,6 @@ module: ds
 name: useDesignSystem
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 ```js {6,11}
 // useDesignSystem.ts
 import { ThemeContext } from "@emotion/react";

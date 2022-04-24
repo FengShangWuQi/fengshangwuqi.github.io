@@ -4,8 +4,6 @@ module: style
 name: grid
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { GridDemo } from "./grid.stories";
 
 <GridDemo />

@@ -4,8 +4,6 @@ module: redux
 name: createStore
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 ```js
 const createStore = (reducer, preloadedState, enhancer) => {
   const currentState = preloadedState;

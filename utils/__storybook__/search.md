@@ -4,8 +4,6 @@ module: utils
 name: search
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 ```js
 import { parse, stringify } from "querystring";
 

@@ -4,8 +4,6 @@ module: css
 name: attr
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { AttrDemo } from "./attr.stories";
 
 <AttrDemo />

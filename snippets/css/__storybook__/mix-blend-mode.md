@@ -4,8 +4,6 @@ module: css
 name: mix-blend-mode
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { MixBlendModeDemo } from "./mix-blend-mode.stories";
 
 <MixBlendModeDemo />

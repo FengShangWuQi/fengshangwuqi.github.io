@@ -4,8 +4,6 @@ module: css
 name: first-letter
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { FirstLetterDemo } from "./first-letter.stories";
 
 <FirstLetterDemo />

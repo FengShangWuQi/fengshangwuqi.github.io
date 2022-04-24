@@ -4,8 +4,6 @@ module: hooks
 name: useClickOutside
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { UseClickOutsideDemo } from "./useClickOutside.stories";
 
 <UseClickOutsideDemo />

@@ -4,8 +4,6 @@ module: utils
 name: pickElmAttrs
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 ```js {18}
 // pickElmAttrs.ts
 import isPropValid from "@emotion/is-prop-valid";

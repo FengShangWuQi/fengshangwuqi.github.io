@@ -4,8 +4,6 @@ module: hooks
 name: useToggle
 ---
 
-import { Source } from "src-app/storybook/common/Source";
-
 import { UseToggleDemo } from "./useToggle.stories";
 
 <UseToggleDemo />
