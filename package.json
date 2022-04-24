@@ -4,11 +4,13 @@
   "author": "fengshangwuqi <fengshanguwqi@gmail.com>",
   "homepage": "https://blog.fengshangwuqi.com/",
   "keywords": [
-    "gatsby",
-    "react",
-    "typescript",
-    "emotion",
-    "pnpm"
+    "Blog",
+    "Storybook",
+    "React",
+    "Gatsby",
+    "Emotion",
+    "TypeScript",
+    "Pnpm"
   ],
   "appkit": {
     "dev": "gatsby develop -o",
@@ -22,12 +24,12 @@
     "lint": "eslint '**/*.{js,ts,tsx}'",
     "pretest": "pnpm tsc",
     "test": "jest",
-    "clean::branch": "ts-node scripts/clean/clean-branch.ts",
+    "clean::branch": "ts-node ./scripts/clean/clean-branch.ts",
     "build::icons": "ts-node ./scripts/build/generate-icons.ts",
     "build::zhoubao": "ts-node ./scripts/build/generate-zhoubao.ts",
     "build::assets": "ts-node ./scripts/build/build-assets.ts",
     "r::create": "ts-node ./scripts/release/create-release.ts",
-    "start": "ts-node scripts/start.ts"
+    "start": "ts-node ./scripts/start.ts"
   },
   "commitlint": {
     "extends": [
