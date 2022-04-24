@@ -119,7 +119,7 @@
     "@squoosh/lib": "0.4.1",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.5",
-    "@testing-library/react-hooks": "7.0.2",
+    "@testing-library/react-hooks": "8.0.0",
     "@types/facepaint": "1.2.2",
     "@types/figlet": "1.5.4",
     "@types/fs-extra": "9.0.13",
