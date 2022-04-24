@@ -24,6 +24,7 @@ specifiers:
   "@types/gh-pages": 3.2.1
   "@types/jest": 27.4.1
   "@types/lodash": 4.14.182
+  "@types/mdx-js__react": 1.5.5
   "@types/node": 17.0.25
   "@types/react": 17.0.44
   "@types/react-dom": 17.0.15
@@ -153,6 +154,7 @@ devDependencies:
   "@types/gh-pages": registry.npmmirror.com/@types/gh-pages/3.2.1
   "@types/jest": registry.npmmirror.com/@types/jest/27.4.1
   "@types/lodash": registry.npmmirror.com/@types/lodash/4.14.182
+  "@types/mdx-js__react": registry.npmmirror.com/@types/mdx-js__react/1.5.5
   "@types/node": registry.npmmirror.com/@types/node/17.0.25
   "@types/react": registry.npmmirror.com/@types/react/17.0.44
   "@types/react-dom": registry.npmmirror.com/@types/react-dom/17.0.15
@@ -1099,6 +1101,9 @@ packages:
     engines: { node: ">=12" }
     peerDependencies:
       "@types/node": ">=12"
+    peerDependenciesMeta:
+      "@types/node":
+        optional: true
     dependencies:
       "@types/node": registry.npmmirror.com/@types/node/17.0.25
     dev: false
@@ -8727,6 +8732,19 @@ packages:
       "@types/unist": registry.npmmirror.com/@types/unist/2.0.6
     dev: false
 
+  registry.npmmirror.com/@types/mdx-js__react/1.5.5:
+    resolution:
+      {
+        integrity: sha512-k8pnaP6JXVlQh18HgL5X6sYFNC/qZnzO7R2+HsmwrwUd+JnnsU0d9lyyT0RQrHg1anxDU36S98TI/fsGtmYqqg==,
+        registry: https://registry.npm.taobao.org/,
+        tarball: https://registry.npmmirror.com/@types/mdx-js__react/-/mdx-js__react-1.5.5.tgz,
+      }
+    name: "@types/mdx-js__react"
+    version: 1.5.5
+    dependencies:
+      "@types/react": registry.npmmirror.com/@types/react/17.0.44
+    dev: true
+
   registry.npmmirror.com/@types/minimatch/3.0.5:
     resolution:
       {
@@ -15250,7 +15268,7 @@ packages:
         tarball: https://registry.npmmirror.com/event-source-polyfill/-/event-source-polyfill-1.0.25.tgz,
       }
     name: event-source-polyfill
-    version: 1.0.26
+    version: 1.0.25
     deprecated: "[WARNING] Use 1.0.25 instead of 1.0.26, reason: Undesired Behavior https://security.snyk.io/vuln/SNYK-JS-EVENTSOURCEPOLYFILL-2429580, issues: https://github.com/Yaffle/EventSource/issues/199"
     dev: false
 
