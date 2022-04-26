@@ -28,7 +28,7 @@ specifiers:
   '@types/node': 17.0.25
   '@types/react': 17.0.44
   '@types/react-dom': 17.0.15
-  '@types/react-instantsearch-dom': 6.12.2
+  '@types/react-instantsearch-dom': 6.12.3
   '@vercel/node': 1.14.1
   algoliasearch: 4.13.0
   axios: 0.27.1
@@ -158,7 +158,7 @@ devDependencies:
   '@types/node': registry.npmmirror.com/@types/node/17.0.25
   '@types/react': registry.npmmirror.com/@types/react/17.0.44
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.15
-  '@types/react-instantsearch-dom': registry.npmmirror.com/@types/react-instantsearch-dom/6.12.2
+  '@types/react-instantsearch-dom': registry.npmmirror.com/@types/react-instantsearch-dom/6.12.3
   '@vercel/node': registry.npmmirror.com/@vercel/node/1.14.1
   axios: registry.npmmirror.com/axios/0.27.1
   babel-jest: registry.npmmirror.com/babel-jest/27.5.1
@@ -6286,10 +6286,10 @@ packages:
       algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.8.2_algoliasearch@4.13.0
     dev: true
 
-  registry.npmmirror.com/@types/react-instantsearch-dom/6.12.2:
-    resolution: {integrity: sha512-MsVn01rRXsthQyKkUfcXAaiNBoCCsiPiD2/gzPx050QO/g2VfTacOTzSZfh29+0luRqAV58abnG34eQ/luq2Wg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-instantsearch-dom/-/react-instantsearch-dom-6.12.2.tgz}
+  registry.npmmirror.com/@types/react-instantsearch-dom/6.12.3:
+    resolution: {integrity: sha512-HAQG74v7OzsUhdjNermd0A8c7LWRLsrMCsFCY6+7HEXK1hikeCs/Hmy6xjFhZVfFEWvpvX78vxJELafoAnuv8Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-instantsearch-dom/-/react-instantsearch-dom-6.12.3.tgz}
     name: '@types/react-instantsearch-dom'
-    version: 6.12.2
+    version: 6.12.3
     dependencies:
       '@types/react': registry.npmmirror.com/@types/react/17.0.44
       '@types/react-instantsearch-core': registry.npmmirror.com/@types/react-instantsearch-core/6.10.7
