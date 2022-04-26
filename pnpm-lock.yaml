@@ -31,7 +31,7 @@ specifiers:
   '@types/react-instantsearch-dom': 6.12.2
   '@vercel/node': 1.14.1
   algoliasearch: 4.13.0
-  axios: 0.27.0
+  axios: 0.27.1
   babel-jest: 27.5.1
   babel-preset-gatsby: 2.0.0
   date-fns: 2.28.0
@@ -160,7 +160,7 @@ devDependencies:
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.15
   '@types/react-instantsearch-dom': registry.npmmirror.com/@types/react-instantsearch-dom/6.12.2
   '@vercel/node': registry.npmmirror.com/@vercel/node/1.14.1
-  axios: registry.npmmirror.com/axios/0.27.0
+  axios: registry.npmmirror.com/axios/0.27.1
   babel-jest: registry.npmmirror.com/babel-jest/27.5.1
   babel-preset-gatsby: registry.npmmirror.com/babel-preset-gatsby/2.0.0
   date-fns: registry.npmmirror.com/date-fns/2.28.0
@@ -7260,10 +7260,10 @@ packages:
       - debug
     dev: false
 
-  registry.npmmirror.com/axios/0.27.0:
-    resolution: {integrity: sha512-XV/WrPxXfzgZ8j4lcB5i6LyaXmi90yetmV/Fem0kmglGx+mpY06CiweL3YxU6wOTNLmqLUePW4G8h45nGZ/+pA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/axios/-/axios-0.27.0.tgz}
+  registry.npmmirror.com/axios/0.27.1:
+    resolution: {integrity: sha512-ePNMai55xo5GsXajb/k756AqZqpqeDaGwGcdvbZLSSELbbYwsIn2jNmGfUPEwd8j/yu4OoMstLLIVa4t0MneEA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/axios/-/axios-0.27.1.tgz}
     name: axios
-    version: 0.27.0
+    version: 0.27.1
     dependencies:
       follow-redirects: registry.npmmirror.com/follow-redirects/1.14.9_debug@3.2.7
       form-data: registry.npmmirror.com/form-data/4.0.0
