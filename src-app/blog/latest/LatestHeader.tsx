@@ -4,8 +4,10 @@ import { position, size } from "polished";
 
 import { useRect } from "src-core/hooks";
 import { useDesignSystem } from "src-core/ds";
-import { flex } from "src-core/style";
+import { flex, userSelect } from "src-core/style";
+import { pickElmAttrs } from "utils/pickElmAttrs";
 
+import { SOCIAL_ACCOUNTS, SOCIAL_ACCOUNT_UNDERLINE_WIDTH } from "../constants";
 import { Stars } from "./Stars";
 
 export const LatestHeader = () => {
@@ -26,21 +28,15 @@ export const LatestHeader = () => {
                   lineHeight: "28px",
                   fontSize: ds.size.sm,
                 }}>
-                <SocialLink
-                  src={`https://github.com/FengShangWuQi`}
-                  color="#e0a458">
-                  GitHub
-                </SocialLink>
-                <SocialLink
-                  src={`https://twitter.com/fengshangwuqi`}
-                  color="#419d78">
-                  Twitter
-                </SocialLink>
-                <SocialLink
-                  src={`https://storybook.fengshangwuqi.com`}
-                  color="#d9594c">
-                  Storybook
-                </SocialLink>
+                {SOCIAL_ACCOUNTS.map(account => (
+                  <SocialAccount
+                    css={{ marginRight: 25 }}
+                    key={account.name}
+                    link={account.link}
+                    color={account.color}>
+                    {account.name}
+                  </SocialAccount>
+                ))}
               </div>
             </div>
           </Container>
@@ -104,6 +100,7 @@ const Title = () => {
   return (
     <div
       css={{
+        ...userSelect("none"),
         lineHeight: "63px",
         fontFamily: "serif",
         fontSize: ds.size["4xl"],
@@ -121,6 +118,7 @@ const Contact = ({ Email }: { Email: string }) => {
   return (
     <div
       css={{
+        ...userSelect("none"),
         fontFamily: "sans-serif",
         fontSize: ds.size.sm,
         lineHeight: "28px",
@@ -133,34 +131,35 @@ const Contact = ({ Email }: { Email: string }) => {
   );
 };
 
-const SocialLink = ({
-  src,
+const SocialAccount = ({
+  link,
   color,
   children,
+  ...otherProps
 }: {
-  src: string;
+  link: string;
   color: string;
   children: string;
 }) => {
   const ref = useRef(null);
   const [rect] = useRect(ref);
 
-  const DEFAULT_WIDTH = 15;
   const [props, setProps] = useSpring(() => ({
-    width: DEFAULT_WIDTH,
+    width: SOCIAL_ACCOUNT_UNDERLINE_WIDTH,
     height: 2,
     background: color,
   }));
 
   return (
     <a
+      {...pickElmAttrs(otherProps)}
       ref={ref}
       css={{
+        ...userSelect("none"),
         display: "inline-block",
-        marginRight: 25,
         color,
       }}
-      href={src}
+      href={link}
       target="_blank"
       rel="noopener noreferrer">
       <div
@@ -169,7 +168,7 @@ const SocialLink = ({
         }}
         onMouseLeave={() => {
           setProps({
-            width: DEFAULT_WIDTH,
+            width: SOCIAL_ACCOUNT_UNDERLINE_WIDTH,
           });
         }}>
         {children}
