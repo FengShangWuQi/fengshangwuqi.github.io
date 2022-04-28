@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { size } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { flex } from "src-core/style";
+import { flex, userSelect } from "src-core/style";
 import { pickElmAttrs } from "utils/pickElmAttrs";
 
 export interface IPaginationProps {
@@ -95,16 +95,20 @@ const PaginationItem = ({
             alignItems: "center",
             justifyContent: "center",
           }),
+          ...userSelect("none"),
           marginLeft: 8,
           borderRadius: ds.radius.default,
           cursor: "pointer",
+          color: ds.color.textLight,
+          background: ds.color.bgLight,
+          "&:first-of-type": {
+            marginLeft: 0,
+          },
         },
-        isActive
-          ? {
-              color: ds.color.bg,
-              background: ds.color.primary,
-            }
-          : { color: ds.color.textLight, background: ds.color.bgLight },
+        isActive && {
+          color: ds.color.bg,
+          background: ds.color.primary,
+        },
       ]}
       onClick={() => onPageChange(children)}>
       {children}

@@ -10,7 +10,7 @@ import { fromEvent } from "rxjs";
 import { padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-import { grid, flex } from "src-core/style";
+import { grid, flex, userSelect } from "src-core/style";
 
 import { useDialog } from "src-components/notice/Dialog";
 import { IconCornerDownLeft } from "src-components/basic/Icon";
@@ -65,6 +65,7 @@ const Hits = connectHits(({ hits }: any) => {
           css={{
             ...flex({ justifyContent: "space-between", alignItems: "center" }),
             ...padding(0, ds.spacing[6]),
+            ...userSelect("none"),
             height: 70,
             fontSize: ds.size.sm,
             fontWeight: "normal",

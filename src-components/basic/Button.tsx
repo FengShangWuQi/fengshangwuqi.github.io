@@ -2,7 +2,7 @@ import React, { forwardRef, ButtonHTMLAttributes } from "react";
 import { lighten, position, border } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-
+import { userSelect } from "src-core/style";
 import { pickElmAttrs } from "utils/pickElmAttrs";
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -23,6 +23,7 @@ export const Button = forwardRef<HTMLButtonElement, IButtonProps>(
         css={{
           ...position("relative"),
           ...border(1, "solid", ds.color.primary),
+          ...userSelect("none"),
           padding: `${ds.spacing["1"]} ${ds.spacing["3"]}`,
           borderRadius: ds.radius.default,
           outline: 0,
