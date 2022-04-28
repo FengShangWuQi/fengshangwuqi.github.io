@@ -1,10 +1,10 @@
 ---
 group: core
 module: style
-name: fluidType
+name: fluid-type
 ---
 
-import { FluidTypeDemo } from "./fluidType.stories";
+import { FluidTypeDemo } from "./fluid-type.stories";
 
 <FluidTypeDemo />
 
@@ -34,4 +34,4 @@ styled.div({
 });
 ```
 
-<Source path="src-core/style/fluidType.ts" />
+<Source path="src-core/style/fluid-type.ts" />

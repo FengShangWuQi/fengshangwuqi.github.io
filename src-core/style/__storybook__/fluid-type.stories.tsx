@@ -1,6 +1,6 @@
 import React from "react";
 
-import { fluidType } from "../fluidType";
+import { fluidType } from "../fluid-type";
 
 export const FluidTypeDemo = () => (
   <p
