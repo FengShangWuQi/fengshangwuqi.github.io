@@ -81,7 +81,7 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet-async: 1.3.0
-  react-instantsearch-dom: 6.23.4
+  react-instantsearch-dom: 6.24.0
   react-spring: 9.4.4
   react-test-renderer: 17.0.2
   rxjs: 7.5.5
@@ -132,7 +132,7 @@ dependencies:
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.npmmirror.com/react-helmet-async/1.3.0_react-dom@17.0.2+react@17.0.2
-  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.23.4_9b8e18b5cb5fb389e8f0dd6018a41c59
+  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.24.0_9b8e18b5cb5fb389e8f0dd6018a41c59
   react-spring: registry.npmmirror.com/react-spring/9.4.4_react-dom@17.0.2+react@17.0.2
   rxjs: registry.npmmirror.com/rxjs/7.5.5
 
@@ -18151,11 +18151,11 @@ packages:
       shallowequal: registry.npmmirror.com/shallowequal/1.1.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-core/6.23.4_24a9da51e62336c335e8233e10af21bd:
-    resolution: {integrity: sha512-wT2WACQW1LIt62kv9rBni4W9DPtFJUU7MLG7h6hXOg0n1MblGbKCZAjJ6WEFQsMWbqL3PK0EcV+Bm5gmxilPxg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/-/react-instantsearch-core-6.23.4.tgz}
-    id: registry.npmmirror.com/react-instantsearch-core/6.23.4
+  registry.npmmirror.com/react-instantsearch-core/6.24.0_24a9da51e62336c335e8233e10af21bd:
+    resolution: {integrity: sha512-qtJDit/r8NpFA3OI188MPwughAeO/xBrSmpXnDmwYo5GGSOZPJEzbmBHKWbco7JWMUAUXIrFxGvfcVLQWEdVAg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/-/react-instantsearch-core-6.24.0.tgz}
+    id: registry.npmmirror.com/react-instantsearch-core/6.24.0
     name: react-instantsearch-core
-    version: 6.23.4
+    version: 6.24.0
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
       react: '>= 16.3.0 < 19'
@@ -18168,11 +18168,11 @@ packages:
       react-fast-compare: registry.npmmirror.com/react-fast-compare/3.2.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-dom/6.23.4_9b8e18b5cb5fb389e8f0dd6018a41c59:
-    resolution: {integrity: sha512-sy/XTNiM2UlJZGbjH7ZvsI+pgEFIxIGQXGEdwniaiD1x/oHNfB7/XVJd62fUnrIPiz5YcADxg/tZQ5vvkU3izA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/-/react-instantsearch-dom-6.23.4.tgz}
-    id: registry.npmmirror.com/react-instantsearch-dom/6.23.4
+  registry.npmmirror.com/react-instantsearch-dom/6.24.0_9b8e18b5cb5fb389e8f0dd6018a41c59:
+    resolution: {integrity: sha512-FLxqtw3C7PmBBWNHOkLJM7OV+D34QOCCOZw86ubWsq9GhrjqVDGfWAsg8GTjeyp5u2u1h9qKvds3UuWCPFO2SQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/-/react-instantsearch-dom-6.24.0.tgz}
+    id: registry.npmmirror.com/react-instantsearch-dom/6.24.0
     name: react-instantsearch-dom
-    version: 6.23.4
+    version: 6.24.0
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
       react: '>= 16.3.0 < 19'
@@ -18186,7 +18186,7 @@ packages:
       react: registry.npmmirror.com/react/17.0.2
       react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
       react-fast-compare: registry.npmmirror.com/react-fast-compare/3.2.0
-      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.23.4_24a9da51e62336c335e8233e10af21bd
+      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.24.0_24a9da51e62336c335e8233e10af21bd
     dev: false
 
   registry.npmmirror.com/react-is/16.13.1:
