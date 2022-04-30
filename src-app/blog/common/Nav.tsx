@@ -9,7 +9,7 @@ import { Button } from "src-components/basic/Button";
 
 import { pickElmAttrs } from "utils/pickElmAttrs";
 
-import { APP_ROUTES } from "../constants";
+import { APP_META, APP_ROUTES } from "../constants";
 import { Search } from "../search";
 
 export const Nav = ({ pathname, ...props }: { pathname: string }) => {
@@ -33,7 +33,7 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
               display: isArchiveOrNotFound ? "block" : "none",
               fontSize: [ds.size["2xl"], ds.size["3xl"]],
             })}>
-            枫上雾棋的日志
+            {APP_META.TITLE}
           </Link>
         </MenuItem>
       </Menu>
