@@ -75,7 +75,7 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
             href="https://github.com/FengShangWuQi/fengshangwuqi.github.io/releases"
             target="_blank"
             rel="noopener noreferrer">
-            <Button primary>Subscribe</Button>
+            <Button primary>订阅</Button>
           </a>
         </MenuItem>
       </Menu>

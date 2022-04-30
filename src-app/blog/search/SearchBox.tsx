@@ -68,7 +68,7 @@ const SearchBox = ({ refine, currentRefinement, onFocus }: any) => {
         ref={ref}
         id="searchInput"
         type="search"
-        placeholder="Search Posts"
+        placeholder="文章"
         aria-label="Search"
         value={currentRefinement}
         onChange={e => refine(e.target.value)}
