@@ -12,10 +12,10 @@ import { UserSelectDemo } from "./user-select.stories";
 export const userSelect = (
   value: "auto" | "text" | "none" | "contain" | "all",
 ): CSSObject => ({
-  "-moz-user-select": value,
-  "-webkit-user-select": value,
-  "-ms-user-select": value,
-  "user-select": value,
+  MozUserSelect: value,
+  WebkitUserSelect: value,
+  MsUserSelect: value,
+  UserSelect: value,
 });
 ```
 

@@ -16,6 +16,7 @@ const color = {
 export const defaultTheme = {
   color,
   colorPalette,
+  // ...
 };
 
 // Layout.tsx
