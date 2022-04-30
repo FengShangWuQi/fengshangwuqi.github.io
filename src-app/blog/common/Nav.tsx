@@ -9,12 +9,13 @@ import { Button } from "src-components/basic/Button";
 
 import { pickElmAttrs } from "utils/pickElmAttrs";
 
+import { APP_ROUTES } from "../constants";
 import { Search } from "../search";
 
 export const Nav = ({ pathname, ...props }: { pathname: string }) => {
   const ds = useDesignSystem();
 
-  const isArchiveOr404 = pathname === "/archive" || pathname === "/404";
+  const isArchiveOrNotFound = ["/archive", "/404"].includes(pathname);
 
   return (
     <div
@@ -29,7 +30,7 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
           <Link
             to="/"
             css={mq(["lg"], {
-              display: isArchiveOr404 ? "block" : "none",
+              display: isArchiveOrNotFound ? "block" : "none",
               fontSize: [ds.size["2xl"], ds.size["3xl"]],
             })}>
             枫上雾棋的日志
@@ -39,7 +40,7 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
 
       <Menu
         css={
-          isArchiveOr404
+          isArchiveOrNotFound
             ? mq(["sm"], {
                 display: ["none", "block"],
                 marginLeft: ds.spacing["5"],
@@ -57,11 +58,7 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
           </MenuItem>
         )}
 
-        {[
-          { value: "/archive", label: "归档" },
-          { value: "/", label: "最新" },
-          { value: "/rss.xml", label: "rss" },
-        ].map(item => (
+        {APP_ROUTES.map(item => (
           <MenuItem key={item.value}>
             {item.label === "rss" ? (
               <a href={item.value} target="_blank" rel="noopener noreferrer">
