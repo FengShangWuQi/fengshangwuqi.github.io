@@ -1,18 +1,22 @@
 import React, { useRef } from "react";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated } from "@react-spring/web";
 import { position, size } from "polished";
 
-import { useRect } from "src-core/hooks";
+import { useRect, useToggle } from "src-core/hooks";
 import { useDesignSystem } from "src-core/ds";
 import { flex, userSelect } from "src-core/style";
+
 import { pickElmAttrs } from "utils/pickElmAttrs";
 
-import { SOCIAL_ACCOUNTS, SOCIAL_ACCOUNT_UNDERLINE_WIDTH } from "../constants";
+import {
+  APP_META,
+  CONTACT_INFO,
+  SOCIAL_ACCOUNTS,
+  SOCIAL_ACCOUNT_UNDERLINE_WIDTH,
+} from "../constants";
 import { Stars } from "./Stars";
 
 export const LatestHeader = () => {
-  const ds = useDesignSystem();
-
   return (
     <Wrapper>
       {({ width, height }) => (
@@ -20,24 +24,9 @@ export const LatestHeader = () => {
           <Stars width={width} height={height} />
           <Container>
             <div>
-              <Title />
-              <Contact Email="fengshangwuqi@gmail.com" />
-              <div
-                css={{
-                  paddingTop: 16,
-                  lineHeight: "28px",
-                  fontSize: ds.size.sm,
-                }}>
-                {SOCIAL_ACCOUNTS.map(account => (
-                  <SocialAccount
-                    css={{ marginRight: 25 }}
-                    key={account.name}
-                    link={account.link}
-                    color={account.color}>
-                    {account.name}
-                  </SocialAccount>
-                ))}
-              </div>
+              <AppMeta />
+              <ContactInfo />
+              <SocialAccount />
             </div>
           </Container>
         </>
@@ -94,31 +83,29 @@ const Container = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-const Title = () => {
+const AppMeta = () => {
   const ds = useDesignSystem();
 
   return (
     <div
       css={{
-        ...userSelect("none"),
         lineHeight: "63px",
         fontFamily: "serif",
         fontSize: ds.size["4xl"],
         color: "#fff",
         letterSpacing: 2,
       }}>
-      枫上雾棋的日志
+      {APP_META.TITLE}
     </div>
   );
 };
 
-const Contact = ({ Email }: { Email: string }) => {
+const ContactInfo = () => {
   const ds = useDesignSystem();
 
   return (
     <div
       css={{
-        ...userSelect("none"),
         fontFamily: "sans-serif",
         fontSize: ds.size.sm,
         lineHeight: "28px",
@@ -126,29 +113,48 @@ const Contact = ({ Email }: { Email: string }) => {
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale",
       }}>
-      {Email}
+      {CONTACT_INFO.EMAIL}
     </div>
   );
 };
 
-const SocialAccount = ({
-  link,
+const SocialAccount = () => {
+  const ds = useDesignSystem();
+
+  return (
+    <div
+      css={{
+        paddingTop: 16,
+        lineHeight: "28px",
+        fontSize: ds.size.sm,
+      }}>
+      {SOCIAL_ACCOUNTS.map(account => (
+        <SocialAccountItem
+          key={account.name}
+          css={{ marginRight: 25, "&:last-of-type": { marginRight: 0 } }}
+          {...account}
+        />
+      ))}
+    </div>
+  );
+};
+
+const SocialAccountItem = ({
   color,
-  children,
+  link,
+  name,
   ...otherProps
 }: {
-  link: string;
   color: string;
-  children: string;
+  link: string;
+  name: string;
 }) => {
   const ref = useRef(null);
   const [rect] = useRect(ref);
-
-  const [props, setProps] = useSpring(() => ({
-    width: SOCIAL_ACCOUNT_UNDERLINE_WIDTH,
-    height: 2,
-    background: color,
-  }));
+  const [isHover, { show, hide }] = useToggle();
+  const styles = useSpring({
+    width: isHover ? rect.width : SOCIAL_ACCOUNT_UNDERLINE_WIDTH,
+  });
 
   return (
     <a
@@ -162,18 +168,16 @@ const SocialAccount = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer">
-      <div
-        onMouseEnter={() => {
-          setProps({ width: rect.width });
-        }}
-        onMouseLeave={() => {
-          setProps({
-            width: SOCIAL_ACCOUNT_UNDERLINE_WIDTH,
-          });
-        }}>
-        {children}
+      <div onMouseEnter={show} onMouseLeave={hide}>
+        {name}
       </div>
-      <animated.div style={props} />
+      <animated.div
+        style={{
+          height: 2,
+          background: color,
+          ...styles,
+        }}
+      />
     </a>
   );
 };
