@@ -1,13 +1,13 @@
 import React from "react";
 import { graphql, navigate } from "gatsby";
-import { clearFix, margin, border } from "polished";
+import { clearFix } from "polished";
 
 import { ITheme } from "src-core/ds";
 import { SEO } from "src-core/seo";
 
 import { Pagination } from "src-components/navigation/Pagination";
 
-import { Layout, Nav, Wrapper } from "../common";
+import { Layout, Nav } from "../common";
 import { LatestHeader, LatestList } from "../latest";
 
 export const query = graphql`
@@ -72,19 +72,7 @@ const BlogLatest = ({
 
       <Nav pathname={pathname} />
       <LatestHeader />
-
-      <Wrapper withShadow>
-        <div
-          css={(ds: ITheme) => ({
-            ...margin(ds.spacing[12], 0, ds.spacing[4]),
-            ...border("bottom", 3, "solid", ds.color.primary),
-            fontSize: ds.size.xl,
-          })}>
-          最近的文章
-        </div>
-
-        <LatestList posts={posts} />
-      </Wrapper>
+      <LatestList posts={posts} />
 
       <div
         css={(ds: ITheme) => ({

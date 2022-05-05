@@ -1,2 +1,2 @@
-export * from "./LatestHeader";
-export * from "./LatestList";
+export * from "./latest-header";
+export * from "./latest-list";
