@@ -15,6 +15,7 @@ export const DSReset = () => {
         styles={{
           body: {
             margin: 0,
+            minWidth: 320,
             fontFamily: ds.fontFamily.system,
             color: ds.color.text,
             background: ds.color.bg,
