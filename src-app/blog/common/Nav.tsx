@@ -15,7 +15,9 @@ import { Search } from "../search";
 export const Nav = ({ pathname, ...props }: { pathname: string }) => {
   const ds = useDesignSystem();
 
-  const isArchiveOrNotFound = ["/archive", "/404"].includes(pathname);
+  const isMetaTitleVisible = ["archive", "404"].some(
+    path => /^\/\w+\/?$/.test(pathname) && pathname.includes(path),
+  );
 
   return (
     <div
@@ -30,7 +32,7 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
           <Link
             to="/"
             css={mq(["lg"], {
-              display: isArchiveOrNotFound ? "block" : "none",
+              display: isMetaTitleVisible ? "block" : "none",
               fontSize: [ds.size["2xl"], ds.size["3xl"]],
             })}>
             {APP_META.TITLE}
@@ -40,12 +42,11 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
 
       <Menu
         css={
-          isArchiveOrNotFound
-            ? mq(["sm"], {
-                display: ["none", "block"],
-                marginLeft: ds.spacing["5"],
-              })
-            : {}
+          isMetaTitleVisible &&
+          mq(["sm"], {
+            display: ["none", "block"],
+            marginLeft: ds.spacing["5"],
+          })
         }
         {...pickElmAttrs(props)}>
         {process.env.GATSBY_ALGOLIA_APP_ID && (
