@@ -71,14 +71,16 @@ const ArchiveItem = ({ path, title }: IArchiveItem) => {
         <div
           css={{
             marginLeft: ds.spacing[4],
+            flex: 1,
           }}>
           <Link
+            ref={hoverRef}
             css={{
               marginRight: ds.spacing[3],
               color: ds.color.textLight,
             }}
             to={path}>
-            <span ref={hoverRef}>{title}</span>
+            <span>{title}</span>
           </Link>
         </div>
       </div>
