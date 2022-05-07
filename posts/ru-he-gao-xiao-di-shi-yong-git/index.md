@@ -18,6 +18,8 @@ $ git config --global user.email "邮箱"
 
 # default branch name, to be compatible with GitHub
 $ git config --global init.defaultbranch main
+# enable Git to work better on filesystems that are not case sensitive
+$ git config core.ignorecase false
 ```
 
 其中，`--global` 是全局设置，如果想对特定项目使用不同配置，可取消该参数。
