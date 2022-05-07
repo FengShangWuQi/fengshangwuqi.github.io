@@ -1,9 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-import { OpenGraph } from "./OpenGraph";
-import { TwitterCard } from "./TwitterCard";
-import { SchemaOrg, ISchemaOrgProps } from "./SchemaOrg";
+import { OpenGraph } from "./open-graph";
+import { TwitterCard } from "./twitter-card";
+import { SchemaOrg, ISchemaOrgProps } from "./schema-org";
 
 export interface IBaseSEO {
   title: string;

@@ -4,7 +4,7 @@ import { BehaviorSubject } from "rxjs";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 
-import { Button } from "src-components/basic/Button";
+import { Button } from "src-components/basic/button";
 
 import { useObservable } from "../useObservable";
 

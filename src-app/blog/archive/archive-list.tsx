@@ -19,7 +19,6 @@ export const ArchiveList = ({ posts }: { posts: any }) => {
       css={{
         ...position("relative"),
         fontSize: ds.size.sm,
-
         "&:before": {
           ...position("absolute"),
           left: 0,

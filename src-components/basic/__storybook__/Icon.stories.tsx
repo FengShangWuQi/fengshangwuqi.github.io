@@ -13,7 +13,7 @@ import {
   IconReactjs,
   IconSearch,
   IconUbuntu,
-} from "../Icon";
+} from "../icon";
 
 export const IconDemo = () => {
   const ds = useDesignSystem();

@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-import { IOpenGraphProps } from "./OpenGraph";
+import { IOpenGraphProps } from "./open-graph";
 
 export interface ISchemaOrgProps extends IOpenGraphProps {
   author?: string;

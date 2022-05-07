@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-import { Layout, Center } from "../common/Layout";
-import { Header } from "../common/Header";
+import { Layout, Center } from "../common/layout";
+import { Header } from "../common/header";
 
 import { useSiteMetadata } from "./storybook-index";
 

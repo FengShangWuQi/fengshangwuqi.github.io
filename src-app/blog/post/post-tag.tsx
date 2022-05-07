@@ -10,7 +10,7 @@ import {
   IconHtml,
   IconGit,
   IconUbuntu,
-} from "src-components/basic/Icon";
+} from "src-components/basic/icon";
 
 import { pickElmAttrs } from "utils/pickElmAttrs";
 

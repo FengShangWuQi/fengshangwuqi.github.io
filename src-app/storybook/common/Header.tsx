@@ -3,10 +3,9 @@ import { Link } from "gatsby";
 import { margin, padding } from "polished";
 
 import { useDesignSystem } from "src-core/ds";
-
 import { flex } from "src-core/style";
 
-import { Menu, MenuItem } from "src-components/navigation/Menu";
+import { Menu, MenuItem } from "src-components/navigation/menu";
 
 export const Header = ({ groups }: { groups: string[] }) => {
   const ds = useDesignSystem();

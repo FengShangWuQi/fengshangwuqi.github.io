@@ -5,9 +5,9 @@ import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 import { useToggle } from "src-core/hooks";
 
-import { Button } from "src-components/basic/Button";
+import { Button } from "src-components/basic/button";
 
-import { Dialog, useDialog, supportDialog } from "../Dialog";
+import { Dialog, useDialog, supportDialog } from "../dialog";
 
 export const DialogDemo = () => {
   const ds = useDesignSystem();

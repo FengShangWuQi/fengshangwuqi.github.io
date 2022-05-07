@@ -2,8 +2,8 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { Helmet } from "react-helmet-async";
 
-import { Layout, Center } from "../common/Layout";
-import { Header } from "../common/Header";
+import { Layout, Center } from "../common/layout";
+import { Header } from "../common/header";
 
 export const useSiteMetadata = () => {
   const { site } = useStaticQuery(

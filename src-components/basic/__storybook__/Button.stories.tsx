@@ -2,7 +2,7 @@ import React from "react";
 
 import { useDesignSystem } from "src-core/ds";
 
-import { Button } from "../Button";
+import { Button } from "../button";
 
 export const ButtonDemo = () => {
   const ds = useDesignSystem();

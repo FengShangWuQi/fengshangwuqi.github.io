@@ -4,8 +4,8 @@ module: notice
 name: Dialog
 ---
 
-import { DialogDemo } from "./Dialog.stories";
+import { DialogDemo } from "./dialog.stories";
 
 <DialogDemo />
 
-<Source path="src-components/basic/Button.tsx" />
+<Source path="src-components/notice/dialog.tsx" />

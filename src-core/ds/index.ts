@@ -1,7 +1,7 @@
 export { ThemeProvider } from "@emotion/react";
-export * from "./colorPalette";
-export * from "./defaultTheme";
+export * from "./color-palette";
+export * from "./default-theme";
 export * from "./reset";
 export * from "./useDesignSystem";
-export * from "./toggleTheme";
-export * from "./PrismTheme";
+export * from "./toggle-theme";
+export * from "./prism-theme";

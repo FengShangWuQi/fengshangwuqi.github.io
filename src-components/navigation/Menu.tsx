@@ -67,4 +67,4 @@ export const Menu = ({
   </ul>
 );
 
-export * from "./MenuItem";
+export * from "./menu-item";

@@ -4,11 +4,12 @@ import { border } from "polished";
 import { Dictionary } from "lodash";
 
 import { useDesignSystem } from "src-core/ds";
+
+import { Menu, MenuItem, MenuMode } from "src-components/navigation/menu";
+
 import { toSearchString } from "utils/search";
 
-import { Menu, MenuItem, MenuMode } from "src-components/navigation/Menu";
-
-import { Container } from "../common/Layout";
+import { Container } from "./layout";
 
 export const SideBar = ({
   pathPrefix,

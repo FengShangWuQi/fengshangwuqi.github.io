@@ -1,6 +1,6 @@
 import { rgba } from "polished";
 
-import { colorPalette } from "./colorPalette";
+import { colorPalette } from "./color-palette";
 
 export enum breakpoint {
   sm = 640,

@@ -6,8 +6,8 @@ import { fromEvent } from "rxjs";
 import { useDesignSystem } from "src-core/ds";
 import { flex } from "src-core/style";
 
-import { useDialog } from "src-components/notice/Dialog";
-import { IconSearch } from "src-components/basic/Icon";
+import { useDialog } from "src-components/notice/dialog";
+import { IconSearch } from "src-components/basic/icon";
 
 const SearchBox = ({ refine, currentRefinement, onFocus }: any) => {
   const ref = useRef(null);

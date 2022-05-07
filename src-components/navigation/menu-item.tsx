@@ -6,7 +6,7 @@ import { mq, flex } from "src-core/style";
 
 import { pickElmAttrs } from "utils/pickElmAttrs";
 
-import { MenuMode, useMenu } from "./Menu";
+import { MenuMode, useMenu } from "./menu";
 
 const menuItemStyle: CSSObject = {};
 

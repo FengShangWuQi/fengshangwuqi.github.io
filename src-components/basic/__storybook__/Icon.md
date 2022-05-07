@@ -4,7 +4,7 @@ module: basic
 name: Icon
 ---
 
-import { IconDemo } from "./Icon.stories";
+import { IconDemo } from "./icon.stories";
 
 <IconDemo />
 

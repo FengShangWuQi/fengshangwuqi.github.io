@@ -1,6 +1,7 @@
 import {} from "react";
 import { Interpolation } from "@emotion/serialize";
-import { ITheme } from "../src-core/ds/defaultTheme";
+
+import { ITheme } from "../src-core/ds/default-theme";
 
 declare module "react" {
   interface Attributes {

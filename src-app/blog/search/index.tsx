@@ -6,11 +6,11 @@ import { border } from "polished";
 import { useDesignSystem } from "src-core/ds";
 import { useToggle } from "src-core/hooks";
 
-import { IconSearch } from "src-components/basic/Icon";
-import { Dialog, supportDialog } from "src-components/notice/Dialog";
+import { IconSearch } from "src-components/basic/icon";
+import { Dialog, supportDialog } from "src-components/notice/dialog";
 
-import SearchBox from "./SearchBox";
-import { SearchResult } from "./SearchResult";
+import SearchBox from "./search-box";
+import { SearchResult } from "./search-result";
 
 export const Search = ({ indices }: { indices: { name: string }[] }) => {
   const ds = useDesignSystem();

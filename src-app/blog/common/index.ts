@@ -1,3 +1,3 @@
-export * from "./Layout";
-export * from "./Nav";
-export * from "./Wrapper";
+export * from "./layout";
+export * from "./nav";
+export * from "./wrapper";

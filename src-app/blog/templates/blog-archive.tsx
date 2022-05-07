@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import { SEO } from "src-core/seo";
 
 import { Layout, Wrapper, Nav } from "../common";
-import { ArchiveList } from "../archive/ArchiveList";
+import { ArchiveList } from "../archive/archive-list";
 
 export const query = graphql`
   query ArchivePageQuery {

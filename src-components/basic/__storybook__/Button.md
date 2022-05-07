@@ -4,8 +4,8 @@ module: basic
 name: Button
 ---
 
-import { ButtonDemo } from "./Button.stories";
+import { ButtonDemo } from "./button.stories";
 
 <ButtonDemo />
 
-<Source path="src-components/basic/Button.tsx" />
+<Source path="src-components/basic/button.tsx" />

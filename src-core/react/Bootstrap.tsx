@@ -8,7 +8,8 @@ import {
   ITheme,
   ToggleThemeProvider,
 } from "src-core/ds";
-import { Source } from "src-app/storybook/common/Source";
+
+import { Source } from "src-app/storybook/common/source";
 
 export const Bootstrap = ({
   ds,

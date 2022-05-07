@@ -3,7 +3,7 @@ import React from "react";
 import { useDesignSystem } from "src-core/ds";
 import { inlineFlex } from "src-core/style";
 
-import { IconGithub } from "src-components/basic/Icon";
+import { IconGithub } from "src-components/basic/icon";
 
 export const Source = ({ path }: { path: string }) => {
   const ds = useDesignSystem();

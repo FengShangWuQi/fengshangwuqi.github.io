@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-import { IBaseSEO } from "./SEO";
+import { IBaseSEO } from "./seo";
 
 export interface IOpenGraphProps extends IBaseSEO {
   url: string;

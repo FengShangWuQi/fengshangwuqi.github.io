@@ -14,7 +14,7 @@ import {
   SOCIAL_ACCOUNTS,
   SOCIAL_ACCOUNT_UNDERLINE_WIDTH,
 } from "../constants";
-import { Stars } from "./Stars";
+import { Stars } from "./stars";
 
 export const LatestHeader = () => {
   return (

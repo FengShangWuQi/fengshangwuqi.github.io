@@ -12,10 +12,10 @@ import { padding } from "polished";
 import { useDesignSystem } from "src-core/ds";
 import { grid, flex, userSelect } from "src-core/style";
 
-import { useDialog } from "src-components/notice/Dialog";
-import { IconCornerDownLeft } from "src-components/basic/Icon";
+import { useDialog } from "src-components/notice/dialog";
+import { IconCornerDownLeft } from "src-components/basic/icon";
 
-import { TagIcon } from "../post/PostTag";
+import { TagIcon } from "../post/post-tag";
 
 const Hits = connectHits(({ hits }: any) => {
   const ds = useDesignSystem();

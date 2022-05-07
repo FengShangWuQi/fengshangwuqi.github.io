@@ -5,7 +5,7 @@ import { clearFix } from "polished";
 import { ITheme } from "src-core/ds";
 import { SEO } from "src-core/seo";
 
-import { Pagination } from "src-components/navigation/Pagination";
+import { Pagination } from "src-components/navigation/pagination";
 
 import { Layout, Nav } from "../common";
 import { LatestHeader, LatestList } from "../latest";

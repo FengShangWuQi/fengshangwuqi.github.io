@@ -4,8 +4,8 @@ import { Link } from "gatsby";
 import { useDesignSystem } from "src-core/ds";
 import { mq, flex } from "src-core/style";
 
-import { Menu, MenuItem } from "src-components/navigation/Menu";
-import { Button } from "src-components/basic/Button";
+import { Menu, MenuItem } from "src-components/navigation/menu";
+import { Button } from "src-components/basic/button";
 
 import { pickElmAttrs } from "utils/pickElmAttrs";
 

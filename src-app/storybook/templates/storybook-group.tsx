@@ -4,12 +4,13 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet-async";
 
 import { grid } from "src-core/style";
+
 import { parseSearchString } from "utils/search";
 
-import { Layout, Center, Container } from "../common/Layout";
-import { Header } from "../common/Header";
-import { SideBar } from "../common/SideBar";
-import { Content } from "../common/Content";
+import { Layout, Center, Container } from "../common/layout";
+import { Header } from "../common/header";
+import { SideBar } from "../common/side-bar";
+import { Content } from "../common/content";
 
 export const query = graphql`
   query GroupPageQuery($group: String) {
