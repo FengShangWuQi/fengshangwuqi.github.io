@@ -42,18 +42,9 @@ export const Header = ({ groups }: { groups: string[] }) => {
             to="/">
             枫上雾棋的 storybook
           </Link>
-          <Menu
-            css={{
-              height: "50px!important",
-              lineHeight: "50px!important",
-            }}>
+          <Menu>
             {groups.map(group => (
-              <MenuItem
-                key={group}
-                css={{
-                  height: "50px!important",
-                  lineHeight: "50px!important",
-                }}>
+              <MenuItem key={group}>
                 <Link to={`/${group}`}>{group.toUpperCase()}</Link>
               </MenuItem>
             ))}

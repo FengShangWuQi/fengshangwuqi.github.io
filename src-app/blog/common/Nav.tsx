@@ -27,7 +27,11 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
           alignItems: "center",
         }),
       }}>
-      <Menu {...pickElmAttrs(props)}>
+      <Menu
+        css={mq(["sm"], {
+          height: [60, 80],
+        })}
+        {...pickElmAttrs(props)}>
         <MenuItem>
           <Link
             to="/"
@@ -41,13 +45,10 @@ export const Nav = ({ pathname, ...props }: { pathname: string }) => {
       </Menu>
 
       <Menu
-        css={
-          isMetaTitleVisible &&
-          mq(["sm"], {
-            display: ["none", "block"],
-            marginLeft: ds.spacing["5"],
-          })
-        }
+        css={mq(["sm"], {
+          display: [isMetaTitleVisible ? "none" : "block", "block"],
+          height: [60, 80],
+        })}
         {...pickElmAttrs(props)}>
         {process.env.GATSBY_ALGOLIA_APP_ID && (
           <MenuItem
