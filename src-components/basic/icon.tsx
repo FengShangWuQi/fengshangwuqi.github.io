@@ -1,0 +1,9 @@
+export { default as IconCornerDownLeft } from "./icons/corner-down-left.svg";
+export { default as IconCss } from "./icons/css.svg";
+export { default as IconGit } from "./icons/git.svg";
+export { default as IconGithub } from "./icons/github.svg";
+export { default as IconHash } from "./icons/hash.svg";
+export { default as IconHtml } from "./icons/html.svg";
+export { default as IconReactjs } from "./icons/reactjs.svg";
+export { default as IconSearch } from "./icons/search.svg";
+export { default as IconUbuntu } from "./icons/ubuntu.svg";
