@@ -25,7 +25,7 @@ jobs:
           source_ref: "post"
           target_branch: "dev"
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: "14"
 
