@@ -115,7 +115,7 @@
     "@commitlint/cli": "16.2.3",
     "@commitlint/config-conventional": "16.2.1",
     "@fengshangwuqi/appkit": "1.1.50",
-    "@fengshangwuqi/eslint-config": "1.1.42",
+    "@fengshangwuqi/eslint-config": "1.1.43",
     "@fengshangwuqi/logger": "1.1.21",
     "@fengshangwuqi/ts-config": "1.1.7",
     "@squoosh/lib": "0.4.1",
