@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 May 2022 04:39:35 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#19 @ Modern.js、Gatsby v4、Meta]]></title><description><![CDATA[前端动态 1、 深度解读字节跳动 Web Infra 发起的 Modern.js 开源项⽬ 10  ⽉  27-28  ⽇举办的稀⼟开发者⼤会 上，字节跳动  Web Infra…]]></description><link>https://blog.fengshangwuqi.com/issue-19/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/issue-19/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 31 Oct 2021 00:00:00 GMT</pubDate><content:encoded>var _excluded = [&quot;components&quot;];
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 May 2022 04:28:39 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#19 @ Modern.js、Gatsby v4、Meta]]></title><description><![CDATA[前端动态 1、 深度解读字节跳动 Web Infra 发起的 Modern.js 开源项⽬ 10  ⽉  27-28  ⽇举办的稀⼟开发者⼤会 上，字节跳动  Web Infra…]]></description><link>https://blog.fengshangwuqi.com/issue-19/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/issue-19/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 31 Oct 2021 00:00:00 GMT</pubDate><content:encoded>var _excluded = [&quot;components&quot;];
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -36930,7 +36930,16 @@ return function MDXContent(_ref) {
   }, &quot;# default branch name, to be compatible with GitHub&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; config --global init.defaultbranch main&quot;))), mdx(&quot;p&quot;, null, &quot;\u5176\u4E2D\uFF0C&quot;, mdx(&quot;code&quot;, {
+  }, &quot;git&quot;), &quot; config --global init.defaultbranch main\n&quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token comment&quot;
+  }, &quot;# enable Git to work better on filesystems that are not case sensitive&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token function&quot;
+  }, &quot;git&quot;), &quot; config core.ignorecase &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token boolean&quot;
+  }, &quot;false&quot;)))), mdx(&quot;p&quot;, null, &quot;\u5176\u4E2D\uFF0C&quot;, mdx(&quot;code&quot;, {
     parentName: &quot;p&quot;,
     &quot;className&quot;: &quot;language-text&quot;
   }, &quot;--global&quot;), &quot; \u662F\u5168\u5C40\u8BBE\u7F6E\uFF0C\u5982\u679C\u60F3\u5BF9\u7279\u5B9A\u9879\u76EE\u4F7F\u7528\u4E0D\u540C\u914D\u7F6E\uFF0C\u53EF\u53D6\u6D88\u8BE5\u53C2\u6570\u3002&quot;), mdx(&quot;p&quot;, null, mdx(&quot;strong&quot;, {
