@@ -28,6 +28,14 @@
       "automerge": false
     },
     {
+      "matchPackageNames": ["execa"],
+      "automerge": false
+    },
+    {
+      "matchPackageNames": ["globby"],
+      "automerge": false
+    },
+    {
       "excludePackageNames": [
         "@mdx-js/mdx",
         "@mdx-js/react",
@@ -39,10 +47,7 @@
         "@types/react",
         "@types/react-dom",
         "@testing-library/react",
-        "@testing-library/react-hooks",
-
-        "execa",
-        "globby"
+        "@testing-library/react-hooks"
       ]
     }
   ]
