@@ -114,7 +114,7 @@
     "@babel/plugin-transform-typescript": "7.16.8",
     "@commitlint/cli": "16.2.3",
     "@commitlint/config-conventional": "16.2.1",
-    "@fengshangwuqi/appkit": "1.1.50",
+    "@fengshangwuqi/appkit": "1.1.51",
     "@fengshangwuqi/eslint-config": "1.1.42",
     "@fengshangwuqi/logger": "1.1.21",
     "@fengshangwuqi/ts-config": "1.1.7",
