@@ -11,7 +11,7 @@ jobs:
           node-version: "14"
 
       - run: npm install -g pnpm
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install
       - run: pnpm pretest
       - run: pnpm test
 
