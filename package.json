@@ -74,7 +74,7 @@
     "algoliasearch": "4.13.0",
     "facepaint": "1.2.1",
     "figlet": "1.5.2",
-    "gatsby": "4.0.0",
+    "gatsby": "4.14.0",
     "gatsby-plugin-algolia": "0.26.0",
     "gatsby-plugin-catch-links": "4.0.0",
     "gatsby-plugin-emotion": "7.0.0",
