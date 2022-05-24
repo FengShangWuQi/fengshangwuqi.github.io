@@ -17,14 +17,15 @@ const targetDir = path.resolve(
 exports.createPages = require(path.resolve(targetDir, "createPages"));
 exports.onCreateNode = require(path.resolve(targetDir, "onCreateNode"));
 
-/*
- * Let plugins extend/mutate the site’s webpack configuration
+/**
+ * Adding a Custom webpack Config
+ * https://www.gatsbyjs.com/docs/how-to/custom-configuration/add-custom-webpack-config/
  *
- * https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/#onCreateWebpackConfig
+ * webpack.config.js
+ * https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/utils/webpack.config.js
  */
 
 const processEnv = () => {
-  // Defining Environment Variables in Client-side JavaScript
   const gatsbyVarObject = {
     __APP__: process.env.APP,
     __AUTHOR__: process.env.META_AUTHOR,
@@ -41,24 +42,24 @@ const processEnv = () => {
   );
 };
 
-const mergeResolve = config => {
-  // Absolute imports
-  config.resolve.modules.push(path.resolve(__dirname));
-};
-
 const mergePlugins = (config, plugins) => {
-  config.plugins.push(
+  const configPlugins = [
     plugins.define({
       ...processEnv(),
     }),
-  );
+  ];
+  config.plugins.push(...configPlugins);
+};
+
+const mergeResolve = config => {
+  config.resolve.modules.push(path.resolve(__dirname));
 };
 
 exports.onCreateWebpackConfig = ({ actions, plugins, getConfig }) => {
   const config = getConfig();
 
-  mergeResolve(config);
   mergePlugins(config, plugins);
+  mergeResolve(config);
 
   actions.replaceWebpackConfig(config);
 };
