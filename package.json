@@ -113,7 +113,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-typescript": "7.18.1",
-    "@commitlint/cli": "17.0.0",
+    "@commitlint/cli": "17.0.1",
     "@commitlint/config-conventional": "17.0.0",
     "@fengshangwuqi/appkit": "1.1.51",
     "@fengshangwuqi/eslint-config": "1.1.43",
