@@ -86,7 +86,9 @@ const BlogLatest = ({
           total={total}
           size={size}
           offset={offset}
-          onChange={page => navigate(page === 1 ? `/` : `/latest/${page}`)}
+          onChange={page => {
+            navigate(page === 1 ? `/` : `/latest/${page}`);
+          }}
         />
       </div>
     </Layout>
