@@ -69,7 +69,7 @@
     "@emotion/react": "11.9.0",
     "@emotion/styled": "11.8.1",
     "@mdx-js/mdx": "1.6.22",
-    "@mdx-js/react": "1.6.22",
+    "@mdx-js/react": "2.1.1",
     "@react-spring/web": "9.4.5",
     "@sentry/gatsby": "6.19.7",
     "algoliasearch": "4.13.1",
