@@ -101,7 +101,7 @@
     "gatsby-source-filesystem": "4.0.0",
     "gatsby-transformer-sharp": "4.0.0",
     "identity-obj-proxy": "3.0.0",
-    "immer": "9.0.14",
+    "immer": "9.0.15",
     "lmdb-store": "1.6.14",
     "lodash": "4.17.21",
     "polished": "4.2.2",
