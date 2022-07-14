@@ -57,6 +57,9 @@
     "rules": {
       "react/no-unescaped-entities": 0,
       "@typescript-eslint/no-unsafe-argument": 1
+    },
+    "parserOptions": {
+      "warnOnUnsupportedTypeScriptVersion": false
     }
   },
   "prettier": {
