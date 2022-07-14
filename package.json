@@ -120,7 +120,7 @@
     "@fengshangwuqi/eslint-config": "1.1.43",
     "@fengshangwuqi/logger": "1.1.22",
     "@fengshangwuqi/ts-config": "1.1.7",
-    "@squoosh/lib": "0.4.1",
+    "@squoosh/lib": "0.4.0",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.5",
     "@testing-library/react-hooks": "7.0.2",
