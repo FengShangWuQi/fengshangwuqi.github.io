@@ -50,8 +50,5 @@
         "@testing-library/react-hooks"
       ]
     }
-  ],
-  "constraints": {
-    "pnpm": "> 6"
-  }
+  ]
 }
