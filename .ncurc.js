@@ -3,6 +3,7 @@ module.exports = {
     // Gatsby
     "@mdx-js/mdx",
     "@mdx-js/react",
+    "gatsby-plugin-mdx",
     "gatsby-plugin-image",
 
     // React
