@@ -22,6 +22,7 @@ module.exports = {
 
   // https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/utils/flags.ts
   flags: {
+    DEV_SSR: false,
     FAST_DEV: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true,
