@@ -1,4 +1,4 @@
-> # [枫上雾棋的日志](https://blog.fengshangwuqi.com)
+> # [枫上雾棋的日志](https://www.fengshangwuqi.com)
 
 ![Blog Build Status](http://blog.fengshangwuqi.com/api/vercel-badge?owner=fengshangwuqi&repo=fengshangwuqi.github.io&project=blog)
 ![Storybook Build Status](http://storybook.fengshangwuqi.com/api/vercel-badge?owner=fengshangwuqi&repo=fengshangwuqi.github.io&project=storybook)
