@@ -1,9 +1,9 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import axios from "axios";
 
-import { DeployState, Project } from "src-client/github";
-import { fetchDeployState } from "src-api/deploy-state-fetcher";
-import { generateBadgeUrl } from "utils/badge";
+import { DeployState, Project } from "../src-client/github";
+import { fetchDeployState } from "../src-api/deploy-state-fetcher";
+import { generateBadgeUrl } from "../utils/badge";
 
 type VercelBadgeQuery = {
   owner: string;

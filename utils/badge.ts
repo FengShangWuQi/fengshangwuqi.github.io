@@ -1,4 +1,4 @@
-import { toSearchString } from "utils/search";
+import { toSearchString } from "./search";
 
 type BadgeColor =
   | "brightgreen"

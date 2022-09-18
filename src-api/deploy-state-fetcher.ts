@@ -3,8 +3,8 @@ import {
   storybookDeployStateQuery,
   DeployState,
   Project,
-} from "src-client/github";
-import { github } from "src-core/request/github";
+} from "../src-client/github";
+import { github } from "../src-core/request/github";
 
 const getQuery = (project: Project) => {
   switch (project) {
