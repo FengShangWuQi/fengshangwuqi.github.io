@@ -1,7 +1,7 @@
 import { Method, AxiosRequestConfig } from "axios";
 import { omit, omitBy, isUndefined } from "lodash";
 
-import { Endpoints } from "src-client/github";
+import { Endpoints } from "../../src-client/github";
 
 export type Route = keyof Endpoints;
 
