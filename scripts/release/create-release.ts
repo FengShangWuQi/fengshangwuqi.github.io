@@ -46,4 +46,6 @@ import { github } from "../../src-core/request/github";
       logger(err.message).withLevel("ERROR");
     }
   }
-})();
+})().catch(err => {
+  logger(err).withLevel("ERROR");
+});

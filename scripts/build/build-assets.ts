@@ -99,4 +99,6 @@ const compressImage = async (imgPath: string) => {
   await imagePool.close();
 
   logger("build assets").withLevel("SUCCESS");
-})();
+})().catch(err => {
+  logger(err).withLevel("ERROR");
+});

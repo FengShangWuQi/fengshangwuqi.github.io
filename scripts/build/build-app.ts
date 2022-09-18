@@ -1,3 +1,5 @@
+import { logger } from "@fengshangwuqi/logger";
+
 import { spawn } from "../../utils/spawn";
 import { getCIName } from "../../utils/ci";
 
@@ -14,4 +16,6 @@ import { getCIName } from "../../utils/ci";
   }
 
   await spawn("gatsby build --prefix-paths");
-})();
+})().catch(err => {
+  logger(err).withLevel("ERROR");
+});

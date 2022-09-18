@@ -56,4 +56,6 @@ const getIssueNum = (latestIssue: string) =>
   await outputFile(join("zhoubao", issueName), content);
 
   logger(`create zhoubao: ${issueName}`).withLevel("SUCCESS");
-})();
+})().catch(err => {
+  logger(err).withLevel("ERROR");
+});

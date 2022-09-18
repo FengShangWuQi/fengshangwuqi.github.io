@@ -104,4 +104,6 @@ const iconStorybook = (icons: string[]) => `
   await writeFile(sbPath, formatCode(iconStorybook(icons), sbPath));
 
   logger("generate icon").withLevel("SUCCESS");
-})();
+})().catch(err => {
+  logger(err).withLevel("ERROR");
+});

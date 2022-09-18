@@ -1,4 +1,5 @@
 import { argv } from "process";
+import { logger } from "@fengshangwuqi/logger";
 
 import { spawn } from "../utils/spawn";
 
@@ -11,4 +12,6 @@ import { spawn } from "../utils/spawn";
   if (!["blog", "storybook"].includes(app)) return;
 
   await spawn(`appkit ${action} ${app}`);
-})();
+})().catch(err => {
+  logger(err).withLevel("ERROR");
+});

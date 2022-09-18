@@ -1,4 +1,5 @@
 import execa from "execa";
+import { logger } from "@fengshangwuqi/logger";
 
 (async () => {
   const { stdout } = await execa("git", ["branch", "-a"]);
@@ -16,4 +17,6 @@ import execa from "execa";
       stdio: `inherit`,
     });
   }
-})();
+})().catch(err => {
+  logger(err).withLevel("ERROR");
+});
