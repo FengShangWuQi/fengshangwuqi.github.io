@@ -1,7 +1,8 @@
-import dotenv from "dotenv";
 import axios, { AxiosRequestConfig, AxiosInstance } from "axios";
+import dotenv from "dotenv";
 
-import { Endpoints } from "../../src-client/github";
+import { Endpoints } from "src-client/github";
+
 import { endpoint, Route } from "./endpoint";
 
 dotenv.config();

@@ -1,11 +1,11 @@
+export type Project = "blog" | "storybook";
+
 export enum DeployState {
   SUCCESS = "SUCCESS",
   PENDING = "PENDING",
   FAILURE = "FAILURE",
   INACTIVE = "INACTIVE",
 }
-
-export type IDeployState = keyof typeof DeployState;
 
 export interface Endpoints {
   /*

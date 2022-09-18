@@ -1,11 +1,17 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import axios from "axios";
 
-import { IDeployState, DeployState } from "../src-client/github";
-import { fetchDeployState, IProject } from "../src-api/deploy-state-fetcher";
-import { generateBadgeUrl } from "../utils/badge";
+import { DeployState, Project } from "src-client/github";
+import { fetchDeployState } from "src-api/deploy-state-fetcher";
+import { generateBadgeUrl } from "utils/badge";
 
-const getBadgeColor = (state: IDeployState) => {
+type VercelBadgeQuery = {
+  owner: string;
+  repo: string;
+  project: Project;
+};
+
+const getBadgeColor = (state: keyof typeof DeployState) => {
   switch (state) {
     case DeployState.SUCCESS: {
       return "brightgreen";
@@ -24,12 +30,16 @@ const getBadgeColor = (state: IDeployState) => {
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   const { query } = req;
-  const { owner, repo, project } = query as Record<string, string>;
+  const { owner, repo, project } = query as VercelBadgeQuery;
 
-  const deployState = await fetchDeployState(owner, repo, project as IProject);
-  const badgeUrl = generateBadgeUrl(project, deployState.toLowerCase(), {
-    color: getBadgeColor(deployState),
-    logo: "vercel",
+  const deployState = await fetchDeployState({ owner, repo, project });
+  const badgeUrl = generateBadgeUrl({
+    label: project,
+    message: deployState.toLowerCase(),
+    options: {
+      color: getBadgeColor(deployState),
+      logo: "vercel",
+    },
   });
   const { data } = await axios.get(badgeUrl);
 

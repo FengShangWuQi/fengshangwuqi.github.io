@@ -1,13 +1,12 @@
 import {
   blogDeployStateQuery,
   storybookDeployStateQuery,
-  IDeployState,
-} from "../src-client/github";
-import { github } from "../src-core/request/github";
+  DeployState,
+  Project,
+} from "src-client/github";
+import { github } from "src-core/request/github";
 
-export type IProject = "blog" | "storybook";
-
-const getQuery = (project: IProject) => {
+const getQuery = (project: Project) => {
   switch (project) {
     case "blog": {
       return blogDeployStateQuery;
@@ -18,11 +17,15 @@ const getQuery = (project: IProject) => {
   }
 };
 
-export const fetchDeployState = async (
-  owner: string,
-  repo: string,
-  project: IProject,
-): Promise<IDeployState> => {
+export const fetchDeployState = async ({
+  owner,
+  repo,
+  project,
+}: {
+  owner: string;
+  repo: string;
+  project: Project;
+}): Promise<keyof typeof DeployState> => {
   const res = await github.graphql(getQuery(project), {
     owner,
     repo,
