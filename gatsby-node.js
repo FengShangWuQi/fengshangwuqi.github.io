@@ -7,10 +7,12 @@
 
 const path = require("path");
 
+const DEFAULT_APP = "blog";
+
 const targetDir = path.resolve(
   __dirname,
   "src-app",
-  process.env.APP || "blog",
+  process.env.APP || DEFAULT_APP,
   "gatsby",
 );
 
@@ -23,6 +25,9 @@ exports.onCreateNode = require(path.resolve(targetDir, "onCreateNode"));
  *
  * webpack.config.js
  * https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby/src/utils/webpack.config.js
+ *
+ * webpack reducer
+ * https://github.com/gatsbyjs/gatsby/blob/54d4721462b9303fed723fdcb15ac5d72e103778/packages/gatsby/src/redux/reducers/webpack.ts
  */
 
 const processEnv = () => {
@@ -42,24 +47,33 @@ const processEnv = () => {
   );
 };
 
-const mergePlugins = (config, plugins) => {
-  const configPlugins = [
-    plugins.define({
-      ...processEnv(),
-    }),
-  ];
-  config.plugins.push(...configPlugins);
+const mergePlugins = (actions, plugins) => {
+  actions.setWebpackConfig({
+    plugins: [
+      plugins.define({
+        ...processEnv(),
+      }),
+    ],
+  });
 };
 
-const mergeResolve = config => {
-  config.resolve.modules.push(path.resolve(__dirname));
+const mergeResolve = actions => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        "src-api": path.resolve(__dirname, "src-api"),
+        "src-app": path.resolve(__dirname, "src-app"),
+        "src-client": path.resolve(__dirname, "src-client"),
+        "src-components": path.resolve(__dirname, "src-components"),
+        "src-core": path.resolve(__dirname, "src-core"),
+        static: path.resolve(__dirname, "static"),
+        utils: path.resolve(__dirname, "utils"),
+      },
+    },
+  });
 };
 
-exports.onCreateWebpackConfig = ({ actions, plugins, getConfig }) => {
-  const config = getConfig();
-
-  mergePlugins(config, plugins);
-  mergeResolve(config);
-
-  actions.replaceWebpackConfig(config);
+exports.onCreateWebpackConfig = ({ actions, plugins }) => {
+  mergePlugins(actions, plugins);
+  mergeResolve(actions);
 };
