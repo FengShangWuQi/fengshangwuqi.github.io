@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Sep 2022 05:07:03 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#19 @ Modern.js、Gatsby v4、Meta]]></title><description><![CDATA[前端动态 1、 深度解读字节跳动 Web Infra 发起的 Modern.js 开源项⽬ 10  ⽉  27-28  ⽇举办的稀⼟开发者⼤会 上，字节跳动  Web Infra…]]></description><link>https://blog.fengshangwuqi.com/issue-19/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/issue-19/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 31 Oct 2021 00:00:00 GMT</pubDate><content:encoded>var _excluded = [&quot;components&quot;];
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[fengshangwuqi's blog RSS Feed]]></title><description><![CDATA[枫上雾棋的 blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 18 Sep 2022 05:10:50 GMT</lastBuildDate><author><![CDATA[枫上雾棋]]></author><item><title><![CDATA[周报#19 @ Modern.js、Gatsby v4、Meta]]></title><description><![CDATA[前端动态 1、 深度解读字节跳动 Web Infra 发起的 Modern.js 开源项⽬ 10  ⽉  27-28  ⽇举办的稀⼟开发者⼤会 上，字节跳动  Web Infra…]]></description><link>https://blog.fengshangwuqi.com/issue-19/</link><guid isPermaLink="false">https://blog.fengshangwuqi.com/issue-19/</guid><dc:creator><![CDATA[枫上雾棋]]></dc:creator><pubDate>Sun, 31 Oct 2021 00:00:00 GMT</pubDate><content:encoded>var _excluded = [&quot;components&quot;];
 
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -35595,7 +35595,10 @@ return function MDXContent(_ref) {
   }, &quot;sudo&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;passwd&quot;), &quot; -l root   // \u518D\u6B21\u7981\u7528 root \u5E10\u53F7&quot;))), mdx(&quot;h3&quot;, {
+  }, &quot;passwd&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-l&quot;), &quot; root   // \u518D\u6B21\u7981\u7528 root \u5E10\u53F7&quot;))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;安装&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -35638,7 +35641,10 @@ return function MDXContent(_ref) {
   }, &quot;install&quot;), &quot; package    // \u5B89\u88C5\u5305\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;sudo&quot;), &quot; dpkg -i package_file.deb   // \u5B89\u88C5 .deb \u6587\u4EF6&quot;))), mdx(&quot;h3&quot;, {
+  }, &quot;sudo&quot;), &quot; dpkg &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-i&quot;), &quot; package_file.deb   // \u5B89\u88C5 .deb \u6587\u4EF6&quot;))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;删除&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -35681,13 +35687,22 @@ return function MDXContent(_ref) {
   }, &quot;sudo&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;apt-get&quot;), &quot; remove --purge package   // \u5220\u9664\u5305\u548C\u914D\u7F6E\u6587\u4EF6\n$ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;apt-get&quot;), &quot; remove &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--purge&quot;), &quot; package   // \u5220\u9664\u5305\u548C\u914D\u7F6E\u6587\u4EF6\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;sudo&quot;), &quot; dpkg -r package_name             // \u5378\u8F7D .deb \u6587\u4EF6\n$ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;sudo&quot;), &quot; dpkg &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-r&quot;), &quot; package_name             // \u5378\u8F7D .deb \u6587\u4EF6\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;sudo&quot;), &quot; dpkg -P package                  // \u5220\u9664\u5305\u548C\u914D\u7F6E\u6587\u4EF6&quot;))), mdx(&quot;h3&quot;, {
+  }, &quot;sudo&quot;), &quot; dpkg &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-P&quot;), &quot; package                  // \u5220\u9664\u5305\u548C\u914D\u7F6E\u6587\u4EF6&quot;))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;更新&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -35937,7 +35952,10 @@ return function MDXContent(_ref) {
   }, &quot;$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;lsof&quot;), &quot; -i:8000      // \u67E5\u770B &quot;, mdx(&quot;span&quot;, {
+  }, &quot;lsof&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-i:8000&quot;), &quot;      // \u67E5\u770B &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token number&quot;
   }, &quot;8000&quot;), &quot; \u7AEF\u53E3\n$ &quot;, mdx(&quot;span&quot;, {
@@ -36224,7 +36242,10 @@ return function MDXContent(_ref) {
   }, &quot;rmdir&quot;), &quot;       // \u79FB\u9664\u7A7A\u6587\u4EF6\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;rm&quot;), &quot; -rf      // \u5220\u9664\u76EE\u5F55\u5305\u542B\u5B50\u76EE\u5F55\u548C\u6587\u4EF6\n$ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;rm&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-rf&quot;), &quot;      // \u5220\u9664\u76EE\u5F55\u5305\u542B\u5B50\u76EE\u5F55\u548C\u6587\u4EF6\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
   }, &quot;mv&quot;), &quot;          // \u91CD\u547D\u540D/\u79FB\u52A8\u6587\u4EF6/\u76EE\u5F55\n$ &quot;, mdx(&quot;span&quot;, {
@@ -36233,16 +36254,25 @@ return function MDXContent(_ref) {
   }, &quot;cp&quot;), &quot;          // \u590D\u5236\u6587\u4EF6\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;cp&quot;), &quot; -r       // \u590D\u5236\u76EE\u5F55\n$ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;cp&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-r&quot;), &quot;       // \u590D\u5236\u76EE\u5F55\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;ls&quot;), &quot; -l       // \u663E\u793A\u6587\u4EF6\u8BE6\u7EC6\u4FE1\u606F\n$ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;ls&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-l&quot;), &quot;       // \u663E\u793A\u6587\u4EF6\u8BE6\u7EC6\u4FE1\u606F\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
   }, &quot;chmod&quot;), &quot; -/+   // \u4FEE\u6539\u6587\u4EF6\u6743\u9650\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;zip&quot;), &quot; -r XX.zip XX\n$ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;zip&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-r&quot;), &quot; XX.zip XX\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
   }, &quot;unzip&quot;), &quot; XX.zip&quot;))), mdx(&quot;h3&quot;, {
@@ -36398,19 +36428,28 @@ return function MDXContent(_ref) {
   }, &quot;## \u6293\u53D6\u9875\u9762\u5185\u5BB9\u5230\u4E00\u4E2A\u6587\u4EF6\u4E2D&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;curl&quot;), &quot; -o index.html https://www.baidu.com/\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;curl&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-o&quot;), &quot; index.html https://www.baidu.com/\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;## \u53EA\u6253\u5370\u5934\u90E8\u4FE1\u606F&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;curl&quot;), &quot; -I https://www.baidu.com/\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;curl&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-I&quot;), &quot; https://www.baidu.com/\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;## \u663E\u793A\u6293\u53D6\u9519\u8BEF&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;curl&quot;), &quot; -f https://segmentfault.com/n/1330000011469701\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;curl&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-f&quot;), &quot; https://segmentfault.com/n/1330000011469701\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u53D1\u9001\u8BF7\u6C42&quot;), &quot;\n&quot;, mdx(&quot;span&quot;, {
@@ -36419,10 +36458,19 @@ return function MDXContent(_ref) {
   }, &quot;## GET&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;curl&quot;), &quot; -i -H &quot;, mdx(&quot;span&quot;, {
+  }, &quot;curl&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-i&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-H&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
-  }, &quot;\&quot;Accept: application/json\&quot;&quot;), &quot; -H &quot;, mdx(&quot;span&quot;, {
+  }, &quot;\&quot;Accept: application/json\&quot;&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-H&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
   }, &quot;\&quot;Content-Type: application/json\&quot;&quot;), &quot; http://hostname/resource\n&quot;, mdx(&quot;span&quot;, {
@@ -36431,10 +36479,22 @@ return function MDXContent(_ref) {
   }, &quot;## POST&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;curl&quot;), &quot; -i -H &quot;, mdx(&quot;span&quot;, {
+  }, &quot;curl&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-i&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-H&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
-  }, &quot;\&quot;Content-Type: application/json\&quot;&quot;), &quot; -X POST -d &quot;, mdx(&quot;span&quot;, {
+  }, &quot;\&quot;Content-Type: application/json\&quot;&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-X&quot;), &quot; POST &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-d&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
   }, &quot;&apos;{\&quot;username\&quot;:\&quot;xyz\&quot;,\&quot;password\&quot;:\&quot;xyz\&quot;}&apos;&quot;), &quot; http://hostname/resource&quot;))), mdx(&quot;h3&quot;, {
@@ -36483,7 +36543,10 @@ return function MDXContent(_ref) {
   }, &quot;## \u91CD\u65B0\u52A0\u5165\u4EE5\u4E0A\u51FA\u73B0\u95EE\u9898\u7684apt-key&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;sudo&quot;), &quot; apt-key adv --recv-keys --keyserver keyserver.ubuntu.com PGP\u7B7E\u540D&quot;))), mdx(&quot;h3&quot;, {
+  }, &quot;sudo&quot;), &quot; apt-key adv --recv-keys &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--keyserver&quot;), &quot; keyserver.ubuntu.com PGP\u7B7E\u540D&quot;))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;录制-gif&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -36536,28 +36599,52 @@ return function MDXContent(_ref) {
   }, &quot;# xwininfo&quot;), &quot;\n\u67E5\u8BE2\u8981\u5F55\u5236\u7684\u7A97\u53E3\u4F4D\u7F6E\u3001\u5BBD\u5EA6\u548C\u9AD8\u5EA6\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
-  }, &quot;# \u793A\u4F8B&quot;), &quot;\n$ byzanz-record -x &quot;, mdx(&quot;span&quot;, {
+  }, &quot;# \u793A\u4F8B&quot;), &quot;\n$ byzanz-record &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-x&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token number&quot;
-  }, &quot;0&quot;), &quot; -y &quot;, mdx(&quot;span&quot;, {
+  }, &quot;0&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-y&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token number&quot;
-  }, &quot;24&quot;), &quot; -w &quot;, mdx(&quot;span&quot;, {
+  }, &quot;24&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-w&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token number&quot;
-  }, &quot;1920&quot;), &quot; -h &quot;, mdx(&quot;span&quot;, {
+  }, &quot;1920&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-h&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token number&quot;
-  }, &quot;1056&quot;), &quot; -c -d &quot;, mdx(&quot;span&quot;, {
+  }, &quot;1056&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-c&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-d&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token number&quot;
-  }, &quot;10&quot;), &quot; --delay&quot;, mdx(&quot;span&quot;, {
+  }, &quot;10&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--delay&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;=&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token number&quot;
-  }, &quot;3&quot;), &quot; -v app.gif&quot;))), mdx(&quot;h3&quot;, {
+  }, &quot;3&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-v&quot;), &quot; app.gif&quot;))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;硬链接与软链接&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -36606,7 +36693,10 @@ return function MDXContent(_ref) {
   }, &quot;ln&quot;), &quot; \u6E90\u6587\u4EF6 \u76EE\u6807\u6587\u4EF6   // \u786C\u94FE\u63A5\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;ln&quot;), &quot; -s \u6E90\u6587\u4EF6\u6216\u76EE\u5F55 \u76EE\u6807\u6587\u4EF6\u6216\u76EE\u5F55  // \u8F6F\u94FE\u63A5&quot;))), mdx(&quot;h3&quot;, {
+  }, &quot;ln&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-s&quot;), &quot; \u6E90\u6587\u4EF6\u6216\u76EE\u5F55 \u76EE\u6807\u6587\u4EF6\u6216\u76EE\u5F55  // \u8F6F\u94FE\u63A5&quot;))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;修改终端提示符&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -36915,13 +37005,19 @@ return function MDXContent(_ref) {
   }, &quot;$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; config --global user.name &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; config &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--global&quot;), &quot; user.name &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
   }, &quot;\&quot;\u7528\u6237\u540D\&quot;&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; config --global user.email &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; config &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--global&quot;), &quot; user.email &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
   }, &quot;\&quot;\u90AE\u7BB1\&quot;&quot;), &quot;\n\n&quot;, mdx(&quot;span&quot;, {
@@ -36930,7 +37026,10 @@ return function MDXContent(_ref) {
   }, &quot;# default branch name, to be compatible with GitHub&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; config --global init.defaultbranch main\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; config &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--global&quot;), &quot; init.defaultbranch main\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# enable Git to work better on filesystems that are not case sensitive&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
@@ -36958,7 +37057,10 @@ return function MDXContent(_ref) {
   }, &quot;$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; config --list\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; config &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--list&quot;), &quot;\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u67E5\u770B Git \u7684\u67D0\u4E00\u9879\u914D\u7F6E&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
@@ -37044,7 +37146,10 @@ return function MDXContent(_ref) {
   }, &quot;# \u63D0\u4EA4\u6682\u5B58\u533A\u7684\u6E90\u4EE3\u7801&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; commit -m &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; commit &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-m&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
   }, &quot;\&quot;\u672C\u6B21\u63D0\u4EA4\u8BF4\u660E\&quot;&quot;), &quot;\n\n&quot;, mdx(&quot;span&quot;, {
@@ -37056,16 +37161,25 @@ return function MDXContent(_ref) {
   }, &quot;git&quot;), &quot; status\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; status -sb  // \u67E5\u770B branch \u548C short status\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; status &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-sb&quot;), &quot;  // \u67E5\u770B branch \u548C short status\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u67E5\u770B\u63D0\u4EA4\u5386\u53F2&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; log --pretty&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; log &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--pretty&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
-  }, &quot;=&quot;), &quot;oneline -5&quot;))), mdx(&quot;h3&quot;, {
+  }, &quot;=&quot;), &quot;oneline &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-5&quot;)))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;将本地代码同步至远程仓库&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -37108,7 +37222,10 @@ return function MDXContent(_ref) {
   }, &quot;# \u67E5\u770B\u8FDC\u7A0B\u4E3B\u673A\u5730\u5740&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; remote -v\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; remote &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-v&quot;), &quot;\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u5206\u652F&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
@@ -37135,7 +37252,10 @@ return function MDXContent(_ref) {
   }, &quot;git&quot;), &quot; pull \u4E3B\u673A\u540D \u5206\u652F\u540D\t// \u5408\u5E76\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; pull -p           // \u4E0D\u62C9\u53D6\u5DF2\u7ECF\u5220\u9664\u7684\u5206\u652F\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; pull &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-p&quot;), &quot;           // \u4E0D\u62C9\u53D6\u5DF2\u7ECF\u5220\u9664\u7684\u5206\u652F\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u63A8\u9001&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
@@ -37147,7 +37267,13 @@ return function MDXContent(_ref) {
   }, &quot;# \u6253\u6807\u7B7E&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; tag -a \u7248\u672C\u53F7 -m &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; tag &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-a&quot;), &quot; \u7248\u672C\u53F7 &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-m&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
   }, &quot;\&quot;\u7248\u672C\u8BF4\u660E\&quot;&quot;)))), mdx(&quot;h2&quot;, {
@@ -37369,7 +37495,10 @@ return function MDXContent(_ref) {
   }, &quot;# \u8986\u76D6\u4E0A\u6B21\u63D0\u4EA4&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; commit --amend &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; commit &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--amend&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token punctuation&quot;
   }, &quot;[&quot;), &quot;-m &quot;, mdx(&quot;span&quot;, {
@@ -37384,13 +37513,19 @@ return function MDXContent(_ref) {
   }, &quot;# \u5220\u9664 untracked files \u4EE5\u53CA\u76EE\u5F55&quot;), &quot;\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; clean -df\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; clean &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-df&quot;), &quot;\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u5220\u9664\u524D\u786E\u8BA4&quot;), &quot;\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; clean -ndf&quot;))), mdx(&quot;h3&quot;, {
+  }, &quot;git&quot;), &quot; clean &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-ndf&quot;)))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;版本回退&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -37427,7 +37562,10 @@ return function MDXContent(_ref) {
   }, &quot;# \u56DE\u9000\u5230\u4E4B\u524D\u7684\u67D0\u6B21\u63D0\u4EA4&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; reset --hard commit_id\n\n- HEAD \u6307\u5411\u5F53\u524D\u7248\u672C\n- &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; reset &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--hard&quot;), &quot; commit_id\n\n- HEAD \u6307\u5411\u5F53\u524D\u7248\u672C\n- &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
   }, &quot;git&quot;), &quot; log \u53EF\u4EE5\u67E5\u770B\u63D0\u4EA4\u5386\u53F2\uFF0C\u4EE5\u4FBF\u786E\u5B9A\u8981\u56DE\u9000\u5230\u54EA\u4E2A\u7248\u672C\n- &quot;, mdx(&quot;span&quot;, {
@@ -37480,7 +37618,10 @@ return function MDXContent(_ref) {
   }, &quot;# \u67E5\u770B\u6240\u6709\u5206\u652F&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; branch -a\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; branch &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-a&quot;), &quot;\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u521B\u5EFA[\u5E76\u5207\u6362]\u5F00\u53D1\u5206\u652F&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
@@ -37510,7 +37651,10 @@ return function MDXContent(_ref) {
   }, &quot;# \u5220\u6389\u4E34\u65F6\u5206\u652F&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; branch -d fix\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; branch &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-d&quot;), &quot; fix\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u5C06\u5F00\u53D1\u5206\u652F\u63A8\u9001\u5230\u8FDC\u7A0B\u4ED3\u5E93&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
@@ -37522,13 +37666,19 @@ return function MDXContent(_ref) {
   }, &quot;# \u91CD\u547D\u540D\u5206\u652F&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; branch -m dev develop\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; branch &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-m&quot;), &quot; dev develop\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u5220\u9664\u8FDC\u7A0B\u5206\u652F&quot;), &quot;\n- $ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; push origin --delete \u5206\u652F\u540D\n- $ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; push origin &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--delete&quot;), &quot; \u5206\u652F\u540D\n- $ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
   }, &quot;git&quot;), &quot; push origin :\u5206\u652F\u540D&quot;))), mdx(&quot;h3&quot;, {
@@ -37591,19 +37741,28 @@ return function MDXContent(_ref) {
   }, &quot;git&quot;), &quot; push origin \u6807\u7B7E\u540D\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; push origin --tags\t// \u63A8\u9001\u6240\u6709\u6807\u7B7E\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; push origin &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--tags&quot;), &quot;\t// \u63A8\u9001\u6240\u6709\u6807\u7B7E\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u5220\u9664\u672C\u5730\u6807\u7B7E&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; tag -d \u6807\u7B7E\u540D\n\n&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; tag &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-d&quot;), &quot; \u6807\u7B7E\u540D\n\n&quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token comment&quot;
   }, &quot;# \u5220\u9664\u8FDC\u7A0B\u6807\u7B7E&quot;), &quot;\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; push origin --delete \u6807\u7B7E\u540D\n$ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; push origin &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--delete&quot;), &quot; \u6807\u7B7E\u540D\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
   }, &quot;git&quot;), &quot; push origin :refs/tags/\u6807\u7B7E\u540D&quot;))), mdx(&quot;h3&quot;, {
@@ -37640,7 +37799,10 @@ return function MDXContent(_ref) {
   }, &quot;$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; log --pretty&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; log &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--pretty&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;=&quot;), &quot;oneline  // \u53EA\u663E\u793A\u4E00\u884C\n$ &quot;, mdx(&quot;span&quot;, {
@@ -37649,7 +37811,10 @@ return function MDXContent(_ref) {
   }, &quot;git&quot;), &quot; log --abbrev-commit   // \u53EA\u663E\u793A SHA-1 \u7684\u524D\u51E0\u4E2A\u5B57\u7B26\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; log --graph           // \u663E\u793A ASCII \u56FE\u5F62\u8868\u793A\u7684\u5206\u652F\u5408\u5E76\u5386\u53F2\n$ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; log &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--graph&quot;), &quot;           // \u663E\u793A ASCII \u56FE\u5F62\u8868\u793A\u7684\u5206\u652F\u5408\u5E76\u5386\u53F2\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
   }, &quot;git&quot;), &quot; log --relative-date   // \u4F7F\u7528\u8F83\u77ED\u7684\u76F8\u5BF9\u65F6\u95F4\u663E\u793A\n$ &quot;, mdx(&quot;span&quot;, {
@@ -37658,16 +37823,25 @@ return function MDXContent(_ref) {
   }, &quot;git&quot;), &quot; log --name-only       // \u4EC5\u5728\u63D0\u4EA4\u4FE1\u606F\u540E\u663E\u793A\u5DF2\u4FEE\u6539\u7684\u6587\u4EF6\u6E05\u5355\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; log -n                // \u663E\u793A\u6700\u8FD1\u7684 n \u6761\u63D0\u4EA4\n$ &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; log &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-n&quot;), &quot;                // \u663E\u793A\u6700\u8FD1\u7684 n \u6761\u63D0\u4EA4\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; log --author&quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; log &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--author&quot;), mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;=&quot;), &quot;fengshangwuqi  // \u4EC5\u663E\u793A\u6307\u5B9A\u4F5C\u8005\u76F8\u5173\u7684\u63D0\u4EA4\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; log --grep                  // \u4EC5\u663E\u793A\u542B\u6307\u5B9A\u5173\u952E\u5B57\u7684\u63D0\u4EA4&quot;))), mdx(&quot;h3&quot;, {
+  }, &quot;git&quot;), &quot; log &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--grep&quot;), &quot;                  // \u4EC5\u663E\u793A\u542B\u6307\u5B9A\u5173\u952E\u5B57\u7684\u63D0\u4EA4&quot;))), mdx(&quot;h3&quot;, {
     &quot;id&quot;: &quot;提交&quot;,
     &quot;style&quot;: {
       &quot;position&quot;: &quot;relative&quot;
@@ -37701,7 +37875,10 @@ return function MDXContent(_ref) {
   }, &quot;$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; commit -m &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; commit &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-m&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
   }, &quot;\&quot;a no chnage commit\&quot;&quot;), &quot; --allow-empty&quot;))), mdx(&quot;p&quot;, null, &quot;\u4E3B\u8981\u7528\u4E8E\u4E00\u4E0B\u60C5\u5F62\uFF1A&quot;), mdx(&quot;ul&quot;, null, mdx(&quot;li&quot;, {
@@ -37787,7 +37964,10 @@ return function MDXContent(_ref) {
   }, &quot;git&quot;), &quot; merge\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; pull --rebase &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; pull &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;--rebase&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token operator&quot;
   }, &quot;=&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
@@ -38052,7 +38232,10 @@ return function MDXContent(_ref) {
   }, &quot;$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;git&quot;), &quot; commit -m &quot;, mdx(&quot;span&quot;, {
+  }, &quot;git&quot;), &quot; commit &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-m&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
   }, &quot;\&quot;fix: ..., fix #1, #2\&quot;&quot;)))), mdx(&quot;p&quot;, null, &quot;\u8FD9\u5C06\u4F1A\u5173\u95ED &quot;, mdx(&quot;strong&quot;, {
@@ -38354,7 +38537,13 @@ return function MDXContent(_ref) {
   }, &quot;$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;curl&quot;), &quot; -i https://git.io -F &quot;, mdx(&quot;span&quot;, {
+  }, &quot;curl&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-i&quot;), &quot; https://git.io &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-F&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token string&quot;
   }, &quot;\&quot;url=https://github.com/...\&quot;&quot;), &quot;\nHTTP/1.1 &quot;, mdx(&quot;span&quot;, {
@@ -38363,7 +38552,10 @@ return function MDXContent(_ref) {
   }, &quot;201&quot;), &quot; Created\nLocation: https://git.io/abc123\n\n$ &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token function&quot;
-  }, &quot;curl&quot;), &quot; -i https://git.io/abc123\nHTTP/1.1 &quot;, mdx(&quot;span&quot;, {
+  }, &quot;curl&quot;), &quot; &quot;, mdx(&quot;span&quot;, {
+    parentName: &quot;code&quot;,
+    &quot;className&quot;: &quot;token parameter variable&quot;
+  }, &quot;-i&quot;), &quot; https://git.io/abc123\nHTTP/1.1 &quot;, mdx(&quot;span&quot;, {
     parentName: &quot;code&quot;,
     &quot;className&quot;: &quot;token number&quot;
   }, &quot;302&quot;), &quot; Found\nLocation: https://github.com/&quot;, mdx(&quot;span&quot;, {
