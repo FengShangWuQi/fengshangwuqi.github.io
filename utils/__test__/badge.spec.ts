@@ -2,7 +2,7 @@ import { generateBadgeUrl } from "../badge";
 
 describe("badge #utils #badge", () => {
   it("generateBadgeUrl(label, message) - without opts", () => {
-    const badgeUrl = generateBadgeUrl("label", "message");
+    const badgeUrl = generateBadgeUrl({ label: "label", message: "message" });
 
     expect(badgeUrl).toBe(
       "https://img.shields.io/badge/label-message-brightgreen?style=flat",
@@ -10,7 +10,11 @@ describe("badge #utils #badge", () => {
   });
 
   it("generateBadgeUrl(label, message, { logo }) - with logo opts", () => {
-    const badgeUrl = generateBadgeUrl("label", "message", { logo: "logo" });
+    const badgeUrl = generateBadgeUrl({
+      label: "label",
+      message: "message",
+      options: { logo: "logo" },
+    });
 
     expect(badgeUrl).toBe(
       "https://img.shields.io/badge/label-message-brightgreen?style=flat&logo=logo",
@@ -18,10 +22,14 @@ describe("badge #utils #badge", () => {
   });
 
   it("generateBadgeUrl(label, message, { color, style, logo }) - with all opts", () => {
-    const badgeUrl = generateBadgeUrl("label", "message", {
-      color: "yellow",
-      style: "plastic",
-      logo: "logo",
+    const badgeUrl = generateBadgeUrl({
+      label: "label",
+      message: "message",
+      options: {
+        color: "yellow",
+        style: "plastic",
+        logo: "logo",
+      },
     });
 
     expect(badgeUrl).toBe(
