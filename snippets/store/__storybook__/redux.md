@@ -1,7 +1,7 @@
 ---
 group: snippets
-module: redux
-name: createStore
+module: store
+name: redux
 ---
 
 ```js
