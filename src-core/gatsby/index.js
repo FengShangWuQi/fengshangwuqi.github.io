@@ -113,7 +113,7 @@ const helmet = "gatsby-plugin-react-helmet-async"; // https://www.gatsbyjs.com/p
 
 const twitter = "gatsby-plugin-twitter"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-twitter/?=gatsby-plugin-twitter
 
-const pnpm = "gatsby-plugin-pnpm";
+const pnpm = "gatsby-plugin-pnpm"; // https://www.gatsbyjs.com/plugins/gatsby-plugin-pnpm/?=gatsby-plugin-pnpm
 
 const sentry = {
   resolve: "@sentry/gatsby", // https://www.gatsbyjs.com/plugins/@sentry/gatsby/?=%40sentry%2Fgatsby
@@ -125,7 +125,7 @@ const sentry = {
 };
 
 const gtag = {
-  resolve: "gatsby-plugin-google-gtag",
+  resolve: "gatsby-plugin-google-gtag", // https://www.gatsbyjs.com/plugins/gatsby-plugin-google-gtag
   options: {
     trackingIds: [process.env.GA_TRACKING_ID],
   },
