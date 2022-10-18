@@ -36,7 +36,7 @@ specifiers:
   babel-jest: 29.2.0
   babel-preset-gatsby: 2.23.0
   date-fns: 2.29.3
-  dotenv: 16.0.2
+  dotenv: 16.0.3
   execa: 5.1.1
   facepaint: 1.2.1
   figlet: 1.5.2
@@ -166,7 +166,7 @@ devDependencies:
   babel-jest: registry.npmmirror.com/babel-jest/29.2.0
   babel-preset-gatsby: registry.npmmirror.com/babel-preset-gatsby/2.23.0
   date-fns: registry.npmmirror.com/date-fns/2.29.3
-  dotenv: registry.npmmirror.com/dotenv/16.0.2
+  dotenv: registry.npmmirror.com/dotenv/16.0.3
   execa: registry.npmmirror.com/execa/5.1.1
   fs-extra: registry.npmmirror.com/fs-extra/10.1.0
   gh-pages: registry.npmmirror.com/gh-pages/4.0.0
@@ -9970,10 +9970,10 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  registry.npmmirror.com/dotenv/16.0.2:
-    resolution: {integrity: sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dotenv/-/dotenv-16.0.2.tgz}
+  registry.npmmirror.com/dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dotenv/-/dotenv-16.0.3.tgz}
     name: dotenv
-    version: 16.0.2
+    version: 16.0.3
     engines: {node: '>=12'}
     dev: true
 
