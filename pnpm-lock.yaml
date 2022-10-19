@@ -83,7 +83,7 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   react-helmet-async: 1.3.0
-  react-instantsearch-dom: 6.33.0
+  react-instantsearch-dom: 6.36.0
   react-test-renderer: 17.0.2
   rxjs: 7.5.6
   ts-node: 10.9.1
@@ -135,7 +135,7 @@ dependencies:
   react: registry.npmmirror.com/react/17.0.2
   react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
   react-helmet-async: registry.npmmirror.com/react-helmet-async/1.3.0_sfoxds7t5ydpegc3knd667wn6m
-  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.33.0_kr5x6cjikajrhwznglqptdxk4q
+  react-instantsearch-dom: registry.npmmirror.com/react-instantsearch-dom/6.36.0_kr5x6cjikajrhwznglqptdxk4q
   rxjs: registry.npmmirror.com/rxjs/7.5.6
 
 devDependencies:
@@ -6048,7 +6048,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@babel/code-frame': registry.npmmirror.com/@babel/code-frame/7.18.6
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.6
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.19.0
       '@types/aria-query': registry.npmmirror.com/@types/aria-query/4.2.2
       aria-query: registry.npmmirror.com/aria-query/5.0.0
       chalk: registry.npmmirror.com/chalk/4.1.2
@@ -6537,7 +6537,7 @@ packages:
     dependencies:
       '@types/react': registry.npmmirror.com/@types/react/17.0.44
       algoliasearch: registry.npmmirror.com/algoliasearch/4.14.2
-      algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.10.0_algoliasearch@4.14.2
+      algoliasearch-helper: registry.npmmirror.com/algoliasearch-helper/3.11.1_algoliasearch@4.14.2
     dev: true
 
   registry.npmmirror.com/@types/react-instantsearch-dom/6.12.3:
@@ -7132,18 +7132,6 @@ packages:
       uri-js: registry.npmmirror.com/uri-js/4.4.1
     dev: true
 
-  registry.npmmirror.com/algoliasearch-helper/3.10.0_algoliasearch@4.14.2:
-    resolution: {integrity: sha512-4E4od8qWWDMVvQ3jaRX6Oks/k35ywD011wAA4LbYMMjOtaZV6VWaTjRr4iN2bdaXP2o1BP7SLFMBf3wvnHmd8Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/algoliasearch-helper/-/algoliasearch-helper-3.10.0.tgz}
-    id: registry.npmmirror.com/algoliasearch-helper/3.10.0
-    name: algoliasearch-helper
-    version: 3.10.0
-    peerDependencies:
-      algoliasearch: '>= 3.1 < 6'
-    dependencies:
-      '@algolia/events': registry.npmmirror.com/@algolia/events/4.0.1
-      algoliasearch: registry.npmmirror.com/algoliasearch/4.14.2
-    dev: true
-
   registry.npmmirror.com/algoliasearch-helper/3.11.1_algoliasearch@4.14.2:
     resolution: {integrity: sha512-mvsPN3eK4E0bZG0/WlWJjeqe/bUD2KOEVOl0GyL/TGXn6wcpZU8NOuztGHCUKXkyg5gq6YzUakVTmnmSSO5Yiw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/algoliasearch-helper/-/algoliasearch-helper-3.11.1.tgz}
     id: registry.npmmirror.com/algoliasearch-helper/3.11.1
@@ -7154,7 +7142,6 @@ packages:
     dependencies:
       '@algolia/events': registry.npmmirror.com/@algolia/events/4.0.1
       algoliasearch: registry.npmmirror.com/algoliasearch/4.14.2
-    dev: false
 
   registry.npmmirror.com/algoliasearch/4.14.2:
     resolution: {integrity: sha512-ngbEQonGEmf8dyEh5f+uOIihv4176dgbuOZspiuhmTTBRBuzWu3KCGHre6uHj5YyuC7pNvQGzB6ZNJyZi0z+Sg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/algoliasearch/-/algoliasearch-4.14.2.tgz}
@@ -17942,7 +17929,7 @@ packages:
     peerDependencies:
       react: '>=16.13.1'
     dependencies:
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.6
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.19.0
       react: registry.npmmirror.com/react/17.0.2
     dev: true
 
@@ -17982,11 +17969,11 @@ packages:
       shallowequal: registry.npmmirror.com/shallowequal/1.1.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-core/6.33.0_pybjzmhtnpk62btmxi5dirminu:
-    resolution: {integrity: sha512-AL4PhdhN67DqHi7dMpGK0FaJ7Od2QchEFrT+T8phNzj+AAhyqVXgBLa28ceeQZVVKR+Z69oF1icet+dWiSHD6Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/-/react-instantsearch-core-6.33.0.tgz}
-    id: registry.npmmirror.com/react-instantsearch-core/6.33.0
+  registry.npmmirror.com/react-instantsearch-core/6.36.0_pybjzmhtnpk62btmxi5dirminu:
+    resolution: {integrity: sha512-OoDjTzkqSn5fID/GvFYuh6O7Qyos+Td4Y7aHGaanbIWbrWDnMKxd2IJMwMn4eJNrvfe2WuZSayQlX+UDe62C3Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-core/-/react-instantsearch-core-6.36.0.tgz}
+    id: registry.npmmirror.com/react-instantsearch-core/6.36.0
     name: react-instantsearch-core
-    version: 6.33.0
+    version: 6.36.0
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
       react: '>= 16.3.0 < 19'
@@ -17999,11 +17986,11 @@ packages:
       react-fast-compare: registry.npmmirror.com/react-fast-compare/3.2.0
     dev: false
 
-  registry.npmmirror.com/react-instantsearch-dom/6.33.0_kr5x6cjikajrhwznglqptdxk4q:
-    resolution: {integrity: sha512-3iCFkZOfCEwHou8XVaE39b5/YSlJ51nhkSxwM2aryVFh4m5AF6ZcAsrZmGc4i67f4eDkHsOwqbU2uwTHliyJ7w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/-/react-instantsearch-dom-6.33.0.tgz}
-    id: registry.npmmirror.com/react-instantsearch-dom/6.33.0
+  registry.npmmirror.com/react-instantsearch-dom/6.36.0_kr5x6cjikajrhwznglqptdxk4q:
+    resolution: {integrity: sha512-GppII3dXJCG+t5a3TqmI3A3ESw3GaxJVTQ+bIbSVXWIiOuHgcBSlDjzF5ZX7ttzwo7lWmKTvX9F4BsR3u+CGtA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-instantsearch-dom/-/react-instantsearch-dom-6.36.0.tgz}
+    id: registry.npmmirror.com/react-instantsearch-dom/6.36.0
     name: react-instantsearch-dom
-    version: 6.33.0
+    version: 6.36.0
     peerDependencies:
       algoliasearch: '>= 3.1 < 5'
       react: '>= 16.3.0 < 19'
@@ -18017,7 +18004,7 @@ packages:
       react: registry.npmmirror.com/react/17.0.2
       react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
       react-fast-compare: registry.npmmirror.com/react-fast-compare/3.2.0
-      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.33.0_pybjzmhtnpk62btmxi5dirminu
+      react-instantsearch-core: registry.npmmirror.com/react-instantsearch-core/6.36.0_pybjzmhtnpk62btmxi5dirminu
     dev: false
 
   registry.npmmirror.com/react-is/16.13.1:
