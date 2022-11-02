@@ -30,7 +30,7 @@ specifiers:
   '@types/react': 17.0.44
   '@types/react-dom': 17.0.15
   '@types/react-instantsearch-dom': 6.12.3
-  '@vercel/node': 2.5.26
+  '@vercel/node': 2.6.1
   algoliasearch: 4.14.2
   axios: 0.27.2
   babel-jest: 29.2.2
@@ -161,7 +161,7 @@ devDependencies:
   '@types/react': registry.npmmirror.com/@types/react/17.0.44
   '@types/react-dom': registry.npmmirror.com/@types/react-dom/17.0.15
   '@types/react-instantsearch-dom': registry.npmmirror.com/@types/react-instantsearch-dom/6.12.3
-  '@vercel/node': registry.npmmirror.com/@vercel/node/2.5.26
+  '@vercel/node': registry.npmmirror.com/@vercel/node/2.6.1
   axios: registry.npmmirror.com/axios/0.27.2
   babel-jest: registry.npmmirror.com/babel-jest/29.2.2
   babel-preset-gatsby: registry.npmmirror.com/babel-preset-gatsby/2.23.0
@@ -3936,24 +3936,24 @@ packages:
       '@jridgewell/trace-mapping': registry.npmmirror.com/@jridgewell/trace-mapping/0.3.9
     dev: true
 
-  registry.npmmirror.com/@edge-runtime/format/1.1.0-beta.34:
-    resolution: {integrity: sha512-AdV7FlpBDDiwdPxmrCmq2ICMxzJr3Zoq/bUuIMC09jEmx8fpIAepAABVTEqr+X/6vhIiD2ermIog8qvAG4RZMg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@edge-runtime/format/-/format-1.1.0-beta.34.tgz}
+  registry.npmmirror.com/@edge-runtime/format/1.1.0:
+    resolution: {integrity: sha512-MkLDDtPhXZIMx83NykdFmOpF7gVWIdd6GBHYb8V/E+PKWvD2pK/qWx9B30oN1iDJ2XBm0SGDjz02S8nDHI9lMQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@edge-runtime/format/-/format-1.1.0.tgz}
     name: '@edge-runtime/format'
-    version: 1.1.0-beta.34
+    version: 1.1.0
     dev: true
 
-  registry.npmmirror.com/@edge-runtime/primitives/1.1.0-beta.37:
-    resolution: {integrity: sha512-S3aN8X6wXhM7CJI3FRF480CMNkw4mH6grMV/enQz8VWGrvD1U5njQNRh/Zymoe0RHzEI/aIDjSk3V49h+ULt9g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@edge-runtime/primitives/-/primitives-1.1.0-beta.37.tgz}
+  registry.npmmirror.com/@edge-runtime/primitives/2.0.0:
+    resolution: {integrity: sha512-AXqUq1zruTJAICrllUvZcgciIcEGHdF6KJ3r6FM0n4k8LpFxZ62tPWVIJ9HKm+xt+ncTBUZxwgUaQ73QMUQEKw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@edge-runtime/primitives/-/primitives-2.0.0.tgz}
     name: '@edge-runtime/primitives'
-    version: 1.1.0-beta.37
+    version: 2.0.0
     dev: true
 
-  registry.npmmirror.com/@edge-runtime/vm/1.1.0-beta.37:
-    resolution: {integrity: sha512-1OrFifIxDFpwb1VyrFD8kwWVppc6D1uN7xh5jQzW7jHaVJ0Dw4C2nSAbLe6YKPYj67o09vW72WLzfUcryeD0Pg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@edge-runtime/vm/-/vm-1.1.0-beta.37.tgz}
+  registry.npmmirror.com/@edge-runtime/vm/2.0.0:
+    resolution: {integrity: sha512-BOLrAX8IWHRXu1siZocwLguKJPEUv7cr+rG8tI4hvHgMdIsBWHJlLeB8EjuUVnIURFrUiM49lVKn8DRrECmngw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@edge-runtime/vm/-/vm-2.0.0.tgz}
     name: '@edge-runtime/vm'
-    version: 1.1.0-beta.37
+    version: 2.0.0
     dependencies:
-      '@edge-runtime/primitives': registry.npmmirror.com/@edge-runtime/primitives/1.1.0-beta.37
+      '@edge-runtime/primitives': registry.npmmirror.com/@edge-runtime/primitives/2.0.0
     dev: true
 
   registry.npmmirror.com/@emotion/babel-plugin-jsx-pragmatic/0.1.5:
@@ -6893,29 +6893,29 @@ packages:
       eslint-visitor-keys: registry.npmmirror.com/eslint-visitor-keys/3.3.0
     dev: true
 
-  registry.npmmirror.com/@vercel/build-utils/5.5.5:
-    resolution: {integrity: sha512-ZBJpqnqm2OqYyWEqfRn0CYvlmSdOf/igtFy58x0bvSbJdN6Dx2rEw9sNg8SU7O/+zWpKP5rRfWcT6iql/p0sCg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/build-utils/-/build-utils-5.5.5.tgz}
+  registry.npmmirror.com/@vercel/build-utils/5.5.7:
+    resolution: {integrity: sha512-F8brek8VcR3CLgcuKyXbb8k8y/KRwqO/yEV5dTUW6OZ0fGxxa+0RnaaY1UbHlCVF1Cnu+/IsMDsmsj9o1RCP5A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/build-utils/-/build-utils-5.5.7.tgz}
     name: '@vercel/build-utils'
-    version: 5.5.5
+    version: 5.5.7
     dev: true
 
-  registry.npmmirror.com/@vercel/node-bridge/3.0.0:
-    resolution: {integrity: sha512-TNQK6cufwrhd8ASDk5YHHenH8Xhp9sY8xUjOTKnQQI37KLk+Sw2HlHhT5rzUFN23ahosUlkY8InwtYUmSNb9kw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/node-bridge/-/node-bridge-3.0.0.tgz}
+  registry.npmmirror.com/@vercel/node-bridge/3.1.1:
+    resolution: {integrity: sha512-sWg2okUTj8IbeWnAaY3IKbDp3Vinj4zdt3Q11S+cRMXO+pAUbqJxmiPD5+MS0RyIVvufoNotooiitRGlgQjA5w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/node-bridge/-/node-bridge-3.1.1.tgz}
     name: '@vercel/node-bridge'
-    version: 3.0.0
+    version: 3.1.1
     dev: true
 
-  registry.npmmirror.com/@vercel/node/2.5.26:
-    resolution: {integrity: sha512-Kj3dXBwpttUB7XG5joXKIBDtkow71678NHhfpp1a7S/50U9n5R2ztsJKMPpQ1m7HgEkMezQt2YO5E+39c2jkug==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/node/-/node-2.5.26.tgz}
+  registry.npmmirror.com/@vercel/node/2.6.1:
+    resolution: {integrity: sha512-8AXrXxx1XKMT5OpSjQ5ghzjw0HYp4Cuv6GUWJ48jPcvzmU9VC5mZvjmhzmbIT4pPHdKjKZLPy8/rHqDjqztuJg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/node/-/node-2.6.1.tgz}
     name: '@vercel/node'
-    version: 2.5.26
+    version: 2.6.1
     dependencies:
-      '@edge-runtime/vm': registry.npmmirror.com/@edge-runtime/vm/1.1.0-beta.37
+      '@edge-runtime/vm': registry.npmmirror.com/@edge-runtime/vm/2.0.0
       '@types/node': registry.npmmirror.com/@types/node/18.11.9
-      '@vercel/build-utils': registry.npmmirror.com/@vercel/build-utils/5.5.5
-      '@vercel/node-bridge': registry.npmmirror.com/@vercel/node-bridge/3.0.0
-      '@vercel/static-config': registry.npmmirror.com/@vercel/static-config/2.0.3
-      edge-runtime: registry.npmmirror.com/edge-runtime/1.1.0-beta.40
+      '@vercel/build-utils': registry.npmmirror.com/@vercel/build-utils/5.5.7
+      '@vercel/node-bridge': registry.npmmirror.com/@vercel/node-bridge/3.1.1
+      '@vercel/static-config': registry.npmmirror.com/@vercel/static-config/2.0.5
+      edge-runtime: registry.npmmirror.com/edge-runtime/2.0.0
       esbuild: registry.npmmirror.com/esbuild/0.14.47
       exit-hook: registry.npmmirror.com/exit-hook/2.2.1
       node-fetch: registry.npmmirror.com/node-fetch/2.6.7
@@ -6925,10 +6925,10 @@ packages:
       - encoding
     dev: true
 
-  registry.npmmirror.com/@vercel/static-config/2.0.3:
-    resolution: {integrity: sha512-XfP0z81SigmxvUzzhN6pbURJns86HKYjrLYgetLbBp1d8NUv4O8dqhNkRGpNGYdljTkjBQOfqG0HVT6dSnqvOw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/static-config/-/static-config-2.0.3.tgz}
+  registry.npmmirror.com/@vercel/static-config/2.0.5:
+    resolution: {integrity: sha512-f3wt+vQ3ARRR7hXHteMbrRNjH8iMETmP8f/t2HC8TpOjitjsjUKZg+3YS54AtLDEw/ZZ1s/7EG9nMK2BbU/t6g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vercel/static-config/-/static-config-2.0.5.tgz}
     name: '@vercel/static-config'
-    version: 2.0.3
+    version: 2.0.5
     dependencies:
       ajv: registry.npmmirror.com/ajv/8.6.3
       json-schema-to-ts: registry.npmmirror.com/json-schema-to-ts/1.6.4
@@ -9957,14 +9957,14 @@ packages:
     version: 0.2.0
     dev: true
 
-  registry.npmmirror.com/edge-runtime/1.1.0-beta.40:
-    resolution: {integrity: sha512-KuoSRsQZUMyec6gtD9YOFA5ohmWtquTXKco+pLv1/1zcHmD0/rXU1QkTkE40BKwq+O02Esk9iPlx9LkHaQr3vg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/edge-runtime/-/edge-runtime-1.1.0-beta.40.tgz}
+  registry.npmmirror.com/edge-runtime/2.0.0:
+    resolution: {integrity: sha512-TmRJhKi4mlM1e+zgF4CSzVU5gJ1sWj7ia+XhVgZ8PYyYUxk4PPjJU8qScpSLsAbdSxoBghLxdMuwuCzdYLd1sQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/edge-runtime/-/edge-runtime-2.0.0.tgz}
     name: edge-runtime
-    version: 1.1.0-beta.40
+    version: 2.0.0
     hasBin: true
     dependencies:
-      '@edge-runtime/format': registry.npmmirror.com/@edge-runtime/format/1.1.0-beta.34
-      '@edge-runtime/vm': registry.npmmirror.com/@edge-runtime/vm/1.1.0-beta.37
+      '@edge-runtime/format': registry.npmmirror.com/@edge-runtime/format/1.1.0
+      '@edge-runtime/vm': registry.npmmirror.com/@edge-runtime/vm/2.0.0
       exit-hook: registry.npmmirror.com/exit-hook/2.2.1
       http-status: registry.npmmirror.com/http-status/1.5.3
       mri: registry.npmmirror.com/mri/1.2.0
