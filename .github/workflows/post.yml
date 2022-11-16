@@ -15,7 +15,7 @@ jobs:
     if: "contains(github.event.head_commit.message, 'docs(r)') || contains(github.event.schedule, '0 4 * * SUN')"
     steps:
       - uses: actions/checkout@v3
-      - uses: everlytic/branch-merge@1.1.4
+      - uses: everlytic/branch-merge@1.1.5
         with:
           github_token: ${{ secrets.RELEASE_TOKEN }}
           source_ref: "post"
