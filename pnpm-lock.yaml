@@ -13,7 +13,7 @@ specifiers:
   '@fengshangwuqi/ts-config': 1.1.7
   '@mdx-js/mdx': 1.6.22
   '@mdx-js/react': 1.6.22
-  '@react-spring/web': 9.5.4
+  '@react-spring/web': 9.6.1
   '@sentry/gatsby': 7.20.0
   '@squoosh/lib': 0.4.0
   '@testing-library/jest-dom': 5.16.5
@@ -96,7 +96,7 @@ dependencies:
   '@emotion/styled': registry.npmmirror.com/@emotion/styled/11.10.5_bnutukxjtkyosg54sws2l5uofy
   '@mdx-js/mdx': registry.npmmirror.com/@mdx-js/mdx/1.6.22
   '@mdx-js/react': registry.npmmirror.com/@mdx-js/react/1.6.22_react@17.0.2
-  '@react-spring/web': registry.npmmirror.com/@react-spring/web/9.5.4_sfoxds7t5ydpegc3knd667wn6m
+  '@react-spring/web': registry.npmmirror.com/@react-spring/web/9.6.1_sfoxds7t5ydpegc3knd667wn6m
   '@sentry/gatsby': registry.npmmirror.com/@sentry/gatsby/7.20.0_gatsby@4.23.0+react@17.0.2
   algoliasearch: registry.npmmirror.com/algoliasearch/4.14.2
   facepaint: registry.nlark.com/facepaint/1.2.1
@@ -5706,72 +5706,72 @@ packages:
       webpack: registry.npmmirror.com/webpack/5.73.0
     dev: false
 
-  registry.npmmirror.com/@react-spring/animated/9.5.4_react@17.0.2:
-    resolution: {integrity: sha512-gYd+xWwcNxEGA9EdORz/xsGsuQmz46FCu7OLIGOZK00fiSkjEM8yTwBQ9i8SUslRAdxTW+POL5OctDpCA6A7xw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/animated/-/animated-9.5.4.tgz}
-    id: registry.npmmirror.com/@react-spring/animated/9.5.4
+  registry.npmmirror.com/@react-spring/animated/9.6.1_react@17.0.2:
+    resolution: {integrity: sha512-ls/rJBrAqiAYozjLo5EPPLLOb1LM0lNVQcXODTC1SMtS6DbuBCPaKco5svFUQFMP2dso3O+qcC4k9FsKc0KxMQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/animated/-/animated-9.6.1.tgz}
+    id: registry.npmmirror.com/@react-spring/animated/9.6.1
     name: '@react-spring/animated'
-    version: 9.5.4
+    version: 9.6.1
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@react-spring/shared': registry.npmmirror.com/@react-spring/shared/9.5.4_react@17.0.2
-      '@react-spring/types': registry.npmmirror.com/@react-spring/types/9.5.4
+      '@react-spring/shared': registry.npmmirror.com/@react-spring/shared/9.6.1_react@17.0.2
+      '@react-spring/types': registry.npmmirror.com/@react-spring/types/9.6.1
       react: registry.npmmirror.com/react/17.0.2
     dev: false
 
-  registry.npmmirror.com/@react-spring/core/9.5.4_react@17.0.2:
-    resolution: {integrity: sha512-ZQxS5+5i6dVWL8mnRbrUMdkT7TfWhdIYYe2ze3my2SNAKC14JjxHxeknX57ywRyudskR1Z9CQjiC8aXX6QBl7w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/core/-/core-9.5.4.tgz}
-    id: registry.npmmirror.com/@react-spring/core/9.5.4
+  registry.npmmirror.com/@react-spring/core/9.6.1_react@17.0.2:
+    resolution: {integrity: sha512-3HAAinAyCPessyQNNXe5W0OHzRfa8Yo5P748paPcmMowZ/4sMfaZ2ZB6e5x5khQI8NusOHj8nquoutd6FRY5WQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/core/-/core-9.6.1.tgz}
+    id: registry.npmmirror.com/@react-spring/core/9.6.1
     name: '@react-spring/core'
-    version: 9.5.4
+    version: 9.6.1
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@react-spring/animated': registry.npmmirror.com/@react-spring/animated/9.5.4_react@17.0.2
-      '@react-spring/rafz': registry.npmmirror.com/@react-spring/rafz/9.5.4
-      '@react-spring/shared': registry.npmmirror.com/@react-spring/shared/9.5.4_react@17.0.2
-      '@react-spring/types': registry.npmmirror.com/@react-spring/types/9.5.4
+      '@react-spring/animated': registry.npmmirror.com/@react-spring/animated/9.6.1_react@17.0.2
+      '@react-spring/rafz': registry.npmmirror.com/@react-spring/rafz/9.6.1
+      '@react-spring/shared': registry.npmmirror.com/@react-spring/shared/9.6.1_react@17.0.2
+      '@react-spring/types': registry.npmmirror.com/@react-spring/types/9.6.1
       react: registry.npmmirror.com/react/17.0.2
     dev: false
 
-  registry.npmmirror.com/@react-spring/rafz/9.5.4:
-    resolution: {integrity: sha512-Tmev2j7sq2FW3ISUClnNS0PhkCsBfPPpkHVMxz8mkIKzMGXWskd0GblOoPVJiWvhbccaX/NYd+ykJqJ1gY0v9g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/rafz/-/rafz-9.5.4.tgz}
+  registry.npmmirror.com/@react-spring/rafz/9.6.1:
+    resolution: {integrity: sha512-v6qbgNRpztJFFfSE3e2W1Uz+g8KnIBs6SmzCzcVVF61GdGfGOuBrbjIcp+nUz301awVmREKi4eMQb2Ab2gGgyQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/rafz/-/rafz-9.6.1.tgz}
     name: '@react-spring/rafz'
-    version: 9.5.4
+    version: 9.6.1
     dev: false
 
-  registry.npmmirror.com/@react-spring/shared/9.5.4_react@17.0.2:
-    resolution: {integrity: sha512-22IYmNOzDRP9e5BaQk6T/P2aRxne9uTzGDYuBQCbJpChZypB98xWBMKlVTKdSRG7K4v+F97KFPAKBQzS/k7p5Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/shared/-/shared-9.5.4.tgz}
-    id: registry.npmmirror.com/@react-spring/shared/9.5.4
+  registry.npmmirror.com/@react-spring/shared/9.6.1_react@17.0.2:
+    resolution: {integrity: sha512-PBFBXabxFEuF8enNLkVqMC9h5uLRBo6GQhRMQT/nRTnemVENimgRd+0ZT4yFnAQ0AxWNiJfX3qux+bW2LbG6Bw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/shared/-/shared-9.6.1.tgz}
+    id: registry.npmmirror.com/@react-spring/shared/9.6.1
     name: '@react-spring/shared'
-    version: 9.5.4
+    version: 9.6.1
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@react-spring/rafz': registry.npmmirror.com/@react-spring/rafz/9.5.4
-      '@react-spring/types': registry.npmmirror.com/@react-spring/types/9.5.4
+      '@react-spring/rafz': registry.npmmirror.com/@react-spring/rafz/9.6.1
+      '@react-spring/types': registry.npmmirror.com/@react-spring/types/9.6.1
       react: registry.npmmirror.com/react/17.0.2
     dev: false
 
-  registry.npmmirror.com/@react-spring/types/9.5.4:
-    resolution: {integrity: sha512-dzcGxqL1kPKociXK+pcq5ley77cWDWiphfv8OREv8dAZS1dKDTJq1zVy7ZD5ocyMtKMZw/7AcOdIJ1H80Dp56g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/types/-/types-9.5.4.tgz}
+  registry.npmmirror.com/@react-spring/types/9.6.1:
+    resolution: {integrity: sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/types/-/types-9.6.1.tgz}
     name: '@react-spring/types'
-    version: 9.5.4
+    version: 9.6.1
     dev: false
 
-  registry.npmmirror.com/@react-spring/web/9.5.4_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-HoypE3kL/ZUBB81hThE1hB9jYBgJmfeluEOPYoI/wGHyF1q8O0AYpWClvdAbiK3FTESHYZi2m60jwitF7VYUlQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/web/-/web-9.5.4.tgz}
-    id: registry.npmmirror.com/@react-spring/web/9.5.4
+  registry.npmmirror.com/@react-spring/web/9.6.1_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-X2zR6q2Z+FjsWfGAmAXlQaoUHbPmfuCaXpuM6TcwXPpLE1ZD4A1eys/wpXboFQmDkjnrlTmKvpVna1MjWpZ5Hw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@react-spring/web/-/web-9.6.1.tgz}
+    id: registry.npmmirror.com/@react-spring/web/9.6.1
     name: '@react-spring/web'
-    version: 9.5.4
+    version: 9.6.1
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@react-spring/animated': registry.npmmirror.com/@react-spring/animated/9.5.4_react@17.0.2
-      '@react-spring/core': registry.npmmirror.com/@react-spring/core/9.5.4_react@17.0.2
-      '@react-spring/shared': registry.npmmirror.com/@react-spring/shared/9.5.4_react@17.0.2
-      '@react-spring/types': registry.npmmirror.com/@react-spring/types/9.5.4
+      '@react-spring/animated': registry.npmmirror.com/@react-spring/animated/9.6.1_react@17.0.2
+      '@react-spring/core': registry.npmmirror.com/@react-spring/core/9.6.1_react@17.0.2
+      '@react-spring/shared': registry.npmmirror.com/@react-spring/shared/9.6.1_react@17.0.2
+      '@react-spring/types': registry.npmmirror.com/@react-spring/types/9.6.1
       react: registry.npmmirror.com/react/17.0.2
       react-dom: registry.npmmirror.com/react-dom/17.0.2_react@17.0.2
     dev: false
