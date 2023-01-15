@@ -71,7 +71,7 @@ specifiers:
   gray-matter: 4.0.3
   husky: 8.0.2
   identity-obj-proxy: 3.0.0
-  immer: 9.0.16
+  immer: 9.0.18
   jest: 29.3.1
   lint-staged: 13.0.3
   lmdb-store: 1.6.14
@@ -127,7 +127,7 @@ dependencies:
   gatsby-source-filesystem: registry.npmmirror.com/gatsby-source-filesystem/4.23.0_gatsby@4.23.0
   gatsby-transformer-sharp: registry.npmmirror.com/gatsby-transformer-sharp/4.23.0_bfayn7nxwmdlni6cslvxkmk6ue
   identity-obj-proxy: registry.npmmirror.com/identity-obj-proxy/3.0.0
-  immer: registry.npmmirror.com/immer/9.0.16
+  immer: registry.npmmirror.com/immer/9.0.18
   lmdb-store: registry.npmmirror.com/lmdb-store/1.6.14
   lodash: registry.npmmirror.com/lodash/4.17.21
   polished: registry.npmmirror.com/polished/4.2.2
@@ -13506,10 +13506,10 @@ packages:
     version: 5.2.0
     engines: {node: '>= 4'}
 
-  registry.npmmirror.com/immer/9.0.16:
-    resolution: {integrity: sha512-qenGE7CstVm1NrHQbMh8YaSzTZTFNP3zPqr3YU0S0UY441j4bJTg4A2Hh5KAhwgaiU6ZZ1Ar6y/2f4TblnMReQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/immer/-/immer-9.0.16.tgz}
+  registry.npmmirror.com/immer/9.0.18:
+    resolution: {integrity: sha512-eAPNpsj7Ax1q6Y/3lm2PmlwRcFzpON7HSNQ3ru5WQH1/PSpnyed/HpNOELl2CxLKoj4r+bAHgdyKqW5gc2Se1A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/immer/-/immer-9.0.18.tgz}
     name: immer
-    version: 9.0.16
+    version: 9.0.18
     dev: false
 
   registry.npmmirror.com/immutable/3.7.6:
@@ -17799,7 +17799,7 @@ packages:
       global-modules: registry.npmmirror.com/global-modules/2.0.0
       globby: registry.npmmirror.com/globby/11.1.0
       gzip-size: registry.npmmirror.com/gzip-size/6.0.0
-      immer: registry.npmmirror.com/immer/9.0.16
+      immer: registry.npmmirror.com/immer/9.0.18
       is-root: registry.npmmirror.com/is-root/2.1.0
       loader-utils: registry.npmmirror.com/loader-utils/3.2.0
       open: registry.npmmirror.com/open/8.4.0
