@@ -69,8 +69,8 @@
   },
   "dependencies": {
     "@emotion/is-prop-valid": "1.2.0",
-    "@emotion/react": "11.10.5",
-    "@emotion/styled": "11.10.5",
+    "@emotion/react": "11.10.6",
+    "@emotion/styled": "11.10.6",
     "@mdx-js/mdx": "1.6.22",
     "@mdx-js/react": "1.6.22",
     "@react-spring/web": "9.5.4",
