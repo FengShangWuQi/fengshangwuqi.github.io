@@ -71,7 +71,7 @@ specifiers:
   gray-matter: 4.0.3
   husky: 8.0.2
   identity-obj-proxy: 3.0.0
-  immer: 9.0.16
+  immer: 9.0.21
   jest: 29.3.1
   lint-staged: 13.0.3
   lmdb-store: 1.6.14
@@ -127,7 +127,7 @@ dependencies:
   gatsby-source-filesystem: registry.npmmirror.com/gatsby-source-filesystem/4.23.0_gatsby@4.23.0
   gatsby-transformer-sharp: registry.npmmirror.com/gatsby-transformer-sharp/4.23.0_bfayn7nxwmdlni6cslvxkmk6ue
   identity-obj-proxy: registry.npmmirror.com/identity-obj-proxy/3.0.0
-  immer: registry.npmmirror.com/immer/9.0.16
+  immer: registry.npmmirror.com/immer/9.0.21
   lmdb-store: registry.npmmirror.com/lmdb-store/1.6.14
   lodash: registry.npmmirror.com/lodash/4.17.21
   polished: registry.npmmirror.com/polished/4.2.2
@@ -7522,7 +7522,7 @@ packages:
     name: axios
     version: 0.27.2
     dependencies:
-      follow-redirects: registry.npmmirror.com/follow-redirects/1.15.1_debug@3.2.7
+      follow-redirects: registry.npmmirror.com/follow-redirects/1.15.1
       form-data: registry.npmmirror.com/form-data/4.0.0
     transitivePeerDependencies:
       - debug
@@ -9472,6 +9472,7 @@ packages:
         optional: true
     dependencies:
       ms: registry.npmmirror.com/ms/2.1.3
+    dev: false
 
   registry.npmmirror.com/debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/debug/-/debug-4.3.4.tgz}
@@ -11521,6 +11522,18 @@ packages:
     name: flatted
     version: 3.2.6
 
+  registry.npmmirror.com/follow-redirects/1.15.1:
+    resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.1.tgz}
+    name: follow-redirects
+    version: 1.15.1
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: true
+
   registry.npmmirror.com/follow-redirects/1.15.1_debug@3.2.7:
     resolution: {integrity: sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.1.tgz}
     id: registry.npmmirror.com/follow-redirects/1.15.1
@@ -11534,6 +11547,7 @@ packages:
         optional: true
     dependencies:
       debug: registry.npmmirror.com/debug/3.2.7
+    dev: false
 
   registry.npmmirror.com/for-each/0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/for-each/-/for-each-0.3.3.tgz}
@@ -13506,10 +13520,10 @@ packages:
     version: 5.2.0
     engines: {node: '>= 4'}
 
-  registry.npmmirror.com/immer/9.0.16:
-    resolution: {integrity: sha512-qenGE7CstVm1NrHQbMh8YaSzTZTFNP3zPqr3YU0S0UY441j4bJTg4A2Hh5KAhwgaiU6ZZ1Ar6y/2f4TblnMReQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/immer/-/immer-9.0.16.tgz}
+  registry.npmmirror.com/immer/9.0.21:
+    resolution: {integrity: sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/immer/-/immer-9.0.21.tgz}
     name: immer
-    version: 9.0.16
+    version: 9.0.21
     dev: false
 
   registry.npmmirror.com/immutable/3.7.6:
@@ -15891,6 +15905,7 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ms/-/ms-2.1.3.tgz}
     name: ms
     version: 2.1.3
+    dev: false
 
   registry.npmmirror.com/msgpackr-extract/2.0.2:
     resolution: {integrity: sha512-coskCeJG2KDny23zWeu+6tNy7BLnAiOGgiwzlgdm4oeSsTpqEJJPguHIuKZcCdB7tzhZbXNYSg6jZAXkZErkJA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/msgpackr-extract/-/msgpackr-extract-2.0.2.tgz}
@@ -17799,7 +17814,7 @@ packages:
       global-modules: registry.npmmirror.com/global-modules/2.0.0
       globby: registry.npmmirror.com/globby/11.1.0
       gzip-size: registry.npmmirror.com/gzip-size/6.0.0
-      immer: registry.npmmirror.com/immer/9.0.16
+      immer: registry.npmmirror.com/immer/9.0.21
       is-root: registry.npmmirror.com/is-root/2.1.0
       loader-utils: registry.npmmirror.com/loader-utils/3.2.0
       open: registry.npmmirror.com/open/8.4.0
