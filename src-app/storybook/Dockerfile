@@ -17,7 +17,7 @@ RUN apt update \
 COPY . .
 RUN pnpx appkit build storybook
 
-FROM nginx:stable-alpine
+FROM nginx:mainline-alpine
 
 COPY --from=builder /src-storybook/public /usr/share/nginx/html
 
