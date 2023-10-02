@@ -137,7 +137,7 @@
     "@types/node": "18.11.9",
     "@types/react": "17.0.44",
     "@types/react-dom": "17.0.15",
-    "@types/react-instantsearch-dom": "6.12.3",
+    "@types/react-instantsearch-dom": "6.12.4",
     "@vercel/node": "2.6.3",
     "axios": "0.27.2",
     "babel-jest": "29.3.1",
