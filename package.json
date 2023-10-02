@@ -130,7 +130,7 @@
     "@types/facepaint": "1.2.2",
     "@types/figlet": "1.5.5",
     "@types/fs-extra": "9.0.13",
-    "@types/gh-pages": "3.2.1",
+    "@types/gh-pages": "3.2.2",
     "@types/jest": "29.2.3",
     "@types/lodash": "4.14.189",
     "@types/mdx-js__react": "1.5.5",
