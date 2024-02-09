@@ -75,7 +75,7 @@
     "@mdx-js/react": "1.6.22",
     "@react-spring/web": "9.5.4",
     "@sentry/gatsby": "7.20.0",
-    "algoliasearch": "4.14.2",
+    "algoliasearch": "4.22.1",
     "facepaint": "1.2.1",
     "figlet": "1.5.2",
     "gatsby": "4.23.0",
