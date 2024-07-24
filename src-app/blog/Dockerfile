@@ -17,7 +17,7 @@ RUN apt update \
 COPY . .
 RUN pnpx appkit build blog
 
-FROM nginx:stable-alpine
+FROM nginx:1.26.1-alpine3.19
 
 COPY --from=builder /src-blog/public /usr/share/nginx/html
 
