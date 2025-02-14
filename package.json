@@ -101,7 +101,7 @@
     "gatsby-remark-prismjs": "6.23.0",
     "gatsby-remark-responsive-iframe": "5.23.0",
     "gatsby-remark-smartypants": "5.23.0",
-    "gatsby-source-filesystem": "4.23.0",
+    "gatsby-source-filesystem": "5.14.0",
     "gatsby-transformer-sharp": "4.23.0",
     "identity-obj-proxy": "3.0.0",
     "immer": "9.0.16",
