@@ -80,7 +80,7 @@
     "figlet": "1.5.2",
     "gatsby": "4.23.0",
     "gatsby-plugin-algolia": "0.26.0",
-    "gatsby-plugin-catch-links": "4.23.0",
+    "gatsby-plugin-catch-links": "5.14.0",
     "gatsby-plugin-emotion": "7.23.0",
     "gatsby-plugin-feed": "4.23.0",
     "gatsby-plugin-google-gtag": "4.23.0",
