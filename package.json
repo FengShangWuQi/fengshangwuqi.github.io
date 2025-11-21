@@ -86,7 +86,7 @@
     "gatsby-plugin-google-gtag": "4.23.0",
     "gatsby-plugin-image": "1.9.0",
     "gatsby-plugin-mdx": "3.18.1",
-    "gatsby-plugin-offline": "5.23.0",
+    "gatsby-plugin-offline": "6.15.0",
     "gatsby-plugin-pnpm": "1.2.10",
     "gatsby-plugin-react-helmet-async": "1.2.3",
     "gatsby-plugin-react-svg": "3.1.0",
