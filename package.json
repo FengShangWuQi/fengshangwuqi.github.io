@@ -82,7 +82,7 @@
     "gatsby-plugin-algolia": "0.26.0",
     "gatsby-plugin-catch-links": "4.23.0",
     "gatsby-plugin-emotion": "7.23.0",
-    "gatsby-plugin-feed": "4.23.0",
+    "gatsby-plugin-feed": "5.15.0",
     "gatsby-plugin-google-gtag": "4.23.0",
     "gatsby-plugin-image": "1.9.0",
     "gatsby-plugin-mdx": "3.18.1",
