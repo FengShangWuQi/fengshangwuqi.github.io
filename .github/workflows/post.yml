@@ -1,13 +1,5 @@
 name: Post
-on:
-  push:
-    branches:
-      - post
-    paths:
-      - "posts/**"
-      - "zhoubao/**"
-  schedule:
-    - cron: "0 4 * * SUN" # SUN-noon
+on: workflow_dispatch
 
 jobs:
   merge-branch:

@@ -1,14 +1,5 @@
 name: Blog
-on:
-  push:
-    branches:
-      - dev
-    paths:
-      - "src-app/blog/**"
-      - "posts/**"
-      - "zhoubao/**"
-  schedule:
-    - cron: "0 4 * * SUN" # SUN-noon
+on: workflow_dispatch
 
 jobs:
   release:
