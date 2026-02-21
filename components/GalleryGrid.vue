@@ -1,7 +1,7 @@
 <template>
   <div
-    class="gallery-grid"
-    :class="`gallery-grid--count-${Math.min(images.length, 4)}`"
+    class="columns-1 gap-4 px-4 pb-8 max-w-1600px mx-auto sm:columns-2 md:columns-3 md:px-6 xl:columns-4 xl:px-8"
+    :class="countClass"
   >
     <GalleryItem
       v-for="(image, index) in images"
@@ -14,61 +14,12 @@
 
 <script setup lang="ts">
 const { images, openLightbox } = useGallery()
+
+const countClass = computed(() => {
+  const count = Math.min(images.value.length, 4)
+  if (count === 1) return '!columns-1 max-w-600px'
+  if (count === 2) return 'max-w-950px sm:!columns-2 md:!columns-2'
+  if (count === 3) return 'sm:!columns-2 md:!columns-3'
+  return ''
+})
 </script>
-
-<style scoped>
-.gallery-grid {
-  column-count: 1;
-  column-gap: 1rem;
-  padding: 0 1rem 2rem;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-@media (min-width: 480px) {
-  .gallery-grid {
-    column-count: 2;
-  }
-}
-
-@media (min-width: 768px) {
-  .gallery-grid {
-    column-count: 3;
-    padding: 0 1.5rem 2rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .gallery-grid {
-    column-count: 4;
-    padding: 0 2rem 2rem;
-  }
-}
-
-/* Cap columns to image count when few images */
-.gallery-grid--count-1 {
-  column-count: 1;
-  max-width: 600px;
-}
-
-.gallery-grid--count-2 {
-  max-width: 1000px;
-}
-
-@media (min-width: 480px) {
-  .gallery-grid--count-2,
-  .gallery-grid--count-3 {
-    column-count: 2;
-  }
-}
-
-@media (min-width: 768px) {
-  .gallery-grid--count-2 {
-    column-count: 2;
-  }
-
-  .gallery-grid--count-3 {
-    column-count: 3;
-  }
-}
-</style>

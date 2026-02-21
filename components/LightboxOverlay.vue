@@ -3,7 +3,7 @@
     <Transition name="lightbox">
       <div
         v-if="lightboxOpen"
-        class="lightbox"
+        class="fixed inset-0 z-1000 bg-black/92 flex items-center justify-center outline-none"
         role="dialog"
         aria-modal="true"
         @click.self="closeLightbox"
@@ -13,16 +13,24 @@
         tabindex="0"
         ref="lightboxRef"
       >
-        <button class="lightbox__close" @click="closeLightbox" aria-label="Close">
+        <button
+          class="absolute top-2 right-3 bg-transparent border-none text-white text-8 cursor-pointer leading-none opacity-80 z-1 transition-opacity duration-200 hover:opacity-100 md:top-4 md:right-6 md:text-10"
+          @click="closeLightbox"
+          aria-label="Close"
+        >
           &times;
         </button>
 
-        <button class="lightbox__nav lightbox__nav--prev" @click="prevImage" aria-label="Previous">
+        <button
+          class="absolute top-1/2 left-2 -translate-y-1/2 bg-transparent border-none text-white text-8 cursor-pointer p-3 opacity-70 z-1 transition-opacity duration-200 hover:opacity-100 md:left-2 md:text-12 md:p-4"
+          @click="prevImage"
+          aria-label="Previous"
+        >
           &#8249;
         </button>
 
         <div
-          class="lightbox__content"
+          class="max-w-100vw max-h-80vh flex items-center justify-center md:max-w-90vw md:max-h-85vh"
           @touchstart="onTouchStart"
           @touchend="onTouchEnd"
         >
@@ -31,16 +39,20 @@
               :key="currentImage.src"
               :src="baseURL + currentImage.src.replace(/^\//, '')"
               :alt="currentImage.title"
-              class="lightbox__img"
+              class="max-w-100vw max-h-80vh object-contain rounded-0 md:max-w-90vw md:max-h-85vh md:rounded-2"
             />
           </Transition>
         </div>
 
-        <button class="lightbox__nav lightbox__nav--next" @click="nextImage" aria-label="Next">
+        <button
+          class="absolute top-1/2 right-2 -translate-y-1/2 bg-transparent border-none text-white text-8 cursor-pointer p-3 opacity-70 z-1 transition-opacity duration-200 hover:opacity-100 md:right-2 md:text-12 md:p-4"
+          @click="nextImage"
+          aria-label="Next"
+        >
           &#8250;
         </button>
 
-        <div class="lightbox__counter">
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-0.75rem tabular-nums md:bottom-6 md:text-0.875rem">
           {{ lightboxIndex + 1 }} / {{ images.length }}
         </div>
       </div>
@@ -86,118 +98,7 @@ onUnmounted(() => {
 </script>
 
 <style>
-.lightbox {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.92);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-}
-
-.lightbox__content {
-  max-width: 90vw;
-  max-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lightbox__img {
-  max-width: 90vw;
-  max-height: 85vh;
-  object-fit: contain;
-  border-radius: 0.5rem;
-}
-
-.lightbox__close {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  background: none;
-  border: none;
-  color: var(--color-white);
-  font-size: 2.5rem;
-  cursor: pointer;
-  line-height: 1;
-  opacity: 0.8;
-  transition: opacity 0.2s;
-  z-index: 1;
-}
-
-.lightbox__close:hover {
-  opacity: 1;
-}
-
-.lightbox__nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: var(--color-white);
-  font-size: 3rem;
-  cursor: pointer;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-  z-index: 1;
-}
-
-.lightbox__nav:hover {
-  opacity: 1;
-}
-
-.lightbox__nav--prev {
-  left: 0.5rem;
-}
-
-.lightbox__nav--next {
-  right: 0.5rem;
-}
-
-.lightbox__counter {
-  position: absolute;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.875rem;
-  font-variant-numeric: tabular-nums;
-}
-
-@media (max-width: 768px) {
-  .lightbox__content {
-    max-width: 100vw;
-    max-height: 80vh;
-  }
-
-  .lightbox__img {
-    max-width: 100vw;
-    max-height: 80vh;
-    border-radius: 0;
-  }
-
-  .lightbox__close {
-    top: 0.5rem;
-    right: 0.75rem;
-    font-size: 2rem;
-  }
-
-  .lightbox__nav {
-    font-size: 2rem;
-    padding: 0.75rem;
-  }
-
-  .lightbox__counter {
-    bottom: 1rem;
-    font-size: 0.75rem;
-  }
-}
-
-/* Overlay transition */
+/* Vue transition classes — must remain in CSS */
 .lightbox-enter-active,
 .lightbox-leave-active {
   transition: opacity 0.3s ease;
@@ -208,7 +109,6 @@ onUnmounted(() => {
   opacity: 0;
 }
 
-/* Image swap transition */
 .lightbox-img-enter-active,
 .lightbox-img-leave-active {
   transition: opacity 0.2s ease;
