@@ -1,0 +1,21 @@
+{
+  "name": "gallery",
+  "private": true,
+  "packageManager": "pnpm@9.0.5",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build --preset github_pages",
+    "dev": "nuxt dev --open",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.9.0",
+    "nuxt": "^3.16.0"
+  },
+  "devDependencies": {
+    "image-size": "^1.2.0",
+    "typescript": "^5.7.0"
+  }
+}
