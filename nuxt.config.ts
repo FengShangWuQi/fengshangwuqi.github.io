@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-01',
 
   app: {
-    baseURL: '/gallery/',
+    baseURL: '/',
     buildAssetsDir: 'assets',
     head: {
       title: 'Gallery',
