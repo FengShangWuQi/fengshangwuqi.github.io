@@ -15,7 +15,7 @@ After `pnpm install`, `nuxt prepare` runs automatically via postinstall.
 
 ## Architecture
 
-Nuxt 3 gallery app with TypeScript, deployed to GitHub Pages at base URL `/gallery/`.
+Nuxt 3 gallery app with TypeScript, deployed to GitHub Pages at `/`.
 
 **Data flow:** `pages/index.vue` fetches `GET /api/images` via `useAsyncData` → server API (`server/api/images.get.ts`) scans `public/images/` directory, reads dimensions with `image-size`, converts filenames to titles → returns `GalleryImage[]` → shared state managed by `composables/useGallery.ts` using `useState()` for SSR safety.
 

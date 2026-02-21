@@ -6,7 +6,7 @@
     </div>
     <footer class="page__footer">
       <a
-        href="https://github.com/FengShangWuQi/gallery"
+        href="https://github.com/FengShangWuQi/fengshangwuqi.github.io"
         target="_blank"
         rel="noopener noreferrer"
         class="page__footer-link"
