@@ -27,12 +27,12 @@ Nuxt 3 gallery app with TypeScript, deployed to GitHub Pages at `/`.
 - `LightboxOverlay.vue` — fullscreen viewer teleported to body, with keyboard navigation (arrows, ESC), touch swipe, body scroll lock. Uses unscoped styles due to Teleport and native `<img>` with baseURL prefix for static hosting compatibility
 - `IconGithub.vue` — GitHub SVG icon component
 
-**Modules:** `@nuxt/image` configured for WebP format at 80% quality.
+**Modules:** `@unocss/nuxt` for atomic CSS utilities; `@nuxt/image` configured for WebP format at 80% quality.
 
 ## Conventions
 
 - Vue Composition API with `<script setup lang="ts">`
-- Scoped styles in components, BEM-like class naming (e.g., `.app-header__title`). Exception: `LightboxOverlay.vue` uses unscoped styles (Teleport compatibility)
+- UnoCSS utility classes for styling (mobile-first with `sm:` / `md:` / `xl:` breakpoints at 480/768/1280px). Minimal `<style scoped>` only for things utility classes cannot express (e.g., responsive gradients). `LightboxOverlay.vue` keeps unscoped `<style>` for Vue transition classes
 - Composables use arrow functions and `useState()` for shared state
-- Theme colors defined as CSS custom properties in `assets/css/main.css` (e.g., `--color-text`, `--color-bg`) — use these instead of hardcoded hex values
+- Theme colors defined as CSS custom properties in `uno.config.ts` preflights (e.g., `--color-text`, `--color-bg`), mapped to UnoCSS theme colors (e.g., `text-text`, `bg-surface`) — use utility classes instead of hardcoded hex values
 - Commit messages follow Conventional Commits, no AI signature (`/commit` skill available)

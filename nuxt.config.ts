@@ -13,9 +13,7 @@ export default defineNuxtConfig({
     },
   },
 
-  css: ['~/assets/css/main.css'],
-
-  modules: ['@nuxt/image'],
+  modules: ['@unocss/nuxt', '@nuxt/image'],
 
   image: {
     format: ['webp'],

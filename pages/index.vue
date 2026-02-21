@@ -1,19 +1,19 @@
 <template>
-  <div class="page">
-    <div class="page__content">
+  <div class="min-h-screen flex flex-col">
+    <div class="w-full flex-1">
       <AppHeader />
       <GalleryGrid />
     </div>
-    <footer class="page__footer">
+    <footer class="flex flex-col items-center gap-3 pt-12 pb-8 md:pt-8 md:pb-6">
       <a
         href="https://github.com/FengShangWuQi/fengshangwuqi.github.io"
         target="_blank"
         rel="noopener noreferrer"
-        class="page__footer-link"
+        class="inline-block text-border transition-all duration-200 hover:text-text hover:scale-110"
       >
-        <IconGithub class="page__footer-icon" />
+        <IconGithub class="w-6 h-6" />
       </a>
-      <p class="page__footer-text">The Gallery</p>
+      <p class="text-0.7rem tracking-0.2em uppercase text-border">The Gallery</p>
     </footer>
     <LightboxOverlay />
   </div>
@@ -36,53 +36,3 @@ if (data.value) {
   images.value = data.value
 }
 </script>
-
-<style scoped>
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.page__content {
-  width: 100%;
-  flex: 1;
-}
-
-.page__footer {
-  padding: 3rem 0 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.page__footer-link {
-  color: var(--color-border);
-  transition: color 0.2s, transform 0.2s;
-  display: inline-block;
-}
-
-.page__footer-link:hover {
-  color: var(--color-text);
-  transform: scale(1.1);
-}
-
-.page__footer-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.page__footer-text {
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--color-border);
-}
-
-@media (max-width: 768px) {
-  .page__footer {
-    padding: 2rem 0 1.5rem;
-  }
-}
-</style>
