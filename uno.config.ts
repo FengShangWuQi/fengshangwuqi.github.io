@@ -36,18 +36,18 @@ export default defineConfig({
         }
 
         :root {
-          --color-bg: #fafafa;
-          --color-text: #1a1a1a;
-          --color-text-light: #555;
-          --color-text-muted: #888;
-          --color-border: #ccc;
-          --color-surface: #f0f0f0;
+          --color-bg: #0b0b12;
+          --color-text: #e4e4ec;
+          --color-text-light: #b0b0c4;
+          --color-text-muted: #6a6a82;
+          --color-border: #2a2a3c;
+          --color-surface: #14141f;
           --color-white: #fff;
-          --color-brand-blue: #6875a5;
-          --color-brand-purple: #8b6aae;
-          --color-brand-blue-deep: #2a3a6e;
-          --color-brand-purple-deep: #4a3568;
-          --color-brand-teal-deep: #2a5070;
+          --color-brand-blue: #7b8ad0;
+          --color-brand-purple: #a483c8;
+          --color-brand-blue-deep: #8090d0;
+          --color-brand-purple-deep: #a87ecf;
+          --color-brand-teal-deep: #6aafcf;
         }
 
         html {
