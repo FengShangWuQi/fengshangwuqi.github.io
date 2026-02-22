@@ -18,7 +18,7 @@
           @click="closeLightbox"
           aria-label="Close"
         >
-          <svg class="w-6 h-6 md:w-7 md:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+          <IconClose class="w-6 h-6 md:w-7 md:h-7" />
         </button>
 
         <button
@@ -26,7 +26,7 @@
           @click="prevImage"
           aria-label="Previous"
         >
-          <svg class="w-7 h-7 md:w-10 md:h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+          <IconChevronLeft class="w-7 h-7 md:w-10 md:h-10" />
         </button>
 
         <div
@@ -49,7 +49,7 @@
           @click="nextImage"
           aria-label="Next"
         >
-          <svg class="w-7 h-7 md:w-10 md:h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+          <IconChevronRight class="w-7 h-7 md:w-10 md:h-10" />
         </button>
 
         <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-0.75rem tabular-nums md:bottom-6 md:text-0.875rem">

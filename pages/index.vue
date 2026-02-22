@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <div class="relative flex-1 flex items-center justify-center">
-      <HeroBackground />
+      <HeroParticleNetwork />
       <div class="relative z-10 text-center px-6">
         <p class="text-0.75rem font-500 tracking-0.3em uppercase text-text-muted mb-4 hero-fade-in md:text-0.85rem">
           Welcome
@@ -20,45 +20,29 @@
           A space for visual stories and curated ideas.
         </p>
         <div class="flex flex-col gap-4 max-w-sm mx-auto hero-fade-in hero-delay-3 sm:flex-row sm:max-w-lg sm:gap-5">
-          <SectionCard
+          <HeroSectionCard
             title="Gallery"
             description="A curated photo collection"
             to="/gallery"
             class="flex-1"
           >
             <template #icon>
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <path d="m21 15-5-5L5 21" />
-              </svg>
+              <IconGallery class="w-6 h-6" />
             </template>
-          </SectionCard>
-          <SectionCard
+          </HeroSectionCard>
+          <HeroSectionCard
             title="Digest"
             description="Tech insights & readings"
             coming
             class="flex-1"
           >
             <template #icon>
-              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-                <path d="M8 7h6" />
-                <path d="M8 11h8" />
-              </svg>
+              <IconBook class="w-6 h-6" />
             </template>
-          </SectionCard>
+          </HeroSectionCard>
         </div>
       </div>
     </div>
-    <a
-      href="https://github.com/FengShangWuQi"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="fixed top-5 right-5 z-50 text-text-muted transition-all duration-200 hover:text-text hover:scale-110 md:right-8"
-    >
-      <IconGithub class="w-5 h-5" />
-    </a>
   </div>
 </template>
 
@@ -80,7 +64,7 @@ definePageMeta({ layout: false })
 @keyframes hero-enter {
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 </style>
