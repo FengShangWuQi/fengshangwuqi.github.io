@@ -2,10 +2,10 @@
   <component
     :is="coming ? 'div' : NuxtLink"
     :to="coming ? undefined : to"
-    class="block relative p-6 rounded-xl border border-border/40 bg-white/30 glass shadow-sm transition-all duration-300 no-underline group"
-    :class="coming ? 'cursor-default' : 'hover:-translate-y-1 hover:bg-white/25 hover:border-border/60 hover:shadow-lg'"
+    class="block relative p-6 rounded-xl border border-border/40 bg-white/5 glass shadow-sm transition-all duration-300 no-underline group"
+    :class="coming ? 'cursor-default' : 'hover:-translate-y-1 hover:bg-white/8 hover:border-border/60 hover:shadow-lg'"
   >
-    <div v-if="coming" class="absolute top-3 right-3 text-0.65rem font-600 tracking-wide uppercase text-white bg-text px-2 py-0.5 rounded-full">
+    <div v-if="coming" class="absolute top-3 right-3 text-0.65rem font-600 tracking-wide uppercase text-text-muted bg-white/8 border border-border/60 px-2 py-0.5 rounded-full">
       Soon
     </div>
     <div :class="coming && 'opacity-60'">
