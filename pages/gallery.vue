@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between px-5 pt-6 md:px-8 md:pt-8">
       <NuxtLink
         to="/"
-        class="text-1.2rem font-800 tracking-tight no-underline bg-clip-text transition-opacity duration-200 hover:opacity-70 md:text-1.4rem"
+        class="text-1.2rem font-800 tracking-tight no-underline bg-clip-text transition-opacity duration-200 hover:opacity-70 overflow-hidden text-ellipsis whitespace-nowrap mr-24 md:text-1.4rem"
         style="background-image: linear-gradient(135deg, var(--color-brand-blue-deep) 0%, var(--color-brand-purple-deep) 50%, var(--color-brand-teal-deep) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent"
       >
         {{ t("FengShangWuQi's Personal Site") }}
