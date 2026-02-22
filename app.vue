@@ -9,7 +9,7 @@
         {{ locale === 'en' ? '中' : 'EN' }}
       </button>
       <a
-        href="https://github.com/FengShangWuQi"
+        :href="SOCIAL_LINKS.github"
         target="_blank"
         rel="noopener noreferrer"
         class="w-10 h-10 inline-flex items-center justify-center rounded-full border border-border/40 bg-white/6 glass shadow-sm text-text-muted transition-all duration-200 hover:text-text hover:border-border/70 hover:shadow-md"
@@ -26,6 +26,8 @@
 </template>
 
 <script setup lang="ts">
+import { SOCIAL_LINKS } from '~/constants'
+
 const route = useRoute()
 const { locale, t, switchLocale } = useLocale()
 
