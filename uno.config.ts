@@ -39,6 +39,8 @@ export default defineConfig({
           --color-border: #ccc;
           --color-surface: #f0f0f0;
           --color-white: #fff;
+          --color-brand-blue: #6875a5;
+          --color-brand-purple: #8b6aae;
         }
 
         html {
