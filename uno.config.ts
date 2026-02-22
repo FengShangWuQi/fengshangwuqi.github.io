@@ -20,6 +20,10 @@ export default defineConfig({
 
   rules: [
     ['tabular-nums', { 'font-variant-numeric': 'tabular-nums' }],
+    ['glass', {
+      '-webkit-backdrop-filter': 'blur(16px) saturate(180%)',
+      'backdrop-filter': 'blur(16px) saturate(180%)',
+    }],
   ],
 
   preflights: [

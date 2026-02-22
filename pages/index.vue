@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col">
     <div class="relative flex-1 flex items-center justify-center">
       <HeroParticleNetwork />
-      <div class="relative z-10 text-center px-6">
+      <div class="relative text-center px-6">
         <p class="text-0.75rem font-500 tracking-0.3em uppercase text-text-muted mb-4 hero-fade-in md:text-0.85rem">
           Welcome
         </p>
@@ -19,12 +19,12 @@
         <p class="text-1rem text-text-muted max-w-md mx-auto mb-12 hero-fade-in hero-delay-2 md:text-1.1rem">
           A space for visual stories and curated ideas.
         </p>
-        <div class="flex flex-col gap-4 max-w-sm mx-auto hero-fade-in hero-delay-3 sm:flex-row sm:max-w-lg sm:gap-5">
+        <div class="flex flex-col gap-4 max-w-sm mx-auto sm:flex-row sm:max-w-lg sm:gap-5">
           <HeroSectionCard
             title="Gallery"
             description="A curated photo collection"
             to="/gallery"
-            class="flex-1"
+            class="flex-1 hero-fade-in hero-delay-3"
           >
             <template #icon>
               <IconGallery class="w-6 h-6" />
@@ -34,7 +34,7 @@
             title="Digest"
             description="Tech insights & readings"
             coming
-            class="flex-1"
+            class="flex-1 hero-fade-in hero-delay-3"
           >
             <template #icon>
               <IconBook class="w-6 h-6" />
@@ -53,7 +53,7 @@ definePageMeta({ layout: false })
 <style scoped>
 .hero-fade-in {
   opacity: 0;
-  transform: translateY(20px);
+  translate: 0 20px;
   animation: hero-enter 0.8s ease-out forwards;
 }
 
@@ -64,7 +64,7 @@ definePageMeta({ layout: false })
 @keyframes hero-enter {
   to {
     opacity: 1;
-    transform: none;
+    translate: none;
   }
 }
 </style>
