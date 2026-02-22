@@ -14,19 +14,19 @@
         ref="lightboxRef"
       >
         <button
-          class="absolute top-2 right-3 bg-transparent border-none text-white text-8 cursor-pointer leading-none opacity-80 z-1 transition-opacity duration-200 hover:opacity-100 md:top-4 md:right-6 md:text-10"
+          class="absolute top-2 right-3 bg-transparent border-none text-white cursor-pointer leading-none opacity-80 z-1 transition-opacity duration-200 hover:opacity-100 md:top-4 md:right-6"
           @click="closeLightbox"
           aria-label="Close"
         >
-          &times;
+          <svg class="w-6 h-6 md:w-7 md:h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
         </button>
 
         <button
-          class="absolute top-1/2 left-2 -translate-y-1/2 bg-transparent border-none text-white text-8 cursor-pointer p-3 opacity-70 z-1 transition-opacity duration-200 hover:opacity-100 md:left-2 md:text-12 md:p-4"
+          class="absolute top-1/2 left-2 -translate-y-1/2 bg-transparent border-none text-white cursor-pointer p-3 opacity-70 z-1 transition-opacity duration-200 hover:opacity-100 md:left-2 md:p-4"
           @click="prevImage"
           aria-label="Previous"
         >
-          &#8249;
+          <svg class="w-7 h-7 md:w-10 md:h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
         </button>
 
         <div
@@ -45,11 +45,11 @@
         </div>
 
         <button
-          class="absolute top-1/2 right-2 -translate-y-1/2 bg-transparent border-none text-white text-8 cursor-pointer p-3 opacity-70 z-1 transition-opacity duration-200 hover:opacity-100 md:right-2 md:text-12 md:p-4"
+          class="absolute top-1/2 right-2 -translate-y-1/2 bg-transparent border-none text-white cursor-pointer p-3 opacity-70 z-1 transition-opacity duration-200 hover:opacity-100 md:right-2 md:p-4"
           @click="nextImage"
           aria-label="Next"
         >
-          &#8250;
+          <svg class="w-7 h-7 md:w-10 md:h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
         </button>
 
         <div class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-0.75rem tabular-nums md:bottom-6 md:text-0.875rem">
