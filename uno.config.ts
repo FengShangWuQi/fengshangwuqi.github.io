@@ -71,6 +71,12 @@ export default defineConfig({
 
         button {
           font: inherit;
+          color: inherit;
+          background: transparent;
+          border: none;
+          outline: none;
+          -webkit-appearance: none;
+          appearance: none;
         }
       `,
     },

@@ -3,10 +3,10 @@
     <div v-if="route.path !== '/'" class="page-ambient" />
     <div class="fixed top-5 right-5 z-50 flex items-center gap-2 md:right-8">
       <button
-        class="w-10 h-10 inline-flex items-center justify-center rounded-full border border-border/40 bg-white/6 glass shadow-sm text-0.8rem font-600 text-text-muted transition-all duration-200 hover:text-text hover:border-border/70 hover:shadow-md cursor-pointer"
+        class="w-10 h-10 inline-flex items-center justify-center rounded-full border border-border/40 bg-white/6 glass shadow-sm text-text-muted transition-all duration-200 hover:text-text hover:border-border/70 hover:shadow-md cursor-pointer"
         @click="switchLocale"
       >
-        {{ locale === 'en' ? '中' : 'EN' }}
+        <span class="text-0.8rem font-600">{{ locale === 'en' ? '中' : 'EN' }}</span>
       </button>
       <a
         :href="SOCIAL_LINKS.github"
