@@ -16,7 +16,7 @@
         <button
           class="absolute top-2 right-3 bg-transparent border-none text-white cursor-pointer leading-none opacity-80 z-1 transition-opacity duration-200 hover:opacity-100 md:top-4 md:right-6"
           @click="closeLightbox"
-          aria-label="Close"
+          :aria-label="t('Close')"
         >
           <IconClose class="w-6 h-6 md:w-7 md:h-7" />
         </button>
@@ -24,7 +24,7 @@
         <button
           class="absolute top-1/2 left-2 -translate-y-1/2 bg-transparent border-none text-white cursor-pointer p-3 opacity-70 z-1 transition-opacity duration-200 hover:opacity-100 md:left-2 md:p-4"
           @click="prevImage"
-          aria-label="Previous"
+          :aria-label="t('Previous')"
         >
           <IconChevronLeft class="w-7 h-7 md:w-10 md:h-10" />
         </button>
@@ -47,7 +47,7 @@
         <button
           class="absolute top-1/2 right-2 -translate-y-1/2 bg-transparent border-none text-white cursor-pointer p-3 opacity-70 z-1 transition-opacity duration-200 hover:opacity-100 md:right-2 md:p-4"
           @click="nextImage"
-          aria-label="Next"
+          :aria-label="t('Next')"
         >
           <IconChevronRight class="w-7 h-7 md:w-10 md:h-10" />
         </button>
@@ -61,6 +61,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useLocale()
 const { images, lightboxOpen, lightboxIndex, closeLightbox, nextImage, prevImage } = useGallery()
 
 const baseURL = useRuntimeConfig().app.baseURL

@@ -6,7 +6,7 @@
         <p
           class="text-0.75rem font-500 tracking-0.3em uppercase text-text-muted mb-4 hero-fade-in md:text-0.85rem"
         >
-          Welcome
+          {{ t('Welcome') }}
         </p>
         <h1
           class="text-[clamp(2.5rem,8vw,5rem)] font-800 tracking-tight leading-tight mb-4 bg-clip-text hero-fade-in hero-delay-1"
@@ -21,7 +21,7 @@
             -webkit-text-fill-color: transparent;
           "
         >
-          fengshangwuqi
+          {{ t("FengShangWuQi's Personal Site") }}
         </h1>
         <div
           class="w-10 h-0.75 rounded-sm mx-auto mb-6 hero-fade-in hero-delay-1"
@@ -37,14 +37,14 @@
         <p
           class="text-1rem text-text-muted max-w-md mx-auto mb-12 hero-fade-in hero-delay-2 md:text-1.1rem"
         >
-          A space for visual stories and curated ideas.
+          {{ t('Capturing moments, curating insights.') }}
         </p>
         <div
           class="flex flex-col gap-4 max-w-sm mx-auto sm:flex-row sm:max-w-lg sm:gap-5"
         >
           <HeroSectionCard
-            title="Gallery"
-            description="A curated photo collection"
+            :title="t('Gallery')"
+            :description="t('A curated photo collection')"
             to="/gallery"
             class="flex-1 hero-fade-in hero-delay-3"
           >
@@ -53,8 +53,8 @@
             </template>
           </HeroSectionCard>
           <HeroSectionCard
-            title="Digest"
-            description="Tech insights & readings"
+            :title="t('Digest')"
+            :description="t('Tech insights in brief')"
             coming
             class="flex-1 hero-fade-in hero-delay-3"
           >
@@ -69,7 +69,9 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({ layout: false });
+definePageMeta({ layout: false })
+
+const { t } = useLocale()
 </script>
 
 <style scoped>
