@@ -64,6 +64,11 @@ export default defineConfig({
           min-height: 100vh;
         }
 
+        ::selection {
+          background: rgba(123, 138, 208, 0.35);
+          color: var(--color-white);
+        }
+
         img {
           max-width: 100%;
           height: auto;
