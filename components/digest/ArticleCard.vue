@@ -4,12 +4,11 @@
       :href="item.url"
       target="_blank"
       rel="noopener noreferrer"
-      class="inline-flex items-center gap-1 text-0.95rem font-600 text-text leading-snug no-underline transition-colors duration-200 hover:text-brand-blue mb-2 md:text-1rem"
+      class="text-0.95rem font-600 text-text leading-snug no-underline transition-colors duration-200 hover:text-brand-blue md:text-1rem"
     >
-      {{ item.title[locale] }}
-      <IconExternalLink class="w-3.5 h-3.5 shrink-0 text-text-muted" />
+      {{ item.title[locale] }}<IconExternalLink class="inline-block w-3.5 h-3.5 ml-1 align-middle -translate-y-px text-text-muted" />
     </a>
-    <p class="text-0.8rem text-text-muted leading-relaxed md:text-0.85rem">
+    <p class="mt-2 text-0.8rem text-text-muted leading-relaxed md:text-0.85rem">
       {{ item.summary[locale] }}
     </p>
     <div class="flex items-center justify-end gap-1.5 mt-2 text-0.7rem text-text-muted/30">
