@@ -2,29 +2,23 @@ import type { DigestYearGroup } from '~/types/digest'
 
 export const useDigest = () => {
   const years = useState<DigestYearGroup[]>('digest-years', () => [])
-  const expandedMonths = useState<Set<string>>('digest-expanded-months', () => new Set())
+  const expandedMonth = useState<string | null>('digest-expanded-month', () => null)
 
   const toggleMonth = (month: string) => {
-    const next = new Set(expandedMonths.value)
-    if (next.has(month)) {
-      next.delete(month)
-    } else {
-      next.add(month)
-    }
-    expandedMonths.value = next
+    expandedMonth.value = expandedMonth.value === month ? null : month
   }
 
-  const isMonthExpanded = (month: string) => expandedMonths.value.has(month)
+  const isMonthExpanded = (month: string) => expandedMonth.value === month
 
   const initExpanded = () => {
-    if (expandedMonths.value.size === 0 && years.value.length > 0 && years.value[0].months.length > 0) {
-      expandedMonths.value = new Set([years.value[0].months[0].month])
+    if (!expandedMonth.value && years.value.length > 0 && years.value[0].months.length > 0) {
+      expandedMonth.value = years.value[0].months[0].month
     }
   }
 
   return {
     years,
-    expandedMonths: readonly(expandedMonths),
+    expandedMonth: readonly(expandedMonth),
     toggleMonth,
     isMonthExpanded,
     initExpanded,
