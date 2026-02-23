@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <div class="relative flex-1 flex items-center justify-center">
-      <HeroBgGrid />
+      <HeroDotGrid />
       <div class="relative text-center px-6">
         <p
           class="text-0.75rem font-500 tracking-0.3em uppercase text-text-muted mb-4 hero-fade-in md:text-0.85rem"
@@ -44,7 +44,7 @@
         >
           <HeroSectionCard
             :title="t('Gallery')"
-            :description="t('A curated photo collection')"
+            :description="t('Curated photo collection')"
             to="/gallery"
             class="flex-1 hero-fade-in hero-delay-3"
           >
@@ -55,7 +55,7 @@
           <HeroSectionCard
             :title="t('Digest')"
             :description="t('Tech insights in brief')"
-            coming
+            to="/digest"
             class="flex-1 hero-fade-in hero-delay-3"
           >
             <template #icon>
