@@ -40,13 +40,13 @@
           {{ t('Capturing moments, curating insights.') }}
         </p>
         <div
-          class="flex flex-col gap-4 max-w-sm mx-auto sm:flex-row sm:max-w-lg sm:gap-5"
+          class="grid gap-4 max-w-sm mx-auto sm:grid-cols-3 sm:max-w-2xl sm:gap-5"
         >
           <HeroSectionCard
             :title="t('Gallery')"
             :description="t('Curated photo collection')"
             to="/gallery"
-            class="flex-1 hero-fade-in hero-delay-3"
+            class="hero-fade-in hero-delay-3"
           >
             <template #icon>
               <IconGallery class="w-6 h-6" />
@@ -56,10 +56,20 @@
             :title="t('Digest')"
             :description="t('Tech insights in brief')"
             to="/digest"
-            class="flex-1 hero-fade-in hero-delay-3"
+            class="hero-fade-in hero-delay-3"
           >
             <template #icon>
               <IconBook class="w-6 h-6" />
+            </template>
+          </HeroSectionCard>
+          <HeroSectionCard
+            :title="t('Weekly')"
+            :description="t('Curated weekly newsletter')"
+            coming
+            class="hero-fade-in hero-delay-3"
+          >
+            <template #icon>
+              <IconNewspaper class="w-6 h-6" />
             </template>
           </HeroSectionCard>
         </div>
