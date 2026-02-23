@@ -36,7 +36,7 @@ Nuxt 3 multi-page personal site with TypeScript, deployed to GitHub Pages at `/`
 
 **Components** are organized by domain under `components/`:
 - `icon/` — SVG icon components (e.g., `icon/Github.vue` → `<IconGithub />`)
-- `hero/` — landing page components: `DotGrid.vue` (CSS dot-grid with animated glow orbs), `SectionCard.vue` (entry cards with border and backdrop-blur)
+- `hero/` — landing page components: `DotGrid.vue` (CSS dot-grid with animated glow orbs), `SectionCard.vue` (entry cards with border and backdrop-blur; `coming` prop renders as `<div>` with "Soon" badge instead of link)
 - `gallery/` — gallery page components: `Grid.vue`, `Item.vue`, `LightboxOverlay.vue` (fullscreen viewer with keyboard/touch navigation, unscoped styles due to Teleport)
 - `digest/` — digest page components: `Timeline.vue` (year-section list), `YearSection.vue` (year label with horizontal rule + month list), `MonthGroup.vue` (collapsible month section with dot/chevron/label/count), `DayGroup.vue` (non-collapsible date label + article cards), `ArticleCard.vue` (single article entry)
 
