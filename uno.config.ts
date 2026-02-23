@@ -10,6 +10,7 @@ export default defineConfig({
       'text-muted': 'var(--color-text-muted)',
       border: 'var(--color-border)',
       surface: 'var(--color-surface)',
+      'brand-blue': 'var(--color-brand-blue)',
     },
     breakpoints: {
       sm: '480px',

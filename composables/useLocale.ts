@@ -6,6 +6,12 @@ const messages: Record<Locale, Messages> = { en, zh }
 
 export const useLocale = () => {
   const locale = useState<Locale>('locale', () => 'en')
+  const localeInitialized = useState('locale-initialized', () => false)
+
+  if (import.meta.client && !localeInitialized.value) {
+    locale.value = navigator.language.startsWith('zh') ? 'zh' : 'en'
+    localeInitialized.value = true
+  }
 
   const t = (key: string) => messages[locale.value][key] ?? key
 

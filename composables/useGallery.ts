@@ -1,6 +1,6 @@
 import type { GalleryImage } from '~/types/gallery'
 
-export function useGallery() {
+export const useGallery = () => {
   const images = useState<GalleryImage[]>('gallery-images', () => [])
   const lightboxOpen = useState('lightbox-open', () => false)
   const lightboxIndex = useState('lightbox-index', () => 0)

@@ -1,0 +1,590 @@
+[
+  {
+    "id": "react-compiler-stable-release",
+    "title": {
+      "en": "React Compiler Reaches Stable Release",
+      "zh": "React Compiler 正式发布稳定版"
+    },
+    "url": "https://react.dev/blog/2026/02/20/react-compiler-stable",
+    "source": "React Blog",
+    "summary": {
+      "en": "The React team announced the stable release of React Compiler, which automatically optimizes re-renders without manual memoization. Components no longer need React.memo, useMemo, or useCallback — the compiler handles it at build time.",
+      "zh": "React 团队宣布 React Compiler 正式发布稳定版，该编译器能够在构建时自动优化重新渲染，无需手动使用 React.memo、useMemo 或 useCallback 进行记忆化处理。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "vite-7-released",
+    "title": {
+      "en": "Vite 7 Released with Rust-Powered Bundler",
+      "zh": "Vite 7 发布，搭载 Rust 驱动的打包工具"
+    },
+    "url": "https://vitejs.dev/blog/vite-7",
+    "source": "Vercel Blog",
+    "summary": {
+      "en": "Vite 7 ships with Rolldown as its default bundler, replacing both esbuild and Rollup. Build times drop by 10x for large projects, and the new Environment API enables true SSR-first development workflows.",
+      "zh": "Vite 7 正式发布，默认使用 Rolldown 作为打包工具，替代了 esbuild 和 Rollup。大型项目构建速度提升 10 倍，全新的 Environment API 支持真正的 SSR 优先开发工作流。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "claude-4-model-family",
+    "title": {
+      "en": "Anthropic Introduces Claude 4 Model Family",
+      "zh": "Anthropic 推出 Claude 4 系列模型"
+    },
+    "url": "https://www.anthropic.com/news/claude-4",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Anthropic released the Claude 4 model family with significantly improved reasoning, coding, and multilingual capabilities. The new Opus model sets new benchmarks on SWE-bench and GPQA, while Haiku offers near-Sonnet performance at a fraction of the cost.",
+      "zh": "Anthropic 发布了 Claude 4 系列模型，在推理、编程和多语言能力方面有显著提升。新的 Opus 模型在 SWE-bench 和 GPQA 上创下新纪录，而 Haiku 以极低成本提供接近 Sonnet 的性能。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "node-24-lts",
+    "title": {
+      "en": "Node.js 24 Enters LTS with Native TypeScript",
+      "zh": "Node.js 24 进入 LTS，原生支持 TypeScript"
+    },
+    "url": "https://nodejs.org/en/blog/release/v24.0.0",
+    "source": "Node.js Blog",
+    "summary": {
+      "en": "Node.js 24 enters Long-Term Support with built-in TypeScript execution via type stripping — no transpilation step needed. The release also includes a stable Permission Model API and improved ESM loader hooks.",
+      "zh": "Node.js 24 进入长期支持阶段，内置 TypeScript 类型剥离执行支持，无需转译步骤。此版本还包含稳定的权限模型 API 和改进的 ESM 加载器钩子。"
+    },
+    "date": "2026-02-18"
+  },
+  {
+    "id": "openai-gpt-5-developer-preview",
+    "title": {
+      "en": "OpenAI Launches GPT-5 Developer Preview",
+      "zh": "OpenAI 推出 GPT-5 开发者预览版"
+    },
+    "url": "https://openai.com/blog/gpt-5-developer-preview",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI released a developer preview of GPT-5 with enhanced multi-modal reasoning and a 1M token context window. The model introduces native tool orchestration, allowing it to chain API calls and manage complex workflows autonomously.",
+      "zh": "OpenAI 发布了 GPT-5 开发者预览版，具备增强的多模态推理能力和 100 万 token 上下文窗口。该模型引入了原生工具编排功能，能够自主链接 API 调用并管理复杂工作流。"
+    },
+    "date": "2026-02-18"
+  },
+  {
+    "id": "css-anchor-positioning-baseline",
+    "title": {
+      "en": "CSS Anchor Positioning Reaches Baseline",
+      "zh": "CSS 锚点定位达到 Baseline 标准"
+    },
+    "url": "https://web.dev/blog/anchor-positioning-baseline",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "CSS Anchor Positioning is now available across all major browsers. This eliminates the need for JavaScript-based tooltip and popover positioning libraries, enabling pure CSS solutions for dropdowns, tooltips, and floating UI elements.",
+      "zh": "CSS 锚点定位现已在所有主流浏览器中可用。这消除了对基于 JavaScript 的工具提示和弹出层定位库的需求，使下拉菜单、工具提示和浮动 UI 元素可以用纯 CSS 实现。"
+    },
+    "date": "2026-02-15"
+  },
+  {
+    "id": "claude-sonnet-4-6",
+    "title": {
+      "en": "Introducing Claude Sonnet 4.6",
+      "zh": "Anthropic 发布 Claude Sonnet 4.6"
+    },
+    "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+    "source": "Anthropic News",
+    "summary": {
+      "en": "Anthropic released Claude Sonnet 4.6, delivering frontier performance across coding, agentic tasks, and professional workflows at scale. The model offers significant improvements in reasoning and instruction-following while maintaining cost efficiency.",
+      "zh": "Anthropic 发布了 Claude Sonnet 4.6，在编程、智能体任务和专业工作流方面实现了前沿性能。该模型在推理和指令遵循方面有显著提升，同时保持了成本效益。"
+    },
+    "date": "2026-02-17"
+  },
+  {
+    "id": "claude-code-security-preview",
+    "title": {
+      "en": "Claude Code Security Now in Research Preview",
+      "zh": "Claude Code Security 进入研究预览阶段"
+    },
+    "url": "https://www.anthropic.com/news/claude-code-security",
+    "source": "Anthropic News",
+    "summary": {
+      "en": "Anthropic launched Claude Code Security in limited research preview, enabling automated scanning of codebases for security vulnerabilities with targeted patch suggestions. This brings frontier AI cybersecurity capabilities directly to developers and defenders.",
+      "zh": "Anthropic 推出 Claude Code Security 限量研究预览版，支持自动扫描代码库中的安全漏洞并提供针对性修复建议。此举将前沿 AI 网络安全能力直接带给开发者和安全防御人员。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "ggml-llama-cpp-join-huggingface",
+    "title": {
+      "en": "GGML and llama.cpp Join Hugging Face",
+      "zh": "GGML 和 llama.cpp 加入 Hugging Face"
+    },
+    "url": "https://huggingface.co/blog/ggml-joins-hf",
+    "source": "Hugging Face Blog",
+    "summary": {
+      "en": "GGML and llama.cpp have officially joined Hugging Face to ensure the long-term progress of local AI. This partnership strengthens the open-source ecosystem for running large language models efficiently on consumer hardware.",
+      "zh": "GGML 和 llama.cpp 正式加入 Hugging Face，以确保本地 AI 的长期发展。此次合作加强了在消费级硬件上高效运行大语言模型的开源生态系统。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "gemini-lyria-3-music-generation",
+    "title": {
+      "en": "Gemini Can Now Create Music with Lyria 3",
+      "zh": "Gemini 借助 Lyria 3 实现音乐创作"
+    },
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+    "source": "Google AI Blog",
+    "summary": {
+      "en": "Google launched Lyria 3 in the Gemini app, enabling users to create custom high-quality 30-second music tracks from text and image prompts. This marks a significant step in multimodal AI creativity, making music generation accessible to everyone.",
+      "zh": "Google 在 Gemini 应用中推出 Lyria 3，用户可通过文字和图片提示创建高质量的 30 秒定制音乐。这标志着多模态 AI 创意能力的重大进展，让音乐生成触手可及。"
+    },
+    "date": "2026-02-18"
+  },
+  {
+    "id": "openai-alignment-research-funding",
+    "title": {
+      "en": "OpenAI Commits $7.5M to AI Alignment Research",
+      "zh": "OpenAI 投入 750 万美元支持 AI 对齐研究"
+    },
+    "url": "https://openai.com/index/advancing-independent-research-ai-alignment",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI committed $7.5 million to The Alignment Project to fund independent AI alignment research. The initiative aims to strengthen global efforts in AGI safety by supporting researchers ensuring AI systems remain beneficial and aligned with human values.",
+      "zh": "OpenAI 向 The Alignment Project 投入 750 万美元，资助独立的 AI 对齐研究。该计划旨在通过支持研究人员确保 AI 系统有益且符合人类价值观，加强全球 AGI 安全工作。"
+    },
+    "date": "2026-02-19"
+  },
+  {
+    "id": "karpathy-claws-ai-agents",
+    "title": {
+      "en": "Andrej Karpathy Talks About \"Claws\"",
+      "zh": "Andrej Karpathy 谈论 \"Claws\" 概念"
+    },
+    "url": "https://simonwillison.net/2026/Feb/21/claws/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "AI researcher Andrej Karpathy introduced the concept of \"Claws\" — AI agents that operate with persistent context and tool access to autonomously complete complex tasks. The discussion sparked widespread interest in the evolving relationship between humans and AI assistants.",
+      "zh": "AI 研究者 Andrej Karpathy 提出了 \"Claws\" 概念——具有持久上下文和工具访问能力的 AI 智能体，能够自主完成复杂任务。这一讨论引发了对人类与 AI 助手关系演进的广泛关注。"
+    },
+    "date": "2026-02-21"
+  },
+  {
+    "id": "vercel-webstreams-10x-faster",
+    "title": {
+      "en": "Vercel Makes WebStreams 10x Faster",
+      "zh": "Vercel 将 WebStreams 性能提升 10 倍"
+    },
+    "url": "https://vercel.com/blog/we-ralph-wiggumed-webstreams-to-make-them-10x-faster",
+    "source": "Vercel Blog",
+    "summary": {
+      "en": "Vercel developed fast-webstreams, a drop-in replacement achieving approximately 10x faster throughput for WHATWG WebStreams pipeThrough operations and 14.6x faster for React Flight patterns. This optimization significantly improves streaming SSR performance in Next.js applications.",
+      "zh": "Vercel 开发了 fast-webstreams，作为 WHATWG WebStreams 的替代方案，pipeThrough 操作吞吐量提升约 10 倍，React Flight 模式提升 14.6 倍。这一优化显著提升了 Next.js 应用中流式 SSR 的性能。"
+    },
+    "date": "2026-02-18"
+  },
+  {
+    "id": "vercel-ai-gateway-video-generation",
+    "title": {
+      "en": "Vercel AI Gateway Adds Video Generation",
+      "zh": "Vercel AI Gateway 新增视频生成功能"
+    },
+    "url": "https://vercel.com/blog/video-generation-with-ai-gateway",
+    "source": "Vercel Blog",
+    "summary": {
+      "en": "Vercel's AI Gateway now supports video generation with four initial models including Grok Imagine, Wan, Kling, and Veo. Developers can leverage text-to-video, image-to-video, and reference-based generation capabilities through a unified API.",
+      "zh": "Vercel AI Gateway 现已支持视频生成，首批集成 Grok Imagine、Wan、Kling 和 Veo 四个模型。开发者可通过统一 API 使用文生视频、图生视频和参考图生成等功能。"
+    },
+    "date": "2026-02-19"
+  },
+  {
+    "id": "cloudflare-agents-framework",
+    "title": {
+      "en": "Cloudflare Agents: Build AI Agents on the Edge",
+      "zh": "Cloudflare Agents：在边缘构建 AI 智能体"
+    },
+    "url": "https://github.com/cloudflare/agents",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Cloudflare's open-source agents framework enables developers to build and deploy AI agents on Cloudflare's global edge network. The project gained 3,800+ stars with 257 new stars in a single day, reflecting strong developer interest in edge-native AI agent infrastructure.",
+      "zh": "Cloudflare 开源的 agents 框架让开发者能够在其全球边缘网络上构建和部署 AI 智能体。该项目获得 3800+ 星标，单日新增 257 颗星，反映了开发者对边缘原生 AI 智能体基础设施的强烈兴趣。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "ollama-v0-17-0",
+    "title": {
+      "en": "Ollama v0.17.0 Released",
+      "zh": "Ollama v0.17.0 发布"
+    },
+    "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0-rc2",
+    "source": "GitHub Releases",
+    "summary": {
+      "en": "Ollama released version 0.17.0, continuing to improve the experience of running large language models locally. The update brings performance improvements and expanded model support for developers building local AI applications.",
+      "zh": "Ollama 发布 0.17.0 版本，持续改进本地运行大语言模型的体验。此次更新带来了性能改进和更广泛的模型支持，助力开发者构建本地 AI 应用。"
+    },
+    "date": "2026-02-21"
+  },
+  {
+    "id": "jetbrains-best-ai-coding-models-2026",
+    "title": {
+      "en": "Best AI Models for Coding in 2026",
+      "zh": "2026 年最佳 AI 编程模型"
+    },
+    "url": "https://blog.jetbrains.com/ai/2026/02/the-best-ai-models-for-coding-accuracy-integration-and-developer-fit/",
+    "source": "Web Search",
+    "summary": {
+      "en": "JetBrains published an in-depth analysis of the best AI models for coding, noting that 93% of developers now regularly use AI tools. The report highlights a shift from single large-context agents to multi-agent \"ant swarm\" approaches for more reliable code generation.",
+      "zh": "JetBrains 发布了对最佳 AI 编程模型的深度分析，指出 93% 的开发者已定期使用 AI 工具。报告强调了从单一大上下文智能体向多智能体「蚁群」方法转变的趋势，以实现更可靠的代码生成。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "olmo-3-allen-ai-open-llm",
+    "title": {
+      "en": "OLMo 3: Allen AI's Fully Open LLMs Top Performance Charts",
+      "zh": "OLMo 3：Allen AI 全开源大模型登顶性能榜"
+    },
+    "url": "https://llm-stats.com/ai-news",
+    "source": "Web Search",
+    "summary": {
+      "en": "Allen AI released OLMo 3 with fully open 7B and 32B parameter models that top charts in base performance and reasoning benchmarks. Alongside this, Mistral launched its Mistral 3 family with the 675B-parameter Large 3 model delivering 92% of GPT-5.2's performance at roughly 15% of the cost.",
+      "zh": "Allen AI 发布了 OLMo 3，其全开源的 7B 和 32B 参数模型在基础性能和推理基准测试中名列前茅。与此同时，Mistral 推出了 Mistral 3 系列，其 675B 参数的 Large 3 模型以约 15% 的成本实现了 GPT-5.2 92% 的性能。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "gemini-3-1-pro-launch",
+    "title": {
+      "en": "Gemini 3.1 Pro: A Smarter Model for Complex Tasks",
+      "zh": "Gemini 3.1 Pro：面向复杂任务的更强模型"
+    },
+    "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+    "source": "DeepMind Blog",
+    "summary": {
+      "en": "Google DeepMind launched Gemini 3.1 Pro, engineered for sophisticated challenges requiring more than straightforward answers. The model brings significant improvements in multi-step reasoning and complex task execution across coding, analysis, and research workflows.",
+      "zh": "Google DeepMind 推出 Gemini 3.1 Pro，专为需要深度推理的复杂挑战而设计。该模型在多步推理和复杂任务执行方面有显著提升，覆盖编程、分析和研究等工作流。"
+    },
+    "date": "2026-02-19"
+  },
+  {
+    "id": "typescript-6-0-beta",
+    "title": {
+      "en": "Announcing TypeScript 6.0 Beta",
+      "zh": "TypeScript 6.0 Beta 发布"
+    },
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0-beta/",
+    "source": "TypeScript Blog",
+    "summary": {
+      "en": "TypeScript 6.0 Beta serves as a bridge release before the native port arrives as 7.0. It introduces subpath imports with #/, es2025 target support, Temporal API types, and deprecates --target es5, --baseUrl, and AMD/UMD module formats.",
+      "zh": "TypeScript 6.0 Beta 作为原生移植版 7.0 之前的过渡版本发布。新增 #/ 子路径导入、es2025 编译目标、Temporal API 类型支持，并弃用了 --target es5、--baseUrl 和 AMD/UMD 模块格式。"
+    },
+    "date": "2026-02-18"
+  },
+  {
+    "id": "tailwindcss-v4-2-0",
+    "title": {
+      "en": "Tailwind CSS v4.2.0 Released",
+      "zh": "Tailwind CSS v4.2.0 发布"
+    },
+    "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.2.0",
+    "source": "GitHub Releases",
+    "summary": {
+      "en": "Tailwind CSS v4.2.0 lands as the first feature release in the v4 series following the ground-up rewrite. Building on the new Oxide engine and CSS-first configuration, this release continues to expand the utility-first framework's capabilities.",
+      "zh": "Tailwind CSS v4.2.0 作为 v4 系列全面重写后的首个功能版本发布。在全新的 Oxide 引擎和 CSS 优先配置基础上，持续扩展这一实用优先 CSS 框架的能力。"
+    },
+    "date": "2026-02-18"
+  },
+  {
+    "id": "claude-c-compiler-analysis",
+    "title": {
+      "en": "The Claude C Compiler: What It Reveals About the Future of Software",
+      "zh": "Claude C 编译器：揭示软件未来的启示"
+    },
+    "url": "https://simonwillison.net/2026/Feb/22/ccc/",
+    "source": "Simon Willison",
+    "summary": {
+      "en": "Simon Willison covers Chris Lattner's analysis of Anthropic's AI-built C compiler, concluding it resembles \"a competent textbook implementation\" but struggles with production-quality generalization. The piece offers a nuanced view of where AI coding excels and where it falls short.",
+      "zh": "Simon Willison 报道了 Chris Lattner 对 Anthropic AI 构建的 C 编译器的分析，结论是它类似于「一个合格的教科书实现」，但在生产级泛化能力方面仍有不足。文章对 AI 编程的优势与局限提供了深入的视角。"
+    },
+    "date": "2026-02-22"
+  },
+  {
+    "id": "github-octoverse-ai-reshaping-dev-choice",
+    "title": {
+      "en": "How AI Is Reshaping Developer Choice (Octoverse Data Proves It)",
+      "zh": "AI 如何重塑开发者的技术选择（Octoverse 数据为证）"
+    },
+    "url": "https://github.blog/ai-and-ml/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/",
+    "source": "GitHub Blog",
+    "summary": {
+      "en": "GitHub's Octoverse 2025 data reveals TypeScript has surpassed Python and JavaScript as the most-used language on the platform, driven by AI tools performing better with strongly typed code. The report examines how AI integration creates \"convenience loops\" that reshape developer technology preferences.",
+      "zh": "GitHub Octoverse 2025 数据显示 TypeScript 已超越 Python 和 JavaScript 成为平台上最常用的语言，原因是 AI 工具在强类型代码上表现更佳。报告分析了 AI 集成如何通过「便利循环」重塑开发者的技术选择。"
+    },
+    "date": "2026-02-19"
+  },
+  {
+    "id": "css-corner-shape-blink-implementation",
+    "title": {
+      "en": "The Corner Cases of Implementing CSS corner-shape in Blink",
+      "zh": "在 Blink 中实现 CSS corner-shape 的各种边界情况"
+    },
+    "url": "https://developer.chrome.com/blog/implementing-corner-shape",
+    "source": "Chrome for Developers",
+    "summary": {
+      "en": "A deep technical dive into implementing the CSS corner-shape property in Chrome's Blink engine, covering superellipse mathematics, Bézier curve approximations, and the challenges of rendering borders and shadows with complex corner geometries.",
+      "zh": "深入探讨在 Chrome Blink 引擎中实现 CSS corner-shape 属性的技术细节，涵盖超椭圆数学、贝塞尔曲线近似，以及复杂圆角几何下渲染边框和阴影的挑战。"
+    },
+    "date": "2026-02-19"
+  },
+  {
+    "id": "karpathy-microgpt-200-lines",
+    "title": {
+      "en": "microGPT: GPT in 200 Lines of Pure Python",
+      "zh": "microGPT：200 行纯 Python 实现 GPT"
+    },
+    "url": "https://karpathy.github.io/2026/02/12/microgpt/",
+    "source": "@karpathy",
+    "summary": {
+      "en": "Andrej Karpathy published microGPT — a single file of ~200 lines of dependency-free Python that contains the full algorithmic content for training and running a GPT model, including dataset, tokenizer, autograd engine, and neural network. He described it as \"everything needed, everything else is just for efficiency.\"",
+      "zh": "Andrej Karpathy 发布了 microGPT——一个约 200 行无依赖纯 Python 文件，包含训练和运行 GPT 模型的完整算法内容：数据集、分词器、自动微分引擎和神经网络。他称之为「所需的一切，其余只是为了效率」。"
+    },
+    "date": "2026-02-12"
+  },
+  {
+    "id": "kent-dodds-cursor-framework-migration",
+    "title": {
+      "en": "How I Used Cursor to Migrate Frameworks",
+      "zh": "我如何用 Cursor 完成框架迁移"
+    },
+    "url": "https://kentcdodds.com/blog/how-i-used-cursor-to-migrate-frameworks",
+    "source": "Kent C. Dodds",
+    "summary": {
+      "en": "Kent C. Dodds describes upgrading his site from Remix v2 to React Router v7 in a single day, modifying over 17,000 lines of code using Cursor's AI-assisted agent capabilities. The post offers a practical blueprint for using AI tools in large-scale systematic framework migrations.",
+      "zh": "Kent C. Dodds 讲述了如何在一天内使用 Cursor 的 AI 辅助代理功能，将站点从 Remix v2 迁移到 React Router v7，修改超过 17,000 行代码。文章为使用 AI 工具进行大规模系统性框架迁移提供了实用范例。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "claude-code-planning-execution-workflow",
+    "title": {
+      "en": "How I Use Claude Code: Separation of Planning and Execution",
+      "zh": "我如何使用 Claude Code：规划与执行分离"
+    },
+    "url": "https://boristane.com/blog/how-i-use-claude-code/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "A practical workflow guide for Claude Code advocating strict separation between planning and execution phases. The approach of having AI plan first and implement second has resonated widely, receiving over 700 points on Hacker News.",
+      "zh": "一篇 Claude Code 实用工作流指南，主张严格区分规划阶段和执行阶段。先让 AI 规划、再实现的方法引起广泛共鸣，在 Hacker News 上获得超过 700 个赞。"
+    },
+    "date": "2026-02-22"
+  },
+  {
+    "id": "wasm-beyond-browsers-container-killer",
+    "title": {
+      "en": "WebAssembly Beyond Browsers: The Container Killer That's Actually Happening",
+      "zh": "WebAssembly 走出浏览器：正在发生的容器替代者"
+    },
+    "url": "https://www.javacodegeeks.com/2026/02/webassembly-beyond-browsers-the-container-killer-thats-actually-happening.html",
+    "source": "Web Search",
+    "summary": {
+      "en": "Real-world adoption data shows WebAssembly achieving 5-10x faster cold starts than containers, with Cloudflare processing 10M+ Wasm requests/second across 300+ edge locations. WASI 0.3.0 with native async I/O is expected in February 2026, while WASI 1.0 targets late 2026.",
+      "zh": "实际采用数据显示 WebAssembly 冷启动速度比容器快 5-10 倍，Cloudflare 在 300 多个边缘节点每秒处理超过 1000 万个 Wasm 请求。支持原生异步 I/O 的 WASI 0.3.0 预计于 2026 年 2 月发布，WASI 1.0 目标为 2026 年底。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "remote-mcp-architecture-kubernetes",
+    "title": {
+      "en": "Scale LLM Tools with a Remote MCP Architecture on Kubernetes",
+      "zh": "在 Kubernetes 上用远程 MCP 架构扩展 LLM 工具"
+    },
+    "url": "https://thenewstack.io/scale-llm-tools-with-a-remote-mcp-architecture-on-kubernetes/",
+    "source": "Web Search",
+    "summary": {
+      "en": "A technical deep dive into scaling Model Context Protocol tool servers using Kubernetes, enabling enterprise-grade deployment of LLM tool integrations across distributed infrastructure. The architecture addresses the growing need for production-ready MCP deployments beyond local development.",
+      "zh": "深入探讨如何使用 Kubernetes 扩展模型上下文协议（MCP）工具服务器，实现跨分布式基础设施的企业级 LLM 工具集成部署。该架构满足了 MCP 从本地开发走向生产环境的迫切需求。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "lecun-ai-power-not-intelligence",
+    "title": {
+      "en": "Yann LeCun: \"AI Is Power, Not Intelligence\"",
+      "zh": "Yann LeCun：「AI 是力量，而非智能」"
+    },
+    "url": "https://www.businesstoday.in/bt-tv/whats-hot/video/yann-lecun-on-why-ai-is-power-not-intelligence-ai-impact-summit-2026-517029-2026-02-20",
+    "source": "@ylecun",
+    "summary": {
+      "en": "At the India AI Impact Summit, Meta's chief AI scientist Yann LeCun argued that LLMs are an evolutionary dead end and superintelligence isn't close. He advocated for \"world models\" using JEPA architecture as the next major phase of AI, noting that animals still understand the physical world far better than any AI system.",
+      "zh": "在印度 AI 影响力峰会上，Meta 首席 AI 科学家 Yann LeCun 认为大语言模型是进化的死胡同，超级智能尚未临近。他主张使用 JEPA 架构构建「世界模型」作为 AI 的下一重大阶段，指出动物对物理世界的理解仍远超任何 AI 系统。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "cloudflare-code-mode-mcp",
+    "title": {
+      "en": "Code Mode: Give Agents an Entire API in 1,000 Tokens",
+      "zh": "Code Mode：用 1,000 个 Token 给智能体一整套 API"
+    },
+    "url": "https://blog.cloudflare.com/code-mode-mcp/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare introduced Code Mode for MCP servers, which compresses an entire API into roughly 1,000 tokens by generating executable TypeScript code instead of listing individual tool definitions. This dramatically reduces context window usage and lets AI agents interact with complex APIs more efficiently.",
+      "zh": "Cloudflare 推出 MCP 服务器的 Code Mode，通过生成可执行 TypeScript 代码替代逐个列出工具定义，将整套 API 压缩至约 1,000 个 Token。这大幅减少了上下文窗口占用，让 AI 智能体能更高效地与复杂 API 交互。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "interop-2026",
+    "title": {
+      "en": "Interop 2026: Browser Vendors Align on Priority Web Features",
+      "zh": "Interop 2026：浏览器厂商就优先 Web 特性达成一致"
+    },
+    "url": "https://css-tricks.com/interop-2026/",
+    "source": "CSS-Tricks",
+    "summary": {
+      "en": "The annual Interop initiative for 2026 has been announced, setting the priority areas where browser vendors will collaborate to improve cross-browser compatibility. This year's focus areas shape which web platform features developers can reliably adopt.",
+      "zh": "2026 年度 Interop 计划公布，确定了浏览器厂商将协作改善跨浏览器兼容性的优先领域。今年的重点方向将决定开发者可以放心采用哪些 Web 平台特性。"
+    },
+    "date": "2026-02-17"
+  },
+  {
+    "id": "css-near-selector",
+    "title": {
+      "en": "Potentially Coming to a Browser :near() You",
+      "zh": "CSS :near() 选择器即将登陆浏览器"
+    },
+    "url": "https://css-tricks.com/potentially-coming-to-a-browser-near-you/",
+    "source": "CSS-Tricks",
+    "summary": {
+      "en": "A deep look at the proposed CSS :near() selector, which enables proximity-based styling by selecting elements that are spatially close to a target. This could eliminate much of the JavaScript currently needed for context-aware UI interactions.",
+      "zh": "深入解析提案中的 CSS :near() 选择器，它通过选取与目标元素空间相近的元素来实现基于距离的样式控制。这有望取代目前实现上下文感知 UI 交互所需的大量 JavaScript。"
+    },
+    "date": "2026-02-20"
+  },
+  {
+    "id": "transformers-v5-2-0",
+    "title": {
+      "en": "Hugging Face Transformers v5.2.0: GLM-5, Qwen3.5, Voxtral Realtime",
+      "zh": "Hugging Face Transformers v5.2.0：支持 GLM-5、Qwen3.5、Voxtral Realtime"
+    },
+    "url": "https://github.com/huggingface/transformers/releases/tag/v5.2.0",
+    "source": "GitHub Releases",
+    "summary": {
+      "en": "Transformers v5.2.0 adds support for several major new model architectures including GLM-5, Qwen3.5, and Voxtral Realtime acoustic tokenizer. The release reflects the accelerating pace of open-weight model releases and the expanding scope of the Transformers library.",
+      "zh": "Transformers v5.2.0 新增 GLM-5、Qwen3.5、Voxtral Realtime 声学分词器等多个主要模型架构支持。此版本反映了开源权重模型发布的加速趋势以及 Transformers 库不断扩展的覆盖范围。"
+    },
+    "date": "2026-02-16"
+  },
+  {
+    "id": "simon-willison-red-green-tdd-agentic",
+    "title": {
+      "en": "Red/Green TDD for Agentic Engineering",
+      "zh": "面向智能体工程的红/绿 TDD 模式"
+    },
+    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/",
+    "source": "Simon Willison",
+    "summary": {
+      "en": "Simon Willison proposes applying Red/Green TDD to AI-assisted coding — write a failing test first, then let the AI agent make it pass. This pattern provides a reliable feedback loop that keeps AI agents grounded in verifiable behavior rather than hallucinated correctness.",
+      "zh": "Simon Willison 提出将红/绿 TDD 应用于 AI 辅助编程——先写一个失败的测试，再让 AI 智能体使其通过。这种模式提供了可靠的反馈循环，让 AI 智能体基于可验证的行为而非虚构的正确性来工作。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "openai-harness-engineering-codex",
+    "title": {
+      "en": "OpenAI Harness Engineering: Codex Agents Power Large-Scale Dev",
+      "zh": "OpenAI Harness Engineering：Codex 智能体驱动大规模软件开发"
+    },
+    "url": "https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/",
+    "source": "InfoQ",
+    "summary": {
+      "en": "OpenAI introduced Harness Engineering, where teams of Codex agents autonomously handle large-scale software development tasks including code generation, testing, and review. This marks a shift from AI as a copilot to AI as an autonomous engineering workforce.",
+      "zh": "OpenAI 推出 Harness Engineering，由 Codex 智能体团队自主处理大规模软件开发任务，包括代码生成、测试和审查。这标志着 AI 从辅助驾驶角色向自主工程力量的转变。"
+    },
+    "date": "2026-02-21"
+  },
+  {
+    "id": "curl-drops-bug-bounty-ai-flood",
+    "title": {
+      "en": "cURL Drops Bug Bounty Over AI-Generated Report Flood",
+      "zh": "cURL 因 AI 生成的报告泛滥而关闭漏洞赏金计划"
+    },
+    "url": "https://techcrunch.com/2026/02/19/for-open-source-programs-ai-coding-tools-are-a-mixed-blessing/",
+    "source": "Web Search",
+    "summary": {
+      "en": "The cURL project shut down its bug bounty program after being overwhelmed by AI-generated vulnerability reports that wasted maintainer time on false positives. The story highlights a growing tension: AI tools accelerate development but also flood open source projects with low-quality contributions.",
+      "zh": "cURL 项目因大量 AI 生成的漏洞报告淹没维护者精力而关闭了漏洞赏金计划，这些报告多为误报。该事件揭示了一个日益加剧的矛盾：AI 工具加速了开发，却也让开源项目充斥着低质量贡献。"
+    },
+    "date": "2026-02-19"
+  },
+  {
+    "id": "crawling-billion-web-pages-24-hours",
+    "title": {
+      "en": "Crawling a Billion Web Pages in Just Over 24 Hours",
+      "zh": "24 小时爬取 10 亿个网页"
+    },
+    "url": "https://andrewkchan.dev/posts/crawler.html",
+    "source": "Lobsters",
+    "summary": {
+      "en": "A detailed technical walkthrough of building a web crawler capable of fetching over a billion pages in roughly 24 hours. The post covers DNS resolution bottlenecks, connection pooling strategies, and the systems engineering required to sustain massive throughput on commodity hardware.",
+      "zh": "一篇详细的技术实战文章，介绍如何构建一个能在约 24 小时内抓取超过 10 亿网页的爬虫。文章涵盖 DNS 解析瓶颈、连接池策略，以及在普通硬件上维持大规模吞吐所需的系统工程。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "pentagi-autonomous-ai-pentesting",
+    "title": {
+      "en": "PentAGI: Autonomous AI Agents for Penetration Testing",
+      "zh": "PentAGI：用于渗透测试的自主 AI 智能体"
+    },
+    "url": "https://github.com/vxcontrol/pentagi",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "PentAGI is an open-source system of fully autonomous AI agents capable of performing complex penetration testing tasks. The project gained 1,500+ stars in a single day, reflecting intense interest in AI-driven security automation.",
+      "zh": "PentAGI 是一个开源的全自主 AI 智能体系统，能够执行复杂的渗透测试任务。该项目单日新增 1500+ 星标，反映了 AI 驱动安全自动化领域的高度关注。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "addy-osmani-what-devs-need-to-know",
+    "title": {
+      "en": "What Developers Actually Need to Know Right Now",
+      "zh": "开发者现在真正需要知道什么"
+    },
+    "url": "https://www.oreilly.com/radar/what-developers-actually-need-to-know-right-now/",
+    "source": "@addyosmani",
+    "summary": {
+      "en": "Addy Osmani and Tim O'Reilly discuss the essential skills developers need in 2026, arguing that understanding AI's capabilities and limitations matters more than mastering any specific tool. The piece emphasizes systems thinking and adaptability over tool-specific expertise.",
+      "zh": "Addy Osmani 与 Tim O'Reilly 探讨 2026 年开发者所需的核心技能，认为理解 AI 的能力与局限比掌握任何特定工具更重要。文章强调系统思维和适应力胜过特定工具的专业知识。"
+    },
+    "date": "2026-02-19"
+  },
+  {
+    "id": "css-spiral-scrollytelling-sibling-index",
+    "title": {
+      "en": "Spiral Scrollytelling in CSS With sibling-index()",
+      "zh": "用 CSS sibling-index() 实现螺旋滚动叙事"
+    },
+    "url": "https://css-tricks.com/spiral-scrollytelling-in-css-with-sibling-index/",
+    "source": "CSS-Tricks",
+    "summary": {
+      "en": "A creative exploration of using the new CSS sibling-index() function to build spiral scroll-driven animations entirely in CSS. The technique demonstrates how modern CSS capabilities continue to absorb use cases that previously required JavaScript animation libraries.",
+      "zh": "创造性地使用新的 CSS sibling-index() 函数，完全用 CSS 构建螺旋式滚动驱动动画。该技术展示了现代 CSS 如何持续接管过去需要 JavaScript 动画库才能实现的功能。"
+    },
+    "date": "2026-02-17"
+  },
+  {
+    "id": "github-open-source-2026-outlook",
+    "title": {
+      "en": "What to Expect for Open Source in 2026",
+      "zh": "2026 年开源领域展望"
+    },
+    "url": "https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/",
+    "source": "GitHub Blog",
+    "summary": {
+      "en": "GitHub's outlook on open source in 2026 examines how AI is reshaping contribution patterns, maintainer workflows, and project sustainability. The post highlights the growing role of AI-generated PRs and the challenges they pose for code review quality.",
+      "zh": "GitHub 对 2026 年开源领域的展望，分析了 AI 如何重塑贡献模式、维护者工作流和项目可持续性。文章重点关注 AI 生成 PR 日益增长的比例及其对代码审查质量带来的挑战。"
+    },
+    "date": "2026-02-18"
+  }
+]

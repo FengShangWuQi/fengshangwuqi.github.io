@@ -15,20 +15,27 @@ Create a git commit for the current changes. Follow these steps:
    - `git diff` — see unstaged changes
    - `git diff --staged` — see already staged changes
    - `git log --oneline -10` — understand the commit message style
+
 2. If there are no changes (no untracked files, no modifications, no staged changes), inform the user and **stop**.
-3. **Full code review.** Execute the `review` skill against the changed files. If any **Critical** or **Warning** level issues are found, **stop and report them** — do not proceed to commit until all Critical/Warning issues are resolved.
-4. Analyze all changes and draft a commit message following the rules below.
-5. Stage the relevant files (prefer `git add <specific-files>` over `git add .`). If changes are already staged, use them as-is unless there are additional unstaged changes that should be included.
-6. Create the commit. Pass the message via HEREDOC to avoid escaping issues:
-   ```bash
-   git commit -m "$(cat <<'EOF'
-   <commit message here>
-   EOF
-   )"
-   ```
-7. Run `git status` to verify the commit succeeded.
-8. If the commit fails due to a pre-commit hook, fix the issue, re-stage, and create a **new** commit. NEVER use `--no-verify` to skip hooks.
-9. After a successful commit, run `git push` to push to the remote.
+
+3. Launch the following **in parallel** — review must NOT block commit:
+   - **A — Review:** Execute the `review` skill (all three layers + build). Capture the result but do not wait for it before committing.
+   - **B — Commit:** Simultaneously:
+     1. Analyze all changes and draft a commit message following the rules below.
+     2. Stage the relevant files (prefer `git add <specific-files>` over `git add .`). If changes are already staged, use them as-is unless there are additional unstaged changes that should be included.
+     3. Create the commit. Pass the message via HEREDOC:
+        ```bash
+        git commit -m "$(cat <<'EOF'
+        <commit message here>
+        EOF
+        )"
+        ```
+     4. Run `git status` to verify the commit succeeded.
+     5. If the commit fails due to a pre-commit hook, fix the issue, re-stage, and create a **new** commit. NEVER use `--no-verify` to skip hooks.
+
+4. **Wait for review to complete**, then decide:
+   - **Critical or Warning issues found →** Report all issues. Do **not** push. The local commit already exists — the user can fix and commit again.
+   - **All clear (no Critical/Warning) →** Run `git push` to push to the remote.
 
 ## Commit Message Rules
 
