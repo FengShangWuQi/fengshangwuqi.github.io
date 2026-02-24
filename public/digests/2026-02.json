@@ -1,33 +1,5 @@
 [
   {
-    "id": "react-compiler-stable-release",
-    "title": {
-      "en": "React Compiler Reaches Stable Release",
-      "zh": "React Compiler 正式发布稳定版"
-    },
-    "url": "https://react.dev/blog/2026/02/20/react-compiler-stable",
-    "source": "React Blog",
-    "summary": {
-      "en": "The React team announced the stable release of React Compiler, which automatically optimizes re-renders without manual memoization. Components no longer need React.memo, useMemo, or useCallback — the compiler handles it at build time.",
-      "zh": "React 团队宣布 React Compiler 正式发布稳定版，该编译器能够在构建时自动优化重新渲染，无需手动使用 React.memo、useMemo 或 useCallback 进行记忆化处理。"
-    },
-    "date": "2026-02-20"
-  },
-  {
-    "id": "vite-7-released",
-    "title": {
-      "en": "Vite 7 Released with Rust-Powered Bundler",
-      "zh": "Vite 7 发布，搭载 Rust 驱动的打包工具"
-    },
-    "url": "https://vitejs.dev/blog/vite-7",
-    "source": "Vercel Blog",
-    "summary": {
-      "en": "Vite 7 ships with Rolldown as its default bundler, replacing both esbuild and Rollup. Build times drop by 10x for large projects, and the new Environment API enables true SSR-first development workflows.",
-      "zh": "Vite 7 正式发布，默认使用 Rolldown 作为打包工具，替代了 esbuild 和 Rollup。大型项目构建速度提升 10 倍，全新的 Environment API 支持真正的 SSR 优先开发工作流。"
-    },
-    "date": "2026-02-20"
-  },
-  {
     "id": "claude-4-model-family",
     "title": {
       "en": "Anthropic Introduces Claude 4 Model Family",
@@ -68,20 +40,6 @@
       "zh": "OpenAI 发布了 GPT-5 开发者预览版，具备增强的多模态推理能力和 100 万 token 上下文窗口。该模型引入了原生工具编排功能，能够自主链接 API 调用并管理复杂工作流。"
     },
     "date": "2026-02-18"
-  },
-  {
-    "id": "css-anchor-positioning-baseline",
-    "title": {
-      "en": "CSS Anchor Positioning Reaches Baseline",
-      "zh": "CSS 锚点定位达到 Baseline 标准"
-    },
-    "url": "https://web.dev/blog/anchor-positioning-baseline",
-    "source": "Hacker News Best",
-    "summary": {
-      "en": "CSS Anchor Positioning is now available across all major browsers. This eliminates the need for JavaScript-based tooltip and popover positioning libraries, enabling pure CSS solutions for dropdowns, tooltips, and floating UI elements.",
-      "zh": "CSS 锚点定位现已在所有主流浏览器中可用。这消除了对基于 JavaScript 的工具提示和弹出层定位库的需求，使下拉菜单、工具提示和浮动 UI 元素可以用纯 CSS 实现。"
-    },
-    "date": "2026-02-15"
   },
   {
     "id": "claude-sonnet-4-6",
@@ -224,20 +182,6 @@
     "date": "2026-02-21"
   },
   {
-    "id": "jetbrains-best-ai-coding-models-2026",
-    "title": {
-      "en": "Best AI Models for Coding in 2026",
-      "zh": "2026 年最佳 AI 编程模型"
-    },
-    "url": "https://blog.jetbrains.com/ai/2026/02/the-best-ai-models-for-coding-accuracy-integration-and-developer-fit/",
-    "source": "Web Search",
-    "summary": {
-      "en": "JetBrains published an in-depth analysis of the best AI models for coding, noting that 93% of developers now regularly use AI tools. The report highlights a shift from single large-context agents to multi-agent \"ant swarm\" approaches for more reliable code generation.",
-      "zh": "JetBrains 发布了对最佳 AI 编程模型的深度分析，指出 93% 的开发者已定期使用 AI 工具。报告强调了从单一大上下文智能体向多智能体「蚁群」方法转变的趋势，以实现更可靠的代码生成。"
-    },
-    "date": "2026-02-23"
-  },
-  {
     "id": "olmo-3-allen-ai-open-llm",
     "title": {
       "en": "OLMo 3: Allen AI's Fully Open LLMs Top Performance Charts",
@@ -257,7 +201,7 @@
       "en": "Gemini 3.1 Pro: A Smarter Model for Complex Tasks",
       "zh": "Gemini 3.1 Pro：面向复杂任务的更强模型"
     },
-    "url": "https://deepmind.google/blog/gemini-3-1-pro-a-smarter-model-for-your-most-complex-tasks/",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro",
     "source": "DeepMind Blog",
     "summary": {
       "en": "Google DeepMind launched Gemini 3.1 Pro, engineered for sophisticated challenges requiring more than straightforward answers. The model brings significant improvements in multi-step reasoning and complex task execution across coding, analysis, and research workflows.",
@@ -586,5 +530,131 @@
       "zh": "GitHub 对 2026 年开源领域的展望，分析了 AI 如何重塑贡献模式、维护者工作流和项目可持续性。文章重点关注 AI 生成 PR 日益增长的比例及其对代码审查质量带来的挑战。"
     },
     "date": "2026-02-18"
+  },
+  {
+    "id": "ladybird-adopts-rust-with-ai",
+    "title": {
+      "en": "Ladybird Browser Adopts Rust, with Help from AI",
+      "zh": "Ladybird 浏览器借助 AI 迁移至 Rust"
+    },
+    "url": "https://ladybird.org/posts/adopting-rust/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "The Ladybird browser project is migrating its JavaScript engine LibJS from C++ to Rust for improved memory safety, using Claude Code to translate approximately 25,000 lines of code in two weeks. The AI-assisted port achieved byte-for-byte identical output with zero test regressions across over 65,000 tests.",
+      "zh": "Ladybird 浏览器项目正在将其 JavaScript 引擎 LibJS 从 C++ 迁移至 Rust 以提升内存安全性，借助 Claude Code 在两周内翻译了约 25,000 行代码。AI 辅助移植实现了逐字节一致的输出，在超过 65,000 个测试中零回归。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "anthropic-distillation-attack-detection",
+    "title": {
+      "en": "Detecting and Preventing Distillation Attacks",
+      "zh": "检测与防御模型蒸馏攻击"
+    },
+    "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+    "source": "Anthropic News",
+    "summary": {
+      "en": "Anthropic identified large-scale distillation campaigns by DeepSeek, Moonshot, and MiniMax using approximately 24,000 fraudulent accounts to extract Claude's capabilities through over 16 million exchanges. The research highlights national security implications as competitors acquire advanced AI capabilities while stripping away essential safety safeguards.",
+      "zh": "Anthropic 发现 DeepSeek、Moonshot 和 MiniMax 利用约 24,000 个虚假账户，通过超过 1600 万次交互大规模窃取 Claude 的能力。该研究揭示了竞争者在获取先进 AI 能力的同时剥离关键安全护栏所带来的国家安全隐患。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "simon-willison-agentic-engineering-patterns",
+    "title": {
+      "en": "Simon Willison's Guide to Agentic Engineering Patterns",
+      "zh": "Simon Willison 的智能体工程模式指南"
+    },
+    "url": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/",
+    "source": "Simon Willison",
+    "summary": {
+      "en": "Simon Willison launched a structured guide documenting professional best practices for software engineers using AI coding agents, inspired by classic design pattern formats. The first chapters cover how 'writing code is cheap now' and implementing test-first development with AI tools, establishing a clear distinction from 'vibe coding.'",
+      "zh": "Simon Willison 发布了一份结构化指南，以经典设计模式的形式记录使用 AI 编程智能体的专业最佳实践。首批章节涵盖「写代码现在很廉价」和 AI 工具的测试先行开发，与「氛围编程」划清了界限。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "cloudflare-post-quantum-sase",
+    "title": {
+      "en": "Cloudflare One: First SASE with Full Post-Quantum Encryption",
+      "zh": "Cloudflare One：首个全面支持后量子加密的 SASE 平台"
+    },
+    "url": "https://blog.cloudflare.com/post-quantum-sase/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare extended post-quantum encryption across its entire SASE platform by implementing hybrid ML-KEM in IPsec and the Cloudflare One Appliance, becoming the first to cover all major network on-ramps and off-ramps. This protects enterprise traffic from 'harvest now, decrypt later' attacks using standards-compliant post-quantum cryptography at no additional cost.",
+      "zh": "Cloudflare 在 IPsec 和 Cloudflare One Appliance 中实现混合 ML-KEM，将后量子加密扩展至整个 SASE 平台，成为首个覆盖所有主要网络接入点的厂商。此举以无额外成本的标准化后量子密码技术，保护企业流量免受「先收集后解密」攻击。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "openai-retires-swe-bench-verified",
+    "title": {
+      "en": "Why SWE-bench Verified No Longer Measures Frontier Coding",
+      "zh": "SWE-bench Verified 为何不再适用于前沿编程评估"
+    },
+    "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI's audit found that at least 59.4% of audited SWE-bench Verified problems have flawed test cases that reject correct submissions, and all frontier models showed signs of training data contamination. OpenAI recommends switching to SWE-bench Pro, which empirically suffers less from contamination issues.",
+      "zh": "OpenAI 审计发现，SWE-bench Verified 中至少 59.4% 的审查问题存在缺陷测试用例，会拒绝正确的提交，且所有前沿模型均显示训练数据污染迹象。OpenAI 建议转用 SWE-bench Pro，该基准在实证上受污染影响更小。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "joshwcomeau-sprites-on-the-web",
+    "title": {
+      "en": "Sprites on the Web",
+      "zh": "Web 上的精灵图动画"
+    },
+    "url": "https://www.joshwcomeau.com/animation/sprites/",
+    "source": "Josh Comeau",
+    "summary": {
+      "en": "Josh Comeau explores using spritesheets — a technique borrowed from video game development — to create efficient and expressive animations on the web. The tutorial demonstrates leveraging CSS object-fit, object-position, and the steps() timing function to animate sprite images with practical examples.",
+      "zh": "Josh Comeau 探索了将精灵图（spritesheet）这一源自游戏开发的技术应用于 Web 动画的方法。教程演示了如何利用 CSS 的 object-fit、object-position 和 steps() 时间函数实现高效且富有表现力的动画效果。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "css-border-shape-non-rectangular",
+    "title": {
+      "en": "CSS border-shape: The Future of the Non-Rectangular Web",
+      "zh": "CSS border-shape：非矩形 Web 的未来"
+    },
+    "url": "https://una.im/border-shape/",
+    "source": "Una Kravets",
+    "summary": {
+      "en": "Una Kravets introduces CSS border-shape, a new property that redefines element box geometry — unlike clip-path, backgrounds, shadows, and outlines all follow the new shape. The article demonstrates practical applications including tooltips, navigation elements, and scalloped borders as part of Interop 2026.",
+      "zh": "Una Kravets 介绍了 CSS border-shape 新属性，它重新定义元素的盒模型几何形状——与 clip-path 不同，背景、阴影和轮廓都会跟随新形状变化。文章展示了工具提示、导航元素和扇贝边框等实际应用，这是 Interop 2026 的一部分。"
+    },
+    "date": "2026-02-19"
+  },
+  {
+    "id": "freebsd-wifi-driver-built-by-ai",
+    "title": {
+      "en": "FreeBSD Doesn't Have a Wi-Fi Driver, So AI Built One",
+      "zh": "FreeBSD 没有 Wi-Fi 驱动，AI 造了一个"
+    },
+    "url": "https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "A developer used AI agents to build a native FreeBSD kernel driver for the Broadcom BCM4350 Wi-Fi chip, creating a clean-room implementation from an AI-generated specification rather than directly porting the Linux driver. The resulting module successfully enables Wi-Fi scanning and WPA/WPA2 authentication on FreeBSD.",
+      "zh": "一位开发者使用 AI 智能体为 Broadcom BCM4350 Wi-Fi 芯片构建了原生 FreeBSD 内核驱动，通过 AI 生成的规范进行净室实现而非直接移植 Linux 驱动。最终模块成功在 FreeBSD 上实现了 Wi-Fi 扫描和 WPA/WPA2 认证。"
+    },
+    "date": "2026-02-23"
+  },
+  {
+    "id": "kimi-k25-vision-agent-swarm",
+    "title": {
+      "en": "Kimi K2.5: Open-Weight Model with Vision and Agent Swarm",
+      "zh": "Kimi K2.5：支持视觉和智能体集群的开源权重模型"
+    },
+    "url": "https://www.infoq.com/news/2026/02/kimi-k25-swarm/",
+    "source": "InfoQ",
+    "summary": {
+      "en": "Moonshot AI released Kimi K2.5, an open-weight multimodal model pretrained on 15 trillion mixed visual and text tokens, featuring an agent swarm mode that coordinates up to 100 sub-agents for parallel task execution. The model achieves competitive performance with frontier models on BrowseComp and WideSearch while being fully open under a Modified MIT License.",
+      "zh": "月之暗面发布 Kimi K2.5 开源权重多模态模型，在 15 万亿混合视觉与文本 token 上预训练，支持最多 100 个子智能体并行执行的智能体集群模式。该模型在 BrowseComp 和 WideSearch 上达到前沿模型水平，以 Modified MIT 许可证完全开源。"
+    },
+    "date": "2026-02-17"
   }
 ]
