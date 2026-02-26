@@ -59,7 +59,7 @@ Read `.claude/skills/digest/sources.json` to load all sources.
 10. **Generate bilingual content.** For each selected article, generate:
     - `id`: short semantic slug describing the article content (e.g., `ggml-llama-cpp-join-huggingface`, `ollama-v0-17-0`). Use lowercase, hyphens only, max 60 chars
     - `title`: `{ en, zh }` — translate the original title
-    - `summary`: `{ en, zh }` — 2-sentence summary per language
+    - `summary`: `{ en, zh }` — 3–5 sentence summary per language that conveys the article's core content. Cover: what was announced/built/discovered, the key technical details or design decisions, and why it matters. A reader should understand the substance without clicking through
 
 11. **Present for review.** Show the user a summary table of curated articles (title, source, date) and how many candidates were collected vs. selected. Ask for confirmation before writing.
 
@@ -104,7 +104,6 @@ Read `.claude/skills/digest/sources.json` to load all sources.
 - Dedup by normalized URL, not by ID — same content from different sources counts as one entry
 - IDs are short semantic slugs (`claude-sonnet-4-6`, not `https-www-anthropic-com-news-claude-sonnet-4-6`)
 - Dates use `YYYY-MM-DD` format from the article's publication date; fall back to today if unavailable
-- Summaries should be concise and informative (2 sentences each)
 - Titles should be natural translations, not literal word-for-word
 - Quality over quantity — 10 excellent articles beat 30 mediocre ones
 - After writing, report: candidates collected / articles selected / articles written, and to which file(s)
