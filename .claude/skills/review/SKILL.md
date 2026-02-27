@@ -38,6 +38,10 @@ Fast, greppable checks. Run Grep calls **in parallel** where possible.
 - `addEventListener|setInterval|setTimeout|requestAnimationFrame` — verify each has matching cleanup
 - Top-level `ref()`/`reactive()` outside function scope (SSR risk)
 
+**i18n**
+- Keys present in `locales/en.json` but missing in `locales/zh.json`, or vice versa
+- Hardcoded user-facing text in `<template>` that should use `t()`
+
 **Style**
 - `<script setup>` missing `lang="ts"`
 - `v-for` missing `:key`
