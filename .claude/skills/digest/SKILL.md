@@ -88,16 +88,21 @@ Read `.claude/skills/digest/sources.json` to load all sources.
 
     c. **Prune dead sources.** If an RSS/blog feed returned a fetch error (404, timeout, invalid XML), suggest removing or replacing it.
 
-    d. **Audit existing entries.** Check whether article URLs already saved in `public/digests/*.json` are still reachable:
+    d. **Apply updates.** Present all suggested source changes to the user. If approved, update `sources.json` directly.
 
-       1. For each `DigestItem` across all digest JSON files, use WebFetch to verify the URL is still live.
-       2. Classify each result:
-          - **Broken** (404, 5xx, timeout, DNS failure) → suggest removal from the digest file.
-          - **Redirected** (301/302 to a different URL) → suggest updating the `url` field to the new location.
-       3. Present a table of broken/redirected entries (file, id, old URL, status/new URL) to the user.
-       4. After user confirmation, remove broken entries or update redirected URLs in the corresponding JSON files.
+---
 
-    e. **Apply updates.** Present all suggested source changes to the user. If approved, update `sources.json` directly.
+## Audit Mode
+
+When invoked with `/digest --audit`, skip Phases 1–4 and **only** run URL auditing:
+
+1. Read all JSON files in `public/digests/`.
+2. For each `DigestItem`, use WebFetch to verify the URL is still live.
+3. Classify each result:
+   - **Broken** (404, 5xx, timeout, DNS failure) → suggest removal from the digest file.
+   - **Redirected** (301/302 to a different URL) → suggest updating the `url` field to the new location.
+4. Present a table of broken/redirected entries (file, id, old URL, status/new URL) to the user.
+5. After user confirmation, remove broken entries or update redirected URLs in the corresponding JSON files.
 
 ## Rules
 
