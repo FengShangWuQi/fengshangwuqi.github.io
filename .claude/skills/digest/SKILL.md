@@ -90,7 +90,9 @@ Read `.claude/skills/digest/sources.json` to load all sources.
 
 ## Audit Mode
 
-When invoked with `/digest --audit`, skip the main workflow and **only** audit this week's digest entries:
+When invoked with `/digest --audit`, skip the main workflow and audit this week's digest entries in two passes: **link health** and **quality review**.
+
+### Pass 1: Link Health
 
 1. Determine the current week's date range (Monday–Sunday) and which monthly files it spans.
 2. Read only those monthly JSON files in `public/digests/` and filter to entries whose `date` falls within this week.
@@ -98,8 +100,32 @@ When invoked with `/digest --audit`, skip the main workflow and **only** audit t
 4. Classify each result:
    - **Broken** (404, 5xx, timeout, DNS failure) → suggest removal from the digest file.
    - **Redirected** (301/302 to a different URL) → suggest updating the `url` field to the new location.
-5. Present a table of broken/redirected entries (file, id, old URL, status/new URL) to the user.
-6. After user confirmation, remove broken entries or update redirected URLs in the corresponding JSON files.
+
+### Pass 2: Quality Review
+
+Using the page content already fetched in Pass 1, perform a second-pass quality review:
+
+5. **Content–summary alignment.** For each article, compare the fetched page content against its `summary`. Flag entries where the summary is materially inaccurate, outdated (content changed since collection), or too vague to convey the article's substance.
+
+6. **Quality bar re-check.** Re-apply the Phase 2 curation criteria to every entry. Flag articles that no longer meet the bar — e.g., a "major release" that turned out to be a patch, hype-driven announcements with no technical depth, or marketing content that slipped through.
+
+7. **Topic diversity.** Group articles by topic. Flag if 3+ entries cover the same narrow subject — suggest keeping only the highest-quality source and dropping the rest.
+
+8. **Source diversity.** Count articles per source. Flag if a single source accounts for more than 40% of the week's entries.
+
+9. **Gap analysis.** Run a small set of WebSearch queries for the week's major tech news (e.g., "major tech releases {week_range}", "AI breakthroughs {week_range}"). Compare results against the current entries. Flag significant omissions — stories a senior engineer would expect to see but are missing.
+
+### Report & Confirm
+
+10. Present a combined audit report to the user with two sections:
+
+    **Link issues** — table of broken/redirected entries (file, id, old URL, status/new URL).
+
+    **Quality issues** — table of flagged entries grouped by issue type (content mismatch, below quality bar, topic overlap, source imbalance), each with a brief reason and suggested action (remove / rewrite summary / keep).
+
+    **Potential gaps** — list of notable stories found in gap analysis that are not yet in the digest, each with title, URL, and why it matters.
+
+11. After user confirmation, apply approved changes: remove entries, update URLs, rewrite summaries, or add new entries (following the same `DigestItem` schema and bilingual generation rules from Phase 3) in the corresponding JSON files.
 
 ---
 
