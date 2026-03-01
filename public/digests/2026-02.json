@@ -92,8 +92,8 @@
     "url": "https://deno.com/blog/v2.7",
     "source": "Deno Blog",
     "summary": {
-      "en": "Deno 2.7 stabilizes the Temporal API — the --unstable-temporal flag is no longer required — following Chrome 144's shipment of Temporal via V8 14.5 in January 2026. The release also introduces Windows on ARM builds, npm package.json overrides for dependency resolution, Brotli compression streams, and self-extracting binary support via deno compile --self-extracting. Node.js compatibility continues to improve with numerous enhancements, strengthening Deno's position as a drop-in alternative for existing Node.js projects.",
-      "zh": "Deno 2.7 正式稳定了 Temporal API——不再需要 --unstable-temporal 标志——紧随 Chrome 144 于 2026 年 1 月通过 V8 14.5 发布 Temporal 之后。此版本还引入了 Windows ARM 构建、npm package.json 覆盖机制、Brotli 压缩流以及通过 deno compile --self-extracting 实现的自解压二进制文件支持。Node.js 兼容性持续改进，进一步巩固了 Deno 作为现有 Node.js 项目替代方案的地位。"
+      "en": "Deno 2.7 stabilizes the Temporal API — the --unstable-temporal flag is no longer required — following Chrome 144's shipment of Temporal via V8 14.5 in January 2026. The release also introduces Windows on ARM builds, npm package.json overrides for dependency resolution, and new subprocess convenience APIs (Deno.spawn(), Deno.spawnAndWait(), Deno.spawnAndWaitSync()) that simplify process management. Additional improvements include Brotli compression streams, SHA3 support in Web Crypto API, and continued Node.js compatibility enhancements.",
+      "zh": "Deno 2.7 正式稳定了 Temporal API——不再需要 --unstable-temporal 标志——紧随 Chrome 144 于 2026 年 1 月通过 V8 14.5 发布 Temporal 之后。此版本还引入了 Windows ARM 构建、npm package.json 覆盖机制，以及新的子进程便捷 API（Deno.spawn()、Deno.spawnAndWait()、Deno.spawnAndWaitSync()）简化进程管理。其他改进包括 Brotli 压缩流、Web Crypto API 的 SHA3 支持，以及持续的 Node.js 兼容性增强。"
     },
     "date": "2026-02-25"
   },
@@ -112,6 +112,20 @@
     "date": "2026-02-24"
   },
   {
+    "id": "anthropic-detects-distillation-attacks",
+    "title": {
+      "en": "Anthropic Exposes Large-Scale Distillation Attacks from DeepSeek, Moonshot AI, and MiniMax",
+      "zh": "Anthropic 揭露 DeepSeek、Moonshot AI 和 MiniMax 的大规模蒸馏攻击"
+    },
+    "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+    "source": "Anthropic",
+    "summary": {
+      "en": "Anthropic disclosed that three Chinese AI labs — DeepSeek, Moonshot AI (Kimi), and MiniMax — created over 24,000 fake accounts and generated roughly 16 million Claude interactions to systematically distill its agentic reasoning, tool use, and coding capabilities. MiniMax drove the largest volume at 13 million exchanges, while DeepSeek specifically targeted rubric-based grading and censorship-safe response generation. The campaigns operated through commercial proxy services using 'hydra cluster' architectures that distributed traffic across APIs and cloud platforms to evade detection. This represents the first publicly documented large-scale model distillation attack, raising questions about IP protection for frontier AI models.",
+      "zh": "Anthropic 披露三家中国 AI 实验室——DeepSeek、Moonshot AI（Kimi）和 MiniMax——创建了超过 2.4 万个虚假账号，产生约 1600 万次 Claude 交互，系统性地蒸馏其智能体推理、工具使用和编码能力。MiniMax 以 1300 万次交互贡献了最大流量，DeepSeek 则专门针对基于评分标准的评估任务和审查安全的回复生成。这些攻击通过商业代理服务运作，使用「九头蛇集群」架构将流量分散到多个 API 和云平台以规避检测。这是首个被公开记录的大规模模型蒸馏攻击事件，引发了关于前沿 AI 模型知识产权保护的讨论。"
+    },
+    "date": "2026-02-24"
+  },
+  {
     "id": "apple-foundation-models-python-sdk",
     "title": {
       "en": "Apple Open-Sources Foundation Models Python SDK",
@@ -120,8 +134,8 @@
     "url": "https://github.com/apple/python-apple-fm-sdk",
     "source": "GitHub Trending",
     "summary": {
-      "en": "Apple released official Python bindings for its Foundation Models framework, providing programmatic access to the on-device model at the core of Apple Intelligence. The SDK allows developers to integrate Apple's on-device AI capabilities directly into Python workflows, opening up new possibilities for building applications that leverage Apple's machine learning infrastructure. The project gained over 700 GitHub stars within its first week, signaling strong developer interest in Apple's AI ecosystem.",
-      "zh": "Apple 发布了 Foundation Models 框架的官方 Python 绑定，提供对 Apple Intelligence 核心端侧模型的编程访问。该 SDK 允许开发者将 Apple 的端侧 AI 能力直接集成到 Python 工作流中，为构建利用 Apple 机器学习基础设施的应用带来新的可能。项目首周即获得超过 700 个 GitHub Star，显示出开发者对 Apple AI 生态的浓厚兴趣。"
+      "en": "Apple released official Python bindings for its Foundation Models framework under Apache 2.0, providing programmatic access to the on-device model powering Apple Intelligence. The SDK supports streaming text generation, guided generation with structured output schemas, and type-safe responses via Python decorators — all running locally on Apple Silicon without cloud API calls. Currently in Beta and requires macOS 26.0+ with Xcode 26.0+, limiting it to developers already in the Apple ecosystem, but it marks Apple's first official step toward making its on-device AI programmable beyond Swift.",
+      "zh": "Apple 以 Apache 2.0 协议发布了 Foundation Models 框架的官方 Python 绑定，提供对驱动 Apple Intelligence 的端侧模型的编程访问。SDK 支持流式文本生成、基于结构化输出模式的引导生成，以及通过 Python 装饰器实现的类型安全响应——全部在 Apple Silicon 上本地运行，无需云端 API 调用。目前处于 Beta 阶段，需要 macOS 26.0+ 和 Xcode 26.0+，限于 Apple 生态内的开发者，但这标志着 Apple 首次正式将其端侧 AI 能力的编程接口扩展到 Swift 之外。"
     },
     "date": "2026-02-23"
   },
