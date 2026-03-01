@@ -112,20 +112,6 @@
     "date": "2026-02-24"
   },
   {
-    "id": "anthropic-detects-distillation-attacks",
-    "title": {
-      "en": "Anthropic Exposes Large-Scale Distillation Attacks from DeepSeek, Moonshot AI, and MiniMax",
-      "zh": "Anthropic 揭露 DeepSeek、Moonshot AI 和 MiniMax 的大规模蒸馏攻击"
-    },
-    "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
-    "source": "Anthropic",
-    "summary": {
-      "en": "Anthropic disclosed that three Chinese AI labs — DeepSeek, Moonshot AI (Kimi), and MiniMax — created over 24,000 fake accounts and generated roughly 16 million Claude interactions to systematically distill its agentic reasoning, tool use, and coding capabilities. MiniMax drove the largest volume at 13 million exchanges, while DeepSeek specifically targeted rubric-based grading and censorship-safe response generation. The campaigns operated through commercial proxy services using 'hydra cluster' architectures that distributed traffic across APIs and cloud platforms to evade detection. This represents the first publicly documented large-scale model distillation attack, raising questions about IP protection for frontier AI models.",
-      "zh": "Anthropic 披露三家中国 AI 实验室——DeepSeek、Moonshot AI（Kimi）和 MiniMax——创建了超过 2.4 万个虚假账号，产生约 1600 万次 Claude 交互，系统性地蒸馏其智能体推理、工具使用和编码能力。MiniMax 以 1300 万次交互贡献了最大流量，DeepSeek 则专门针对基于评分标准的评估任务和审查安全的回复生成。这些攻击通过商业代理服务运作，使用「九头蛇集群」架构将流量分散到多个 API 和云平台以规避检测。这是首个被公开记录的大规模模型蒸馏攻击事件，引发了关于前沿 AI 模型知识产权保护的讨论。"
-    },
-    "date": "2026-02-24"
-  },
-  {
     "id": "apple-foundation-models-python-sdk",
     "title": {
       "en": "Apple Open-Sources Foundation Models Python SDK",
