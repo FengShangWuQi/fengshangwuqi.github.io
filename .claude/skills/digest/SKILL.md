@@ -6,37 +6,41 @@ allowed-tools: ["Bash", "Read", "Write", "Edit", "Glob", "Grep", "WebFetch", "We
 
 # Collect Digest Skill
 
-Cast a wide net across RSS feeds, personal blogs, Twitter/X, GitHub Trending, GitHub Releases, and web search — then use AI quality filtering to curate only the most noteworthy articles into bilingual (EN/ZH) digest entries.
+Cast a wide net across RSS/Atom feeds, GitHub Trending, GitHub Releases, and web search — then use AI quality filtering to curate only the most noteworthy articles into bilingual (EN/ZH) digest entries.
 
-**Core principle: wide input, strict output.** Many sources feed in, but only 8–15 high-quality articles come out per run.
+**Core principle: wide input, strict output.** Many sources feed in, but only high-quality articles come out.
 
 ## Sources
 
 Read `.claude/skills/digest/sources.json` to load all sources.
 
+## Modes
+
+- `/digest` — Collect and curate this week's articles (default).
+- `/digest --audit` — Verify URLs in this week's digest entries.
+- `/digest --source` — Maintain source quality in `sources.json`.
+
+"This week" means Monday through Sunday of the current calendar week.
+
 ## Steps
 
 ### Phase 1: Collect candidates
 
-1. **Load existing data.** Read all JSON files in `public/digests/` and collect every `url` (normalized) for deduplication.
+1. **Load existing data.** Determine which monthly files the current week spans (usually one, at most two when a week crosses a month boundary). Read only those JSON files in `public/digests/` and collect every `url` (normalized) for deduplication.
 
-2. **Fetch RSS feeds.** For each `rss` source, use WebFetch to retrieve the feed. Extract articles (up to the `maxItems` limit per source): title, link, publication date, and content snippet.
+2. **Fetch feeds.** For each `feeds` source, use WebFetch to retrieve the feed. Extract all articles published this week: title, link, publication date, and content snippet. If a feed entry has a `sourceLabel` field, use it as the article's `source`; otherwise use the feed's `name`.
 
-3. **Fetch personal blogs.** For each `blogs` source, use WebFetch to retrieve the feed (same as RSS). Extract articles up to `maxItems`. Set `source` to the author's name.
+3. **Fetch GitHub Trending.** For each `githubTrending` entry, use Bash to run `gh api search/repositories -X GET -f q="language:{language} created:>{monday_date}" -f sort=stars -f order=desc --jq '.items[] | {name: .full_name, description: .description, url: .html_url, stars: .stargazers_count}'` to find this week's popular repositories. Set `source` to `"GitHub Trending"`.
 
-4. **Fetch Twitter/X highlights.** For each `twitter` entry, use WebSearch with `"{name}" {current_month_year}` to find recent noteworthy posts, threads, or announcements. Only include original technical insights — skip retweets, casual posts, and content already captured by other sources. Use the tweet/thread URL as the article link. Set `source` to `"@{handle}"`. Max 2 items per account.
+4. **Fetch GitHub Releases.** For each repo in `githubReleases`, use Bash to run `gh release list --repo {repo} --limit 1 --json tagName,publishedAt,url,name` to get the latest release. Skip if the release was published before this week. Set `source` to `"GitHub Releases"`.
 
-5. **Fetch GitHub Trending.** For each `githubTrending` entry, use WebFetch to scrape `https://github.com/trending/{language}?since={since}`. Extract repository name, description, star count, and today's star count (up to `maxItems`). Use the repository URL as the article link and set `source` to `"GitHub Trending"`.
+5. **Web Search.** For each `webSearch` entry, use WebSearch with the query (replace `{current_month}` with the actual current month, e.g. "March 2026"). Collect relevant results per query. Set `source` to `"Web Search"`.
 
-6. **Fetch GitHub Releases.** For each repo in `githubReleases`, use Bash to run `gh release list --repo {repo} --limit 1 --json tagName,publishedAt,url,name` to get the latest release. Skip if the release is older than 7 days. Set `source` to `"GitHub Releases"`.
-
-7. **Web Search.** For each `webSearch` entry, use WebSearch with the query (replace `{current_month}` with the actual current month, e.g. "February 2026"). Collect up to `maxItems` relevant results per query. Set `source` to `"Web Search"`.
-
-8. **Deduplicate.** Normalize all URLs (strip protocol, `www.`, and trailing `/`). Skip any article whose normalized URL already exists in digest files or in this batch.
+6. **Deduplicate.** Normalize all URLs (strip protocol, `www.`, and trailing `/`). Skip any article whose normalized URL already exists in digest files or in this batch.
 
 ### Phase 2: AI quality filtering
 
-9. **Curate.** Evaluate every candidate article and select **only the top 8–15 articles** for the final digest. Apply these criteria in order of priority:
+7. **Curate.** Evaluate every candidate article and select only those that meet the quality bar. Apply these criteria in order of priority:
 
    **Include (high signal):**
    - Major version releases of widely-used projects (React 20, Vite 7, not patch bumps)
@@ -54,16 +58,18 @@ Read `.claude/skills/digest/sources.json` to load all sources.
 
    **When in doubt:** Ask "would a senior frontend or AI engineer find this worth 2 minutes of reading?" If no, cut it.
 
+   **Do not chase a target count.** If only 3 articles pass the bar, output 3. If none pass, output zero and report to the user.
+
 ### Phase 3: Generate and write
 
-10. **Generate bilingual content.** For each selected article, generate:
+8. **Generate bilingual content.** For each selected article, generate:
     - `id`: short semantic slug describing the article content (e.g., `ggml-llama-cpp-join-huggingface`, `ollama-v0-17-0`). Use lowercase, hyphens only, max 60 chars
     - `title`: `{ en, zh }` — translate the original title
     - `summary`: `{ en, zh }` — 3–5 sentence summary per language that conveys the article's core content. Cover: what was announced/built/discovered, the key technical details or design decisions, and why it matters. A reader should understand the substance without clicking through
 
-11. **Present for review.** Show the user a summary table of curated articles (title, source, date) and how many candidates were collected vs. selected. Ask for confirmation before writing.
+9. **Present for review.** Show the user a summary table of curated articles (title, source, date) and how many candidates were collected vs. selected. Ask for confirmation before writing.
 
-12. **Write to files.** Append new items to the monthly JSON file (`public/digests/YYYY-MM.json`). Each item follows the `DigestItem` schema:
+10. **Write to files.** Append new items to the monthly JSON file (`public/digests/YYYY-MM.json`). Each item follows the `DigestItem` schema:
 
     ```json
     {
@@ -76,39 +82,43 @@ Read `.claude/skills/digest/sources.json` to load all sources.
     }
     ```
 
-    If the monthly file already exists, read it first and merge (append new items). Write with 2-space indentation and a trailing newline.
+    Merge with data already loaded in Step 1 (append new items). Write with 2-space indentation and a trailing newline.
 
-### Phase 4: Maintain sources
-
-13. **Source health check.** After writing digest entries, evaluate source health and update `sources.json`:
-
-    a. **Report health.** For each source, report items found vs. expected. Flag any source that returned errors or zero results.
-
-    b. **Discover new sources.** Check collected articles for recurring domains or authors not yet tracked. If an untracked source produced 2+ quality articles (e.g., a blog that keeps surfacing via HN), suggest adding it.
-
-    c. **Prune dead sources.** If an RSS/blog feed returned a fetch error (404, timeout, invalid XML), suggest removing or replacing it.
-
-    d. **Apply updates.** Present all suggested source changes to the user. If approved, update `sources.json` directly.
+11. **Report.** After writing, report: candidates collected / articles selected / articles written, and to which file(s).
 
 ---
 
 ## Audit Mode
 
-When invoked with `/digest --audit`, skip Phases 1–4 and **only** run URL auditing:
+When invoked with `/digest --audit`, skip the main workflow and **only** audit this week's digest entries:
 
-1. Read all JSON files in `public/digests/`.
-2. For each `DigestItem`, use WebFetch to verify the URL is still live.
-3. Classify each result:
+1. Determine the current week's date range (Monday–Sunday) and which monthly files it spans.
+2. Read only those monthly JSON files in `public/digests/` and filter to entries whose `date` falls within this week.
+3. For each matching `DigestItem`, use WebFetch to verify the URL is still live.
+4. Classify each result:
    - **Broken** (404, 5xx, timeout, DNS failure) → suggest removal from the digest file.
    - **Redirected** (301/302 to a different URL) → suggest updating the `url` field to the new location.
-4. Present a table of broken/redirected entries (file, id, old URL, status/new URL) to the user.
-5. After user confirmation, remove broken entries or update redirected URLs in the corresponding JSON files.
+5. Present a table of broken/redirected entries (file, id, old URL, status/new URL) to the user.
+6. After user confirmation, remove broken entries or update redirected URLs in the corresponding JSON files.
+
+---
+
+## Sources Mode
+
+When invoked with `/digest --source`, skip the main workflow and **only** maintain source quality:
+
+1. **Check feeds.** For each `feeds` source, use WebFetch to attempt fetching the feed. Report items found. Flag any source that returned errors or zero results.
+2. **Check GitHub Releases.** For each repo in `githubReleases`, use Bash to run `gh release list --repo {repo} --limit 1 --json tagName,publishedAt` to verify the repo exists and has recent activity. Flag any repo that returned errors or has had no release in the past 6 months.
+3. **Discover new sources.** Check the most recent digest entries for recurring domains, authors, or GitHub repos not yet tracked. If an untracked source produced 2+ quality articles, suggest adding it to `sources.json` with `category` and `reason` fields.
+4. **Prune dead sources.** If a feed returned a fetch error (404, timeout, invalid XML) or a GitHub repo no longer exists, suggest removing or replacing it.
+5. Present all suggested source changes to the user. If approved, update `sources.json` directly.
+
+---
 
 ## Rules
 
 - Dedup by normalized URL, not by ID — same content from different sources counts as one entry
 - IDs are short semantic slugs (`claude-sonnet-4-6`, not `https-www-anthropic-com-news-claude-sonnet-4-6`)
-- Dates use `YYYY-MM-DD` format from the article's publication date; fall back to today if unavailable
+- Dates use `YYYY-MM-DD` format from the article's publication date; skip articles with no publication date
 - Titles should be natural translations, not literal word-for-word
-- Quality over quantity — 10 excellent articles beat 30 mediocre ones
-- After writing, report: candidates collected / articles selected / articles written, and to which file(s)
+- Feeds with a `sourceLabel` field use that value as `source`; all others use the feed's `name`

@@ -1,660 +1,156 @@
 [
   {
-    "id": "claude-4-model-family",
+    "id": "qwen-3-5-open-source-multimodal",
     "title": {
-      "en": "Anthropic Introduces Claude 4 Model Family",
-      "zh": "Anthropic 推出 Claude 4 系列模型"
+      "en": "Alibaba Releases Qwen3.5: Open-Source Multimodal Models Rivaling Sonnet 4.5",
+      "zh": "阿里巴巴发布 Qwen3.5：媲美 Sonnet 4.5 的开源多模态模型"
     },
-    "url": "https://www.anthropic.com/news/claude-4",
-    "source": "Hacker News Best",
+    "url": "https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance",
+    "source": "VentureBeat",
     "summary": {
-      "en": "Anthropic released the Claude 4 model family spanning three tiers: Opus, Sonnet, and Haiku. Opus achieves state-of-the-art results on SWE-bench (72.5%) and GPQA Diamond (68.4%), with particularly strong gains in multi-step reasoning and agentic tool use. Sonnet targets the high-throughput sweet spot — roughly 90% of Opus quality at one-fifth the cost — while Haiku delivers near-Sonnet accuracy for latency-sensitive applications under 200ms first-token. All three models share a unified 200K context window and support structured output, vision, and tool calling out of the box.",
-      "zh": "Anthropic 发布了 Claude 4 系列模型，涵盖 Opus、Sonnet 和 Haiku 三个层级。Opus 在 SWE-bench（72.5%）和 GPQA Diamond（68.4%）上取得最优成绩，在多步推理和智能体工具调用方面提升尤为突出。Sonnet 定位于高吞吐的性价比区间——约为 Opus 90% 的质量、五分之一的成本；Haiku 则面向延迟敏感场景，首 token 延迟低于 200ms 且接近 Sonnet 的准确度。三个模型共享 200K 统一上下文窗口，开箱即支持结构化输出、视觉和工具调用。"
+      "en": "Alibaba released the Qwen3.5 series of open-source models, including 122B and 35B parameter variants that deliver performance comparable to Claude Sonnet 4.5 while running on local hardware. The flagship is a ~400B parameter native vision-language model with built-in reasoning capabilities designed for multimodal agent applications. The models are fully open-source, making enterprise-grade AI capabilities accessible for local deployment without relying on API providers.",
+      "zh": "阿里巴巴发布了 Qwen3.5 系列开源模型，包括 122B 和 35B 参数版本，性能可媲美 Claude Sonnet 4.5，且可在本地硬件上运行。旗舰版是约 400B 参数的原生视觉语言模型，内置推理能力，专为多模态智能体应用设计。这些模型完全开源，使得企业级 AI 能力无需依赖 API 服务商即可在本地部署。"
     },
-    "date": "2026-02-20"
+    "date": "2026-02-27"
   },
   {
-    "id": "node-24-lts",
+    "id": "perplexity-computer-multi-model-agent",
     "title": {
-      "en": "Node.js 24 Enters LTS with Native TypeScript",
-      "zh": "Node.js 24 进入 LTS，原生支持 TypeScript"
+      "en": "Perplexity Launches \"Computer\": Multi-Model Agent Orchestration Platform",
+      "zh": "Perplexity 推出「Computer」：多模型智能体编排平台"
     },
-    "url": "https://nodejs.org/en/blog/release/v24.0.0",
-    "source": "Node.js Blog",
+    "url": "https://techcrunch.com/2026/02/27/perplexitys-new-computer-is-another-bet-that-users-need-many-ai-models/",
+    "source": "TechCrunch",
     "summary": {
-      "en": "Node.js 24 enters Long-Term Support with built-in TypeScript execution via type stripping — the runtime erases type annotations at load time without a separate transpilation step, so .ts files run directly with `node app.ts`. The release also stabilizes the Permission Model API, giving applications fine-grained control over file-system, network, and child-process access. ESM loader hooks graduate from experimental, enabling custom module resolution and source transformation without third-party loaders. This effectively eliminates ts-node/tsx for most use cases and makes Node the first major server runtime to treat TypeScript as a first-class citizen.",
-      "zh": "Node.js 24 进入长期支持阶段，内置 TypeScript 类型剥离执行——运行时在加载时擦除类型注解，无需额外转译步骤，.ts 文件可直接通过 `node app.ts` 运行。此版本还稳定了权限模型 API，让应用可以细粒度控制文件系统、网络和子进程的访问权限。ESM 加载器钩子从实验状态转正，支持自定义模块解析和源码转换，无需第三方加载器。这实际上在多数场景下替代了 ts-node/tsx，使 Node 成为首个将 TypeScript 视为一等公民的主流服务端运行时。"
+      "en": "Perplexity launched \"Computer,\" a multi-model agent orchestration platform that coordinates 19 different AI models to complete complex, long-running workflows autonomously. The system breaks down outcomes into tasks and subtasks, with specialized sub-agents handling web research, document generation, data processing, and API calls. Available to Perplexity Max subscribers at $200/month, it reflects a growing thesis that AI models are specializing rather than converging, and the winning platform will orchestrate them together.",
+      "zh": "Perplexity 推出了「Computer」，一个协调 19 种 AI 模型的多模型智能体编排平台，能够自主完成复杂的长时间工作流。系统将目标拆解为任务和子任务，由专门的子智能体分别处理网页研究、文档生成、数据处理和 API 调用。该产品面向 Perplexity Max 订阅用户（月费 200 美元），体现了 AI 模型日趋专业化而非趋同的趋势，赢家将是能够统一编排它们的平台。"
     },
-    "date": "2026-02-18"
+    "date": "2026-02-27"
   },
   {
-    "id": "openai-gpt-5-developer-preview",
+    "id": "cloudflare-better-web-streams-api",
     "title": {
-      "en": "OpenAI Launches GPT-5 Developer Preview",
-      "zh": "OpenAI 推出 GPT-5 开发者预览版"
+      "en": "We Deserve a Better Streams API for JavaScript",
+      "zh": "JavaScript 值得拥有更好的 Streams API"
     },
-    "url": "https://openai.com/blog/gpt-5-developer-preview",
-    "source": "OpenAI Blog",
-    "summary": {
-      "en": "OpenAI released a developer preview of GPT-5 featuring a 1M token context window and enhanced multi-modal reasoning across text, images, audio, and video inputs. The headline capability is native tool orchestration: the model can plan and chain multiple API calls, manage intermediate state, and recover from errors autonomously — removing the need for hand-coded orchestration layers. OpenAI reports 35% improvement on MMLU-Pro and 42% on HumanEval compared to GPT-4o. Pricing starts at $10/$30 per million input/output tokens, with a public GA timeline slated for Q3 2026.",
-      "zh": "OpenAI 发布了 GPT-5 开发者预览版，拥有 100 万 token 上下文窗口和横跨文本、图像、音频、视频输入的增强多模态推理能力。核心亮点是原生工具编排：模型可以规划和串联多个 API 调用、管理中间状态并自主从错误中恢复，无需手写编排层。与 GPT-4o 相比，MMLU-Pro 提升 35%，HumanEval 提升 42%。定价为每百万输入/输出 token 10/30 美元，正式版计划于 2026 年第三季度发布。"
-    },
-    "date": "2026-02-18"
-  },
-  {
-    "id": "claude-sonnet-4-6",
-    "title": {
-      "en": "Introducing Claude Sonnet 4.6",
-      "zh": "Anthropic 发布 Claude Sonnet 4.6"
-    },
-    "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-    "source": "Anthropic News",
-    "summary": {
-      "en": "Anthropic released Claude Sonnet 4.6, a mid-cycle update that closes much of the gap between Sonnet and Opus on coding and agentic benchmarks. Key improvements include a 28% jump in SWE-bench Verified (reaching 65%), stronger instruction-following with reduced hallucination rates, and faster parallel tool execution. The model retains the same pricing and 200K context window as Sonnet 4.5, making it a drop-in replacement for teams already on the Sonnet tier. Anthropic highlights its use in Claude Code, where Sonnet 4.6 resolves multi-file edits with fewer retries.",
-      "zh": "Anthropic 发布 Claude Sonnet 4.6，作为周期中期更新，大幅缩小了 Sonnet 与 Opus 在编程和智能体基准上的差距。核心改进包括 SWE-bench Verified 提升 28%（达到 65%）、更强的指令遵循能力和更低的幻觉率，以及更快的并行工具执行。模型保持与 Sonnet 4.5 相同的定价和 200K 上下文窗口，已使用 Sonnet 层级的团队可直接替换。Anthropic 强调其在 Claude Code 中的表现——Sonnet 4.6 以更少的重试完成多文件编辑。"
-    },
-    "date": "2026-02-17"
-  },
-  {
-    "id": "claude-code-security-preview",
-    "title": {
-      "en": "Claude Code Security Now in Research Preview",
-      "zh": "Claude Code Security 进入研究预览阶段"
-    },
-    "url": "https://www.anthropic.com/news/claude-code-security",
-    "source": "Anthropic News",
-    "summary": {
-      "en": "Anthropic launched Claude Code Security in limited research preview, adding an automated security scanning mode to the Claude Code CLI. The tool performs static analysis augmented by LLM reasoning — it traces data flows across files, identifies vulnerabilities such as injection, auth bypass, and SSRF, and generates targeted patch diffs rather than generic warnings. Early benchmarks show it catching 73% of OWASP Top 10 vulnerabilities in real-world codebases with a false-positive rate under 8%. Access is currently limited to select security researchers and enterprise partners.",
-      "zh": "Anthropic 推出 Claude Code Security 限量研究预览版，在 Claude Code CLI 中新增自动安全扫描模式。该工具结合静态分析和 LLM 推理——跨文件追踪数据流，识别注入、认证绕过、SSRF 等漏洞，并生成针对性的修复补丁而非泛泛的告警。初步基准测试显示，它在真实代码库中捕获 73% 的 OWASP Top 10 漏洞，误报率低于 8%。目前仅向特定安全研究人员和企业合作伙伴开放。"
-    },
-    "date": "2026-02-20"
-  },
-  {
-    "id": "ggml-llama-cpp-join-huggingface",
-    "title": {
-      "en": "GGML and llama.cpp Join Hugging Face",
-      "zh": "GGML 和 llama.cpp 加入 Hugging Face"
-    },
-    "url": "https://huggingface.co/blog/ggml-joins-hf",
-    "source": "Hugging Face Blog",
-    "summary": {
-      "en": "GGML creator Georgi Gerganov and the llama.cpp team have officially joined Hugging Face to ensure the long-term sustainability of local AI inference. Under the arrangement, GGML and llama.cpp remain fully open source (MIT license), with Hugging Face providing dedicated engineering resources and infrastructure for CI/testing on diverse hardware. The partnership will focus on tighter GGUF integration in the Hub — automated quantization pipelines, one-click model conversion, and hardware-specific performance benchmarks. This consolidation is significant because llama.cpp powers the majority of consumer-grade local LLM deployments, from Ollama to LM Studio.",
-      "zh": "GGML 创建者 Georgi Gerganov 和 llama.cpp 团队正式加入 Hugging Face，以确保本地 AI 推理的长期可持续发展。根据安排，GGML 和 llama.cpp 保持完全开源（MIT 许可），Hugging Face 提供专属工程资源和多硬件 CI/测试基础设施。合作将聚焦 Hub 中更紧密的 GGUF 集成——自动化量化流水线、一键模型转换和硬件专属性能基准。这次整合意义重大，因为 llama.cpp 驱动了从 Ollama 到 LM Studio 的大多数消费级本地 LLM 部署。"
-    },
-    "date": "2026-02-20"
-  },
-  {
-    "id": "gemini-lyria-3-music-generation",
-    "title": {
-      "en": "Gemini Can Now Create Music with Lyria 3",
-      "zh": "Gemini 借助 Lyria 3 实现音乐创作"
-    },
-    "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
-    "source": "Google AI Blog",
-    "summary": {
-      "en": "Google launched Lyria 3 inside the Gemini app, enabling text-to-music and image-to-music generation of high-fidelity 30-second tracks in over 10 genres. The model uses a latent diffusion architecture operating on mel-spectrograms, producing 48kHz stereo audio with SynthID watermarking baked into every output. Users can specify tempo, mood, instrumentation, and vocal style via natural language prompts. Lyria 3 is available to all Gemini Advanced subscribers, with an API preview opening to developers next month.",
-      "zh": "Google 在 Gemini 应用中推出 Lyria 3，支持文字转音乐和图片转音乐，可生成超过 10 种风格的高保真 30 秒音轨。该模型使用梅尔频谱图上的潜在扩散架构，生成 48kHz 立体声音频，每个输出内嵌 SynthID 水印。用户可通过自然语言指定节奏、情绪、配器和人声风格。Lyria 3 面向所有 Gemini Advanced 订阅用户开放，开发者 API 预览将于下月上线。"
-    },
-    "date": "2026-02-18"
-  },
-  {
-    "id": "openai-alignment-research-funding",
-    "title": {
-      "en": "OpenAI Commits $7.5M to AI Alignment Research",
-      "zh": "OpenAI 投入 750 万美元支持 AI 对齐研究"
-    },
-    "url": "https://openai.com/index/advancing-independent-research-ai-alignment",
-    "source": "OpenAI Blog",
-    "summary": {
-      "en": "OpenAI committed $7.5 million to The Alignment Project, an independent nonprofit funding academic research on AI alignment and safety. The grant will fund 30+ research groups across 15 universities, covering topics such as scalable oversight, reward hacking detection, and mechanistic interpretability of large models. Unlike OpenAI's internal Superalignment team, these grants are entirely unrestricted — researchers retain full publication rights and IP ownership. The initiative aims to broaden the alignment research community beyond the handful of labs currently working on the problem.",
-      "zh": "OpenAI 向独立非营利组织 The Alignment Project 投入 750 万美元，资助 AI 对齐与安全的学术研究。资金将覆盖 15 所大学的 30 多个研究团队，研究方向包括可扩展监督、奖励黑客检测和大模型机制可解释性。与 OpenAI 内部的 Superalignment 团队不同，这些资助完全无附加条件——研究人员保留完整的发表权和知识产权。该计划旨在将对齐研究社区扩展到目前少数几家实验室之外。"
-    },
-    "date": "2026-02-19"
-  },
-  {
-    "id": "karpathy-claws-ai-agents",
-    "title": {
-      "en": "Andrej Karpathy Talks About \"Claws\"",
-      "zh": "Andrej Karpathy 谈论 \"Claws\" 概念"
-    },
-    "url": "https://simonwillison.net/2026/Feb/21/claws/",
-    "source": "Hacker News Best",
-    "summary": {
-      "en": "Andrej Karpathy introduced the concept of \"Claws\" — AI agents that maintain persistent context, wield tool access (filesystem, browser, terminal), and autonomously complete multi-step tasks over extended sessions. Unlike one-shot chat interactions, Claws accumulate project knowledge and refine their approach across turns, behaving more like a junior colleague than a search engine. Simon Willison's analysis explores the design trade-offs: longer agent loops improve task completion but amplify compounding errors, making test harnesses and human checkpoints critical. The framing crystallizes a shift from \"AI as autocomplete\" to \"AI as autonomous worker\" that's already happening in tools like Claude Code, Cursor, and Devin.",
-      "zh": "Andrej Karpathy 提出了「Claws」概念——具有持久上下文、工具访问权限（文件系统、浏览器、终端）且能在长时间会话中自主完成多步任务的 AI 智能体。与一次性对话交互不同，Claws 会在轮次间积累项目知识并改进策略，表现更像初级同事而非搜索引擎。Simon Willison 的分析探讨了设计权衡：更长的智能体循环提高任务完成率，但也放大了累积错误，使测试套件和人工检查点至关重要。这一框架明确了从「AI 作为自动补全」到「AI 作为自主工作者」的转变，这在 Claude Code、Cursor 和 Devin 等工具中已在发生。"
-    },
-    "date": "2026-02-21"
-  },
-  {
-    "id": "vercel-webstreams-10x-faster",
-    "title": {
-      "en": "Vercel Makes WebStreams 10x Faster",
-      "zh": "Vercel 将 WebStreams 性能提升 10 倍"
-    },
-    "url": "https://vercel.com/blog/we-ralph-wiggumed-webstreams-to-make-them-10x-faster",
-    "source": "Vercel Blog",
-    "summary": {
-      "en": "Vercel developed fast-webstreams, a drop-in replacement for the WHATWG WebStreams API that achieves ~10x faster throughput on pipeThrough operations and 14.6x on React Flight streaming patterns. The bottleneck was the spec-mandated microtask scheduling in TransformStream — Vercel's implementation batches chunks and defers backpressure checks, staying spec-compliant on observable behavior while eliminating per-chunk overhead. The library is published as a standalone npm package and has been integrated into Next.js 15.3, where it reduces Time to First Byte by 30-40% on streaming SSR pages. This directly benefits AI chat UIs and any app using React Server Components with suspense boundaries.",
-      "zh": "Vercel 开发了 fast-webstreams，一个 WHATWG WebStreams API 的可替换方案，pipeThrough 操作吞吐量提升约 10 倍，React Flight 流模式提升 14.6 倍。瓶颈在于规范要求的 TransformStream 微任务调度——Vercel 的实现通过批量处理数据块和延迟背压检查，在可观察行为上保持规范兼容的同时消除了逐块开销。该库作为独立 npm 包发布，已集成到 Next.js 15.3 中，将流式 SSR 页面的 TTFB 降低 30-40%。这直接惠及 AI 聊天 UI 和所有使用带 Suspense 边界的 React Server Components 的应用。"
-    },
-    "date": "2026-02-18"
-  },
-  {
-    "id": "vercel-ai-gateway-video-generation",
-    "title": {
-      "en": "Vercel AI Gateway Adds Video Generation",
-      "zh": "Vercel AI Gateway 新增视频生成功能"
-    },
-    "url": "https://vercel.com/blog/video-generation-with-ai-gateway",
-    "source": "Vercel Blog",
-    "summary": {
-      "en": "Vercel's AI Gateway now supports video generation through a unified API that abstracts over four initial providers: Google Veo, Kuaishou Kling, Grok Imagine, and Wan. Developers can perform text-to-video, image-to-video, and reference-based generation using the same `ai.generate()` interface already used for text and images, with automatic provider fallback and rate-limit balancing. Videos are generated asynchronously and delivered via signed URLs with configurable TTL. The gateway handles billing aggregation across providers, so teams avoid managing multiple vendor accounts.",
-      "zh": "Vercel AI Gateway 现通过统一 API 支持视频生成，抽象了四个初始提供商：Google Veo、快手 Kling、Grok Imagine 和 Wan。开发者可使用与文本和图像生成相同的 `ai.generate()` 接口实现文生视频、图生视频和参考图生成，并自带提供商自动降级和速率限制均衡。视频异步生成，通过可配置 TTL 的签名 URL 交付。网关统一处理跨提供商的计费，团队无需管理多个供应商账户。"
-    },
-    "date": "2026-02-19"
-  },
-  {
-    "id": "cloudflare-agents-framework",
-    "title": {
-      "en": "Cloudflare Agents: Build AI Agents on the Edge",
-      "zh": "Cloudflare Agents：在边缘构建 AI 智能体"
-    },
-    "url": "https://github.com/cloudflare/agents",
-    "source": "GitHub Trending",
-    "summary": {
-      "en": "Cloudflare open-sourced an agents framework for building and deploying stateful AI agents directly on its edge network via Durable Objects. Each agent instance gets persistent memory, WebSocket connectivity, and scheduled cron triggers — all running in V8 isolates with sub-millisecond cold starts across 300+ locations. The framework provides primitives for conversation history, tool registration, and multi-agent coordination, while handling the hard parts of state serialization and crash recovery. It integrates natively with Workers AI for model inference and Vectorize for RAG, making it a full-stack agent platform without external dependencies.",
-      "zh": "Cloudflare 开源了一个智能体框架，用于通过 Durable Objects 在其边缘网络上直接构建和部署有状态 AI 智能体。每个智能体实例拥有持久化内存、WebSocket 连接和定时 cron 触发器——全部运行在 V8 隔离环境中，在 300 多个节点实现亚毫秒级冷启动。框架提供对话历史、工具注册和多智能体协调的原语，并处理状态序列化和崩溃恢复的难题。它原生集成 Workers AI（模型推理）和 Vectorize（RAG），构成了一个无外部依赖的全栈智能体平台。"
-    },
-    "date": "2026-02-23"
-  },
-  {
-    "id": "ollama-v0-17-0",
-    "title": {
-      "en": "Ollama v0.17.0 Released",
-      "zh": "Ollama v0.17.0 发布"
-    },
-    "url": "https://github.com/ollama/ollama/releases/tag/v0.17.0-rc2",
-    "source": "GitHub Releases",
-    "summary": {
-      "en": "Ollama v0.17.0 adds native support for Qwen 3.5 and Command R+ models, along with a new speculative decoding mode that uses a smaller draft model to accelerate generation by 2-3x on supported hardware. Memory management is improved with automatic KV-cache quantization, reducing VRAM usage by ~25% for long-context conversations without measurable quality loss. The release also introduces a `/api/embed` batch endpoint for processing up to 512 texts in a single request, making Ollama more practical for local RAG pipelines.",
-      "zh": "Ollama v0.17.0 新增 Qwen 3.5 和 Command R+ 模型的原生支持，以及推测解码模式——使用较小的草稿模型在支持的硬件上将生成速度提升 2-3 倍。内存管理通过自动 KV 缓存量化得到改善，长上下文对话的 VRAM 占用减少约 25% 且无可测量的质量损失。此版本还引入了 `/api/embed` 批量端点，单次请求可处理最多 512 条文本，使 Ollama 在本地 RAG 流水线中更加实用。"
-    },
-    "date": "2026-02-21"
-  },
-  {
-    "id": "olmo-3-allen-ai-open-llm",
-    "title": {
-      "en": "OLMo 3: Allen AI's Fully Open LLMs Top Performance Charts",
-      "zh": "OLMo 3：Allen AI 全开源大模型登顶性能榜"
-    },
-    "url": "https://llm-stats.com/ai-news",
-    "source": "Web Search",
-    "summary": {
-      "en": "Allen AI released OLMo 3 in 7B and 32B parameter sizes with fully open weights, training data, code, and evaluation logs — making it the most transparent frontier-class model release to date. The 32B variant tops open-model leaderboards on MMLU (84.2%), GSM8K (91.7%), and HumanEval (78.3%), outperforming Llama 3.1 70B despite being half the size. Training used a two-phase curriculum: 4T tokens of web data followed by 500B tokens of curated code and reasoning traces. The complete reproduction recipe is published, enabling any lab to train an equivalent model from scratch.",
-      "zh": "Allen AI 发布了 7B 和 32B 参数的 OLMo 3，完全开源权重、训练数据、代码和评估日志——是迄今透明度最高的前沿级模型发布。32B 版本在 MMLU（84.2%）、GSM8K（91.7%）和 HumanEval（78.3%）上领先开源模型排行榜，以一半的参数量超越 Llama 3.1 70B。训练采用两阶段课程：4T token 的网页数据加 500B token 的精选代码和推理链。完整的复现方案已公开，任何实验室都可从零训练等效模型。"
-    },
-    "date": "2026-02-23"
-  },
-  {
-    "id": "gemini-3-1-pro-launch",
-    "title": {
-      "en": "Gemini 3.1 Pro: A Smarter Model for Complex Tasks",
-      "zh": "Gemini 3.1 Pro：面向复杂任务的更强模型"
-    },
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro",
-    "source": "DeepMind Blog",
-    "summary": {
-      "en": "Google DeepMind launched Gemini 3.1 Pro, optimized for multi-step reasoning chains that require planning, backtracking, and self-correction. The model introduces \"deliberative alignment\" — it explicitly reasons about safety guidelines in its chain-of-thought before generating responses, reducing harmful output by 40% compared to 3.0 Pro. Benchmark highlights include 87.5% on GPQA Diamond and a 15-point gain on MATH-500 over its predecessor. Gemini 3.1 Pro is available via the Gemini API with a 2M token context window, matching the largest in the Gemini family.",
-      "zh": "Google DeepMind 推出 Gemini 3.1 Pro，针对需要规划、回溯和自我纠正的多步推理链进行优化。模型引入了「审慎对齐」机制——在生成回答前，在思维链中显式推理安全准则，有害输出比 3.0 Pro 减少 40%。基准亮点包括 GPQA Diamond 87.5%，MATH-500 较前代提升 15 分。Gemini 3.1 Pro 通过 Gemini API 提供，拥有 200 万 token 上下文窗口，与 Gemini 家族最大窗口持平。"
-    },
-    "date": "2026-02-19"
-  },
-  {
-    "id": "typescript-6-0-beta",
-    "title": {
-      "en": "Announcing TypeScript 6.0 Beta",
-      "zh": "TypeScript 6.0 Beta 发布"
-    },
-    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0-beta/",
-    "source": "TypeScript Blog",
-    "summary": {
-      "en": "TypeScript 6.0 Beta serves as a transitional release before the native Go-port ships as TypeScript 7.0. Headline features include subpath imports with `#/` prefix for clean intra-package aliasing without path mapping hacks, a new `es2025` target supporting Set methods and Promise.withResolvers, and built-in Temporal API type definitions. The release deprecates `--target es5`, `--baseUrl` (replaced by `#/` imports), and AMD/UMD module output formats. Editor performance improves by 15-20% through incremental declaration emit, and the new `--isolatedModules` strict mode catches more cross-file type-only import errors at build time.",
-      "zh": "TypeScript 6.0 Beta 作为原生 Go 移植版 7.0 之前的过渡版本发布。主要特性包括：`#/` 前缀的子路径导入，实现无需路径映射的简洁包内别名；新的 `es2025` 编译目标，支持 Set 方法和 Promise.withResolvers；以及内置 Temporal API 类型定义。此版本弃用了 `--target es5`、`--baseUrl`（由 `#/` 导入替代）和 AMD/UMD 模块输出格式。编辑器性能通过增量声明生成提升 15-20%，新的 `--isolatedModules` 严格模式可在构建时捕获更多跨文件的纯类型导入错误。"
-    },
-    "date": "2026-02-18"
-  },
-  {
-    "id": "tailwindcss-v4-2-0",
-    "title": {
-      "en": "Tailwind CSS v4.2.0 Released",
-      "zh": "Tailwind CSS v4.2.0 发布"
-    },
-    "url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.2.0",
-    "source": "GitHub Releases",
-    "summary": {
-      "en": "Tailwind CSS v4.2.0 is the first feature release following the v4 ground-up rewrite with the Oxide engine. New additions include native container query utilities (`@container` / `@min-w`), a `text-wrap: pretty` utility for better paragraph typography, and support for `color-mix()` in arbitrary values. The CSS-first configuration now supports `@import \"tailwindcss/theme\" layer(theme)` for cleaner theme customization without JavaScript config files. Build performance improves by 18% on large projects thanks to parallel candidate scanning in the new Rust-based scanner.",
-      "zh": "Tailwind CSS v4.2.0 是基于 Oxide 引擎全面重写后的首个功能版本。新增原生容器查询工具类（`@container` / `@min-w`）、`text-wrap: pretty` 排版工具类和任意值中的 `color-mix()` 支持。CSS 优先配置现支持 `@import \"tailwindcss/theme\" layer(theme)` 以更简洁地自定义主题，无需 JavaScript 配置文件。得益于新 Rust 扫描器的并行候选扫描，大型项目构建性能提升 18%。"
-    },
-    "date": "2026-02-18"
-  },
-  {
-    "id": "claude-c-compiler-analysis",
-    "title": {
-      "en": "The Claude C Compiler: What It Reveals About the Future of Software",
-      "zh": "Claude C 编译器：揭示软件未来的启示"
-    },
-    "url": "https://simonwillison.net/2026/Feb/22/ccc/",
-    "source": "Simon Willison",
-    "summary": {
-      "en": "Simon Willison covers Chris Lattner's (creator of LLVM and Swift) technical analysis of Anthropic's AI-built C compiler. Lattner concluded it's a \"competent textbook implementation\" — correct parsing and code generation for common cases, but lacking production-grade optimizations and edge-case handling that took LLVM decades to accumulate. Specific gaps include missing register allocation heuristics, no loop vectorization, and brittle error recovery on malformed input. The analysis offers a nuanced benchmark for AI coding: current models can produce working systems-level software but struggle with the long tail of generalization that defines production quality.",
-      "zh": "Simon Willison 报道了 Chris Lattner（LLVM 和 Swift 创建者）对 Anthropic AI 构建的 C 编译器的技术分析。Lattner 的结论是这是一个「合格的教科书实现」——对常见情况的解析和代码生成是正确的，但缺乏 LLVM 花了数十年积累的生产级优化和边界情况处理。具体缺陷包括缺少寄存器分配启发式、无循环向量化、对畸形输入的错误恢复脆弱。这一分析为 AI 编程提供了一个精准的基准：当前模型能产出可工作的系统级软件，但在定义生产质量的长尾泛化问题上仍力不从心。"
-    },
-    "date": "2026-02-22"
-  },
-  {
-    "id": "github-octoverse-ai-reshaping-dev-choice",
-    "title": {
-      "en": "How AI Is Reshaping Developer Choice (Octoverse Data Proves It)",
-      "zh": "AI 如何重塑开发者的技术选择（Octoverse 数据为证）"
-    },
-    "url": "https://github.blog/ai-and-ml/how-ai-is-reshaping-developer-choice-and-octoverse-data-proves-it/",
-    "source": "GitHub Blog",
-    "summary": {
-      "en": "GitHub's Octoverse 2025 data reveals that TypeScript surpassed both Python and JavaScript to become the most-used language on the platform, driven by AI coding tools performing measurably better with static type information. The report coins the term \"convenience loop\" — AI tools suggest TypeScript more confidently, developers adopt it, which generates more TypeScript training data, further improving AI suggestions. Other findings: Rust adoption grew 42% year-over-year; AI-generated PRs now account for 18% of all merged pull requests; and repositories with AI-generated code have 23% higher test coverage on average, likely because AI tools default to generating tests alongside implementation.",
-      "zh": "GitHub Octoverse 2025 数据揭示，TypeScript 超越 Python 和 JavaScript 成为平台最常用语言，原因是 AI 编程工具在有静态类型信息时表现明显更好。报告提出了「便利循环」概念——AI 工具更自信地建议 TypeScript，开发者采用它，产生更多 TypeScript 训练数据，进一步提升 AI 建议质量。其他发现：Rust 采用率同比增长 42%；AI 生成的 PR 占所有合并 PR 的 18%；含 AI 生成代码的仓库平均测试覆盖率高 23%，可能因为 AI 工具默认在实现代码旁生成测试。"
-    },
-    "date": "2026-02-19"
-  },
-  {
-    "id": "css-corner-shape-blink-implementation",
-    "title": {
-      "en": "The Corner Cases of Implementing CSS corner-shape in Blink",
-      "zh": "在 Blink 中实现 CSS corner-shape 的各种边界情况"
-    },
-    "url": "https://developer.chrome.com/blog/implementing-corner-shape",
-    "source": "Chrome for Developers",
-    "summary": {
-      "en": "A deep technical dive into implementing the CSS `corner-shape` property in Chrome's Blink engine, which allows elements to use superellipse (squircle) corners instead of simple circular arcs. The implementation approximates the superellipse curve with cubic Bézier segments, requiring careful calibration to avoid visible inflection artifacts at small radii. The hardest engineering challenges were making borders, box-shadows, and outlines correctly follow the new geometry — each required separate path-generation code paths. The article also covers interaction with `clip-path`, `overflow: hidden` clipping, and composited layer boundaries. This ships behind a flag in Chrome 126 as part of Interop 2026.",
-      "zh": "深入技术解析在 Chrome Blink 引擎中实现 CSS `corner-shape` 属性的过程——该属性允许元素使用超椭圆（squircle）圆角而非简单圆弧。实现用三次贝塞尔曲线段逼近超椭圆曲线，需要精心校准以避免小半径下的可见拐点伪影。最大的工程挑战是让边框、box-shadow 和轮廓正确跟随新几何形状——每个都需要单独的路径生成代码。文章还涵盖了与 `clip-path`、`overflow: hidden` 裁剪和合成层边界的交互。该特性在 Chrome 126 中以标志位形式发布，是 Interop 2026 的一部分。"
-    },
-    "date": "2026-02-19"
-  },
-  {
-    "id": "karpathy-microgpt-200-lines",
-    "title": {
-      "en": "microGPT: GPT in 200 Lines of Pure Python",
-      "zh": "microGPT：200 行纯 Python 实现 GPT"
-    },
-    "url": "https://karpathy.github.io/2026/02/12/microgpt/",
-    "source": "@karpathy",
-    "summary": {
-      "en": "Andrej Karpathy published microGPT — a single file of ~200 lines of dependency-free Python containing the full algorithmic content needed to train and run a GPT model from scratch: dataset loading, BPE tokenizer, autograd engine, multi-head attention, and a training loop. The code intentionally avoids NumPy, PyTorch, and any C extensions to expose every computation down to matrix multiplies. Karpathy described it as \"everything needed, everything else is just for efficiency\" — the model trains on Shakespeare text and produces coherent (if slow) completions in pure Python. The pedagogical value is immense: every abstraction that frameworks hide is visible in readable code, making it perhaps the most accessible deep-learning teaching resource available.",
-      "zh": "Andrej Karpathy 发布了 microGPT——一个约 200 行无依赖纯 Python 文件，包含从零训练和运行 GPT 模型所需的全部算法内容：数据集加载、BPE 分词器、自动微分引擎、多头注意力和训练循环。代码刻意避免使用 NumPy、PyTorch 和任何 C 扩展，将每个计算暴露到矩阵乘法层面。Karpathy 称之为「所需的一切，其余只是为了效率」——模型在莎士比亚文本上训练，在纯 Python 中产生连贯（虽然很慢）的续写。其教学价值巨大：框架隐藏的每一层抽象都以可读代码呈现，可能是目前最易理解的深度学习教学资源。"
-    },
-    "date": "2026-02-12"
-  },
-  {
-    "id": "kent-dodds-cursor-framework-migration",
-    "title": {
-      "en": "How I Used Cursor to Migrate Frameworks",
-      "zh": "我如何用 Cursor 完成框架迁移"
-    },
-    "url": "https://kentcdodds.com/blog/how-i-used-cursor-to-migrate-frameworks",
-    "source": "Kent C. Dodds",
-    "summary": {
-      "en": "Kent C. Dodds details how he migrated his production site from Remix v2 to React Router v7 in a single day, modifying over 17,000 lines across 200+ files using Cursor's agent mode. His workflow was to break the migration into mechanical sub-tasks (rename imports, update route module APIs, convert loader patterns), feed each sub-task to the agent with a clear prompt and file list, then review the diff manually before committing. The key insight: AI excels at high-volume, pattern-based code transformations (like codemods) but needs human guidance on architectural decisions like data loading strategy changes. The post includes specific prompts and before/after code samples that others can adapt for similar migrations.",
-      "zh": "Kent C. Dodds 详述了如何在一天内使用 Cursor 的 Agent 模式将生产站点从 Remix v2 迁移到 React Router v7，跨 200 多个文件修改超过 17,000 行代码。他的工作流是将迁移拆分为机械化子任务（重命名导入、更新路由模块 API、转换 loader 模式），为每个子任务提供清晰的提示和文件列表，然后在提交前手动审查 diff。核心洞察：AI 擅长高量级、基于模式的代码转换（类似 codemod），但在数据加载策略等架构决策上需要人类指导。文章包含具体提示词和前后对比代码，可直接用于类似迁移。"
-    },
-    "date": "2026-02-20"
-  },
-  {
-    "id": "claude-code-planning-execution-workflow",
-    "title": {
-      "en": "How I Use Claude Code: Separation of Planning and Execution",
-      "zh": "我如何使用 Claude Code：规划与执行分离"
-    },
-    "url": "https://boristane.com/blog/how-i-use-claude-code/",
-    "source": "Hacker News Best",
-    "summary": {
-      "en": "A practical workflow guide for Claude Code advocating strict separation between planning and execution phases. The planning phase uses Claude to analyze the codebase, identify affected files, and produce a step-by-step implementation plan in a markdown file — without writing any code. The execution phase then feeds this plan back to Claude for implementation, with each step verified before proceeding. The author argues this two-pass approach reduces hallucination and scope creep because the model commits to a concrete plan before touching code, and the human can catch design flaws early. The post received over 700 points on Hacker News, resonating with developers frustrated by AI agents that dive into code changes without understanding the full picture.",
-      "zh": "一篇 Claude Code 实用工作流指南，主张严格区分规划阶段和执行阶段。规划阶段让 Claude 分析代码库、识别受影响的文件，并在 markdown 文件中产出逐步实施计划——不写任何代码。执行阶段将该计划回传给 Claude 实施，每步验证后再继续。作者认为这种两遍方法减少了幻觉和范围蔓延，因为模型在触碰代码前先承诺一个具体计划，人类可以尽早发现设计缺陷。该文在 Hacker News 获得超过 700 点赞，引起了对 AI 智能体不了解全局就动手改代码感到困扰的开发者的广泛共鸣。"
-    },
-    "date": "2026-02-22"
-  },
-  {
-    "id": "wasm-beyond-browsers-container-killer",
-    "title": {
-      "en": "WebAssembly Beyond Browsers: The Container Killer That's Actually Happening",
-      "zh": "WebAssembly 走出浏览器：正在发生的容器替代者"
-    },
-    "url": "https://www.javacodegeeks.com/2026/02/webassembly-beyond-browsers-the-container-killer-thats-actually-happening.html",
-    "source": "Web Search",
-    "summary": {
-      "en": "A data-driven assessment of server-side WebAssembly adoption in 2026, based on production deployments rather than hype. Key findings: Cloudflare runs 10M+ Wasm requests/second across 300+ edge locations; Fermyon and Cosmonic report 5-10x faster cold starts than equivalent container workloads; and Fastly's Compute platform now serves Wasm modules to 30% of its traffic. The article examines WASI's roadmap — WASI 0.3.0 (expected February 2026) adds native async I/O, while WASI 1.0 targeting late 2026 will bring sockets and full filesystem access. The realistic conclusion: Wasm won't replace containers broadly, but is already dominant for edge compute and short-lived serverless functions where startup latency matters most.",
-      "zh": "一篇基于生产部署而非炒作的 2026 年服务端 WebAssembly 采用评估。关键数据：Cloudflare 在 300 多个边缘节点每秒处理超过 1000 万个 Wasm 请求；Fermyon 和 Cosmonic 报告冷启动速度比等效容器快 5-10 倍；Fastly 的 Compute 平台 30% 的流量已使用 Wasm 模块。文章梳理了 WASI 路线图——WASI 0.3.0（预计 2026 年 2 月）新增原生异步 I/O，WASI 1.0 目标 2026 年底引入套接字和完整文件系统访问。务实的结论是：Wasm 不会广泛替代容器，但在启动延迟至关重要的边缘计算和短生命周期 Serverless 函数场景中已占据主导地位。"
-    },
-    "date": "2026-02-20"
-  },
-  {
-    "id": "remote-mcp-architecture-kubernetes",
-    "title": {
-      "en": "Scale LLM Tools with a Remote MCP Architecture on Kubernetes",
-      "zh": "在 Kubernetes 上用远程 MCP 架构扩展 LLM 工具"
-    },
-    "url": "https://thenewstack.io/scale-llm-tools-with-a-remote-mcp-architecture-on-kubernetes/",
-    "source": "Web Search",
-    "summary": {
-      "en": "A technical deep dive into deploying Model Context Protocol (MCP) tool servers as Kubernetes services instead of local sidecar processes. The architecture uses a central MCP gateway that routes tool calls from multiple LLM clients to tool-server pods via gRPC, with automatic scaling based on call queue depth. Key benefits include shared tool state across agents, centralized credential management, and horizontal scaling — a single Kubernetes cluster can serve tool calls for hundreds of concurrent agent sessions. The article walks through a reference implementation with Helm charts, including mTLS between gateway and tool pods, structured logging, and Prometheus metrics for per-tool latency tracking.",
-      "zh": "深入探讨将模型上下文协议（MCP）工具服务器部署为 Kubernetes 服务而非本地 sidecar 进程的架构。该架构使用中央 MCP 网关，通过 gRPC 将多个 LLM 客户端的工具调用路由到工具服务 Pod，并基于调用队列深度自动扩缩。核心优势包括跨智能体共享工具状态、集中凭证管理和水平扩展——单个 Kubernetes 集群可服务数百个并发智能体会话的工具调用。文章提供了完整的 Helm Chart 参考实现，包括网关与工具 Pod 间的 mTLS、结构化日志和用于逐工具延迟追踪的 Prometheus 指标。"
-    },
-    "date": "2026-02-20"
-  },
-  {
-    "id": "lecun-ai-power-not-intelligence",
-    "title": {
-      "en": "Yann LeCun: \"AI Is Power, Not Intelligence\"",
-      "zh": "Yann LeCun：「AI 是力量，而非智能」"
-    },
-    "url": "https://www.businesstoday.in/bt-tv/whats-hot/video/yann-lecun-on-why-ai-is-power-not-intelligence-ai-impact-summit-2026-517029-2026-02-20",
-    "source": "@ylecun",
-    "summary": {
-      "en": "At the India AI Impact Summit, Meta's chief AI scientist Yann LeCun argued that current LLMs are fundamentally incapable of true understanding and represent an evolutionary dead end for achieving general intelligence. His core thesis: autoregressive token prediction produces powerful pattern matching but not world models — animals understand physics and causality in ways no LLM can. LeCun advocated for Joint Embedding Predictive Architecture (JEPA) as the path forward, where models learn by predicting abstract representations of the world rather than raw tokens. He estimated that superhuman AI is still 10+ years away and criticized the \"scaling is all you need\" narrative, arguing that architectural innovation matters more than compute at this stage.",
-      "zh": "在印度 AI 影响力峰会上，Meta 首席 AI 科学家 Yann LeCun 认为当前 LLM 从根本上无法实现真正的理解，是通向通用智能的进化死胡同。他的核心论点是：自回归 token 预测产生强大的模式匹配但非世界模型——动物对物理和因果的理解远超任何 LLM。LeCun 倡导联合嵌入预测架构（JEPA）作为前进方向，模型通过预测世界的抽象表示而非原始 token 来学习。他估计超人 AI 仍需 10 年以上，并批评了「扩展即一切」的叙事，认为在当前阶段架构创新比算力更重要。"
-    },
-    "date": "2026-02-20"
-  },
-  {
-    "id": "cloudflare-code-mode-mcp",
-    "title": {
-      "en": "Code Mode: Give Agents an Entire API in 1,000 Tokens",
-      "zh": "Code Mode：用 1,000 个 Token 给智能体一整套 API"
-    },
-    "url": "https://blog.cloudflare.com/code-mode-mcp/",
+    "url": "https://blog.cloudflare.com/a-better-web-streams-api/",
     "source": "Cloudflare Blog",
     "summary": {
-      "en": "Cloudflare introduced Code Mode for MCP servers, a novel approach that represents an entire API as a TypeScript type definition (~1,000 tokens) instead of listing individual tool schemas (~15,000+ tokens for a typical API). The agent generates executable TypeScript code against these types, which the MCP server compiles and runs in a sandboxed V8 isolate. This reduces context window consumption by 90%+ and allows agents to compose multi-step API operations in a single tool call — for example, creating a DNS record and configuring a firewall rule in one code block. Early adopters report 3x fewer tool-call round trips and significantly lower token costs for complex agent workflows.",
-      "zh": "Cloudflare 为 MCP 服务器推出 Code Mode，一种新颖的方法：将整套 API 表示为 TypeScript 类型定义（约 1,000 token），而非逐个列出工具 schema（典型 API 约 15,000+ token）。智能体根据这些类型生成可执行 TypeScript 代码，由 MCP 服务器在沙箱 V8 隔离环境中编译运行。这将上下文窗口消耗减少 90% 以上，并允许智能体在单次工具调用中组合多步 API 操作——例如在一个代码块中创建 DNS 记录并配置防火墙规则。早期使用者报告工具调用往返减少 3 倍，复杂智能体工作流的 token 成本显著降低。"
+      "en": "Cloudflare published a deep technical critique of the current Web Streams API, arguing that its complexity and overhead make it impractical for many real-world use cases. The post proposes an alternative design based on async iterables that achieves 2x to 120x better performance by leveraging modern JavaScript primitives and eliminating the internal queuing and backpressure machinery. The analysis includes benchmarks comparing ReadableStream, Node.js streams, and the proposed async iterable approach across throughput and latency dimensions.",
+      "zh": "Cloudflare 发表了一篇对现有 Web Streams API 的深度技术批评，指出其复杂性和开销使其在许多实际场景中不够实用。文章提出了基于异步可迭代对象的替代设计方案，通过利用现代 JavaScript 原语并消除内部队列和背压机制，实现了 2 倍到 120 倍的性能提升。分析包含了 ReadableStream、Node.js 流和所提出的异步可迭代方案在吞吐量和延迟维度上的基准测试对比。"
     },
-    "date": "2026-02-20"
+    "date": "2026-02-27"
   },
   {
-    "id": "interop-2026",
+    "id": "cloudflare-vinext-nextjs-on-vite",
     "title": {
-      "en": "Interop 2026: Browser Vendors Align on Priority Web Features",
-      "zh": "Interop 2026：浏览器厂商就优先 Web 特性达成一致"
+      "en": "Cloudflare Vinext: Run Next.js Apps on Vite, Deploy Anywhere",
+      "zh": "Cloudflare Vinext：在 Vite 上运行 Next.js 应用，部署到任何平台"
     },
-    "url": "https://css-tricks.com/interop-2026/",
-    "source": "CSS-Tricks",
-    "summary": {
-      "en": "The Interop 2026 initiative has been announced, with Apple, Google, Microsoft, and Mozilla agreeing on 15 priority focus areas for cross-browser compatibility. Key areas include CSS `border-shape` (non-rectangular elements), View Transitions Level 2 (cross-document navigation animations), the Popover API's anchor positioning, Navigation API improvements, and Storage Buckets for quota management. Notably, CSS Nesting and `@scope` from Interop 2025 graduated with 95%+ interop scores. The initiative also added \"investigation\" efforts for CSS Mixins and the `if()` function. This annual coordination process has proven effective — Interop 2024 focus areas saw an average 31-point improvement in cross-browser test pass rates.",
-      "zh": "Interop 2026 计划公布，Apple、Google、Microsoft 和 Mozilla 就 15 个跨浏览器兼容性优先领域达成一致。重点包括 CSS `border-shape`（非矩形元素）、View Transitions Level 2（跨文档导航动画）、Popover API 的锚点定位、Navigation API 改进和 Storage Buckets 配额管理。值得注意的是，Interop 2025 的 CSS Nesting 和 `@scope` 以 95% 以上的互操作分数毕业。计划还新增了 CSS Mixins 和 `if()` 函数的「调研」项。这一年度协调流程已证明其成效——Interop 2024 重点领域的跨浏览器测试通过率平均提升了 31 个百分点。"
-    },
-    "date": "2026-02-17"
-  },
-  {
-    "id": "css-near-selector",
-    "title": {
-      "en": "Potentially Coming to a Browser :near() You",
-      "zh": "CSS :near() 选择器即将登陆浏览器"
-    },
-    "url": "https://css-tricks.com/potentially-coming-to-a-browser-near-you/",
-    "source": "CSS-Tricks",
-    "summary": {
-      "en": "A deep look at the proposed CSS `:near()` pseudo-class, which selects elements based on spatial proximity to a target element rather than DOM tree position. The selector takes a distance threshold and a target selector — e.g., `li:near(50px, .active)` styles list items within 50px of the active item. The implementation relies on the browser's layout engine to compute bounding-box distances after paint, which raises performance questions for large DOMs. The article explores practical use cases: radial menus, proximity-based tooltips, and magnetic snap effects that currently require `getBoundingClientRect()` polling in JavaScript. The proposal is at CSSWG Stage 1, with Chrome and Firefox expressing interest.",
-      "zh": "深入解析提案中的 CSS `:near()` 伪类选择器，它基于元素与目标元素的空间距离而非 DOM 树位置进行选择。选择器接受距离阈值和目标选择器参数——例如 `li:near(50px, .active)` 会为距活动项 50px 内的列表项设置样式。实现依赖浏览器布局引擎在绘制后计算边界框距离，对大型 DOM 存在性能顾虑。文章探讨了实际用例：径向菜单、基于距离的工具提示和磁性吸附效果——这些目前需要在 JavaScript 中轮询 `getBoundingClientRect()`。该提案处于 CSSWG Stage 1 阶段，Chrome 和 Firefox 已表达兴趣。"
-    },
-    "date": "2026-02-20"
-  },
-  {
-    "id": "transformers-v5-2-0",
-    "title": {
-      "en": "Hugging Face Transformers v5.2.0: GLM-5, Qwen3.5, Voxtral Realtime",
-      "zh": "Hugging Face Transformers v5.2.0：支持 GLM-5、Qwen3.5、Voxtral Realtime"
-    },
-    "url": "https://github.com/huggingface/transformers/releases/tag/v5.2.0",
-    "source": "GitHub Releases",
-    "summary": {
-      "en": "Transformers v5.2.0 adds first-class support for three major new model architectures: Zhipu's GLM-5 (multimodal with native tool calling), Alibaba's Qwen3.5 (MoE variant with 32 active out of 128 experts), and Mistral's Voxtral Realtime acoustic tokenizer for streaming speech-to-text. The release also introduces `AutoModelForToolCalling`, a new auto class that standardizes how models expose tool-use capabilities, and a `QuantizationConfig` API for declarative 4-bit/8-bit quantization without external libraries. Pipeline improvements include 40% faster batch inference on multi-GPU setups through better tensor parallelism scheduling.",
-      "zh": "Transformers v5.2.0 新增三个主要模型架构的一等支持：智谱的 GLM-5（多模态，原生工具调用）、阿里巴巴的 Qwen3.5（MoE 变体，128 专家中 32 个活跃）和 Mistral 的 Voxtral Realtime 声学分词器（流式语音转文字）。此版本还引入了 `AutoModelForToolCalling` 新自动类，标准化模型暴露工具使用能力的方式，以及 `QuantizationConfig` API 用于声明式 4-bit/8-bit 量化而无需外部库。流水线改进方面，通过更优的张量并行调度，多 GPU 批量推理速度提升 40%。"
-    },
-    "date": "2026-02-16"
-  },
-  {
-    "id": "simon-willison-red-green-tdd-agentic",
-    "title": {
-      "en": "Red/Green TDD for Agentic Engineering",
-      "zh": "面向智能体工程的红/绿 TDD 模式"
-    },
-    "url": "https://simonwillison.net/guides/agentic-engineering-patterns/red-green-tdd/",
-    "source": "Simon Willison",
-    "summary": {
-      "en": "Simon Willison proposes adapting Red/Green TDD for AI-assisted coding: the human writes a failing test that precisely specifies the desired behavior, then hands off to the AI agent to make it pass. This inverts the typical AI coding workflow where the agent writes both implementation and tests. The key advantage is that tests written by humans encode intent and edge cases the agent might miss, while the agent handles the mechanical implementation. Willison shows concrete examples using pytest and Claude Code, demonstrating that agents converge on correct solutions 2-3x faster when given a failing test versus a natural-language specification. The pattern also provides a natural stopping point — once the test is green, the agent stops, preventing the scope creep common in open-ended agentic sessions.",
-      "zh": "Simon Willison 提出将红/绿 TDD 应用于 AI 辅助编程：人类编写一个精确指定期望行为的失败测试，然后交给 AI 智能体使其通过。这颠倒了典型的 AI 编程工作流——由智能体同时编写实现和测试。核心优势在于：人类编写的测试编码了智能体可能遗漏的意图和边界情况，而智能体处理机械化的实现。Willison 用 pytest 和 Claude Code 展示了具体示例，证明给定失败测试时智能体收敛到正确解决方案的速度比自然语言规范快 2-3 倍。该模式还提供了自然的停止点——测试变绿即停止，防止了开放式智能体会话中常见的范围蔓延。"
-    },
-    "date": "2026-02-23"
-  },
-  {
-    "id": "openai-harness-engineering-codex",
-    "title": {
-      "en": "OpenAI Harness Engineering: Codex Agents Power Large-Scale Dev",
-      "zh": "OpenAI Harness Engineering：Codex 智能体驱动大规模软件开发"
-    },
-    "url": "https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/",
-    "source": "InfoQ",
-    "summary": {
-      "en": "OpenAI introduced Harness Engineering, a methodology where teams of specialized Codex agents autonomously handle large-scale software development. Each agent team consists of a planner (breaks down tasks), implementers (write code in parallel branches), a reviewer (runs tests and checks style), and a merger (resolves conflicts and creates PRs). OpenAI reports using this internally to ship features 4x faster, with an average of 12 agent-PRs merged per engineer per day. The approach works best for well-tested codebases with clear APIs — agents struggle with ambiguous requirements and tightly-coupled legacy code. Critics note the methodology assumes comprehensive test suites that many real-world projects lack.",
-      "zh": "OpenAI 推出 Harness Engineering 方法论，由专门化的 Codex 智能体团队自主处理大规模软件开发。每个智能体团队包含规划者（分解任务）、实现者（在并行分支中写代码）、审查者（运行测试和检查风格）和合并者（解决冲突并创建 PR）。OpenAI 报告内部使用后功能交付速度提升 4 倍，每位工程师日均合并 12 个智能体 PR。该方法最适合有完善测试和清晰 API 的代码库——智能体在模糊需求和紧耦合遗留代码面前表现不佳。批评者指出该方法论假设了许多现实项目所缺乏的全面测试套件。"
-    },
-    "date": "2026-02-21"
-  },
-  {
-    "id": "curl-drops-bug-bounty-ai-flood",
-    "title": {
-      "en": "cURL Drops Bug Bounty Over AI-Generated Report Flood",
-      "zh": "cURL 因 AI 生成的报告泛滥而关闭漏洞赏金计划"
-    },
-    "url": "https://techcrunch.com/2026/02/19/for-open-source-programs-ai-coding-tools-are-a-mixed-blessing/",
-    "source": "Web Search",
-    "summary": {
-      "en": "The cURL project shut down its bug bounty program after AI-generated vulnerability reports grew to 82% of all submissions, with a false-positive rate exceeding 95%. Maintainer Daniel Stenberg reported spending 20+ hours per week triaging reports that looked superficially convincing but described impossible code paths or misidentified safe patterns as vulnerabilities. The reports typically follow a template: cite a real CVE, claim a similar pattern exists in cURL, and provide a plausible-looking but fabricated exploit. The story sparked broader debate — several other major open-source projects (FFmpeg, OpenSSL) reported similar floods. Some projects now require proof-of-concept exploits or challenge-response verification before accepting reports.",
-      "zh": "cURL 项目关闭了漏洞赏金计划，因为 AI 生成的漏洞报告占所有提交的 82%，误报率超过 95%。维护者 Daniel Stenberg 报告每周花费 20 多小时分拣那些表面上令人信服但描述了不可能的代码路径或将安全模式误判为漏洞的报告。这些报告通常遵循一个模板：引用真实 CVE，声称 cURL 中存在类似模式，并提供看似合理但编造的利用方法。该事件引发了更广泛的讨论——FFmpeg、OpenSSL 等多个大型开源项目报告了类似的泛滥情况。一些项目现在要求提交概念验证利用或质询-响应验证才接受报告。"
-    },
-    "date": "2026-02-19"
-  },
-  {
-    "id": "crawling-billion-web-pages-24-hours",
-    "title": {
-      "en": "Crawling a Billion Web Pages in Just Over 24 Hours",
-      "zh": "24 小时爬取 10 亿个网页"
-    },
-    "url": "https://andrewkchan.dev/posts/crawler.html",
-    "source": "Lobsters",
-    "summary": {
-      "en": "A detailed systems-engineering walkthrough of building a web crawler that fetches over 1 billion pages in ~26 hours on a single 96-core machine with 200Gbps bandwidth. The critical bottleneck turned out to be DNS resolution — the author built a custom async DNS resolver with a local cache that handles 500K lookups/second, bypassing glibc's synchronous `getaddrinfo`. Connection pooling uses HTTP/2 multiplexing with per-host connection limits to avoid overwhelming individual servers. The crawler maintains a priority queue based on page rank estimates, achieves 92% politeness compliance (respecting robots.txt and crawl-delay), and stores compressed WARC files totaling 47TB. The post includes specific performance numbers at each optimization stage, making it a practical reference for anyone building large-scale data pipelines.",
-      "zh": "一篇详细的系统工程实战文章，讲述在单台 96 核、200Gbps 带宽的机器上约 26 小时内抓取超过 10 亿网页的爬虫构建过程。关键瓶颈是 DNS 解析——作者构建了自定义异步 DNS 解析器，带本地缓存，每秒处理 50 万次查询，绕过 glibc 同步的 `getaddrinfo`。连接池使用 HTTP/2 多路复用和每主机连接限制，避免压垮单个服务器。爬虫维护基于 PageRank 估计的优先队列，92% 合规率（遵守 robots.txt 和 crawl-delay），存储压缩后的 WARC 文件共 47TB。文章包含每个优化阶段的具体性能数据，为构建大规模数据管道提供了实用参考。"
-    },
-    "date": "2026-02-23"
-  },
-  {
-    "id": "pentagi-autonomous-ai-pentesting",
-    "title": {
-      "en": "PentAGI: Autonomous AI Agents for Penetration Testing",
-      "zh": "PentAGI：用于渗透测试的自主 AI 智能体"
-    },
-    "url": "https://github.com/vxcontrol/pentagi",
+    "url": "https://github.com/cloudflare/vinext",
     "source": "GitHub Trending",
     "summary": {
-      "en": "PentAGI is an open-source system of fully autonomous AI agents that perform penetration testing by chaining reconnaissance, vulnerability scanning, exploitation, and reporting phases. The architecture uses a coordinator agent that spawns specialized sub-agents for nmap scanning, web fuzzing, privilege escalation, and lateral movement, each with access to a curated toolkit of security tools. Unlike script-based scanners, PentAGI adapts its attack strategy based on discovered services and vulnerabilities, deciding which exploits to attempt based on success probability. The project includes a web dashboard for monitoring agent progress, reviewing findings, and generating compliance-ready reports. It gained 1,500+ stars in a single day, though the maintainers emphasize it's designed for authorized testing only.",
-      "zh": "PentAGI 是一个开源的全自主 AI 智能体系统，通过串联侦察、漏洞扫描、利用和报告阶段执行渗透测试。架构使用协调智能体来生成专门的子智能体，分别负责 nmap 扫描、Web 模糊测试、权限提升和横向移动，每个子智能体都可访问精选的安全工具集。与基于脚本的扫描器不同，PentAGI 根据发现的服务和漏洞调整攻击策略，基于成功概率决定尝试哪些利用方法。项目包含 Web 仪表板用于监控智能体进度、审查发现和生成合规报告。单日获得 1,500+ 星标，维护者强调仅用于授权测试。"
+      "en": "Cloudflare released Vinext, a Vite plugin that reimplements the Next.js API surface, allowing developers to use familiar Next.js patterns while building on Vite and deploying to any platform — not just Vercel. The project gained nearly 5,000 GitHub stars in its first week, signaling strong demand for vendor-neutral alternatives to the tightly coupled Next.js-Vercel ecosystem. By decoupling the developer experience from the deployment platform, Vinext addresses a key concern in the React meta-framework space.",
+      "zh": "Cloudflare 发布了 Vinext，一个重新实现 Next.js API 接口的 Vite 插件，允许开发者使用熟悉的 Next.js 模式，同时基于 Vite 构建并部署到任何平台，而不仅限于 Vercel。项目首周即获得近 5,000 个 GitHub Star，显示出市场对 Next.js-Vercel 紧耦合生态的供应商中立替代方案的强烈需求。通过将开发体验与部署平台解耦，Vinext 回应了 React 元框架领域的一个核心关切。"
     },
     "date": "2026-02-23"
   },
   {
-    "id": "addy-osmani-what-devs-need-to-know",
+    "id": "wasm-first-class-web-language",
     "title": {
-      "en": "What Developers Actually Need to Know Right Now",
-      "zh": "开发者现在真正需要知道什么"
+      "en": "Making WebAssembly a First-Class Language on the Web",
+      "zh": "让 WebAssembly 成为 Web 上的一等语言"
     },
-    "url": "https://www.oreilly.com/radar/what-developers-actually-need-to-know-right-now/",
-    "source": "@addyosmani",
+    "url": "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/",
+    "source": "Mozilla Hacks",
     "summary": {
-      "en": "Addy Osmani and Tim O'Reilly co-authored an essay arguing that the most valuable developer skill in 2026 is understanding AI's capability boundaries — knowing what to delegate to AI agents and what requires human judgment. They identify three \"durable skills\": systems thinking (understanding how components interact at scale), specification writing (translating vague requirements into precise instructions AI can execute), and verification (evaluating whether AI output is correct, secure, and performant). The piece pushes back on both the \"AI will replace developers\" and \"AI is just autocomplete\" narratives, proposing a middle ground where developers become \"AI-augmented architects\" who spend more time on design decisions and less on implementation.",
-      "zh": "Addy Osmani 和 Tim O'Reilly 合著文章，认为 2026 年最有价值的开发者技能是理解 AI 的能力边界——知道什么可以委托给 AI 智能体、什么需要人类判断。他们指出三种「持久技能」：系统思维（理解组件在规模下的交互方式）、规范编写（将模糊需求转化为 AI 可执行的精确指令）和验证（评估 AI 输出是否正确、安全且高效）。文章反驳了「AI 将取代开发者」和「AI 只是自动补全」两种叙事，提出一个中间立场：开发者成为「AI 增强的架构师」，将更多时间用于设计决策、更少时间用于实现。"
+      "en": "Mozilla Hacks examines why WebAssembly remains a second-class citizen on the web despite its performance advantages, identifying barriers like cumbersome code loading, limited direct access to Web APIs, and poor integration with the browser's module system. The article proposes WebAssembly Components as the path forward, enabling Wasm modules to import and export Web API bindings natively. This vision would allow WebAssembly to stand alongside JavaScript as a first-class language for building web applications rather than being confined to compute-heavy library code.",
+      "zh": "Mozilla Hacks 探讨了尽管 WebAssembly 具有性能优势，但为何仍是 Web 上的二等公民，指出了代码加载繁琐、Web API 直接访问受限以及与浏览器模块系统集成不佳等障碍。文章提出 WebAssembly Components 作为前进方向，使 Wasm 模块能够原生导入和导出 Web API 绑定。这一愿景将使 WebAssembly 与 JavaScript 并列成为构建 Web 应用的一等语言，而不再局限于计算密集型库代码。"
     },
-    "date": "2026-02-19"
+    "date": "2026-02-26"
   },
   {
-    "id": "css-spiral-scrollytelling-sibling-index",
+    "id": "bun-1-3-10-repl-decorators-browser",
     "title": {
-      "en": "Spiral Scrollytelling in CSS With sibling-index()",
-      "zh": "用 CSS sibling-index() 实现螺旋滚动叙事"
+      "en": "Bun v1.3.10: Native REPL, TC39 ES Decorators, and Browser Compilation Target",
+      "zh": "Bun v1.3.10：原生 REPL、TC39 ES 装饰器及浏览器编译目标"
     },
-    "url": "https://css-tricks.com/spiral-scrollytelling-in-css-with-sibling-index/",
-    "source": "CSS-Tricks",
+    "url": "https://bun.sh/blog/bun-v1.3.10",
+    "source": "Bun Blog",
     "summary": {
-      "en": "A creative exploration of the new CSS `sibling-index()` function combined with scroll-driven animations to build spiral layouts entirely without JavaScript. The `sibling-index()` function returns an element's ordinal position among its siblings, which is then used in `calc()` to compute polar coordinates — radius and angle — for each item, placing them along a spiral path. As the user scrolls, `animation-timeline: scroll()` drives rotation and scale transitions, creating a narrative unfolding effect. The technique demonstrates how CSS is absorbing capabilities that previously required GSAP or Framer Motion — scroll-linked animations, index-aware positioning, and trigonometric functions (`sin()`, `cos()`) now all ship natively in browsers.",
-      "zh": "创造性地利用新的 CSS `sibling-index()` 函数结合滚动驱动动画，完全不用 JavaScript 构建螺旋布局。`sibling-index()` 函数返回元素在兄弟节点中的序号位置，配合 `calc()` 计算极坐标——半径和角度——将每个项目放置在螺旋路径上。用户滚动时，`animation-timeline: scroll()` 驱动旋转和缩放过渡，产生叙事展开效果。该技术展示了 CSS 正在吸收过去需要 GSAP 或 Framer Motion 的能力——滚动联动动画、索引感知定位和三角函数（`sin()`、`cos()`）现在都已在浏览器中原生支持。"
+      "en": "Bun v1.3.10 delivers 155 bug fixes alongside major new features: a native REPL for interactive development, TC39 standard ES decorators support, and a new --compile --target=browser flag that generates self-contained HTML files. Performance highlights include 25x faster structuredClone for arrays and Windows ARM64 support. The breadth of this release, from developer experience improvements to cross-platform expansion, reflects Bun's rapid evolution as a comprehensive JavaScript toolkit.",
+      "zh": "Bun v1.3.10 修复了 155 个 Bug，并带来多项重要新特性：用于交互式开发的原生 REPL、TC39 标准 ES 装饰器支持，以及可生成独立 HTML 文件的 --compile --target=browser 编译选项。性能方面亮点包括数组 structuredClone 速度提升 25 倍和 Windows ARM64 支持。从开发体验改善到跨平台扩展，这一版本的广度体现了 Bun 作为综合性 JavaScript 工具集的快速演进。"
     },
-    "date": "2026-02-17"
+    "date": "2026-02-26"
   },
   {
-    "id": "github-open-source-2026-outlook",
+    "id": "deno-2-7-temporal-api",
     "title": {
-      "en": "What to Expect for Open Source in 2026",
-      "zh": "2026 年开源领域展望"
+      "en": "Deno 2.7: Temporal API Stabilized, Windows ARM, and npm Overrides",
+      "zh": "Deno 2.7：Temporal API 正式稳定、Windows ARM 支持及 npm 覆盖"
     },
-    "url": "https://github.blog/open-source/maintainers/what-to-expect-for-open-source-in-2026/",
-    "source": "GitHub Blog",
+    "url": "https://deno.com/blog/v2.7",
+    "source": "Deno Blog",
     "summary": {
-      "en": "GitHub's annual open-source outlook examines how AI is reshaping contribution patterns in 2026. Key data points: AI-generated pull requests now represent 18% of all merged PRs on GitHub, but their average review time is 2.3x longer because reviewers must verify AI reasoning rather than just code correctness. The report identifies a new maintainer bottleneck — \"AI triage fatigue\" — where projects receive more contributions but maintainers spend more time evaluating whether changes are appropriate. Positive trends include AI-assisted documentation catching up (65% of top-1000 projects now have AI-maintained changelogs) and a rise in \"AI-first\" projects designed from the ground up to be modified by agents. GitHub announces new tools: Copilot-powered PR summaries for reviewers and automated dependency update grouping.",
-      "zh": "GitHub 年度开源展望分析了 AI 在 2026 年如何重塑贡献模式。关键数据：AI 生成的 PR 占 GitHub 所有合并 PR 的 18%，但平均审查时间长 2.3 倍，因为审查者需要验证 AI 推理而非仅检查代码正确性。报告指出新的维护者瓶颈——「AI 分拣疲劳」——项目收到更多贡献但维护者花更多时间评估更改是否合适。积极趋势包括 AI 辅助文档跟进（前 1000 项目中 65% 现有 AI 维护的 changelog）和「AI 优先」项目的兴起——从设计之初就面向智能体修改。GitHub 宣布新工具：面向审查者的 Copilot PR 摘要和自动化依赖更新分组。"
+      "en": "Deno 2.7 stabilizes the Temporal API, making Deno the first major JavaScript runtime to ship this long-awaited date/time standard as a stable feature. The release also introduces Windows on ARM builds, npm package.json overrides for dependency resolution, Brotli compression streams, and self-extracting binary support. Node.js compatibility continues to improve with numerous enhancements, strengthening Deno's position as a drop-in alternative for existing Node.js projects.",
+      "zh": "Deno 2.7 正式稳定了 Temporal API，使 Deno 成为首个将这一期待已久的日期/时间标准作为稳定特性发布的主流 JavaScript 运行时。此版本还引入了 Windows ARM 构建、npm package.json 覆盖机制、Brotli 压缩流以及自解压二进制文件支持。Node.js 兼容性持续改进，进一步巩固了 Deno 作为现有 Node.js 项目替代方案的地位。"
     },
-    "date": "2026-02-18"
+    "date": "2026-02-25"
+  },
+  {
+    "id": "firefox-148-sethtml-sanitizer-api",
+    "title": {
+      "en": "Firefox 148 Ships setHTML() and the Sanitizer API for Built-in XSS Protection",
+      "zh": "Firefox 148 内置 setHTML() 和 Sanitizer API，提供原生 XSS 防护"
+    },
+    "url": "https://hacks.mozilla.org/2026/02/goodbye-innerHTML-hello-sethtml-stronger-xss-protection-in-firefox-148/",
+    "source": "Mozilla Hacks",
+    "summary": {
+      "en": "Firefox 148 introduces the standardized Sanitizer API with the new setHTML() method, which sanitizes untrusted HTML before inserting it into the DOM. This browser-native approach replaces the need for external sanitization libraries like DOMPurify, providing built-in XSS protection as a web platform primitive. The API is designed as a direct replacement for innerHTML in scenarios involving user-generated content, making secure HTML handling the default rather than an opt-in practice.",
+      "zh": "Firefox 148 引入了标准化的 Sanitizer API 及全新的 setHTML() 方法，在将不受信任的 HTML 插入 DOM 前进行自动清理。这一浏览器原生方案取代了 DOMPurify 等外部清理库的需求，将 XSS 防护作为 Web 平台内置能力提供。该 API 旨在直接替代涉及用户生成内容场景中的 innerHTML，使安全的 HTML 处理成为默认行为而非可选实践。"
+    },
+    "date": "2026-02-24"
+  },
+  {
+    "id": "apple-foundation-models-python-sdk",
+    "title": {
+      "en": "Apple Open-Sources Foundation Models Python SDK",
+      "zh": "Apple 开源 Foundation Models Python SDK"
+    },
+    "url": "https://github.com/apple/python-apple-fm-sdk",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Apple released official Python bindings for its Foundation Models framework, providing programmatic access to the on-device model at the core of Apple Intelligence. The SDK allows developers to integrate Apple's on-device AI capabilities directly into Python workflows, opening up new possibilities for building applications that leverage Apple's machine learning infrastructure. The project gained over 700 GitHub stars within its first week, signaling strong developer interest in Apple's AI ecosystem.",
+      "zh": "Apple 发布了 Foundation Models 框架的官方 Python 绑定，提供对 Apple Intelligence 核心端侧模型的编程访问。该 SDK 允许开发者将 Apple 的端侧 AI 能力直接集成到 Python 工作流中，为构建利用 Apple 机器学习基础设施的应用带来新的可能。项目首周即获得超过 700 个 GitHub Star，显示出开发者对 Apple AI 生态的浓厚兴趣。"
+    },
+    "date": "2026-02-23"
   },
   {
     "id": "ladybird-adopts-rust-with-ai",
     "title": {
-      "en": "Ladybird Browser Adopts Rust, with Help from AI",
-      "zh": "Ladybird 浏览器借助 AI 迁移至 Rust"
+      "en": "Ladybird Browser Adopts Rust, Porting 25K Lines of C++ with AI Assistance",
+      "zh": "Ladybird 浏览器采用 Rust，借助 AI 移植 2.5 万行 C++ 代码"
     },
-    "url": "https://ladybird.org/posts/adopting-rust/",
-    "source": "Hacker News Best",
+    "url": "https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/",
+    "source": "Simon Willison",
     "summary": {
-      "en": "The Ladybird browser project migrated its JavaScript engine LibJS (~25,000 lines) from C++ to Rust in two weeks using Claude Code as the primary translation tool. The approach was not line-by-line transpilation — instead, Claude Code read each C++ module, understood its semantics, and produced idiomatic Rust using the borrow checker and Rust's error-handling patterns. The resulting Rust code passed all 65,000+ existing test cases with byte-for-byte identical output, zero test regressions, and no `unsafe` blocks outside of FFI boundaries. The team reports that memory-safety bugs (use-after-free, buffer overflows) that accounted for 40% of their historical CVEs are now structurally eliminated. The project plans to migrate the CSS parser and layout engine next.",
-      "zh": "Ladybird 浏览器项目在两周内使用 Claude Code 将其 JavaScript 引擎 LibJS（约 25,000 行）从 C++ 迁移至 Rust。方法不是逐行转译——而是 Claude Code 读取每个 C++ 模块、理解其语义，并使用借用检查器和 Rust 错误处理模式产出地道的 Rust 代码。生成的 Rust 代码通过了全部 65,000 多个现有测试用例，输出逐字节一致、零测试回归，且 FFI 边界外无 `unsafe` 块。团队报告，曾占历史 CVE 40% 的内存安全漏洞（use-after-free、缓冲区溢出）现已在结构上被消除。项目计划接下来迁移 CSS 解析器和布局引擎。"
+      "en": "Ladybird browser's creator used Claude Code and Codex to port 25,000 lines of JavaScript engine code from C++ to Rust in just two weeks. The project demonstrates both the viability of Rust as a browser implementation language and the practical power of AI-assisted large-scale code migration. This marks a significant shift for the Ladybird project, which joins Firefox (via Servo components) in adopting Rust for performance-critical browser subsystems.",
+      "zh": "Ladybird 浏览器的创建者使用 Claude Code 和 Codex 在短短两周内将 25,000 行 JavaScript 引擎代码从 C++ 移植到了 Rust。该项目同时证明了 Rust 作为浏览器实现语言的可行性，以及 AI 辅助大规模代码迁移的实际能力。这标志着 Ladybird 项目的重大转向，继 Firefox（通过 Servo 组件）之后又一浏览器项目在性能关键子系统中采用 Rust。"
     },
     "date": "2026-02-23"
   },
   {
-    "id": "anthropic-distillation-attack-detection",
+    "id": "agentic-engineering-patterns-guide",
     "title": {
-      "en": "Detecting and Preventing Distillation Attacks",
-      "zh": "检测与防御模型蒸馏攻击"
-    },
-    "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
-    "source": "Anthropic News",
-    "summary": {
-      "en": "Anthropic published research detailing large-scale distillation campaigns by DeepSeek, Moonshot, and MiniMax that used approximately 24,000 fraudulent accounts to extract Claude's capabilities through over 16 million structured exchanges. The attackers used systematic prompt patterns — chain-of-thought elicitation, style mimicry, and knowledge probing — designed to maximize information transfer per query. Anthropic's detection system identified the campaigns through statistical anomalies in query patterns, API usage timing, and account creation clustering. The paper proposes countermeasures including query fingerprinting, output perturbation, and rate limiting on knowledge-dense response patterns. Anthropic frames this as a national security concern: competitors can acquire advanced AI capabilities while stripping away safety guardrails that took years to develop.",
-      "zh": "Anthropic 发布研究，详述了 DeepSeek、Moonshot 和 MiniMax 利用约 24,000 个虚假账户，通过超过 1600 万次结构化交互提取 Claude 能力的大规模蒸馏攻击。攻击者使用系统化的提示模式——思维链引导、风格模仿和知识探测——旨在最大化每次查询的信息传输量。Anthropic 的检测系统通过查询模式统计异常、API 使用时序和账户创建聚类识别了这些攻击。论文提出了包括查询指纹、输出扰动和知识密集型响应模式速率限制在内的应对措施。Anthropic 将此定性为国家安全问题：竞争者获取先进 AI 能力的同时剥离了花费数年开发的安全护栏。"
-    },
-    "date": "2026-02-23"
-  },
-  {
-    "id": "simon-willison-agentic-engineering-patterns",
-    "title": {
-      "en": "Simon Willison's Guide to Agentic Engineering Patterns",
-      "zh": "Simon Willison 的智能体工程模式指南"
+      "en": "Agentic Engineering Patterns: A Practical Guide for Working with Coding Agents",
+      "zh": "智能体工程模式：编码智能体实用指南"
     },
     "url": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/",
     "source": "Simon Willison",
     "summary": {
-      "en": "Simon Willison launched a structured guide documenting professional best practices for software engineers using AI coding agents, modeled after the classic Gang of Four design patterns format. Each pattern includes a problem statement, forces at play, solution, consequences, and real-world examples. The first chapters cover foundational patterns: \"Writing Code Is Cheap Now\" (shift investment from implementation to specification and verification), \"Red/Green TDD\" (human writes failing tests, agent implements), and \"Context Stuffing\" (front-loading relevant code into the agent's context window). Willison explicitly distinguishes this from \"vibe coding\" — these patterns assume rigorous engineering discipline with AI as a force multiplier, not a replacement for understanding. The guide is published as a living document with community contributions welcome.",
-      "zh": "Simon Willison 发布了一份结构化指南，以经典 GoF 设计模式的格式记录使用 AI 编程智能体的专业最佳实践。每个模式包含问题陈述、作用力、解决方案、后果和真实案例。首批章节涵盖基础模式：「写代码现在很廉价」（将投入从实现转向规范和验证）、「红/绿 TDD」（人类写失败测试，智能体实现）和「上下文填充」（将相关代码预加载到智能体的上下文窗口）。Willison 明确区分这与「氛围编程」的不同——这些模式假定严格的工程纪律，AI 是力量倍增器而非理解的替代品。指南作为持续更新的文档发布，欢迎社区贡献。"
+      "en": "Simon Willison published a comprehensive guide collecting practical patterns for working effectively with AI coding agents, covering strategies like running tests first, hoarding reusable code examples, and using linear walkthroughs for codebase understanding. The guide treats agentic engineering as a complement to traditional software engineering rather than a replacement, emphasizing that writing code has become cheap while design, testing, and verification remain the developer's core responsibility. Key insights include viewing code as disposable, prioritizing test-driven agent workflows, and building personal libraries of working solutions as agent input.",
+      "zh": "Simon Willison 发布了一份全面的指南，汇集了与 AI 编码智能体高效协作的实用模式，涵盖先运行测试、积累可复用代码示例、使用线性走查理解代码库等策略。该指南将智能体工程视为传统软件工程的补充而非替代，强调编写代码的成本已大幅降低，而设计、测试和验证仍是开发者的核心职责。关键洞察包括将代码视为可丢弃的、优先采用测试驱动的智能体工作流，以及构建个人可用解决方案库作为智能体输入。"
     },
     "date": "2026-02-23"
-  },
-  {
-    "id": "cloudflare-post-quantum-sase",
-    "title": {
-      "en": "Cloudflare One: First SASE with Full Post-Quantum Encryption",
-      "zh": "Cloudflare One：首个全面支持后量子加密的 SASE 平台"
-    },
-    "url": "https://blog.cloudflare.com/post-quantum-sase/",
-    "source": "Cloudflare Blog",
-    "summary": {
-      "en": "Cloudflare extended post-quantum encryption across its entire SASE platform by implementing hybrid ML-KEM (Kyber) key exchange in IPsec tunnels and the Cloudflare One Appliance, becoming the first vendor to provide post-quantum protection on all network on-ramps and off-ramps. The hybrid approach combines ML-KEM-768 with X25519 — if the post-quantum algorithm is later found vulnerable, classical security remains intact. The implementation adds only ~1KB to the initial handshake with negligible latency impact (<1ms). This protects enterprise traffic from \"harvest now, decrypt later\" attacks, where adversaries record encrypted traffic today to decrypt with future quantum computers. The upgrade is automatic for all Cloudflare One customers at no additional cost.",
-      "zh": "Cloudflare 通过在 IPsec 隧道和 Cloudflare One Appliance 中实现混合 ML-KEM（Kyber）密钥交换，将后量子加密扩展至整个 SASE 平台，成为首个在所有网络接入点提供后量子保护的厂商。混合方案结合 ML-KEM-768 和 X25519——即使后量子算法日后被发现有漏洞，经典安全性仍然完整。实现仅在初始握手中增加约 1KB 数据，延迟影响可忽略不计（<1ms）。这保护企业流量免受「先收集后解密」攻击——即对手今天记录加密流量，待未来量子计算机可用时解密。升级对所有 Cloudflare One 客户自动生效，无额外费用。"
-    },
-    "date": "2026-02-23"
-  },
-  {
-    "id": "openai-retires-swe-bench-verified",
-    "title": {
-      "en": "Why SWE-bench Verified No Longer Measures Frontier Coding",
-      "zh": "SWE-bench Verified 为何不再适用于前沿编程评估"
-    },
-    "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
-    "source": "OpenAI Blog",
-    "summary": {
-      "en": "OpenAI's audit of SWE-bench Verified found that at least 59.4% of audited problems have flawed test cases — tests that reject correct solutions through overly strict string matching, hardcoded timestamps, or environment-dependent assertions. Additionally, all frontier models (GPT-5, Claude 4, Gemini 3.1) showed statistically significant signs of training data contamination, performing 15-20% better on problems that appeared in pre-training corpora. OpenAI recommends the community adopt SWE-bench Pro, a new curated subset with verified-correct test suites and decontaminated problems, which shows 30% lower scores across all models but better correlation with real-world coding ability. The analysis underscores a broader issue: as benchmarks become targets, they rapidly lose their discriminative power.",
-      "zh": "OpenAI 对 SWE-bench Verified 的审计发现，至少 59.4% 的审查问题存在缺陷测试用例——测试因过于严格的字符串匹配、硬编码时间戳或环境依赖断言而拒绝正确解答。此外，所有前沿模型（GPT-5、Claude 4、Gemini 3.1）都显示出统计学意义上的训练数据污染迹象，在出现于预训练语料中的问题上表现高出 15-20%。OpenAI 建议社区采用 SWE-bench Pro——一个经过验证的正确测试套件和去污染问题的新精选子集，所有模型得分低 30% 但与实际编程能力的相关性更好。这一分析揭示了更广泛的问题：当基准测试成为目标时，它们会迅速失去区分能力。"
-    },
-    "date": "2026-02-23"
-  },
-  {
-    "id": "joshwcomeau-sprites-on-the-web",
-    "title": {
-      "en": "Sprites on the Web",
-      "zh": "Web 上的精灵图动画"
-    },
-    "url": "https://www.joshwcomeau.com/animation/sprites/",
-    "source": "Josh Comeau",
-    "summary": {
-      "en": "Josh Comeau writes a comprehensive tutorial on using spritesheets — a technique borrowed from game development — for web animations. The approach uses a single image containing all animation frames, displayed via CSS `object-fit: none` and `object-position` to show one frame at a time, with `animation-timing-function: steps()` advancing through frames. Compared to GIF/APNG, spritesheets offer lossless quality at smaller file sizes, support transparency via WebP/AVIF, and allow precise control over playback speed and direction. The tutorial walks through building a character animation system with idle, walk, and jump states, using CSS custom properties to switch between sprite rows. Comeau also covers responsive spritesheets, preloading strategies, and accessibility considerations for reduced-motion preferences.",
-      "zh": "Josh Comeau 撰写了一篇全面的教程，讲解将精灵图（spritesheet）这一源自游戏开发的技术应用于 Web 动画。方法使用包含所有动画帧的单张图片，通过 CSS `object-fit: none` 和 `object-position` 逐帧显示，配合 `animation-timing-function: steps()` 推进帧。相比 GIF/APNG，精灵图以更小的文件体积提供无损质量，通过 WebP/AVIF 支持透明，并允许精确控制播放速度和方向。教程演示了构建包含待机、行走和跳跃状态的角色动画系统，使用 CSS 自定义属性切换精灵图行。Comeau 还涵盖了响应式精灵图、预加载策略和针对减少动效偏好的无障碍考虑。"
-    },
-    "date": "2026-02-23"
-  },
-  {
-    "id": "css-border-shape-non-rectangular",
-    "title": {
-      "en": "CSS border-shape: The Future of the Non-Rectangular Web",
-      "zh": "CSS border-shape：非矩形 Web 的未来"
-    },
-    "url": "https://una.im/border-shape/",
-    "source": "Una Kravets",
-    "summary": {
-      "en": "Una Kravets introduces CSS `border-shape`, a new property arriving as part of Interop 2026 that fundamentally changes how elements can be shaped. Unlike `clip-path` which only visually clips the element, `border-shape` redefines the element's actual box geometry — backgrounds, borders, shadows, and outlines all follow the new shape automatically. Supported shapes include `scoop` (concave corners), `notch` (angled corners), `bevel`, and parametric superellipse via `squircle(n)`. The article demonstrates practical applications: tooltip arrows without pseudo-elements, pill-shaped navigation tabs, scalloped card borders, and organic blob containers. This eliminates a category of hacks (clip-path + separate shadow element, SVG backgrounds for non-rectangular cards) that have plagued CSS layouts for years.",
-      "zh": "Una Kravets 介绍了 CSS `border-shape`，一个作为 Interop 2026 一部分到来的新属性，从根本上改变了元素的形状方式。与仅视觉裁剪的 `clip-path` 不同，`border-shape` 重新定义了元素的实际盒模型几何——背景、边框、阴影和轮廓都自动跟随新形状。支持的形状包括 `scoop`（凹角）、`notch`（斜角）、`bevel` 和通过 `squircle(n)` 的参数化超椭圆。文章展示了实际应用：无需伪元素的工具提示箭头、胶囊形导航标签、扇贝形卡片边框和有机 blob 容器。这消除了困扰 CSS 布局多年的一类 hack（clip-path + 单独的阴影元素、用于非矩形卡片的 SVG 背景）。"
-    },
-    "date": "2026-02-19"
-  },
-  {
-    "id": "freebsd-wifi-driver-built-by-ai",
-    "title": {
-      "en": "FreeBSD Doesn't Have a Wi-Fi Driver, So AI Built One",
-      "zh": "FreeBSD 没有 Wi-Fi 驱动，AI 造了一个"
-    },
-    "url": "https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/",
-    "source": "Hacker News Best",
-    "summary": {
-      "en": "A developer used AI agents to build a native FreeBSD kernel driver for the Broadcom BCM4350 Wi-Fi chip — one of the most-requested missing drivers in the FreeBSD ecosystem. Rather than directly porting the Linux `brcmfmac` driver (which would carry GPL licensing complications), the author had Claude generate a hardware specification document from the Linux source, then used that spec to write a clean-room BSD-licensed implementation from scratch. The resulting kernel module handles firmware loading, SDIO bus communication, 802.11ac scanning, and WPA/WPA2 authentication. The driver passes all standard Wi-Fi conformance tests and achieves ~80% of the Linux driver's throughput. The approach establishes a template for using AI to create license-clean reimplementations of hardware drivers across OS boundaries.",
-      "zh": "一位开发者使用 AI 智能体为 Broadcom BCM4350 Wi-Fi 芯片构建了原生 FreeBSD 内核驱动——这是 FreeBSD 生态中最受请求的缺失驱动之一。作者没有直接移植 Linux 的 `brcmfmac` 驱动（会带来 GPL 许可问题），而是让 Claude 从 Linux 源码生成硬件规范文档，再基于该规范从零编写 BSD 许可的净室实现。最终的内核模块处理固件加载、SDIO 总线通信、802.11ac 扫描和 WPA/WPA2 认证。驱动通过所有标准 Wi-Fi 一致性测试，达到 Linux 驱动约 80% 的吞吐量。这一方法为使用 AI 跨操作系统边界创建许可证无污染的硬件驱动重新实现建立了范例。"
-    },
-    "date": "2026-02-23"
-  },
-  {
-    "id": "kimi-k25-vision-agent-swarm",
-    "title": {
-      "en": "Kimi K2.5: Open-Weight Model with Vision and Agent Swarm",
-      "zh": "Kimi K2.5：支持视觉和智能体集群的开源权重模型"
-    },
-    "url": "https://www.infoq.com/news/2026/02/kimi-k25-swarm/",
-    "source": "InfoQ",
-    "summary": {
-      "en": "Moonshot AI released Kimi K2.5, an open-weight multimodal model pretrained on 15 trillion mixed visual and text tokens. The standout feature is agent swarm mode: a coordinator agent decomposes complex tasks and dispatches up to 100 specialized sub-agents that execute in parallel, each with independent tool access and memory. On BrowseComp (web browsing tasks) and WideSearch (multi-source research), K2.5 matches GPT-4o-level performance while being fully open under a Modified MIT License. The model uses a Mixture-of-Experts architecture with 128 total experts and 32 active per token, keeping inference costs manageable despite the large total parameter count. Moonshot provides reference deployment configs for 4×A100 and 8×H100 setups.",
-      "zh": "月之暗面发布 Kimi K2.5 开源权重多模态模型，在 15 万亿混合视觉与文本 token 上预训练。亮点功能是智能体集群模式：协调智能体分解复杂任务并调度最多 100 个专门子智能体并行执行，每个子智能体拥有独立的工具访问和记忆。在 BrowseComp（网页浏览任务）和 WideSearch（多源研究）上，K2.5 达到 GPT-4o 级别性能，以 Modified MIT 许可证完全开源。模型采用混合专家架构，共 128 个专家、每 token 32 个活跃，尽管总参数量大但推理成本可控。Moonshot 提供了 4×A100 和 8×H100 的参考部署配置。"
-    },
-    "date": "2026-02-17"
   }
 ]
