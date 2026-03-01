@@ -8,8 +8,8 @@
     "url": "https://venturebeat.com/technology/alibabas-new-open-source-qwen3-5-medium-models-offer-sonnet-4-5-performance",
     "source": "VentureBeat",
     "summary": {
-      "en": "Alibaba released the Qwen3.5 series of open-source models, including 122B and 35B parameter variants that deliver performance comparable to Claude Sonnet 4.5 while running on local hardware. The flagship is a ~400B parameter native vision-language model with built-in reasoning capabilities designed for multimodal agent applications. The models are fully open-source, making enterprise-grade AI capabilities accessible for local deployment without relying on API providers.",
-      "zh": "阿里巴巴发布了 Qwen3.5 系列开源模型，包括 122B 和 35B 参数版本，性能可媲美 Claude Sonnet 4.5，且可在本地硬件上运行。旗舰版是约 400B 参数的原生视觉语言模型，内置推理能力，专为多模态智能体应用设计。这些模型完全开源，使得企业级 AI 能力无需依赖 API 服务商即可在本地部署。"
+      "en": "Alibaba released the Qwen3.5 series of open-source models under Apache 2.0, featuring Mixture-of-Experts (MoE) architecture — the 35B model activates only 3B parameters per token and the 122B activates 10B, yet both deliver performance comparable to Claude Sonnet 4.5 on benchmarks like MMLU and MMMU-Pro. The flagship Qwen3.5-397B is a native vision-language model with early-fusion multimodal training and built-in reasoning for agentic applications. The MoE design makes enterprise-grade AI capabilities practical for local deployment without relying on API providers.",
+      "zh": "阿里巴巴以 Apache 2.0 协议发布了 Qwen3.5 系列开源模型，采用混合专家（MoE）架构——35B 模型每个 token 仅激活 3B 参数、122B 仅激活 10B，却在 MMLU 和 MMMU-Pro 等基准上达到媲美 Claude Sonnet 4.5 的性能。旗舰版 Qwen3.5-397B 是原生视觉语言模型，采用早期融合多模态训练并内置推理能力，面向智能体应用。MoE 设计使得企业级 AI 能力无需依赖 API 服务商即可在本地实际部署。"
     },
     "date": "2026-02-27"
   },
@@ -36,8 +36,8 @@
     "url": "https://blog.cloudflare.com/a-better-web-streams-api/",
     "source": "Cloudflare Blog",
     "summary": {
-      "en": "Cloudflare published a deep technical critique of the current Web Streams API, arguing that its complexity and overhead make it impractical for many real-world use cases. The post proposes an alternative design based on async iterables that achieves 2x to 120x better performance by leveraging modern JavaScript primitives and eliminating the internal queuing and backpressure machinery. The analysis includes benchmarks comparing ReadableStream, Node.js streams, and the proposed async iterable approach across throughput and latency dimensions.",
-      "zh": "Cloudflare 发表了一篇对现有 Web Streams API 的深度技术批评，指出其复杂性和开销使其在许多实际场景中不够实用。文章提出了基于异步可迭代对象的替代设计方案，通过利用现代 JavaScript 原语并消除内部队列和背压机制，实现了 2 倍到 120 倍的性能提升。分析包含了 ReadableStream、Node.js 流和所提出的异步可迭代方案在吞吐量和延迟维度上的基准测试对比。"
+      "en": "Cloudflare published a deep technical critique of the current Web Streams API, arguing that its complexity — locking model, promise overhead, BYOB reader friction — makes it impractical for many real-world use cases. The post proposes an alternative design based on async iterables with explicit backpressure policies (strict, block, drop-oldest, drop-newest), achieving 2x to 120x better performance by reducing promise allocation and eliminating intermediate buffering. Chained transform pipelines showed 80–90x improvements, and async iteration reached 40–100x gains in browsers.",
+      "zh": "Cloudflare 发表了一篇对现有 Web Streams API 的深度技术批评，指出其锁模型、Promise 开销和 BYOB Reader 复杂性使其在许多实际场景中不够实用。文章提出了基于异步可迭代对象的替代设计方案，采用显式背压策略（strict/block/drop-oldest/drop-newest），通过减少 Promise 分配和消除中间缓冲实现了 2 倍到 120 倍的性能提升。链式转换管道提升达 80–90 倍，浏览器中异步迭代提升达 40–100 倍。"
     },
     "date": "2026-02-27"
   },
@@ -50,8 +50,8 @@
     "url": "https://github.com/cloudflare/vinext",
     "source": "GitHub Trending",
     "summary": {
-      "en": "Cloudflare released Vinext, a Vite plugin that reimplements the Next.js API surface, allowing developers to use familiar Next.js patterns while building on Vite and deploying to any platform — not just Vercel. The project gained nearly 5,000 GitHub stars in its first week, signaling strong demand for vendor-neutral alternatives to the tightly coupled Next.js-Vercel ecosystem. By decoupling the developer experience from the deployment platform, Vinext addresses a key concern in the React meta-framework space.",
-      "zh": "Cloudflare 发布了 Vinext，一个重新实现 Next.js API 接口的 Vite 插件，允许开发者使用熟悉的 Next.js 模式，同时基于 Vite 构建并部署到任何平台，而不仅限于 Vercel。项目首周即获得近 5,000 个 GitHub Star，显示出市场对 Next.js-Vercel 紧耦合生态的供应商中立替代方案的强烈需求。通过将开发体验与部署平台解耦，Vinext 回应了 React 元框架领域的一个核心关切。"
+      "en": "Cloudflare released Vinext, an experimental Vite plugin that reimplements ~94% of the Next.js 16 API surface (Pages and App routers with full RSC support), targeting Cloudflare Workers as its deployment platform with integrated KV storage and D1 databases. The project gained nearly 5,000 GitHub stars and its codebase was predominantly written by Claude, making it a notable example of AI-generated open-source infrastructure. Vinext offers an alternative to the Next.js-Vercel coupling, though it currently ties deployment to Cloudflare rather than being platform-agnostic.",
+      "zh": "Cloudflare 发布了实验性 Vite 插件 Vinext，重新实现了约 94% 的 Next.js 16 API（Pages 和 App 路由及完整 RSC 支持），以 Cloudflare Workers 为部署目标，集成 KV 存储和 D1 数据库。项目获得近 5,000 个 GitHub Star，代码主要由 Claude 生成，是 AI 生成开源基础设施的典型案例。Vinext 提供了 Next.js-Vercel 耦合的替代方案，但目前将部署绑定到 Cloudflare 而非平台无关。"
     },
     "date": "2026-02-23"
   },
@@ -92,8 +92,8 @@
     "url": "https://deno.com/blog/v2.7",
     "source": "Deno Blog",
     "summary": {
-      "en": "Deno 2.7 stabilizes the Temporal API, making Deno the first major JavaScript runtime to ship this long-awaited date/time standard as a stable feature. The release also introduces Windows on ARM builds, npm package.json overrides for dependency resolution, Brotli compression streams, and self-extracting binary support. Node.js compatibility continues to improve with numerous enhancements, strengthening Deno's position as a drop-in alternative for existing Node.js projects.",
-      "zh": "Deno 2.7 正式稳定了 Temporal API，使 Deno 成为首个将这一期待已久的日期/时间标准作为稳定特性发布的主流 JavaScript 运行时。此版本还引入了 Windows ARM 构建、npm package.json 覆盖机制、Brotli 压缩流以及自解压二进制文件支持。Node.js 兼容性持续改进，进一步巩固了 Deno 作为现有 Node.js 项目替代方案的地位。"
+      "en": "Deno 2.7 stabilizes the Temporal API — the --unstable-temporal flag is no longer required — following Chrome 144's shipment of Temporal via V8 14.5 in January 2026. The release also introduces Windows on ARM builds, npm package.json overrides for dependency resolution, Brotli compression streams, and self-extracting binary support via deno compile --self-extracting. Node.js compatibility continues to improve with numerous enhancements, strengthening Deno's position as a drop-in alternative for existing Node.js projects.",
+      "zh": "Deno 2.7 正式稳定了 Temporal API——不再需要 --unstable-temporal 标志——紧随 Chrome 144 于 2026 年 1 月通过 V8 14.5 发布 Temporal 之后。此版本还引入了 Windows ARM 构建、npm package.json 覆盖机制、Brotli 压缩流以及通过 deno compile --self-extracting 实现的自解压二进制文件支持。Node.js 兼容性持续改进，进一步巩固了 Deno 作为现有 Node.js 项目替代方案的地位。"
     },
     "date": "2026-02-25"
   },
@@ -106,8 +106,8 @@
     "url": "https://hacks.mozilla.org/2026/02/goodbye-innerHTML-hello-sethtml-stronger-xss-protection-in-firefox-148/",
     "source": "Mozilla Hacks",
     "summary": {
-      "en": "Firefox 148 introduces the standardized Sanitizer API with the new setHTML() method, which sanitizes untrusted HTML before inserting it into the DOM. This browser-native approach replaces the need for external sanitization libraries like DOMPurify, providing built-in XSS protection as a web platform primitive. The API is designed as a direct replacement for innerHTML in scenarios involving user-generated content, making secure HTML handling the default rather than an opt-in practice.",
-      "zh": "Firefox 148 引入了标准化的 Sanitizer API 及全新的 setHTML() 方法，在将不受信任的 HTML 插入 DOM 前进行自动清理。这一浏览器原生方案取代了 DOMPurify 等外部清理库的需求，将 XSS 防护作为 Web 平台内置能力提供。该 API 旨在直接替代涉及用户生成内容场景中的 innerHTML，使安全的 HTML 处理成为默认行为而非可选实践。"
+      "en": "Firefox 148 becomes the first browser to ship the standardized Sanitizer API, introducing the setHTML() method that sanitizes untrusted HTML before inserting it into the DOM. The default configuration strips dangerous elements like malicious img tags and onclick handlers while preserving safe content, with support for custom sanitization configurations. Designed as a direct replacement for innerHTML in user-generated content scenarios and paired with Trusted Types, it makes secure HTML handling a browser-native default rather than an opt-in practice.",
+      "zh": "Firefox 148 成为首个发布标准化 Sanitizer API 的浏览器，引入 setHTML() 方法在将不受信任的 HTML 插入 DOM 前进行自动清理。默认配置会剥离恶意 img 标签和 onclick 处理器等危险元素，同时保留安全内容，并支持自定义清理配置。作为用户生成内容场景中 innerHTML 的直接替代方案，结合 Trusted Types，使安全的 HTML 处理成为浏览器原生默认行为而非可选实践。"
     },
     "date": "2026-02-24"
   },
@@ -148,9 +148,79 @@
     "url": "https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/",
     "source": "Simon Willison",
     "summary": {
-      "en": "Simon Willison published a comprehensive guide collecting practical patterns for working effectively with AI coding agents, covering strategies like running tests first, hoarding reusable code examples, and using linear walkthroughs for codebase understanding. The guide treats agentic engineering as a complement to traditional software engineering rather than a replacement, emphasizing that writing code has become cheap while design, testing, and verification remain the developer's core responsibility. Key insights include viewing code as disposable, prioritizing test-driven agent workflows, and building personal libraries of working solutions as agent input.",
-      "zh": "Simon Willison 发布了一份全面的指南，汇集了与 AI 编码智能体高效协作的实用模式，涵盖先运行测试、积累可复用代码示例、使用线性走查理解代码库等策略。该指南将智能体工程视为传统软件工程的补充而非替代，强调编写代码的成本已大幅降低，而设计、测试和验证仍是开发者的核心职责。关键洞察包括将代码视为可丢弃的、优先采用测试驱动的智能体工作流，以及构建个人可用解决方案库作为智能体输入。"
+      "en": "Simon Willison launched an evolving collection of engineering patterns for working with AI coding agents, published as \"guides\" — a new content format designed to be updated over time. The initial release includes two chapters: one on how code generation costs have collapsed, and another on \"Red/Green TDD\" — a test-first workflow where developers write failing tests and let agents make them pass. Willison defines agentic engineering as professional software engineers using coding agents to amplify their existing expertise, positioning it as a complement to traditional engineering rather than a replacement.",
+      "zh": "Simon Willison 发布了一个持续更新的 AI 编码智能体工程模式合集，采用「指南」这一新内容形式，设计为随时间迭代而非一次性发布。首次发布包含两章：一章讨论代码生成成本的大幅降低，另一章介绍「红/绿 TDD」——开发者编写失败测试后让智能体使其通过的工作流。Willison 将智能体工程定义为专业软件工程师使用编码智能体放大现有专业能力，将其定位为传统工程的补充而非替代。"
     },
     "date": "2026-02-23"
+  },
+  {
+    "id": "gemini-3-1-pro-complex-reasoning",
+    "title": {
+      "en": "Google Releases Gemini 3.1 Pro with 77.1% on ARC-AGI-2",
+      "zh": "Google 发布 Gemini 3.1 Pro，ARC-AGI-2 得分 77.1%"
+    },
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "source": "Google Blog",
+    "summary": {
+      "en": "Google DeepMind released Gemini 3.1 Pro, a frontier model optimized for complex reasoning and agentic workflows, achieving a verified 77.1% on ARC-AGI-2 — a benchmark that evaluates the ability to solve entirely new logic patterns. The model is available across the Gemini API, Vertex AI, Gemini app, NotebookLM, and entered public preview in GitHub Copilot on the same day. This marks the first .1 increment in the Gemini model family, signaling Google's shift toward more frequent, targeted capability upgrades rather than waiting for major version jumps.",
+      "zh": "Google DeepMind 发布了 Gemini 3.1 Pro，一款面向复杂推理和智能体工作流的前沿模型，在 ARC-AGI-2（评估解决全新逻辑模式能力的基准）上取得了经验证的 77.1% 得分。该模型已在 Gemini API、Vertex AI、Gemini 应用、NotebookLM 上可用，并于同日在 GitHub Copilot 中进入公开预览。这是 Gemini 模型家族首次进行 .1 级增量更新，标志着 Google 从等待大版本跳跃转向更频繁、更有针对性的能力升级。"
+    },
+    "date": "2026-02-19"
+  },
+  {
+    "id": "navigation-api-baseline-available",
+    "title": {
+      "en": "Navigation API Reaches Baseline: A Better Way to Navigate for SPAs",
+      "zh": "Navigation API 达到 Baseline：SPA 导航的更优方案"
+    },
+    "url": "https://web.dev/blog/baseline-navigation-api",
+    "source": "web.dev",
+    "summary": {
+      "en": "The Navigation API — the modern successor to the History API — is now Baseline Newly Available across all major browsers, with Safari and Firefox adding support in early 2026. It provides a single, centralized NavigateEvent for every navigation type (link clicks, form submissions, back/forward buttons, programmatic calls), eliminating the fragile multi-step approach previously required for SPAs. The API also handles URL updates, accessibility announcements, and scroll restoration automatically, representing a fundamental improvement in how single-page applications manage client-side routing.",
+      "zh": "Navigation API——History API 的现代继任者——现已在所有主流浏览器中达到 Baseline Newly Available 状态，Safari 和 Firefox 于 2026 年初添加支持。它为所有导航类型（链接点击、表单提交、前进/后退按钮、编程调用）提供统一的 NavigateEvent，消除了 SPA 此前所需的脆弱多步骤方案。该 API 还自动处理 URL 更新、无障碍播报和滚动恢复，代表了单页应用管理客户端路由方式的根本性改进。"
+    },
+    "date": "2026-02-17"
+  },
+  {
+    "id": "interop-2026-cross-browser-focus",
+    "title": {
+      "en": "Interop 2026: Apple, Google, Mozilla and Microsoft Align on 20 Web Platform Focus Areas",
+      "zh": "Interop 2026：Apple、Google、Mozilla 和 Microsoft 就 20 个 Web 平台焦点领域达成一致"
+    },
+    "url": "https://web.dev/blog/interop-2026",
+    "source": "web.dev",
+    "summary": {
+      "en": "Apple, Google, Igalia, Microsoft, and Mozilla jointly announced Interop 2026, committing to 20 focus areas for cross-browser interoperability including anchor positioning, scroll-driven animations, view transitions, dialog/popover enhancements, and Navigation API improvements. Building on the success of Interop 2025 (which raised scores from 25 to 95), the initiative targets features identified through developer surveys and community feedback. Progress is tracked on an automated dashboard, and the inclusion of WebRTC, WebTransport, and accessibility testing signals an expanding scope beyond CSS into APIs and developer experience.",
+      "zh": "Apple、Google、Igalia、Microsoft 和 Mozilla 联合宣布 Interop 2026，承诺在 20 个焦点领域推进跨浏览器互操作性，包括锚点定位、滚动驱动动画、视图过渡、dialog/popover 增强和 Navigation API 改进。在 Interop 2025 成功（分数从 25 提升至 95）的基础上，该计划针对通过开发者调查和社区反馈确定的功能。进展通过自动化仪表板追踪，WebRTC、WebTransport 和无障碍测试的纳入表明范围正从 CSS 扩展到 API 和开发者体验。"
+    },
+    "date": "2026-02-12"
+  },
+  {
+    "id": "typescript-6-0-beta-last-js-release",
+    "title": {
+      "en": "TypeScript 6.0 Beta: The Last JavaScript-Based Release Before the Go Rewrite",
+      "zh": "TypeScript 6.0 Beta：Go 重写前最后一个基于 JavaScript 的版本"
+    },
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0-beta/",
+    "source": "TypeScript Blog",
+    "summary": {
+      "en": "TypeScript 6.0 Beta marks the final release built on the current JavaScript codebase before TypeScript 7.0's native Go-based rewrite. The update introduces strict mode enabled by default, ESM as the default module resolution, and es2025 as the new default target, while deprecating ES5 targets, AMD/UMD module formats, baseUrl configuration, and out-file bundling. A new --stableTypeOrdering flag helps developers diagnose behavioral differences in preparation for migrating to the Go-based compiler, making this release both a modernization milestone and a migration bridge.",
+      "zh": "TypeScript 6.0 Beta 是基于当前 JavaScript 代码库的最后一个版本，之后 TypeScript 7.0 将切换到原生 Go 实现。此更新默认启用 strict 模式、ESM 作为默认模块解析、es2025 作为新的默认目标，同时弃用 ES5 目标、AMD/UMD 模块格式、baseUrl 配置和 out-file 打包。新增的 --stableTypeOrdering 标志帮助开发者诊断行为差异，为迁移到 Go 编译器做准备，使该版本既是现代化里程碑也是迁移桥梁。"
+    },
+    "date": "2026-02-11"
+  },
+  {
+    "id": "gpt-5-3-codex-agentic-coding",
+    "title": {
+      "en": "OpenAI Releases GPT-5.3-Codex: Most Capable Agentic Coding Model",
+      "zh": "OpenAI 发布 GPT-5.3-Codex：最强智能体编码模型"
+    },
+    "url": "https://openai.com/index/introducing-gpt-5-3-codex/",
+    "source": "OpenAI",
+    "summary": {
+      "en": "OpenAI released GPT-5.3-Codex, combining the frontier coding performance of GPT-5.2-Codex with GPT-5.2's reasoning capabilities in a single model that is 25% faster. It sets new industry highs on SWE-Bench Pro and Terminal-Bench, and is the first OpenAI model classified \"high\" for cybersecurity risk due to its ability to handle long-running tasks involving research, tool use, and complex execution. Available across Codex app, CLI, and IDE extension for paid plans, with GPT-5.3-Codex-Spark released a week later as a smaller real-time coding variant.",
+      "zh": "OpenAI 发布了 GPT-5.3-Codex，将 GPT-5.2-Codex 的前沿编码性能与 GPT-5.2 的推理能力整合到一个速度提升 25% 的模型中。该模型在 SWE-Bench Pro 和 Terminal-Bench 上创下行业新高，并因其处理涉及研究、工具使用和复杂执行的长时间任务的能力而成为首个被 OpenAI 评为「高」网络安全风险的模型。面向付费计划用户在 Codex 应用、CLI 和 IDE 扩展中可用，一周后发布了更小的实时编码变体 GPT-5.3-Codex-Spark。"
+    },
+    "date": "2026-02-05"
   }
 ]
