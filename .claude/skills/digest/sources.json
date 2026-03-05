@@ -34,7 +34,7 @@
     { "category": "技术聚合器", "name": "Lobsters", "url": "https://lobste.rs/rss", "reason": "邀请制技术社区，比 HN 更聚焦编程，噪声更少" },
     { "category": "技术聚合器", "name": "Smashing Magazine", "url": "https://www.smashingmagazine.com/feed/", "reason": "前端/设计/UX 老牌杂志，文章质量稳定" },
     { "category": "技术聚合器", "name": "CSS-Tricks", "url": "https://css-tricks.com/feed/", "reason": "CSS/前端实践指南，被 DigitalOcean 收购后仍保持更新" },
-    { "category": "技术聚合器", "name": "InfoQ", "url": "https://www.infoq.com/feed/", "reason": "企业级软件工程资讯，覆盖架构/DevOps/AI" },
+    { "category": "技术聚合器", "name": "InfoQ", "url": "https://feed.infoq.com/", "reason": "企业级软件工程资讯，覆盖架构/DevOps/AI" },
 
     { "category": "中文源", "name": "InfoQ 中文", "url": "https://www.infoq.cn/feed", "reason": "InfoQ 中文站，国内技术趋势和本土原创内容的主要来源" },
     { "category": "中文源", "name": "阮一峰的网络日志", "url": "https://www.ruanyifeng.com/blog/atom.xml", "reason": "每周科技爱好者周刊，国内覆盖面最广的技术周刊" },
