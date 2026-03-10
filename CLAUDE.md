@@ -32,7 +32,7 @@ Nuxt 3 multi-page personal site with TypeScript, deployed to GitHub Pages at `/`
 
 **Adding images:** Drop files into `public/images/` — the server API auto-discovers them. Supported formats: jpg, jpeg, png, webp, avif. Filenames become titles (e.g., `crimson-winter-forest.jpg` → "Crimson Winter Forest").
 
-**Adding digest articles:** Add entries to monthly JSON files in `public/digests/YYYY-MM.json`. Each item has a semantic slug ID, bilingual title/summary, URL, source, and date. Use the `/digest` skill to auto-collect from RSS, GitHub Trending/Releases, and web search. Deduplication is by normalized URL, not by ID.
+**Adding digest articles:** Add entries to monthly JSON files in `public/digests/YYYY-MM.json`. Each item has a semantic slug ID, bilingual title/summary, URL, source, and date. Deduplication is by normalized URL, not by ID.
 
 **Components** are organized by domain under `components/`:
 - `icon/` — SVG icon components (e.g., `icon/Github.vue` → `<IconGithub />`)
