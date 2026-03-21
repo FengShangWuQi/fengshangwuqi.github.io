@@ -12,5 +12,19 @@
       "zh": "OpenAI 宣布收购 Astral 公司，后者是 Python 工具链三大核心项目的开发商：uv（包/环境管理器，PyPI 月下载量超 1.26 亿）、ruff（Linter/Formatter）和 ty（类型检查器）。Astral 团队将加入 OpenAI 的 Codex 团队。双方承诺继续维护开源，但 Simon Willison 指出「产品+人才」收购可能最终变成纯人才收购。这笔交易引发了对企业托管关键开源基础设施的广泛讨论。"
     },
     "date": "2026-03-20"
+  },
+  {
+    "id": "claude-code-channels-push-events",
+    "title": {
+      "en": "Claude Code Channels: Push External Events into Running Sessions",
+      "zh": "Claude Code 新功能 Channels：向运行中的会话推送外部事件"
+    },
+    "url": "https://code.claude.com/docs/en/channels",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Claude Code introduced Channels, a new mechanism that lets MCP servers push messages, alerts, and webhooks into a running Claude Code session. This enables CI results, chat messages (Telegram/Discord), and monitoring events to reach Claude while you're away from the terminal. Channels are two-way—Claude can read events and reply through the same channel. Currently in research preview, requiring v2.1.80+ and claude.ai login.",
+      "zh": "Claude Code 推出 Channels 功能，允许 MCP 服务器向运行中的会话推送消息、告警和 Webhook。这意味着 CI 结果、Telegram/Discord 聊天消息、监控事件等都能在你离开终端时送达 Claude。Channel 支持双向通信——Claude 可以读取事件并通过同一通道回复。目前处于研究预览阶段，需要 v2.1.80+ 版本和 claude.ai 登录。"
+    },
+    "date": "2026-03-20"
   }
 ]
