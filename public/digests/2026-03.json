@@ -68,5 +68,19 @@
       "zh": "GitHub 发布了 Copilot Squad 的深度解析——一个在仓库内原生编排多个 AI Agent 的协同系统。文章详细介绍了保持可检查、可预测和可协作的多 Agent 工作流设计模式。这代表了 GitHub 将 AI 辅助开发从单 Agent 交互扩展到团队级协同的技术愿景。"
     },
     "date": "2026-03-20"
+  },
+  {
+    "id": "langsmith-fleet-enterprise-agents",
+    "title": {
+      "en": "LangSmith Fleet: Enterprise Workspace for Building and Managing Agent Fleets",
+      "zh": "LangSmith Fleet：企业级 Agent 舰队管理平台"
+    },
+    "url": "https://blog.langchain.com/introducing-langsmith-fleet/",
+    "source": "LangChain Blog",
+    "summary": {
+      "en": "LangChain rebranded Agent Builder to LangSmith Fleet, an enterprise workspace for creating, deploying, and managing agents at scale. Fleet introduces agent identity and credentials management, tiered permissions (clone/run/edit), cross-team sharing, an inbox for human-in-the-loop approvals, and full observability. The shift reflects how the hard problem in enterprise AI has moved from building individual agents to governing fleets of them.",
+      "zh": "LangChain 将 Agent Builder 升级更名为 LangSmith Fleet，一个企业级 Agent 工作空间。Fleet 引入了 Agent 身份与凭证管理、分级权限控制（克隆/运行/编辑）、跨团队共享、人工审批收件箱和完整可观测性。这一转变反映出企业 AI 的核心挑战已从「构建单个 Agent」转向「治理 Agent 舰队」。"
+    },
+    "date": "2026-03-20"
   }
 ]
