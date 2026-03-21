@@ -54,5 +54,19 @@
       "zh": "Cloudflare 宣布 Workers AI 正式支持前沿开源大模型推理，首发 Moonshot AI 的 Kimi K2.5。该模型提供 256k 上下文窗口，支持多轮工具调用、视觉输入和结构化输出。Cloudflare 内部已将其用于安全审查 Agent，每天处理超 70 亿 token，在单个代码库中发现 15+ 已确认问题，相比私有模型预估节省约 240 万美元。这使得在单一平台上运行完整的 Agent 生命周期成为可能。"
     },
     "date": "2026-03-20"
+  },
+  {
+    "id": "github-copilot-squad-multi-agent",
+    "title": {
+      "en": "How Squad Runs Coordinated AI Agents Inside Your Repository",
+      "zh": "GitHub Copilot Squad：仓库内多 Agent 协同工作流的设计模式"
+    },
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-squad-runs-coordinated-ai-agents-inside-your-repository/",
+    "source": "GitHub Blog",
+    "summary": {
+      "en": "GitHub published an inside look at Squad, a repository-native orchestration system for GitHub Copilot that coordinates multiple AI agents within a single repo. The post details design patterns for multi-agent workflows that remain inspectable, predictable, and collaborative. It represents GitHub's vision for scaling AI-assisted development beyond single-agent interactions to team-level coordination.",
+      "zh": "GitHub 发布了 Copilot Squad 的深度解析——一个在仓库内原生编排多个 AI Agent 的协同系统。文章详细介绍了保持可检查、可预测和可协作的多 Agent 工作流设计模式。这代表了 GitHub 将 AI 辅助开发从单 Agent 交互扩展到团队级协同的技术愿景。"
+    },
+    "date": "2026-03-20"
   }
 ]
