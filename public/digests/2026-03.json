@@ -26,5 +26,19 @@
       "zh": "Claude Code 推出 Channels 功能，允许 MCP 服务器向运行中的会话推送消息、告警和 Webhook。这意味着 CI 结果、Telegram/Discord 聊天消息、监控事件等都能在你离开终端时送达 Claude。Channel 支持双向通信——Claude 可以读取事件并通过同一通道回复。目前处于研究预览阶段，需要 v2.1.80+ 版本和 claude.ai 登录。"
     },
     "date": "2026-03-20"
+  },
+  {
+    "id": "anthropic-legal-action-opencode",
+    "title": {
+      "en": "Anthropic Takes Legal Action Against OpenCode",
+      "zh": "Anthropic 对 OpenCode 发起法律行动"
+    },
+    "url": "https://github.com/anomalyco/opencode/pull/18186",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Anthropic sent legal requests to OpenCode (126k GitHub stars), the open-source AI coding CLI tool. A PR titled 'anthropic legal requests' was submitted by thdxr and merged into the dev branch. The move signals Anthropic's stance on third-party tools accessing its API or using its brand. This is notable as AI coding tools proliferate and the boundaries between official and community tools become contentious.",
+      "zh": "Anthropic 向开源 AI 编程 CLI 工具 OpenCode（GitHub 126k star）发出法律函件。一个名为「anthropic legal requests」的 PR 由 thdxr 提交并合并到 dev 分支。此举表明 Anthropic 对第三方工具调用其 API 或使用其品牌的态度。随着 AI 编程工具的爆发式增长，官方工具与社区工具之间的边界问题正变得日益敏感。"
+    },
+    "date": "2026-03-20"
   }
 ]
