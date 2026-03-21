@@ -40,5 +40,19 @@
       "zh": "Anthropic 向开源 AI 编程 CLI 工具 OpenCode（GitHub 126k star）发出法律函件。一个名为「anthropic legal requests」的 PR 由 thdxr 提交并合并到 dev 分支。此举表明 Anthropic 对第三方工具调用其 API 或使用其品牌的态度。随着 AI 编程工具的爆发式增长，官方工具与社区工具之间的边界问题正变得日益敏感。"
     },
     "date": "2026-03-20"
+  },
+  {
+    "id": "cloudflare-workers-ai-kimi-k2-5",
+    "title": {
+      "en": "Cloudflare Workers AI Now Runs Large Models, Starting with Kimi K2.5",
+      "zh": "Cloudflare Workers AI 正式支持大模型推理，首发 Kimi K2.5"
+    },
+    "url": "https://blog.cloudflare.com/workers-ai-large-models/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare announced Workers AI can now run frontier open-source models, launching with Moonshot AI's Kimi K2.5. The model offers a full 256k context window with multi-turn tool calling, vision inputs, and structured outputs. Cloudflare has been using it internally—their security review agent processes over 7B tokens/day with Kimi, catching 15+ confirmed issues in a single codebase, at a fraction of the cost of proprietary models (estimated $2.4M savings). This enables running entire agent lifecycles on a single platform.",
+      "zh": "Cloudflare 宣布 Workers AI 正式支持前沿开源大模型推理，首发 Moonshot AI 的 Kimi K2.5。该模型提供 256k 上下文窗口，支持多轮工具调用、视觉输入和结构化输出。Cloudflare 内部已将其用于安全审查 Agent，每天处理超 70 亿 token，在单个代码库中发现 15+ 已确认问题，相比私有模型预估节省约 240 万美元。这使得在单一平台上运行完整的 Agent 生命周期成为可能。"
+    },
+    "date": "2026-03-20"
   }
 ]
