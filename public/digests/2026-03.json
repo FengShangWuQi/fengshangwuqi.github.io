@@ -1,0 +1,16 @@
+[
+  {
+    "id": "openai-acquires-astral-uv-ruff",
+    "title": {
+      "en": "OpenAI to Acquire Astral, the Company Behind uv, ruff, and ty",
+      "zh": "OpenAI 收购 Astral：Python 工具链核心项目 uv、ruff、ty 易主"
+    },
+    "url": "https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/",
+    "source": "Simon Willison",
+    "summary": {
+      "en": "OpenAI announced it will acquire Astral, the company behind Python's increasingly essential toolchain: uv (package/environment manager with 126M+ monthly PyPI downloads), ruff (linter/formatter), and ty (type checker). The Astral team will join OpenAI's Codex team. Both sides have committed to keeping the projects open source, but Simon Willison notes the distinction between product+talent and talent-only acquisitions. The deal raises questions about corporate stewardship of load-bearing open source infrastructure.",
+      "zh": "OpenAI 宣布收购 Astral 公司，后者是 Python 工具链三大核心项目的开发商：uv（包/环境管理器，PyPI 月下载量超 1.26 亿）、ruff（Linter/Formatter）和 ty（类型检查器）。Astral 团队将加入 OpenAI 的 Codex 团队。双方承诺继续维护开源，但 Simon Willison 指出「产品+人才」收购可能最终变成纯人才收购。这笔交易引发了对企业托管关键开源基础设施的广泛讨论。"
+    },
+    "date": "2026-03-20"
+  }
+]
