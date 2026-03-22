@@ -82,5 +82,19 @@
       "zh": "LangChain 将 Agent Builder 升级更名为 LangSmith Fleet，一个企业级 Agent 工作空间。Fleet 引入了 Agent 身份与凭证管理、分级权限控制（克隆/运行/编辑）、跨团队共享、人工审批收件箱和完整可观测性。这一转变反映出企业 AI 的核心挑战已从「构建单个 Agent」转向「治理 Agent 舰队」。"
     },
     "date": "2026-03-20"
+  },
+  {
+    "id": "cursor-composer2-kimi-controversy",
+    "title": {
+      "en": "Cursor Composer 2 Model Exposed as Rebadged Kimi K2.5",
+      "zh": "Cursor Composer 2 被证实套壳 Kimi K2.5，引发许可证争议"
+    },
+    "url": "http://www.ruanyifeng.com/blog/2026/03/kimi-cursor.html",
+    "source": "阮一峰的网络日志",
+    "summary": {
+      "en": "Cursor released Composer 2 as a supposedly proprietary model, but researchers intercepted requests revealing it as a fine-tuned version of Moonshot AI's Kimi K2.5. Cursor acknowledged using K2.5, claiming the license was obtained through partner Fireworks AI. The incident raises transparency concerns about AI coding tools' underlying model sources.",
+      "zh": "Cursor 发布了号称自研的 Composer 2 模型，但研究者通过截获请求实锤其为 Kimi K2.5 微调版本。Cursor 随后承认使用 K2.5，称许可证通过合作伙伴 Fireworks AI 获取。事件暴露了 AI 编程工具对底层模型来源的透明度问题。"
+    },
+    "date": "2026-03-21"
   }
 ]
