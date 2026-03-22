@@ -96,5 +96,19 @@
       "zh": "Cursor 发布了号称自研的 Composer 2 模型，但研究者通过截获请求实锤其为 Kimi K2.5 微调版本。Cursor 随后承认使用 K2.5，称许可证通过合作伙伴 Fireworks AI 获取。事件暴露了 AI 编程工具对底层模型来源的透明度问题。"
     },
     "date": "2026-03-21"
+  },
+  {
+    "id": "voidzero-vite-plus-launch",
+    "title": {
+      "en": "VoidZero Launches Vite+",
+      "zh": "VoidZero 发布 Vite+：统一 Web 开发工具链"
+    },
+    "url": "https://github.com/voidzero-dev/vite-plus",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Evan You's VoidZero released Vite+, unifying Vite, Vitest, Oxlint, Oxfmt, Rolldown, tsdown, and Vite Task into a single zero-config CLI. It manages runtime, package manager, and frontend toolchain with commands like vp dev/check/build/test, supports monorepo task orchestration and caching. MIT licensed, 3000+ GitHub stars. A major milestone in VoidZero's roadmap to rewrite the JS toolchain in Rust.",
+      "zh": "尤雨溪的 VoidZero 发布 Vite+，通过单一 CLI 将 Vite/Vitest/Oxlint/Oxfmt/Rolldown/tsdown/Vite Task 整合为零配置工具链。用 vp dev/check/build/test 等命令替代多个独立工具调用，支持 monorepo 任务编排和缓存。MIT 开源，已获 3000+ GitHub star。这是 VoidZero「用 Rust 重写 JS 工具链」路线图的重要里程碑。"
+    },
+    "date": "2026-03-21"
   }
 ]
