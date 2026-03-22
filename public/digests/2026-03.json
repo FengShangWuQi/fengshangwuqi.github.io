@@ -110,5 +110,19 @@
       "zh": "尤雨溪的 VoidZero 发布 Vite+，通过单一 CLI 将 Vite/Vitest/Oxlint/Oxfmt/Rolldown/tsdown/Vite Task 整合为零配置工具链。用 vp dev/check/build/test 等命令替代多个独立工具调用，支持 monorepo 任务编排和缓存。MIT 开源，已获 3000+ GitHub star。这是 VoidZero「用 Rust 重写 JS 工具链」路线图的重要里程碑。"
     },
     "date": "2026-03-21"
+  },
+  {
+    "id": "anthropic-claude-plugins-official",
+    "title": {
+      "en": "Anthropic Launches Claude Code Plugin Directory",
+      "zh": "Anthropic 发布 Claude Code 官方插件目录"
+    },
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Anthropic released the official Claude Code plugin directory, establishing a plugin marketplace ecosystem. Plugins can include MCP server configs, slash commands, and agent definitions, installable via /plugin install. The directory is split into internal (Anthropic-maintained) and external (community/partner) plugins, with external submissions requiring quality review. 14k+ GitHub stars.",
+      "zh": "Anthropic 发布 Claude Code 官方插件目录，建立插件市场生态。插件可包含 MCP 服务器配置、斜杠命令和 Agent 定义，通过 /plugin install 一键安装。目录分为内部（Anthropic 维护）和外部（社区/合作伙伴）插件，外部提交需通过质量审核。GitHub 已获 1.4 万 star。"
+    },
+    "date": "2026-03-21"
   }
 ]
