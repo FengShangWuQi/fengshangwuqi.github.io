@@ -124,5 +124,19 @@
       "zh": "Anthropic 发布 Claude Code 官方插件目录，建立插件市场生态。插件可包含 MCP 服务器配置、斜杠命令和 Agent 定义，通过 /plugin install 一键安装。目录分为内部（Anthropic 维护）和外部（社区/合作伙伴）插件，外部提交需通过质量审核。GitHub 已获 1.4 万 star。"
     },
     "date": "2026-03-21"
+  },
+  {
+    "id": "chrome-devtools-mcp-server",
+    "title": {
+      "en": "Chrome DevTools MCP Server",
+      "zh": "Chrome DevTools MCP：Google 官方 MCP 服务器，让 AI Agent 操控浏览器"
+    },
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "The Chrome DevTools team released an official MCP server enabling AI coding agents (Gemini, Claude, Cursor, Copilot) to directly control and inspect running Chrome browsers. Built on Puppeteer, it provides performance recording and analysis, network request inspection, console logs with source maps, screenshots, and reliable browser automation. 30k+ GitHub stars.",
+      "zh": "Chrome DevTools 团队发布官方 MCP 服务器，让 AI 编程 Agent（Gemini、Claude、Cursor、Copilot 等）能直接控制和检查运行中的 Chrome 浏览器。基于 Puppeteer 构建，提供性能录制与分析、网络请求检查、带 source map 的控制台日志、截图和可靠的浏览器自动化。GitHub 超 3 万 star。"
+    },
+    "date": "2026-03-21"
   }
 ]
