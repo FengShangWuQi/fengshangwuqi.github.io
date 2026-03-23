@@ -138,5 +138,19 @@
       "zh": "Chrome DevTools 团队发布官方 MCP 服务器，让 AI 编程 Agent（Gemini、Claude、Cursor、Copilot 等）能直接控制和检查运行中的 Chrome 浏览器。基于 Puppeteer 构建，提供性能录制与分析、网络请求检查、带 source map 的控制台日志、截图和可靠的浏览器自动化。GitHub 超 3 万 star。"
     },
     "date": "2026-03-21"
+  },
+  {
+    "id": "three-pillars-javascript-bloat",
+    "title": {
+      "en": "The Three Pillars of JavaScript Bloat",
+      "zh": "JavaScript 依赖膨胀的三大根源"
+    },
+    "url": "https://43081j.com/2026/03/three-pillars-of-javascript-bloat",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "A deep analysis of why npm dependency trees are bloated...",
+      "zh": "深度分析 npm 依赖树膨胀的三大根源..."
+    },
+    "date": "2026-03-22"
   }
 ]
