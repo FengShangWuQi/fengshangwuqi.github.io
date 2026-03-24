@@ -152,5 +152,19 @@
       "zh": "深度分析 npm 依赖树膨胀的三大根源..."
     },
     "date": "2026-03-22"
+  },
+  {
+    "id": "typescript-6-0-release",
+    "title": {
+      "en": "Announcing TypeScript 6.0",
+      "zh": "TypeScript 6.0 正式发布"
+    },
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/",
+    "source": "TypeScript Blog",
+    "summary": {
+      "en": "TypeScript 6.0 is officially released as the last version built on the current JavaScript codebase. Key improvements include less context-sensitivity on this-less functions, enhanced type-checking for generic JSX expressions, deprecation of import assertion syntax in import() calls, and updated DOM types reflecting latest web standards including Temporal APIs. This release is primarily a transition release preparing developers for TypeScript 7.0, which will be a ground-up native port with significant performance improvements.",
+      "zh": "TypeScript 6.0 正式发布，这是基于当前 JavaScript 代码库的最后一个主版本。主要改进包括：无 this 函数的上下文敏感性优化、泛型 JSX 表达式的类型检查增强、import() 调用中 import assertion 语法的废弃，以及反映最新 Web 标准的 DOM 类型更新（含 Temporal API 调整）。这是一个过渡版本，为开发者迁移到即将到来的 TypeScript 7.0（完全用原生代码重写，性能大幅提升）做准备。"
+    },
+    "date": "2026-03-23"
   }
 ]
