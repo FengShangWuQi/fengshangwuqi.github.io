@@ -166,5 +166,19 @@
       "zh": "Cursor 推出全新搜索功能，可在数百万文件中实现毫秒级检索，解决了大型 monorepo 和企业级代码库开发者的核心痛点。该功能通过优化索引技术，使 AI 辅助代码导航在大规模项目中真正可用。"
     },
     "date": "2026-03-23"
+  },
+  {
+    "id": "github-spec-kit-trending",
+    "title": {
+      "en": "GitHub Releases spec-kit: A Toolkit for Spec-Driven Development",
+      "zh": "GitHub 发布 spec-kit：规格驱动开发工具包"
+    },
+    "url": "https://github.com/github/spec-kit",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "GitHub's spec-kit is a Python toolkit designed for Spec-Driven Development workflows, integrating with GitHub Copilot for AI-assisted specification writing and implementation. The project has rapidly gained 81K+ stars, signaling strong community interest in structured approaches to AI-assisted software development where specs guide code generation.",
+      "zh": "GitHub 推出 spec-kit，一个面向规格驱动开发（Spec-Driven Development）的 Python 工具包，与 GitHub Copilot 集成实现 AI 辅助的规格编写和代码实现。该项目已获得 81K+ Star，反映出社区对以规格文档引导 AI 生成代码这一结构化开发方式的强烈兴趣。"
+    },
+    "date": "2026-03-23"
   }
 ]
