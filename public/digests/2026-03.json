@@ -208,5 +208,19 @@
       "zh": "LiteLLM 的 PyPI 版本 1.82.7 和 1.82.8 被发现植入恶意 .pth 文件，在每次 Python 进程启动时自动执行凭据窃取——无需显式 import。恶意载荷会窃取 SSH 密钥、AWS/GCP/Azure 凭据、Kubernetes 配置、环境变量、Shell 历史和加密钱包。由于 LiteLLM 作为 LLM API 代理在生产环境中广泛使用，此次攻击影响尤为严重。包作者的 GitHub 账号疑似已被攻破。"
     },
     "date": "2026-03-24"
+  },
+  {
+    "id": "cloudflare-dynamic-workers",
+    "title": {
+      "en": "Cloudflare Launches Dynamic Workers — AI Agent Sandboxing 100x Faster Than Containers",
+      "zh": "Cloudflare 推出 Dynamic Workers——AI Agent 沙箱启动速度比容器快 100 倍"
+    },
+    "url": "https://blog.cloudflare.com/dynamic-workers/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare introduced Dynamic Workers in open beta, enabling secure execution of AI-generated code in lightweight V8 isolates with millisecond startup times — roughly 100x faster than traditional container sandboxes. Built on the open-source workerd runtime, Dynamic Workers extend the 'Code Mode' concept where AI agents write code that calls APIs rather than making individual tool calls, cutting token usage by up to 81%. This is a significant infrastructure primitive for the AI agent ecosystem.",
+      "zh": "Cloudflare 推出 Dynamic Workers 开放测试版，允许在轻量级 V8 隔离环境中安全执行 AI 生成的代码，启动时间达到毫秒级——比传统容器沙箱快约 100 倍。基于开源 workerd 运行时构建，Dynamic Workers 扩展了 'Code Mode' 概念：AI Agent 通过编写调用 API 的代码而非逐个工具调用来完成任务，Token 用量最多可减少 81%。这是 AI Agent 生态的重要基础设施原语。"
+    },
+    "date": "2026-03-24"
   }
 ]
