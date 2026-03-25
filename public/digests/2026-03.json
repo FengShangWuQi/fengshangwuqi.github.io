@@ -194,5 +194,19 @@
       "zh": "TypeScript 6.0 正式发布，这是基于当前 JavaScript 代码库的最后一个主版本。主要改进包括：无 this 函数的上下文敏感性优化、泛型 JSX 表达式的类型检查增强、import() 调用中 import assertion 语法的废弃，以及反映最新 Web 标准的 DOM 类型更新（含 Temporal API 调整）。这是一个过渡版本，为开发者迁移到即将到来的 TypeScript 7.0（完全用原生代码重写，性能大幅提升）做准备。"
     },
     "date": "2026-03-23"
+  },
+  {
+    "id": "litellm-supply-chain-attack",
+    "title": {
+      "en": "LiteLLM PyPI Package Compromised by Credential-Stealing Supply Chain Attack",
+      "zh": "LiteLLM PyPI 包遭供应链攻击植入凭据窃取恶意代码"
+    },
+    "url": "https://futuresearch.ai/blog/litellm-pypi-supply-chain-attack/",
+    "source": "Lobsters",
+    "summary": {
+      "en": "LiteLLM versions 1.82.7 and 1.82.8 on PyPI were found to contain a malicious .pth file that automatically executes a credential stealer on every Python process startup — no import required. The payload exfiltrates SSH keys, AWS/GCP/Azure credentials, Kubernetes configs, environment variables, shell history, and crypto wallets. The attack is particularly severe because LiteLLM is widely used as an LLM API proxy in production AI systems. The package author's GitHub account appears to have been compromised.",
+      "zh": "LiteLLM 的 PyPI 版本 1.82.7 和 1.82.8 被发现植入恶意 .pth 文件，在每次 Python 进程启动时自动执行凭据窃取——无需显式 import。恶意载荷会窃取 SSH 密钥、AWS/GCP/Azure 凭据、Kubernetes 配置、环境变量、Shell 历史和加密钱包。由于 LiteLLM 作为 LLM API 代理在生产环境中广泛使用，此次攻击影响尤为严重。包作者的 GitHub 账号疑似已被攻破。"
+    },
+    "date": "2026-03-24"
   }
 ]
