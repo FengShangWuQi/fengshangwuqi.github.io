@@ -236,5 +236,19 @@
       "zh": "Epoch AI 确认 GPT-5.4 Pro 解出了 FrontierMath 基准中一道关于 Ramsey 型超图分割的公开问题。AI 的解法以一种新方法改进了已知下界，问题贡献者称其「令人兴奋」并计划发表论文。随后 Opus 4.6、Gemini 3.1 Pro 和 GPT-5.4 也各自独立求解成功。这是 AI 数学推理的重要里程碑——FrontierMath 的问题专为「未解决」而设计。"
     },
     "date": "2026-03-24"
+  },
+  {
+    "id": "cursor-figma-design-system",
+    "title": {
+      "en": "Cursor Integrates Figma — AI Coding Agent Now Designs with Your Team's Design System",
+      "zh": "Cursor 集成 Figma——AI 编程工具可直接使用团队设计系统生成组件"
+    },
+    "url": "https://x.com/cursor_ai/status/2036468982560202773",
+    "source": "X (@cursor_ai)",
+    "summary": {
+      "en": "Cursor announced deep Figma integration: the AI coding agent can now create new components and frontends directly in Figma using a team's existing design system. A companion Figma plugin handles variables, tokens, and naming conventions. This bridges the gap between design and code, allowing developers to generate design-system-compliant UI without leaving the coding workflow. The announcement garnered over 1,100 likes, reflecting strong developer interest in AI-driven design-to-code workflows.",
+      "zh": "Cursor 宣布深度集成 Figma：AI 编程 Agent 现在可以直接在 Figma 中使用团队现有的设计系统创建新组件和前端界面。配套 Figma 插件负责处理变量、Token 和命名规范。这打通了设计与代码之间的鸿沟，让开发者无需离开编码工作流即可生成符合设计系统规范的 UI。该公告获得超过 1100 个点赞，反映出开发者对 AI 驱动的设计到代码工作流的强烈兴趣。"
+    },
+    "date": "2026-03-24"
   }
 ]
