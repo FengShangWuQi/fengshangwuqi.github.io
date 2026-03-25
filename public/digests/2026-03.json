@@ -222,5 +222,19 @@
       "zh": "Cloudflare 推出 Dynamic Workers 开放测试版，允许在轻量级 V8 隔离环境中安全执行 AI 生成的代码，启动时间达到毫秒级——比传统容器沙箱快约 100 倍。基于开源 workerd 运行时构建，Dynamic Workers 扩展了 'Code Mode' 概念：AI Agent 通过编写调用 API 的代码而非逐个工具调用来完成任务，Token 用量最多可减少 81%。这是 AI Agent 生态的重要基础设施原语。"
     },
     "date": "2026-03-24"
+  },
+  {
+    "id": "gpt-5-4-solves-frontier-math",
+    "title": {
+      "en": "GPT-5.4 Pro Solves an Open Problem in Mathematics, Confirmed by Epoch AI",
+      "zh": "GPT-5.4 Pro 解出一道数学公开问题，经 Epoch AI 确认"
+    },
+    "url": "https://epoch.ai/frontiermath/open-problems/ramsey-hypergraphs",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Epoch AI confirmed that GPT-5.4 Pro solved an open problem on Ramsey-style hypergraph partitions from the FrontierMath benchmark. The AI's solution improved known lower bounds with a novel approach that the problem contributor described as 'exciting' and plans to publish. Multiple frontier models — including Opus 4.6, Gemini 3.1 Pro, and GPT-5.4 — subsequently also solved it. This is a notable milestone in AI mathematical reasoning, as FrontierMath problems are specifically designed to be unsolved.",
+      "zh": "Epoch AI 确认 GPT-5.4 Pro 解出了 FrontierMath 基准中一道关于 Ramsey 型超图分割的公开问题。AI 的解法以一种新方法改进了已知下界，问题贡献者称其「令人兴奋」并计划发表论文。随后 Opus 4.6、Gemini 3.1 Pro 和 GPT-5.4 也各自独立求解成功。这是 AI 数学推理的重要里程碑——FrontierMath 的问题专为「未解决」而设计。"
+    },
+    "date": "2026-03-24"
   }
 ]
