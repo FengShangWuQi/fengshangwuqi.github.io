@@ -376,5 +376,19 @@
       "zh": "Karpathy 发布了一条引发广泛讨论的推文（14,800 赞），指出 LLM 个性化功能的核心问题：记忆功能对模型来说过于\"干扰\"。两个月前随口问的一个话题会被不断提起，仿佛是用户的深层兴趣。他分析原因：一是记忆系统采用朴素的 RAG 实现，无法聚合处理用户历史；二是更深层的训练偏差——模型在训练中学会了将上下文窗口中的所有信息都视为相关。这一观察在 AI 社区引起广泛共鸣，指向 LLM 产品设计中一个尚未解决的关键问题。"
     },
     "date": "2026-03-25"
+  },
+  {
+    "id": "disregard-that-prompt-injection-attacks",
+    "title": {
+      "en": "\"Disregard That!\" — Why Sharing Your Context Window Is a Security Risk",
+      "zh": "\"忽略上文！\"攻击：为什么共享上下文窗口是安全隐患"
+    },
+    "url": "https://calpaterson.com/disregard.html",
+    "source": "Lobsters",
+    "summary": {
+      "en": "Cal Paterson published a well-received analysis framing prompt injection attacks through an accessible analogy: the classic IRC prank where someone types on an unattended keyboard. The article argues that \"Disregard that!\" is a clearer name for what the industry calls prompt injection, and systematically explains why sharing context windows with untrusted content (emails, web pages, third-party tools) creates the same fundamental vulnerability. The piece connects to the broader AI security discourse around MCP and agentic systems.",
+      "zh": "Cal Paterson 发表文章，用经典 IRC 恶作剧（别人趁你离开时用你的键盘打字）类比 prompt injection 攻击。文章主张\"忽略上文！\"（Disregard that!）比 prompt injection 更直观地描述了这类漏洞的本质——当上下文窗口混入不可信内容（邮件、网页、第三方工具），就相当于把键盘交给了别人。文章系统分析了为什么这一问题在 MCP 和 Agent 系统中尤为严重，与当下 AI 安全讨论紧密相关。"
+    },
+    "date": "2026-03-25"
   }
 ]
