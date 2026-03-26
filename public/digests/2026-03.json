@@ -362,5 +362,19 @@
       "zh": "OpenAI 推出公开的安全漏洞赏金计划，专注于 AI 滥用和安全风险，范围超出传统安全漏洞。明确覆盖涉及 MCP（模型上下文协议）的 Agent 风险、prompt injection、数据泄露等 AI 特有场景。该计划与现有安全赏金互补，由安全团队和 Safety 团队共同分诊。这反映了行业对 AI Agent 系统引入的新型攻击面的重视——传统安全框架难以覆盖这些风险。"
     },
     "date": "2026-03-25"
+  },
+  {
+    "id": "karpathy-llm-memory-personalization-problem",
+    "title": {
+      "en": "Karpathy: LLM Memory Systems Are Too Distracting and Try Too Hard",
+      "zh": "Karpathy：LLM 记忆系统过于\"用力过猛\"，反而成为干扰"
+    },
+    "url": "https://x.com/karpathy/status/2036836816654147718",
+    "source": "X (@karpathy)",
+    "summary": {
+      "en": "Andrej Karpathy posted a widely-discussed thread (14,800 likes) about a fundamental issue with LLM personalization: memory features are overly distracting to models. A single question from months ago keeps resurfacing as a supposed deep interest, and the model tries too hard to use retrieved context. He attributes this to naive RAG-like implementations that don't process user history in aggregate, and a deeper training bias where models learn to treat all context as relevant. The observation resonated broadly across the AI community and highlights a key unsolved problem in LLM product design.",
+      "zh": "Karpathy 发布了一条引发广泛讨论的推文（14,800 赞），指出 LLM 个性化功能的核心问题：记忆功能对模型来说过于\"干扰\"。两个月前随口问的一个话题会被不断提起，仿佛是用户的深层兴趣。他分析原因：一是记忆系统采用朴素的 RAG 实现，无法聚合处理用户历史；二是更深层的训练偏差——模型在训练中学会了将上下文窗口中的所有信息都视为相关。这一观察在 AI 社区引起广泛共鸣，指向 LLM 产品设计中一个尚未解决的关键问题。"
+    },
+    "date": "2026-03-25"
   }
 ]
