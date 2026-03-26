@@ -250,5 +250,33 @@
       "zh": "Cursor 宣布深度集成 Figma：AI 编程 Agent 现在可以直接在 Figma 中使用团队现有的设计系统创建新组件和前端界面。配套 Figma 插件负责处理变量、Token 和命名规范。这打通了设计与代码之间的鸿沟，让开发者无需离开编码工作流即可生成符合设计系统规范的 UI。该公告获得超过 1100 个点赞，反映出开发者对 AI 驱动的设计到代码工作流的强烈兴趣。"
     },
     "date": "2026-03-24"
+  },
+  {
+    "id": "nodejs-march-2026-security-releases",
+    "title": {
+      "en": "Node.js Security Releases: High-Severity TLS DoS Fix Across All Active Lines",
+      "zh": "Node.js 安全更新：修复所有活跃版本线的高危 TLS 拒绝服务漏洞"
+    },
+    "url": "https://nodejs.org/en/blog/vulnerability/march-2026-security-releases",
+    "source": "Node.js Blog",
+    "summary": {
+      "en": "Node.js released security updates for versions 25.x, 24.x, 22.x, and 20.x addressing a high-severity TLS vulnerability (CVE-2026-21637). The flaw is an incomplete fix from a prior CVE — SNICallback invocations remain unprotected against synchronous exceptions, allowing an attacker to crash TLS servers with unexpected input. The release also includes undici security updates. All Node.js users running TLS servers should update immediately.",
+      "zh": "Node.js 为 25.x、24.x、22.x 和 20.x 版本发布安全更新，修复一个高危 TLS 漏洞（CVE-2026-21637）。该漏洞是之前 CVE 的不完整修复——SNICallback 调用未受同步异常保护，攻击者可通过意外输入使 TLS 服务器崩溃。此次更新还包含 undici 安全修复。所有运行 TLS 服务器的 Node.js 用户应立即更新。"
+    },
+    "date": "2026-03-24"
+  },
+  {
+    "id": "openai-shutting-down-sora",
+    "title": {
+      "en": "OpenAI Shuts Down Sora Video Generation App",
+      "zh": "OpenAI 关闭 Sora 视频生成应用"
+    },
+    "url": "https://www.hollywoodreporter.com/business/digital/openai-shutting-down-sora-ai-video-app-1236546187/",
+    "source": "Hollywood Reporter",
+    "summary": {
+      "en": "OpenAI announced it is shutting down Sora, its AI video generation application. The news was first shared via the official @soraofficialapp account on X and confirmed by Hollywood Reporter. Sora was one of OpenAI's most anticipated products when previewed in early 2024, but apparently did not achieve the product-market fit needed to sustain it. The Hugging Face CEO called for OpenAI to open-source the model.",
+      "zh": "OpenAI 宣布关闭其 AI 视频生成应用 Sora。消息最先由 @soraofficialapp 官方账号在 X 上发布，并经好莱坞记者确认。Sora 在 2024 年初预览时是 OpenAI 最受期待的产品之一，但显然未能达到维持运营所需的产品-市场契合度。Hugging Face CEO 呼吁 OpenAI 将该模型开源。"
+    },
+    "date": "2026-03-24"
   }
 ]
