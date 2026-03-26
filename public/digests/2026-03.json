@@ -278,5 +278,19 @@
       "zh": "OpenAI 宣布关闭其 AI 视频生成应用 Sora。消息最先由 @soraofficialapp 官方账号在 X 上发布，并经好莱坞记者确认。Sora 在 2024 年初预览时是 OpenAI 最受期待的产品之一，但显然未能达到维持运营所需的产品-市场契合度。Hugging Face CEO 呼吁 OpenAI 将该模型开源。"
     },
     "date": "2026-03-24"
+  },
+  {
+    "id": "structured-concurrency-for-javascript",
+    "title": {
+      "en": "Structured Concurrency Proposal for JavaScript Surfaces on Lobsters",
+      "zh": "JavaScript 结构化并发提案引发关注"
+    },
+    "url": "https://github.com/bakkot/structured-concurrency-for-js",
+    "source": "Lobsters",
+    "summary": {
+      "en": "A proposal to add structured concurrency to JavaScript gained traction on Lobsters. Authored by Kevin Gibbons (TC39 delegate), it explores binding child tasks to lexical scopes with automatic lifecycle management — similar to Java's StructuredTaskScope but adapted for JS's async/await model. Key principles include: child tasks are bound to scope, scope doesn't exit until children complete, and errors in one child cancel others. This could fundamentally change how JS handles concurrent async operations.",
+      "zh": "一项为 JavaScript 添加结构化并发的提案在 Lobsters 上引发关注。由 TC39 代表 Kevin Gibbons 撰写，提案探索将子任务绑定到词法作用域并自动管理生命周期——类似 Java 的 StructuredTaskScope，但适配 JS 的 async/await 模型。核心原则包括：子任务绑定到作用域、作用域在子任务完成前不退出、一个子任务出错时取消其他任务。这可能从根本上改变 JS 处理并发异步操作的方式。"
+    },
+    "date": "2026-03-24"
   }
 ]
