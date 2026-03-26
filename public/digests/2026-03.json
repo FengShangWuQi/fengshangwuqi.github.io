@@ -292,5 +292,61 @@
       "zh": "一项为 JavaScript 添加结构化并发的提案在 Lobsters 上引发关注。由 TC39 代表 Kevin Gibbons 撰写，提案探索将子任务绑定到词法作用域并自动管理生命周期——类似 Java 的 StructuredTaskScope，但适配 JS 的 async/await 模型。核心原则包括：子任务绑定到作用域、作用域在子任务完成前不退出、一个子任务出错时取消其他任务。这可能从根本上改变 JS 处理并发异步操作的方式。"
     },
     "date": "2026-03-24"
+  },
+  {
+    "id": "anthropic-claude-code-auto-mode",
+    "title": {
+      "en": "Anthropic Engineering Blog: How Claude Code Auto Mode Was Designed",
+      "zh": "Anthropic 工程博客：Claude Code Auto Mode 的设计思路"
+    },
+    "url": "https://www.anthropic.com/engineering/claude-code-auto-mode",
+    "source": "Anthropic Blog",
+    "summary": {
+      "en": "Anthropic published a detailed engineering post on Claude Code's new auto mode, which delegates approval decisions to model-based classifiers instead of requiring manual user confirmation for every file edit or command. The post documents real agentic misbehaviors from their incident log (deleting remote git branches, leaking auth tokens, running production migrations) and explains how a two-layer classifier system catches dangerous actions while letting safe operations run unattended. Auto mode targets a middle ground between the current --dangerously-skip-permissions flag and constant approval fatigue, where users accept 93% of prompts anyway.",
+      "zh": "Anthropic 发布工程博客，详解 Claude Code 新增的 auto mode 设计。该模式用基于模型的分类器代替手动审批，解决用户因频繁确认而产生的\"审批疲劳\"（数据显示 93% 的审批请求会被直接通过）。文章披露了内部 agent 事故日志中的真实案例——误删远程 git 分支、泄露 GitHub 认证令牌、对生产数据库执行迁移。auto mode 采用双层分类器架构，在无人值守执行安全操作的同时拦截危险行为，定位在完全跳过权限和逐条审批之间。"
+    },
+    "date": "2026-03-25"
+  },
+  {
+    "id": "cursor-self-hosted-cloud-agents",
+    "title": {
+      "en": "Cursor Launches Self-Hosted Cloud Agents for Enterprise",
+      "zh": "Cursor 推出自托管云端 Agent，代码不出企业内网"
+    },
+    "url": "https://cursor.com/blog/self-hosted-cloud-agents",
+    "source": "X (@cursor_ai)",
+    "summary": {
+      "en": "Cursor made self-hosted cloud agents generally available. These agents offer the same capabilities as Cursor's cloud agents—isolated VMs with terminal, browser, and desktop for autonomous coding—but run entirely within a customer's own infrastructure. Code, secrets, and build artifacts never leave the enterprise network. Brex, Money Forward, and Notion are early adopters. The move targets regulated industries and teams with complex internal build environments that need access to private caches, dependencies, and network endpoints.",
+      "zh": "Cursor 正式推出自托管云端 Agent，面向企业级用户开放。功能与 Cursor 云端 Agent 一致——每个 Agent 运行在独立 VM 中，拥有终端、浏览器和完整桌面环境，可自主完成克隆仓库、编写测试、提交 PR 等全流程。关键区别在于代码、密钥和构建产物完全不离开企业内网。Brex、Money Forward 和 Notion 是首批用户。该方案解决了合规行业和依赖内部构建缓存、私有依赖的团队的核心诉求。"
+    },
+    "date": "2026-03-25"
+  },
+  {
+    "id": "github-copilot-data-policy-change",
+    "title": {
+      "en": "GitHub Copilot Will Use Your Interaction Data for Training Starting April 24",
+      "zh": "GitHub Copilot 将从 4 月 24 日起使用交互数据训练模型"
+    },
+    "url": "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/",
+    "source": "GitHub Blog",
+    "summary": {
+      "en": "GitHub announced that from April 24, interaction data—inputs, outputs, code snippets, and associated context—from Copilot Free, Pro, and Pro+ users will be used to train and improve AI models unless users opt out. Business and Enterprise tiers are not affected. Users who previously opted out retain their preference. GitHub frames this as improving model understanding of development workflows and code pattern accuracy. The opt-out toggle is in GitHub Settings under \"Privacy.\"",
+      "zh": "GitHub 宣布从 4 月 24 日起，Copilot Free、Pro 和 Pro+ 用户的交互数据（输入、输出、代码片段及上下文）将默认用于 AI 模型训练，除非用户主动关闭。Business 和 Enterprise 版不受影响。此前已选择退出的用户设置保持不变。GitHub 称此举旨在提升模型对开发工作流的理解和代码建议的准确性。退出开关位于 GitHub Settings → Privacy。"
+    },
+    "date": "2026-03-25"
+  },
+  {
+    "id": "google-turboquant-extreme-compression",
+    "title": {
+      "en": "Google Research: TurboQuant — Extreme Vector Quantization for AI Efficiency",
+      "zh": "Google Research：TurboQuant — 极致向量量化压缩，提升 AI 推理效率"
+    },
+    "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Google Research introduced TurboQuant, a compression algorithm to be presented at ICLR 2026 that addresses the memory overhead problem in vector quantization. Traditional quantization methods add 1-2 extra bits per number for quantization constants, partially negating compression gains. TurboQuant eliminates this overhead, enabling more efficient KV-cache compression and vector search in large-scale AI systems. The paper also presents Quantized Johnson-Lindenstrauss transforms. The work received significant attention (500+ HN points), signaling broad interest in inference efficiency improvements.",
+      "zh": "Google Research 发布 TurboQuant（将在 ICLR 2026 上报告），解决向量量化中的内存开销问题。传统量化方法每个数值需要额外 1-2 bit 存储量化常数，部分抵消了压缩收益。TurboQuant 消除了这一开销，使 KV-cache 压缩和大规模向量搜索更加高效。论文同时提出了量化 Johnson-Lindenstrauss 变换。该工作在 Hacker News 上获得 500+ 积分，反映了业界对推理效率优化的持续关注。"
+    },
+    "date": "2026-03-25"
   }
 ]
