@@ -390,5 +390,19 @@
       "zh": "Cal Paterson 发表文章，用经典 IRC 恶作剧（别人趁你离开时用你的键盘打字）类比 prompt injection 攻击。文章主张\"忽略上文！\"（Disregard that!）比 prompt injection 更直观地描述了这类漏洞的本质——当上下文窗口混入不可信内容（邮件、网页、第三方工具），就相当于把键盘交给了别人。文章系统分析了为什么这一问题在 MCP 和 Agent 系统中尤为严重，与当下 AI 安全讨论紧密相关。"
     },
     "date": "2026-03-25"
+  },
+  {
+    "id": "claude-code-web-scheduled-tasks",
+    "title": {
+      "en": "Claude Code Launches Cloud Scheduled Tasks: Automated Recurring Work Without Local Machine",
+      "zh": "Claude Code 推出云端定时任务：无需本地机器即可自动化重复性工作"
+    },
+    "url": "https://code.claude.com/docs/en/web-scheduled-tasks",
+    "source": "Anthropic",
+    "summary": {
+      "en": "Anthropic launched cloud scheduled tasks for Claude Code on the web, enabling automated recurring work on Anthropic-managed infrastructure. Tasks like reviewing open PRs every morning, analyzing CI failures overnight, syncing documentation after merges, and running weekly dependency audits can now run even when your computer is off. The feature offers three scheduling tiers: cloud (Anthropic-hosted, no machine required), desktop (local machine, persistent), and /loop (session-scoped). Cloud tasks get a fresh repo clone, run autonomously without permission prompts, and support MCP connectors. Available to all Claude Code web users including Pro, Max, Team, and Enterprise tiers.",
+      "zh": "Anthropic 为 Claude Code 网页版推出云端定时任务功能，允许在 Anthropic 托管的基础设施上自动执行重复性工作。每天早上审查 PR、隔夜分析 CI 失败、合并后同步文档、每周依赖审计等任务现在即使关机也能持续运行。该功能提供三种调度方式：云端（Anthropic 托管，无需开机）、桌面端（本地持久化）和 /loop（会话级）。云端任务每次获取仓库最新克隆，无需权限确认即可自主执行，支持 MCP 连接器配置。面向所有 Claude Code 网页版用户开放，包括 Pro、Max、Team 和 Enterprise 版本。"
+    },
+    "date": "2026-03-27"
   }
 ]
