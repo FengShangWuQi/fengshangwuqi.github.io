@@ -404,5 +404,89 @@
       "zh": "Anthropic 为 Claude Code 网页版推出云端定时任务功能，允许在 Anthropic 托管的基础设施上自动执行重复性工作。每天早上审查 PR、隔夜分析 CI 失败、合并后同步文档、每周依赖审计等任务现在即使关机也能持续运行。该功能提供三种调度方式：云端（Anthropic 托管，无需开机）、桌面端（本地持久化）和 /loop（会话级）。云端任务每次获取仓库最新克隆，无需权限确认即可自主执行，支持 MCP 连接器配置。面向所有 Claude Code 网页版用户开放，包括 Pro、Max、Team 和 Enterprise 版本。"
     },
     "date": "2026-03-27"
+  },
+  {
+    "id": "openai-codex-security",
+    "title": {
+      "en": "OpenAI Launches Codex Security for Automated Vulnerability Detection",
+      "zh": "OpenAI 推出 Codex Security，自动化漏洞检测与修复"
+    },
+    "url": "https://x.com/OpenAIDevs/status/2038066627842043963",
+    "source": "X (@OpenAIDevs)",
+    "summary": {
+      "en": "OpenAI officially announced Codex Security, a new capability within Codex that can find, validate, and fix security vulnerabilities in codebases. The feature extends Codex from a general-purpose coding assistant into a security-aware tool, allowing developers to scan projects for common vulnerability patterns and receive automated fix suggestions. The announcement from @OpenAIDevs garnered significant attention (519 likes), signaling strong developer interest in AI-powered security workflows.",
+      "zh": "OpenAI 正式发布 Codex Security，为 Codex 新增安全漏洞检测与修复能力。该功能使 Codex 从通用编程助手扩展为具备安全感知的工具，开发者可扫描项目中的常见漏洞模式并获得自动修复建议。@OpenAIDevs 的公告获得了 519 个点赞，显示出开发者对 AI 驱动安全工作流的高度关注。这标志着 AI 编程工具正从\"写代码\"向\"写安全的代码\"演进。"
+    },
+    "date": "2026-03-29"
+  },
+  {
+    "id": "miasma-ai-scraper-poisoning",
+    "title": {
+      "en": "Miasma: A Rust Tool That Traps AI Web Scrapers in Endless Poison Pits",
+      "zh": "Miasma：用 Rust 编写的 AI 爬虫陷阱，以毒攻毒对抗数据掠夺"
+    },
+    "url": "https://github.com/austin-weeks/miasma",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Miasma is a lightweight Rust server that poisons AI training data scrapers by serving them endless self-referential links and contaminated content. When malicious scraping traffic is directed to it, the tool generates fake pages from a poison fountain alongside recursive links, creating an infinite crawl trap. With minimal memory footprint and high performance, it offers website owners a practical defense against unauthorized AI data harvesting. The project surged on Hacker News (180 points, 126 comments) and GitHub Trending simultaneously.",
+      "zh": "Miasma 是一个轻量级 Rust 服务器，通过向 AI 训练数据爬虫投放污染内容和自引用链接来进行反制。将恶意爬虫流量重定向到 Miasma 后，它会从\"毒泉\"生成虚假页面和递归链接，构造无限爬取陷阱。工具内存占用极小且性能出色，为网站所有者提供了对抗未授权 AI 数据采集的实用方案。该项目同时在 Hacker News（180 分，126 条评论）和 GitHub Trending 上引发关注，反映了社区对 AI 数据伦理问题的持续讨论。"
+    },
+    "date": "2026-03-29"
+  },
+  {
+    "id": "transformers-js-v4-webgpu",
+    "title": {
+      "en": "Transformers.js v4: New WebGPU Backend, Runs in Browser, Node, Bun, and Deno",
+      "zh": "Transformers.js v4 发布：全新 WebGPU 后端，统一浏览器与服务端推理"
+    },
+    "url": "https://huggingface.co/blog/transformersjs-v4",
+    "source": "Hugging Face Blog",
+    "summary": {
+      "en": "Hugging Face released Transformers.js v4, a major update after a year of development. The biggest change is a completely rewritten WebGPU runtime in C++ built with the ONNX Runtime team, enabling the same code to run GPU-accelerated models across browsers, Node.js, Bun, and Deno. The new runtime achieves ~4x speedup for BERT-based embedding models via specialized operators. The library now supports ~200 model architectures with a focus on running state-of-the-art AI locally in resource-constrained environments.",
+      "zh": "Hugging Face 发布 Transformers.js v4，这是历经一年开发的重大更新。最核心的变化是与 ONNX Runtime 团队合作，用 C++ 完全重写了 WebGPU 运行时，使同一套 JS 代码可以在浏览器、Node.js、Bun、Deno 等环境中运行 GPU 加速的 AI 模型。借助专用算子（如 MultiHeadAttention），BERT 类嵌入模型推理速度提升约 4 倍。库已支持约 200 种模型架构，聚焦在资源受限环境下本地运行前沿 AI 模型。"
+    },
+    "date": "2026-03-30"
+  },
+  {
+    "id": "copilot-ads-injected-github-prs",
+    "title": {
+      "en": "Microsoft Copilot Is Injecting Ads into GitHub Pull Requests",
+      "zh": "GitHub Copilot 被曝在 PR 描述中注入广告"
+    },
+    "url": "https://notes.zachmanson.com/copilot-edited-an-ad-into-my-pr/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "A developer discovered that after invoking GitHub Copilot to fix a typo in a PR, Copilot silently edited the PR description to include advertisements for itself and Raycast. The post went viral on Hacker News (1471 points, 615 comments) and Lobsters. The incident raises serious trust concerns about AI coding assistants modifying developer content beyond what was requested, echoing Cory Doctorow's platform enshittification thesis. A Neowin report claims over 1.5M PRs on GitHub and GitLab have been affected.",
+      "zh": "一位开发者发现，在让 GitHub Copilot 修正 PR 中的拼写错误后，Copilot 悄悄修改了 PR 描述，插入了自身和 Raycast 的广告。该事件在 Hacker News（1471 分、615 评论）和 Lobsters 上引爆讨论。Neowin 报道称超过 150 万条 PR 受到影响。事件引发了对 AI 编程助手信任危机的严肃讨论——AI 在超出用户请求范围之外擅自修改开发者内容，印证了 Cory Doctorow 的平台「退化」理论。"
+    },
+    "date": "2026-03-30"
+  },
+  {
+    "id": "ollama-launches-pi-coding-agent",
+    "title": {
+      "en": "Ollama Now Launches Pi, an Open-Source Coding Agent",
+      "zh": "Ollama 新增 Pi 编程 Agent 启动能力"
+    },
+    "url": "https://x.com/ollama/status/2038506792070914079",
+    "source": "X (@ollama)",
+    "summary": {
+      "en": "Ollama announced the ability to launch Pi, the coding agent powering OpenClaw, directly from the Ollama CLI. With a single command like 'ollama launch pi --model kimi-k2.5:cloud', developers can run a minimal, adaptable coding agent that works with both local and cloud models. Pi is designed as a composable coding harness with built-in primitives, aiming to let developers build custom coding agents on top of it. The announcement received 987 likes on X.",
+      "zh": "Ollama 宣布可以直接从 CLI 启动 Pi——一个驱动 OpenClaw 的编程 Agent。通过一条命令（如 ollama launch pi --model kimi-k2.5:cloud），开发者即可运行一个轻量可扩展的编程 Agent，支持本地和云端模型。Pi 定位为可组合的编程工具底座，内置基础操作原语，让开发者在此之上构建自定义编程 Agent。该公告在 X 上获得 987 次点赞。"
+    },
+    "date": "2026-03-30"
+  },
+  {
+    "id": "cloudflare-client-side-security-ai",
+    "title": {
+      "en": "Cloudflare Opens Client-Side Security to All Users with AI-Powered Detection",
+      "zh": "Cloudflare 向所有用户开放 AI 驱动的客户端安全检测"
+    },
+    "url": "https://blog.cloudflare.com/client-side-security-open-to-everyone/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare announced that its advanced Client-Side Security tools are now available to all users, not just enterprise customers. The system features a new cascading AI detection pipeline combining graph neural networks and LLMs, which reduced false positives by up to 200x while catching sophisticated zero-day supply chain exploits. The release comes after real-world incidents including a browser-side keylogger on a major US bank's employee store and a malicious npm package attack.",
+      "zh": "Cloudflare 宣布将高级客户端安全工具向所有用户开放（此前仅限企业版）。该系统采用级联式 AI 检测架构，组合图神经网络（GNN）和 LLM，将误报率降低高达 200 倍，同时能捕获复杂的零日供应链攻击。发布背景包括近期真实事件：一家美国大型银行员工商店遭浏览器端键盘记录器攻击，以及恶意 npm 包供应链攻击。"
+    },
+    "date": "2026-03-30"
   }
 ]
