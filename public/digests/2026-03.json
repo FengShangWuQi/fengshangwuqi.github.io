@@ -488,5 +488,19 @@
       "zh": "Cloudflare 宣布将高级客户端安全工具向所有用户开放（此前仅限企业版）。该系统采用级联式 AI 检测架构，组合图神经网络（GNN）和 LLM，将误报率降低高达 200 倍，同时能捕获复杂的零日供应链攻击。发布背景包括近期真实事件：一家美国大型银行员工商店遭浏览器端键盘记录器攻击，以及恶意 npm 包供应链攻击。"
     },
     "date": "2026-03-30"
+  },
+  {
+    "id": "vulnerability-research-ai-agents-cooked",
+    "title": {
+      "en": "Vulnerability Research Is Cooked: AI Agents Are Finding Zero-Days",
+      "zh": "漏洞研究变天：AI Agent 正在自动挖掘零日漏洞"
+    },
+    "url": "https://sockpuppet.org/blog/2026/03/30/vulnerability-research-is-cooked/",
+    "source": "Lobsters",
+    "summary": {
+      "en": "Security veteran Thomas Ptacek argues that within months, AI coding agents will fundamentally alter exploit development economics. Frontier models are approaching a step function where substantial vulnerability research will happen by simply pointing an agent at a source tree and asking it to find zero-days, citing early indications from Anthropic's red team research. The essay traces the evolution of vulnerability research from 1990s stack overflows through the 2010s font-rendering era, arguing that AI agents will commoditize the mechanical work that made exploit development an elite craft.",
+      "zh": "安全领域资深人士 Thomas Ptacek 撰文指出，数月内 AI 编程 Agent 将从根本上改变漏洞挖掘的经济学。前沿模型正逼近一个阶跃点——只需将 Agent 指向源码树并要求「找零日漏洞」，大量高影响力漏洞研究即可自动完成。文章引用了 Anthropic 红队研究的早期信号，并回顾了从 90 年代栈溢出到 2010 年代字体渲染漏洞的历史演变，论证 AI Agent 将使原本属于精英技艺的漏洞挖掘工作被大规模自动化。"
+    },
+    "date": "2026-03-30"
   }
 ]
