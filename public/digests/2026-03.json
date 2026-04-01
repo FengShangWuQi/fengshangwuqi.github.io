@@ -502,5 +502,19 @@
       "zh": "安全领域资深人士 Thomas Ptacek 撰文指出，数月内 AI 编程 Agent 将从根本上改变漏洞挖掘的经济学。前沿模型正逼近一个阶跃点——只需将 Agent 指向源码树并要求「找零日漏洞」，大量高影响力漏洞研究即可自动完成。文章引用了 Anthropic 红队研究的早期信号，并回顾了从 90 年代栈溢出到 2010 年代字体渲染漏洞的历史演变，论证 AI Agent 将使原本属于精英技艺的漏洞挖掘工作被大规模自动化。"
     },
     "date": "2026-03-30"
+  },
+  {
+    "id": "axios-npm-supply-chain-attack",
+    "title": {
+      "en": "Supply Chain Attack on Axios: Malicious Dependency Deploys RAT via npm",
+      "zh": "Axios 遭供应链攻击：恶意依赖通过 npm 植入远程访问木马"
+    },
+    "url": "https://socket.dev/blog/axios-npm-package-compromised",
+    "source": "Socket Security / X (@karpathy)",
+    "summary": {
+      "en": "Socket Security discovered a supply chain attack targeting Axios, the most popular JavaScript HTTP client with 100M weekly npm downloads. Versions 1.14.1 and 0.30.4 were compromised with a malicious dependency plain-crypto-js@4.2.1, published minutes before the Axios release and absent from the project's GitHub. The payload is a multi-stage remote access trojan (RAT) capable of executing arbitrary commands, exfiltrating system data, and persisting on infected machines. Andrej Karpathy amplified the finding (9,038 likes), highlighting that developers cannot trust pip install or npm install when LLMs also run these on their behalf.",
+      "zh": "Socket Security 发现针对 Axios 的供应链攻击。Axios 是最流行的 JavaScript HTTP 客户端，npm 周下载量达 1 亿。其 1.14.1 和 0.30.4 版本被植入恶意依赖 plain-crypto-js@4.2.1，该包在 Axios 发布前数分钟上传，且不存在于项目 GitHub 仓库。恶意载荷是一个多阶段远程访问木马（RAT），可执行任意命令、窃取系统数据并实现持久化驻留。Karpathy 转发该事件（9038 赞），强调当 LLM 也在代为执行 pip install 和 npm install 时，开发者已无法信任包管理器的安全性。"
+    },
+    "date": "2026-03-31"
   }
 ]
