@@ -57,4 +57,4 @@ Nuxt 3 multi-page personal site with TypeScript, deployed to GitHub Pages at `/`
 - No comments unless the logic is non-obvious. Code structure and naming should be self-explanatory. Avoid section markers (`<!-- Top bar -->`) and restating what code does (`// Random micro-drift`)
 - File naming: composables use camelCase with `use` prefix (`useGallery.ts`); all other non-component files use kebab-case (`format-date.ts`, `gallery.ts`). Components use PascalCase (`SectionCard.vue`). Server API routes use Nuxt's HTTP method suffix (`images.get.ts`)
 - Component naming: names describe the component's role, not visual structure; avoid abbreviations (`DotGrid` not `BgGrid`); domain-directory components should be understandable without the directory prefix (`DayGroup` not `Node`, `Timeline` not `Tree`)
-- Commit messages follow Conventional Commits, no AI signature (`/commit` skill available)
+- Commit messages follow Conventional Commits, no AI signature
