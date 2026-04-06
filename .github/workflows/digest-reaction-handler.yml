@@ -1,0 +1,326 @@
+name: Digest Reaction Handler
+
+on:
+  schedule:
+    - cron: '*/10 1-16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  handle-reactions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Process digest reactions
+        id: process
+        uses: actions/github-script@v7
+        env:
+          CROSS_REPO_PAT: ${{ secrets.CROSS_REPO_PAT }}
+          CLAUDE_CODE_TOKEN: ${{ secrets.CLAUDE_CODE_TOKEN }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs')
+            const path = require('path')
+            const { execSync } = require('child_process')
+
+            const STATE_FILE = '.github/digest-reaction-state.json'
+            const DIGESTS_DIR = 'public/digests'
+            const IMAGES_DIR = 'public/images'
+            const DIGEST_REPO_OWNER = 'FengShangWuQi'
+            const DIGEST_REPO_NAME = 'digest'
+
+            // Load or initialize state
+            let state = {}
+            if (fs.existsSync(STATE_FILE)) {
+              try {
+                state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'))
+              } catch (e) {
+                core.warning(`Failed to parse state file: ${e.message}`)
+              }
+            }
+
+            const processedIds = new Set(state.processedReactions || [])
+            const newProcessed = []
+            let changed = false
+
+            // Parse digest-meta from comment body
+            function parseDigestMeta(body) {
+              const match = body.match(/<!--\s*digest-meta\s*([\s\S]*?)-->/m)
+              if (!match) return null
+              const meta = {}
+              for (const line of match[1].trim().split('\n')) {
+                const colonIdx = line.indexOf(':')
+                if (colonIdx === -1) continue
+                const key = line.slice(0, colonIdx).trim()
+                const value = line.slice(colonIdx + 1).trim()
+                if (key) meta[key] = value
+              }
+              return Object.keys(meta).length > 0 ? meta : null
+            }
+
+            // Load monthly digest JSON
+            function loadMonthlyDigest(date) {
+              const month = date.slice(0, 7)
+              const filePath = path.join(DIGESTS_DIR, `${month}.json`)
+              if (fs.existsSync(filePath)) {
+                try {
+                  return JSON.parse(fs.readFileSync(filePath, 'utf8'))
+                } catch (e) {
+                  return []
+                }
+              }
+              return []
+            }
+
+            // Save monthly digest JSON
+            function saveMonthlyDigest(date, items) {
+              const month = date.slice(0, 7)
+              const filePath = path.join(DIGESTS_DIR, `${month}.json`)
+              fs.mkdirSync(DIGESTS_DIR, { recursive: true })
+              fs.writeFileSync(filePath, JSON.stringify(items, null, 2) + '\n')
+            }
+
+            // Write to digest repo via GitHub API
+            async function writeToDigestRepo(filePath, content) {
+              if (!process.env.CROSS_REPO_PAT) {
+                core.warning('CROSS_REPO_PAT not set, skipping cross-repo write')
+                return
+              }
+              const crossRepoOctokit = require('@actions/github').getOctokit(process.env.CROSS_REPO_PAT)
+              let sha
+              try {
+                const { data } = await crossRepoOctokit.rest.repos.getContent({
+                  owner: DIGEST_REPO_OWNER,
+                  repo: DIGEST_REPO_NAME,
+                  path: filePath,
+                })
+                sha = data.sha
+              } catch (e) {
+                // File doesn't exist yet
+              }
+              const encoded = Buffer.from(JSON.stringify(content, null, 2) + '\n').toString('base64')
+              await crossRepoOctokit.rest.repos.createOrUpdateFileContents({
+                owner: DIGEST_REPO_OWNER,
+                repo: DIGEST_REPO_NAME,
+                path: filePath,
+                message: `chore: update ${filePath} from reactions`,
+                content: encoded,
+                sha,
+              })
+            }
+
+            // Handle heart reaction on article
+            async function handleArticleHeart(meta, commentUrl) {
+              const items = loadMonthlyDigest(meta.date)
+              const alreadyExists = items.some(item => item.url === meta.url)
+              if (alreadyExists) {
+                core.info(`Article ${meta.url} already saved`)
+                return
+              }
+              items.unshift({
+                id: meta.id,
+                title: { en: meta.title_en, zh: meta.title_zh },
+                url: meta.url,
+                source: meta.source,
+                summary: { en: '', zh: '' },
+                date: meta.date,
+              })
+              saveMonthlyDigest(meta.date, items)
+              core.info(`Saved article ${meta.id} to ${meta.date.slice(0, 7)} digest`)
+              changed = true
+            }
+
+            // Handle minus-one reaction on article
+            async function handleArticleDislike(meta) {
+              let prefs = {}
+              try {
+                if (!process.env.CROSS_REPO_PAT) return
+                const crossRepoOctokit = require('@actions/github').getOctokit(process.env.CROSS_REPO_PAT)
+                try {
+                  const { data } = await crossRepoOctokit.rest.repos.getContent({
+                    owner: DIGEST_REPO_OWNER,
+                    repo: DIGEST_REPO_NAME,
+                    path: 'data/preferences.json',
+                  })
+                  prefs = JSON.parse(Buffer.from(data.content, 'base64').toString())
+                } catch (e) {
+                  // File doesn't exist
+                }
+                if (!prefs.disliked) prefs.disliked = []
+                if (!prefs.disliked.find(p => p.url === meta.url)) {
+                  prefs.disliked.push({ url: meta.url, source: meta.source, date: meta.date })
+                  await writeToDigestRepo('data/preferences.json', prefs)
+                  core.info(`Recorded dislike for ${meta.url}`)
+                }
+              } catch (e) {
+                core.warning(`Failed to record dislike: ${e.message}`)
+              }
+            }
+
+            // Handle eyes reaction on article - deep analysis via Claude Code
+            async function handleArticleDeepAnalysis(meta, issueNumber, commentId) {
+              if (!process.env.CLAUDE_CODE_TOKEN) {
+                core.warning('CLAUDE_CODE_TOKEN not set, skipping deep analysis')
+                return
+              }
+              try {
+                execSync('npm install -g @anthropic-ai/claude-code', { stdio: 'pipe' })
+                const prompt = `请用 300-500 字中文对以下文章进行深度解读：\n\n标题：${meta.title_zh}\n链接：${meta.url}\n来源：${meta.source}\n\n请包含：核心观点、技术亮点、影响分析、对 AI/Frontend 开发者的价值。直接输出分析内容，不加前缀。`
+                const result = execSync(
+                  `ANTHROPIC_API_KEY="${process.env.CLAUDE_CODE_TOKEN}" claude -p "${prompt.replace(/"/g, '\\"')}"`,
+                  { stdio: 'pipe', timeout: 120000 }
+                ).toString().trim()
+                if (result) {
+                  await github.rest.issues.createComment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: issueNumber,
+                    body: `> 👀 **深度解读**\n\n${result}`,
+                  })
+                  core.info(`Posted deep analysis for ${meta.url}`)
+                }
+              } catch (e) {
+                core.warning(`Deep analysis failed: ${e.message}`)
+              }
+            }
+
+            // Handle heart reaction on wallpaper
+            async function handleWallpaperHeart(meta) {
+              try {
+                const https = require('https')
+                const imageUrl = meta.url
+                const ext = imageUrl.split('.').pop().split('?')[0] || 'jpg'
+                const fileName = `wallpaper-${meta.wallhaven_id}.${ext}`
+                const imagePath = path.join(IMAGES_DIR, fileName)
+                if (fs.existsSync(imagePath)) {
+                  core.info(`Wallpaper ${fileName} already saved`)
+                  return
+                }
+                fs.mkdirSync(IMAGES_DIR, { recursive: true })
+                await new Promise((resolve, reject) => {
+                  const file = fs.createWriteStream(imagePath)
+                  https.get(imageUrl, res => {
+                    res.pipe(file)
+                    file.on('finish', () => { file.close(); resolve() })
+                  }).on('error', reject)
+                })
+                core.info(`Downloaded wallpaper ${fileName}`)
+                changed = true
+              } catch (e) {
+                core.warning(`Failed to download wallpaper: ${e.message}`)
+              }
+            }
+
+            // Handle minus-one reaction on wallpaper
+            async function handleWallpaperDislike(meta) {
+              try {
+                if (!process.env.CROSS_REPO_PAT) return
+                let prefs = {}
+                const crossRepoOctokit = require('@actions/github').getOctokit(process.env.CROSS_REPO_PAT)
+                try {
+                  const { data } = await crossRepoOctokit.rest.repos.getContent({
+                    owner: DIGEST_REPO_OWNER,
+                    repo: DIGEST_REPO_NAME,
+                    path: 'data/wallpaper-preferences.json',
+                  })
+                  prefs = JSON.parse(Buffer.from(data.content, 'base64').toString())
+                } catch (e) {}
+                if (!prefs.disliked) prefs.disliked = []
+                if (!prefs.disliked.includes(meta.wallhaven_id)) {
+                  prefs.disliked.push(meta.wallhaven_id)
+                  await writeToDigestRepo('data/wallpaper-preferences.json', prefs)
+                  core.info(`Recorded wallpaper dislike for ${meta.wallhaven_id}`)
+                }
+              } catch (e) {
+                core.warning(`Failed to record wallpaper dislike: ${e.message}`)
+              }
+            }
+
+            // Main: find open digest issues and process reactions
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'digest',
+              state: 'open',
+              per_page: 5,
+            })
+
+            for (const issue of issues) {
+              const { data: comments } = await github.rest.issues.listComments({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                per_page: 100,
+              })
+
+              for (const comment of comments) {
+                const meta = parseDigestMeta(comment.body)
+                if (!meta) continue
+
+                const { data: reactions } = await github.rest.reactions.listForIssueComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  comment_id: comment.id,
+                  per_page: 100,
+                })
+
+                for (const reaction of reactions) {
+                  const reactionKey = `${comment.id}:${reaction.id}`
+                  if (processedIds.has(reactionKey)) continue
+
+                  core.info(`Processing reaction ${reaction.content} on comment ${comment.id} (${meta.type})`)
+
+                  try {
+                    if (meta.type === 'article') {
+                      if (reaction.content === 'heart') {
+                        await handleArticleHeart(meta, comment.html_url)
+                      } else if (reaction.content === '-1') {
+                        await handleArticleDislike(meta)
+                      } else if (reaction.content === 'eyes') {
+                        await handleArticleDeepAnalysis(meta, issue.number, comment.id)
+                      }
+                    } else if (meta.type === 'wallpaper') {
+                      if (reaction.content === 'heart') {
+                        await handleWallpaperHeart(meta)
+                      } else if (reaction.content === '-1') {
+                        await handleWallpaperDislike(meta)
+                      }
+                    }
+                  } catch (e) {
+                    core.warning(`Error processing reaction ${reactionKey}: ${e.message}`)
+                  }
+
+                  newProcessed.push(reactionKey)
+                  processedIds.add(reactionKey)
+                }
+              }
+            }
+
+            if (newProcessed.length > 0 || changed) {
+              // Prune old entries (keep last 1000)
+              const allProcessed = Array.from(processedIds).slice(-1000)
+              const newState = { processedReactions: allProcessed, updatedAt: new Date().toISOString() }
+              fs.mkdirSync(path.dirname(STATE_FILE), { recursive: true })
+              fs.writeFileSync(STATE_FILE, JSON.stringify(newState, null, 2) + '\n')
+              core.setOutput('changed', 'true')
+              core.info(`Processed ${newProcessed.length} new reactions`)
+            } else {
+              core.setOutput('changed', 'false')
+              core.info('No new reactions to process')
+            }
+
+      - name: Commit changes
+        if: steps.process.outputs.changed == 'true'
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git add .
+          git diff --staged --quiet || git commit -m "chore: sync digest from reactions [skip ci]"
+          git push
