@@ -26,5 +26,19 @@
       "zh": "微软暂停了多个知名开源项目贡献者的开发者账户，据报道此举是某项协调政策行动的一部分。被暂停的账户涉及 GitHub 上托管的重要项目维护者，引发外界对关键开源基础设施平台依赖风险的担忧。此事再次点燃了关于依赖单一企业平台进行开源托管风险的讨论，以及构建更具韧性的去中心化替代方案的必要性。该报道在 Hacker News 获得 349 个赞和 116 条评论。"
     },
     "date": "2026-04-10"
+  },
+  {
+    "id": "france-government-linux-desktop-exit-windows",
+    "title": {
+      "en": "France Launches Government-Wide Linux Desktop Plan as Windows Exit Begins",
+      "zh": "法国政府启动全国性 Linux 桌面迁移，正式开启脱微软之路"
+    },
+    "url": "https://www.numerique.gouv.fr/sinformer/espace-presse/souverainete-numerique-reduction-dependances-extra-europeennes/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "France's government has announced a national plan to migrate public sector desktops from Windows to Linux, as part of a broader push for digital sovereignty and reducing dependency on extra-European tech companies. The initiative covers central government agencies and signals one of the largest Western government Linux migrations to date. The announcement was driven by concerns over geopolitical software dependencies and long-term security supply chain risks. It gathered over 768 Hacker News upvotes, reflecting wide interest from the developer community in government open-source adoption.",
+      "zh": "法国政府宣布推行全国性公共部门桌面从 Windows 迁移至 Linux 的计划，这是推动数字主权、减少对欧洲以外科技公司依赖的更大战略的一部分。该举措涵盖中央政府机构，是迄今规模最大的西方政府 Linux 迁移行动之一。公告背后的驱动力来自对地缘政治软件依赖和长期安全供应链风险的担忧，在 Hacker News 获得逾 768 票赞，开发者社区对政府层面的开源采用表现出浓厚兴趣。"
+    },
+    "date": "2026-04-10"
   }
 ]
