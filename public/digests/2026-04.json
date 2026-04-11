@@ -40,5 +40,19 @@
       "zh": "法国政府宣布推行全国性公共部门桌面从 Windows 迁移至 Linux 的计划，这是推动数字主权、减少对欧洲以外科技公司依赖的更大战略的一部分。该举措涵盖中央政府机构，是迄今规模最大的西方政府 Linux 迁移行动之一。公告背后的驱动力来自对地缘政治软件依赖和长期安全供应链风险的担忧，在 Hacker News 获得逾 768 票赞，开发者社区对政府层面的开源采用表现出浓厚兴趣。"
     },
     "date": "2026-04-10"
+  },
+  {
+    "id": "openai-voice-mode-older-weaker-model",
+    "title": {
+      "en": "Simon Willison: OpenAI Voice Mode Runs on a Much Older, Weaker Model",
+      "zh": "Simon Willison：OpenAI 语音模式背后是更旧、更弱的模型"
+    },
+    "url": "https://x.com/simonw/status/2042611602726539283",
+    "source": "X (@simonw)",
+    "summary": {
+      "en": "Developer and researcher Simon Willison highlighted a non-obvious reality about OpenAI's voice mode: it runs on a significantly older and weaker model than the latest text-based ChatGPT. Users who interact with AI through voice may assume they're accessing the most capable model, but the voice pipeline relies on a different, less powerful model due to latency and real-time constraints. Willison's observation sparked discussion about how model capability perception differs across modalities and the technical trade-offs involved in real-time AI voice interfaces.",
+      "zh": "开发者和研究者 Simon Willison 揭示了 OpenAI 语音模式的一个不为人知的事实：它使用的模型比最新文本版 ChatGPT 明显更旧、更弱。通过语音与 AI 交互的用户可能以为在使用最强大的模型，但受限于延迟和实时性要求，语音流水线实际依赖一个不同的、性能较低的模型。Willison 的观察引发了关于不同模态下模型能力感知差异以及实时 AI 语音接口技术权衡的广泛讨论。"
+    },
+    "date": "2026-04-10"
   }
 ]
