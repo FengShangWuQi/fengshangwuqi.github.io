@@ -7,6 +7,10 @@
     },
     "url": "https://security.googleblog.com/2026/04/protecting-cookies-with-device-bound.html",
     "source": "Lobsters",
+    "summary": {
+      "en": "Google's security team has published details on Device Bound Session Credentials (DBSC), a new web platform security mechanism that cryptographically binds browser cookies to a specific device using hardware-backed keys. DBSC addresses cookie theft attacks where stolen session cookies are replayed from other machines, a common attack vector against web applications. The proposal builds on existing secure enclave hardware already present in modern devices and is designed for eventual standardization as a web platform primitive. It is a significant step forward for authentication security on the web.",
+      "zh": "Google 安全团队发布了设备绑定会话凭证（DBSC）的详细介绍，这是一种新的 Web 平台安全机制，通过硬件密钥将浏览器 Cookie 与特定设备进行加密绑定。DBSC 解决了 Cookie 被盗后在其他设备上重放的攻击问题，这是针对 Web 应用的常见攻击向量。该提案基于现代设备中已有的安全飞地硬件，并被设计为未来标准化的 Web 平台原语，是 Web 身份验证安全的重要进步。"
+    },
     "date": "2026-04-10",
     "storedAt": "2026-04-11",
     "syncedAt": "2026-04-11T11:39:01.401303"
