@@ -68,5 +68,19 @@
       "zh": "一个社区维护的 Claude Code 最佳实践仓库已累计超过 35000 颗 GitHub 星，单日新增 1248 颗。该项目汇集了社区贡献的使用技巧、工作流和模式，旨在最大化 Claude 作为编码 Agent 的效能。其快速增长紧随 andrej-karpathy-skills 仓库的病毒式传播，折射出社区众包并标准化有效 AI 编码 Agent 行为的更大浪潮，也表明特定提示词与工作流策略在 AI 辅助开发领域已逐渐形成社区共识。"
     },
     "date": "2026-04-10"
+  },
+  {
+    "id": "microsoft-markitdown-surge-2353-stars",
+    "title": {
+      "en": "Microsoft's markitdown Surges 2,353 Stars in One Day Amid AI Pipeline Adoption",
+      "zh": "微软 markitdown 单日涨星 2353，AI 流水线采用势头迅猛"
+    },
+    "url": "https://github.com/microsoft/markitdown",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Microsoft's markitdown, a Python library for converting various file formats including Office documents, PDFs, and images to Markdown, surged 2,353 GitHub stars in a single day to reach nearly 99,000 total. The massive spike likely reflects growing adoption in AI and RAG pipelines where Markdown is a preferred format for feeding documents into LLMs. It represents one of the largest single-day star gains for a Microsoft open source project in recent memory, signaling that document-to-Markdown conversion has become a core infrastructure need in the AI application stack.",
+      "zh": "微软开源 Python 库 markitdown 单日新增 2353 颗 GitHub 星，总量逼近 99000。该库用于将 Office 文档、PDF、图片等多种格式转换为 Markdown。这波爆发式增长很可能源于 AI 和 RAG 流水线中对 Markdown 作为文档喂入 LLM 格式的日益采用。这是微软开源项目近期单日涨星最多的案例之一，表明文档转 Markdown 已成为 AI 应用栈中的核心基础设施需求。"
+    },
+    "date": "2026-04-10"
   }
 ]
