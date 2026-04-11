@@ -54,5 +54,19 @@
       "zh": "开发者和研究者 Simon Willison 揭示了 OpenAI 语音模式的一个不为人知的事实：它使用的模型比最新文本版 ChatGPT 明显更旧、更弱。通过语音与 AI 交互的用户可能以为在使用最强大的模型，但受限于延迟和实时性要求，语音流水线实际依赖一个不同的、性能较低的模型。Willison 的观察引发了关于不同模态下模型能力感知差异以及实时 AI 语音接口技术权衡的广泛讨论。"
     },
     "date": "2026-04-10"
+  },
+  {
+    "id": "claude-code-best-practice-35k-stars",
+    "title": {
+      "en": "Claude Code Best Practice Guide Hits 35K Stars with 1,248 Daily Gain",
+      "zh": "Claude Code 最佳实践指南以 1248 日增星冲至 35K"
+    },
+    "url": "https://github.com/shanraisshan/claude-code-best-practice",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "A community-maintained repository of Claude Code best practices has reached over 35,000 GitHub stars with 1,248 new stars in a single day. The project aggregates community-sourced tips, workflows, and patterns for getting the best results from Claude as a coding agent. Its rapid growth follows the viral success of the andrej-karpathy-skills repository, reflecting a broader community movement to crowdsource and codify effective AI coding agent behavior. The momentum underscores growing consensus around specific prompting and workflow strategies for AI-assisted development.",
+      "zh": "一个社区维护的 Claude Code 最佳实践仓库已累计超过 35000 颗 GitHub 星，单日新增 1248 颗。该项目汇集了社区贡献的使用技巧、工作流和模式，旨在最大化 Claude 作为编码 Agent 的效能。其快速增长紧随 andrej-karpathy-skills 仓库的病毒式传播，折射出社区众包并标准化有效 AI 编码 Agent 行为的更大浪潮，也表明特定提示词与工作流策略在 AI 辅助开发领域已逐渐形成社区共识。"
+    },
+    "date": "2026-04-10"
   }
 ]
