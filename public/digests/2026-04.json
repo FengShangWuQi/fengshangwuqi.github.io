@@ -96,5 +96,19 @@
       "zh": "最新报道揭示，FBI 通过利用 iPhone 推送通知数据（即苹果存储的推送通知元数据），成功恢复了已删除的 Signal 消息。Signal 消息在传输过程中经过加密，但在 iOS 系统中会留下与通知相关的痕迹，执法机构正是利用了这一点。这一发现对端对端加密假设具有重要影响，揭示出设备操作系统层级的元数据如何能够颠覆应用层面的隐私保障。该报道在 Hacker News 获得 338 个赞和 162 条评论。"
     },
     "date": "2026-04-10"
+  },
+  {
+    "id": "openai-illinois-ai-liability-bill",
+    "title": {
+      "en": "OpenAI Backs Illinois Bill to Limit AI Lab Liability for Model Harm",
+      "zh": "OpenAI 支持伊利诺伊州法案，寻求限制 AI 公司对模型危害的法律责任"
+    },
+    "url": "https://www.wired.com/story/openai-backs-bill-exempt-ai-firms-model-harm-lawsuits/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "OpenAI is backing an Illinois state bill that would significantly limit when AI companies can be held legally liable for harms caused by their models. The legislation would exempt AI labs from liability in many harm scenarios, raising concerns from civil liberties groups and researchers about corporate accountability in AI. Critics argue the bill would shield AI companies from consequences just as more powerful AI systems are being deployed in high-stakes domains. The story received 358 Hacker News upvotes and 255 comments, reflecting broad concern about AI governance.",
+      "zh": "OpenAI 正在支持一项伊利诺伊州法案，该法案将大幅限制 AI 公司因其模型造成危害而承担法律责任的场景。该立法将在许多危害情形下豁免 AI 实验室的责任，引发公民自由团体和研究人员对 AI 企业问责制的担忧。批评者认为，该法案将在更强大的 AI 系统大规模应用于高风险领域之际，为 AI 公司提供免责保护。该报道在 Hacker News 获得 358 个赞和 255 条评论，反映出社区对 AI 治理的广泛关切。"
+    },
+    "date": "2026-04-10"
   }
 ]
