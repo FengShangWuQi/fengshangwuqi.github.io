@@ -82,5 +82,19 @@
       "zh": "微软开源 Python 库 markitdown 单日新增 2353 颗 GitHub 星，总量逼近 99000。该库用于将 Office 文档、PDF、图片等多种格式转换为 Markdown。这波爆发式增长很可能源于 AI 和 RAG 流水线中对 Markdown 作为文档喂入 LLM 格式的日益采用。这是微软开源项目近期单日涨星最多的案例之一，表明文档转 Markdown 已成为 AI 应用栈中的核心基础设施需求。"
     },
     "date": "2026-04-10"
+  },
+  {
+    "id": "fbi-signal-deleted-messages-iphone-notifications",
+    "title": {
+      "en": "FBI Recovered Deleted Signal Messages via iPhone Notification Data",
+      "zh": "FBI 借助 iPhone 推送通知数据，成功恢复已删除的 Signal 消息"
+    },
+    "url": "https://9to5mac.com/2026/04/09/fbi-used-iphone-notification-data-to-retrieve-deleted-signal-messages/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "A new report reveals that the FBI was able to recover deleted Signal messages by exploiting iPhone notification data, specifically the push notification metadata stored by Apple. Signal messages, while encrypted in transit, leave notification-related traces in iOS systems that law enforcement was able to leverage. This discovery has significant implications for end-to-end encryption assumptions and highlights how metadata at the device OS level can undermine application-level privacy guarantees. The report received 338 Hacker News upvotes and 162 comments.",
+      "zh": "最新报道揭示，FBI 通过利用 iPhone 推送通知数据（即苹果存储的推送通知元数据），成功恢复了已删除的 Signal 消息。Signal 消息在传输过程中经过加密，但在 iOS 系统中会留下与通知相关的痕迹，执法机构正是利用了这一点。这一发现对端对端加密假设具有重要影响，揭示出设备操作系统层级的元数据如何能够颠覆应用层面的隐私保障。该报道在 Hacker News 获得 338 个赞和 162 条评论。"
+    },
+    "date": "2026-04-10"
   }
 ]
