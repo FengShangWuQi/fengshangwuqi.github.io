@@ -1,0 +1,14 @@
+[
+  {
+    "id": "google-device-bound-session-credentials",
+    "title": {
+      "en": "Google Introduces Device Bound Session Credentials to Protect Browser Cookies",
+      "zh": "Google 推出设备绑定会话凭证，强化浏览器 Cookie 安全防护"
+    },
+    "url": "https://security.googleblog.com/2026/04/protecting-cookies-with-device-bound.html",
+    "source": "Lobsters",
+    "date": "2026-04-10",
+    "storedAt": "2026-04-11",
+    "syncedAt": "2026-04-11T11:39:01.401303"
+  }
+]
