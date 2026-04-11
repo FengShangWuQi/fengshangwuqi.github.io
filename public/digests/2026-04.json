@@ -12,5 +12,19 @@
       "zh": "Google 安全团队发布了设备绑定会话凭证（DBSC）的详细介绍，这是一种新的 Web 平台安全机制，通过硬件密钥将浏览器 Cookie 与特定设备进行加密绑定。DBSC 解决了 Cookie 被盗后在其他设备上重放的攻击问题，这是针对 Web 应用的常见攻击向量。该提案基于现代设备中已有的安全飞地硬件，并被设计为未来标准化的 Web 平台原语，是 Web 身份验证安全的重要进步。"
     },
     "date": "2026-04-10"
+  },
+  {
+    "id": "microsoft-suspends-open-source-dev-accounts",
+    "title": {
+      "en": "Microsoft Suspends Dev Accounts for High-Profile Open Source Projects",
+      "zh": "微软暂停多个知名开源项目的开发者账户"
+    },
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-suspends-dev-accounts-for-high-profile-open-source-projects/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Microsoft has suspended the developer accounts of contributors to several high-profile open source projects, reportedly as part of a coordinated policy action. The suspensions affected maintainers of major projects hosted on GitHub, raising concerns about platform dependency risk for critical open-source infrastructure. The incident re-ignited debate about the risks of relying on a single corporate platform for open source hosting and the need for resilient, decentralized alternatives. The story gathered 349 Hacker News upvotes and 116 comments.",
+      "zh": "微软暂停了多个知名开源项目贡献者的开发者账户，据报道此举是某项协调政策行动的一部分。被暂停的账户涉及 GitHub 上托管的重要项目维护者，引发外界对关键开源基础设施平台依赖风险的担忧。此事再次点燃了关于依赖单一企业平台进行开源托管风险的讨论，以及构建更具韧性的去中心化替代方案的必要性。该报道在 Hacker News 获得 349 个赞和 116 条评论。"
+    },
+    "date": "2026-04-10"
   }
 ]
