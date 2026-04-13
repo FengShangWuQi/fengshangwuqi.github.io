@@ -124,5 +124,19 @@
       "zh": "Claude Code Pro Max 层级用户反映，尽管使用强度属于适度水平，5x 配额却在短短 1.5 小时内耗尽，该话题在 Hacker News 获得 395 票赞和 326 条评论。GitHub issue 线程记录了大量开发者的不满，许多人无法在 Pro Max 方案下完成一整天的工作。多名用户报告实际 token 消耗远超预期。此次事件令外界对 Anthropic 用量计算方式及 Pro Max 配额结构能否满足专业日常使用产生严重质疑。"
     },
     "date": "2026-04-12"
+  },
+  {
+    "id": "everything-claude-code-agent-harness",
+    "title": {
+      "en": "everything-claude-code: Agent Harness Optimization System Hits 152K Stars",
+      "zh": "everything-claude-code：Agent Harness 优化系统突破 15.2 万星"
+    },
+    "url": "https://github.com/affaan-m/everything-claude-code",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "The \"everything-claude-code\" repository, a comprehensive agent harness performance optimization system for Claude Code featuring skills configurations, behavioral instincts, and workflow enhancements, has amassed 152,000 GitHub stars. The project systematically improves Claude Code's reliability and task performance through curated harness configurations, addressing the unpredictability that many developers experience with vanilla Claude Code. Its massive adoption signals that the developer community is actively engineering structured behavioral layers on top of Claude Code to improve outcomes on complex tasks. This represents a growing meta-layer ecosystem built specifically to tune and extend AI coding agents.",
+      "zh": "\"everything-claude-code\" 仓库是一款为 Claude Code 量身打造的全面 Agent Harness 性能优化系统，涵盖技能配置、行为直觉及工作流增强，目前已累积 15.2 万 GitHub 星。该项目通过精心设计的 Harness 配置系统性提升 Claude Code 的可靠性和任务表现，解决了大量开发者在使用原生 Claude Code 时遭遇的不可预测性问题。如此大规模的采用表明，开发者社区正在积极为 Claude Code 构建结构化行为层，以优化复杂任务的执行效果。这代表了一个专门用于调优和扩展 AI 编码 Agent 的元层生态系统的兴起。"
+    },
+    "date": "2026-04-12"
   }
 ]
