@@ -110,5 +110,19 @@
       "zh": "OpenAI 正在支持一项伊利诺伊州法案，该法案将大幅限制 AI 公司因其模型造成危害而承担法律责任的场景。该立法将在许多危害情形下豁免 AI 实验室的责任，引发公民自由团体和研究人员对 AI 企业问责制的担忧。批评者认为，该法案将在更强大的 AI 系统大规模应用于高风险领域之际，为 AI 公司提供免责保护。该报道在 Hacker News 获得 358 个赞和 255 条评论，反映出社区对 AI 治理的广泛关切。"
     },
     "date": "2026-04-10"
+  },
+  {
+    "id": "claude-code-pro-max-quota-exhausted",
+    "title": {
+      "en": "Claude Code Pro Max 5x Quota Exhausted in 1.5 Hours Despite Moderate Usage",
+      "zh": "Claude Code Pro Max 5x 配额 1.5 小时内耗尽，用量并不激进"
+    },
+    "url": "https://github.com/anthropics/claude-code/issues/45756",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Users on Claude Code Pro Max tier are reporting that their 5x quota is being exhausted in as little as 1.5 hours despite moderate usage, drawing 395 Hacker News upvotes and 326 comments. The GitHub issue thread documents widespread frustration, with developers unable to complete a full workday on the Pro Max plan. Multiple users report unexpectedly high token consumption that does not align with their perceived usage levels. The incident raises serious questions about Anthropic's usage accounting methodology and whether the Pro Max quota structure is viable for professional daily use.",
+      "zh": "Claude Code Pro Max 层级用户反映，尽管使用强度属于适度水平，5x 配额却在短短 1.5 小时内耗尽，该话题在 Hacker News 获得 395 票赞和 326 条评论。GitHub issue 线程记录了大量开发者的不满，许多人无法在 Pro Max 方案下完成一整天的工作。多名用户报告实际 token 消耗远超预期。此次事件令外界对 Anthropic 用量计算方式及 Pro Max 配额结构能否满足专业日常使用产生严重质疑。"
+    },
+    "date": "2026-04-12"
   }
 ]
