@@ -138,5 +138,47 @@
       "zh": "\"everything-claude-code\" 仓库是一款为 Claude Code 量身打造的全面 Agent Harness 性能优化系统，涵盖技能配置、行为直觉及工作流增强，目前已累积 15.2 万 GitHub 星。该项目通过精心设计的 Harness 配置系统性提升 Claude Code 的可靠性和任务表现，解决了大量开发者在使用原生 Claude Code 时遭遇的不可预测性问题。如此大规模的采用表明，开发者社区正在积极为 Claude Code 构建结构化行为层，以优化复杂任务的执行效果。这代表了一个专门用于调优和扩展 AI 编码 Agent 的元层生态系统的兴起。"
     },
     "date": "2026-04-12"
+  },
+  {
+    "id": "ultraworkers-claw-code-rust-unlocked",
+    "title": {
+      "en": "claw-code: Rust AI Coding Agent Codebase Finally Open-Sourced at 182K Stars",
+      "zh": "claw-code：Rust AI 编码 Agent 代码库终于开源，累积 18.2 万星"
+    },
+    "url": "https://github.com/ultraworkers/claw-code",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "The \"claw-code\" repository by ultraworkers, described as \"The fastest repo in history\" and a previously private Rust-based AI coding agent codebase, has been publicly unlocked and reached 182,000 GitHub stars while trending globally. The message \"The repo is finally unlocked. enjoy the party!\" signals that this was a highly anticipated open-source release from a project that had been kept private. Its exceptional star count in Rust reflects accumulated community demand from developers awaiting access to this codebase. The release represents a major addition to the high-performance, Rust-based AI coding agent ecosystem.",
+      "zh": "ultraworkers 的 \"claw-code\" 仓库——一个基于 Rust 的 AI 编码 Agent 代码库，被描述为历史上最快的仓库——日前正式解锁并开源，已累积 18.2 万 GitHub 星并登上全球热门榜。终于解锁了，开派对吧！的描述表明，这是一次社区期待已久的开源发布，此前代码库一直保持私有。其在 Rust 生态的超高星量折射出开发者对该代码库访问权限的长期积累需求。此次发布为高性能 Rust 系 AI 编码 Agent 生态再添重磅一员。"
+    },
+    "date": "2026-04-12"
+  },
+  {
+    "id": "bytedance-deer-flow-superagent-harness",
+    "title": {
+      "en": "ByteDance deer-flow: Open-Source Long-Horizon SuperAgent Harness at 60K Stars",
+      "zh": "字节跳动 deer-flow：开源长周期 SuperAgent Harness 突破 6 万星"
+    },
+    "url": "https://github.com/bytedance/deer-flow",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "ByteDance's deer-flow, an open-source long-horizon SuperAgent harness capable of sustained research, coding, and writing across complex multi-step tasks, has reached 60,000 GitHub stars and is trending on GitHub. The framework is built for production-grade autonomous agents that need to maintain context and execute coherently over extended workflows. With ByteDance's backing, it brings enterprise engineering standards to the open-source SuperAgent space, competing with offerings from Anthropic, LangChain, and independent research groups. Its rapid adoption reflects developer interest in enterprise-grade, open-source alternatives to proprietary managed agent platforms.",
+      "zh": "字节跳动的 deer-flow 是一款能够在复杂多步骤任务中持续研究、编码和写作的开源长周期 SuperAgent Harness，目前已突破 6 万 GitHub 星并登上热门榜。该框架专为需要跨扩展工作流维持上下文并连贯执行的生产级自主 Agent 而设计。凭借字节跳动背书，它将企业级工程标准带入开源 SuperAgent 领域，与 Anthropic、LangChain 及独立研究团队的同类框架展开竞争。其快速增长折射出开发者对企业级开源替代方案相对于专有托管 Agent 平台的强烈兴趣。"
+    },
+    "date": "2026-04-12"
+  },
+  {
+    "id": "oh-my-openagent-harness-rebrand",
+    "title": {
+      "en": "oh-my-openagent: Popular Agent Harness Rebrands from oh-my-opencode at 50K Stars",
+      "zh": "oh-my-openagent：热门 Agent Harness 从 oh-my-opencode 品牌重塑，累积 5 万星"
+    },
+    "url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "The \"oh-my-openagent\" repository, previously known as \"oh-my-opencode,\" has rebranded from a coding-focused agent to a broader general-purpose agent harness, reaching 50,000 GitHub stars on GitHub Trending. The rename from \"opencode\" to \"openagent\" signals the project's deliberate expansion beyond code generation toward general autonomous agent capabilities. With 50,000 stars in TypeScript, it represents a significant community-built alternative to proprietary agent harnesses. The rebrand mirrors the industry-wide transition from narrow coding agents to general-purpose autonomous agent frameworks.",
+      "zh": "\"oh-my-openagent\"（前身为 \"oh-my-opencode\"）已完成品牌重塑，将定位从编码专属 Agent 拓展为更广泛的通用 Agent Harness，在 GitHub 热门榜上累积了 5 万颗星。从 \"opencode\" 到 \"openagent\" 的更名标志着该项目有意突破代码生成范畴、迈向通用自主 Agent 能力。凭借 TypeScript 生态的 5 万颗星，它成为社区构建的专有 Agent Harness 重要替代方案。此次品牌重塑与行业从单一编码 Agent 向通用自主 Agent 框架转型的大趋势高度呼应。"
+    },
+    "date": "2026-04-12"
   }
 ]
