@@ -180,5 +180,20 @@
       "zh": "\"oh-my-openagent\"（前身为 \"oh-my-opencode\"）已完成品牌重塑，将定位从编码专属 Agent 拓展为更广泛的通用 Agent Harness，在 GitHub 热门榜上累积了 5 万颗星。从 \"opencode\" 到 \"openagent\" 的更名标志着该项目有意突破代码生成范畴、迈向通用自主 Agent 能力。凭借 TypeScript 生态的 5 万颗星，它成为社区构建的专有 Agent Harness 重要替代方案。此次品牌重塑与行业从单一编码 Agent 向通用自主 Agent 框架转型的大趋势高度呼应。"
     },
     "date": "2026-04-12"
+  },
+  {
+    "id": "cloudflare-openai-agent-cloud",
+    "date": "2026-04-13",
+    "title": {
+      "en": "Cloudflare and OpenAI Launch Agent Cloud for Enterprise AI Workflows",
+      "zh": "Cloudflare 与 OpenAI 联手推出企业级 AI Agent Cloud"
+    },
+    "summary": {
+      "en": "Cloudflare has partnered with OpenAI to bring GPT-5.4 and Codex to its Agent Cloud platform, enabling enterprises to build, deploy, and scale AI agents for real-world tasks with built-in speed and security. The integration combines Cloudflare's global edge infrastructure with OpenAI's latest models, offering a turnkey environment for agentic workflows. This positions Cloudflare Agent Cloud as a first-class platform for enterprises that want to run AI agents close to users with zero-trust security and low latency.",
+      "zh": "Cloudflare 与 OpenAI 合作，将 GPT-5.4 和 Codex 引入其 Agent Cloud 平台，使企业能够快速构建、部署和扩展面向真实业务的 AI Agent，同时内置速度与安全保障。此次集成将 Cloudflare 的全球边缘基础设施与 OpenAI 最新模型相结合，为 Agent 工作流提供开箱即用的环境。这使 Cloudflare Agent Cloud 成为企业在靠近用户侧、以零信任安全和低延迟运行 AI Agent 的一流平台。"
+    },
+    "url": "https://openai.com/index/cloudflare-openai-agent-cloud",
+    "source": "OpenAI Blog",
+    "favoritedAt": "2026-04-14T09:45:40.173772+08:00"
   }
 ]
