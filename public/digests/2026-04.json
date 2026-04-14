@@ -195,5 +195,20 @@
     "url": "https://openai.com/index/cloudflare-openai-agent-cloud",
     "source": "OpenAI Blog",
     "favoritedAt": "2026-04-14T09:45:40.173772+08:00"
+  },
+  {
+    "id": "josh-comeau-squash-stretch-svg-animation",
+    "date": "2026-04-13",
+    "title": {
+      "en": "Josh Comeau: Applying Disney's Squash-and-Stretch to SVG Micro-Interactions",
+      "zh": "Josh Comeau：用迪士尼压缩拉伸原理打造 SVG 微交互动效"
+    },
+    "summary": {
+      "en": "Josh Comeau has published a new tutorial exploring Disney's first principle of animation — squash and stretch — and how it can be applied to create SVG micro-interactions that feel natural and believable. The piece walks through practical techniques for adding organic motion to UI elements, demonstrating how a small animation detail can have an outsized impact on perceived quality. It is a well-crafted resource for frontend developers looking to elevate their interfaces with motion design fundamentals.",
+      "zh": "Josh Comeau 发布新教程，探索迪士尼动画第一原则——压缩与拉伸——如何应用于创建自然、可信的 SVG 微交互动效。文章详细讲解了为 UI 元素添加有机动态效果的实用技巧，展示了一个小小的动画细节如何对感知质量产生巨大影响。对于希望运用动效设计基础知识提升界面品质的前端开发者，这是一份精心制作的学习资源。"
+    },
+    "url": "https://www.joshwcomeau.com/animation/squash-and-stretch/",
+    "source": "Josh Comeau",
+    "favoritedAt": "2026-04-14T09:47:15.129203+08:00"
   }
 ]
