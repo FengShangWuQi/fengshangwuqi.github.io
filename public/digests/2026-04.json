@@ -210,5 +210,19 @@
     "url": "https://www.joshwcomeau.com/animation/squash-and-stretch/",
     "source": "Josh Comeau",
     "favoritedAt": "2026-04-14T09:47:15.129203+08:00"
+  },
+  {
+    "id": "cloudflare-managed-oauth-ai-agents",
+    "title": {
+      "en": "Cloudflare Launches Managed OAuth for AI Agent Authentication",
+      "zh": "Cloudflare 推出 Managed OAuth，让 AI Agent 安全访问内部应用"
+    },
+    "url": "https://blog.cloudflare.com/managed-oauth-for-access/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare announced Managed OAuth for Access, enabling AI agents to securely navigate internal applications by authenticating on behalf of users via RFC 9728. It eliminates the need for insecure service accounts while giving agents properly scoped access. This solves a fundamental challenge of how autonomous agents interact with protected internal resources, marking a significant step toward enterprise-grade AI agent security.",
+      "zh": "Cloudflare 推出 Managed OAuth for Access，让 AI Agent 能够基于 RFC 9728 代表用户安全访问内部应用，无需使用不安全的服务账号即可为 Agent 提供适当范围的权限。这解决了自主 Agent 如何与受保护内部资源交互的根本性挑战，是 AI Agent 企业级安全的重要里程碑。"
+    },
+    "date": "2026-04-14"
   }
 ]
