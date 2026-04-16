@@ -224,5 +224,19 @@
       "zh": "Cloudflare 推出 Managed OAuth for Access，让 AI Agent 能够基于 RFC 9728 代表用户安全访问内部应用，无需使用不安全的服务账号即可为 Agent 提供适当范围的权限。这解决了自主 Agent 如何与受保护内部资源交互的根本性挑战，是 AI Agent 企业级安全的重要里程碑。"
     },
     "date": "2026-04-14"
+  },
+  {
+    "id": "gemini-3-1-flash-tts-expressive-speech",
+    "title": {
+      "en": "Google Launches Gemini 3.1 Flash TTS with Granular Audio Control and 70 Languages",
+      "zh": "Google 发布 Gemini 3.1 Flash TTS：支持精细音频控制与 70 种语言"
+    },
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/",
+    "source": "Google AI Blog",
+    "summary": {
+      "en": "Google released Gemini 3.1 Flash TTS, a next-generation text-to-speech model with granular audio control across 70 languages.",
+      "zh": "Google 发布了 Gemini 3.1 Flash TTS，下一代文本转语音模型，支持精细音频控制，覆盖 70 种语言。"
+    },
+    "date": "2026-04-15"
   }
 ]
