@@ -238,5 +238,19 @@
       "zh": "Google 发布了 Gemini 3.1 Flash TTS，下一代文本转语音模型，支持精细音频控制，覆盖 70 种语言。"
     },
     "date": "2026-04-15"
+  },
+  {
+    "id": "cloudflare-project-think-agents-sdk",
+    "title": {
+      "en": "Cloudflare Announces Project Think: Next-Gen Platform for Persistent AI Agents",
+      "zh": "Cloudflare 发布 Project Think：面向持久化 AI Agent 的下一代平台"
+    },
+    "url": "https://blog.cloudflare.com/project-think-agents-sdk/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare announced Project Think, a next-gen platform for persistent AI agents with long-term memory and tool calling.",
+      "zh": "Cloudflare 发布 Project Think，为 AI Agent 提供持久化运行能力，支持长期记忆和跨会话状态保持。"
+    },
+    "date": "2026-04-15"
   }
 ]
