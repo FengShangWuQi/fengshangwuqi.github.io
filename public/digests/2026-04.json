@@ -252,5 +252,19 @@
       "zh": "Cloudflare 发布 Project Think，为 AI Agent 提供持久化运行能力，支持长期记忆和跨会话状态保持。"
     },
     "date": "2026-04-15"
+  },
+  {
+    "id": "gemma-4-native-iphone-offline-inference",
+    "title": {
+      "en": "Google Gemma 4 Runs Natively on iPhone with Full Offline AI Inference",
+      "zh": "Google Gemma 4 在 iPhone 上原生运行，实现完全离线 AI 推理"
+    },
+    "url": "https://blog.google/products/gemma/gemma-4-native-iphone-offline-inference/ios/",
+    "source": "Google AI Blog",
+    "summary": {
+      "en": "Google Gemma 4 model now runs natively on iPhone with full offline AI inference capabilities.",
+      "zh": "Google 宣布 Gemma 4 可在 iPhone 上原生运行，实现完全离线 AI 推理，适合隐私敏感场景。"
+    },
+    "date": "2026-04-15"
   }
 ]
