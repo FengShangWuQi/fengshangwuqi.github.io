@@ -308,5 +308,19 @@
       "zh": "Rust 编程语言团队发布了 1.95.0 版本，这是该语言稳步演进中的又一里程碑。Rust 在性能关键领域持续获得关注，包括 WebAssembly 工具链、AI 推理引擎以及 Rolldown 和 Biome 等前端构建工具。此次发布延续了 Rust 常规的六周发布节奏，为 Web 开发工具链中日益重要的基石语言带来增量改进。"
     },
     "date": "2026-04-16"
+  },
+  {
+    "id": "cloudflare-ai-platform-inference-layer",
+    "title": {
+      "en": "Cloudflare Launches AI Platform: A Unified Inference Layer for AI Agents",
+      "zh": "Cloudflare 推出 AI Platform：面向 AI Agent 的统一推理层"
+    },
+    "url": "https://blog.cloudflare.com/ai-platform/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare announced its AI Platform, evolving AI Gateway into a unified inference layer that lets developers call models from 14+ providers through a single integration. New features include Workers AI binding integration and an expanded model catalog with multimodal support. The platform is designed specifically for agents that need to seamlessly switch between providers, reducing the integration overhead of building multi-model AI applications.",
+      "zh": "Cloudflare 发布 AI Platform，将 AI Gateway 升级为统一推理层，开发者可通过单一集成调用 14 家以上模型提供商的模型。新功能包括 Workers AI 绑定集成以及支持多模态模型的扩展目录。该平台专为需要无缝切换提供商的 Agent 设计，大幅降低了构建多模型 AI 应用的集成复杂度。"
+    },
+    "date": "2026-04-16"
   }
 ]
