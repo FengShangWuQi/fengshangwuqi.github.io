@@ -280,5 +280,19 @@
       "zh": "Anthropic 发布了最新旗舰模型 Claude Opus 4.7，在 Hacker News 获得 660 票赞和 516 条评论。该模型迅速在开发者生态中获得采用——Cursor 在当天宣布支持并提供限时半价优惠，该公告获得超过 4000 个赞。多位知名开发者称赞该模型的自主能力和独特个性，Cursor 评价其在推理方面令人印象深刻地自主且更具创造性。"
     },
     "date": "2026-04-16"
+  },
+  {
+    "id": "meta-ai-agents-capacity-optimization",
+    "title": {
+      "en": "Meta Reveals How Unified AI Agents Optimize Infrastructure at Hyperscale",
+      "zh": "Meta 揭秘统一 AI Agent 如何在超大规模下优化基础设施"
+    },
+    "url": "https://engineering.fb.com/2026/04/16/developer-tools/capacity-efficiency-at-meta-how-unified-ai-agents-optimize-performance-at-hyperscale/",
+    "source": "Engineering at Meta",
+    "summary": {
+      "en": "Meta's engineering team published a deep technical post on their Capacity Efficiency Program, where they built an AI agent platform that automates finding and fixing performance issues across their infrastructure. The agents leverage encoded domain expertise through a standardized tool interface, saving power and freeing engineers from manual performance tuning. This represents a significant real-world deployment of AI agents for infrastructure optimization at one of the world's largest tech companies.",
+      "zh": "Meta 工程团队发布了一篇关于其容量效率计划的深度技术文章，介绍了团队构建的 AI Agent 平台如何在整个基础设施中自动发现和修复性能问题。这些 Agent 通过标准化工具接口利用编码的领域专业知识，节省能源并将工程师从手动性能调优中解放出来。这代表了 AI Agent 在全球最大科技公司之一的基础设施优化领域的重要实际部署。"
+    },
+    "date": "2026-04-16"
   }
 ]
