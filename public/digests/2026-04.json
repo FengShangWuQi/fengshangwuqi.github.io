@@ -294,5 +294,19 @@
       "zh": "Meta 工程团队发布了一篇关于其容量效率计划的深度技术文章，介绍了团队构建的 AI Agent 平台如何在整个基础设施中自动发现和修复性能问题。这些 Agent 通过标准化工具接口利用编码的领域专业知识，节省能源并将工程师从手动性能调优中解放出来。这代表了 AI Agent 在全球最大科技公司之一的基础设施优化领域的重要实际部署。"
     },
     "date": "2026-04-16"
+  },
+  {
+    "id": "rust-1-95-0-release",
+    "title": {
+      "en": "Rust 1.95.0 Released",
+      "zh": "Rust 1.95.0 正式发布"
+    },
+    "url": "https://blog.rust-lang.org/2026/04/16/Rust-1.95.0/",
+    "source": "Lobsters",
+    "summary": {
+      "en": "The Rust programming language team released version 1.95.0, marking another milestone in the language's steady evolution. Rust continues to gain traction in performance-critical domains including WebAssembly tooling, AI inference engines, and frontend build tools like Rolldown and Biome. The release maintains Rust's regular six-week cadence, delivering incremental improvements to the language powering an increasingly significant portion of the web development toolchain.",
+      "zh": "Rust 编程语言团队发布了 1.95.0 版本，这是该语言稳步演进中的又一里程碑。Rust 在性能关键领域持续获得关注，包括 WebAssembly 工具链、AI 推理引擎以及 Rolldown 和 Biome 等前端构建工具。此次发布延续了 Rust 常规的六周发布节奏，为 Web 开发工具链中日益重要的基石语言带来增量改进。"
+    },
+    "date": "2026-04-16"
   }
 ]
