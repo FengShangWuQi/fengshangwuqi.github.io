@@ -266,5 +266,19 @@
       "zh": "Google 宣布 Gemma 4 可在 iPhone 上原生运行，实现完全离线 AI 推理，适合隐私敏感场景。"
     },
     "date": "2026-04-15"
+  },
+  {
+    "id": "claude-opus-4-7-release",
+    "title": {
+      "en": "Anthropic Releases Claude Opus 4.7 to Widespread Acclaim",
+      "zh": "Anthropic 发布 Claude Opus 4.7，获业界广泛好评"
+    },
+    "url": "https://www.anthropic.com/news/claude-opus-4-7",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Anthropic released Claude Opus 4.7, its latest and most capable AI model, drawing 660 Hacker News upvotes and 516 comments. The model quickly gained adoption across the developer ecosystem — Cursor announced same-day availability with a limited-time 50% discount, gathering over 4,000 likes. Multiple prominent developers praised the model's autonomous capabilities and distinctive personality, with Cursor finding it impressively autonomous and more creative in its reasoning.",
+      "zh": "Anthropic 发布了最新旗舰模型 Claude Opus 4.7，在 Hacker News 获得 660 票赞和 516 条评论。该模型迅速在开发者生态中获得采用——Cursor 在当天宣布支持并提供限时半价优惠，该公告获得超过 4000 个赞。多位知名开发者称赞该模型的自主能力和独特个性，Cursor 评价其在推理方面令人印象深刻地自主且更具创造性。"
+    },
+    "date": "2026-04-16"
   }
 ]
