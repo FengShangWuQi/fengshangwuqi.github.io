@@ -322,5 +322,19 @@
       "zh": "Cloudflare 发布 AI Platform，将 AI Gateway 升级为统一推理层，开发者可通过单一集成调用 14 家以上模型提供商的模型。新功能包括 Workers AI 绑定集成以及支持多模态模型的扩展目录。该平台专为需要无缝切换提供商的 Agent 设计，大幅降低了构建多模型 AI 应用的集成复杂度。"
     },
     "date": "2026-04-16"
+  },
+  {
+    "id": "cloudflare-agent-memory-service",
+    "title": {
+      "en": "Cloudflare Launches Agent Memory: Managed Persistent Memory for AI Agents",
+      "zh": "Cloudflare 推出 Agent Memory：面向 AI Agent 的托管持久化记忆服务"
+    },
+    "url": "https://blog.cloudflare.com/introducing-agent-memory/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare released Agent Memory, a managed service giving AI agents persistent memory.",
+      "zh": "Cloudflare 发布 Agent Memory，为 AI Agent 提供持久化记忆能力。"
+    },
+    "date": "2026-04-17"
   }
 ]
