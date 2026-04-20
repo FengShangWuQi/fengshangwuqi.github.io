@@ -336,5 +336,19 @@
       "zh": "Cloudflare 发布 Agent Memory，为 AI Agent 提供持久化记忆能力。"
     },
     "date": "2026-04-17"
+  },
+  {
+    "id": "vercel-april-2026-security-incident",
+    "title": {
+      "en": "Vercel Discloses April 2026 Security Incident",
+      "zh": "Vercel 披露 2026 年 4 月安全事件"
+    },
+    "url": "https://vercel.com/kb/bulletin/vercel-april-2026-security-incident",
+    "source": "Lobsters",
+    "summary": {
+      "en": "Vercel has published a security bulletin detailing a security incident affecting its platform in April 2026, with community discussion on Lobsters and additional context from security researcher DiffeKey on social media. As the deployment platform underpinning a significant portion of the modern frontend ecosystem — powering Next.js applications for millions of developers — any security incident at Vercel carries broad implications for the web development community. The bulletin is hosted on Vercel's knowledge base and provides details on the incident scope and recommended actions for affected users.",
+      "zh": "Vercel 发布安全公告，披露了 2026 年 4 月影响其平台的一起安全事件，Lobsters 社区展开讨论，安全研究者 DiffeKey 在社交媒体上补充了更多细节。作为支撑现代前端生态重要组成部分的部署平台——为数百万开发者的 Next.js 应用提供服务——Vercel 的任何安全事件都对 Web 开发社区有广泛影响。该公告发布在 Vercel 知识库，提供了事件范围及受影响用户的建议操作。"
+    },
+    "date": "2026-04-19"
   }
 ]
