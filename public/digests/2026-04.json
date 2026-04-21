@@ -350,5 +350,33 @@
       "zh": "Vercel 发布安全公告，披露了 2026 年 4 月影响其平台的一起安全事件，Lobsters 社区展开讨论，安全研究者 DiffeKey 在社交媒体上补充了更多细节。作为支撑现代前端生态重要组成部分的部署平台——为数百万开发者的 Next.js 应用提供服务——Vercel 的任何安全事件都对 Web 开发社区有广泛影响。该公告发布在 Vercel 知识库，提供了事件范围及受影响用户的建议操作。"
     },
     "date": "2026-04-19"
+  },
+  {
+    "id": "git-2-54-highlights",
+    "title": {
+      "en": "Git 2.54 Released with New Features and Improvements",
+      "zh": "Git 2.54 发布，带来多项新特性与改进"
+    },
+    "url": "https://github.blog/open-source/git/highlights-from-git-2-54/",
+    "source": "GitHub Blog",
+    "summary": {
+      "en": "The open-source Git project released version 2.54, with the GitHub Blog publishing a highlights overview of the most notable features and changes since the previous release. As the version control system underpinning virtually all modern software development, each major Git release carries implications for millions of developers and the tools built on top of it. The post covers the most interesting improvements that teams should be aware of when upgrading.",
+      "zh": "开源 Git 项目发布了 2.54 版本，GitHub Blog 对此次发布中最值得关注的新特性和变更进行了重点介绍。Git 是几乎所有现代软件开发的基石版本控制系统，每次重要发布都对数百万开发者及其上层工具产生影响。文章梳理了团队升级时需要了解的最重要改进。"
+    },
+    "date": "2026-04-20"
+  },
+  {
+    "id": "github-fake-star-economy-investigation",
+    "title": {
+      "en": "Investigation Exposes GitHub's Fake Star Economy",
+      "zh": "调查揭露 GitHub 虚假 Star 灰色产业"
+    },
+    "url": "https://awesomeagents.ai/news/github-fake-stars-investigation/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "An investigation into GitHub's fake star ecosystem reached the front page of Hacker News with 455 upvotes and 259 comments, exposing the scale of artificial star inflation on the platform. The report details how fake stars are bought and sold to manipulate repository credibility, trending rankings, and developer trust signals. The findings are particularly relevant as GitHub stars remain a primary social proof metric for open-source projects and are used by developers, investors, and automated systems to assess project quality and popularity.",
+      "zh": "一项关于 GitHub 虚假 Star 产业链的调查登上 Hacker News 首页，获得 455 票赞和 259 条评论，揭露了平台上 Star 注水的规模。报告详述了虚假 Star 的买卖如何操控仓库可信度、Trending 排名以及开发者信任信号。这一发现尤为重要，因为 GitHub Star 仍是开源项目的主要社会证明指标，被开发者、投资人乃至自动化系统用于评估项目质量和热度。"
+    },
+    "date": "2026-04-20"
   }
 ]
