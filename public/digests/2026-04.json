@@ -392,5 +392,19 @@
       "zh": "一份详细的事后复盘还原了一个 Roblox 外挂如何与一个 AI 工具叠加，最终引发 Vercel 托管平台的完整性宕机，在 Hacker News 获得 260+ 票赞、r/webdev 获得 800+ 票赞。事件在多个社区持续发酵，焦点集中在凭证泄露风险以及 AI 辅助开发工具的安全态势。相关讨论中用户被反复提醒轮换密钥、检查哪些环境变量被标为「sensitive」。该事件重新点燃了围绕现代 Serverless 平台供应链与工具链风险的讨论。"
     },
     "date": "2026-04-21"
+  },
+  {
+    "id": "cloudflare-past-bots-vs-humans-anonymous-credentials",
+    "title": {
+      "en": "Cloudflare: Moving Past Bots vs. Humans with Anonymous Credentials",
+      "zh": "Cloudflare：用匿名凭证取代「机器人 vs 人类」的旧模型"
+    },
+    "url": "https://blog.cloudflare.com/past-bots-and-humans/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare argues that traditional bot detection is breaking down as AI assistants and privacy proxies blur the line between human and automated traffic. The post proposes a shift toward an open ecosystem of anonymous credentials, where clients — not servers — remain in control of identity signals while origins still get protection from abuse. Cloudflare frames this as a new accountability model for the Web, designed to preserve user privacy without surrendering origin security.",
+      "zh": "Cloudflare 指出，随着 AI 助手和隐私代理的普及，传统机器人检测模型正在失效，人类和自动化流量的边界越来越模糊。文章主张转向一个开放的匿名凭证生态：身份信号的控制权交还给客户端，同时源站仍能获得针对滥用的保护。Cloudflare 将其定位为面向 Web 的新型问责模型，在保护用户隐私的同时不牺牲源站安全。"
+    },
+    "date": "2026-04-21"
   }
 ]
