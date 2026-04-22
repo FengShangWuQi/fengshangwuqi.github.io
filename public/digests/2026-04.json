@@ -378,5 +378,19 @@
       "zh": "一项关于 GitHub 虚假 Star 产业链的调查登上 Hacker News 首页，获得 455 票赞和 259 条评论，揭露了平台上 Star 注水的规模。报告详述了虚假 Star 的买卖如何操控仓库可信度、Trending 排名以及开发者信任信号。这一发现尤为重要，因为 GitHub Star 仍是开源项目的主要社会证明指标，被开发者、投资人乃至自动化系统用于评估项目质量和热度。"
     },
     "date": "2026-04-20"
+  },
+  {
+    "id": "vercel-platform-outage-roblox-cheat-ai-tool",
+    "title": {
+      "en": "How a Roblox Cheat and One AI Tool Took Down Vercel's Entire Platform",
+      "zh": "一个 Roblox 外挂加一个 AI 工具如何拖垮了 Vercel 整个平台"
+    },
+    "url": "https://webmatrices.com/post/how-a-roblox-cheat-and-one-ai-tool-brought-down-vercel-s-entire-platform",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "A detailed post-incident write-up reconstructs how a Roblox cheat combined with a single AI tool cascaded into a full outage of Vercel's hosting platform, drawing 260+ upvotes on Hacker News and 800+ on r/webdev. The story has spread across multiple communities with ongoing concern about credential exposure and the security posture of AI-assisted developer tools. Related threads are urging affected users to rotate keys and review which environment variables were marked sensitive. The incident has reignited the debate over supply-chain and tooling risk inside modern serverless platforms.",
+      "zh": "一份详细的事后复盘还原了一个 Roblox 外挂如何与一个 AI 工具叠加，最终引发 Vercel 托管平台的完整性宕机，在 Hacker News 获得 260+ 票赞、r/webdev 获得 800+ 票赞。事件在多个社区持续发酵，焦点集中在凭证泄露风险以及 AI 辅助开发工具的安全态势。相关讨论中用户被反复提醒轮换密钥、检查哪些环境变量被标为「sensitive」。该事件重新点燃了围绕现代 Serverless 平台供应链与工具链风险的讨论。"
+    },
+    "date": "2026-04-21"
   }
 ]
