@@ -406,5 +406,19 @@
       "zh": "Cloudflare 指出，随着 AI 助手和隐私代理的普及，传统机器人检测模型正在失效，人类和自动化流量的边界越来越模糊。文章主张转向一个开放的匿名凭证生态：身份信号的控制权交还给客户端，同时源站仍能获得针对滥用的保护。Cloudflare 将其定位为面向 Web 的新型问责模型，在保护用户隐私的同时不牺牲源站安全。"
     },
     "date": "2026-04-21"
+  },
+  {
+    "id": "anthropic-openclaw-style-claude-cli-allowed",
+    "title": {
+      "en": "Anthropic Reinstates Support for OpenClaw-Style Claude CLI Usage",
+      "zh": "Anthropic 重新允许 OpenClaw 风格的 Claude CLI 使用方式"
+    },
+    "url": "https://docs.openclaw.ai/providers/anthropic",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "The OpenClaw provider docs now state that Anthropic has reinstated permission for OpenClaw-style Claude CLI usage, reversing a previous restriction that affected a segment of agent tooling built on top of Claude. The update reached 367 upvotes on Hacker News and drew sustained community attention, since it directly impacts developers using third-party CLI wrappers and harnesses for Claude. The policy change reopens a previously disrupted path for building local agents and automation around Claude without migrating to a different provider.",
+      "zh": "OpenClaw 提供商文档页面更新显示，Anthropic 已重新允许 OpenClaw 风格的 Claude CLI 使用方式，此前一段时间针对此类 Claude 上层工具的限制被撤回。该话题在 Hacker News 获得 367 票赞并引发持续讨论，因为它直接影响那些基于第三方 CLI 包装器和 harness 使用 Claude 的开发者。策略变更重新打开了一条此前被阻断的路径 —— 开发者无需迁移至其他提供商即可继续围绕 Claude 构建本地 Agent 与自动化。"
+    },
+    "date": "2026-04-21"
   }
 ]
