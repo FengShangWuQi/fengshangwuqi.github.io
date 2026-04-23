@@ -448,5 +448,19 @@
       "zh": "微软公布了 TypeScript 7.0 Beta，这是一次主版本升级，几小时内在 r/typescript、r/javascript、r/reactjs、r/programming 同时登上热帖。此版本正式把此前作为预览发布的「Go 原生编译管线」合并进来，随之带来类型检查和跨项目分析性能的显著提升。大型 monorepo 项目是本次升级最明确的目标受众。"
     },
     "date": "2026-04-22"
+  },
+  {
+    "id": "claude-code-removed-pro-plan-backlash",
+    "title": {
+      "en": "Anthropic Removes Claude Code from Claude Pro Plan, Users Migrate to Local Models",
+      "zh": "Anthropic 从 Claude Pro 计划中移除 Claude Code，用户转向本地模型"
+    },
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ss23b8/claude_code_removed_from_claude_pro_plan_better/",
+    "source": "Reddit r/LocalLLaMA",
+    "summary": {
+      "en": "Anthropic removed Claude Code from the Claude Pro subscription, triggering one of the week's most-discussed threads on r/LocalLLaMA (1.2k+ upvotes, 360+ comments). The top reply chain documents users switching to OpenCode with Kimi K2.6 or running Qwen 3.6-35B A3B locally, underscoring how quickly the self-hosted coding-agent stack has matured. Beyond the immediate reaction, it's a concrete example of tier re-packaging at a frontier lab pushing a slice of the user base toward open weights.",
+      "zh": "Anthropic 将 Claude Code 从 Claude Pro 订阅中移除，成为本周 r/LocalLLaMA 讨论最热的话题之一（1.2k+ 赞、360+ 评论）。高赞讨论里用户纷纷转向 OpenCode + Kimi K2.6，或在本地跑 Qwen 3.6-35B A3B，侧面印证了自托管编码 Agent 栈的成熟速度。除了即时反应，这也是一个具体案例——头部实验室的订阅分层调整，把一部分用户直接推向了开源权重阵营。"
+    },
+    "date": "2026-04-22"
   }
 ]
