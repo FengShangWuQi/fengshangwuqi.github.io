@@ -434,5 +434,19 @@
       "zh": "一篇在 r/LocalLLaMA 获得 895 票赞、279 条评论的热帖指出，Kimi K2.6 是作者第一次敢于向客户推荐作为 Opus 4.7 替代方案的模型。核心结论是：K2.6 在任何一项上都不比 Opus 4.7 更好，但它能以合理质量完成约 85% 的 Opus 级任务，并且自带视觉能力和较好的浏览器使用能力。作者已在长时间跨度的个人工作流中逐步迁移至 K2.6 并取得良好效果，这与本周围绕该模型的社区热度相呼应。"
     },
     "date": "2026-04-21"
+  },
+  {
+    "id": "typescript-7-0-beta-announced",
+    "title": {
+      "en": "TypeScript 7.0 Beta Announced",
+      "zh": "TypeScript 7.0 Beta 发布"
+    },
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-beta/",
+    "source": "Microsoft DevBlogs (via Reddit)",
+    "summary": {
+      "en": "Microsoft announced the beta of TypeScript 7.0, a major version bump that crossed cross-posted headlines on r/typescript, r/javascript, r/reactjs and r/programming within hours. The release consolidates the long-running port of the compiler to a native, Go-based pipeline that previously shipped as a preview, with corresponding speedups in type-checking and project-wide analysis. Teams on large monorepos are the clear target audience for the upgrade.",
+      "zh": "微软公布了 TypeScript 7.0 Beta，这是一次主版本升级，几小时内在 r/typescript、r/javascript、r/reactjs、r/programming 同时登上热帖。此版本正式把此前作为预览发布的「Go 原生编译管线」合并进来，随之带来类型检查和跨项目分析性能的显著提升。大型 monorepo 项目是本次升级最明确的目标受众。"
+    },
+    "date": "2026-04-22"
   }
 ]
