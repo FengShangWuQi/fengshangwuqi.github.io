@@ -462,5 +462,19 @@
       "zh": "Anthropic 将 Claude Code 从 Claude Pro 订阅中移除，成为本周 r/LocalLLaMA 讨论最热的话题之一（1.2k+ 赞、360+ 评论）。高赞讨论里用户纷纷转向 OpenCode + Kimi K2.6，或在本地跑 Qwen 3.6-35B A3B，侧面印证了自托管编码 Agent 栈的成熟速度。除了即时反应，这也是一个具体案例——头部实验室的订阅分层调整，把一部分用户直接推向了开源权重阵营。"
     },
     "date": "2026-04-22"
+  },
+  {
+    "id": "obra-superpowers-agentic-skills-framework",
+    "title": {
+      "en": "obra/superpowers: an agentic skills framework hits 166K stars",
+      "zh": "obra/superpowers：Agent Skills 框架登顶，斩获 166K star"
+    },
+    "url": "https://github.com/obra/superpowers",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "obra/superpowers, an open agentic skills framework and accompanying software-development methodology, has rocketed up GitHub Trending to over 166K stars, positioning itself as a reference implementation for how to compose long-lived agent skills into a working development workflow. The repo treats skills as first-class units that can be discovered, versioned, and shared, and pairs them with opinionated practices for using them in real engineering work. Its rapid growth reflects the broader push toward standardized skill packaging now that single-shot agents are giving way to skill-based, multi-step systems.",
+      "zh": "obra/superpowers 是一个开源 Agent Skills 框架，并配套了一套软件开发方法论，目前在 GitHub Trending 上飙升至 166K+ star，正在成为如何把长期可复用 Agent skill 组合成工程工作流的参考实现。仓库把 skill 当作可被发现、版本化与共享的一等公民，并搭配了一整套在真实工程中使用它们的最佳实践。其爆发式增长反映出，在单轮 Agent 让位于以 skill 为核心的多步系统后，业界对标准化 skill 打包方案的需求正在快速凸显。"
+    },
+    "date": "2026-04-24"
   }
 ]
