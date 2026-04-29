@@ -504,5 +504,19 @@
       "zh": "GitHub 发布事后复盘，披露 git push 流水线中一个严重的远程代码执行漏洞，并详细说明如何在两小时内完成验证、修补与排查。团队确认在披露前没有该漏洞被利用的证据。文章完整记录了检测、缓解与取证流程，难得地展示了开发者生态平台层的应急响应实战。对所有构建或审计源代码基础设施的人都极具参考价值。"
     },
     "date": "2026-04-28"
+  },
+  {
+    "id": "pnpm-11-major-release",
+    "title": {
+      "en": "pnpm 11 Released as a New Major Version",
+      "zh": "pnpm 11 正式发布，迎来新一轮主版本更新"
+    },
+    "url": "https://github.com/pnpm/pnpm/releases/tag/v11.0.0",
+    "source": "GitHub Releases",
+    "summary": {
+      "en": "The pnpm team shipped pnpm 11, the latest major release of the increasingly popular Node.js package manager. As a major bump, it consolidates breaking changes around lockfiles, workspace resolution, and CLI defaults that had accumulated since v10. pnpm continues to differentiate itself with strict, content-addressable storage and first-class monorepo support, and v11 strengthens both. Teams already on pnpm should plan a deliberate upgrade and re-test CI caches; teams still on npm or yarn now have a fresh checkpoint to evaluate the switch.",
+      "zh": "pnpm 团队发布 pnpm 11，这一日益流行的 Node.js 包管理器迎来最新主版本。作为大版本升级，它整合了自 v10 以来在 lockfile、工作区解析与 CLI 默认行为上的破坏性变更。pnpm 凭借严格的内容寻址存储与一流的 monorepo 支持持续保持差异化，v11 进一步强化了两者。已使用 pnpm 的团队应规划升级并重新测试 CI 缓存；仍在使用 npm 或 yarn 的团队也获得了重新评估迁移的契机。"
+    },
+    "date": "2026-04-28"
   }
 ]
