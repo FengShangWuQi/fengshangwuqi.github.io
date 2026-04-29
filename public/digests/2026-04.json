@@ -476,5 +476,19 @@
       "zh": "obra/superpowers 是一个开源 Agent Skills 框架，并配套了一套软件开发方法论，目前在 GitHub Trending 上飙升至 166K+ star，正在成为如何把长期可复用 Agent skill 组合成工程工作流的参考实现。仓库把 skill 当作可被发现、版本化与共享的一等公民，并搭配了一整套在真实工程中使用它们的最佳实践。其爆发式增长反映出，在单轮 Agent 让位于以 skill 为核心的多步系统后，业界对标准化 skill 打包方案的需求正在快速凸显。"
     },
     "date": "2026-04-24"
+  },
+  {
+    "id": "openai-models-codex-managed-agents-on-aws",
+    "title": {
+      "en": "OpenAI Brings GPT Models, Codex, and Managed Agents to AWS",
+      "zh": "OpenAI 将 GPT 模型、Codex 与 Managed Agents 引入 AWS"
+    },
+    "url": "https://openai.com/index/openai-on-aws",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI announced that its GPT models, Codex, and Managed Agents are now natively available on AWS, allowing enterprises to deploy them inside their own AWS environments. The integration covers both inference and the agent orchestration layer, so customers can build agentic workflows without leaving the AWS security perimeter. It marks a significant shift in OpenAI's distribution strategy, putting it on AWS Bedrock alongside Anthropic and other model providers. For enterprises with existing AWS commitments, this lowers the cost and compliance friction of adopting OpenAI's stack.",
+      "zh": "OpenAI 宣布其 GPT 模型、Codex 和 Managed Agents 正式登陆 AWS，企业可以在自己的 AWS 环境中原生部署。本次合作不仅覆盖推理层，还包括 Agent 编排层，让客户无需离开 AWS 安全边界即可构建 Agent 工作流。这是 OpenAI 分发策略的重大转向，使其与 Anthropic 等同台出现在 AWS Bedrock 上。对于已有 AWS 投入的企业而言，采用 OpenAI 技术栈的成本与合规摩擦显著降低。"
+    },
+    "date": "2026-04-28"
   }
 ]
