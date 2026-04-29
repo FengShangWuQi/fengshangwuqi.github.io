@@ -490,5 +490,19 @@
       "zh": "OpenAI 宣布其 GPT 模型、Codex 和 Managed Agents 正式登陆 AWS，企业可以在自己的 AWS 环境中原生部署。本次合作不仅覆盖推理层，还包括 Agent 编排层，让客户无需离开 AWS 安全边界即可构建 Agent 工作流。这是 OpenAI 分发策略的重大转向，使其与 Anthropic 等同台出现在 AWS Bedrock 上。对于已有 AWS 投入的企业而言，采用 OpenAI 技术栈的成本与合规摩擦显著降低。"
     },
     "date": "2026-04-28"
+  },
+  {
+    "id": "github-git-push-rce-vulnerability-response",
+    "title": {
+      "en": "GitHub Discloses and Patches Critical Git Push RCE Within Two Hours",
+      "zh": "GitHub 两小时内披露并修复 git push 关键远程代码执行漏洞"
+    },
+    "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+    "source": "GitHub Blog",
+    "summary": {
+      "en": "GitHub published a postmortem on a critical remote code execution vulnerability in its git push pipeline, detailing how it was validated, patched, and investigated in under two hours. The team confirmed there is no evidence the flaw was exploited in the wild before disclosure. The write-up walks through detection, mitigation, and the forensic investigation, offering a rare glimpse into incident response at the platform layer of the developer ecosystem. It is required reading for anyone building or auditing source-control infrastructure.",
+      "zh": "GitHub 发布事后复盘，披露 git push 流水线中一个严重的远程代码执行漏洞，并详细说明如何在两小时内完成验证、修补与排查。团队确认在披露前没有该漏洞被利用的证据。文章完整记录了检测、缓解与取证流程，难得地展示了开发者生态平台层的应急响应实战。对所有构建或审计源代码基础设施的人都极具参考价值。"
+    },
+    "date": "2026-04-28"
   }
 ]
