@@ -518,5 +518,19 @@
       "zh": "pnpm 团队发布 pnpm 11，这一日益流行的 Node.js 包管理器迎来最新主版本。作为大版本升级，它整合了自 v10 以来在 lockfile、工作区解析与 CLI 默认行为上的破坏性变更。pnpm 凭借严格的内容寻址存储与一流的 monorepo 支持持续保持差异化，v11 进一步强化了两者。已使用 pnpm 的团队应规划升级并重新测试 CI 缓存；仍在使用 npm 或 yarn 的团队也获得了重新评估迁移的契机。"
     },
     "date": "2026-04-28"
+  },
+  {
+    "id": "ghostty-leaving-github-mitchell-hashimoto",
+    "title": {
+      "en": "Mitchell Hashimoto Moves Ghostty Off GitHub Citing Reliability and Trust",
+      "zh": "Mitchell Hashimoto 宣布 Ghostty 迁离 GitHub：可靠性与信任已不复存在"
+    },
+    "url": "https://mitchellh.com/writing/ghostty-leaving-github",
+    "source": "Reddit r/programming",
+    "summary": {
+      "en": "HashiCorp co-founder Mitchell Hashimoto announced that his terminal project Ghostty is leaving GitHub, calling the platform \"no longer a place for serious work\" after a string of outages, a critical git push RCE, and what he describes as deteriorating reliability. The post landed alongside The Register's coverage and immediately topped r/programming with 993 score and Hacker News with 379 points. Hashimoto details concrete pain points — repeated downtime during the Ghostty release window, incident communication, and the platform's drift toward AI features over core stability. The piece amplifies a broader conversation about GitHub's role in critical open-source infrastructure and adds momentum to alternatives like Codeberg, Gitea, and self-hosted Forgejo.",
+      "zh": "HashiCorp 联合创始人 Mitchell Hashimoto 宣布将其终端项目 Ghostty 迁离 GitHub，直言该平台 \"已不再是认真做事的地方\"——理由是接连的宕机、严重的 git push 远程代码执行漏洞，以及他所形容的整体可靠性持续下滑。该帖与 The Register 的报道同步登场，迅速登上 r/programming（993 分）与 Hacker News（379 分）头条。Hashimoto 列举了多项具体痛点：Ghostty 发布期间反复宕机、事故沟通问题，以及平台明显偏向 AI 新功能而忽视核心稳定性。这篇文章放大了关于 GitHub 在关键开源基础设施中地位的广泛讨论，并为 Codeberg、Gitea 与自托管 Forgejo 等替代方案再添声量。"
+    },
+    "date": "2026-04-29"
   }
 ]
