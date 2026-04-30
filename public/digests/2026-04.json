@@ -532,5 +532,19 @@
       "zh": "HashiCorp 联合创始人 Mitchell Hashimoto 宣布将其终端项目 Ghostty 迁离 GitHub，直言该平台 \"已不再是认真做事的地方\"——理由是接连的宕机、严重的 git push 远程代码执行漏洞，以及他所形容的整体可靠性持续下滑。该帖与 The Register 的报道同步登场，迅速登上 r/programming（993 分）与 Hacker News（379 分）头条。Hashimoto 列举了多项具体痛点：Ghostty 发布期间反复宕机、事故沟通问题，以及平台明显偏向 AI 新功能而忽视核心稳定性。这篇文章放大了关于 GitHub 在关键开源基础设施中地位的广泛讨论，并为 Codeberg、Gitea 与自托管 Forgejo 等替代方案再添声量。"
     },
     "date": "2026-04-29"
+  },
+  {
+    "id": "ai-evals-new-compute-bottleneck",
+    "title": {
+      "en": "Hugging Face: AI Evaluations Are Becoming the New Compute Bottleneck",
+      "zh": "Hugging Face：AI 评测正在成为新的算力瓶颈"
+    },
+    "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+    "source": "Hugging Face Blog",
+    "summary": {
+      "en": "Hugging Face's EvalEval team argues that AI evaluation — not model training — is now the binding compute bottleneck in modern LLM development. As frontier models gain reasoning, tool use, and long horizons, evaluation suites have ballooned in token cost, runtime, and required orchestration, often outpacing the cost of a training run for downstream teams. The post quantifies the trend across recent open and frontier evaluations and lays out concrete strategies for amortizing eval cost: caching, sampling, evaluator distillation, and shared infrastructure. It is a useful reframing for any team budgeting AI infrastructure where evals quietly dominate the bill.",
+      "zh": "Hugging Face EvalEval 团队提出：当前大模型开发真正的算力瓶颈已不在训练，而在评测。随着前沿模型具备推理、工具使用与长程任务能力，评测套件在 token 成本、运行时长与编排复杂度上飞速膨胀，对下游团队来说，单次完整评测的开销甚至超过一次训练。文章用近期开源与前沿评测的数据量化了这一趋势，并给出可落地的成本摊销策略：缓存、采样、评测器蒸馏与基础设施共享。对任何编制 AI 基础设施预算、却发现评测开销悄然占据大头的团队，都是一次重要的视角矫正。"
+    },
+    "date": "2026-04-29"
   }
 ]
