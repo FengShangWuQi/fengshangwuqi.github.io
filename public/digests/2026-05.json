@@ -12,5 +12,19 @@
       "zh": "Google DeepMind 公布「AI co-clinician」研究系统，定位为与医生协作进行诊断、治疗方案制定与患者沟通的辅助角色，而非取代任何单一岗位。文章介绍了模型在脱敏临床推理数据上的训练、与一线医生在真实病例上的评估，以及围绕幻觉、偏差与过度依赖建立的安全护栏。DeepMind 将其定位为通向「AI 增强式医疗」而非「自主医疗」的路径，已与医疗伙伴启动分阶段试点。这是前沿实验室将通用基础模型专门化、嵌入高风险专业流程的最新动作。"
     },
     "date": "2026-04-30"
+  },
+  {
+    "id": "cloudflare-agents-stripe-projects-self-serve",
+    "title": {
+      "en": "Cloudflare Lets AI Agents Open Accounts, Buy Domains, and Deploy by Themselves",
+      "zh": "Cloudflare 开放 Agent 自助注册、购买域名与一键部署"
+    },
+    "url": "https://blog.cloudflare.com/agents-stripe-projects/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare announced that AI agents can now sign up as customers end-to-end: create an account via API, register a domain, pay through Stripe, and ship a deployable project — all without a human in the loop. The release adds agent-friendly billing endpoints and a Projects primitive aimed at autonomous build pipelines, slotting alongside Workers and the broader agent stack the company has been building this year. It's an explicit bet that agentic software will buy and operate cloud infrastructure on its own, and a pragmatic move to capture that workload by removing every manual step from onboarding. Expect copycat moves from competing clouds.",
+      "zh": "Cloudflare 宣布 AI Agent 可以端到端自助使用：通过 API 注册账户、登记域名、用 Stripe 完成付款、构建可部署的项目，全程无需人工介入。本次更新新增了对 Agent 友好的计费接口与 Projects 原语，专为自动化构建流水线设计，与 Workers 及今年持续推进的 Agent 栈协同。背后是一个明确的判断：未来由 Agent 自主采购与运营云资源，因此把开通流程中每一步人工操作都摘掉，先抢下这部分工作负载。竞品云厂商大概率很快跟进。"
+    },
+    "date": "2026-04-30"
   }
 ]
