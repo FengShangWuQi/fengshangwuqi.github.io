@@ -1,0 +1,16 @@
+[
+  {
+    "id": "deepmind-ai-co-clinician-research",
+    "title": {
+      "en": "DeepMind Unveils AI Co-Clinician to Augment Doctors' Decisions",
+      "zh": "DeepMind 推出 AI 合作临床医生：辅助决策的下一代医疗模型"
+    },
+    "url": "https://deepmind.google/blog/ai-co-clinician/",
+    "source": "DeepMind Blog",
+    "summary": {
+      "en": "Google DeepMind introduced an \"AI co-clinician,\" a research system designed to work alongside physicians on diagnosis, treatment planning, and patient communication rather than replace any single role. The post details the model's training on de-identified clinical reasoning data, evaluation on real-world case studies with practising clinicians, and the safeguards built around hallucination, bias, and over-reliance. DeepMind frames it as a path toward AI-augmented care, not autonomous care, and is working with health partners on staged trials. The release is part of a broader push from frontier labs to specialize foundation models for high-stakes professional workflows.",
+      "zh": "Google DeepMind 公布「AI co-clinician」研究系统，定位为与医生协作进行诊断、治疗方案制定与患者沟通的辅助角色，而非取代任何单一岗位。文章介绍了模型在脱敏临床推理数据上的训练、与一线医生在真实病例上的评估，以及围绕幻觉、偏差与过度依赖建立的安全护栏。DeepMind 将其定位为通向「AI 增强式医疗」而非「自主医疗」的路径，已与医疗伙伴启动分阶段试点。这是前沿实验室将通用基础模型专门化、嵌入高风险专业流程的最新动作。"
+    },
+    "date": "2026-04-30"
+  }
+]
