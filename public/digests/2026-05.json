@@ -26,5 +26,19 @@
       "zh": "Cloudflare 宣布 AI Agent 可以端到端自助使用：通过 API 注册账户、登记域名、用 Stripe 完成付款、构建可部署的项目，全程无需人工介入。本次更新新增了对 Agent 友好的计费接口与 Projects 原语，专为自动化构建流水线设计，与 Workers 及今年持续推进的 Agent 栈协同。背后是一个明确的判断：未来由 Agent 自主采购与运营云资源，因此把开通流程中每一步人工操作都摘掉，先抢下这部分工作负载。竞品云厂商大概率很快跟进。"
     },
     "date": "2026-04-30"
+  },
+  {
+    "id": "vscode-ai-coauthor-default-controversy",
+    "title": {
+      "en": "VS Code Turns On AI Co-Author Attribution by Default — and Quickly Walks It Back",
+      "zh": "VS Code 默认启用 AI 共同作者署名，遭抵制后承诺修正"
+    },
+    "url": "https://github.com/microsoft/vscode/pull/310226",
+    "source": "GitHub · microsoft/vscode#310226",
+    "summary": {
+      "en": "A merged Microsoft VS Code PR (#310226) flipped the Git extension's `git.addAICoAuthor` setting from `off` to `all`, automatically appending `Co-authored-by: Copilot` trailers to commits. The change quickly drew complaints on r/programming (349 upvotes, 128 comments) from users who reported the trailer was being added even when they had not used Copilot or had disabled AI features altogether. A maintainer acknowledged it \"should never have been enabled when disableAIFeatures is on\" and that it should not attribute commits the AI did not actually touch, with fixes promised for version 1.119. The episode is a small but instructive reminder that \"default to AI\" is a UX choice with provenance and trust consequences, not just an opt-in toggle.",
+      "zh": "微软 VS Code 一个已合并的 PR（#310226）把 Git 扩展中的 `git.addAICoAuthor` 配置从 `off` 改为 `all`，会自动在提交里追加 `Co-authored-by: Copilot` 署名。改动迅速在 r/programming 上引发反弹（349 个赞、128 条评论）——有用户反映：哪怕自己根本没用 Copilot、甚至已经关掉了 AI 功能，提交里也照样被打上这个署名。一位维护者承认「禁用 AI 功能时本就不该启用此项」，且不应给 AI 没参与的改动加上署名，并承诺在 1.119 版本中修正。这次小风波是一次有用的提醒：「默认开启 AI」从来不只是一个开关，它牵涉到署名、来源与信任，是一个有后果的 UX 决策。"
+    },
+    "date": "2026-05-03"
   }
 ]
