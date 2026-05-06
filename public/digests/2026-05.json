@@ -68,5 +68,19 @@
       "zh": "一篇调查文章指出 Chrome 在用户毫不知情、也无简便关闭入口的情况下，悄悄向本机下载约 4GB 的 Gemini Nano 模型。该贴登上当日 HN 热门第一（786 分、560 条评论），评论围绕流量成本、存储占用和「AI 能力默认塞进浏览器」的趋势展开激烈讨论。它重新点燃了关于 Chrome 静默组件更新触及用户硬件资源的老问题。社区普遍呼吁引入显式同意界面和可配置的关闭开关。"
     },
     "date": "2026-05-05"
+  },
+  {
+    "id": "white-house-vetting-ai-models",
+    "title": {
+      "en": "White House weighs pre-release vetting of AI models",
+      "zh": "白宫考虑在 AI 模型发布前进行政府审查"
+    },
+    "url": "https://www.nytimes.com/2026/05/04/technology/trump-ai-models.html",
+    "source": "Reddit r/LocalLLaMA",
+    "summary": {
+      "en": "The New York Times reports the Trump administration is exploring a regime that would require AI labs to submit frontier models to the federal government for review prior to public release. The proposal is at an early stage but represents a sharp pivot from the current voluntary framework. If formalized, it would touch every major US lab, alter open-weight publishing decisions, and create a clear divergence with the EU's risk-based AI Act track. The story drew nearly 400 r/LocalLLaMA comments centered on enforcement, scope, and the impact on open-source releases.",
+      "zh": "《纽约时报》报道特朗普政府正在研究一项制度：要求 AI 实验室在前沿模型公开发布前先把模型提交给联邦政府审查。该提案目前仍在早期阶段，但相对当前以自愿为主的框架是一次大转向。如果落地，它将触及所有主要的美国实验室，影响开源权重发布决策，并与欧盟基于风险等级的 AI 法案路径明显分叉。报道在 r/LocalLLaMA 引发近 400 条评论，焦点集中在执行细则、覆盖范围和对开源发布的冲击。"
+    },
+    "date": "2026-05-05"
   }
 ]
