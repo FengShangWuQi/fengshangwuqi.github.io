@@ -82,5 +82,19 @@
       "zh": "《纽约时报》报道特朗普政府正在研究一项制度：要求 AI 实验室在前沿模型公开发布前先把模型提交给联邦政府审查。该提案目前仍在早期阶段，但相对当前以自愿为主的框架是一次大转向。如果落地，它将触及所有主要的美国实验室，影响开源权重发布决策，并与欧盟基于风险等级的 AI 法案路径明显分叉。报道在 r/LocalLLaMA 引发近 400 条评论，焦点集中在执行细则、覆盖范围和对开源发布的冲击。"
     },
     "date": "2026-05-05"
+  },
+  {
+    "id": "deepseek-v4-pro-matches-gpt-5-2",
+    "title": {
+      "en": "DeepSeek V4 Pro matches GPT-5.2 on FoodTruck agentic bench at ~17× lower cost",
+      "zh": "DeepSeek V4 Pro 在 FoodTruck 智能体基准上追平 GPT-5.2，成本约低 17 倍"
+    },
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1t47qbw/deepseek_v4_pro_matches_gpt52_on_foodtruck_bench/",
+    "source": "Reddit r/LocalLLaMA",
+    "summary": {
+      "en": "DeepSeek V4 Pro lands in the frontier tier of the long-horizon FoodTruck agentic benchmark, tying Grok 4.3 and coming within 3% of GPT-5.2's median score across 34-tool, multi-day agent runs. The headline detail is cost: DeepSeek matches GPT-5.2's results from ten weeks earlier at roughly seventeen times less spend. It is the first Chinese open-style model to enter the benchmark's frontier tier, intensifying the price-performance squeeze on US closed labs. Expect downstream pressure on commercial agent pricing through the next quarter.",
+      "zh": "DeepSeek V4 Pro 在 FoodTruck 智能体长程基准中跻身前沿梯队，与 Grok 4.3 并列，并在 34 工具、跨天的代理运行中达到 GPT-5.2 中位分的 97% 范围。核心看点是成本：DeepSeek 用大约 1/17 的费用追平了 GPT-5.2 十周前的成绩。这是首个进入该基准前沿梯队的中国开源风格模型，进一步加剧了美国闭源大厂的价格-性能压力。预计下个季度商用智能体的定价会被它推动下行。"
+    },
+    "date": "2026-05-05"
   }
 ]
