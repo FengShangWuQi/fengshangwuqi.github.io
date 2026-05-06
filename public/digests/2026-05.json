@@ -54,5 +54,19 @@
       "zh": "Node.js 26 作为新的 Current 版本发布，开启下一个主线周期。它是奇数版本，不会进入 LTS，但承担下一代 LTS 候选特性的实验场角色。框架与依赖维护者应尽早在 26 上做兼容性验证，提前暴露问题。生产环境可以继续使用现役 LTS，等到下一个偶数版本再考虑切换。"
     },
     "date": "2026-05-05"
+  },
+  {
+    "id": "chrome-silent-4gb-ai-model",
+    "title": {
+      "en": "Chrome silently installs a 4 GB on-device AI model without consent",
+      "zh": "Chrome 未经同意悄悄向设备装入 4GB AI 模型"
+    },
+    "url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "An investigation alleges that Google Chrome quietly downloads a roughly 4 GB on-device 'Nano' AI model into users' machines, with no consent prompt and no easy opt-out. The report became the day's top discussion on Hacker News (786 points, 560 comments), where commenters debated bandwidth costs, storage waste, and the broader pattern of bundling AI capabilities into the browser. It revives long-standing concerns about Chrome's silent component updates touching machine resources users never agreed to share. Expect renewed calls for an explicit consent UI and a configurable disable switch.",
+      "zh": "一篇调查文章指出 Chrome 在用户毫不知情、也无简便关闭入口的情况下，悄悄向本机下载约 4GB 的 Gemini Nano 模型。该贴登上当日 HN 热门第一（786 分、560 条评论），评论围绕流量成本、存储占用和「AI 能力默认塞进浏览器」的趋势展开激烈讨论。它重新点燃了关于 Chrome 静默组件更新触及用户硬件资源的老问题。社区普遍呼吁引入显式同意界面和可配置的关闭开关。"
+    },
+    "date": "2026-05-05"
   }
 ]
