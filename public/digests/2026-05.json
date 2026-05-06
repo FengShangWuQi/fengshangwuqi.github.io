@@ -40,5 +40,19 @@
       "zh": "微软 VS Code 一个已合并的 PR（#310226）把 Git 扩展中的 `git.addAICoAuthor` 配置从 `off` 改为 `all`，会自动在提交里追加 `Co-authored-by: Copilot` 署名。改动迅速在 r/programming 上引发反弹（349 个赞、128 条评论）——有用户反映：哪怕自己根本没用 Copilot、甚至已经关掉了 AI 功能，提交里也照样被打上这个署名。一位维护者承认「禁用 AI 功能时本就不该启用此项」，且不应给 AI 没参与的改动加上署名，并承诺在 1.119 版本中修正。这次小风波是一次有用的提醒：「默认开启 AI」从来不只是一个开关，它牵涉到署名、来源与信任，是一个有后果的 UX 决策。"
     },
     "date": "2026-05-03"
+  },
+  {
+    "id": "nodejs-26-current-released",
+    "title": {
+      "en": "Node.js 26.0.0 released as the new Current line",
+      "zh": "Node.js 26.0.0 发布，进入 Current 主线"
+    },
+    "url": "https://nodejs.org/en/blog/release/v26.0.0",
+    "source": "Node.js Blog",
+    "summary": {
+      "en": "Node.js 26 is now the Current release, kicking off the next major cycle of the runtime. As an odd-numbered release it will not become LTS, but serves as the staging ground for features that will land in the next LTS line. Maintainers and library authors should start validating their stacks against 26 to surface incompatibilities early. Production users can stay on the active LTS until 26 stabilizes.",
+      "zh": "Node.js 26 作为新的 Current 版本发布，开启下一个主线周期。它是奇数版本，不会进入 LTS，但承担下一代 LTS 候选特性的实验场角色。框架与依赖维护者应尽早在 26 上做兼容性验证，提前暴露问题。生产环境可以继续使用现役 LTS，等到下一个偶数版本再考虑切换。"
+    },
+    "date": "2026-05-05"
   }
 ]
