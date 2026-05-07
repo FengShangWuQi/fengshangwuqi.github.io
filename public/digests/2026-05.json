@@ -96,5 +96,33 @@
       "zh": "DeepSeek V4 Pro 在 FoodTruck 智能体长程基准中跻身前沿梯队，与 Grok 4.3 并列，并在 34 工具、跨天的代理运行中达到 GPT-5.2 中位分的 97% 范围。核心看点是成本：DeepSeek 用大约 1/17 的费用追平了 GPT-5.2 十周前的成绩。这是首个进入该基准前沿梯队的中国开源风格模型，进一步加剧了美国闭源大厂的价格-性能压力。预计下个季度商用智能体的定价会被它推动下行。"
     },
     "date": "2026-05-05"
+  },
+  {
+    "id": "bleeding-llama-ollama-vulnerability",
+    "title": {
+      "en": "Bleeding Llama: critical unauthenticated memory leak in Ollama",
+      "zh": "Bleeding Llama：Ollama 出现严重未授权内存泄漏漏洞"
+    },
+    "url": "https://www.cyera.com/research/bleeding-llama-critical-unauthenticated-memory-leak-in-ollama",
+    "source": "Cyera Labs",
+    "summary": {
+      "en": "Cyera Labs disclosed Bleeding Llama, a critical unauthenticated memory-leak vulnerability in Ollama that lets remote attackers read fragments of process memory from any exposed instance. Because most self-hosted Ollama setups bind to a default port without authentication, the issue is broadly exploitable, and prompt content, model state, and adjacent secrets can leak in plaintext. The disclosure includes a proof-of-concept and remediation guidance, and operators are urged to patch and lock down network exposure immediately. The Ollama community on Reddit is treating it as an industry-wide reminder that local-LLM stacks need the same hygiene as production services.",
+      "zh": "Cyera Labs 披露 Bleeding Llama 漏洞：Ollama 存在严重的未授权内存泄漏，攻击者可远程读取暴露实例的进程内存片段。多数自部署 Ollama 默认无鉴权监听端口，使得漏洞影响面极广，提示内容、模型状态以及相邻进程的密钥都可能以明文外泄。披露包含 PoC 与修复指引，运维方需立即升级并收紧网络暴露面。Reddit 上的 Ollama 社区将其视为对整个行业的警钟——本地 LLM 栈也必须按照生产服务的标准做好基本安全。"
+    },
+    "date": "2026-05-06"
+  },
+  {
+    "id": "cloudflare-agents-stripe-projects",
+    "title": {
+      "en": "Cloudflare lets agents create accounts, buy domains, and deploy",
+      "zh": "Cloudflare 放行 AI 智能体：自助开户、买域名、一键部署"
+    },
+    "url": "https://blog.cloudflare.com/agents-stripe-projects/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare announced Projects, a system that lets AI agents sign up for Cloudflare accounts, pay through Stripe, register domains, and deploy applications end to end without a human in the loop. The post details how scoped credentials, billing limits, and audit trails keep agent-driven infrastructure manageable. It is one of the first concrete pictures of what an autonomous agent stack actually looks like at a hyperscaler. The launch hit 545 points on Hacker News within hours, signaling strong developer interest in agent-native cloud workflows.",
+      "zh": "Cloudflare 推出 Projects，让 AI 智能体可以自主注册账号、通过 Stripe 付款、购买域名并完成应用部署，全程无需人工介入。文章详细介绍了受限凭证、账单上限与审计轨迹如何让智能体驱动的基础设施保持可控，是头部云厂商对自主智能体技术栈少有的具体描绘。该消息几小时内在 Hacker News 冲到 545 分，显示开发者对智能体原生云工作流的强烈兴趣。"
+    },
+    "date": "2026-05-06"
   }
 ]
