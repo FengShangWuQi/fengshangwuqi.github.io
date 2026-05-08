@@ -166,5 +166,19 @@
       "zh": "Mozilla 发布幕后复盘文章，介绍他们如何借助 Claude Mythos Preview 与其他 AI 模型，在 Firefox 中识别并修复了一批前所未有规模的潜伏安全漏洞。文章描述了把代码库交给 AI 审计、对高置信发现进行分诊、并在规模化情况下防止误报的完整流程。这是大型在售浏览器中 AI 辅助安全审查难得的具体实战案例，并给出可供其他开源项目借鉴的实操建议。同时也间接展示了 Anthropic 尚未正式发布的 Claude Mythos 系列的能力。"
     },
     "date": "2026-05-07"
+  },
+  {
+    "id": "programming-still-sucks-2026",
+    "title": {
+      "en": "Programming Still Sucks: a developer rant the industry could not look away from",
+      "zh": "《Programming Still Sucks》：一篇让整个行业绕不开的开发者吐槽"
+    },
+    "url": "https://www.stvn.sh/writing/programming-still-sucks-fqffhyp",
+    "source": "Lobsters",
+    "summary": {
+      "en": "Stevens publishes a long-form rant arguing that despite a decade of new languages, frameworks, and AI assistants, the day-to-day experience of programming remains painful: brittle build systems, leaky abstractions, broken docs, and infinite yak-shaving. The piece struck a chord across both Lobsters and r/programming, hitting 303 points on the latter, where many commenters share concrete pain points and counter-examples. It is interesting less as a tooling review and more as a temperature check on developer sentiment in 2026, a moment when AI tools are reshaping the workflow but not necessarily the foundation. The strong cross-community resonance is itself part of the signal.",
+      "zh": "Stevens 发表长文吐槽：即便经历了十年的新语言、新框架和 AI 助手，日常编程依然痛苦——脆弱的构建系统、漏洞百出的抽象、过时的文档与无尽的副作用工作。文章在 Lobsters 与 r/programming 双双引爆，后者拿到 303 分热度，评论里充满具体的痛点与反例。它的价值更多不在工具评测，而是 2026 年开发者情绪的体温计——AI 在重塑流程，但底座仍未根本改变。多个社区同时共鸣，本身就构成了信号。"
+    },
+    "date": "2026-05-07"
   }
 ]
