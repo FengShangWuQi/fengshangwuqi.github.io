@@ -152,5 +152,19 @@
       "zh": "Remix 团队发布 Remix 3 Beta 预览，宣布完全抛弃 React，推出自家运行时——不再是被合并进 React Router 7 之后的那个 React 框架（Shopify 收购后曾合并）。这一转向震动社区：Remix 反复重新定义自己之后，这次干脆走出了 React 生态。r/reactjs 上的高赞讨论中，开发者争论 Remix v1/v2 用户是否还有可行的升级路径，还是说 Remix 已实质成为另一个项目。无论如何，它改变了 React 世界里押注一个框架的长期思考方式。"
     },
     "date": "2026-05-07"
+  },
+  {
+    "id": "firefox-hardened-with-claude",
+    "title": {
+      "en": "Mozilla details how Claude Mythos Preview helped harden Firefox against latent bugs",
+      "zh": "Mozilla 公开复盘：Claude Mythos Preview 如何加固 Firefox 的潜伏漏洞"
+    },
+    "url": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/",
+    "source": "Mozilla Hacks",
+    "summary": {
+      "en": "Mozilla published a behind-the-scenes write-up of how it used Claude Mythos Preview alongside other AI models to identify and fix an unprecedented number of latent security bugs in Firefox. The post describes the workflow of feeding the codebase to AI auditors, triaging high-confidence findings, and guarding against false positives at scale. It offers a rare concrete account of AI-assisted security review in a major shipping browser, with practical advice for other open-source projects considering the same approach. The work also implicitly previews capabilities of Anthropic's not-yet-released Claude Mythos line.",
+      "zh": "Mozilla 发布幕后复盘文章，介绍他们如何借助 Claude Mythos Preview 与其他 AI 模型，在 Firefox 中识别并修复了一批前所未有规模的潜伏安全漏洞。文章描述了把代码库交给 AI 审计、对高置信发现进行分诊、并在规模化情况下防止误报的完整流程。这是大型在售浏览器中 AI 辅助安全审查难得的具体实战案例，并给出可供其他开源项目借鉴的实操建议。同时也间接展示了 Anthropic 尚未正式发布的 Claude Mythos 系列的能力。"
+    },
+    "date": "2026-05-07"
   }
 ]
