@@ -180,5 +180,19 @@
       "zh": "Stevens 发表长文吐槽：即便经历了十年的新语言、新框架和 AI 助手，日常编程依然痛苦——脆弱的构建系统、漏洞百出的抽象、过时的文档与无尽的副作用工作。文章在 Lobsters 与 r/programming 双双引爆，后者拿到 303 分热度，评论里充满具体的痛点与反例。它的价值更多不在工具评测，而是 2026 年开发者情绪的体温计——AI 在重塑流程，但底座仍未根本改变。多个社区同时共鸣，本身就构成了信号。"
     },
     "date": "2026-05-07"
+  },
+  {
+    "id": "deepseek-45b-valuation-talks",
+    "title": {
+      "en": "DeepSeek nears $45B valuation as China's Big Fund leads investment talks",
+      "zh": "DeepSeek 估值逼近 450 亿美元，大基金主导新一轮融资谈判"
+    },
+    "url": "https://techcrunch.com/2026/05/06/deepseek-could-hit-45b-valuation-from-its-first-investment-round/",
+    "source": "Reddit r/LocalLLaMA",
+    "summary": {
+      "en": "TechCrunch and the Financial Times report that DeepSeek is in advanced talks for its first investment round at a valuation approaching $45 billion, with China's state-backed Big Fund leading the deal. The round, if it closes at this size, would mark one of the largest Chinese AI fundraises to date and place DeepSeek squarely among the top tier of global frontier-model labs by capitalization. It also signals continued state-aligned capital flowing into homegrown frontier model development, a trend with geopolitical implications for AI compute supply chains. For the open-weights ecosystem the news matters because DeepSeek has been one of the more aggressive contributors there.",
+      "zh": "TechCrunch 与英国《金融时报》援引消息称，DeepSeek 正进入首轮融资的后期谈判，估值逼近 450 亿美元，由中国国家背景的大基金领投。如果以此规模成交，将是中国 AI 公司迄今最大的一笔融资之一，使 DeepSeek 在估值上跻身全球前沿模型实验室第一梯队。它也标志着国家级资本继续流向本土前沿模型研发，对 AI 算力供应链有地缘政治层面的连带影响。对开放权重生态而言，DeepSeek 一直是最积极的贡献者之一，这笔融资因而格外受关注。"
+    },
+    "date": "2026-05-07"
   }
 ]
