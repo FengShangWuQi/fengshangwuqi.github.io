@@ -138,5 +138,19 @@
       "zh": "OpenAI 在 API 中发布新一代实时语音模型，超越传统的语音转文字，能够对话理解、跨语言翻译，并以更高准确率完成转写。文章把语音定位为下一代 Agent 系统的核心交互界面，重点指向客服、语音助手与实时翻译三类部署场景。同一系列模型也支撑 OpenAI 的客户案例 Parloa——企业可端到端构建智能语音 Agent。对开发者而言，这意味着不再需要把 STT、LLM、TTS 拼接成多段管线，一个低延迟接口就能完成全流程。"
     },
     "date": "2026-05-07"
+  },
+  {
+    "id": "remix-3-beta-not-react",
+    "title": {
+      "en": "Remix 3 beta drops React: the framework forks away from React Router",
+      "zh": "Remix 3 Beta 不再是 React 框架：与 React Router 路线分裂"
+    },
+    "url": "https://remix.run/blog/remix-3-beta-preview",
+    "source": "Reddit r/reactjs",
+    "summary": {
+      "en": "The Remix team published a Remix 3 beta preview that abandons React entirely, shipping its own runtime instead of being a layer on top of React Router (where Remix.js was merged after the Shopify acquisition). The pivot stunned a community that has watched Remix repeatedly redefine itself, this time stepping outside the React ecosystem altogether. The reactjs subreddit thread, with hundreds of comments, debates whether teams that built on Remix v1/v2 have a viable upgrade path or if 'Remix' is now effectively a different project. Either way, it changes how to think about long-term framework bets in the React world.",
+      "zh": "Remix 团队发布 Remix 3 Beta 预览，宣布完全抛弃 React，推出自家运行时——不再是被合并进 React Router 7 之后的那个 React 框架（Shopify 收购后曾合并）。这一转向震动社区：Remix 反复重新定义自己之后，这次干脆走出了 React 生态。r/reactjs 上的高赞讨论中，开发者争论 Remix v1/v2 用户是否还有可行的升级路径，还是说 Remix 已实质成为另一个项目。无论如何，它改变了 React 世界里押注一个框架的长期思考方式。"
+    },
+    "date": "2026-05-07"
   }
 ]
