@@ -124,5 +124,19 @@
       "zh": "Cloudflare 推出 Projects，让 AI 智能体可以自主注册账号、通过 Stripe 付款、购买域名并完成应用部署，全程无需人工介入。文章详细介绍了受限凭证、账单上限与审计轨迹如何让智能体驱动的基础设施保持可控，是头部云厂商对自主智能体技术栈少有的具体描绘。该消息几小时内在 Hacker News 冲到 545 分，显示开发者对智能体原生云工作流的强烈兴趣。"
     },
     "date": "2026-05-06"
+  },
+  {
+    "id": "openai-voice-models-api",
+    "title": {
+      "en": "OpenAI ships new realtime voice models that reason, translate and transcribe",
+      "zh": "OpenAI 发布新一代实时语音模型：能推理、翻译、转写"
+    },
+    "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI announced a refresh of its voice intelligence stack in the API, introducing realtime models that go beyond plain speech-to-text to reason about utterances, translate between languages, and transcribe with higher accuracy. The post frames voice as the next interface for agentic systems, pointing at customer service, voice assistants and live translation as primary deployment targets. The same model family powers OpenAI's launch case study with Parloa, where enterprises are building agentic phone agents end-to-end. For developers it means a single low-latency endpoint instead of stitching together STT, LLM, and TTS pipelines.",
+      "zh": "OpenAI 在 API 中发布新一代实时语音模型，超越传统的语音转文字，能够对话理解、跨语言翻译，并以更高准确率完成转写。文章把语音定位为下一代 Agent 系统的核心交互界面，重点指向客服、语音助手与实时翻译三类部署场景。同一系列模型也支撑 OpenAI 的客户案例 Parloa——企业可端到端构建智能语音 Agent。对开发者而言，这意味着不再需要把 STT、LLM、TTS 拼接成多段管线，一个低延迟接口就能完成全流程。"
+    },
+    "date": "2026-05-07"
   }
 ]
