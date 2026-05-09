@@ -194,5 +194,19 @@
       "zh": "TechCrunch 与英国《金融时报》援引消息称，DeepSeek 正进入首轮融资的后期谈判，估值逼近 450 亿美元，由中国国家背景的大基金领投。如果以此规模成交，将是中国 AI 公司迄今最大的一笔融资之一，使 DeepSeek 在估值上跻身全球前沿模型实验室第一梯队。它也标志着国家级资本继续流向本土前沿模型研发，对 AI 算力供应链有地缘政治层面的连带影响。对开放权重生态而言，DeepSeek 一直是最积极的贡献者之一，这笔融资因而格外受关注。"
     },
     "date": "2026-05-07"
+  },
+  {
+    "id": "cloudflare-layoffs-1100-employees",
+    "title": {
+      "en": "Cloudflare cuts more than 1,100 jobs in global restructuring",
+      "zh": "Cloudflare 全球裁员逾 1,100 人，公司宣布业务重组"
+    },
+    "url": "https://blog.cloudflare.com/building-for-the-future/",
+    "source": "Cloudflare Blog",
+    "summary": {
+      "en": "Cloudflare published a 'Building for the future' post announcing a workforce reduction of more than 1,100 employees worldwide. The company frames the cut as a refocusing toward platform and AI investments rather than a financial retrenchment. Coming from one of the most visible edge / developer-platform vendors, the news landed at the top of r/webdev with 538 upvotes and surfaced concerns across the Workers and security communities. Customers and integrators should expect some team and roadmap reshuffling in the coming weeks.",
+      "zh": "Cloudflare 在博客「Building for the future」中宣布全球裁员逾 1,100 人。公司把这次调整定调为聚焦平台和 AI 方向的资源再分配，而不是财务收缩。作为最受关注的边缘和开发者平台厂商之一，消息以 538 赞冲上 r/webdev 热榜，Workers 和安全社区都有不少担忧。使用 Cloudflare 服务的团队和合作方未来几周可能会感受到团队归属和 roadmap 的变动。"
+    },
+    "date": "2026-05-08"
   }
 ]
