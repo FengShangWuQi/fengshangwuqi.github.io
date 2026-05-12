@@ -208,5 +208,19 @@
       "zh": "Cloudflare 在博客「Building for the future」中宣布全球裁员逾 1,100 人。公司把这次调整定调为聚焦平台和 AI 方向的资源再分配，而不是财务收缩。作为最受关注的边缘和开发者平台厂商之一，消息以 538 赞冲上 r/webdev 热榜，Workers 和安全社区都有不少担忧。使用 Cloudflare 服务的团队和合作方未来几周可能会感受到团队归属和 roadmap 的变动。"
     },
     "date": "2026-05-08"
+  },
+  {
+    "id": "mythos-finds-real-curl-vulnerability",
+    "title": {
+      "en": "Mythos finds a real Curl vulnerability — Daniel Stenberg writes up the case",
+      "zh": "Mythos 真的在 curl 里挖到了一个漏洞——Daniel Stenberg 亲自复盘"
+    },
+    "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Curl maintainer Daniel Stenberg posted a detailed account of an AI tool called Mythos uncovering a genuine curl vulnerability — one that earlier rounds of human review and fuzzing had missed. He walks through how the bug was reported, what the fix looked like, and what distinguishes a useful AI-assisted disclosure from the steady stream of bogus LLM-generated reports curl gets. It's one of the more measured first-hand accounts of what AI vuln-finding looks like when it actually works. The piece hit 482 points on Hacker News and is one of the few times Stenberg has spoken positively about an AI security report.",
+      "zh": "curl 维护者 Daniel Stenberg 写长文复盘了一次 AI 工具 Mythos 真的挖到 curl 漏洞的过程——是过往人工审计和 fuzz 都漏掉的那种。他讲清了上报路径、补丁形态，以及一次「有效」的 AI 漏洞披露跟此前不断收到的 LLM 胡编报告差在哪里。在「AI 找漏洞」这个领域，这是为数不多冷静且有说服力的实战记录。文章拿到 HN 482 赞，也是 Stenberg 罕有的对 AI 安全报告表态正面的一次。"
+    },
+    "date": "2026-05-11"
   }
 ]
