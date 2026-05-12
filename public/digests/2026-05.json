@@ -236,5 +236,19 @@
       "zh": "OpenAI 推出新公司 DeployCo，专门帮助企业把前沿 AI 真正落地到生产环境、转化为可衡量的业务收益。它瞄准的是大多数企业卡住的那道关口——怎么把模型嵌进既有工作流、跑通治理与质量控制。把「部署」单独拆成一家公司，本身说明 OpenAI 认为采用瓶颈不在模型能力，而在集成与运营。值得盯一下：DeployCo 会不会从大牌 AI 咨询公司那里抢走盘子。"
     },
     "date": "2026-05-11"
+  },
+  {
+    "id": "web-feeds-2026-survey-mark-nottingham",
+    "title": {
+      "en": "Mark Nottingham: Web Feeds in 2026, A Survey",
+      "zh": "Mark Nottingham：2026 年的 Web Feeds 现状综述"
+    },
+    "url": "https://mnot.net/blog/2026/feed-survey",
+    "source": "Lobsters",
+    "summary": {
+      "en": "HTTP veteran Mark Nottingham (mnot) published a year-in-review of the RSS/Atom/JSON-Feed ecosystem in 2026 — what's actively deployed, what's bitrotted, where the standards are still moving and which parts of the stack are quietly dying. The post is comparative across feed formats, transport choices and push protocols like WebSub. mnot is one of the few authors who can write authoritatively across both IETF standards and operator-side reality, so this kind of survey tends to reset industry baselines. Required reading if you build feed readers, podcast platforms or push pipelines.",
+      "zh": "HTTP 老兵 Mark Nottingham（mnot）发布了 2026 年版 RSS/Atom/JSON Feed 生态盘点：现在还在跑的、已经烂掉的、标准侧仍在变的、栈里悄悄死掉的，逐项过了一遍。文章对各类 feed 格式、传输方式、WebSub 等推送协议横向比较。mnot 是少数能同时讲清 IETF 标准和运维现实的人，他写的综述往往一篇就能重置行业基准。做 feed 阅读器、播客平台或推送管线的人建议必读。"
+    },
+    "date": "2026-05-11"
   }
 ]
