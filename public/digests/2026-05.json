@@ -222,5 +222,19 @@
       "zh": "curl 维护者 Daniel Stenberg 写长文复盘了一次 AI 工具 Mythos 真的挖到 curl 漏洞的过程——是过往人工审计和 fuzz 都漏掉的那种。他讲清了上报路径、补丁形态，以及一次「有效」的 AI 漏洞披露跟此前不断收到的 LLM 胡编报告差在哪里。在「AI 找漏洞」这个领域，这是为数不多冷静且有说服力的实战记录。文章拿到 HN 482 赞，也是 Stenberg 罕有的对 AI 安全报告表态正面的一次。"
     },
     "date": "2026-05-11"
+  },
+  {
+    "id": "openai-launches-deployco-enterprise-deployment",
+    "title": {
+      "en": "OpenAI launches DeployCo to help businesses deploy frontier AI",
+      "zh": "OpenAI 推出 DeployCo，专做企业级前沿 AI 落地"
+    },
+    "url": "https://openai.com/index/openai-launches-the-deployment-company",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI launched DeployCo, a new operating company built to help enterprises bring frontier AI into production and convert it into measurable business impact. The unit is positioned to handle the messy reality of integrating models into existing workflows, governance and quality controls — the gap most organizations have been stuck on. Spinning out a separate 'deployment company' suggests OpenAI sees the bottleneck for adoption as integration and operations rather than model capability. Worth watching whether DeployCo eats into the territory currently occupied by big-name AI consultancies.",
+      "zh": "OpenAI 推出新公司 DeployCo，专门帮助企业把前沿 AI 真正落地到生产环境、转化为可衡量的业务收益。它瞄准的是大多数企业卡住的那道关口——怎么把模型嵌进既有工作流、跑通治理与质量控制。把「部署」单独拆成一家公司，本身说明 OpenAI 认为采用瓶颈不在模型能力，而在集成与运营。值得盯一下：DeployCo 会不会从大牌 AI 咨询公司那里抢走盘子。"
+    },
+    "date": "2026-05-11"
   }
 ]
