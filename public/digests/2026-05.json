@@ -250,5 +250,19 @@
       "zh": "HTTP 老兵 Mark Nottingham（mnot）发布了 2026 年版 RSS/Atom/JSON Feed 生态盘点：现在还在跑的、已经烂掉的、标准侧仍在变的、栈里悄悄死掉的，逐项过了一遍。文章对各类 feed 格式、传输方式、WebSub 等推送协议横向比较。mnot 是少数能同时讲清 IETF 标准和运维现实的人，他写的综述往往一篇就能重置行业基准。做 feed 阅读器、播客平台或推送管线的人建议必读。"
     },
     "date": "2026-05-11"
+  },
+  {
+    "id": "npm-shai-hulud-tanstack-mistral-supply-chain",
+    "title": {
+      "en": "Mass npm supply-chain attack hits TanStack, Mistral AI, and 170+ packages",
+      "zh": "npm 大规模供应链攻击：TanStack、Mistral AI 等 170+ 包遭波及"
+    },
+    "url": "https://www.reddit.com/r/programming/comments/1tapmvi/mass_npm_supply_chain_attack_hits_tanstack/",
+    "source": "Reddit r/programming",
+    "summary": {
+      "en": "A coordinated campaign published more than 400 malicious versions across 170+ npm packages, including TanStack Router and other TanStack devtools/SSR query plugins, plus Mistral AI's SDK. Researchers tracking it as a second wave of the 'Shai-Hulud' worm say no maintainer account was compromised; instead the attackers leveraged token/publish-flow weaknesses to push tainted versions. Any project on a caret range that ran npm install on May 12 should audit immediately and pin to known-good versions. The incident has revived calls for minimum release-age policies and stricter CI publishing controls.",
+      "zh": "一场协同攻击向 170+ npm 包发布了 400 多个恶意版本，TanStack Router 及其 devtools/SSR 查询插件、Mistral AI 的 SDK 均在内。研究人员将其归为 Shai-Hulud 蠕虫的第二波，并指出没有维护者账号被攻破，攻击者借由令牌与发布流程的弱点推送污染版本。任何在 5 月 12 日跑过 npm install 且使用 caret 区间的项目都应立即审计并钉到已知干净版本。事件重新点燃了对 npm 最小发布年龄策略和 CI 发布权限收紧的呼声。"
+    },
+    "date": "2026-05-12"
   }
 ]
