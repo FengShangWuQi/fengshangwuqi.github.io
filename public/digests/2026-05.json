@@ -264,5 +264,19 @@
       "zh": "一场协同攻击向 170+ npm 包发布了 400 多个恶意版本，TanStack Router 及其 devtools/SSR 查询插件、Mistral AI 的 SDK 均在内。研究人员将其归为 Shai-Hulud 蠕虫的第二波，并指出没有维护者账号被攻破，攻击者借由令牌与发布流程的弱点推送污染版本。任何在 5 月 12 日跑过 npm install 且使用 caret 区间的项目都应立即审计并钉到已知干净版本。事件重新点燃了对 npm 最小发布年龄策略和 CI 发布权限收紧的呼声。"
     },
     "date": "2026-05-12"
+  },
+  {
+    "id": "tanstack-npm-supply-chain-postmortem",
+    "title": {
+      "en": "TanStack publishes postmortem on its npm supply-chain compromise",
+      "zh": "TanStack 公布 npm 供应链入侵事件复盘"
+    },
+    "url": "https://tanstack.com/blog/npm-supply-chain-compromise-postmortem",
+    "source": "Reddit r/programming",
+    "summary": {
+      "en": "TanStack — the org behind TanStack Query, Router, Table, and Form — published a detailed postmortem of how an attacker took over npm publishing rights for several of its packages and pushed malicious versions before the team caught it. The write-up covers the initial intrusion vector, which TanStack packages were affected, the timeline from detection to revocation, and the steps the team is taking to prevent a repeat (2FA enforcement, granular tokens, package access audits). It's worth reading for any JS-side team whose lockfile pulls TanStack, and as a current-state example of how npm supply-chain attacks actually unfold against a maintainer with significant blast radius across React and Solid ecosystems.",
+      "zh": "TanStack 团队（也就是 TanStack Query、Router、Table、Form 背后的组织）公开了一份详细的 npm 供应链入侵复盘：攻击者如何拿到了几个核心 npm 包的发布权限、推上了恶意版本，团队又是怎么察觉并回滚的。文中梳理了初始入侵路径、受影响的包清单、从发现到吊销的完整时间线，以及后续的防御措施（强制 2FA、细粒度 token、定期包权限审计）等。任何 lockfile 里会拉到 TanStack 的 JS 团队都值得读一遍——它也是现阶段一份很具代表性的样本，展示了一次针对在 React 与 Solid 生态有巨大影响半径的维护者的 npm 供应链攻击究竟是怎么发生的。"
+    },
+    "date": "2026-05-13"
   }
 ]
