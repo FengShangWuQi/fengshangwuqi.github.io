@@ -278,5 +278,19 @@
       "zh": "TanStack 团队（也就是 TanStack Query、Router、Table、Form 背后的组织）公开了一份详细的 npm 供应链入侵复盘：攻击者如何拿到了几个核心 npm 包的发布权限、推上了恶意版本，团队又是怎么察觉并回滚的。文中梳理了初始入侵路径、受影响的包清单、从发现到吊销的完整时间线，以及后续的防御措施（强制 2FA、细粒度 token、定期包权限审计）等。任何 lockfile 里会拉到 TanStack 的 JS 团队都值得读一遍——它也是现阶段一份很具代表性的样本，展示了一次针对在 React 与 Solid 生态有巨大影响半径的维护者的 npm 供应链攻击究竟是怎么发生的。"
     },
     "date": "2026-05-13"
+  },
+  {
+    "id": "openai-chatgpt-personal-finance",
+    "title": {
+      "en": "ChatGPT launches a personal finance mode that connects to your real accounts (Pro, U.S.)",
+      "zh": "ChatGPT 上线“个人财务”模式：连上真实账户后给出有情境的建议（Pro，美区）"
+    },
+    "url": "https://openai.com/index/personal-finance-chatgpt",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI is previewing a new personal finance experience inside ChatGPT for Pro users in the U.S. Once you securely connect your bank, credit-card and brokerage accounts, ChatGPT can pull live balances, transactions and holdings into the conversation and give grounded advice — budgeting, debt prioritization, portfolio questions — without you re-typing the numbers. It's effectively OpenAI's first stab at a 'personal CFO' surface, and it lands inside the consumer Pro plan rather than the enterprise / API channel, signaling a push into highly regulated personal-data territory. Rollout is U.S.-only at preview.",
+      "zh": "OpenAI 在 ChatGPT 里给美区 Pro 用户开放了“个人财务”预览模式。把银行、信用卡、券商账户安全连接进来后，ChatGPT 能直接读到余额、交易记录和持仓，进而给出基于你真实财务情境的建议——预算、债务优先级、组合配置这些话题不再需要你手动复述数字。这等于是 OpenAI 第一次正式做“个人 CFO”形态的产品，并且选择把它放进消费版 Pro 套餐而不是企业线或 API，意味着主动踏进了高度敏感的个人金融数据领域。预览阶段仅限美国。"
+    },
+    "date": "2026-05-15"
   }
 ]
