@@ -292,5 +292,19 @@
       "zh": "OpenAI 在 ChatGPT 里给美区 Pro 用户开放了“个人财务”预览模式。把银行、信用卡、券商账户安全连接进来后，ChatGPT 能直接读到余额、交易记录和持仓，进而给出基于你真实财务情境的建议——预算、债务优先级、组合配置这些话题不再需要你手动复述数字。这等于是 OpenAI 第一次正式做“个人 CFO”形态的产品，并且选择把它放进消费版 Pro 套餐而不是企业线或 API，意味着主动踏进了高度敏感的个人金融数据领域。预览阶段仅限美国。"
     },
     "date": "2026-05-15"
+  },
+  {
+    "id": "cloakbrowser-stealth-chromium-playwright",
+    "title": {
+      "en": "CloakBrowser ships a 'Playwright drop-in' stealth Chromium that claims 30/30 on bot-detection benchmarks",
+      "zh": "CloakBrowser 推出“Playwright 直接替换”的隐身 Chromium，号称 30/30 通过反爬检测"
+    },
+    "url": "https://github.com/CloakHQ/CloakBrowser",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "A new project on GitHub Trending, CloakHQ/CloakBrowser, jumped to 1.3k stars in a day on the back of a single claim: a Chromium build with source-level fingerprint patches that passes all 30 cases in the standard bot-detection test suite and exposes the same API surface as Playwright. The repo positions it as a drop-in replacement — same launch/connect calls, same context options — for teams who today bolt stealth plugins onto puppeteer/playwright and still fail half the canvas/WebGL/navigator probes. Whether it stays ahead of detection vendors is the open question, but it lands the same week r/webdev's 'CAPTCHAs are officially useless' thread also trended, and it captures real frustration about modern bot defenses. Worth tracking even if your stance is on the defender side.",
+      "zh": "CloakHQ/CloakBrowser 杀进了今日 GitHub Trending，一天涨 1286 星，靠的是一个直白的主张：自己 patch 过指纹的 Chromium，能通过反爬测试套件的全部 30 项检测，而且 API 与 Playwright 完全对齐。仓库把它定位成 puppeteer/playwright 的“无缝替换”——同样的 launch/connect 调用、同样的 context 配置——直接顶替那些往 puppeteer/playwright 上拼接 stealth 插件、依然在 canvas/WebGL/navigator 检测里挂一半的方案。它能在检测厂商更新前撑多久还是个开放问题，但同一周 r/webdev 的“CAPTCHAs are officially useless”讨论也冲上了榜，背后是开发者对现有反 bot 防线的真实不满。无论你站在攻击侧还是防守侧，都值得跟一段时间。"
+    },
+    "date": "2026-05-15"
   }
 ]
