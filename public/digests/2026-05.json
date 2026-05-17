@@ -306,5 +306,19 @@
       "zh": "CloakHQ/CloakBrowser 杀进了今日 GitHub Trending，一天涨 1286 星，靠的是一个直白的主张：自己 patch 过指纹的 Chromium，能通过反爬测试套件的全部 30 项检测，而且 API 与 Playwright 完全对齐。仓库把它定位成 puppeteer/playwright 的“无缝替换”——同样的 launch/connect 调用、同样的 context 配置——直接顶替那些往 puppeteer/playwright 上拼接 stealth 插件、依然在 canvas/WebGL/navigator 检测里挂一半的方案。它能在检测厂商更新前撑多久还是个开放问题，但同一周 r/webdev 的“CAPTCHAs are officially useless”讨论也冲上了榜，背后是开发者对现有反 bot 防线的真实不满。无论你站在攻击侧还是防守侧，都值得跟一段时间。"
     },
     "date": "2026-05-15"
+  },
+  {
+    "id": "npm-no-way-to-prevent-this-satire",
+    "title": {
+      "en": "'No way to prevent this,' says only package manager where this regularly happens",
+      "zh": "「无法防止」——只有 npm 一家会反复中招的包管理器又中招了"
+    },
+    "url": "https://kevinpatel.xyz/posts/no-way-to-prevent-this/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Kevin Patel's Onion-style essay on yet another npm supply-chain incident went catastrophically viral — 389 points on Hacker News, 785 upvotes on r/programming, plus a Lobsters thread. The piece spoofs the post-mortem genre that the JavaScript ecosystem has built up around event-stream, ua-parser-js, color.js and now this week's compromise, and methodically pulls apart the excuses: install-time scripts that run arbitrary code, transitive maintainers nobody audits, lockfiles that don't actually pin what executes. It lands hard because the satire is technically correct: every other major package manager (cargo, go modules, deno's import maps, even pip with hashes) has made structurally different choices, and npm hasn't. Recommended reading even if you don't write JavaScript.",
+      "zh": "Kevin Patel 用洋葱新闻体写的这篇 npm 供应链事件吐槽彻底刷屏——HN 389 分、r/programming 785 赞，再加 Lobsters 一篇热帖。文章戏仿了 JS 圈这些年围绕 event-stream、ua-parser-js、color.js 以及本周新事故堆出来的「事后复盘」体裁，逐条拆解那些通用借口：会在 install 阶段执行任意代码、谁都没在审的传递依赖维护者、号称锁定其实并没锁住执行行为的 lockfile。讽刺之所以扎心，是因为它在技术上完全成立：cargo、go modules、deno 的 import maps、甚至带 hash 的 pip，结构上都已经做了不同的选择，只有 npm 始终没换。即使不写 JS，也值得一看。"
+    },
+    "date": "2026-05-16"
   }
 ]
