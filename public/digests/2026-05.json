@@ -320,5 +320,19 @@
       "zh": "Kevin Patel 用洋葱新闻体写的这篇 npm 供应链事件吐槽彻底刷屏——HN 389 分、r/programming 785 赞，再加 Lobsters 一篇热帖。文章戏仿了 JS 圈这些年围绕 event-stream、ua-parser-js、color.js 以及本周新事故堆出来的「事后复盘」体裁，逐条拆解那些通用借口：会在 install 阶段执行任意代码、谁都没在审的传递依赖维护者、号称锁定其实并没锁住执行行为的 lockfile。讽刺之所以扎心，是因为它在技术上完全成立：cargo、go modules、deno 的 import maps、甚至带 hash 的 pip，结构上都已经做了不同的选择，只有 npm 始终没换。即使不写 JS，也值得一看。"
     },
     "date": "2026-05-16"
+  },
+  {
+    "id": "history-of-ides-at-google",
+    "title": {
+      "en": "A History of IDEs at Google — 20 years of internal tooling, from Mondrian to Cider",
+      "zh": "Google IDE 简史：从 Mondrian 到 Cider 的二十年内部工具演化"
+    },
+    "url": "https://laurent.le-brun.eu/blog/a-history-of-ides-at-google",
+    "source": "Lobsters",
+    "summary": {
+      "en": "Ex-Googler Laurent Le Brun walks through every major IDE Google has built or adopted internally — Mondrian, Critique, Cider, the various 'Google3' IDE plugins, and the recent push toward Cider-V (web-based, AI-augmented). The post is unusually candid: which projects got killed and why, which 'wins' were really political rather than technical, how the build system (Blaze) and the monorepo shape what an IDE even has to be. It picked up cross-source traction with a top Lobsters thread and 267 upvotes on r/programming. For anyone designing dev tools — especially the new wave of agent-integrated IDEs — it's a rare ground-truth look at what survives at scale.",
+      "zh": "前 Googler Laurent Le Brun 把 Google 在内部用过/做过的 IDE 梳理了一遍——Mondrian、Critique、Cider、各类 Google3 插件，一直到最近主推、面向 Web 且整合 AI 的 Cider-V。文章罕见地坦率：哪些项目被砍掉、为什么被砍，哪些「胜出」其实是政治胜利而非技术胜利，构建系统（Blaze）和 monorepo 又如何反过来定义了「IDE 必须是什么样子」。Lobsters 热帖加 r/programming 267 赞，构成跨源信号。对于在做开发者工具、特别是新一代「Agent 内嵌 IDE」的人，这是难得一手的规模化经验。"
+    },
+    "date": "2026-05-16"
   }
 ]
