@@ -334,5 +334,19 @@
       "zh": "前 Googler Laurent Le Brun 把 Google 在内部用过/做过的 IDE 梳理了一遍——Mondrian、Critique、Cider、各类 Google3 插件，一直到最近主推、面向 Web 且整合 AI 的 Cider-V。文章罕见地坦率：哪些项目被砍掉、为什么被砍，哪些「胜出」其实是政治胜利而非技术胜利，构建系统（Blaze）和 monorepo 又如何反过来定义了「IDE 必须是什么样子」。Lobsters 热帖加 r/programming 267 赞，构成跨源信号。对于在做开发者工具、特别是新一代「Agent 内嵌 IDE」的人，这是难得一手的规模化经验。"
     },
     "date": "2026-05-16"
+  },
+  {
+    "id": "codegraph-claude-code-knowledge-graph",
+    "title": {
+      "en": "codegraph — a pre-indexed code knowledge graph for Claude Code, 100% local, +397 stars in a day",
+      "zh": "codegraph：给 Claude Code 用的本地预索引代码知识图，日增 397 star"
+    },
+    "url": "https://github.com/colbymchenry/codegraph",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Colby McHenry's new codegraph project builds a local, persistent knowledge graph of a repository (symbols, call edges, file relationships, recent diffs) and exposes it to Claude Code as a tool — the pitch is 'fewer tokens, fewer tool calls, 100% local'. Instead of the agent grepping files at every turn, it queries the graph and gets structured answers, which the README claims drops tool-call counts by ~70% on common refactors. The repo went from quiet to 2,285 stars with +397 in a single day, top of the TypeScript trending tab. It's an early but credible attempt at the 'shared retrieval substrate for coding agents' problem — relevant for anyone running long Claude Code or codex sessions and noticing the context budget evaporate into navigation.",
+      "zh": "Colby McHenry 新开的 codegraph 给本地仓库构建一张持久化的代码知识图（符号、调用边、文件关系、最近 diff），再以工具的形式暴露给 Claude Code——口号是「更少 token、更少 tool call、100% 本地」。Agent 不再每轮都 grep，而是查图拿结构化答案；README 声称在常见 refactor 上能把工具调用数量压低约 70%。仓库从默默无闻冲到 2285 star、单日 +397，登顶 TypeScript trending。这是「编码 Agent 的共享检索底层」这一问题的早期但靠谱的尝试——如果你常跑长 Claude Code / Codex 会话、看着 context 预算被「在仓库里找东西」吃光，这个项目值得关注。"
+    },
+    "date": "2026-05-16"
   }
 ]
