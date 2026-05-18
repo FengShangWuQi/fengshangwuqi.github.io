@@ -362,5 +362,19 @@
       "zh": "Anthropic 官方的 `skills` 仓库今天冲上 GitHub Trending（日增 522 star，总计 136K）。这是 Anthropic 自己维护的 Agent Skills 参考集——Claude 引入的「可移植能力」格式——涵盖 PDF / Excel / PPT 处理、代码评审、斜杠命令编写等。真正的新闻是跨源信号：同一天 trending 榜上还有三个独立的下游注册表——tech-leads-club/agent-skills（日增 923）、rohitg00/skillkit（+43）、sleuth-io/sx（Go 榜 +22）——都把自己定位成「AI 编码 Agent 的包管理器 / 注册表」。围绕 Skills 格式正在快速形成一层发现 + 分发基础设施，有点像「Agent 版 npm」，而 Anthropic 上游这个仓库就是大家共同对齐的种子目录。"
     },
     "date": "2026-05-17"
+  },
+  {
+    "id": "first-macos-kernel-exploit-m5",
+    "title": {
+      "en": "First public macOS kernel memory-corruption exploit on Apple Silicon M5",
+      "zh": "Apple Silicon M5 上的首个公开 macOS 内核内存破坏漏洞"
+    },
+    "url": "https://blog.calif.io/p/first-public-kernel-memory-corruption",
+    "source": "Reddit r/programming",
+    "summary": {
+      "en": "The first public macOS kernel memory-corruption exploit for Apple Silicon M5, posted on calif.io and lit up r/programming with 354 upvotes. The writeup chains a use-after-free in an IOKit driver into a kernel R/W primitive on M5-class chips, working around the M5's tightened pointer-authentication implementation that was supposed to make this exploit class harder. The author publishes a full PoC and explains why M5's PAC changes don't kill the technique. Notable because Apple Silicon kernel exploitation has been mostly conference-talk territory recently — a public end-to-end writeup at the M5 generation resets the discussion about how durable Apple's recent mitigations actually are.",
+      "zh": "Apple Silicon M5 上的首个公开 macOS 内核内存破坏漏洞，calif.io 上的 writeup 在 r/programming 拿到 354 赞。文章把某个 IOKit 驱动里的 UAF 串成了 M5 上的内核读写原语，绕过了 M5 本应让这类攻击更难的 PAC 强化。作者放出了完整 PoC，并解释为什么 M5 的指针认证改动并没有消灭这类利用技术。看点是：近期 Apple Silicon 内核利用基本只在会议演讲里出现，一份 M5 世代的完整端到端公开 writeup，会把「Apple 最近这些缓解机制到底有多耐打」的讨论拉回原点。"
+    },
+    "date": "2026-05-17"
   }
 ]
