@@ -348,5 +348,19 @@
       "zh": "Colby McHenry 新开的 codegraph 给本地仓库构建一张持久化的代码知识图（符号、调用边、文件关系、最近 diff），再以工具的形式暴露给 Claude Code——口号是「更少 token、更少 tool call、100% 本地」。Agent 不再每轮都 grep，而是查图拿结构化答案；README 声称在常见 refactor 上能把工具调用数量压低约 70%。仓库从默默无闻冲到 2285 star、单日 +397，登顶 TypeScript trending。这是「编码 Agent 的共享检索底层」这一问题的早期但靠谱的尝试——如果你常跑长 Claude Code / Codex 会话、看着 context 预算被「在仓库里找东西」吃光，这个项目值得关注。"
     },
     "date": "2026-05-16"
+  },
+  {
+    "id": "anthropics-skills-public-repo-trending",
+    "title": {
+      "en": "Anthropic's `skills` repo trends alongside a wave of Agent Skill registries — an npm-for-agents is forming",
+      "zh": "Anthropic 官方 `skills` 仓库连同一批 Skill 注册表同时上 Trending——「Agent 版 npm」开始成形"
+    },
+    "url": "https://github.com/anthropics/skills",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Anthropic's official `skills` repo surged onto GitHub Trending today (+522 stars in a day, 136K total). It's the reference catalog of Agent Skills — Claude's portable-capability format — covering PDF/Excel/PPT handling, code review, slash-command authoring, and more. The cross-source signal is the actual story: on the same trending day, three independent downstream registries also climbed the board — tech-leads-club/agent-skills (+923 in a day), rohitg00/skillkit (+43), and sleuth-io/sx (+22 in Go) — each pitching themselves as 'package manager / registry for AI coding agents.' A discoverability and distribution layer is rapidly forming around the Skills format, much like an npm-for-agents, and the upstream Anthropic repo is the seed catalog everyone else is building against.",
+      "zh": "Anthropic 官方的 `skills` 仓库今天冲上 GitHub Trending（日增 522 star，总计 136K）。这是 Anthropic 自己维护的 Agent Skills 参考集——Claude 引入的「可移植能力」格式——涵盖 PDF / Excel / PPT 处理、代码评审、斜杠命令编写等。真正的新闻是跨源信号：同一天 trending 榜上还有三个独立的下游注册表——tech-leads-club/agent-skills（日增 923）、rohitg00/skillkit（+43）、sleuth-io/sx（Go 榜 +22）——都把自己定位成「AI 编码 Agent 的包管理器 / 注册表」。围绕 Skills 格式正在快速形成一层发现 + 分发基础设施，有点像「Agent 版 npm」，而 Anthropic 上游这个仓库就是大家共同对齐的种子目录。"
+    },
+    "date": "2026-05-17"
   }
 ]
