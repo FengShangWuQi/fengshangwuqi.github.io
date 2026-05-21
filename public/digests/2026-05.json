@@ -390,5 +390,19 @@
       "zh": "GitHub 证实约 3,800 个仓库遭到未授权访问，溯源指向一个恶意 VSCode 扩展，它在开发者机器上收割凭据与令牌。多家报道把本次事件与近期声称掌握 GitHub 内部源代码的 TeamPCP 归为同一行动者。对工程团队的实际启示是：VSCode/Cursor/IDE 扩展拥有你 shell 与 Git 凭据的全部信任，但几乎没人在做扩展审计。立刻轮换 token、清查已装扩展，并把所有触达过受影响机器的凭据当作已泄露处理。"
     },
     "date": "2026-05-20"
+  },
+  {
+    "id": "railway-google-cloud-suspension",
+    "title": {
+      "en": "Railway Suspended by Google Cloud — Multi-Hour Outage",
+      "zh": "Railway 被 Google Cloud 暂停账户，平台数小时全面宕机"
+    },
+    "url": "https://status.railway.com/incident/I23M92U0",
+    "source": "Railway Status",
+    "summary": {
+      "en": "Railway's GCP account was suspended without prior notice, taking the platform — and every customer service hosted on it — offline for hours. The official incident report walks through the timeline and the negotiations to get reinstated; r/webdev threads captured the developer-side scramble, with many users unable to even export their .env secrets. The story is a reminder that running your control plane on a hyperscaler you don't pay enterprise rates to is a single-vendor risk no SLA promises away, especially for PaaS layers whose customers can't easily move.",
+      "zh": "Railway 的 GCP 账户在没有事前通知的情况下被暂停，平台连同所有托管在上面的客户服务一起宕机数小时。官方事故报告完整记录了时间线与恢复谈判过程；r/webdev 上多个帖子记录了开发者那边的混乱，许多人甚至连 .env 密钥都来不及导出。事件本身是给所有 PaaS 用户的提醒：当你的控制面跑在一家你并不付企业账单的超大规模云上，再漂亮的 SLA 也兜不住单一供应商风险，对客户难以横向迁移的 PaaS 层尤其如此。"
+    },
+    "date": "2026-05-20"
   }
 ]
