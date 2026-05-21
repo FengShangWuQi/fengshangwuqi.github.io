@@ -460,5 +460,19 @@
       "zh": "Krebs on Security 报道，CISA 的一名管理员把 AWS GovCloud 的访问密钥误推到公开 GitHub 仓库——而 CISA 的本职恰好是帮联邦政府别犯这种错。密钥在披露后已轮换，文章还跟踪了 secret scanning 的整条触发链。讽刺但有教育意义：写 playbook 的人也会犯一行代码的同样错误，真正的防线只有强制 pre-commit secret 扫描 + 默认短期凭据这两条。"
     },
     "date": "2026-05-20"
+  },
+  {
+    "id": "rtk-cli-token-reduction-proxy",
+    "title": {
+      "en": "rtk: Rust CLI Proxy That Cuts LLM Token Consumption 60–90%",
+      "zh": "rtk：Rust CLI 代理，号称将 LLM token 消耗削减 60-90%"
+    },
+    "url": "https://github.com/rtk-ai/rtk",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "rtk is a single-binary Rust CLI proxy that sits in front of LLM API calls and rewrites/cache-coalesces them, claiming a 60–90% token reduction on common dev commands. The pitch is zero-dependency, drop-in, and provider-agnostic — useful both as a cost control on Claude/OpenAI/Gemini bills and as a way to make code agents work with smaller context windows. Stars-per-day spiked on the back of an Anthropic-pricing discussion thread. Worth a single afternoon to try on a real workload before believing the marketing numbers.",
+      "zh": "rtk 是一个单二进制的 Rust CLI 代理，挡在 LLM API 调用之前做重写与缓存合并，号称在常见开发场景下把 token 消耗降低 60-90%。卖点是零依赖、即插即用、跨厂商——既能控 Claude / OpenAI / Gemini 账单，也方便让代码 Agent 在更小上下文窗口下跑通。最近因为一波关于 Anthropic 定价的讨论涨星明显。建议挑一个真实工作负载花一下午自测，再决定是否相信宣传数字。"
+    },
+    "date": "2026-05-20"
   }
 ]
