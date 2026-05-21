@@ -376,5 +376,19 @@
       "zh": "Apple Silicon M5 上的首个公开 macOS 内核内存破坏漏洞，calif.io 上的 writeup 在 r/programming 拿到 354 赞。文章把某个 IOKit 驱动里的 UAF 串成了 M5 上的内核读写原语，绕过了 M5 本应让这类攻击更难的 PAC 强化。作者放出了完整 PoC，并解释为什么 M5 的指针认证改动并没有消灭这类利用技术。看点是：近期 Apple Silicon 内核利用基本只在会议演讲里出现，一份 M5 世代的完整端到端公开 writeup，会把「Apple 最近这些缓解机制到底有多耐打」的讨论拉回原点。"
     },
     "date": "2026-05-17"
+  },
+  {
+    "id": "github-3800-repos-vscode-extension-breach",
+    "title": {
+      "en": "GitHub Confirms Breach of 3,800 Repos via Malicious VSCode Extension",
+      "zh": "GitHub 证实恶意 VSCode 扩展导致 3,800 个仓库被入侵"
+    },
+    "url": "https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/",
+    "source": "BleepingComputer (Reddit r/webdev)",
+    "summary": {
+      "en": "GitHub confirmed unauthorized access affecting around 3,800 repositories, traced to a malicious VSCode extension that harvested credentials and tokens from developer machines. Reporting links this incident to the same actor (TeamPCP) that has been claiming to ship stolen GitHub internal source code. The takeaway for every engineering org: VSCode/Cursor/IDE extensions run with the full trust of your shell and Git credentials, and few teams currently audit them. Rotate tokens, review installed extensions, and assume any token that touched an affected machine is burned.",
+      "zh": "GitHub 证实约 3,800 个仓库遭到未授权访问，溯源指向一个恶意 VSCode 扩展，它在开发者机器上收割凭据与令牌。多家报道把本次事件与近期声称掌握 GitHub 内部源代码的 TeamPCP 归为同一行动者。对工程团队的实际启示是：VSCode/Cursor/IDE 扩展拥有你 shell 与 Git 凭据的全部信任，但几乎没人在做扩展审计。立刻轮换 token、清查已装扩展，并把所有触达过受影响机器的凭据当作已泄露处理。"
+    },
+    "date": "2026-05-20"
   }
 ]
