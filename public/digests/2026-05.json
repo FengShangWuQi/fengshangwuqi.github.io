@@ -446,5 +446,19 @@
       "zh": "NGINX 新披露一处缓冲区溢出漏洞，可被远程未授权利用，PoC 代码已开始流传。默认构建及若干常见模块组合据报受影响。考虑到公网入口里 NGINX 的渗透率（反向代理、Ingress Controller、CDN 边缘层），打补丁优先级很高；同时也建议团队回查 Pin 住的镜像 base，确认发行版安全源是否真的连到了镜像构建流水线里，而不是等下次例行重建。"
     },
     "date": "2026-05-20"
+  },
+  {
+    "id": "cisa-leaked-aws-govcloud-keys",
+    "title": {
+      "en": "CISA Admin Leaked AWS GovCloud Keys on GitHub",
+      "zh": "CISA 管理员在 GitHub 泄露 AWS GovCloud 密钥"
+    },
+    "url": "https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/",
+    "source": "Krebs on Security (Reddit r/programming)",
+    "summary": {
+      "en": "Krebs on Security reports that a CISA admin accidentally pushed AWS GovCloud access keys to a public GitHub repository — the agency whose actual mandate is helping the rest of the US federal government avoid exactly this. The keys were rotated after disclosure, and Krebs traces the incident through the secret-scanning detection chain. Painful but instructive: even the people running the playbook ship the same one-line mistake everyone else does, and the only real defense is mandatory pre-commit secret scanning plus short-lived credentials by default.",
+      "zh": "Krebs on Security 报道，CISA 的一名管理员把 AWS GovCloud 的访问密钥误推到公开 GitHub 仓库——而 CISA 的本职恰好是帮联邦政府别犯这种错。密钥在披露后已轮换，文章还跟踪了 secret scanning 的整条触发链。讽刺但有教育意义：写 playbook 的人也会犯一行代码的同样错误，真正的防线只有强制 pre-commit secret 扫描 + 默认短期凭据这两条。"
+    },
+    "date": "2026-05-20"
   }
 ]
