@@ -418,5 +418,19 @@
       "zh": "pnpm 在 v11 线上发布 11.2 小版本，是今年 11.0 大版本后的第一个特性更新。对偏 monorepo 的栈来说，pnpm 仍是 JS 包管理里最省盘、锁文件最干净的选择，11.x 线已经稳定到可以替代 Yarn classic、甚至作为新 TypeScript 项目的默认推荐。若仍停在 10.x 上，可以先在 CI 里跑一遍 canary。"
     },
     "date": "2026-05-20"
+  },
+  {
+    "id": "nodejs-26-2-0-current",
+    "title": {
+      "en": "Node.js 26.2.0 (Current) Released",
+      "zh": "Node.js 26.2.0（Current）发布"
+    },
+    "url": "https://nodejs.org/en/blog/release/v26.2.0",
+    "source": "Node.js Blog",
+    "summary": {
+      "en": "Node.js 26.2.0 lands on the Current release line, the latest in the v26 series that will eventually move to Active LTS. Production fleets should still pin to v24 LTS, but library authors and tool maintainers benefit from running 26.x in CI now to catch any regressions before LTS promotion. Check the release notes for changes to the test runner, permissions model, and the V8 update bundled with this minor.",
+      "zh": "Node.js 26.2.0 落在 Current 线上，是 v26 系列的最新版本，未来会进入 Active LTS。生产集群仍应锁在 v24 LTS，但库作者和工具维护者建议尽早在 CI 跑 26.x，提前发现 LTS 转正前的回归。具体改动看官方 release notes，重点关注 test runner、权限模型以及随这版升级的 V8。"
+    },
+    "date": "2026-05-20"
   }
 ]
