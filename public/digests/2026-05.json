@@ -432,5 +432,19 @@
       "zh": "Node.js 26.2.0 落在 Current 线上，是 v26 系列的最新版本，未来会进入 Active LTS。生产集群仍应锁在 v24 LTS，但库作者和工具维护者建议尽早在 CI 跑 26.x，提前发现 LTS 转正前的回归。具体改动看官方 release notes，重点关注 test runner、权限模型以及随这版升级的 V8。"
     },
     "date": "2026-05-20"
+  },
+  {
+    "id": "nginx-buffer-overflow-rce",
+    "title": {
+      "en": "New NGINX Buffer Overflow Allows Unauthenticated RCE",
+      "zh": "NGINX 新缓冲区溢出漏洞允许未授权远程代码执行"
+    },
+    "url": "https://cybersecuritynews.com/nginx-buffer-overflow-vulnerability",
+    "source": "Cybersecurity News (Reddit r/programming)",
+    "summary": {
+      "en": "A newly disclosed NGINX buffer overflow can be exploited remotely without authentication, with proof-of-concept code circulating. Default builds and several common module configurations are reportedly affected. Given how much of the public internet front-ends through NGINX (reverse proxies, ingress controllers, CDNs' edge layers), patching priority is high; teams should also audit any pinned image bases and confirm distro security feeds are wired into their image build pipeline rather than waiting for next month's rebuild.",
+      "zh": "NGINX 新披露一处缓冲区溢出漏洞，可被远程未授权利用，PoC 代码已开始流传。默认构建及若干常见模块组合据报受影响。考虑到公网入口里 NGINX 的渗透率（反向代理、Ingress Controller、CDN 边缘层），打补丁优先级很高；同时也建议团队回查 Pin 住的镜像 base，确认发行版安全源是否真的连到了镜像构建流水线里，而不是等下次例行重建。"
+    },
+    "date": "2026-05-20"
   }
 ]
