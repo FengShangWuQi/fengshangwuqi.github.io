@@ -502,5 +502,19 @@
       "zh": "Nous Research 开源 hermes-agent——口号是 \"会与你一起成长的 Agent\"，绑定他们自家 Hermes 模型线的长程、以记忆为核心的 Agent 运行时。开源首日就 +1.9k 星，热度直追这波编码型 Agent 框架，但定位明显不同：强调持续个性化，而不是一次性完成任务。仓库以 Python 为主；就算不打算自己跑，也值得把记忆 schema 这部分读一读——那才是设计里最值得看的一半。"
     },
     "date": "2026-05-21"
+  },
+  {
+    "id": "npm-staged-publishing-launch",
+    "title": {
+      "en": "npm Launches Staged Publishing for Safer Releases",
+      "zh": "npm 推出 Staged Publishing：让发布过程可分阶段"
+    },
+    "url": "https://docs.npmjs.com/staged-publishing",
+    "source": "npm Docs",
+    "summary": {
+      "en": "npm shipped Staged Publishing: a publish flow where a new version is uploaded but stays invisible to installers until it's explicitly promoted (or auto-rolled-back). The pattern mirrors what large registries already do internally and directly addresses the failure mode behind years of supply-chain incidents — bad versions going GA the instant they're published. It's getting cross-source attention on r/programming, r/javascript and Bun-author X commentary, with the philosophical debate being whether 'staged' subtly breaks the npm install reproducibility assumption.",
+      "zh": "npm 上线 Staged Publishing：新版本上传后并不立刻对安装方可见，必须显式 \"晋升\"（或自动回滚）才生效。这套流程其实是大型 registry 内部早就跑通的做法，正面回应了过去几年供应链事件里的同一个失败模式——坏版本一发布就直接 GA。这条新闻同时登上 r/programming、r/javascript 与 Bun 作者的 X 讨论；哲学层面的争论是 \"staged\" 是否悄悄打破了 `npm install` 的可重现性假设。"
+    },
+    "date": "2026-05-21"
   }
 ]
