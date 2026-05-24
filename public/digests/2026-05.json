@@ -572,5 +572,19 @@
       "zh": "Mozilla 预告 Firefox 一次大幅的视觉与交互改版，自称是多年来最大的一次，目标是为 AI 时代的浏览能力、垂直标签、桌面/移动一致性腾出空间。文章的核心论点是：Firefox 的身份认同来自 \"站在用户这边的浏览器\" 而非 \"最像 Chrome 的浏览器\"，新方向试图把这一点显式做进 UI。关心非 Chromium 未来、或想看主流浏览器如何应对 Arc/Dia 这一拨新势力的人值得一读。"
     },
     "date": "2026-05-22"
+  },
+  {
+    "id": "deepseek-10b-financing-agi-commitment",
+    "title": {
+      "en": "DeepSeek Raises $10.29B and Doubles Down on Open-Source AGI",
+      "zh": "DeepSeek 完成 102.9 亿美元融资，押注开源 AGI 路线"
+    },
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tkfvvj/deepseek_is_pushing_forward_with_1029_billion/",
+    "source": "Reddit r/LocalLLaMA",
+    "summary": {
+      "en": "Bloomberg (via r/LocalLLaMA) reports DeepSeek closed a $10.29B financing round, with founder Liang Wenfeng publicly committing to AGI-track research and continued open-weight releases rather than near-term commercialization. The framing matters: at that funding level DeepSeek is choosing the 'free up the frontier' lane over the API-margin lane, and the community read is that the Qwen / DeepSeek / Moonshot open-weight track is now backed by capital that can sustain frontier-scale training runs. Two Minute Papers' new video on the latest DeepSeek model echoes this — open frontier is no longer a fringe scenario.",
+      "zh": "彭博（经 r/LocalLLaMA 转发）报道：DeepSeek 完成 102.9 亿美元融资，创始人梁文锋公开承诺继续走 AGI 研究 + 开权重发布路线，不追求短期商业化。重点在选择：拿到这个量级的钱后，DeepSeek 走的是 \"把前沿继续推到开源\" 而不是 \"靠 API 抽水\" 的车道；社区的解读是 Qwen / DeepSeek / Moonshot 这条开权重路线，已经有能力支撑前沿规模的训练。Two Minute Papers 同日新片把最新 DeepSeek 模型称作 game changer，呼应了同一件事——开源前沿不再是边缘剧情。"
+    },
+    "date": "2026-05-22"
   }
 ]
