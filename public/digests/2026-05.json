@@ -544,5 +544,19 @@
       "zh": "SafeDep 披露了一次自动化攻击：约六小时内向 5,561 个 GitHub 仓库推送了 5,700+ 条恶意 commit，使用一次性账号 + build-bot、auto-ci、ci-bot、pipeline-bot 这类伪造作者名，让 CI 工作流改动看起来像普通机器人流量。攻击利用的是 pull_request_target——这个会让来路不明的 PR 代码访问到仓库 secrets 的触发器；包括 oxc 作者 boshen 在内的生态维护者再次喊话 GitHub 干脆禁用它。如果你的公开仓库挂着 CI secrets，这不是迟早要修而是今天就得修：立刻审计 pull_request_target 的所有用法。"
     },
     "date": "2026-05-22"
+  },
+  {
+    "id": "chrome-web-extensions-io-2026-recap",
+    "title": {
+      "en": "What's New in Web Extensions: Google I/O 2026 Recap",
+      "zh": "Web 扩展新特性：Google I/O 2026 回顾"
+    },
+    "url": "https://developer.chrome.com/blog/extensions-io-2026",
+    "source": "Chrome for Developers",
+    "summary": {
+      "en": "Chrome for Developers publishes the I/O 2026 web-extensions recap, with the headline items being expanded AI-related APIs available to extension authors, tighter MV3 capabilities for side panels and offscreen documents, and new declarativeNetRequest tooling. The post is the canonical pointer for what Chromium just shipped or committed to ship to the extension surface, and it's worth a skim even if you only consume extensions rather than write them — the AI surface in particular will start showing up in third-party tools fast.",
+      "zh": "Chrome for Developers 发布 I/O 2026 Web 扩展回顾，亮点包括：面向扩展开发者开放的 AI 相关 API、为 side panel 与 offscreen document 强化的 MV3 能力，以及新的 declarativeNetRequest 工具链。这篇文章是 Chromium 在扩展面上 \"刚发的 + 承诺要发的\" 的权威索引，即便你只是用扩展不写扩展也值得扫一眼——尤其是新 AI API，很快就会出现在第三方工具里。"
+    },
+    "date": "2026-05-22"
   }
 ]
