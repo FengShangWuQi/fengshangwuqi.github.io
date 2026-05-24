@@ -474,5 +474,19 @@
       "zh": "rtk 是一个单二进制的 Rust CLI 代理，挡在 LLM API 调用之前做重写与缓存合并，号称在常见开发场景下把 token 消耗降低 60-90%。卖点是零依赖、即插即用、跨厂商——既能控 Claude / OpenAI / Gemini 账单，也方便让代码 Agent 在更小上下文窗口下跑通。最近因为一波关于 Anthropic 定价的讨论涨星明显。建议挑一个真实工作负载花一下午自测，再决定是否相信宣传数字。"
     },
     "date": "2026-05-20"
+  },
+  {
+    "id": "chrome-devtools-mcp-server",
+    "title": {
+      "en": "chrome-devtools-mcp: Chrome DevTools as an MCP Surface for Coding Agents",
+      "zh": "chrome-devtools-mcp：把 Chrome DevTools 暴露成编码 Agent 的 MCP 工具集"
+    },
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "ChromeDevTools/chrome-devtools-mcp ships an MCP server that exposes the full DevTools protocol — network panel, performance traces, console, DOM, page navigation — as tools any MCP-capable agent (Claude Code, Codex, Cursor) can call. It's an official Chromium-org repo, not a community wrapper, so the surface should track DevTools updates instead of drifting. Practical use cases people are already trying: hands-off perf regressions on PRs, agent-driven E2E debugging, and visual diffs without bolting on Playwright.",
+      "zh": "ChromeDevTools/chrome-devtools-mcp 把完整的 DevTools 协议——网络面板、性能 trace、Console、DOM、页面跳转——以 MCP 工具的形式暴露出来，任何支持 MCP 的 Agent（Claude Code、Codex、Cursor）都能直接调。它属于 Chromium 官方组织仓库，而不是社区包装层，所以面会跟随 DevTools 主线，而不是慢慢漂走。社区已经在尝试的实际用法：PR 上无人值守的性能回归检测、Agent 主导的 E2E 调试、不靠 Playwright 就能跑视觉 diff。"
+    },
+    "date": "2026-05-21"
   }
 ]
