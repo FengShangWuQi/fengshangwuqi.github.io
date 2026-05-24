@@ -614,5 +614,19 @@
       "zh": "multica-ai/andrej-karpathy-skills 就是一个 CLAUDE.md 文件，把 Karpathy 总结的 LLM 写代码常见坑——过度工程、伪造测试脚手架、瞎编 API 等——逐条变成对 agent 的规则约束。底数 14.9 万星，今天单日再加 3372 颗，反常的信号说明 \"调教 agent 的配置文件\"（CLAUDE.md、AGENTS.md、.cursorrules）本身已经成为一种分发面。即便砍掉一半规则也值得拷一份进自己的仓库。"
     },
     "date": "2026-05-23"
+  },
+  {
+    "id": "code-knowledge-graphs-for-agents-trend",
+    "title": {
+      "en": "Three 'Code Knowledge Graph for Agents' Repos Trend Together — A New Category Crystallizes",
+      "zh": "三个 \"给 agent 用的代码知识图谱\" 仓库同日上 Trending，新品类成型"
+    },
+    "url": "https://github.com/colbymchenry/codegraph",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Three independent projects — colbymchenry/codegraph (+2,434 stars), Lum1104/Understand-Anything (+2,331), abhigyanpatwari/GitNexus (+135) — all hit GitHub Trending today pitching essentially the same idea: pre-index a repository as a queryable knowledge graph that Claude Code, Codex, Cursor and the rest can hit instead of grep-ing through files token-by-token. The collective signal matters more than any single repo: 'graph index of code' is graduating from research talk into a tooling category, with the promised win being fewer tokens, fewer tool calls and grounded answers about cross-file structure.",
+      "zh": "三个独立项目同日冲上 GitHub Trending，讲的是同一件事：colbymchenry/codegraph（+2434 星）、Lum1104/Understand-Anything（+2331 星）、abhigyanpatwari/GitNexus（+135 星）都把仓库预先索引成可查询的知识图谱，让 Claude Code、Codex、Cursor 直接查图，而不是 token by token 地 grep。这种集体信号比单个仓库本身更重要：\"代码图谱索引\" 正从研究话题升格为工具品类，宣称的好处是更少的 token、更少的工具调用，以及对跨文件结构的有据回答。"
+    },
+    "date": "2026-05-23"
   }
 ]
