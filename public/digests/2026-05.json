@@ -516,5 +516,19 @@
       "zh": "npm 上线 Staged Publishing：新版本上传后并不立刻对安装方可见，必须显式 \"晋升\"（或自动回滚）才生效。这套流程其实是大型 registry 内部早就跑通的做法，正面回应了过去几年供应链事件里的同一个失败模式——坏版本一发布就直接 GA。这条新闻同时登上 r/programming、r/javascript 与 Bun 作者的 X 讨论；哲学层面的争论是 \"staged\" 是否悄悄打破了 `npm install` 的可重现性假设。"
     },
     "date": "2026-05-21"
+  },
+  {
+    "id": "python-3-15-quiet-features",
+    "title": {
+      "en": "Python 3.15: The Features That Didn't Make the Headlines",
+      "zh": "Python 3.15：那些没上头条的小改动"
+    },
+    "url": "https://blog.changs.co.uk/python-315-features-that-didnt-make-the-headlines.html",
+    "source": "Lobsters",
+    "summary": {
+      "en": "A quiet but useful tour of the Python 3.15 changes that haven't been front-page material: small library tweaks, sharper traceback formatting, stdlib deprecations, and a handful of CPython internals adjustments that will show up in tooling before user code. Useful as a 'what will subtly break or improve when we bump the CI matrix' checklist, especially for library maintainers planning the next compatibility row.",
+      "zh": "一篇低调但实用的 Python 3.15 \"非头条改动\" 概览：小幅 library 调整、更清晰的 traceback 格式、stdlib 中的 deprecation，以及一批先在工具链上显现、然后才波及业务代码的 CPython 内部调整。把它当作 \"CI 矩阵升到 3.15 时，会悄悄坏 / 悄悄变好的清单\" 来读最有价值，尤其适合在规划下一行兼容性矩阵的库维护者。"
+    },
+    "date": "2026-05-21"
   }
 ]
