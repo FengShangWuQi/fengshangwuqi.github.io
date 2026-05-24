@@ -488,5 +488,19 @@
       "zh": "ChromeDevTools/chrome-devtools-mcp 把完整的 DevTools 协议——网络面板、性能 trace、Console、DOM、页面跳转——以 MCP 工具的形式暴露出来，任何支持 MCP 的 Agent（Claude Code、Codex、Cursor）都能直接调。它属于 Chromium 官方组织仓库，而不是社区包装层，所以面会跟随 DevTools 主线，而不是慢慢漂走。社区已经在尝试的实际用法：PR 上无人值守的性能回归检测、Agent 主导的 E2E 调试、不靠 Playwright 就能跑视觉 diff。"
     },
     "date": "2026-05-21"
+  },
+  {
+    "id": "nous-research-hermes-agent",
+    "title": {
+      "en": "Nous Research Open-Sources Hermes Agent — 1.9k Stars/Day at Launch",
+      "zh": "Nous Research 开源 Hermes Agent：首日 +1.9k 星"
+    },
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Nous Research released hermes-agent, branded as 'the agent that grows with you' — a long-horizon, memory-first agent runtime tied to their Hermes model line. Picking up nearly 2k stars on launch day puts it squarely in the spotlight alongside the wave of coding-focused agent frameworks, but its pitch is different: continual personalisation rather than one-shot task execution. Repo is Python-first; worth a read even if you don't run it, because the memory schema is the interesting half of the design.",
+      "zh": "Nous Research 开源 hermes-agent——口号是 \"会与你一起成长的 Agent\"，绑定他们自家 Hermes 模型线的长程、以记忆为核心的 Agent 运行时。开源首日就 +1.9k 星，热度直追这波编码型 Agent 框架，但定位明显不同：强调持续个性化，而不是一次性完成任务。仓库以 Python 为主；就算不打算自己跑，也值得把记忆 schema 这部分读一读——那才是设计里最值得看的一半。"
+    },
+    "date": "2026-05-21"
   }
 ]
