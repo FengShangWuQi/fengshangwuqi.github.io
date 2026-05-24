@@ -558,5 +558,19 @@
       "zh": "Chrome for Developers 发布 I/O 2026 Web 扩展回顾，亮点包括：面向扩展开发者开放的 AI 相关 API、为 side panel 与 offscreen document 强化的 MV3 能力，以及新的 declarativeNetRequest 工具链。这篇文章是 Chromium 在扩展面上 \"刚发的 + 承诺要发的\" 的权威索引，即便你只是用扩展不写扩展也值得扫一眼——尤其是新 AI API，很快就会出现在第三方工具里。"
     },
     "date": "2026-05-22"
+  },
+  {
+    "id": "firefox-redesign-future",
+    "title": {
+      "en": "Designing Firefox for the Future",
+      "zh": "为未来重新设计 Firefox"
+    },
+    "url": "https://blog.mozilla.org/en/firefox/new-firefox-design/",
+    "source": "Mozilla Blog",
+    "summary": {
+      "en": "Mozilla previews a substantial Firefox visual and interaction redesign, framed as the most significant in years and aimed at clearing a path for AI-era browsing features, vertical tabs, and tighter desktop/mobile parity. The post leans on the principle that Firefox's identity comes from being the user-aligned browser rather than the most-cloned-Chrome browser, and the new direction tries to make that explicit in the UI. Worth a read if you care about non-Chromium futures or about how a mass-market browser positions itself against Arc/Dia-style entrants.",
+      "zh": "Mozilla 预告 Firefox 一次大幅的视觉与交互改版，自称是多年来最大的一次，目标是为 AI 时代的浏览能力、垂直标签、桌面/移动一致性腾出空间。文章的核心论点是：Firefox 的身份认同来自 \"站在用户这边的浏览器\" 而非 \"最像 Chrome 的浏览器\"，新方向试图把这一点显式做进 UI。关心非 Chromium 未来、或想看主流浏览器如何应对 Arc/Dia 这一拨新势力的人值得一读。"
+    },
+    "date": "2026-05-22"
   }
 ]
