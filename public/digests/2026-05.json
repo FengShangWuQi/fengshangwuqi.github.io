@@ -586,5 +586,19 @@
       "zh": "彭博（经 r/LocalLLaMA 转发）报道：DeepSeek 完成 102.9 亿美元融资，创始人梁文锋公开承诺继续走 AGI 研究 + 开权重发布路线，不追求短期商业化。重点在选择：拿到这个量级的钱后，DeepSeek 走的是 \"把前沿继续推到开源\" 而不是 \"靠 API 抽水\" 的车道；社区的解读是 Qwen / DeepSeek / Moonshot 这条开权重路线，已经有能力支撑前沿规模的训练。Two Minute Papers 同日新片把最新 DeepSeek 模型称作 game changer，呼应了同一件事——开源前沿不再是边缘剧情。"
     },
     "date": "2026-05-22"
+  },
+  {
+    "id": "anthropic-claude-plugins-official",
+    "title": {
+      "en": "Anthropic Publishes Official Claude Plugins Repo",
+      "zh": "Anthropic 开源官方 Claude 插件仓库"
+    },
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "anthropics/claude-plugins-official lands on GitHub Trending as Anthropic's curated, first-party set of plugins for Claude Code and the broader Claude ecosystem — the equivalent of a vendor-blessed extension marketplace. Notably, Cursor also pushed its own cursor/plugins official spec repo to Trending the same day, so the two major AI-coding-agent vendors are simultaneously formalizing a plugin surface. For tool authors this is the signal to stop building bespoke integrations and start shipping against these specs.",
+      "zh": "anthropics/claude-plugins-official 登上 GitHub Trending：Anthropic 自家整理、官方背书的 Claude Code + Claude 生态插件集合，相当于一个厂商钦定的扩展市场。同一天 Cursor 也把自己的 cursor/plugins 官方规范 repo 推到 Trending——两家头部 AI 编码 agent 厂商同时把插件接口正式化。对工具作者来说这是个明确信号：可以停掉定制集成，开始按这些规范出货。"
+    },
+    "date": "2026-05-22"
   }
 ]
