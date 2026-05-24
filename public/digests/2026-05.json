@@ -600,5 +600,19 @@
       "zh": "anthropics/claude-plugins-official 登上 GitHub Trending：Anthropic 自家整理、官方背书的 Claude Code + Claude 生态插件集合，相当于一个厂商钦定的扩展市场。同一天 Cursor 也把自己的 cursor/plugins 官方规范 repo 推到 Trending——两家头部 AI 编码 agent 厂商同时把插件接口正式化。对工具作者来说这是个明确信号：可以停掉定制集成，开始按这些规范出货。"
     },
     "date": "2026-05-22"
+  },
+  {
+    "id": "karpathy-claude-md-skills-trending",
+    "title": {
+      "en": "Karpathy-Distilled CLAUDE.md Hits 149K Stars — A Single File to Curb LLM Coding Pitfalls",
+      "zh": "Karpathy 提炼的 CLAUDE.md 冲上 14.9 万星：用一个文件压住 LLM 写代码的常见坑"
+    },
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "multica-ai/andrej-karpathy-skills is a single CLAUDE.md that codifies Andrej Karpathy's observations on where LLM-driven coding tends to fail — over-engineering, fake test scaffolds, hallucinated APIs, etc. — and turns each one into a rule for the agent. It picked up 3,372 stars in a day on top of a 149K base, an unusual signal that 'agent-shaping configs' (CLAUDE.md, AGENTS.md, .cursorrules) are now a distribution surface in their own right. Worth a copy into your repo even if you trim half the rules.",
+      "zh": "multica-ai/andrej-karpathy-skills 就是一个 CLAUDE.md 文件，把 Karpathy 总结的 LLM 写代码常见坑——过度工程、伪造测试脚手架、瞎编 API 等——逐条变成对 agent 的规则约束。底数 14.9 万星，今天单日再加 3372 颗，反常的信号说明 \"调教 agent 的配置文件\"（CLAUDE.md、AGENTS.md、.cursorrules）本身已经成为一种分发面。即便砍掉一半规则也值得拷一份进自己的仓库。"
+    },
+    "date": "2026-05-23"
   }
 ]
