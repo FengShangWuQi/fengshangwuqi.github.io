@@ -530,5 +530,19 @@
       "zh": "一篇低调但实用的 Python 3.15 \"非头条改动\" 概览：小幅 library 调整、更清晰的 traceback 格式、stdlib 中的 deprecation，以及一批先在工具链上显现、然后才波及业务代码的 CPython 内部调整。把它当作 \"CI 矩阵升到 3.15 时，会悄悄坏 / 悄悄变好的清单\" 来读最有价值，尤其适合在规划下一行兼容性矩阵的库维护者。"
     },
     "date": "2026-05-21"
+  },
+  {
+    "id": "megalodon-github-ci-backdoor-attack",
+    "title": {
+      "en": "Megalodon: Mass GitHub Repo Backdooring via CI Workflows",
+      "zh": "Megalodon：通过 CI 工作流大规模植入 GitHub 仓库后门"
+    },
+    "url": "https://safedep.io/megalodon-mass-github-repo-backdooring-ci-workflows",
+    "source": "Lobsters",
+    "summary": {
+      "en": "SafeDep reports an automated campaign that pushed over 5,700 malicious commits across 5,561 GitHub repositories in roughly six hours, using throwaway accounts and forged author names like build-bot, auto-ci, ci-bot, pipeline-bot to make CI workflow edits look like routine bot traffic. The attack hinges on pull_request_target — the workflow trigger that runs untrusted PR code with secrets — and is being raised again by ecosystem maintainers (boshen of oxc among them) demanding GitHub disable it. If you ship a public repo with CI secrets, this is a today problem, not a someday problem: audit pull_request_target usage now.",
+      "zh": "SafeDep 披露了一次自动化攻击：约六小时内向 5,561 个 GitHub 仓库推送了 5,700+ 条恶意 commit，使用一次性账号 + build-bot、auto-ci、ci-bot、pipeline-bot 这类伪造作者名，让 CI 工作流改动看起来像普通机器人流量。攻击利用的是 pull_request_target——这个会让来路不明的 PR 代码访问到仓库 secrets 的触发器；包括 oxc 作者 boshen 在内的生态维护者再次喊话 GitHub 干脆禁用它。如果你的公开仓库挂着 CI secrets，这不是迟早要修而是今天就得修：立刻审计 pull_request_target 的所有用法。"
+    },
+    "date": "2026-05-22"
   }
 ]
