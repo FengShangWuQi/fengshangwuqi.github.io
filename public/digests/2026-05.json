@@ -642,5 +642,19 @@
       "zh": "pnpm 发了 11.3 主版本——这个 Node 包管理器是 Vue、Vite、Nuxt 和大多数 monorepo 默认在用的工具，主打 workspace 友好。Release notes 覆盖了 lockfile 改动、解析器行为、更严格的 workspace 语义——是那种你升 CI 之前最好先把迁移说明读一遍的更新。在用 monorepo 的话，估计 24 小时内会出现在 Renovate/Dependabot 队列里；给 lockfile diff 留半天时间。"
     },
     "date": "2026-05-24"
+  },
+  {
+    "id": "anthropic-knowledge-work-plugins",
+    "title": {
+      "en": "Anthropic Open-Sources Knowledge-Work Plugins — Second Official Plugin Directory This Month",
+      "zh": "Anthropic 开源 Knowledge-Work Plugins：本月第二个官方插件目录"
+    },
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "anthropics/knowledge-work-plugins lands on GitHub Trending at +486 stars in a day on a 13.7K base — an open-source plugin repository 'primarily intended for knowledge workers to use in Claude Cowork.' This is the second official plugin directory Anthropic has shipped this month, after claude-plugins-official (focused on coding agents) yesterday. Reading the two together it's clear: Anthropic is partitioning the plugin surface by use case rather than by language, and the 'skills / plugins / cowork' layer is where Claude is being productized for non-developer roles.",
+      "zh": "anthropics/knowledge-work-plugins 上 GitHub Trending：单日 +486 星，底数 1.37 万——一个开源插件仓库，'主要面向使用 Claude Cowork 的知识工作者'。这是 Anthropic 本月发的第二个官方插件目录：上一个是昨天的 claude-plugins-official（面向编码 agent）。两者放在一起看就清楚了：Anthropic 在按用例切分插件面，而不是按语言；'skills / plugins / cowork' 这一层正在变成 Claude 给非开发者岗位做产品化的载体。"
+    },
+    "date": "2026-05-24"
   }
 ]
