@@ -698,5 +698,19 @@
       "zh": "Hugging Face 的 @reach_vb 发了条很实用的提示（360 赞）：Codex 是开源的，所以学它最干净的方式就是让你本地的 Codex 指着 Codex 仓库自己——问它某个 feature 怎么实现的、问它怎么优化你当前的配置、看 Codex 团队自己怎么用 Codex。这个套路可以推广：现在主流编码 agent 几乎都是开源（Codex、OpenCode、Aider、Hermes）或接近开源，让 agent 跑在它自己的源码上 正在变成最便宜、上下文最足的工具上手路径。文档可以跳。"
     },
     "date": "2026-05-24"
+  },
+  {
+    "id": "leerob-ai-doesnt-mean-less-thinking",
+    "title": {
+      "en": "leerob: AI Doesn't Mean You Should Spend Less Time Thinking About Code",
+      "zh": "leerob：用了 AI 不代表你可以少花时间想代码"
+    },
+    "url": "https://x.com/leerob/status/2058577150500909108",
+    "source": "X (@leerob)",
+    "summary": {
+      "en": "Vercel's leerob fired off a 515-like contrarian on his own timeline: 'You might believe you should spend less time thinking about code because of AI. I strongly disagree.' The argument is short — AI-generated code is becoming a liability in production, and the engineer on call is still the one responsible for it — but it's notable as a senior Vercel voice pushing back against the same '100% agent-written' framing other Vercel staff have endorsed publicly the same week. A useful counterweight to quote in code review threads.",
+      "zh": "Vercel 的 leerob 在自己的时间线上甩了一条 515 赞的反向观点：'你可能以为有了 AI 就可以少花时间想代码——我完全不同意。' 论点很短：AI 生成的代码正在变成生产事故的来源，最后承担责任的还是值班的工程师。值得记录是因为他是 Vercel 高管，正在公开反对他自己同事这一周公开背书的'100% agent 写代码'那套框架。下次 code review 吵起来的时候可以引用。"
+    },
+    "date": "2026-05-24"
   }
 ]
