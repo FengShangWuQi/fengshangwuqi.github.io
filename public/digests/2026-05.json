@@ -628,5 +628,19 @@
       "zh": "三个独立项目同日冲上 GitHub Trending，讲的是同一件事：colbymchenry/codegraph（+2434 星）、Lum1104/Understand-Anything（+2331 星）、abhigyanpatwari/GitNexus（+135 星）都把仓库预先索引成可查询的知识图谱，让 Claude Code、Codex、Cursor 直接查图，而不是 token by token 地 grep。这种集体信号比单个仓库本身更重要：\"代码图谱索引\" 正从研究话题升格为工具品类，宣称的好处是更少的 token、更少的工具调用，以及对跨文件结构的有据回答。"
     },
     "date": "2026-05-23"
+  },
+  {
+    "id": "pnpm-11-3-release",
+    "title": {
+      "en": "pnpm 11.3 Released — Major Version Bump for the JS Package Manager",
+      "zh": "pnpm 11.3 发布：JS 包管理器主版本更新"
+    },
+    "url": "https://github.com/pnpm/pnpm/releases/tag/v11.3.0",
+    "source": "GitHub Releases",
+    "summary": {
+      "en": "pnpm just shipped 11.3, a major version of the workspace-friendly Node package manager that Vue, Vite, Nuxt and most fashionable monorepos use as their default. The release notes cover lockfile changes, resolver behaviour, and tightened workspace semantics — the kind of upgrade where you want to read the migration notes before bumping it through CI. If you run a monorepo, expect this in your Renovate/Dependabot queue inside 24 hours; budget half a day for the lockfile diff.",
+      "zh": "pnpm 发了 11.3 主版本——这个 Node 包管理器是 Vue、Vite、Nuxt 和大多数 monorepo 默认在用的工具，主打 workspace 友好。Release notes 覆盖了 lockfile 改动、解析器行为、更严格的 workspace 语义——是那种你升 CI 之前最好先把迁移说明读一遍的更新。在用 monorepo 的话，估计 24 小时内会出现在 Renovate/Dependabot 队列里；给 lockfile diff 留半天时间。"
+    },
+    "date": "2026-05-24"
   }
 ]
