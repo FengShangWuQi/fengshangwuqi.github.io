@@ -670,5 +670,19 @@
       "zh": "farion1231/cc-switch 单日 +725 星冲上 GitHub Trending，总数 7.96 万——一个跨平台桌面应用，把 Claude Code、Codex、OpenCode、OpenClaw、Gemini CLI、Hermes Agent 集成在一起。一个'切换器'现在需要兼容六个终端编码 agent，本身就是这个品类的现状切片：单功能 TUI 太多，缺统一前端。值得盯紧——一旦其中某个项目吞并了其他几个，这种'机箱'类工具就会变成行业默认。"
     },
     "date": "2026-05-24"
+  },
+  {
+    "id": "rauchg-codex-vs-claude-mentions",
+    "title": {
+      "en": "Rauchg's 1400-Reply Pulse Check: Codex Beats Claude Code on Mentions, Anthropic Still Leads on Model",
+      "zh": "rauchg 抽样 1400 条回复：Codex 提到次数已超过 Claude Code，但模型口碑还是 Anthropic"
+    },
+    "url": "https://x.com/rauchg/status/2058353051073970416",
+    "source": "X (@rauchg)",
+    "summary": {
+      "en": "Vercel CEO Guillermo Rauch processed 1,400 replies to a 'what coding agent are you using' question (307 likes). The headline numbers: OpenAI is closing the gap with Anthropic; 'Codex' gets more mentions than 'Claude Code' as a tool brand; but by model name — i.e. people calling out which LLM is actually doing the work — Anthropic still leads. The split is useful: tool-brand share and model preference are now diverging signals, and bundled product offers (free Codex on a ChatGPT seat) appear to be the dominant lever on the tool side.",
+      "zh": "Vercel CEO rauchg 抽了 1400 条'你在用哪个编码 agent'的回复（307 赞）。结论：OpenAI 在追上 Anthropic；按工具名提的 'Codex' 已经多过 'Claude Code'；但按模型名提（即用户在指出实际干活的 LLM 是谁），Anthropic 还领先。这个分裂很有用：工具品牌占有率 和 模型偏好 已经是两条不同的信号；工具侧的主导杠杆看起来是捆绑销售（ChatGPT 订阅自带 Codex）。"
+    },
+    "date": "2026-05-24"
   }
 ]
