@@ -684,5 +684,19 @@
       "zh": "Vercel CEO rauchg 抽了 1400 条'你在用哪个编码 agent'的回复（307 赞）。结论：OpenAI 在追上 Anthropic；按工具名提的 'Codex' 已经多过 'Claude Code'；但按模型名提（即用户在指出实际干活的 LLM 是谁），Anthropic 还领先。这个分裂很有用：工具品牌占有率 和 模型偏好 已经是两条不同的信号；工具侧的主导杠杆看起来是捆绑销售（ChatGPT 订阅自带 Codex）。"
     },
     "date": "2026-05-24"
+  },
+  {
+    "id": "reach-vb-codex-is-open-source-point-at-itself",
+    "title": {
+      "en": "reach_vb: Codex Is Open Source — Point It At Its Own Repo And Ask How It Works",
+      "zh": "reach_vb：Codex 是开源的，把它指向它自己的仓库去问'这功能怎么实现的'"
+    },
+    "url": "https://x.com/reach_vb/status/2058449318604861920",
+    "source": "X (@reach_vb)",
+    "summary": {
+      "en": "Hugging Face's Vaibhav Srivastav (@reach_vb) posted a useful note (360 likes): Codex is open source, so the cleanest way to learn it is to point your local Codex instance at the Codex repo itself — ask how feature X works, ask how to optimize your current config, and watch how the team building Codex actually uses Codex. The tip generalizes: with every major coding agent now open-source or close to it (Codex, OpenCode, Aider, Hermes), 'agent on its own source tree' is becoming the cheapest, highest-context onboarding path. Skip the docs.",
+      "zh": "Hugging Face 的 @reach_vb 发了条很实用的提示（360 赞）：Codex 是开源的，所以学它最干净的方式就是让你本地的 Codex 指着 Codex 仓库自己——问它某个 feature 怎么实现的、问它怎么优化你当前的配置、看 Codex 团队自己怎么用 Codex。这个套路可以推广：现在主流编码 agent 几乎都是开源（Codex、OpenCode、Aider、Hermes）或接近开源，让 agent 跑在它自己的源码上 正在变成最便宜、上下文最足的工具上手路径。文档可以跳。"
+    },
+    "date": "2026-05-24"
   }
 ]
