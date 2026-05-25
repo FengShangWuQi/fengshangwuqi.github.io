@@ -656,5 +656,19 @@
       "zh": "anthropics/knowledge-work-plugins 上 GitHub Trending：单日 +486 星，底数 1.37 万——一个开源插件仓库，'主要面向使用 Claude Cowork 的知识工作者'。这是 Anthropic 本月发的第二个官方插件目录：上一个是昨天的 claude-plugins-official（面向编码 agent）。两者放在一起看就清楚了：Anthropic 在按用例切分插件面，而不是按语言；'skills / plugins / cowork' 这一层正在变成 Claude 给非开发者岗位做产品化的载体。"
     },
     "date": "2026-05-24"
+  },
+  {
+    "id": "cc-switch-coding-agent-allinone",
+    "title": {
+      "en": "cc-switch Trends — One Desktop App for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI and Hermes",
+      "zh": "cc-switch 上 Trending：一个桌面应用集成 Claude Code / Codex / OpenCode / OpenClaw / Gemini CLI / Hermes"
+    },
+    "url": "https://github.com/farion1231/cc-switch",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "farion1231/cc-switch shoots up GitHub Trending at +725 stars in a day (79.6K total), pitching itself as a single cross-platform desktop assistant that wraps Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI and the Hermes Agent. The fact that a 'switcher' UI now needs to handle six terminal coding agents is itself a snapshot of where the category is — too many single-feature TUIs and not enough unified frontends. Worth tracking as a candidate for the dominant chassis once one of these projects acquires the others.",
+      "zh": "farion1231/cc-switch 单日 +725 星冲上 GitHub Trending，总数 7.96 万——一个跨平台桌面应用，把 Claude Code、Codex、OpenCode、OpenClaw、Gemini CLI、Hermes Agent 集成在一起。一个'切换器'现在需要兼容六个终端编码 agent，本身就是这个品类的现状切片：单功能 TUI 太多，缺统一前端。值得盯紧——一旦其中某个项目吞并了其他几个，这种'机箱'类工具就会变成行业默认。"
+    },
+    "date": "2026-05-24"
   }
 ]
