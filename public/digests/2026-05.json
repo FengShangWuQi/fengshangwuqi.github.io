@@ -726,5 +726,19 @@
       "zh": "PromptArmor 演示了 Microsoft 365 内新发布的 Copilot Cowork 代理可被「间接提示词注入」攻陷，通过共享文档植入恶意指令，让代理把租户文件外泄到攻击者控制的渠道。攻击链利用了代理「读文件 + 调外部工具」的天然组合，跨越了租户的信任边界。Simon Willison 转发评论指出，这再次印证了代理系统至今未解的核心难题：任何同时具备「广读权限 + 出站通道」的智能体，默认就是一个数据外泄原语。"
     },
     "date": "2026-05-25"
+  },
+  {
+    "id": "google-ai-studio-native-android-apps",
+    "title": {
+      "en": "Google AI Studio Now Builds Native Android Apps Directly",
+      "zh": "Google AI Studio 上线「直接构建原生 Android 应用」能力"
+    },
+    "url": "https://x.com/OfficialLoganK/status/2058997700218294564",
+    "source": "X (@OfficialLoganK)",
+    "summary": {
+      "en": "Google's Logan Kilpatrick announced that AI Studio can now generate and ship native Android apps end-to-end at no cost. According to the post, more than 250,000 apps have been created in the first week, with the overwhelming majority coming from users who had never built an Android app before. The launch positions AI Studio as a serious entry point into mobile development, leaning on Gemini to bridge prompt-to-APK without the user touching Android Studio or Gradle.",
+      "zh": "Google AI Studio 负责人 Logan Kilpatrick 宣布，AI Studio 现已支持直接生成并发布原生 Android 应用，且完全免费。上线首周已有 25 万+ 应用被创建，其中绝大多数来自从未做过 Android 开发的用户。此举将 AI Studio 推到「移动开发入口」的位置：用户无需碰 Android Studio 或 Gradle，由 Gemini 完成从提示词到 APK 的全链路。"
+    },
+    "date": "2026-05-25"
   }
 ]
