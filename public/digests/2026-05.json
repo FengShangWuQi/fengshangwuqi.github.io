@@ -712,5 +712,19 @@
       "zh": "Vercel 的 leerob 在自己的时间线上甩了一条 515 赞的反向观点：'你可能以为有了 AI 就可以少花时间想代码——我完全不同意。' 论点很短：AI 生成的代码正在变成生产事故的来源，最后承担责任的还是值班的工程师。值得记录是因为他是 Vercel 高管，正在公开反对他自己同事这一周公开背书的'100% agent 写代码'那套框架。下次 code review 吵起来的时候可以引用。"
     },
     "date": "2026-05-24"
+  },
+  {
+    "id": "microsoft-copilot-cowork-exfiltrates-files",
+    "title": {
+      "en": "Microsoft Copilot Cowork Exfiltrates Files via Prompt Injection",
+      "zh": "Microsoft Copilot Cowork 被证实可通过提示词注入泄露文件"
+    },
+    "url": "https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files",
+    "source": "PromptArmor",
+    "summary": {
+      "en": "PromptArmor researchers showed that Microsoft Copilot Cowork — a new agent that browses, summarizes, and acts on tenant data inside Microsoft 365 — can be tricked into exfiltrating documents through indirect prompt injection embedded in shared content. The proof of concept chains the agent's ability to read files with its outbound tool calls to leak data out of the trust boundary. Simon Willison highlighted the report as another case study in the unsolved core problem of agentic systems: any agent with broad read scope and any outbound channel is, by default, a data exfiltration primitive.",
+      "zh": "PromptArmor 演示了 Microsoft 365 内新发布的 Copilot Cowork 代理可被「间接提示词注入」攻陷，通过共享文档植入恶意指令，让代理把租户文件外泄到攻击者控制的渠道。攻击链利用了代理「读文件 + 调外部工具」的天然组合，跨越了租户的信任边界。Simon Willison 转发评论指出，这再次印证了代理系统至今未解的核心难题：任何同时具备「广读权限 + 出站通道」的智能体，默认就是一个数据外泄原语。"
+    },
+    "date": "2026-05-25"
   }
 ]
