@@ -740,5 +740,19 @@
       "zh": "Google AI Studio 负责人 Logan Kilpatrick 宣布，AI Studio 现已支持直接生成并发布原生 Android 应用，且完全免费。上线首周已有 25 万+ 应用被创建，其中绝大多数来自从未做过 Android 开发的用户。此举将 AI Studio 推到「移动开发入口」的位置：用户无需碰 Android Studio 或 Gradle，由 Gemini 完成从提示词到 APK 的全链路。"
     },
     "date": "2026-05-25"
+  },
+  {
+    "id": "china-expands-travel-curbs-ai-talent",
+    "title": {
+      "en": "China Expands Travel Curbs to Top AI Talent at Alibaba and DeepSeek",
+      "zh": "中国对 Alibaba、DeepSeek 等头部 AI 人才实施出境限制"
+    },
+    "url": "https://www.bloomberg.com/news/articles/2026-05-26/china-expands-travel-curbs-to-top-ai-talent-at-private-firms",
+    "source": "Bloomberg",
+    "summary": {
+      "en": "Bloomberg reports that Beijing is extending the kind of overseas-travel restrictions long applied to defense and state-sector researchers to top AI talent at private firms including Alibaba and DeepSeek. The move is read by the AI community as both a poaching countermeasure and a signal of how strategic Beijing now considers frontier model research. The story drew heavy discussion on r/LocalLLaMA, with concerns that it could chill cross-border collaboration and slow the steady stream of open-weights releases coming out of Chinese labs.",
+      "zh": "彭博报道，中国正把过去主要适用于国防与国企科研人员的出境管控，扩展到 Alibaba、DeepSeek 等私营公司的核心 AI 人才。AI 社区把这一动向解读为同时具备「反挖角」与「政策定性」双重含义——前沿模型研究已被视为战略资源。该新闻在 r/LocalLLaMA 引发大量讨论，担忧此举将抑制跨境合作，并放缓近年来源自中国实验室的稳定开源权重输出。"
+    },
+    "date": "2026-05-26"
   }
 ]
