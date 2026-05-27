@@ -754,5 +754,19 @@
       "zh": "彭博报道，中国正把过去主要适用于国防与国企科研人员的出境管控，扩展到 Alibaba、DeepSeek 等私营公司的核心 AI 人才。AI 社区把这一动向解读为同时具备「反挖角」与「政策定性」双重含义——前沿模型研究已被视为战略资源。该新闻在 r/LocalLLaMA 引发大量讨论，担忧此举将抑制跨境合作，并放缓近年来源自中国实验室的稳定开源权重输出。"
     },
     "date": "2026-05-26"
+  },
+  {
+    "id": "modelscope-funasr-industrial-speech",
+    "title": {
+      "en": "FunASR: Industrial-Grade Speech Recognition at 170× Realtime",
+      "zh": "FunASR：工业级语音识别，速度可达 170× 实时"
+    },
+    "url": "https://github.com/modelscope/FunASR",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "ModelScope's FunASR climbed back onto GitHub Trending with a refreshed positioning: 170× realtime inference, 50+ languages, speaker diarization, emotion detection, streaming, and an OpenAI-compatible API. The combo — Whisper-like quality on a Whisper-incompatible footprint with diarization and emotion bundled in — makes it one of the most complete open ASR stacks currently shipping. The OpenAI-compatible endpoint means existing Whisper integrations can swap to FunASR with near-zero glue code.",
+      "zh": "ModelScope 的 FunASR 重新登上 GitHub Trending，亮点是新的定位组合：170× 实时推理、50+ 语言、说话人分离、情感识别、流式接口，并提供 OpenAI 兼容 API。把「类 Whisper 的质量」与「Whisper 没有的说话人分离与情感」放进同一个工程化栈，使其成为当前最完整的开源 ASR 全家桶之一。OpenAI 兼容端点意味着现有基于 Whisper 的集成几乎零胶水成本即可切到 FunASR。"
+    },
+    "date": "2026-05-26"
   }
 ]
