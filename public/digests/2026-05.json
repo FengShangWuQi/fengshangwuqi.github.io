@@ -810,5 +810,19 @@
       "zh": "Anthropic 发布了 Claude 4.x 家族的最新旗舰 Claude Opus 4.8，重点强化了长链路编码、Agent 工具使用与推理任务——这正是 Opus 长期对 Sonnet/Haiku 的优势所在。消息当日登顶 Hacker News，同时上线 Vercel AI Gateway，开发者无需额外配置即可在现有管道中切换。YouTube 上 Matthew Berman 的「OPUS 4.8!!!」视频也佐证它与传闻中的 GPT-5.6 几乎同窗发布。前沿模型发布同日打通基础设施已成新常态。"
     },
     "date": "2026-05-28"
+  },
+  {
+    "id": "youtube-auto-label-ai-videos",
+    "title": {
+      "en": "YouTube to Automatically Label AI-Generated Videos",
+      "zh": "YouTube 将自动给 AI 生成视频贴标签"
+    },
+    "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+    "source": "YouTube Official Blog",
+    "summary": {
+      "en": "YouTube announced it will automatically label AI-generated videos, shifting from creator-disclosure to platform-side detection. The change formalizes an entire policy layer that creators were previously expected to self-enforce, and aligns with similar moves at Meta and TikTok. Practically, this means anyone shipping AI-video tooling (Sora-class, Runway, Pika) should expect labels to appear on uploads regardless of creator settings — which may dampen reach in algorithm-promoted surfaces. The bigger question: who decides what counts as 'AI-generated' when most modern pipelines blend AI and human edits.",
+      "zh": "YouTube 宣布将自动为 AI 生成视频贴标，从「创作者主动声明」转为「平台侧检测」。这正式把一整层原本依赖创作者自律的政策接管下来，与 Meta、TikTok 的近期动作同步。实际后果是：Sora 类、Runway、Pika 等 AI 视频工具的输出，无论创作者是否勾选，都可能被自动打标——并可能影响算法推荐的曝光。更深的问题在于：当现代流水线普遍混合 AI 与人工编辑时，「AI 生成」的判定权归谁。"
+    },
+    "date": "2026-05-28"
   }
 ]
