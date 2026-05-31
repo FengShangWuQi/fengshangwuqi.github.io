@@ -838,5 +838,19 @@
       "zh": "Anthropic 宣布完成 65 亿美元 H 轮融资，投后估值 9650 亿美元，刷新企业 AI 融资规模纪录，也再次证明资本正在向头部前沿模型实验室高强度聚集。Hacker News 上多个相关帖子点赞合计破 1700，全天主导 AI 圈讨论。公司透露自 2 月 Series G 以来全球企业客户采用率持续扩张，本轮主要用于扩张训练算力、推理基础设施与安全研究投入。结合此前披露的 470 亿美元年化收入跑率，Anthropic 已成为除 OpenAI 之外资本密度最高的纯 AI 实验室。"
     },
     "date": "2026-05-28"
+  },
+  {
+    "id": "pnpm-11-5-release",
+    "title": {
+      "en": "pnpm 11.5 Released",
+      "zh": "pnpm 11.5 正式发布"
+    },
+    "url": "https://github.com/pnpm/pnpm/releases/tag/v11.5.0",
+    "source": "GitHub Releases",
+    "summary": {
+      "en": "pnpm cut a 11.5 release on the v11 line, the most-used non-npm package manager in the JavaScript ecosystem and the default in a growing share of monorepos. Minor-line releases on pnpm have tended to ship meaningful workspace, hoisting and lockfile changes rather than cosmetic updates, so 11.5 is worth a pin-bump pass on CI configs and Renovate rules. For teams running 11.x already, the upgrade is a routine semver minor; for teams still on 10.x, the cumulative delta since 11.0 has become large enough that catching up via 11.5 is the cleaner path than chasing a future 12.0.",
+      "zh": "pnpm 在 v11 主线上切出 11.5 版本。pnpm 已经是 JavaScript 生态中除 npm 外使用最广的包管理器，也是越来越多 monorepo 的默认选择。pnpm 的 minor 版本历来不是化妆品改动，工作区、提升策略与 lockfile 行为通常会有真正变化，11.5 值得跑一遍 CI 配置和 Renovate 规则的 pin 升级。对于已经在 11.x 的团队这只是一次常规 semver minor；但还停留在 10.x 的团队需要注意，从 11.0 到 11.5 累积的差异已经足以让走 11.5 跟进比等未来 12.0 大跳更稳妥。"
+    },
+    "date": "2026-05-29"
   }
 ]
