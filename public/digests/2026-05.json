@@ -768,5 +768,19 @@
       "zh": "ModelScope 的 FunASR 重新登上 GitHub Trending，亮点是新的定位组合：170× 实时推理、50+ 语言、说话人分离、情感识别、流式接口，并提供 OpenAI 兼容 API。把「类 Whisper 的质量」与「Whisper 没有的说话人分离与情感」放进同一个工程化栈，使其成为当前最完整的开源 ASR 全家桶之一。OpenAI 兼容端点意味着现有基于 Whisper 的集成几乎零胶水成本即可切到 FunASR。"
     },
     "date": "2026-05-26"
+  },
+  {
+    "id": "daniel-stenberg-the-pressure-curl",
+    "title": {
+      "en": "Daniel Stenberg on the Pressure of Maintaining curl",
+      "zh": "curl 作者 Daniel Stenberg：维护一个全球依赖项目的压力"
+    },
+    "url": "https://daniel.haxx.se/blog/2026/05/26/the-pressure/",
+    "source": "daniel.haxx.se",
+    "summary": {
+      "en": "curl creator Daniel Stenberg posted a candid essay on the daily pressure of maintaining a project that ships in essentially every device with a network stack. He details the volume of low-signal AI-generated vulnerability reports, the security-disclosure tax, and how a single maintainer ends up effectively being the on-call for billions of installs. The piece exploded across the open source community — front-paging on Hacker News, hitting r/programming, and being amplified by Simon Willison — and is rapidly becoming the canonical reference for arguments about sustainable funding of critical OSS infrastructure.",
+      "zh": "curl 作者 Daniel Stenberg 发布一篇极坦诚的随笔，谈他每天维护一个「几乎所有联网设备都依赖的项目」的真实压力：海量低信号的 AI 生成漏洞报告、安全披露的隐形税、以及作为唯一核心维护者实际上在为数十亿个装机量值班。文章在开源圈被广泛转载——Hacker News 首页、Reddit r/programming、Simon Willison 同日跟进——迅速成为「关键基础设施 OSS 可持续资助」议题的标准引用。"
+    },
+    "date": "2026-05-26"
   }
 ]
