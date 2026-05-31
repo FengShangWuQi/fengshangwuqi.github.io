@@ -824,5 +824,19 @@
       "zh": "YouTube 宣布将自动为 AI 生成视频贴标，从「创作者主动声明」转为「平台侧检测」。这正式把一整层原本依赖创作者自律的政策接管下来，与 Meta、TikTok 的近期动作同步。实际后果是：Sora 类、Runway、Pika 等 AI 视频工具的输出，无论创作者是否勾选，都可能被自动打标——并可能影响算法推荐的曝光。更深的问题在于：当现代流水线普遍混合 AI 与人工编辑时，「AI 生成」的判定权归谁。"
     },
     "date": "2026-05-28"
+  },
+  {
+    "id": "anthropic-series-h-65b-965b-valuation",
+    "title": {
+      "en": "Anthropic Raises $65B Series H at $965B Post-Money Valuation",
+      "zh": "Anthropic 完成 65 亿美元 Series H 融资，投后估值 9650 亿美元"
+    },
+    "url": "https://www.anthropic.com/news/series-h",
+    "source": "Anthropic",
+    "summary": {
+      "en": "Anthropic announced a $65B Series H at a $965B post-money valuation — the largest enterprise-AI funding round to date and a clear signal of how aggressively capital is rotating into frontier-model labs. The post lit up Hacker News (1.7K+ points across discussion threads) and dominated AI X for the day. Anthropic disclosed that adoption has continued to expand across global enterprise customers since the February Series G, framing this round as fuel for further training capacity, inference build-out and safety research. Coupled with the company's separately disclosed $47B run-rate revenue, the round positions Anthropic as the most aggressively capitalized pure-play AI lab outside of OpenAI.",
+      "zh": "Anthropic 宣布完成 65 亿美元 H 轮融资，投后估值 9650 亿美元，刷新企业 AI 融资规模纪录，也再次证明资本正在向头部前沿模型实验室高强度聚集。Hacker News 上多个相关帖子点赞合计破 1700，全天主导 AI 圈讨论。公司透露自 2 月 Series G 以来全球企业客户采用率持续扩张，本轮主要用于扩张训练算力、推理基础设施与安全研究投入。结合此前披露的 470 亿美元年化收入跑率，Anthropic 已成为除 OpenAI 之外资本密度最高的纯 AI 实验室。"
+    },
+    "date": "2026-05-28"
   }
 ]
