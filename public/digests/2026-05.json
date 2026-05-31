@@ -782,5 +782,19 @@
       "zh": "curl 作者 Daniel Stenberg 发布一篇极坦诚的随笔，谈他每天维护一个「几乎所有联网设备都依赖的项目」的真实压力：海量低信号的 AI 生成漏洞报告、安全披露的隐形税、以及作为唯一核心维护者实际上在为数十亿个装机量值班。文章在开源圈被广泛转载——Hacker News 首页、Reddit r/programming、Simon Willison 同日跟进——迅速成为「关键基础设施 OSS 可持续资助」议题的标准引用。"
     },
     "date": "2026-05-26"
+  },
+  {
+    "id": "lum1104-understand-anything-codebase-graph",
+    "title": {
+      "en": "Understand-Anything Turns Any Codebase Into an Interactive Knowledge Graph",
+      "zh": "Understand-Anything：把任意代码库变成可交互探索的知识图谱"
+    },
+    "url": "https://github.com/Lum1104/Understand-Anything",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Lum1104/Understand-Anything jumped to the top of GitHub Trending today with +4.4k stars in a single day. The TypeScript tool walks any repository and emits a knowledge graph that you can browse, search and query with Claude Code, Codex, Cursor, Copilot or Gemini CLI as the backing agent. The premise — graphs that teach, not graphs that impress — sets it apart from the existing crop of code-visualization toys: the output is structured context an agent can actually navigate, not a screenshot.",
+      "zh": "Lum1104/Understand-Anything 今日登顶 GitHub Trending，单日 +4.4k stars。这是一个 TypeScript 工具，遍历任意代码仓库后输出可交互的知识图谱，并以 Claude Code、Codex、Cursor、Copilot、Gemini CLI 等作为后端 Agent 进行浏览、搜索与问答。项目的口号「让图谱去教学，而不是去炫技」与一众代码可视化玩具拉开差距：它输出的是 Agent 可真正导航的结构化上下文，而不是一张截图。"
+    },
+    "date": "2026-05-27"
   }
 ]
