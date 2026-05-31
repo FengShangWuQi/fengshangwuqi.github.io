@@ -796,5 +796,19 @@
       "zh": "Lum1104/Understand-Anything 今日登顶 GitHub Trending，单日 +4.4k stars。这是一个 TypeScript 工具，遍历任意代码仓库后输出可交互的知识图谱，并以 Claude Code、Codex、Cursor、Copilot、Gemini CLI 等作为后端 Agent 进行浏览、搜索与问答。项目的口号「让图谱去教学，而不是去炫技」与一众代码可视化玩具拉开差距：它输出的是 Agent 可真正导航的结构化上下文，而不是一张截图。"
     },
     "date": "2026-05-27"
+  },
+  {
+    "id": "anthropic-claude-opus-4-8-release",
+    "title": {
+      "en": "Anthropic Releases Claude Opus 4.8, Lands Same Day on Vercel AI Gateway",
+      "zh": "Anthropic 发布 Claude Opus 4.8，同日登陆 Vercel AI Gateway"
+    },
+    "url": "https://www.anthropic.com/news/claude-opus-4-8",
+    "source": "Anthropic",
+    "summary": {
+      "en": "Anthropic announced Claude Opus 4.8 — the latest flagship in the Claude 4.x family — emphasizing further gains on long-horizon coding, agentic tool use and reasoning workloads where Opus has traditionally outperformed Sonnet and Haiku. The release was the top story on Hacker News and was simultaneously made available on Vercel's AI Gateway, letting developers swap it into existing pipelines without provisioning. YouTube commentary (Matthew Berman's 'OPUS 4.8!!!') confirms it shipped alongside rumored GPT-5.6 chatter, marking another fast cycle for frontier models. The cross-platform same-day rollout is the new norm: model launches now arrive bundled with infra availability.",
+      "zh": "Anthropic 发布了 Claude 4.x 家族的最新旗舰 Claude Opus 4.8，重点强化了长链路编码、Agent 工具使用与推理任务——这正是 Opus 长期对 Sonnet/Haiku 的优势所在。消息当日登顶 Hacker News，同时上线 Vercel AI Gateway，开发者无需额外配置即可在现有管道中切换。YouTube 上 Matthew Berman 的「OPUS 4.8!!!」视频也佐证它与传闻中的 GPT-5.6 几乎同窗发布。前沿模型发布同日打通基础设施已成新常态。"
+    },
+    "date": "2026-05-28"
   }
 ]
