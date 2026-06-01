@@ -1,0 +1,16 @@
+[
+  {
+    "id": "supermemory-ai-memory-api",
+    "title": {
+      "en": "supermemoryai/supermemory: A Memory Engine and API for the AI Era",
+      "zh": "supermemoryai/supermemory：面向 AI 时代的记忆引擎与 API"
+    },
+    "url": "https://github.com/supermemoryai/supermemory",
+    "source": "GitHub Trending",
+    "summary": {
+      "en": "Supermemory pitches itself as the Memory API for the AI era — a fast, scalable engine for storing, querying and retrieving long-term context across agents and applications. The repo crossed 23k stars and added +236 in a day, landing on GitHub TypeScript Trending. Functionally it sits in the same emerging slot as Mem0, Letta and the Anthropic-flavoured memory plugins: provide an external system-of-record so agents don't depend on context windows or per-session caches. The README emphasises speed and a unified API across user-level and agent-level memory. For teams building agentic products that need persistent recall (Codex-style profiles, OpenClaw-style assistants), it's worth a serious side-by-side against alternatives.",
+      "zh": "Supermemory 把自己定位成「AI 时代的 Memory API」——一个快且可扩展的引擎，专门做跨 Agent / 跨应用的长程上下文存取与检索。仓库星数已破 2.3 万，单日新增 236 颗，登上 GitHub TypeScript Trending。功能位上和 Mem0、Letta、各家 Anthropic 风味的记忆插件直接对位：给 Agent 一个外部的 system-of-record，不再依赖上下文窗口或会话内 cache。README 强调速度与「用户层记忆 + Agent 层记忆」统一接口。对正在做需要持久记忆的 agent 产品（Codex 风格个人页、OpenClaw 风格助手）的团队，值得和同位项目认真比一遍。"
+    },
+    "date": "2026-05-31"
+  }
+]
