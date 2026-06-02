@@ -26,5 +26,19 @@
       "zh": "Sam Altman 公开开放 OpenAI Robotics 的招聘——他要的是「能从硬件、运维、系统到 ML 全栈做下来」的人，目标是「编程和制造对社会有用的机器人」。这条推突破 1.2 万赞，也是 OpenAI Robotics 第一次以「具备制造能力的一线团队」形象、而非「探索性小组」的形象公开露面。在战略时点上很巧——同一天 NVIDIA 发布 Cosmos 3 和 Vera CPU，定位的都是同一条物理 AI 栈，使物理 AI 成为当日行业最集中的主题。值得作为「下一轮前沿大厂资本去向」的信号观察。"
     },
     "date": "2026-06-01"
+  },
+  {
+    "id": "cs336-stanford-language-modeling-from-scratch",
+    "title": {
+      "en": "CS336: Stanford's \"Language Modeling from Scratch\" Course Goes Public",
+      "zh": "斯坦福 CS336「Language Modeling from Scratch」课程材料开放"
+    },
+    "url": "https://cs336.stanford.edu/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "Stanford's CS336 — \"Language Modeling from Scratch\" — released its full course site, walking through implementing modern LLMs end-to-end: tokenization, transformer architecture, training infrastructure, post-training and evaluation. The course is taught by Tatsu Hashimoto and Percy Liang and is one of the rare graduate-level treatments that actually digs into how to read training-time bottlenecks rather than stopping at the math. The slides and homework assignments are public, which makes it one of the strongest \"self-study LLM\" curricula currently online. Hacker News ranked it at 222 points within hours of being posted.",
+      "zh": "斯坦福 CS336「Language Modeling from Scratch」开放了完整课程网站，端到端覆盖现代 LLM 实现：分词、Transformer 架构、训练基础设施、后训练与评测。课程由 Tatsu Hashimoto 与 Percy Liang 讲授，是少数真正深入到「训练时性能瓶颈如何被读出来」层面的研究生课程，而不是停留在数学推导。讲义和作业全部开放，是目前最强的「自学 LLM」课程材料之一。Hacker News 上线几小时已上到 222 分。"
+    },
+    "date": "2026-06-01"
   }
 ]
