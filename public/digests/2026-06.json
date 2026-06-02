@@ -40,5 +40,19 @@
       "zh": "斯坦福 CS336「Language Modeling from Scratch」开放了完整课程网站，端到端覆盖现代 LLM 实现：分词、Transformer 架构、训练基础设施、后训练与评测。课程由 Tatsu Hashimoto 与 Percy Liang 讲授，是少数真正深入到「训练时性能瓶颈如何被读出来」层面的研究生课程，而不是停留在数学推导。讲义和作业全部开放，是目前最强的「自学 LLM」课程材料之一。Hacker News 上线几小时已上到 222 分。"
     },
     "date": "2026-06-01"
+  },
+  {
+    "id": "chatgpt-google-sheets-data-exfiltration",
+    "title": {
+      "en": "Prompt Injection in ChatGPT for Google Sheets Can Exfiltrate Entire Workbooks",
+      "zh": "ChatGPT for Google Sheets 可被 prompt 注入外泄整个工作簿"
+    },
+    "url": "https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "PromptArmor disclosed a prompt-injection attack in OpenAI's ChatGPT integration for Google Sheets that lets a maliciously-crafted spreadsheet (sent or shared to the victim) read and exfiltrate other cells in the workbook back out through the model's chat surface. The report walks through the exact prompt chain, the indirect-prompt-injection variant it exploits, and the missing isolation that should have prevented cross-cell read. This is the most production-relevant prompt-injection demo this month: it lands on a Google Workspace user without anything that looks suspicious, and the attacker controls only the spreadsheet content. Workspace admins should re-check the ChatGPT add-on permissions.",
+      "zh": "PromptArmor 披露了 OpenAI 在 Google Sheets 上的 ChatGPT 集成中的一种 prompt 注入攻击：攻击者只需把一份精心构造的电子表格分享给受害者，模型就会被诱导读取该工作簿的其他单元格并通过聊天界面把内容回传给攻击者。报告里给出了完整的 prompt 链路、所利用的 Indirect Prompt Injection 变种，以及本应阻止跨单元格读取的隔离缺失之处。这是本月最贴近生产场景的 prompt 注入演示之一——它能命中 Google Workspace 用户而完全不出现可疑迹象，攻击者也只控制电子表格内容。Workspace 管理员应该重新核查 ChatGPT 插件的权限范围。"
+    },
+    "date": "2026-06-01"
   }
 ]
