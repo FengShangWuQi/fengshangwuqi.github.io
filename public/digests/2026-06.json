@@ -12,5 +12,19 @@
       "zh": "Supermemory 把自己定位成「AI 时代的 Memory API」——一个快且可扩展的引擎，专门做跨 Agent / 跨应用的长程上下文存取与检索。仓库星数已破 2.3 万，单日新增 236 颗，登上 GitHub TypeScript Trending。功能位上和 Mem0、Letta、各家 Anthropic 风味的记忆插件直接对位：给 Agent 一个外部的 system-of-record，不再依赖上下文窗口或会话内 cache。README 强调速度与「用户层记忆 + Agent 层记忆」统一接口。对正在做需要持久记忆的 agent 产品（Codex 风格个人页、OpenClaw 风格助手）的团队，值得和同位项目认真比一遍。"
     },
     "date": "2026-05-31"
+  },
+  {
+    "id": "sama-openai-robotics-hiring-physical-ai",
+    "title": {
+      "en": "Sam Altman: OpenAI Robotics Is Hiring for a Full-Stack Hardware Push",
+      "zh": "Sam Altman：OpenAI Robotics 全栈招聘，正式入局物理 AI"
+    },
+    "url": "https://x.com/sama/status/2061117302528188712",
+    "source": "X (@sama)",
+    "summary": {
+      "en": "Sam Altman publicly opened OpenAI Robotics hiring, looking for full-stack hardware, ops, systems and ML engineers to \"program and manufacture robots useful for society.\" The tweet crossed 12k likes and is the first time OpenAI Robotics has been talked about in the open as a real first-class effort with manufacturing ambitions rather than an exploratory team. Strategically it lands the same day NVIDIA dropped Cosmos 3 and Vera CPU — both pitched at the same physical-AI stack — making physical AI the single most concentrated theme of the day across the industry. Worth watching as a signal of where the next round of frontier-lab capital is going.",
+      "zh": "Sam Altman 公开开放 OpenAI Robotics 的招聘——他要的是「能从硬件、运维、系统到 ML 全栈做下来」的人，目标是「编程和制造对社会有用的机器人」。这条推突破 1.2 万赞，也是 OpenAI Robotics 第一次以「具备制造能力的一线团队」形象、而非「探索性小组」的形象公开露面。在战略时点上很巧——同一天 NVIDIA 发布 Cosmos 3 和 Vera CPU，定位的都是同一条物理 AI 栈，使物理 AI 成为当日行业最集中的主题。值得作为「下一轮前沿大厂资本去向」的信号观察。"
+    },
+    "date": "2026-06-01"
   }
 ]
