@@ -54,5 +54,19 @@
       "zh": "PromptArmor 披露了 OpenAI 在 Google Sheets 上的 ChatGPT 集成中的一种 prompt 注入攻击：攻击者只需把一份精心构造的电子表格分享给受害者，模型就会被诱导读取该工作簿的其他单元格并通过聊天界面把内容回传给攻击者。报告里给出了完整的 prompt 链路、所利用的 Indirect Prompt Injection 变种，以及本应阻止跨单元格读取的隔离缺失之处。这是本月最贴近生产场景的 prompt 注入演示之一——它能命中 Google Workspace 用户而完全不出现可疑迹象，攻击者也只控制电子表格内容。Workspace 管理员应该重新核查 ChatGPT 插件的权限范围。"
     },
     "date": "2026-06-01"
+  },
+  {
+    "id": "malicious-npm-redhat-cloud-services",
+    "title": {
+      "en": "Malicious npm Packages Detected Across Red Hat Cloud Services",
+      "zh": "Red Hat Cloud Services 被发现引入恶意 npm 包"
+    },
+    "url": "https://github.com/RedHatInsights/javascript-clients/issues/492",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "A GitHub issue under RedHatInsights/javascript-clients flagged a series of malicious npm packages that had slipped into the dependency closure of Red Hat's hosted JavaScript clients. The thread traces how the bad packages got there (typosquats plus a compromised maintainer chain) and which downstream Red Hat Cloud Services touched them before being scrubbed. As a supply-chain incident this is one more data point that npm-side typosquat + maintainer-compromise attacks are now hitting larger-vendor cloud SDKs, not just hobby projects. If your stack pulls Red Hat JS clients transitively, walk your lockfile audits this week.",
+      "zh": "RedHatInsights/javascript-clients 仓库下的一个 GitHub issue 披露：一系列恶意 npm 包通过依赖闭包进入了 Red Hat 自家托管 JavaScript 客户端的链路中。讨论里追溯了恶意包是怎么进来的（typosquat + 受污染的维护者链）、以及在被清理之前哪些下游 Red Hat Cloud Services 引用了它们。作为供应链事件，这又一次说明：npm 上的 typosquat + maintainer 入侵已经能命中大型厂商的云 SDK，而不只是业余项目。如果你的栈传递性地拉取 Red Hat JS 客户端，本周建议立即跑一遍 lockfile 审计。"
+    },
+    "date": "2026-06-01"
   }
 ]
