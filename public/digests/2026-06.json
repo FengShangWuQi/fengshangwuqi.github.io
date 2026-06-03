@@ -68,5 +68,19 @@
       "zh": "RedHatInsights/javascript-clients 仓库下的一个 GitHub issue 披露：一系列恶意 npm 包通过依赖闭包进入了 Red Hat 自家托管 JavaScript 客户端的链路中。讨论里追溯了恶意包是怎么进来的（typosquat + 受污染的维护者链）、以及在被清理之前哪些下游 Red Hat Cloud Services 引用了它们。作为供应链事件，这又一次说明：npm 上的 typosquat + maintainer 入侵已经能命中大型厂商的云 SDK，而不只是业余项目。如果你的栈传递性地拉取 Red Hat JS 客户端，本周建议立即跑一遍 lockfile 审计。"
     },
     "date": "2026-06-01"
+  },
+  {
+    "id": "openai-codex-every-role-plugins-annotations",
+    "title": {
+      "en": "OpenAI Expands Codex Beyond Engineering with Plugins, Sites and Annotations",
+      "zh": "OpenAI 把 Codex 推向工程团队之外：插件、Sites 与 Annotations 全面开放"
+    },
+    "url": "https://openai.com/index/codex-for-every-role-tool-workflow",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI's latest Codex update is the clearest sign yet that the company no longer sees Codex as just a coding assistant — it's becoming OpenAI's horizontal in-product agent for analysts, marketers, designers and investors. The post introduces three concrete primitives: Codex plugins (third-party tool integrations that show up inside ChatGPT/Codex sessions), Codex sites (shareable agent surfaces for specific workflows) and annotations (structured comments agents can leave on documents and assets for human review). The pitch is that the same agent loop running in IDEs can now run in Notion, Figma and CRM-style surfaces. For teams designing internal AI tooling, this is the first time OpenAI has shipped a sanctioned non-IDE delivery surface for Codex — worth tracking even if you don't ship anything yet.",
+      "zh": "OpenAI 最新 Codex 更新明确传达一个信号：Codex 不再只是「写代码助手」，而是 OpenAI 在 ChatGPT 之内、面向分析师、市场、设计师、投资人等所有角色的横向 agent 入口。这次更新引入三个新原语：Codex plugins（在 ChatGPT/Codex 会话里直接接入第三方工具）、Codex sites（针对特定工作流的可分享 agent 界面）、annotations（agent 在文档与素材上留下供人审阅的结构化批注）。相同的 agent 循环现在可以跑在 Notion、Figma、CRM 风格界面之中。对设计企业内部 AI 工具的团队来说，这是 OpenAI 第一次官方提供 IDE 之外的 Codex 分发面，值得关注后续生态走势。"
+    },
+    "date": "2026-06-02"
   }
 ]
