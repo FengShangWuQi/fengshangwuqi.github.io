@@ -96,5 +96,19 @@
       "zh": "OpenAI 宣布前沿模型与 Codex 正式登陆 AWS，结束了「唯一没有 OpenAI 一方接入的超大规模云」这一尴尬局面。实操层面，AWS 客户从此可以在现有账单与 IAM 体系下直接调用 OpenAI 模型并运行 Codex agent，不必再绕道 Azure OpenAI 或直连 OpenAI API。这次合作也是迄今最干脆的信号——OpenAI 的多云策略落地，Microsoft 不再是独家分发伙伴。对那些卡在「公司不让用 Azure」采购流程上的平台团队，最后一道在 AWS 体系内全面采用 OpenAI 的门槛被搬开了。"
     },
     "date": "2026-06-02"
+  },
+  {
+    "id": "anthropic-project-glasswing-expansion",
+    "title": {
+      "en": "Anthropic Expands Project Glasswing",
+      "zh": "Anthropic 扩大 Project Glasswing 项目规模"
+    },
+    "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+    "source": "Anthropic Blog",
+    "summary": {
+      "en": "Anthropic published an update expanding Project Glasswing, its internal effort focused on transparency and interpretability tooling around frontier models. The expansion broadens the program's scope and partner set, with more grants, more external research partners and a clearer commitment to publishing interpretability findings even when they are not commercially flattering. The move continues Anthropic's positioning as the lab most willing to underwrite interpretability work that doesn't directly ship in a product. For safety researchers, this is also one of the better-funded venues to do mechanistic interpretability on production-scale Claude variants without having to assemble compute on your own.",
+      "zh": "Anthropic 发文宣布扩大 Project Glasswing 项目——这是其围绕前沿模型透明度与可解释性工具的内部计划。这次扩展拓宽了资助范围和合作伙伴池，承接更多外部研究人员，并更明确地承诺即使结论对自身不利也会公开发表。Anthropic 持续强化「最愿意为不直接转化为产品的可解释性工作买单」的形象。对安全研究者而言，这也是少数能在产品级 Claude 变体上做机制可解释性研究、还不必自己凑算力的「钱够多」的渠道之一。"
+    },
+    "date": "2026-06-02"
   }
 ]
