@@ -82,5 +82,19 @@
       "zh": "OpenAI 最新 Codex 更新明确传达一个信号：Codex 不再只是「写代码助手」，而是 OpenAI 在 ChatGPT 之内、面向分析师、市场、设计师、投资人等所有角色的横向 agent 入口。这次更新引入三个新原语：Codex plugins（在 ChatGPT/Codex 会话里直接接入第三方工具）、Codex sites（针对特定工作流的可分享 agent 界面）、annotations（agent 在文档与素材上留下供人审阅的结构化批注）。相同的 agent 循环现在可以跑在 Notion、Figma、CRM 风格界面之中。对设计企业内部 AI 工具的团队来说，这是 OpenAI 第一次官方提供 IDE 之外的 Codex 分发面，值得关注后续生态走势。"
     },
     "date": "2026-06-02"
+  },
+  {
+    "id": "openai-codex-aws-availability",
+    "title": {
+      "en": "OpenAI Frontier Models and Codex Land on AWS",
+      "zh": "OpenAI 前沿模型与 Codex 正式登陆 AWS"
+    },
+    "url": "https://openai.com/index/aws",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI announced that its frontier models and Codex are now available on AWS, ending the cloud's awkward position as the one hyperscaler without first-party OpenAI access. Practically this means AWS customers can call OpenAI models — and run Codex agents — under their existing AWS billing and IAM, instead of routing traffic through Azure OpenAI or directly via OpenAI's API. The deal is also the cleanest signal yet that OpenAI's multi-cloud strategy is real: Microsoft is no longer the exclusive distribution partner. For platform teams that have been blocked on \"we can't use Azure\" procurement battles, this removes one of the last barriers to standardising on OpenAI inside an AWS estate.",
+      "zh": "OpenAI 宣布前沿模型与 Codex 正式登陆 AWS，结束了「唯一没有 OpenAI 一方接入的超大规模云」这一尴尬局面。实操层面，AWS 客户从此可以在现有账单与 IAM 体系下直接调用 OpenAI 模型并运行 Codex agent，不必再绕道 Azure OpenAI 或直连 OpenAI API。这次合作也是迄今最干脆的信号——OpenAI 的多云策略落地，Microsoft 不再是独家分发伙伴。对那些卡在「公司不让用 Azure」采购流程上的平台团队，最后一道在 AWS 体系内全面采用 OpenAI 的门槛被搬开了。"
+    },
+    "date": "2026-06-02"
   }
 ]
