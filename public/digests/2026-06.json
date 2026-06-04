@@ -110,5 +110,19 @@
       "zh": "Anthropic 发文宣布扩大 Project Glasswing 项目——这是其围绕前沿模型透明度与可解释性工具的内部计划。这次扩展拓宽了资助范围和合作伙伴池，承接更多外部研究人员，并更明确地承诺即使结论对自身不利也会公开发表。Anthropic 持续强化「最愿意为不直接转化为产品的可解释性工作买单」的形象。对安全研究者而言，这也是少数能在产品级 Claude 变体上做机制可解释性研究、还不必自己凑算力的「钱够多」的渠道之一。"
     },
     "date": "2026-06-02"
+  },
+  {
+    "id": "codex-discovered-http2-bomb",
+    "title": {
+      "en": "Codex Discovered a Hidden HTTP/2 Bomb",
+      "zh": "Codex 发现一处隐藏的 HTTP/2 协议炸弹"
+    },
+    "url": "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb",
+    "source": "Lobsters",
+    "summary": {
+      "en": "Calif.io published a writeup of a previously-undocumented HTTP/2 DoS vector that OpenAI's Codex surfaced while a user was poking at protocol code. The interesting part is not just the bug — a crafted frame sequence that lets a single peer balloon server-side memory disproportionate to bandwidth — but the discovery path: Codex flagged the pattern as suspicious during routine code review, the user verified it against the spec, and ended up with a real CVE-class finding. This is one of the cleaner real-world examples of an AI coding agent doing genuine vulnerability research rather than auto-completing test cases, and it makes a concrete case that 'have Codex grep for protocol footguns' belongs in a security team's review pipeline.",
+      "zh": "Calif.io 发文披露了一处此前没有正式记录的 HTTP/2 DoS 向量——这是用户在用 OpenAI Codex 翻协议代码时被 Codex 指出来的。看点不只是漏洞本身（一段构造好的帧序列可以让单个对端把服务器内存撑到与带宽完全不成比例），更是发现路径：Codex 在常规 code review 中把这段模式标记为可疑，用户对照 RFC 复核，最后落到一处 CVE 级别的真实缺陷。这是「AI 编码 agent 做真正意义上的漏洞研究、而不是补全测试用例」少见的清晰案例，也给出了一个具体论据：「让 Codex 全仓搜协议级 footgun」应该被安全团队的代码审查管线接入。"
+    },
+    "date": "2026-06-03"
   }
 ]
