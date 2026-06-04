@@ -138,5 +138,19 @@
       "zh": "Ammar Askar 披露了一个 1-click 利用：通过 VSCode 中的一处缺陷，只要诱导用户点击一个链接，就可以盗取该用户的 GitHub OAuth token。攻击链滥用 VSCode 处理特定 URL scheme 的方式，让攻击者控制的扩展或 webview 获得与用户已登录 GitHub 会话相同的鉴权能力，并在无二次确认的情况下把 token 外带出去。Hacker News（607 分）和 Lobsters 都把它选为当日安全要闻。对几乎所有「VSCode 里登录着 GitHub 账号」的用户——也就是整个生态——首要动作是立即升级到补丁版本；次要结论是：编辑器内的 GitHub 鉴权面已经攒够事故、值得有一份独立的威胁模型。"
     },
     "date": "2026-06-03"
+  },
+  {
+    "id": "ai-outperforms-stanford-law-professors",
+    "title": {
+      "en": "Stanford Study: AI Outperforms Law Professors at Office-Hour Questions",
+      "zh": "斯坦福研究：在「office hours」问题上，AI 已优于法学教授"
+    },
+    "url": "https://law.stanford.edu/press/ai-outperforms-law-professors-in-stanford-law-study/",
+    "source": "Hacker News Best",
+    "summary": {
+      "en": "A Stanford Law study (Salinas et al.) had law professors write out the kind of questions they get asked in office hours, then collected answers from both Gemini 2.5 and human law professors, and finally had other law professors blind-judge the results. Gemini scored a 75% win rate against human professors, and — importantly — Gemini's answers were rated as LESS harmful than the humans'. The paper also notes that newer frontier models do even better. Both HN (381 points, 334 comments) and Ethan Mollick's tweet (801 likes) treated this as the headline 'GPT-4 passes the bar' moment for legal pedagogy: the bottleneck for replacing professor-style legal guidance with AI is no longer answer quality on standard student questions; it's the institutional pieces around accreditation, liability and trust.",
+      "zh": "斯坦福法学院的一项研究（Salinas 等）让法学教授写出他们在 office hours 经常被问到的问题，由 Gemini 2.5 与真人法学教授分别回答，再请另一批法学教授盲评。结果是：Gemini 对真人教授的胜率达到 75%，并且——关键的一点——Gemini 的回答被评为「更不容易造成伤害」。论文还指出更新的前沿模型表现更好。HN（381 分、334 条讨论）和 Ethan Mollick 的推（801 likes）都把它当作法律教育领域的「GPT-4 过了律考」时刻：在标准学生问题上「用 AI 取代教授式法律指导」的瓶颈，不再是答案质量，而是认证、责任、信任这些制度层面的部件。"
+    },
+    "date": "2026-06-03"
   }
 ]
