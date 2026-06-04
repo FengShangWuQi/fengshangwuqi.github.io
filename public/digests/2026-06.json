@@ -152,5 +152,19 @@
       "zh": "斯坦福法学院的一项研究（Salinas 等）让法学教授写出他们在 office hours 经常被问到的问题，由 Gemini 2.5 与真人法学教授分别回答，再请另一批法学教授盲评。结果是：Gemini 对真人教授的胜率达到 75%，并且——关键的一点——Gemini 的回答被评为「更不容易造成伤害」。论文还指出更新的前沿模型表现更好。HN（381 分、334 条讨论）和 Ethan Mollick 的推（801 likes）都把它当作法律教育领域的「GPT-4 过了律考」时刻：在标准学生问题上「用 AI 取代教授式法律指导」的瓶颈，不再是答案质量，而是认证、责任、信任这些制度层面的部件。"
     },
     "date": "2026-06-03"
+  },
+  {
+    "id": "chrome-149-devtools-149",
+    "title": {
+      "en": "Chrome 149 Lands: CSS Gap Decorations, bfcache WebSocket Disconnects, and Agent-First DevTools",
+      "zh": "Chrome 149 上线：CSS gap decorations、bfcache 自动断开 WebSocket、面向 agent 的 DevTools"
+    },
+    "url": "https://developer.chrome.com/blog/new-in-chrome-149",
+    "source": "Chrome for Developers",
+    "summary": {
+      "en": "Chrome 149 ships CSS gap decorations (drawing rules between flex/grid tracks without extra DOM), bfcache-friendly behaviour for sites that disconnect WebSockets cleanly on navigation, and new Intl.Locale variants — the typical 'tasteful platform polish' update. The bigger story is in the DevTools 149 post: 'DevTools for agents' graduates to stable, AI assistance gets a major upgrade that now wires Lighthouse and widget inspection into the AI panel, and there are new WebMCP debugging tools (i.e. first-class debugger surfaces for the MCP-over-the-web flow Chrome has been pushing). The shape is clear: Chrome is positioning DevTools as the canonical front-end debugger for web pages whose authoring loop has an AI agent in it, not just for hand-written code.",
+      "zh": "Chrome 149 带来 CSS gap decorations（无需额外 DOM 就能在 flex/grid 轨道间画分隔规则）、对「导航时干净断开 WebSocket」的站点更友好的 bfcache 行为、以及新的 Intl.Locale variants——一次典型的「平台细节打磨」更新。更有看点的是同期 DevTools 149：「DevTools for agents」转正、AI 辅助迎来大版本升级（把 Lighthouse 与 widget 检查都接入了 AI 面板）、新增了 WebMCP 调试工具（即 Chrome 一直在推的「网页里的 MCP 流」第一方调试面）。意图很清楚：Chrome 正在把 DevTools 定位为「作者流里有 AI agent 的网页」的标准前端调试器，而不只是给手写代码用。"
+    },
+    "date": "2026-06-03"
   }
 ]
