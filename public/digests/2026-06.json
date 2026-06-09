@@ -194,5 +194,19 @@
       "zh": "Canary 是新发布的开源工具：拿一份 code diff，自动推断可能受影响的 UI 流程，然后让 Claude Code 在真实浏览器里跑这些流程——同时录视频、截图、抓网络、生成 HAR、保留 console log 和 Playwright trace，最后既输出一份 pass/fail 报告，也输出可重放的 Playwright 脚本。这个框架很关键：目前的「AI 生成测试」基本都是写一遍就 flaky 的脚本；Canary 让 agent 直接观察运行中的应用，最后留下能进入正常 CI 的确定性产物。如果稳得住，这是第一个真正可信的「agent 从 PR 起手、生成并验证 Playwright 测试」闭环。"
     },
     "date": "2026-06-07"
+  },
+  {
+    "id": "vscode-2h-extension-update-delay-supply-chain",
+    "title": {
+      "en": "VS Code Adds a 2-Hour Extension Auto-Update Delay to Blunt Supply-Chain Attacks",
+      "zh": "VS Code 把扩展自动更新拖延 2 小时，专门拦供应链攻击"
+    },
+    "url": "https://thehackernews.com/2026/06/vs-code-adds-2-hour-extension-auto.html",
+    "source": "Reddit r/programming",
+    "summary": {
+      "en": "VS Code is shipping a default 2-hour delay between a new extension version being published and clients auto-updating to it, on the bet that most malicious-version compromises are detected and yanked from the Marketplace inside that window. The change is opt-out for individuals and configurable centrally for enterprises, and the team published telemetry showing that on recent confirmed incidents the malicious version was indeed pulled within the 2-hour window before broad propagation. This is a meaningful piece of supply-chain hygiene given the steady drumbeat of compromised popular extensions over the last year — Cursor's recent forks have shipped similar mitigations, but VS Code making it the upstream default normalizes the practice for the wider editor ecosystem.",
+      "zh": "VS Code 把「扩展新版本发布」到「客户端自动更新」之间默认加 2 小时延迟，逻辑是：大多数恶意版本会在这个窗口内被发现并从 Marketplace 撤掉。个人用户可关，企业可集中配置。团队同时给出了 telemetry：最近几次确认事件里，恶意版本确实在这 2 小时窗口内就被拉下，没有广泛扩散。考虑到过去一年「热门扩展被供应链攻击」的事件频次，这是一项有分量的供应链卫生改进。Cursor 的最近 fork 已经在做类似缓解，但 VS Code 把它作为上游默认，等于把这套实践规范化推给了整个编辑器生态。"
+    },
+    "date": "2026-06-08"
   }
 ]
