@@ -166,5 +166,19 @@
       "zh": "Chrome 149 带来 CSS gap decorations（无需额外 DOM 就能在 flex/grid 轨道间画分隔规则）、对「导航时干净断开 WebSocket」的站点更友好的 bfcache 行为、以及新的 Intl.Locale variants——一次典型的「平台细节打磨」更新。更有看点的是同期 DevTools 149：「DevTools for agents」转正、AI 辅助迎来大版本升级（把 Lighthouse 与 widget 检查都接入了 AI 面板）、新增了 WebMCP 调试工具（即 Chrome 一直在推的「网页里的 MCP 流」第一方调试面）。意图很清楚：Chrome 正在把 DevTools 定位为「作者流里有 AI agent 的网页」的标准前端调试器，而不只是给手写代码用。"
     },
     "date": "2026-06-03"
+  },
+  {
+    "id": "cohere-coding-model-localllama-preview",
+    "title": {
+      "en": "Cohere Drops an Unreleased Coding Model on r/LocalLLaMA for Open Feedback",
+      "zh": "Cohere 把未发布的代码模型直接放上 r/LocalLLaMA 公测"
+    },
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tylzy2/coheres_unreleased_coding_model_early_access_for/",
+    "source": "Reddit r/LocalLLaMA",
+    "summary": {
+      "en": "Nick from Cohere posted CohereLabs/BLS-Mini-Code-1.0 to r/LocalLLaMA and asked the community to test it before official release — an unusual move from a frontier lab that normally hides previews behind enterprise NDAs. The model is positioned as Cohere's first dedicated coding model, follow-up to Command A+. The format is the story: rather than launching to benchmarks, Cohere is iterating in public with a local-first audience, presumably because the open-weights coding bench is now where reputation actually gets made. Worth watching whether the open feedback loop changes the final config (context length, tokenizer, license).",
+      "zh": "Cohere 的 Nick 把 CohereLabs/BLS-Mini-Code-1.0 直接放上 r/LocalLLaMA，请社区在正式发布前帮忙试用——这种「先在 local-first 社区试水，再发布」的做法在大模型实验室里并不常见，通常预览版都还藏在企业 NDA 后面。这是 Cohere Command A+ 之后第一个专门做代码的模型。形式本身就是新闻：与其堆 benchmark 数字发新闻稿，Cohere 选择直接和 local-first 用户迭代，背后逻辑大概是——开放权重代码模型现在已经是口碑战场。值得观察这种公开反馈是否会改变最终的 context length、tokenizer、license 等设定。"
+    },
+    "date": "2026-06-07"
   }
 ]
