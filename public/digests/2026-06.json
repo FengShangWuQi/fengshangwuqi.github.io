@@ -180,5 +180,19 @@
       "zh": "Cohere 的 Nick 把 CohereLabs/BLS-Mini-Code-1.0 直接放上 r/LocalLLaMA，请社区在正式发布前帮忙试用——这种「先在 local-first 社区试水，再发布」的做法在大模型实验室里并不常见，通常预览版都还藏在企业 NDA 后面。这是 Cohere Command A+ 之后第一个专门做代码的模型。形式本身就是新闻：与其堆 benchmark 数字发新闻稿，Cohere 选择直接和 local-first 用户迭代，背后逻辑大概是——开放权重代码模型现在已经是口碑战场。值得观察这种公开反馈是否会改变最终的 context length、tokenizer、license 等设定。"
     },
     "date": "2026-06-07"
+  },
+  {
+    "id": "canary-claude-code-ui-validation",
+    "title": {
+      "en": "Canary: Open-Source UI Validation That Drives Claude Code Against a Real Browser",
+      "zh": "Canary：用 Claude Code 在真实浏览器里跑出 UI 校验的开源工具"
+    },
+    "url": "https://www.reddit.com/r/reactjs/comments/1tyub6u/an_opensource_tool_for_validating_ui_changes_with/",
+    "source": "Reddit r/reactjs",
+    "summary": {
+      "en": "Canary is a new open-source tool that takes a code diff, infers which UI flows are likely affected, then has Claude Code execute those flows in a real browser — capturing video, screenshots, network traffic, HAR, console logs and Playwright traces, and emitting both a pass/fail report and a replayable Playwright script. The framing matters: most 'AI test generation' tools so far produce flaky one-shot scripts; Canary instead lets the agent observe the running app and produces deterministic artifacts that survive into normal CI. If it holds up, this is the first credible 'agent generates and verifies Playwright tests from the PR' loop.",
+      "zh": "Canary 是新发布的开源工具：拿一份 code diff，自动推断可能受影响的 UI 流程，然后让 Claude Code 在真实浏览器里跑这些流程——同时录视频、截图、抓网络、生成 HAR、保留 console log 和 Playwright trace，最后既输出一份 pass/fail 报告，也输出可重放的 Playwright 脚本。这个框架很关键：目前的「AI 生成测试」基本都是写一遍就 flaky 的脚本；Canary 让 agent 直接观察运行中的应用，最后留下能进入正常 CI 的确定性产物。如果稳得住，这是第一个真正可信的「agent 从 PR 起手、生成并验证 Playwright 测试」闭环。"
+    },
+    "date": "2026-06-07"
   }
 ]
