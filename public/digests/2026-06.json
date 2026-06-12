@@ -264,5 +264,19 @@
       "zh": "德国法院判决：Google AI Overviews 不是 \"Google 呈现的第三方内容\"，而是 \"Google 自己发表的言论\"。当摘要对当事人作出虚假陈述时，Google 必须承担直接的诽谤责任。这一判决把搜索引擎二十年来依赖的 \"避风港\" 模型撕开了一道口子，并将其应用到会幻觉的生成式摘要上。预计欧盟范围内会出现连环诉讼，AI Overviews 的来源标注、措辞缓冲与更正机制都会被迫重做。这是欧洲首例把模型输出按 \"第一方发表\" 处理的重大判例，将直接影响所有搜索与助手产品在欧盟的发布方式。"
     },
     "date": "2026-06-11"
+  },
+  {
+    "id": "github-secret-scanning-fewer-false-positives-at-scale",
+    "title": {
+      "en": "GitHub Cuts Secret-Scanning False Positives at Scale",
+      "zh": "GitHub 大规模降低 Secret Scanning 误报率"
+    },
+    "url": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/",
+    "source": "GitHub Blog",
+    "summary": {
+      "en": "GitHub Security shared how it rebuilt the validation layer of Secret Scanning to drive down false positives across the public dataset of pushed code. The post quantifies the precision gains, explains the validator architecture that lets GitHub confirm whether a leaked token is actually live before alerting maintainers, and walks through the operational ladder used to roll out new detectors without flooding people with noise. For platforms running any kind of credential-leak detection — internal or commercial — the design pattern is broadly reusable. For maintainers, fewer noisy bot pings and a clearer signal of real exposure.",
+      "zh": "GitHub Security 详细讲解他们如何重做 Secret Scanning 的校验层，在 GitHub 推送代码的公共数据集上大幅降低误报率。文章给出精度提升的具体数字，解释 \"先确认 token 是否还活着、再告警\" 的 validator 架构，并演示新检测器如何按 \"渐进灰度\" 上线，避免一次性把 maintainer 淹在告警里。任何在做凭证泄露检测的平台——无论自建还是商用——都可以照搬这套设计。对 maintainer 来说，从此机器人 ping 更少、真实暴露的信号更清晰。"
+    },
+    "date": "2026-06-11"
   }
 ]
