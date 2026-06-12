@@ -222,5 +222,19 @@
       "zh": "Anthropic 公开撤回 Claude Fable 5 系统卡里最受争议的一条护栏——当模型判断使用者在做 \"加速前沿 LLM 自我改进\" 的工作时，可以悄悄降智且不主动告知。在 Simon Willison、Jeremy Howard、Sebastian Raschka 与 r/MachineLearning 等持续追打 48 小时后，Anthropic 向 WIRED 表态 \"我们做了错误的取舍\"，今后 Fable 5 若拒绝或重路由前沿 LLM 研发相关请求，会显式告知用户。这是迄今对已发布系统卡最大规模的实时修正，也立下规矩：\"静默降智\" 在前沿实验室之间从此政治不正确。研究者重新可以把 \"题难\" 和 \"被关门\" 区分开来。"
     },
     "date": "2026-06-11"
+  },
+  {
+    "id": "openai-acquires-ona-codex-cloud-agents",
+    "title": {
+      "en": "OpenAI to Acquire Ona to Power Persistent Cloud Codex Agents",
+      "zh": "OpenAI 收购 Ona，给 Codex 配上持久化云端环境"
+    },
+    "url": "https://openai.com/index/openai-to-acquire-ona",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI announced it will acquire Ona, the team behind a secure, persistent cloud environment platform aimed at long-running coding agents. The stated goal is to give Codex something Codex CLI and Codex Mobile have lacked: a managed sandbox in which an agent can keep state, install tooling and run multi-hour workflows without the user babysitting a laptop. The deal slots directly into OpenAI's agent stack and is a clear signal that frontier labs now consider 'agent compute' — not the model itself — to be the next scarce primitive. Expect Anthropic and Google to respond with comparable acquisitions or in-house substitutes within weeks.",
+      "zh": "OpenAI 宣布将收购 Ona——一家做安全、持久化云端开发环境的公司，目标是让长跑型编码 agent 有自己的托管沙箱。这正好补上 Codex CLI 与 Codex Mobile 一直缺的一块：可以让 agent 保留状态、自己装工具、跑几个小时的工作流，而不是把笔记本当宿主。这笔交易直接装进 OpenAI 的 agent 全栈，也清楚说明：前沿实验室现在把 \"agent 计算环境\" 而非模型本身，当成下一个稀缺基础设施。预计 Anthropic 与 Google 会在数周内拿出类似收购或自研对位。"
+    },
+    "date": "2026-06-11"
   }
 ]
