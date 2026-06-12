@@ -250,5 +250,19 @@
       "zh": "OpenAI 威胁情报团队发布新报告，详细描述与 PRC 关联的影响行动如何利用 ChatGPT 与其他模型，向美国 AI 政策、数据中心叙事与前沿实验室争论中投放内容。报告附带账号清理数据、样本产物，以及实验室加强滥用检测后这些行动如何切换战术。对行业的实际启示是：LLM 的对手用途已从 \"通用造谣\" 进入到 \"专门塑造 AI 话题本身\"。对政策与平台而言，这又是一个多年级、需要条约级框架的国家级 LLM 滥用样本，仅靠各实验室分别审核已经不够。"
     },
     "date": "2026-06-11"
+  },
+  {
+    "id": "german-court-google-ai-overviews-defamation-liability",
+    "title": {
+      "en": "German Court: Google's AI Overviews Are Google's Own Speech, Trigger Defamation Liability",
+      "zh": "德国法院判决：Google AI Overviews 属于 Google 自己的言论，须为诽谤负责"
+    },
+    "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-make-the-company-liable-for-defamation/",
+    "source": "The Decoder",
+    "summary": {
+      "en": "A German court ruled that Google's AI Overviews are not third-party content surfaced by Google but speech authored by Google itself, exposing the company to direct defamation liability when those summaries make false statements about a person. The decision punches through the safe-harbor framing every search engine has relied on for two decades and applies it to generative summaries that hallucinate. Expect copycat suits across the EU and a redesign of how AI Overviews disclose sourcing, hedging, and corrections. It is the first major European precedent treating model output as first-party publishing, and it will shape how every search and assistant product is launched in the EU.",
+      "zh": "德国法院判决：Google AI Overviews 不是 \"Google 呈现的第三方内容\"，而是 \"Google 自己发表的言论\"。当摘要对当事人作出虚假陈述时，Google 必须承担直接的诽谤责任。这一判决把搜索引擎二十年来依赖的 \"避风港\" 模型撕开了一道口子，并将其应用到会幻觉的生成式摘要上。预计欧盟范围内会出现连环诉讼，AI Overviews 的来源标注、措辞缓冲与更正机制都会被迫重做。这是欧洲首例把模型输出按 \"第一方发表\" 处理的重大判例，将直接影响所有搜索与助手产品在欧盟的发布方式。"
+    },
+    "date": "2026-06-11"
   }
 ]
