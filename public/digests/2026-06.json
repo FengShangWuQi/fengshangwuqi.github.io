@@ -236,5 +236,19 @@
       "zh": "OpenAI 宣布将收购 Ona——一家做安全、持久化云端开发环境的公司，目标是让长跑型编码 agent 有自己的托管沙箱。这正好补上 Codex CLI 与 Codex Mobile 一直缺的一块：可以让 agent 保留状态、自己装工具、跑几个小时的工作流，而不是把笔记本当宿主。这笔交易直接装进 OpenAI 的 agent 全栈，也清楚说明：前沿实验室现在把 \"agent 计算环境\" 而非模型本身，当成下一个稀缺基础设施。预计 Anthropic 与 Google 会在数周内拿出类似收购或自研对位。"
     },
     "date": "2026-06-11"
+  },
+  {
+    "id": "openai-prc-linked-ai-influence-operations",
+    "title": {
+      "en": "OpenAI Discloses PRC-Linked AI Influence Operations Targeting US Tech Debate",
+      "zh": "OpenAI 披露：PRC 关联组织正用 AI 介入美国 AI 政策与产业舆论"
+    },
+    "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+    "source": "OpenAI Blog",
+    "summary": {
+      "en": "OpenAI's threat-intel team published a new report detailing PRC-linked influence operations that used ChatGPT and competing models to seed narratives into US AI-policy, data-center, and frontier-lab debates. The report includes account takedown numbers, sample artifacts, and the operations' shifting tradecraft as labs tightened model abuse detection. For the industry, the practical takeaway is that adversarial use of LLMs has moved beyond commodity disinformation into targeted shaping of the AI conversation itself. For policymakers and platforms, it adds another data point to a now-multiyear pattern of state-linked LLM abuse that needs treaty-level scaffolding, not just lab-level moderation.",
+      "zh": "OpenAI 威胁情报团队发布新报告，详细描述与 PRC 关联的影响行动如何利用 ChatGPT 与其他模型，向美国 AI 政策、数据中心叙事与前沿实验室争论中投放内容。报告附带账号清理数据、样本产物，以及实验室加强滥用检测后这些行动如何切换战术。对行业的实际启示是：LLM 的对手用途已从 \"通用造谣\" 进入到 \"专门塑造 AI 话题本身\"。对政策与平台而言，这又是一个多年级、需要条约级框架的国家级 LLM 滥用样本，仅靠各实验室分别审核已经不够。"
+    },
+    "date": "2026-06-11"
   }
 ]
