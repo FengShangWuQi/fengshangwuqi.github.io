@@ -292,5 +292,19 @@
       "zh": "Anthropic 正式确认：美国政府以国家安全 / 出口管制为由，下令立刻暂停所有外籍人士——包括 Anthropic 自家的外籍员工，不论在美国境内还是境外——对 Claude Fable 5 与 Mythos 5 的访问权限。这条新闻直接占据当天议程：Hacker News 2865 分、Lobsters 头条，外加 Simon Willison、jeremyphoward、OfficialLoganK、emollick、amasad、thdxr 集体下场，是 2026 年迄今最大的一次跨源信号。Vercel 同步发布 changelog，把 Fable 5 从 AI Gateway 上下架；Replit 也公开表示将不得不关闭 Fable 接入。除了眼下的合规手忙脚乱，这条政策还划下一条新红线：美国前沿实验室最强的模型现在被当作出口管制的算力对待，这意味着过去一年 agentic coding 赖以发展的 \"单一 SaaS 端口对全世界开放\" 模式正在被关上。"
     },
     "date": "2026-06-13"
+  },
+  {
+    "id": "vercel-drop-new-product-launch",
+    "title": {
+      "en": "Vercel Launches Vercel Drop: One-Click Asset Drops for Production Sites",
+      "zh": "Vercel 推出 Vercel Drop：把临时素材一键投放到生产站点"
+    },
+    "url": "https://vercel.com/changelog/vercel-drop",
+    "source": "Vercel Blog",
+    "summary": {
+      "en": "Vercel quietly published a new product, Vercel Drop, as part of its weekly changelog cadence. Drop lets a team or AI agent push a transient asset — image, video, generated HTML, signed download — directly onto a deployed site without a redeploy or a separate CDN configuration, and have it expire on a schedule. The use case is the increasingly common \"agent produced an artifact, get it in front of the user now\" loop that today still requires either a redeploy or a hand-rolled object-store pipeline. For frontend teams running on Vercel, Drop slots in between Blob and Edge Config and removes one more reason to stand up a custom S3 + signed-URL service.",
+      "zh": "Vercel 在每周 changelog 节奏里悄悄上了一个新产品——Vercel Drop。Drop 让团队或 AI agent 可以把临时素材（图片、视频、生成的 HTML、签名下载链接）直接投到一个已经部署的站点上，无需重新部署、也不必单独配 CDN，并且可以按时间到期自动清理。它瞄准的是越来越常见的 \"agent 刚产出一个 artifact、需要立刻让用户看到\" 这类回路——目前要么得重部署、要么得自己搭一套对象存储管道。对跑在 Vercel 上的前端团队来说，Drop 卡位在 Blob 和 Edge Config 之间，又少了一个自建 S3 + 签名 URL 服务的理由。"
+    },
+    "date": "2026-06-12"
   }
 ]
