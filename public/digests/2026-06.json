@@ -278,5 +278,19 @@
       "zh": "GitHub Security 详细讲解他们如何重做 Secret Scanning 的校验层，在 GitHub 推送代码的公共数据集上大幅降低误报率。文章给出精度提升的具体数字，解释 \"先确认 token 是否还活着、再告警\" 的 validator 架构，并演示新检测器如何按 \"渐进灰度\" 上线，避免一次性把 maintainer 淹在告警里。任何在做凭证泄露检测的平台——无论自建还是商用——都可以照搬这套设计。对 maintainer 来说，从此机器人 ping 更少、真实暴露的信号更清晰。"
     },
     "date": "2026-06-11"
+  },
+  {
+    "id": "anthropic-fable-mythos-us-export-suspension",
+    "title": {
+      "en": "Anthropic: US Government Directive Suspends Foreign-National Access to Fable 5 and Mythos 5",
+      "zh": "Anthropic：美国政府指令切断所有外籍人士对 Fable 5 与 Mythos 5 的访问"
+    },
+    "url": "https://www.anthropic.com/news/fable-mythos-access",
+    "source": "Anthropic",
+    "summary": {
+      "en": "Anthropic confirmed that the US government, citing national-security export-control authorities, has ordered an immediate suspension of all access to Claude Fable 5 and Mythos 5 by any foreign national — including foreign-national Anthropic employees — whether inside or outside the United States. The story dominated the day: 2,865 points on Hacker News, top of Lobsters, and the single largest cross-source signal of 2026 so far, with Simon Willison, jeremyphoward, OfficialLoganK, emollick, amasad and thdxr all weighing in. Vercel separately shipped a changelog removing Fable 5 from AI Gateway in response, and Replit publicly said it would have to turn Fable access off. Beyond the immediate compliance scramble, the policy itself sets a new bar: a frontier US lab's most capable models are now treated as export-controlled compute, which closes the door on the global \"single SaaS endpoint for everyone\" pattern that has defined the agentic-coding era to date.",
+      "zh": "Anthropic 正式确认：美国政府以国家安全 / 出口管制为由，下令立刻暂停所有外籍人士——包括 Anthropic 自家的外籍员工，不论在美国境内还是境外——对 Claude Fable 5 与 Mythos 5 的访问权限。这条新闻直接占据当天议程：Hacker News 2865 分、Lobsters 头条，外加 Simon Willison、jeremyphoward、OfficialLoganK、emollick、amasad、thdxr 集体下场，是 2026 年迄今最大的一次跨源信号。Vercel 同步发布 changelog，把 Fable 5 从 AI Gateway 上下架；Replit 也公开表示将不得不关闭 Fable 接入。除了眼下的合规手忙脚乱，这条政策还划下一条新红线：美国前沿实验室最强的模型现在被当作出口管制的算力对待，这意味着过去一年 agentic coding 赖以发展的 \"单一 SaaS 端口对全世界开放\" 模式正在被关上。"
+    },
+    "date": "2026-06-13"
   }
 ]
