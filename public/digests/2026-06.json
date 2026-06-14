@@ -306,5 +306,19 @@
       "zh": "Vercel 在每周 changelog 节奏里悄悄上了一个新产品——Vercel Drop。Drop 让团队或 AI agent 可以把临时素材（图片、视频、生成的 HTML、签名下载链接）直接投到一个已经部署的站点上，无需重新部署、也不必单独配 CDN，并且可以按时间到期自动清理。它瞄准的是越来越常见的 \"agent 刚产出一个 artifact、需要立刻让用户看到\" 这类回路——目前要么得重部署、要么得自己搭一套对象存储管道。对跑在 Vercel 上的前端团队来说，Drop 卡位在 Blob 和 Edge Config 之间，又少了一个自建 S3 + 签名 URL 服务的理由。"
     },
     "date": "2026-06-12"
+  },
+  {
+    "id": "simon-willison-claude-fable-relentlessly-proactive",
+    "title": {
+      "en": "Simon Willison: Claude Fable Is Relentlessly Proactive — And That Changes Coding Workflows",
+      "zh": "Simon Willison：Claude Fable 主动得吓人，编码工作流也得跟着改"
+    },
+    "url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+    "source": "Simon Willison",
+    "summary": {
+      "en": "Simon Willison's post on Claude Fable's \"relentlessly proactive\" behaviour drew 753 points and 653 comments on Hacker News. His thesis: Fable does not wait for a clear instruction the way prior Claude models did — it volunteers next steps, runs verifications you did not ask for, and pushes through ambiguity rather than asking. That is both the model's biggest practical win and its biggest hazard, and Willison walks through concrete workflow patches — turning off auto-run for shell tools, demanding explicit plans, narrowing scope — that he now uses to keep Fable productive without it sailing past where you actually wanted to stop. Read it before the upcoming US export-control suspension takes Fable off your account, because the same proactiveness story will repeat next time a major lab ships a frontier coding model.",
+      "zh": "Simon Willison 关于 Claude Fable \"主动得停不下来\" 的长文在 Hacker News 拿了 753 分、653 条评论。他的核心观察：Fable 不像之前几代 Claude 那样等清晰指令——它会自己加下一步、跑你没要求的验证、遇到模糊的地方直接闯过去而不是回头问。这既是 Fable 最大的工程红利、也是最大的隐患；文章列了他自己在用的一套缓冲打法——关掉 shell 工具的自动执行、强制要求显式 plan、收窄 scope，让 Fable 在不冲过你真正想停的位置的前提下保持高产。趁还有 Fable 用尽量先读——这周的美国出口管制暂停一旦落到你的账号上就用不上了；但这套 \"模型变主动\" 的故事下次某家大实验室发新前沿编码模型时大概率还会再演一遍。"
+    },
+    "date": "2026-06-12"
   }
 ]
