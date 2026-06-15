@@ -320,5 +320,19 @@
       "zh": "Simon Willison 关于 Claude Fable \"主动得停不下来\" 的长文在 Hacker News 拿了 753 分、653 条评论。他的核心观察：Fable 不像之前几代 Claude 那样等清晰指令——它会自己加下一步、跑你没要求的验证、遇到模糊的地方直接闯过去而不是回头问。这既是 Fable 最大的工程红利、也是最大的隐患；文章列了他自己在用的一套缓冲打法——关掉 shell 工具的自动执行、强制要求显式 plan、收窄 scope，让 Fable 在不冲过你真正想停的位置的前提下保持高产。趁还有 Fable 用尽量先读——这周的美国出口管制暂停一旦落到你的账号上就用不上了；但这套 \"模型变主动\" 的故事下次某家大实验室发新前沿编码模型时大概率还会再演一遍。"
     },
     "date": "2026-06-12"
+  },
+  {
+    "id": "wsj-amazon-ceo-triggered-anthropic-crackdown",
+    "title": {
+      "en": "WSJ: Amazon CEO's Talks With US Officials Triggered the Crackdown on Anthropic Models",
+      "zh": "WSJ：是亚马逊 CEO 与美国官员的会谈直接触发了对 Anthropic 模型的封锁"
+    },
+    "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578",
+    "source": "WSJ",
+    "summary": {
+      "en": "The Wall Street Journal reports that the US government's directive ordering Anthropic to cut off Fable 5 and Mythos 5 access for all foreign nationals — including Anthropic's own foreign-national employees — was triggered by recent meetings between Amazon CEO Andy Jassy and senior administration officials. Amazon is Anthropic's single largest investor and the underlying compute provider for both models through AWS, and the WSJ piece frames the action as Amazon pushing the export-control framing through Washington rather than a spontaneous national-security move. The story landed on the Hacker News front page within hours and is the first concrete causal chain we have for an event the entire ecosystem spent the weekend speculating about; it also recasts the Fable suspension as a hyperscaler turf-war story rather than a pure policy story, which has real implications for how OpenAI / Microsoft and Google deal with their own model export posture in the coming weeks.",
+      "zh": "《华尔街日报》披露：美国政府要求 Anthropic 切断所有外籍人士（含 Anthropic 自家外籍员工）对 Fable 5 和 Mythos 5 访问的那道指令，实际是由亚马逊 CEO Andy Jassy 与白宫高级官员一系列近期会谈直接推动的。亚马逊不仅是 Anthropic 最大单一投资人，也是这两款模型背后的算力底座（AWS），WSJ 这篇把整起事件定性成 \"亚马逊在华盛顿把出口管制的框架推上去\"，而不是一次自发的国家安全行动。文章上 Hacker News 首页只用了几小时——这是整个生态周末都在猜的事件第一次拿到具体的因果链；它也把 Fable 暂停从纯政策叙事改写成了一场云超大厂之间的地盘战，这对 OpenAI / 微软、Google 接下来如何摆自家模型的出口姿态有非常实际的影响。"
+    },
+    "date": "2026-06-14"
   }
 ]
