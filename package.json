@@ -11,12 +11,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/image": "^2.0.0",
     "nuxt": "^4.4.2"
   },
   "devDependencies": {
     "@unocss/nuxt": "^66.6.8",
-    "image-size": "^2.0.2",
     "typescript": "^5.7.0",
     "unocss": "^66.6.8"
   },
